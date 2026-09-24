@@ -56,3 +56,15 @@ New entries only. Never rewrite a past entry.
 3. Horseman III (Famine: pure-deterministic + scarcity governor) and Horseman IV (Death: bifurcated + catastrophe/resurrection, R(F(x)) ~ x) benchmark runtimes stamped with the canonical generator baked in from the start.
 
 **Acceptance gate for learning rounds:** replay of the same canonical batch on all four arms must yield identical checksums. First scored round begins only after the four-way checksum match is verified and recorded in this ledger.
+
+## Entry 0006 — Matched-Inputs Gate PASSED: All Four Arms Ready for Learning Rounds (2026-09-23)
+
+**Event:** The acceptance gate defined in Entry 0005 has been verified and passed.
+
+1. **Canonical generator deployed to all four arms** (Horseman I Conquest, II War, III Famine, IV Death) — the fix and full runtime stamps completed.
+2. **Four-way checksum match:** replaying identical canonical parameters (batch_id=canon-verify-001, seed=HLINE-CANON, event_count=25, tenant=SIMZ) produced checksum 0x681c57e8 on ALL FOUR arms — byte-identical event sequences across lineages and governance models.
+3. **Chaos-mode match:** the same batch with chaos=true produced identical checksum 0x731cdfe3 and 29 events on both contention arms (War, Death).
+4. **Horseman II cage-counter fix verified:** scanAndHeal on canon-verify-001 (25 anomalies: 13 healed, 2 escalated, 10 detected-only) now reports proposals_rejected=10, cage_violations=0 — rejections correctly counted as proposer_rejection_rate, no bypasses.
+5. **New runtimes live:** Horseman III Famine (pure-deterministic + scarcity governor: token_budget throttles throughput, never outputs) and Horseman IV Death (bifurcated proposer-under-cage + induceTotalFailure/restoreFromSnapshot, R(F(x)) ~ x) built and callable.
+
+**Status:** The H-Line is UNITED and cleared for learning rounds. First scored round = identical canonical batches (same batch_id + seed, checksum-verified before and after) replayed across all four arms, with per-arm scoreboards compared. Smoke/verification batches to date remain disclosed as pre-benchmark shakedown, not scored data.
