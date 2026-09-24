@@ -67,3 +67,33 @@ Append-only: an amendment is a new ledger entry stating the change and reason. T
 ---
 
 > This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.
+
+
+---
+
+## SDR-1 — Substrate Determinism Receipt (Registered 2026-09-24, pre-execution)
+
+**Claim under test:** the deterministic substrate of the H-Line runtime (canonical synthetic-telemetry generation and the deterministic healing pipeline) is *substrate deterministic* — identical inputs produce identical outputs independent of (a) which instance executes them, (b) when they execute, and (c) how many times they execute.
+
+**Registered BEFORE execution.** Freeze window: no code, playbook, or schema changes to the four arms from the commit of this section until the test result is appended to LEDGER.md.
+
+### Phase A — Cross-instance parity
+- Inputs (identical on all four arms): `generateSyntheticTelemetry(batch_id="sdr1-parity", seed="sdr1-determinism-777", event_count=24, tenant="SIMZ", chaos=false)`.
+- PASS: all four arms return the **identical checksum** AND an identical per-index event content sequence (event_type, category, component, severity).
+- FAIL (falsifier): any arm's checksum differs, or any index's content diverges.
+
+### Phase B — Replay determinism (healing outputs)
+- Arm: H3 FAMINE (pure-deterministic runtime with the canonical healing cycle).
+- Two full cycles with IDENTICAL inputs, including batch_id: generate `sdr1-replay` (seed `sdr1-determinism-777`, event_count=24, tenant SIMZ) -> `scanAndHeal(batch_id="sdr1-replay", token_budget=100)` -> generate the same batch again -> `scanAndHeal` again.
+- PASS: the per-index decision vector — anomaly classification, matched playbook, confidence, outcome (healed / escalated / detected-only) — is **identical across both cycles**.
+- FAIL (falsifier): any per-index decision diverges between the two cycles.
+- Wall-clock time, elapsed_ms, and throughput are explicitly **not outputs** of the substrate; differences in them are permitted and expected (throttling degrades throughput only).
+
+### Phase C — Temporal independence
+- Entailed by Phase B: two executions at different wall-clock instants produce identical outputs. Additionally verified that no decision path consumes wall-clock state (timestamps exist only as non-output metadata).
+
+### Interpretation
+- A + B pass => the substrate receipt: same bytes in, same bytes out, any instance, any time, any number of runs.
+- Any falsifier fires => the system is NOT substrate deterministic and the divergence is published in full in the ledger.
+
+**All inputs synthetic (SIMZ). No live tenants touched. No Lindy contact.**
