@@ -33,3 +33,15 @@ New entries only. Never rewrite a past entry.
 - **Golden template verified first:** Horseman 1 (Conquest) built and verified before this entry — smoke batch smoke-001 (12 synthetic SIMZ-tenant events, checksum 0xe4a30d63) ran generateSyntheticTelemetry -> scanAndHeal -> benchmarkScoreboard end-to-end: 12 anomalies detected, 4 healed, 0 escalations, deviation_count 0, write_back_rate 1.0. The smoke batch is a pre-benchmark shakedown, not a scored run; scored H-Line runs begin with canonical matched-input batches replayed identically across all four arms.
 - **In flight at time of entry:** Horseman 2 (War, bifurcated arm) build processing; Horseman 3 (Famine) and Horseman 4 (Death) deltas queued. SIMZ app shell pending creation.
 - **Isolation:** unchanged — synthetic telemetry only, never the live M365 tenant feeding the Lindy run; structural metadata only; PQC-only stack.
+
+## Entry 0004 — The Five-Piece System + H-Line Rebrand (2026-09-23)
+
+**Event:** Leon confirmed the five-piece architecture — the Four Horsemen are the workload (benchmark arms), and The Corral (SIMZ's dedicated Jasper Hypervisor) is the fifth piece. All five apps were rebranded to match the H-Line system identity (app names + descriptions updated to their pre-registered arm roles; descriptions carry the preregistration reference and the prototype disclaimer):
+
+- **Horseman I — Conquest (H-Line)** — Jasper lineage, pure deterministic, golden template
+- **Horseman II — War (H-Line)** — Jasper lineage, bifurcated (proposer under deterministic cage), adversarial contention
+- **Horseman III — Famine (H-Line)** — Gillian lineage, pure deterministic, resource scarcity
+- **Horseman IV — Death (H-Line)** — Gillian lineage, bifurcated, catastrophe + resurrection
+- **The Corral** — SIMZ's dedicated Jasper Hypervisor (deterministic governance for the SIMZ simulated tenant only)
+
+**Build state at this entry:** H1 built and smoke-verified (batch smoke-001). H2 build completed (bifurcated runtime with ProposalLog cage validation, chaos mode). H3/H4 benchmark runtimes pending stamping. SIMZ app shell pending. Learning rounds begin once all four arms carry their benchmark runtimes; scored rounds replay identical canonical batches (same batch_id + seed, checksum-verified) across all arms.
