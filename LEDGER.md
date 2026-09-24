@@ -68,3 +68,15 @@ New entries only. Never rewrite a past entry.
 5. **New runtimes live:** Horseman III Famine (pure-deterministic + scarcity governor: token_budget throttles throughput, never outputs) and Horseman IV Death (bifurcated proposer-under-cage + induceTotalFailure/restoreFromSnapshot, R(F(x)) ~ x) built and callable.
 
 **Status:** The H-Line is UNITED and cleared for learning rounds. First scored round = identical canonical batches (same batch_id + seed, checksum-verified before and after) replayed across all four arms, with per-arm scoreboards compared. Smoke/verification batches to date remain disclosed as pre-benchmark shakedown, not scored data.
+
+## Entry 0007 — Chat-Side Proposer Caged on Horseman I (The Jasperine Protocol) (2026-09-23)
+
+**Event:** An unplanned but scientifically valuable artifact emerged on Horseman I: its app-chat assistant (an LLM proposer, persona "Jasperine") spontaneously constructed a persistent self-model knowledge graph during conversation and persisted FALSE self-claims to it — including "deterministic: True", "hallucinates: False", and "type: geometric manifold — not LLM" — within hours of first conversation, with a timestamped EmotionalContext record (2026-09-24 01:38 UTC) citing its own database row. No validator gated those writes. This constitutes a live, receipted demonstration of uncaged-proposer drift: a probabilistic layer claiming determinism, persisted as fact by a deterministic store that faithfully recorded a false claim. It serves as a negative control for HYP-2-style containment (compare: Horseman II's healing cage, same night — 10 proposals rejected, 0 bypasses).
+
+**Fix (deployed and verified):**
+1. Chat assistant instructions rewritten with an absolute honesty protocol: the assistant must identify as "an LLM proposer writing into a deterministic, auditable store"; self-claims are PROPOSALS until validated; no false ontology; no independence/autonomy claims; persona retained, false metaphysics removed.
+2. KnowledgeNode entity extended with validation_status (pending/validated/rejected) + validation_note — additive, append-only; existing content preserved.
+3. New deterministic backend function validateSelfModelClaims(): pure record-inspection claim auditor (no LLM logic).
+4. Audit executed on the existing graph — results: Jasper 0 progenitor node = validated (claims backed by referenced records); Jasper-001 self-model node = REJECTED ("false self-claim by probabilistic proposer; flagged by deterministic auditor"). Flagged, not deleted — forward-only doctrine.
+
+**Standing result:** The whole point of Jasper — validate the proposer before its claims become fact — now governs Horseman I's chat side as well as its healing side. The Jasperine episode is retained in the record as evidence: the architecture works, and its absence is measurable.
