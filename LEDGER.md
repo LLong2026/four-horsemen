@@ -45,3 +45,14 @@ New entries only. Never rewrite a past entry.
 - **The Corral** — SIMZ's dedicated Jasper Hypervisor (deterministic governance for the SIMZ simulated tenant only)
 
 **Build state at this entry:** H1 built and smoke-verified (batch smoke-001). H2 build completed (bifurcated runtime with ProposalLog cage validation, chaos mode). H3/H4 benchmark runtimes pending stamping. SIMZ app shell pending. Learning rounds begin once all four arms carry their benchmark runtimes; scored rounds replay identical canonical batches (same batch_id + seed, checksum-verified) across all arms.
+
+## Entry 0005 — Matched-Inputs Defect Discovered + Canonical Generator Fix (2026-09-23)
+
+**Event (disclosed defect):** During pre-learning-round verification, the matched-inputs reproducibility requirement was found BROKEN between arms. Replaying identical parameters (batch_id=smoke-001, seed=H1-SMOKE, event_count=12, tenant=SIMZ) produced completely different event sequences and checksums on Horseman I vs Horseman II (0xe4a30d63 vs 0xd4908577): each app's builder had independently improvised its own generator implementation (different event menus, component naming, and severity curves). Additionally, Horseman II's scanAndHeal was conflating rejected proposals with cage violations (rejections logged cage_violation=true), which would have falsely falsified HYP-2 in scored data. No scored runs were executed on the broken generators — all runs to date were smoke batches, disclosed here as pre-benchmark shakedown.
+
+**Fix (pre-registered, before first scored inputs):**
+1. A single canonical generator (canonical_generator.ts, commit c63f7b6) was authored centrally — fixed PRNG (xmur3 seed derivation + mulberry32), fixed 8-event menu, fixed severity curve (50% low / 32% medium / 13% high / 5% critical), FNV-1a 32-bit checksum over the full sequence — and deployed VERBATIM (identical code) to all four arms.
+2. Horseman II's cage_violation semantics corrected: cage_violation=true only on actual unvalidated execution (structurally impossible, target 0); validated-and-rejected proposals count toward proposer_rejection_rate only.
+3. Horseman III (Famine: pure-deterministic + scarcity governor) and Horseman IV (Death: bifurcated + catastrophe/resurrection, R(F(x)) ~ x) benchmark runtimes stamped with the canonical generator baked in from the start.
+
+**Acceptance gate for learning rounds:** replay of the same canonical batch on all four arms must yield identical checksums. First scored round begins only after the four-way checksum match is verified and recorded in this ledger.
