@@ -97,3 +97,37 @@ Append-only: an amendment is a new ledger entry stating the change and reason. T
 - Any falsifier fires => the system is NOT substrate deterministic and the divergence is published in full in the ledger.
 
 **All inputs synthetic (SIMZ). No live tenants touched. No Lindy contact.**
+
+---
+
+## SDR-2 — Substrate Determinism Receipt 2: Determinism at Scale (Registered 2026-09-25, pre-execution)
+
+**Claim under test:** the deterministic substrate remains substrate deterministic under a 10x scale increase and under concurrent load — identical inputs produce identical outputs independent of (a) batch size, (b) concurrent execution, and (c) which instance executes them. SDR-1 proved this at rest (24 events); SDR-2 proves it does not decay with scale.
+
+**Registered BEFORE execution.** Freeze window: no code, playbook, or schema changes to the four arms from the commit of this section until the test result is appended to LEDGER.md.
+
+**Execution window:** on or after the close of the Horsemen 7-day mini-cycle (Oct 1, 2026, post cycle-report), and before the 60-day kickoff (Oct 7, 2026).
+
+### Phase A — 10x cross-instance parity
+- Inputs (identical on all four arms): `generateSyntheticTelemetry(batch_id="sdr2-parity", seed="sdr2-determinism-777", event_count=240, tenant="SIMZ", chaos=false)`.
+- PASS: all four arms return the **identical checksum** AND an identical per-index event content sequence across all 240 indexes (event_type, category, component, severity).
+- FAIL (falsifier): any arm's checksum differs, or any index's content diverges at any position 1-240.
+
+### Phase B — 10x replay determinism (healing outputs)
+- Arm: H3 FAMINE (pure-deterministic runtime with the canonical healing cycle).
+- Two full cycles with IDENTICAL inputs, including batch_id: generate `sdr2-replay` (seed `sdr2-determinism-777`, event_count=240, tenant SIMZ) -> `scanAndHeal(batch_id="sdr2-replay", token_budget=100)` -> generate the same batch again -> `scanAndHeal` again.
+- PASS: the per-index decision vector — anomaly classification, matched playbook, confidence, outcome (healed / escalated / detected-only) — is **identical across both cycles at all 240 positions**.
+- FAIL (falsifier): any per-index decision diverges between the two cycles, at any position.
+- Wall-clock time, elapsed_ms, and throughput are explicitly **not outputs** of the substrate; differences in them are permitted and expected (throttling degrades throughput only).
+
+### Phase C — Determinism under concurrent load
+- The NEW capability SDR-1 did not test: the canonical `sdr2-replay` cycle executes while the arm is under concurrent load (a simultaneously running independent chaos stream on the same arm, e.g. the nightly cycle's own stream or an equivalent concurrent batch).
+- PASS: the per-index decision vector under load is **identical** to the unloaded Phase B decision vector, at all 240 positions.
+- FAIL (falsifier): any decision diverges between the loaded and unloaded executions, at any position.
+- Load-shedding that changes TIMING is permitted; load-shedding that changes a DECISION is a falsifier.
+
+### Interpretation
+- A + B + C pass => the substrate receipt at scale: same bytes in, same bytes out, 10x volume, under load, any instance, any time, any number of runs.
+- Any falsifier fires => the system is NOT substrate deterministic at scale, and the divergence is published in full in the ledger with the diverging position identified.
+
+**All inputs synthetic (SIMZ). No live tenants touched. No Lindy contact.**
