@@ -1,5 +1,7 @@
 # MILESTONE — First Fully Receipted Human-in-the-Loop Critical Resolution Cycle (N10-ACK)
 
+**Archived as documented achievement:** Zenodo DOI 10.5281/zenodo.23151356
+
 **Date:** 2026-10-04, 23:10–23:18 CT · **Ledger receipts:** [0009](LEDGER.md) (commit `700ea1e`) · [0010](LEDGER.md) (commit `c1f43bb`)
 
 ---
