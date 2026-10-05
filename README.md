@@ -28,6 +28,7 @@ The H-Line runs **alongside, but isolated from**, the live 60-day Lindy experime
 - [HORSEMEN_DESIGN.md](HORSEMEN_DESIGN.md) — the full design: riders, stables, harness, safety rails
 - [SIMZ_SPEC.md](SIMZ_SPEC.md) — the simulated second-company workload specification
 - [LEDGER.md](LEDGER.md) — the append-only H-Line ledger
+- [MILESTONE_HITL_N10_Critical_Receipt.md](MILESTONE_HITL_N10_Critical_Receipt.md) — first fully receipted human-in-the-loop critical resolution cycle (N10-ACK)
 
 ## Doctrine
 
