@@ -29,7 +29,7 @@ The H-Line runs **alongside, but isolated from**, the live 60-day Lindy experime
 - [SIMZ_SPEC.md](SIMZ_SPEC.md) — the simulated second-company workload specification
 - [LEDGER.md](LEDGER.md) — the append-only H-Line ledger
 - [MILESTONE_HITL_N10_Critical_Receipt.md](MILESTONE_HITL_N10_Critical_Receipt.md) — first fully receipted human-in-the-loop critical resolution cycle (N10-ACK)
-- [SOVEREIGN_BRIEFING_HITL_N10-ACK.md](SOVEREIGN_BRIEFING_HITL_N10-ACK.md) — sovereign-audience briefing on the N10-ACK cycle (archived: DOI 10.5281/zenodo.23152634)
+- [SOVEREIGN_BRIEFING_HITL_N10-ACK.md](SOVEREIGN_BRIEFING_HITL_N10-ACK.md) — sovereign-audience briefing on the N10-ACK cycle (archived: DOI 10.5281/zenodo.23152633, concept DOI — latest version 10.5281/zenodo.23173948)
 
 ## Doctrine
 

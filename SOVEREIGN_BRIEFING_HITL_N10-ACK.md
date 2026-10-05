@@ -5,7 +5,7 @@
 **Event window:** 2026-10-04, 23:10–23:18 CT
 **Evidence of record:** Public append-only ledger (github.com/LLong2026/four-horsemen, entries 0009–0010, commits 700ea1e, c1f43bb, ccf691a) · Zenodo DOI 10.5281/zenodo.23151356
 **Patent cross-reference:** 64/157,915 — Deterministic Constitutional Autonomous Infrastructure Systems and Methods (filed 2026-09-18)
-**This briefing is archived at:** Zenodo DOI 10.5281/zenodo.23152634
+**This briefing is archived at:** Zenodo DOI 10.5281/zenodo.23152633 (concept DOI — always resolves to the latest version; v2 10.5281/zenodo.23173948 fixed a table word-wrap rendering issue, no content change from v1 10.5281/zenodo.23152634)
 
 ---
 
