@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-10T16:53:19.170012+00:00",
+  "model_setting": "gpt_6_sol",
+  "memory_during_capture": {
+    "enabled": false,
+    "include_other_conversation_context": false
+  },
+  "memory_to_restore": {
+    "enabled": true,
+    "scope": "both",
+    "include_other_conversation_context": true,
+    "instructions": null
+  },
+  "prompt_sha256": "a500df80088d70f8fd8c07ecfab1897c40be2c06159a9aeb74761ac6196b7164",
+  "method": "Two fresh web conversations, one identical prompt per conversation, UI text capture",
+  "limits": [
+    "Model attribution by configuration only, not provider attestation",
+    "Shared agent instructions and workspace remain; no answer key supplied in user prompt",
+    "Rendered text capture does not attest backend raw response bytes"
+  ],
+  "result": "PASS_CANONICAL_TUPLES_NOT_RAW_BYTE_CERTIFICATION",
+  "conversations": {
+    "A": "6aca6d755515b464a5c3306f",
+    "B": "6aca6db8e6cab0872180587c"
+  },
+  "submission_actions": "6542 characters typed in each composer; Enter then Send clicked in each",
+  "capture_A_observations": {
+    "final_response": "JSON array only in rendered transcript",
+    "tool_activity": "UI displayed Ran a skill before final answer; not a tool-free test",
+    "canonical_hash": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d"
+  },
+  "completed_at": "2026-10-10T16:59:41.431826+00:00",
+  "memory_restored_verified": true,
+  "model_after": "gpt_6_sol",
+  "capture_B_observations": {
+    "final_response": "Complete JSON array in rendered transcript",
+    "tool_activity": "UI displayed Ran a skill"
+  }
+}

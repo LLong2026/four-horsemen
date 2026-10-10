@@ -1,0 +1,10 @@
+{
+ "receipt_type": "PENTA-CL leg 1/5",
+ "engine": "claude_opus_5_5 (platform pin, settings read-back confirmed before run)",
+ "run_at": "2026-10-10T16:41Z",
+ "phase_ac": "13/13 byte-identical to registered 9337c4fc7785b91d6a2ffcb00bb72a66bef37141308515d69c715278f0d2df3e (public harness, unmodified)",
+ "phase_b": {"submissions": 2, "tuple_hash_both": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d", "matches_registered": true, "near_miss_rejected": "6/6 per submission", "tie_break": "lowest-record-id rule-exact 6/6"},
+ "falsifiers": {"P1": "pass", "P2": "pass", "P3": "pass", "P4": "pass", "P5": "pass", "P6": "pass"},
+ "result": "CONVERGED",
+ "disclosures": ["Same long-lived ops conversation as SDR-CL1 (context doctrine); the registered expectation is visible in this workspace, so platform legs test rule-application under pin, not blind recall. Disclosed, not hidden.", "Both submissions emitted within one pinned turn (CL1 pattern), not two fresh chats."]
+}

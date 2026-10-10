@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-10T16:47:30.715000+00:00",
+  "prompt_sha256": "a500df80088d70f8fd8c07ecfab1897c40be2c06159a9aeb74761ac6196b7164",
+  "method": "Two distinct sub-agent conversations, same frozen prompt, explicitly forbidden access to answer keys or sibling outputs.",
+  "model_attribution": "Worker model unspecified and not attested. Not a Sol-certified leg.",
+  "deviation": "Workers read prompt file and save response using tools; standalone no-tool protocol not established.",
+  "result": "awaiting worker captures",
+  "group_id": "19669aa6-e21b-4dfa-acdc-7fc8ee573606",
+  "task_ids": {
+    "A": "b0075286-d822-48c6-b7b2-17eb850808d6",
+    "B": "0e6af1fc-a6e5-4c55-9b44-49c93054ccda"
+  }
+}

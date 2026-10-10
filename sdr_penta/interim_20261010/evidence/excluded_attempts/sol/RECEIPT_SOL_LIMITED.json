@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-10T16:45:44.924868+00:00",
+  "configured_model": "gpt_6_sol",
+  "attribution": "Settings confirmed configuration only; no independent per-generation backend attestation.",
+  "phase_ac": {
+    "registered_matches": 13,
+    "total": 13,
+    "model_independent": true
+  },
+  "phase_b": {
+    "captured_assistant_candidates": 1,
+    "candidate_hash": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+    "matches_expected": true,
+    "independent_second_submission": false,
+    "blind": false,
+    "protocol_test": "not established by a file write inside a broader tool-using turn"
+  },
+  "result": "INCOMPLETE_MODEL_REPLAY",
+  "limitation": "One assistant-authored candidate, not two independent model requests. No P2/P5 or whole-leg pass asserted."
+}

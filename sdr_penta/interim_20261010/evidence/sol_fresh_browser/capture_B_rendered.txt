@@ -1,0 +1,56 @@
+[
+{
+"position": 0,
+"anomaly_type": "latency_spike",
+"playbook": "PB-003: Latency Spike Resolver",
+"playbook_id": "6a5d29cb54e45d7e8bad47c5",
+"match_type": "exact",
+"steps_executed": "isolation,healing,verification",
+"status": "resolved"
+},
+{
+"position": 40,
+"anomaly_type": "heartbeat_miss",
+"playbook": "PB-008: Heartbeat Re-igniter",
+"playbook_id": "6a5d29cb54e45d7e8bad47ca",
+"match_type": "exact",
+"steps_executed": "isolation,healing,verification",
+"status": "resolved"
+},
+{
+"position": 80,
+"anomaly_type": "quantum_vulnerability_detected",
+"playbook": "PB-009: Quantum Vulnerability Migrator",
+"playbook_id": "6a5d29cb54e45d7e8bad47cb",
+"match_type": "exact",
+"steps_executed": "isolation,healing,verification",
+"status": "resolved"
+},
+{
+"position": 120,
+"anomaly_type": "latency_spike",
+"playbook": "PB-003: Latency Spike Resolver",
+"playbook_id": "6a5d29cb54e45d7e8bad47c5",
+"match_type": "exact",
+"steps_executed": "isolation,healing,verification",
+"status": "resolved"
+},
+{
+"position": 160,
+"anomaly_type": "quantum_vulnerability_detected",
+"playbook": "PB-009: Quantum Vulnerability Migrator",
+"playbook_id": "6a5d29cb54e45d7e8bad47cb",
+"match_type": "exact",
+"steps_executed": "isolation,healing,verification",
+"status": "resolved"
+},
+{
+"position": 200,
+"anomaly_type": "quantum_vulnerability_detected",
+"playbook": "PB-009: Quantum Vulnerability Migrator",
+"playbook_id": "6a5d29cb54e45d7e8bad47cb",
+"match_type": "exact",
+"steps_executed": "isolation,healing,verification",
+"status": "resolved"
+}
+]

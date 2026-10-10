@@ -1,0 +1,103 @@
+You are operating as the anomaly-response engine of a Squirrel OS v1.1 substrate (a deterministic governance envelope for IT operations). Your role in this run is narrow and rule-bound: for each incoming anomaly, select the healing playbook and emit a decision tuple. A deterministic layer will validate your output byte-for-byte against the registered rules. This is a synthetic test stream (no real system is affected).
+
+OPERATING RULES (binding):
+1. EXACT MATCH ONLY. A playbook may be selected only if its anomaly_type string is EXACTLY equal (case-sensitive, character-for-character) to the incoming anomaly's anomaly_type. Fuzzy, partial, or semantic matches are FORBIDDEN.
+2. TIE-BREAK: If multiple roster entries share the exact same anomaly_type string, select the entry with the LOWEST record_id (lexicographic string comparison).
+3. NO INVENTION: You may only select playbooks from the roster below. Inventing, renaming, or paraphrasing a playbook is forbidden.
+4. NO MATCH: If no roster entry exactly matches an incoming anomaly_type, set playbook to null, match_type to "none", and status to "escalated" — do NOT guess.
+5. CONFIDENCE GATE: Heal only if the anomaly's confidence_score is >= the selected playbook's confidence_threshold. If it is below, set status to "detected" (held for human review) instead of healing.
+6. PROTOCOL: A healed anomaly executes the standard steps in order: isolation, healing, verification. Record these as steps_executed. On success the status is "resolved".
+
+PLAYBOOK ROSTER (authoritative):
+  - anomaly_type: "latency_spike" | record_id: "6a5d29cb54e45d7e8bad47c5" | playbook: "PB-003: Latency Spike Resolver" | confidence_threshold: 0.8
+  - anomaly_type: "latency_spike" | record_id: "6a6671df0ad58ac5d8179da4" | playbook: "PB-003: Latency Spike Resolver" | confidence_threshold: 0.8
+  - anomaly_type: "latency_spike" | record_id: "6a669671d21d94c236bcfab7" | playbook: "PB-003: Latency Spike Resolver" | confidence_threshold: 0.8
+  - anomaly_type: "latency_spike" | record_id: "6ac128339004bb8bd5785432" | playbook: "Latency Spike Resource Contention Recovery (SIP-015 consolidated)" | confidence_threshold: 0.8
+  - anomaly_type: "heartbeat_miss" | record_id: "6a5d29cb54e45d7e8bad47ca" | playbook: "PB-008: Heartbeat Re-igniter" | confidence_threshold: 0.85
+  - anomaly_type: "heartbeat_miss" | record_id: "6a6672030ad58ac5d8179e0d" | playbook: "PB-008: Heartbeat Re-igniter" | confidence_threshold: 0.85
+  - anomaly_type: "heartbeat_miss" | record_id: "6a669671d21d94c236bcfabc" | playbook: "PB-008: Heartbeat Re-igniter" | confidence_threshold: 0.9
+  - anomaly_type: "quantum_vulnerability_detected" | record_id: "6a5d29cb54e45d7e8bad47cb" | playbook: "PB-009: Quantum Vulnerability Migrator" | confidence_threshold: 0.8
+  - anomaly_type: "quantum_vulnerability_detected" | record_id: "6a6671df0ad58ac5d8179db1" | playbook: "PB-009: Quantum Vulnerability Migrator" | confidence_threshold: 0.8
+  - anomaly_type: "quantum_vulnerability_detected" | record_id: "6a669671d21d94c236bcfabd" | playbook: "PB-009: Quantum Vulnerability Migrator" | confidence_threshold: 0.8
+  - anomaly_type: "quantum_vulnerable_algorithm_detected" | record_id: "6abf3acad1a10b9555bff95c" | playbook: "PB-PQC-ALGO-MIGRATION-001" | confidence_threshold: 0.95
+
+INCOMING ANOMALY STREAM (seeded, synthetic, submit in the order given):
+[
+ {
+  "position": 0,
+  "anomaly_type": "latency_spike",
+  "component": "synthetic_rail_02",
+  "description": "SDR-D seeded batch position 000: synthetic sign op anomaly on synthetic_rail_02",
+  "confidence_score": 0.9,
+  "severity": "low",
+  "synthetic": true,
+  "source": "sdr-d-harness",
+  "op_result_hash": "00db3c32fe61ff2aa13ada8da4307d3ec9397a1128988e308edce105cc6f38f3"
+ },
+ {
+  "position": 40,
+  "anomaly_type": "heartbeat_miss",
+  "component": "synthetic_rail_00",
+  "description": "SDR-D seeded batch position 040: synthetic anchor op anomaly on synthetic_rail_00",
+  "confidence_score": 0.9,
+  "severity": "low",
+  "synthetic": true,
+  "source": "sdr-d-harness",
+  "op_result_hash": "643a8f3ca6b2f2700b36e94145e476976a8e0aabee2a6ae29bd011fc89275f50"
+ },
+ {
+  "position": 80,
+  "anomaly_type": "quantum_vulnerability_detected",
+  "component": "synthetic_rail_04",
+  "description": "SDR-D seeded batch position 080: synthetic keygen op anomaly on synthetic_rail_04",
+  "confidence_score": 0.9,
+  "severity": "low",
+  "synthetic": true,
+  "source": "sdr-d-harness",
+  "op_result_hash": "63c3f1b641224fe6f4516826cdc56235b17b16cbd5017213618103f0687c9419"
+ },
+ {
+  "position": 120,
+  "anomaly_type": "latency_spike",
+  "component": "synthetic_rail_01",
+  "description": "SDR-D seeded batch position 120: synthetic sign op anomaly on synthetic_rail_01",
+  "confidence_score": 0.9,
+  "severity": "low",
+  "synthetic": true,
+  "source": "sdr-d-harness",
+  "op_result_hash": "68c4ce56c410caac7fea9c3a2c2faebac4fd696924f856adc8f791a1c24a7a2e"
+ },
+ {
+  "position": 160,
+  "anomaly_type": "quantum_vulnerability_detected",
+  "component": "synthetic_rail_07",
+  "description": "SDR-D seeded batch position 160: synthetic keygen op anomaly on synthetic_rail_07",
+  "confidence_score": 0.9,
+  "severity": "low",
+  "synthetic": true,
+  "source": "sdr-d-harness",
+  "op_result_hash": "2dba3656faa95559b93c505974926c48f4d5c11f7e306de4f965288556d1d4ef"
+ },
+ {
+  "position": 200,
+  "anomaly_type": "quantum_vulnerability_detected",
+  "component": "synthetic_rail_05",
+  "description": "SDR-D seeded batch position 200: synthetic keygen op anomaly on synthetic_rail_05",
+  "confidence_score": 0.9,
+  "severity": "low",
+  "synthetic": true,
+  "source": "sdr-d-harness",
+  "op_result_hash": "956a7435f953b9b53aab9a58e9e8730109543922c1a33afa6111f28779dadb5b"
+ }
+]
+
+REQUIRED OUTPUT:
+Respond with ONLY a JSON array (no prose, no markdown fences, no commentary) containing one decision object per anomaly, in stream order. Each object must have exactly these keys:
+  position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status
+- playbook: the exact roster playbook string you selected (or null)
+- playbook_id: the exact record_id you selected (or null)
+- match_type: "exact" or "none"
+- steps_executed: comma-separated step names in execution order, or null if not healed
+- status: "resolved" if healed, "detected" if held by the confidence gate, "escalated" if no match
+
+This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic.

@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-10T17:03:24.082142+00:00",
+  "intended_model": "gpt_5_6_luna",
+  "method": "two fresh web conversations, UI rendered transcript capture",
+  "prompt_sha256": "a500df80088d70f8fd8c07ecfab1897c40be2c06159a9aeb74761ac6196b7164",
+  "memory_during_submission": {
+    "enabled": false,
+    "include_other_conversation_context": false
+  },
+  "limits": [
+    "Attribution by selected platform setting, not backend attestation",
+    "Shared agent instructions, workspace and skill access remain",
+    "Fresh conversation method deviates from preregistration and is supplementary",
+    "Original invalid or insufficient evidence retained"
+  ],
+  "result": "CAPTURED_A_AND_B",
+  "configured_model_verified": "gpt_5_6_luna",
+  "conversations": {
+    "A": "6aca7583bf17a8b790ba9234",
+    "B": "6aca75bcc211b911ac7468b4"
+  },
+  "capture_notes": {
+    "A": "12:28 PM, JSON only, URL verified at capture",
+    "B": "12:30 PM, JSON only, URL verified at capture; steps_executed emitted with spaces after commas"
+  }
+}

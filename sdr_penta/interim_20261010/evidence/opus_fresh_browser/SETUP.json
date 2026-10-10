@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-10T17:03:24.081897+00:00",
+  "intended_model": "claude_opus_5_5",
+  "method": "two fresh web conversations, UI rendered transcript capture",
+  "prompt_sha256": "a500df80088d70f8fd8c07ecfab1897c40be2c06159a9aeb74761ac6196b7164",
+  "memory_during_submission": {
+    "enabled": false,
+    "include_other_conversation_context": false
+  },
+  "limits": [
+    "Attribution by selected platform setting, not backend attestation",
+    "Shared agent instructions, workspace and skill access remain",
+    "Fresh conversation method deviates from preregistration and is supplementary",
+    "Original invalid or insufficient evidence retained"
+  ],
+  "result": "CAPTURED_A_AND_B",
+  "configured_model_verified": "claude_opus_5_5",
+  "conversations": {
+    "A": "6aca6fe3914393006663f563",
+    "B": "6aca701b9f4f440cc2a675cd"
+  },
+  "submission_actions": {
+    "A": "6542 chars, Enter then Send",
+    "B": "6542 chars, Send only"
+  },
+  "capture_notes": {
+    "A": "rendered text, 12:04 PM, JSON only, no tool activity shown",
+    "B": "rendered text from conversation 6aca701b, 12:05 PM, JSON only; content identical to A",
+    "caveat": "A transcript selected via sidebar; URL attribution for A inferred from timestamp ordering"
+  }
+}

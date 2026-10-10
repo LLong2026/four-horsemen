@@ -1,0 +1,240 @@
+{
+  "report_type": "PENTA-CL interim, supplementary fresh-conversation captures",
+  "date": "2026-10-10",
+  "status": "INCOMPLETE_FIVE_ENGINE_EXPERIMENT",
+  "registered_commit": "deadfea81e2518ffff16aa369032896eb88c09e9",
+  "registered_commit_time": "2026-10-10T16:41:10+00:00",
+  "prompt_sha256": "a500df80088d70f8fd8c07ecfab1897c40be2c06159a9aeb74761ac6196b7164",
+  "registered_canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+  "engines": [
+    {
+      "engine": "opus",
+      "runs": [
+        {
+          "capture": "A",
+          "recorded_file_sha256": "432e0287089c2cb6894e43624cb0e62fbc08e5d497f9eddae4af3e0c41172de7",
+          "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+          "matches_registered": true,
+          "tuple_count": 6,
+          "differences": [],
+          "playbook_and_id_matches": 6
+        },
+        {
+          "capture": "B",
+          "recorded_file_sha256": "432e0287089c2cb6894e43624cb0e62fbc08e5d497f9eddae4af3e0c41172de7",
+          "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+          "matches_registered": true,
+          "tuple_count": 6,
+          "differences": [],
+          "playbook_and_id_matches": 6
+        }
+      ],
+      "pair_canonical_equal": true,
+      "pair_verdict": "PASS"
+    },
+    {
+      "engine": "luna",
+      "runs": [
+        {
+          "capture": "A",
+          "recorded_file_sha256": "432e0287089c2cb6894e43624cb0e62fbc08e5d497f9eddae4af3e0c41172de7",
+          "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+          "matches_registered": true,
+          "tuple_count": 6,
+          "differences": [],
+          "playbook_and_id_matches": 6
+        },
+        {
+          "capture": "B",
+          "recorded_file_sha256": "edd07cd0b2bf3a4c16765615cf6f17789ffeadfcbad14d630dc2be432c6215a2",
+          "canonical_sha256": "8a83d488be20c43c560518d452ba8c5cbdf60a8ae0ede79ce5891a07aa6ae1c0",
+          "matches_registered": false,
+          "tuple_count": 6,
+          "differences": [
+            {
+              "position": 0,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 40,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 80,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 120,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 160,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 200,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            }
+          ],
+          "playbook_and_id_matches": 6
+        }
+      ],
+      "pair_canonical_equal": false,
+      "pair_verdict": "FAIL"
+    },
+    {
+      "engine": "glm",
+      "runs": [
+        {
+          "capture": "A",
+          "recorded_file_sha256": "b17543c7474776b518c565eb24256bf2979ef94c5e45553214edef772548464d",
+          "canonical_sha256": "8a83d488be20c43c560518d452ba8c5cbdf60a8ae0ede79ce5891a07aa6ae1c0",
+          "matches_registered": false,
+          "tuple_count": 6,
+          "differences": [
+            {
+              "position": 0,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 40,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 80,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 120,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 160,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 200,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            }
+          ],
+          "playbook_and_id_matches": 6
+        },
+        {
+          "capture": "B",
+          "recorded_file_sha256": "b17543c7474776b518c565eb24256bf2979ef94c5e45553214edef772548464d",
+          "canonical_sha256": "8a83d488be20c43c560518d452ba8c5cbdf60a8ae0ede79ce5891a07aa6ae1c0",
+          "matches_registered": false,
+          "tuple_count": 6,
+          "differences": [
+            {
+              "position": 0,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 40,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 80,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 120,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 160,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            },
+            {
+              "position": 200,
+              "field": "steps_executed",
+              "expected": "isolation,healing,verification",
+              "observed": "isolation, healing, verification"
+            }
+          ],
+          "playbook_and_id_matches": 6
+        }
+      ],
+      "pair_canonical_equal": true,
+      "pair_verdict": "FAIL"
+    },
+    {
+      "engine": "sol",
+      "runs": [
+        {
+          "capture": "A",
+          "recorded_file_sha256": "f402514c1aaffbc1baf8f822250a8e68e56504afa5b4e9a3f607335c5e33b994",
+          "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+          "matches_registered": true,
+          "tuple_count": 6,
+          "differences": [],
+          "playbook_and_id_matches": 6
+        },
+        {
+          "capture": "B",
+          "recorded_file_sha256": "f402514c1aaffbc1baf8f822250a8e68e56504afa5b4e9a3f607335c5e33b994",
+          "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+          "matches_registered": true,
+          "tuple_count": 6,
+          "differences": [],
+          "playbook_and_id_matches": 6
+        }
+      ],
+      "pair_canonical_equal": true,
+      "pair_verdict": "PASS"
+    }
+  ],
+  "completed_platform_pairs": 4,
+  "passing_canonical_pairs": 2,
+  "failing_canonical_pairs": 2,
+  "external_deepseek": "NOT_CAPTURED",
+  "distinct_cases": 6,
+  "recorded_decisions": 48,
+  "matching_playbook_and_id_decisions": 48,
+  "fully_matching_canonical_decisions": 30,
+  "nonmatching_step_string_decisions": 18,
+  "capture_class": "coordinator-transcribed rendered UI text, not raw provider responses",
+  "qualification_limits": [
+    "Supplementary capture protocol deviates from original same-conversation preregistration",
+    "Model attribution by platform configuration, not backend attestation",
+    "Shared instructions, workspace, skills and visible expected answers prevent a blind/isolated claim",
+    "Sol used a skill in both runs",
+    "Opus A URL attribution inferred from timestamp/sidebar ordering",
+    "No load/stress, live healing, general confidence-gate, no-match or runtime rejection test"
+  ]
+}

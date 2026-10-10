@@ -1,0 +1,42 @@
+======================================================================
+ SDR-PENTA Fresh Browser Legs Verifier (verify_fresh_legs.py)
+ Prereg canonical hash: 3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d
+ Stream positions expected: 0-based [0, 40, 80, 120, 160, 200]
+ Exact Key Ordering: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status
+======================================================================
+
+Engine: OPUS   -> [PASS] PASS
+  Directory: opus_fresh_browser
+  Capture A: Strict JSON=True, Key Order=True, Positions=True, Hash Match=True
+             SHA256: 3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d
+  Capture B: Strict JSON=True, Key Order=True, Positions=True, Hash Match=True
+             SHA256: 3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d
+
+Engine: LUNA   -> [FAIL] FAIL
+  Directory: luna_fresh_browser
+  Capture A: Strict JSON=True, Key Order=True, Positions=True, Hash Match=True
+             SHA256: 3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d
+  Capture B: Strict JSON=True, Key Order=True, Positions=True, Hash Match=False
+             SHA256: 8a83d488be20c43c560518d452ba8c5cbdf60a8ae0ede79ce5891a07aa6ae1c0
+
+Engine: GLM    -> [FAIL] FAIL
+  Directory: glm_fresh_browser
+  Capture A: Strict JSON=True, Key Order=True, Positions=True, Hash Match=False
+             SHA256: 8a83d488be20c43c560518d452ba8c5cbdf60a8ae0ede79ce5891a07aa6ae1c0
+  Capture B: Strict JSON=True, Key Order=True, Positions=True, Hash Match=False
+             SHA256: 8a83d488be20c43c560518d452ba8c5cbdf60a8ae0ede79ce5891a07aa6ae1c0
+
+Engine: SOL    -> [PASS] PASS
+  Directory: sol_fresh_browser
+  Capture A: Strict JSON=True, Key Order=True, Positions=True, Hash Match=True
+             SHA256: 3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d
+  Capture B: Strict JSON=True, Key Order=True, Positions=True, Hash Match=True
+             SHA256: 3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d
+
+----------------------------------------------------------------------
+SUMMARY: 2 Passed, 0 Incomplete/Missing (out of 4 target platform engines)
+NOTE ON PREREGISTRATION & CLAIM DISCIPLINE:
+  - Preregistration specifies 5 engines (Opus 5.5, GPT-5.6 Luna, GPT-6.1 Sol, GLM 5.2, DeepSeek external).
+  - Preregistration specifies FIVE ENGINES, not five new vendors.
+  - No completion claim before DeepSeek (the 5th engine) is captured & verified.
+======================================================================
