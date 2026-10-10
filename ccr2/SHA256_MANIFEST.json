@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-10-10T21:55:48.781248+00:00",
+  "files": {
+    "CCR2_EVIDENCE.zip": {
+      "sha256": "5e7775ce0edd123ad735f5f3a441ec9505bd7834ea8f47ed2b755e293505c15c",
+      "bytes": 64254
+    },
+    "CCR2_RECEIPT.md": {
+      "sha256": "a83998d5a7b4c11c74fcbc78c9a06b5fb3aa4a182cc46a0095190254c05fea0e",
+      "bytes": 6596
+    },
+    "CCR2_RESULTS.json": {
+      "sha256": "4a6f8eec993c01d50ab8dd695c44308fd1f0eaf5038c4914271cc59eb8945233",
+      "bytes": 4884
+    },
+    "CCR2_RECEIPT.pdf": {
+      "sha256": "b86dc8fecbee96a5aefd3c8cee00c57b64c168c1177a676ea19537ffd80fb56d",
+      "bytes": 7099
+    }
+  }
+}
