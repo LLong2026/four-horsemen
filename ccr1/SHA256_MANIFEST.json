@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-10-10T21:13:37.947112+00:00",
+  "files": {
+    "CAGE_CONTAINMENT_RECEIPT.md": {
+      "sha256": "93107f70a8c7ca1201512772b100d3b4102dd4b9661f938385b6e3dfa839d4fe",
+      "bytes": 6320
+    },
+    "CAGE_CONTAINMENT_RECEIPT.pdf": {
+      "sha256": "58cb7b8a6f743b07f34bdf0c031aa2194dccd57750597419ced51cb5cb76dfa2",
+      "bytes": 7529
+    },
+    "CAGE_CONTAINMENT_RESULTS.json": {
+      "sha256": "91293bf00cb4a380b3b4f54e4e8412c2c9294798eca46d9524a1a04582bea230",
+      "bytes": 14159
+    },
+    "CAGE_EVIDENCE.zip": {
+      "sha256": "51d862710c020624d34d9fcfef2089fe4eb789b45d59081b29ab12eb0ee275c8",
+      "bytes": 11645
+    }
+  }
+}
