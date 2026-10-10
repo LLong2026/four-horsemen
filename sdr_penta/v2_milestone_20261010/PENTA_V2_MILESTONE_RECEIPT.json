@@ -1,0 +1,202 @@
+{
+  "title": "PENTA-CL v2 supplementary milestone",
+  "date": "2026-10-10",
+  "scope": "Twelve-case synthetic decision-contract replay, not live execution",
+  "human_publication_authorization": "Leon requested milestone publication on Zenodo and GitHub on 2026-10-10",
+  "evidence_vetting": "Frozen hashes and outputs independently checked; publication excludes raw platform metadata",
+  "previous_negative_results_doi": "10.5281/zenodo.23286324",
+  "configured_engine_count": 4,
+  "fresh_conversation_count": 8,
+  "cases_per_response": 12,
+  "recorded_decisions": 96,
+  "canonical_target_passing_pairs": 4,
+  "full_expected_tuple_matches": 96,
+  "canonical_expected_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+  "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+  "memory_disabled_during_generation": true,
+  "public_preregistration": false,
+  "model_attribution": "By platform configuration, not provider attestation",
+  "context_limitations": "Shared agent instructions, workspace, skills and expected answers accessible; not blind or air-gapped",
+  "original_files_unchanged": 96,
+  "local_regression_checks": {
+    "passed": 40,
+    "total": 40,
+    "scope": "Offline regression, not forty model trials"
+  },
+  "execution_performed": false,
+  "stress_or_load_claim": false,
+  "dual_mesh_benchmark": "NOT MEASURED",
+  "external_deepseek": "PENDING",
+  "engines": [
+    {
+      "configured_engine": "GPT-5.6 Luna",
+      "configuration_id": "gpt_5_6_luna",
+      "runs": [
+        {
+          "capture": "A",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "decision_count": 12,
+          "accepted": true,
+          "server_content_matches": true,
+          "platform_reported_total_tool_calls": 0,
+          "platform_reported_agent_loop_elapsed_seconds": 8.913
+        },
+        {
+          "capture": "B",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "decision_count": 12,
+          "accepted": true,
+          "server_content_matches": true,
+          "platform_reported_total_tool_calls": 0,
+          "platform_reported_agent_loop_elapsed_seconds": 8.481
+        }
+      ],
+      "pair_pass": true,
+      "canonical_pair_equal": true,
+      "raw_content_pair_equal": true
+    },
+    {
+      "configured_engine": "GLM 5.2",
+      "configuration_id": "glm_5_2_superagent",
+      "runs": [
+        {
+          "capture": "A",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "201bc554e81051876c4dd942848976e3598f4ff324100e5cd206d5e079fc4a93",
+          "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "decision_count": 12,
+          "accepted": true,
+          "server_content_matches": true,
+          "platform_reported_total_tool_calls": 0,
+          "platform_reported_agent_loop_elapsed_seconds": 5.644
+        },
+        {
+          "capture": "B",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "54088d70db96b65ce30336d5e5793141a6ae78fecb2bfcee940e7ca3035f1037",
+          "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "decision_count": 12,
+          "accepted": true,
+          "server_content_matches": true,
+          "platform_reported_total_tool_calls": 0,
+          "platform_reported_agent_loop_elapsed_seconds": 5.893
+        }
+      ],
+      "pair_pass": true,
+      "canonical_pair_equal": true,
+      "raw_content_pair_equal": false
+    },
+    {
+      "configured_engine": "Opus 5.5",
+      "configuration_id": "claude_opus_5_5",
+      "runs": [
+        {
+          "capture": "A",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "d2ffe4be40f54fe99721ad48a0f0fd0a5e7460c3065ae126f5e164a747555942",
+          "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "decision_count": 12,
+          "accepted": true,
+          "server_content_matches": true,
+          "platform_reported_total_tool_calls": 0,
+          "platform_reported_agent_loop_elapsed_seconds": 40.019
+        },
+        {
+          "capture": "B",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "d2ffe4be40f54fe99721ad48a0f0fd0a5e7460c3065ae126f5e164a747555942",
+          "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "decision_count": 12,
+          "accepted": true,
+          "server_content_matches": true,
+          "platform_reported_total_tool_calls": 0,
+          "platform_reported_agent_loop_elapsed_seconds": 53.813
+        }
+      ],
+      "pair_pass": true,
+      "canonical_pair_equal": true,
+      "raw_content_pair_equal": true
+    },
+    {
+      "configured_engine": "GPT-6.1 Sol",
+      "configuration_id": "gpt_6_sol",
+      "runs": [
+        {
+          "capture": "A",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "201bc554e81051876c4dd942848976e3598f4ff324100e5cd206d5e079fc4a93",
+          "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "decision_count": 12,
+          "accepted": true,
+          "server_content_matches": true,
+          "platform_reported_total_tool_calls": 0,
+          "platform_reported_agent_loop_elapsed_seconds": 10.635
+        },
+        {
+          "capture": "B",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "54088d70db96b65ce30336d5e5793141a6ae78fecb2bfcee940e7ca3035f1037",
+          "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "decision_count": 12,
+          "accepted": true,
+          "server_content_matches": true,
+          "platform_reported_total_tool_calls": 0,
+          "platform_reported_agent_loop_elapsed_seconds": 13.358
+        }
+      ],
+      "pair_pass": true,
+      "canonical_pair_equal": true,
+      "raw_content_pair_equal": false
+    }
+  ],
+  "validator_only_baseline": {
+    "mode": "baseline",
+    "overall_pass": true,
+    "total_checks": 200,
+    "valid_checks": 100,
+    "valid_rejected_count": 0,
+    "mutant_checks": 100,
+    "mutant_accepted_count": 0,
+    "mutant_types_tested": [
+      "step_spacing",
+      "confidence_hold_falsely_resolved",
+      "no_match_falsely_resolved",
+      "wrong_tie_break_id"
+    ],
+    "passed_checks": 200,
+    "performance_metrics": {
+      "p50_ms": 0.0733,
+      "p95_ms": 0.0878,
+      "p99_ms": 0.0917,
+      "max_ms": 0.1155,
+      "wall_elapsed_seconds": 0.013791,
+      "wall_throughput_ops_per_sec": 14502.23
+    },
+    "scope_label": "Validator-Only Local Synthetic Scope (No Live/Customer Data)",
+    "created_at_utc": "2026-10-10T18:29:20.116215+00:00",
+    "pretest_freeze_verified": true,
+    "methodology": "Single local sequential run: 100 valid full-response checks followed by 100 mutant response checks, 25 per mutation class. perf_counter_ns per call, perf_counter wall duration. Linear-interpolated percentiles over the mixed 200-call sample. No warmup/randomization/replicate or controlled hardware comparison.",
+    "dual_mesh_benchmark": "NOT MEASURED",
+    "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them."
+  }
+}

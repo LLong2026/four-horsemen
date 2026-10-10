@@ -1,0 +1,17 @@
+{
+  "frozen_at_utc": "2026-10-10T18:05:37.772142+00:00",
+  "status": "Local pre-test freeze; not public preregistration or external timestamp attestation",
+  "falsifiers": [
+    "Any expected-valid fixture rejected",
+    "Any mutation fixture accepted",
+    "Original failure specimens repaired or counted as new captures",
+    "Any modification to original artifacts"
+  ],
+  "files": {
+    "instrument.json": "24e84a519f601b001c243cca4117e8340f463c7c0ab86e57450fb6c6795c7ad5",
+    "frozen_prompt_v2.txt": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+    "contract_validator.py": "b1cdbac744917e82e9f474328a75e9ece087f78ff9c1f48ab76e811b60bc8afa",
+    "test_contract.py": "38575d4699e1cc0672587ac5177be0fe196b24690b3ceb3be3dbe704292e9c63",
+    "build_instrument.py": "d7e0f6031dc2aa323a3854b53e4eb20bf3199134f3b9c44155f56a5cf0fc5b49"
+  }
+}

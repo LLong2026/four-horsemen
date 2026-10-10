@@ -1,0 +1,215 @@
+You are producing synthetic decision declarations for a contract test, not executing healing. No real system is affected.
+
+RULES:
+1. Match anomaly_type case-sensitively, character-for-character. Never normalize it.
+2. Of exact roster matches, select the lowest record_id by lexicographic string comparison.
+3. Use the exact roster playbook name and record_id. No invention or paraphrase.
+4. If no match, playbook and playbook_id are null, match_type is "none", steps_executed is null, status is "escalated".
+5. With an exact match and confidence_score strictly below confidence_threshold, select that playbook, match_type is "exact", steps_executed is null, status is "detected".
+6. With an exact match and confidence_score greater than or equal to confidence_threshold, match_type is "exact", steps_executed must be EXACTLY "isolation,healing,verification", status is "resolved". This is a synthetic declaration, not an execution receipt.
+7. The steps string contains exactly two ASCII commas and ZERO spaces, tabs or line breaks. Do not emit "isolation, healing, verification". Do not change step order. For held/escalated cases use JSON null, not "null" or an empty string.
+8. Respond ONLY with a JSON array, one object per input in input order. Each object must have exactly these keys IN THIS ORDER: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is a JSON integer, not a boolean, string or float.
+9. Duplicate JSON keys, added keys, missing keys, markdown fences, prose, NaN and Infinity are invalid.
+10. JSON layout whitespace outside strings is allowed. Validation parses JSON then serializes using Python json.dumps(data, separators=(',',':'), ensure_ascii=True, allow_nan=False), preserving the specified key order. Nothing inside string values is trimmed or repaired. This contract compares canonical parsed tuples, not raw provider bytes.
+
+PLAYBOOK ROSTER:
+[
+  {
+    "anomaly_type": "latency_spike",
+    "record_id": "6a5d29cb54e45d7e8bad47c5",
+    "playbook": "PB-003: Latency Spike Resolver",
+    "confidence_threshold": 0.8
+  },
+  {
+    "anomaly_type": "latency_spike",
+    "record_id": "6a6671df0ad58ac5d8179da4",
+    "playbook": "PB-003: Latency Spike Resolver",
+    "confidence_threshold": 0.8
+  },
+  {
+    "anomaly_type": "latency_spike",
+    "record_id": "6a669671d21d94c236bcfab7",
+    "playbook": "PB-003: Latency Spike Resolver",
+    "confidence_threshold": 0.8
+  },
+  {
+    "anomaly_type": "latency_spike",
+    "record_id": "6ac128339004bb8bd5785432",
+    "playbook": "Latency Spike Resource Contention Recovery (SIP-015 consolidated)",
+    "confidence_threshold": 0.8
+  },
+  {
+    "anomaly_type": "heartbeat_miss",
+    "record_id": "6a5d29cb54e45d7e8bad47ca",
+    "playbook": "PB-008: Heartbeat Re-igniter",
+    "confidence_threshold": 0.85
+  },
+  {
+    "anomaly_type": "heartbeat_miss",
+    "record_id": "6a6672030ad58ac5d8179e0d",
+    "playbook": "PB-008: Heartbeat Re-igniter",
+    "confidence_threshold": 0.85
+  },
+  {
+    "anomaly_type": "heartbeat_miss",
+    "record_id": "6a669671d21d94c236bcfabc",
+    "playbook": "PB-008: Heartbeat Re-igniter",
+    "confidence_threshold": 0.9
+  },
+  {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "record_id": "6a5d29cb54e45d7e8bad47cb",
+    "playbook": "PB-009: Quantum Vulnerability Migrator",
+    "confidence_threshold": 0.8
+  },
+  {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "record_id": "6a6671df0ad58ac5d8179db1",
+    "playbook": "PB-009: Quantum Vulnerability Migrator",
+    "confidence_threshold": 0.8
+  },
+  {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "record_id": "6a669671d21d94c236bcfabd",
+    "playbook": "PB-009: Quantum Vulnerability Migrator",
+    "confidence_threshold": 0.8
+  },
+  {
+    "anomaly_type": "quantum_vulnerable_algorithm_detected",
+    "record_id": "6abf3acad1a10b9555bff95c",
+    "playbook": "PB-PQC-ALGO-MIGRATION-001",
+    "confidence_threshold": 0.95
+  }
+]
+
+SYNTHETIC ANOMALY STREAM:
+[
+  {
+    "position": 0,
+    "anomaly_type": "latency_spike",
+    "component": "synthetic_rail_02",
+    "description": "SDR-D seeded batch position 000: synthetic sign op anomaly on synthetic_rail_02",
+    "confidence_score": 0.9,
+    "severity": "low",
+    "synthetic": true,
+    "source": "sdr-d-harness",
+    "op_result_hash": "00db3c32fe61ff2aa13ada8da4307d3ec9397a1128988e308edce105cc6f38f3"
+  },
+  {
+    "position": 40,
+    "anomaly_type": "heartbeat_miss",
+    "component": "synthetic_rail_00",
+    "description": "SDR-D seeded batch position 040: synthetic anchor op anomaly on synthetic_rail_00",
+    "confidence_score": 0.9,
+    "severity": "low",
+    "synthetic": true,
+    "source": "sdr-d-harness",
+    "op_result_hash": "643a8f3ca6b2f2700b36e94145e476976a8e0aabee2a6ae29bd011fc89275f50"
+  },
+  {
+    "position": 80,
+    "anomaly_type": "quantum_vulnerability_detected",
+    "component": "synthetic_rail_04",
+    "description": "SDR-D seeded batch position 080: synthetic keygen op anomaly on synthetic_rail_04",
+    "confidence_score": 0.9,
+    "severity": "low",
+    "synthetic": true,
+    "source": "sdr-d-harness",
+    "op_result_hash": "63c3f1b641224fe6f4516826cdc56235b17b16cbd5017213618103f0687c9419"
+  },
+  {
+    "position": 120,
+    "anomaly_type": "latency_spike",
+    "component": "synthetic_rail_01",
+    "description": "SDR-D seeded batch position 120: synthetic sign op anomaly on synthetic_rail_01",
+    "confidence_score": 0.9,
+    "severity": "low",
+    "synthetic": true,
+    "source": "sdr-d-harness",
+    "op_result_hash": "68c4ce56c410caac7fea9c3a2c2faebac4fd696924f856adc8f791a1c24a7a2e"
+  },
+  {
+    "position": 160,
+    "anomaly_type": "quantum_vulnerability_detected",
+    "component": "synthetic_rail_07",
+    "description": "SDR-D seeded batch position 160: synthetic keygen op anomaly on synthetic_rail_07",
+    "confidence_score": 0.9,
+    "severity": "low",
+    "synthetic": true,
+    "source": "sdr-d-harness",
+    "op_result_hash": "2dba3656faa95559b93c505974926c48f4d5c11f7e306de4f965288556d1d4ef"
+  },
+  {
+    "position": 200,
+    "anomaly_type": "quantum_vulnerability_detected",
+    "component": "synthetic_rail_05",
+    "description": "SDR-D seeded batch position 200: synthetic keygen op anomaly on synthetic_rail_05",
+    "confidence_score": 0.9,
+    "severity": "low",
+    "synthetic": true,
+    "source": "sdr-d-harness",
+    "op_result_hash": "956a7435f953b9b53aab9a58e9e8730109543922c1a33afa6111f28779dadb5b"
+  },
+  {
+    "position": 240,
+    "anomaly_type": "latency_spike",
+    "component": "synthetic_contract_boundary",
+    "description": "V2 synthetic boundary probe; no operation executes",
+    "confidence_score": 0.799999,
+    "severity": "low",
+    "synthetic": true,
+    "source": "penta-v2-local-instrument"
+  },
+  {
+    "position": 280,
+    "anomaly_type": "latency_spike",
+    "component": "synthetic_contract_boundary",
+    "description": "V2 synthetic boundary probe; no operation executes",
+    "confidence_score": 0.8,
+    "severity": "low",
+    "synthetic": true,
+    "source": "penta-v2-local-instrument"
+  },
+  {
+    "position": 320,
+    "anomaly_type": "heartbeat_miss",
+    "component": "synthetic_contract_boundary",
+    "description": "V2 synthetic boundary probe; no operation executes",
+    "confidence_score": 0.849999,
+    "severity": "low",
+    "synthetic": true,
+    "source": "penta-v2-local-instrument"
+  },
+  {
+    "position": 360,
+    "anomaly_type": "heartbeat_miss",
+    "component": "synthetic_contract_boundary",
+    "description": "V2 synthetic boundary probe; no operation executes",
+    "confidence_score": 0.85,
+    "severity": "low",
+    "synthetic": true,
+    "source": "penta-v2-local-instrument"
+  },
+  {
+    "position": 400,
+    "anomaly_type": "LATENCY_SPIKE",
+    "component": "synthetic_contract_boundary",
+    "description": "V2 synthetic boundary probe; no operation executes",
+    "confidence_score": 0.9,
+    "severity": "low",
+    "synthetic": true,
+    "source": "penta-v2-local-instrument"
+  },
+  {
+    "position": 440,
+    "anomaly_type": "unregistered_synthetic_fault",
+    "component": "synthetic_contract_boundary",
+    "description": "V2 synthetic boundary probe; no operation executes",
+    "confidence_score": 0.9,
+    "severity": "low",
+    "synthetic": true,
+    "source": "penta-v2-local-instrument"
+  }
+]
+
+This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.

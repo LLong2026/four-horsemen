@@ -1,0 +1,30 @@
+{
+  "mode": "baseline",
+  "overall_pass": true,
+  "total_checks": 200,
+  "valid_checks": 100,
+  "valid_rejected_count": 0,
+  "mutant_checks": 100,
+  "mutant_accepted_count": 0,
+  "mutant_types_tested": [
+    "step_spacing",
+    "confidence_hold_falsely_resolved",
+    "no_match_falsely_resolved",
+    "wrong_tie_break_id"
+  ],
+  "passed_checks": 200,
+  "performance_metrics": {
+    "p50_ms": 0.0733,
+    "p95_ms": 0.0878,
+    "p99_ms": 0.0917,
+    "max_ms": 0.1155,
+    "wall_elapsed_seconds": 0.013791,
+    "wall_throughput_ops_per_sec": 14502.23
+  },
+  "scope_label": "Validator-Only Local Synthetic Scope (No Live/Customer Data)",
+  "created_at_utc": "2026-10-10T18:29:20.116215+00:00",
+  "pretest_freeze_verified": true,
+  "methodology": "Single local sequential run: 100 valid full-response checks followed by 100 mutant response checks, 25 per mutation class. perf_counter_ns per call, perf_counter wall duration. Linear-interpolated percentiles over the mixed 200-call sample. No warmup/randomization/replicate or controlled hardware comparison.",
+  "dual_mesh_benchmark": "NOT MEASURED",
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them."
+}

@@ -1,0 +1,26 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "PENTA_V2_MILESTONE_RECEIPT.json": "33ce5509d9df0be4c7a431339731361c8bac2e97b2179b4c00446b99e5309589",
+    "PENTA_V2_MILESTONE_REPORT.md": "195495d7f4a66d84ee164c47ca0a1e63d3c68a75ca4e6e3ee406a870e5de6dc4",
+    "PENTA_V2_MILESTONE_REPORT.pdf": "de0f977028c03b2d96e25784b928931989ea6950d2f2dbc2bf9aed87c4151bdc",
+    "PENTA_V2_SYNTHETIC_EVIDENCE.zip": "5ae32e11684f49045504f1638f6db999331933b5ba840542c8cb4f6bcf788f22",
+    "VALIDATOR_BASELINE_RECEIPT.json": "102107492f513fe09977417931f1a75585768e0177fbe2726bab0c876ce4c698",
+    "evidence/instrument.json": "24e84a519f601b001c243cca4117e8340f463c7c0ab86e57450fb6c6795c7ad5",
+    "evidence/frozen_prompt_v2.txt": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+    "evidence/contract_validator.py": "b1cdbac744917e82e9f474328a75e9ece087f78ff9c1f48ab76e811b60bc8afa",
+    "evidence/expected_v2_tuples.json": "d8c147909a923b5426b75537dde8ce8a769f6003e20843a36889de7f65352b28",
+    "evidence/PRETEST_FREEZE.json": "6b1e4d807ab011b6379db6c1d522e98ffa0f1db30aa0ed6b5664bee4bf2f65d5",
+    "evidence/PUBLIC_FREEZE_SCOPE.json": "28cc860d78b4b2b032752bb9969394882c25f5ac3bb6e2df767bb384e10eea80",
+    "evidence/verify_public_captures.py": "3c3552623489b3fed51ecf471f99b19a056c720ec98fd6a59b8f43fbbb49629c",
+    "evidence/README.md": "79015dfdc415b9ed6b2d97577c9149beb182a8584fe58b2511c295f395d21dab",
+    "evidence/captures/gpt_5_6_luna/capture_A.txt": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+    "evidence/captures/gpt_5_6_luna/capture_B.txt": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+    "evidence/captures/glm_5_2_superagent/capture_A.txt": "201bc554e81051876c4dd942848976e3598f4ff324100e5cd206d5e079fc4a93",
+    "evidence/captures/glm_5_2_superagent/capture_B.txt": "54088d70db96b65ce30336d5e5793141a6ae78fecb2bfcee940e7ca3035f1037",
+    "evidence/captures/claude_opus_5_5/capture_A.txt": "d2ffe4be40f54fe99721ad48a0f0fd0a5e7460c3065ae126f5e164a747555942",
+    "evidence/captures/claude_opus_5_5/capture_B.txt": "d2ffe4be40f54fe99721ad48a0f0fd0a5e7460c3065ae126f5e164a747555942",
+    "evidence/captures/gpt_6_sol/capture_A.txt": "201bc554e81051876c4dd942848976e3598f4ff324100e5cd206d5e079fc4a93",
+    "evidence/captures/gpt_6_sol/capture_B.txt": "54088d70db96b65ce30336d5e5793141a6ae78fecb2bfcee940e7ca3035f1037"
+  }
+}

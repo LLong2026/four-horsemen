@@ -1,0 +1,12 @@
+{
+  "public_original_frozen_files": [
+    "instrument.json",
+    "frozen_prompt_v2.txt",
+    "contract_validator.py"
+  ],
+  "not_in_public_archive": [
+    "test_contract.py",
+    "build_instrument.py"
+  ],
+  "reason": "Public evidence limited to the synthetic instrument, validator, input and exact outputs; local regression source used original archived specimens and is not a model replay."
+}
