@@ -1,0 +1,1802 @@
+[
+  {
+    "instance_id": "BENCH-0000",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1389.72,
+    "cpu": 34.12,
+    "memory": 6.38,
+    "error_count": 22
+  },
+  {
+    "instance_id": "BENCH-0001",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 153.55,
+    "cpu": 2.43,
+    "memory": 85.81,
+    "error_count": 42
+  },
+  {
+    "instance_id": "BENCH-0002",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 872.61,
+    "cpu": 65.56,
+    "memory": 53.0,
+    "error_count": 8
+  },
+  {
+    "instance_id": "BENCH-0003",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3654.05,
+    "cpu": 1.36,
+    "memory": 96.49,
+    "error_count": 15
+  },
+  {
+    "instance_id": "BENCH-0004",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 783.9,
+    "cpu": 88.87,
+    "memory": 70.79,
+    "error_count": 39
+  },
+  {
+    "instance_id": "BENCH-0005",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 69.61,
+    "cpu": 26.23,
+    "memory": 41.95,
+    "error_count": 22
+  },
+  {
+    "instance_id": "BENCH-0006",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 811.17,
+    "cpu": 22.73,
+    "memory": 35.92,
+    "error_count": 6
+  },
+  {
+    "instance_id": "BENCH-0007",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 654.49,
+    "cpu": 45.17,
+    "memory": 97.68,
+    "error_count": 30
+  },
+  {
+    "instance_id": "BENCH-0008",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1367.65,
+    "cpu": 29.27,
+    "memory": 46.4,
+    "error_count": 14
+  },
+  {
+    "instance_id": "BENCH-0009",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 879.18,
+    "cpu": 12.51,
+    "memory": 23.56,
+    "error_count": 39
+  },
+  {
+    "instance_id": "BENCH-0010",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 982.37,
+    "cpu": 86.28,
+    "memory": 18.57,
+    "error_count": 19
+  },
+  {
+    "instance_id": "BENCH-0011",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1063.42,
+    "cpu": 32.71,
+    "memory": 97.87,
+    "error_count": 41
+  },
+  {
+    "instance_id": "BENCH-0012",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2992.82,
+    "cpu": 42.15,
+    "memory": 72.28,
+    "error_count": 16
+  },
+  {
+    "instance_id": "BENCH-0013",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 298.29,
+    "cpu": 35.04,
+    "memory": 8.29,
+    "error_count": 49
+  },
+  {
+    "instance_id": "BENCH-0014",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1260.37,
+    "cpu": 51.47,
+    "memory": 63.1,
+    "error_count": 48
+  },
+  {
+    "instance_id": "BENCH-0015",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2247.11,
+    "cpu": 68.64,
+    "memory": 18.72,
+    "error_count": 29
+  },
+  {
+    "instance_id": "BENCH-0016",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3662.86,
+    "cpu": 83.08,
+    "memory": 40.93,
+    "error_count": 21
+  },
+  {
+    "instance_id": "BENCH-0017",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3067.18,
+    "cpu": 53.24,
+    "memory": 64.63,
+    "error_count": 0
+  },
+  {
+    "instance_id": "BENCH-0018",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3418.39,
+    "cpu": 12.7,
+    "memory": 85.09,
+    "error_count": 21
+  },
+  {
+    "instance_id": "BENCH-0019",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3044.44,
+    "cpu": 2.08,
+    "memory": 40.35,
+    "error_count": 12
+  },
+  {
+    "instance_id": "BENCH-0020",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1203.2,
+    "cpu": 74.58,
+    "memory": 2.52,
+    "error_count": 38
+  },
+  {
+    "instance_id": "BENCH-0021",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1821.98,
+    "cpu": 82.89,
+    "memory": 58.21,
+    "error_count": 48
+  },
+  {
+    "instance_id": "BENCH-0022",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1439.4,
+    "cpu": 97.33,
+    "memory": 11.03,
+    "error_count": 32
+  },
+  {
+    "instance_id": "BENCH-0023",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2905.99,
+    "cpu": 59.1,
+    "memory": 5.66,
+    "error_count": 38
+  },
+  {
+    "instance_id": "BENCH-0024",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2914.3,
+    "cpu": 21.61,
+    "memory": 80.47,
+    "error_count": 19
+  },
+  {
+    "instance_id": "BENCH-0025",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1025.32,
+    "cpu": 93.47,
+    "memory": 65.53,
+    "error_count": 31
+  },
+  {
+    "instance_id": "BENCH-0026",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 124.82,
+    "cpu": 72.51,
+    "memory": 33.07,
+    "error_count": 21
+  },
+  {
+    "instance_id": "BENCH-0027",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2250.31,
+    "cpu": 85.23,
+    "memory": 56.36,
+    "error_count": 26
+  },
+  {
+    "instance_id": "BENCH-0028",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3644.36,
+    "cpu": 13.83,
+    "memory": 76.28,
+    "error_count": 24
+  },
+  {
+    "instance_id": "BENCH-0029",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3249.75,
+    "cpu": 15.8,
+    "memory": 44.98,
+    "error_count": 35
+  },
+  {
+    "instance_id": "BENCH-0030",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2305.72,
+    "cpu": 90.97,
+    "memory": 67.62,
+    "error_count": 34
+  },
+  {
+    "instance_id": "BENCH-0031",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1929.18,
+    "cpu": 50.39,
+    "memory": 98.9,
+    "error_count": 25
+  },
+  {
+    "instance_id": "BENCH-0032",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2018.0,
+    "cpu": 49.7,
+    "memory": 33.63,
+    "error_count": 10
+  },
+  {
+    "instance_id": "BENCH-0033",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1812.53,
+    "cpu": 14.15,
+    "memory": 96.46,
+    "error_count": 34
+  },
+  {
+    "instance_id": "BENCH-0034",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2073.1,
+    "cpu": 86.58,
+    "memory": 24.29,
+    "error_count": 47
+  },
+  {
+    "instance_id": "BENCH-0035",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3473.3,
+    "cpu": 81.18,
+    "memory": 83.8,
+    "error_count": 10
+  },
+  {
+    "instance_id": "BENCH-0036",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2488.96,
+    "cpu": 17.92,
+    "memory": 26.39,
+    "error_count": 35
+  },
+  {
+    "instance_id": "BENCH-0037",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 337.43,
+    "cpu": 97.49,
+    "memory": 18.06,
+    "error_count": 11
+  },
+  {
+    "instance_id": "BENCH-0038",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2283.27,
+    "cpu": 50.08,
+    "memory": 59.58,
+    "error_count": 36
+  },
+  {
+    "instance_id": "BENCH-0039",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2864.37,
+    "cpu": 93.13,
+    "memory": 9.13,
+    "error_count": 2
+  },
+  {
+    "instance_id": "BENCH-0040",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 854.62,
+    "cpu": 76.71,
+    "memory": 84.59,
+    "error_count": 49
+  },
+  {
+    "instance_id": "BENCH-0041",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 69.28,
+    "cpu": 85.17,
+    "memory": 29.86,
+    "error_count": 28
+  },
+  {
+    "instance_id": "BENCH-0042",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2771.61,
+    "cpu": 33.14,
+    "memory": 59.91,
+    "error_count": 45
+  },
+  {
+    "instance_id": "BENCH-0043",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1593.03,
+    "cpu": 9.8,
+    "memory": 59.38,
+    "error_count": 22
+  },
+  {
+    "instance_id": "BENCH-0044",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 967.61,
+    "cpu": 77.24,
+    "memory": 66.5,
+    "error_count": 40
+  },
+  {
+    "instance_id": "BENCH-0045",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1106.21,
+    "cpu": 97.73,
+    "memory": 43.32,
+    "error_count": 32
+  },
+  {
+    "instance_id": "BENCH-0046",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2603.2,
+    "cpu": 70.66,
+    "memory": 26.52,
+    "error_count": 26
+  },
+  {
+    "instance_id": "BENCH-0047",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 785.69,
+    "cpu": 57.59,
+    "memory": 46.74,
+    "error_count": 25
+  },
+  {
+    "instance_id": "BENCH-0048",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 725.54,
+    "cpu": 74.06,
+    "memory": 96.44,
+    "error_count": 19
+  },
+  {
+    "instance_id": "BENCH-0049",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1063.53,
+    "cpu": 38.24,
+    "memory": 77.5,
+    "error_count": 39
+  },
+  {
+    "instance_id": "BENCH-0050",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1155.69,
+    "cpu": 76.24,
+    "memory": 75.53,
+    "error_count": 2
+  },
+  {
+    "instance_id": "BENCH-0051",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1379.31,
+    "cpu": 81.83,
+    "memory": 23.16,
+    "error_count": 31
+  },
+  {
+    "instance_id": "BENCH-0052",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1771.42,
+    "cpu": 63.92,
+    "memory": 85.49,
+    "error_count": 20
+  },
+  {
+    "instance_id": "BENCH-0053",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2427.62,
+    "cpu": 4.44,
+    "memory": 19.17,
+    "error_count": 1
+  },
+  {
+    "instance_id": "BENCH-0054",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3995.13,
+    "cpu": 84.28,
+    "memory": 45.55,
+    "error_count": 0
+  },
+  {
+    "instance_id": "BENCH-0055",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2305.72,
+    "cpu": 9.32,
+    "memory": 71.59,
+    "error_count": 35
+  },
+  {
+    "instance_id": "BENCH-0056",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3048.44,
+    "cpu": 26.07,
+    "memory": 5.74,
+    "error_count": 11
+  },
+  {
+    "instance_id": "BENCH-0057",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3299.43,
+    "cpu": 95.49,
+    "memory": 87.05,
+    "error_count": 8
+  },
+  {
+    "instance_id": "BENCH-0058",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2415.7,
+    "cpu": 98.11,
+    "memory": 51.52,
+    "error_count": 8
+  },
+  {
+    "instance_id": "BENCH-0059",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2725.24,
+    "cpu": 68.98,
+    "memory": 72.07,
+    "error_count": 27
+  },
+  {
+    "instance_id": "BENCH-0060",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1957.26,
+    "cpu": 56.55,
+    "memory": 25.65,
+    "error_count": 22
+  },
+  {
+    "instance_id": "BENCH-0061",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2179.4,
+    "cpu": 7.14,
+    "memory": 32.9,
+    "error_count": 36
+  },
+  {
+    "instance_id": "BENCH-0062",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3526.66,
+    "cpu": 77.26,
+    "memory": 32.17,
+    "error_count": 11
+  },
+  {
+    "instance_id": "BENCH-0063",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3761.95,
+    "cpu": 92.9,
+    "memory": 23.25,
+    "error_count": 0
+  },
+  {
+    "instance_id": "BENCH-0064",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 521.28,
+    "cpu": 94.82,
+    "memory": 52.83,
+    "error_count": 6
+  },
+  {
+    "instance_id": "BENCH-0065",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3695.22,
+    "cpu": 8.13,
+    "memory": 90.52,
+    "error_count": 34
+  },
+  {
+    "instance_id": "BENCH-0066",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1559.78,
+    "cpu": 39.83,
+    "memory": 89.53,
+    "error_count": 49
+  },
+  {
+    "instance_id": "BENCH-0067",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 560.35,
+    "cpu": 40.1,
+    "memory": 59.12,
+    "error_count": 25
+  },
+  {
+    "instance_id": "BENCH-0068",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 321.83,
+    "cpu": 10.25,
+    "memory": 50.02,
+    "error_count": 44
+  },
+  {
+    "instance_id": "BENCH-0069",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1081.48,
+    "cpu": 35.03,
+    "memory": 58.89,
+    "error_count": 28
+  },
+  {
+    "instance_id": "BENCH-0070",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2422.99,
+    "cpu": 73.64,
+    "memory": 8.1,
+    "error_count": 38
+  },
+  {
+    "instance_id": "BENCH-0071",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3258.39,
+    "cpu": 21.06,
+    "memory": 88.54,
+    "error_count": 18
+  },
+  {
+    "instance_id": "BENCH-0072",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 122.42,
+    "cpu": 78.03,
+    "memory": 21.33,
+    "error_count": 38
+  },
+  {
+    "instance_id": "BENCH-0073",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2440.71,
+    "cpu": 27.11,
+    "memory": 85.14,
+    "error_count": 43
+  },
+  {
+    "instance_id": "BENCH-0074",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1560.54,
+    "cpu": 94.71,
+    "memory": 41.09,
+    "error_count": 32
+  },
+  {
+    "instance_id": "BENCH-0075",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1615.48,
+    "cpu": 80.47,
+    "memory": 63.84,
+    "error_count": 39
+  },
+  {
+    "instance_id": "BENCH-0076",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2960.5,
+    "cpu": 90.79,
+    "memory": 91.37,
+    "error_count": 25
+  },
+  {
+    "instance_id": "BENCH-0077",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 831.22,
+    "cpu": 74.25,
+    "memory": 52.38,
+    "error_count": 30
+  },
+  {
+    "instance_id": "BENCH-0078",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 906.85,
+    "cpu": 24.84,
+    "memory": 45.01,
+    "error_count": 30
+  },
+  {
+    "instance_id": "BENCH-0079",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1995.32,
+    "cpu": 42.54,
+    "memory": 89.21,
+    "error_count": 2
+  },
+  {
+    "instance_id": "BENCH-0080",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1083.39,
+    "cpu": 89.1,
+    "memory": 35.47,
+    "error_count": 9
+  },
+  {
+    "instance_id": "BENCH-0081",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2876.59,
+    "cpu": 38.75,
+    "memory": 48.92,
+    "error_count": 1
+  },
+  {
+    "instance_id": "BENCH-0082",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2150.44,
+    "cpu": 28.38,
+    "memory": 2.08,
+    "error_count": 48
+  },
+  {
+    "instance_id": "BENCH-0083",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1417.93,
+    "cpu": 35.67,
+    "memory": 49.18,
+    "error_count": 6
+  },
+  {
+    "instance_id": "BENCH-0084",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3308.38,
+    "cpu": 83.94,
+    "memory": 78.8,
+    "error_count": 36
+  },
+  {
+    "instance_id": "BENCH-0085",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3508.21,
+    "cpu": 29.12,
+    "memory": 46.28,
+    "error_count": 33
+  },
+  {
+    "instance_id": "BENCH-0086",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 614.12,
+    "cpu": 33.26,
+    "memory": 88.16,
+    "error_count": 46
+  },
+  {
+    "instance_id": "BENCH-0087",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3106.72,
+    "cpu": 54.44,
+    "memory": 45.78,
+    "error_count": 0
+  },
+  {
+    "instance_id": "BENCH-0088",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1360.28,
+    "cpu": 31.06,
+    "memory": 81.73,
+    "error_count": 44
+  },
+  {
+    "instance_id": "BENCH-0089",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 47.58,
+    "cpu": 38.58,
+    "memory": 92.26,
+    "error_count": 5
+  },
+  {
+    "instance_id": "BENCH-0090",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1604.65,
+    "cpu": 8.55,
+    "memory": 8.63,
+    "error_count": 20
+  },
+  {
+    "instance_id": "BENCH-0091",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 168.26,
+    "cpu": 94.19,
+    "memory": 61.63,
+    "error_count": 10
+  },
+  {
+    "instance_id": "BENCH-0092",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3771.26,
+    "cpu": 33.99,
+    "memory": 32.61,
+    "error_count": 18
+  },
+  {
+    "instance_id": "BENCH-0093",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2671.69,
+    "cpu": 86.28,
+    "memory": 64.4,
+    "error_count": 38
+  },
+  {
+    "instance_id": "BENCH-0094",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1880.05,
+    "cpu": 62.77,
+    "memory": 4.65,
+    "error_count": 5
+  },
+  {
+    "instance_id": "BENCH-0095",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 184.48,
+    "cpu": 50.78,
+    "memory": 35.61,
+    "error_count": 32
+  },
+  {
+    "instance_id": "BENCH-0096",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2393.49,
+    "cpu": 3.19,
+    "memory": 82.76,
+    "error_count": 14
+  },
+  {
+    "instance_id": "BENCH-0097",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1787.5,
+    "cpu": 59.97,
+    "memory": 88.81,
+    "error_count": 26
+  },
+  {
+    "instance_id": "BENCH-0098",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1050.54,
+    "cpu": 41.74,
+    "memory": 86.43,
+    "error_count": 7
+  },
+  {
+    "instance_id": "BENCH-0099",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3113.78,
+    "cpu": 45.99,
+    "memory": 19.08,
+    "error_count": 11
+  },
+  {
+    "instance_id": "BENCH-0100",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2779.62,
+    "cpu": 97.41,
+    "memory": 35.72,
+    "error_count": 42
+  },
+  {
+    "instance_id": "BENCH-0101",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2032.13,
+    "cpu": 38.17,
+    "memory": 15.5,
+    "error_count": 6
+  },
+  {
+    "instance_id": "BENCH-0102",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2304.95,
+    "cpu": 6.1,
+    "memory": 10.45,
+    "error_count": 38
+  },
+  {
+    "instance_id": "BENCH-0103",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1313.17,
+    "cpu": 61.21,
+    "memory": 35.87,
+    "error_count": 45
+  },
+  {
+    "instance_id": "BENCH-0104",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2171.53,
+    "cpu": 83.45,
+    "memory": 42.97,
+    "error_count": 3
+  },
+  {
+    "instance_id": "BENCH-0105",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2751.95,
+    "cpu": 69.74,
+    "memory": 89.98,
+    "error_count": 8
+  },
+  {
+    "instance_id": "BENCH-0106",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3484.85,
+    "cpu": 7.12,
+    "memory": 27.68,
+    "error_count": 16
+  },
+  {
+    "instance_id": "BENCH-0107",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1516.87,
+    "cpu": 91.2,
+    "memory": 33.55,
+    "error_count": 28
+  },
+  {
+    "instance_id": "BENCH-0108",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 52.38,
+    "cpu": 82.65,
+    "memory": 98.39,
+    "error_count": 26
+  },
+  {
+    "instance_id": "BENCH-0109",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1910.58,
+    "cpu": 60.79,
+    "memory": 43.91,
+    "error_count": 26
+  },
+  {
+    "instance_id": "BENCH-0110",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1377.91,
+    "cpu": 85.34,
+    "memory": 74.52,
+    "error_count": 28
+  },
+  {
+    "instance_id": "BENCH-0111",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1867.27,
+    "cpu": 26.42,
+    "memory": 29.91,
+    "error_count": 8
+  },
+  {
+    "instance_id": "BENCH-0112",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3533.85,
+    "cpu": 11.58,
+    "memory": 14.27,
+    "error_count": 17
+  },
+  {
+    "instance_id": "BENCH-0113",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 246.67,
+    "cpu": 19.29,
+    "memory": 58.99,
+    "error_count": 45
+  },
+  {
+    "instance_id": "BENCH-0114",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 930.73,
+    "cpu": 85.26,
+    "memory": 23.22,
+    "error_count": 2
+  },
+  {
+    "instance_id": "BENCH-0115",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 244.36,
+    "cpu": 67.88,
+    "memory": 41.51,
+    "error_count": 14
+  },
+  {
+    "instance_id": "BENCH-0116",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1966.02,
+    "cpu": 56.98,
+    "memory": 54.76,
+    "error_count": 6
+  },
+  {
+    "instance_id": "BENCH-0117",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 995.6,
+    "cpu": 49.92,
+    "memory": 48.78,
+    "error_count": 7
+  },
+  {
+    "instance_id": "BENCH-0118",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2405.64,
+    "cpu": 16.05,
+    "memory": 8.3,
+    "error_count": 29
+  },
+  {
+    "instance_id": "BENCH-0119",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2142.8,
+    "cpu": 11.9,
+    "memory": 76.19,
+    "error_count": 4
+  },
+  {
+    "instance_id": "BENCH-0120",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2650.66,
+    "cpu": 42.74,
+    "memory": 90.62,
+    "error_count": 36
+  },
+  {
+    "instance_id": "BENCH-0121",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 759.79,
+    "cpu": 19.98,
+    "memory": 30.25,
+    "error_count": 32
+  },
+  {
+    "instance_id": "BENCH-0122",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 928.12,
+    "cpu": 1.27,
+    "memory": 15.47,
+    "error_count": 27
+  },
+  {
+    "instance_id": "BENCH-0123",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 435.38,
+    "cpu": 29.51,
+    "memory": 87.51,
+    "error_count": 13
+  },
+  {
+    "instance_id": "BENCH-0124",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2185.53,
+    "cpu": 29.81,
+    "memory": 27.85,
+    "error_count": 5
+  },
+  {
+    "instance_id": "BENCH-0125",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3250.12,
+    "cpu": 41.94,
+    "memory": 82.31,
+    "error_count": 4
+  },
+  {
+    "instance_id": "BENCH-0126",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3060.41,
+    "cpu": 18.63,
+    "memory": 26.78,
+    "error_count": 49
+  },
+  {
+    "instance_id": "BENCH-0127",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1869.75,
+    "cpu": 51.31,
+    "memory": 12.54,
+    "error_count": 37
+  },
+  {
+    "instance_id": "BENCH-0128",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2755.6,
+    "cpu": 42.82,
+    "memory": 5.25,
+    "error_count": 8
+  },
+  {
+    "instance_id": "BENCH-0129",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 646.28,
+    "cpu": 25.78,
+    "memory": 50.28,
+    "error_count": 38
+  },
+  {
+    "instance_id": "BENCH-0130",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1018.72,
+    "cpu": 64.98,
+    "memory": 45.85,
+    "error_count": 27
+  },
+  {
+    "instance_id": "BENCH-0131",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1412.13,
+    "cpu": 76.57,
+    "memory": 21.79,
+    "error_count": 16
+  },
+  {
+    "instance_id": "BENCH-0132",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3104.48,
+    "cpu": 67.62,
+    "memory": 17.06,
+    "error_count": 47
+  },
+  {
+    "instance_id": "BENCH-0133",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 135.54,
+    "cpu": 79.71,
+    "memory": 66.56,
+    "error_count": 35
+  },
+  {
+    "instance_id": "BENCH-0134",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3063.54,
+    "cpu": 26.3,
+    "memory": 66.22,
+    "error_count": 35
+  },
+  {
+    "instance_id": "BENCH-0135",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3156.7,
+    "cpu": 36.51,
+    "memory": 20.58,
+    "error_count": 44
+  },
+  {
+    "instance_id": "BENCH-0136",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1438.44,
+    "cpu": 35.56,
+    "memory": 45.86,
+    "error_count": 0
+  },
+  {
+    "instance_id": "BENCH-0137",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3338.25,
+    "cpu": 78.75,
+    "memory": 6.93,
+    "error_count": 43
+  },
+  {
+    "instance_id": "BENCH-0138",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2382.67,
+    "cpu": 95.85,
+    "memory": 70.11,
+    "error_count": 34
+  },
+  {
+    "instance_id": "BENCH-0139",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3421.76,
+    "cpu": 39.49,
+    "memory": 66.29,
+    "error_count": 26
+  },
+  {
+    "instance_id": "BENCH-0140",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1986.72,
+    "cpu": 51.78,
+    "memory": 91.54,
+    "error_count": 44
+  },
+  {
+    "instance_id": "BENCH-0141",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2412.25,
+    "cpu": 42.8,
+    "memory": 76.95,
+    "error_count": 4
+  },
+  {
+    "instance_id": "BENCH-0142",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3675.75,
+    "cpu": 75.27,
+    "memory": 36.18,
+    "error_count": 28
+  },
+  {
+    "instance_id": "BENCH-0143",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2734.22,
+    "cpu": 54.95,
+    "memory": 40.06,
+    "error_count": 15
+  },
+  {
+    "instance_id": "BENCH-0144",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3574.72,
+    "cpu": 65.83,
+    "memory": 21.18,
+    "error_count": 4
+  },
+  {
+    "instance_id": "BENCH-0145",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2500.09,
+    "cpu": 84.38,
+    "memory": 1.41,
+    "error_count": 12
+  },
+  {
+    "instance_id": "BENCH-0146",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2785.79,
+    "cpu": 2.04,
+    "memory": 54.22,
+    "error_count": 12
+  },
+  {
+    "instance_id": "BENCH-0147",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2874.41,
+    "cpu": 49.39,
+    "memory": 18.67,
+    "error_count": 24
+  },
+  {
+    "instance_id": "BENCH-0148",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 888.99,
+    "cpu": 48.9,
+    "memory": 22.61,
+    "error_count": 25
+  },
+  {
+    "instance_id": "BENCH-0149",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 409.62,
+    "cpu": 34.5,
+    "memory": 52.09,
+    "error_count": 15
+  },
+  {
+    "instance_id": "BENCH-0150",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 984.24,
+    "cpu": 3.72,
+    "memory": 30.99,
+    "error_count": 7
+  },
+  {
+    "instance_id": "BENCH-0151",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3323.44,
+    "cpu": 80.32,
+    "memory": 54.48,
+    "error_count": 45
+  },
+  {
+    "instance_id": "BENCH-0152",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1374.45,
+    "cpu": 14.8,
+    "memory": 84.36,
+    "error_count": 32
+  },
+  {
+    "instance_id": "BENCH-0153",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1040.18,
+    "cpu": 4.6,
+    "memory": 72.58,
+    "error_count": 7
+  },
+  {
+    "instance_id": "BENCH-0154",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 500.14,
+    "cpu": 23.6,
+    "memory": 11.87,
+    "error_count": 36
+  },
+  {
+    "instance_id": "BENCH-0155",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2790.2,
+    "cpu": 98.56,
+    "memory": 34.01,
+    "error_count": 5
+  },
+  {
+    "instance_id": "BENCH-0156",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2413.51,
+    "cpu": 78.81,
+    "memory": 49.99,
+    "error_count": 16
+  },
+  {
+    "instance_id": "BENCH-0157",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3066.62,
+    "cpu": 68.92,
+    "memory": 43.64,
+    "error_count": 46
+  },
+  {
+    "instance_id": "BENCH-0158",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 337.53,
+    "cpu": 9.0,
+    "memory": 40.36,
+    "error_count": 42
+  },
+  {
+    "instance_id": "BENCH-0159",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 33.11,
+    "cpu": 59.69,
+    "memory": 63.4,
+    "error_count": 34
+  },
+  {
+    "instance_id": "BENCH-0160",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2315.8,
+    "cpu": 26.67,
+    "memory": 98.96,
+    "error_count": 6
+  },
+  {
+    "instance_id": "BENCH-0161",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1481.52,
+    "cpu": 84.23,
+    "memory": 82.37,
+    "error_count": 9
+  },
+  {
+    "instance_id": "BENCH-0162",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 339.49,
+    "cpu": 38.14,
+    "memory": 63.63,
+    "error_count": 27
+  },
+  {
+    "instance_id": "BENCH-0163",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3980.62,
+    "cpu": 96.95,
+    "memory": 48.56,
+    "error_count": 16
+  },
+  {
+    "instance_id": "BENCH-0164",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1795.71,
+    "cpu": 46.5,
+    "memory": 83.65,
+    "error_count": 9
+  },
+  {
+    "instance_id": "BENCH-0165",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1068.28,
+    "cpu": 90.43,
+    "memory": 88.82,
+    "error_count": 36
+  },
+  {
+    "instance_id": "BENCH-0166",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3192.46,
+    "cpu": 15.39,
+    "memory": 15.16,
+    "error_count": 45
+  },
+  {
+    "instance_id": "BENCH-0167",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 612.56,
+    "cpu": 73.62,
+    "memory": 51.21,
+    "error_count": 39
+  },
+  {
+    "instance_id": "BENCH-0168",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2333.12,
+    "cpu": 24.47,
+    "memory": 62.93,
+    "error_count": 17
+  },
+  {
+    "instance_id": "BENCH-0169",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3999.99,
+    "cpu": 67.94,
+    "memory": 59.99,
+    "error_count": 40
+  },
+  {
+    "instance_id": "BENCH-0170",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 241.61,
+    "cpu": 70.08,
+    "memory": 70.38,
+    "error_count": 23
+  },
+  {
+    "instance_id": "BENCH-0171",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3471.18,
+    "cpu": 52.99,
+    "memory": 83.82,
+    "error_count": 16
+  },
+  {
+    "instance_id": "BENCH-0172",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2864.83,
+    "cpu": 48.94,
+    "memory": 18.4,
+    "error_count": 34
+  },
+  {
+    "instance_id": "BENCH-0173",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2128.91,
+    "cpu": 91.9,
+    "memory": 38.66,
+    "error_count": 40
+  },
+  {
+    "instance_id": "BENCH-0174",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2394.81,
+    "cpu": 16.56,
+    "memory": 64.96,
+    "error_count": 44
+  },
+  {
+    "instance_id": "BENCH-0175",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 660.52,
+    "cpu": 70.96,
+    "memory": 66.08,
+    "error_count": 23
+  },
+  {
+    "instance_id": "BENCH-0176",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 507.22,
+    "cpu": 28.77,
+    "memory": 15.44,
+    "error_count": 21
+  },
+  {
+    "instance_id": "BENCH-0177",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 695.95,
+    "cpu": 26.95,
+    "memory": 28.65,
+    "error_count": 21
+  },
+  {
+    "instance_id": "BENCH-0178",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3710.34,
+    "cpu": 60.43,
+    "memory": 59.54,
+    "error_count": 24
+  },
+  {
+    "instance_id": "BENCH-0179",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 274.64,
+    "cpu": 92.86,
+    "memory": 58.59,
+    "error_count": 13
+  },
+  {
+    "instance_id": "BENCH-0180",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 792.55,
+    "cpu": 79.66,
+    "memory": 2.49,
+    "error_count": 18
+  },
+  {
+    "instance_id": "BENCH-0181",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3345.75,
+    "cpu": 78.36,
+    "memory": 57.8,
+    "error_count": 29
+  },
+  {
+    "instance_id": "BENCH-0182",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2757.4,
+    "cpu": 37.93,
+    "memory": 91.68,
+    "error_count": 9
+  },
+  {
+    "instance_id": "BENCH-0183",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2069.09,
+    "cpu": 34.8,
+    "memory": 67.19,
+    "error_count": 3
+  },
+  {
+    "instance_id": "BENCH-0184",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3230.22,
+    "cpu": 97.42,
+    "memory": 91.94,
+    "error_count": 24
+  },
+  {
+    "instance_id": "BENCH-0185",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 949.33,
+    "cpu": 9.11,
+    "memory": 24.99,
+    "error_count": 11
+  },
+  {
+    "instance_id": "BENCH-0186",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2111.33,
+    "cpu": 80.35,
+    "memory": 21.07,
+    "error_count": 10
+  },
+  {
+    "instance_id": "BENCH-0187",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 552.53,
+    "cpu": 15.32,
+    "memory": 96.61,
+    "error_count": 4
+  },
+  {
+    "instance_id": "BENCH-0188",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3972.46,
+    "cpu": 94.32,
+    "memory": 67.24,
+    "error_count": 29
+  },
+  {
+    "instance_id": "BENCH-0189",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3028.27,
+    "cpu": 51.23,
+    "memory": 26.49,
+    "error_count": 6
+  },
+  {
+    "instance_id": "BENCH-0190",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3293.01,
+    "cpu": 4.95,
+    "memory": 79.7,
+    "error_count": 46
+  },
+  {
+    "instance_id": "BENCH-0191",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 920.14,
+    "cpu": 56.03,
+    "memory": 41.16,
+    "error_count": 13
+  },
+  {
+    "instance_id": "BENCH-0192",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 388.33,
+    "cpu": 72.26,
+    "memory": 88.92,
+    "error_count": 24
+  },
+  {
+    "instance_id": "BENCH-0193",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3648.61,
+    "cpu": 5.51,
+    "memory": 37.67,
+    "error_count": 40
+  },
+  {
+    "instance_id": "BENCH-0194",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2576.16,
+    "cpu": 67.88,
+    "memory": 83.44,
+    "error_count": 41
+  },
+  {
+    "instance_id": "BENCH-0195",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2249.71,
+    "cpu": 89.49,
+    "memory": 43.74,
+    "error_count": 33
+  },
+  {
+    "instance_id": "BENCH-0196",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 430.3,
+    "cpu": 98.57,
+    "memory": 37.11,
+    "error_count": 5
+  },
+  {
+    "instance_id": "BENCH-0197",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3372.33,
+    "cpu": 16.34,
+    "memory": 19.11,
+    "error_count": 17
+  },
+  {
+    "instance_id": "BENCH-0198",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1192.21,
+    "cpu": 65.31,
+    "memory": 58.74,
+    "error_count": 12
+  },
+  {
+    "instance_id": "BENCH-0199",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1998.41,
+    "cpu": 35.13,
+    "memory": 69.77,
+    "error_count": 11
+  }
+]
