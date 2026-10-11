@@ -1,0 +1,121 @@
+{
+  "state": "PREPARED, NOT EXECUTED",
+  "candidate_count": 10,
+  "instrument_source": "penta_v2/instrument.json",
+  "instrument_sha256": "24e84a519f601b001c243cca4117e8340f463c7c0ab86e57450fb6c6795c7ad5",
+  "validator_sha256": "b1cdbac744917e82e9f474328a75e9ece087f78ff9c1f48ab76e811b60bc8afa",
+  "positive_control": "ccr_n_prepared_candidates/positive_control.txt",
+  "scope": "offline candidate family expansion using the existing immutable validator; not a model benchmark or production write test",
+  "cases": [
+    {
+      "id": "N01",
+      "family": "nested top-level arrays",
+      "payload_file": "ccr_n_prepared_candidates/N01.txt",
+      "sha256": "0bc0069fa0a56915101700cccf4fa849114d56879fbb643df9c0413b3c7bd97f",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "array shape",
+      "expected": "reject with zero target mutation",
+      "note": "Ten additional levels; checks shape rejection, not parser-depth exhaustion.",
+      "executed": false
+    },
+    {
+      "id": "N02",
+      "family": "duplicate JSON key",
+      "payload_file": "ccr_n_prepared_candidates/N02.txt",
+      "sha256": "d90144dec480a5399ea624e59e80c84c5db3389402fd5b59d9bd89d80e612ecd",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "parser duplicate-key guard",
+      "expected": "reject with zero target mutation",
+      "note": "Repeated position member inside the first object.",
+      "executed": false
+    },
+    {
+      "id": "N03",
+      "family": "case normalization",
+      "payload_file": "ccr_n_prepared_candidates/N03.txt",
+      "sha256": "6e58921536e7391d1c9acfce0f220f00a08fa66f1f2be50bd92ec0e83d5606b0",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "tuple content",
+      "expected": "reject with zero target mutation",
+      "note": "Valid types; strict matching must not normalize the changed value.",
+      "executed": false
+    },
+    {
+      "id": "N04",
+      "family": "oversized string value",
+      "payload_file": "ccr_n_prepared_candidates/N04.txt",
+      "sha256": "29be8752e8789f3eb9f7a8dbc9c1c14768e74ba39deb9f6ab66e5e72bb8bf84e",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "tuple content",
+      "expected": "reject with zero target mutation",
+      "note": "Bounded 10x baseline-size added string. Does not claim a general payload-size or resource-consumption guard.",
+      "executed": false
+    },
+    {
+      "id": "N05",
+      "family": "short array",
+      "payload_file": "ccr_n_prepared_candidates/N05.txt",
+      "sha256": "631ea065413e017d57ab21e9f2e7c45cdc8db0c93c88529c6e0c3cdf30fb0fa9",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "array length",
+      "expected": "reject with zero target mutation",
+      "note": "One expected decision removed.",
+      "executed": false
+    },
+    {
+      "id": "N06",
+      "family": "duplicate position at fixed length",
+      "payload_file": "ccr_n_prepared_candidates/N06.txt",
+      "sha256": "e80c24db48f39bb210f3cb162ca290254252750653ac9d714f4d7c9e6bfeb34c",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "tuple content",
+      "expected": "reject with zero target mutation",
+      "note": "Array length and field types preserved, preventing length masking.",
+      "executed": false
+    },
+    {
+      "id": "N07",
+      "family": "nonfinite JSON number",
+      "payload_file": "ccr_n_prepared_candidates/N07.txt",
+      "sha256": "d17c26af69d1c561a3d53848fe0d35d46f339dfcd76ba8fe7638aa1cbf102c50",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "parser nonfinite guard",
+      "expected": "reject with zero target mutation",
+      "note": "NaN is intentionally invalid JSON input; not a real model response.",
+      "executed": false
+    },
+    {
+      "id": "N08",
+      "family": "boolean versus integer",
+      "payload_file": "ccr_n_prepared_candidates/N08.txt",
+      "sha256": "017caf2fc38c7c02c5cf3d5372ef641d27f5bb1fd28c5c62bb8a377d5bc60642",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "position type",
+      "expected": "reject with zero target mutation",
+      "note": "Python bool/int subclass ambiguity must not admit JSON boolean.",
+      "executed": false
+    },
+    {
+      "id": "N09",
+      "family": "type-valid false resolved decision",
+      "payload_file": "ccr_n_prepared_candidates/N09.txt",
+      "sha256": "5fa946d2379151e0bfc24b83fbb5a803dc7fa17e5870f5c9a2aab3dd38728570",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "tuple content",
+      "expected": "reject with zero target mutation",
+      "note": "Keeps steps_executed null to reach content comparison instead of steps type check. This is contract-decision enforcement, not registry authorization enforcement.",
+      "executed": false
+    },
+    {
+      "id": "N10",
+      "family": "Unicode zero-width suffix",
+      "payload_file": "ccr_n_prepared_candidates/N10.txt",
+      "sha256": "995f70f13a3193a29bb6330bff68cf438345ec76b27e3543b9a8a1eb0f88d66f",
+      "source": "harness-generated, not a model failure",
+      "anticipated_first_layer": "tuple content",
+      "expected": "reject with zero target mutation",
+      "note": "Valid JSON and string type; value differs by a zero-width code point.",
+      "executed": false
+    }
+  ]
+}
