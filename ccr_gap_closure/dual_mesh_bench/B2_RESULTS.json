@@ -1,0 +1,23 @@
+{
+  "leg": "B2",
+  "executed_utc": "2026-10-11T18:43:17.083909+00:00",
+  "records_ingested": 50,
+  "node_id_prefix": "bench-",
+  "content_type": "sim_benchmark (synthetic, sim corpus only)",
+  "distribution_by_mesh_type": {
+    "interconnect": 25,
+    "write": 15,
+    "read": 10
+  },
+  "layers_used": {
+    "read": 1,
+    "interconnect": 3,
+    "agent-sim": 4,
+    "write": 5
+  },
+  "collision_hash_uniqueness": "50/50 unique (aggregate query: zero duplicate collision_hash groups)",
+  "lock_state_integrity": "all 50 open (valid)",
+  "validation_status": "all 50 validated",
+  "notes": "50 synthetic benchmark nodes remain in the hub own app as the measured artifact, labeled bench-* / sim_benchmark; no production or customer data. Entity conventions matched existing DualMeshNode records (mesh_type read/interconnect/write, layers 1/3/4/5).",
+  "pass": true
+}

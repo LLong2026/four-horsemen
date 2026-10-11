@@ -1,0 +1,11 @@
+{
+  "leg": "B3",
+  "journal_actions_replayed": 72,
+  "mismatches": 0,
+  "negative_probes": [
+    "LATENCY_SPIKE",
+    "unregistered_synthetic_fault"
+  ],
+  "false_positives": 0,
+  "pass": true
+}

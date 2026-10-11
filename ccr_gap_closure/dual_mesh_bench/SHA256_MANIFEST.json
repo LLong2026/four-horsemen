@@ -1,0 +1,42 @@
+[
+  {
+    "file": "B1_BASELINE_RESULTS.json",
+    "sha256": "9303dd23e4e4a414eed03b9f059249074c6c1c7996fdd7ea16a7252ff272196b"
+  },
+  {
+    "file": "B1_MESH_RESULTS.json",
+    "sha256": "9b456079205314736373113f6ec56eb922e6a20412d96dbebfbb8d40d0c6d284"
+  },
+  {
+    "file": "B2_RESULTS.json",
+    "sha256": "c2af58fe63638c191645230aee344410fef85d2f9ef494a4de5edd81043e29f4"
+  },
+  {
+    "file": "B3_RESULTS.json",
+    "sha256": "c0ec8a7ae2c974ab7ceda7876b3ddcd0a12ae7395d60f08047d8308db8334038"
+  },
+  {
+    "file": "CORPUS_B1.json",
+    "sha256": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59"
+  },
+  {
+    "file": "DUAL_MESH_BENCHMARK_PREREG_20261011.md",
+    "sha256": "f65378e601eb3560a77eb43e8a31c0477de16a18e16eb520ab4819f16607e9a4"
+  },
+  {
+    "file": "DUAL_MESH_BENCH_RECEIPT.json",
+    "sha256": "67666515536b53855171515bac77369f74d19c93092af5476dd9aab7091821f3"
+  },
+  {
+    "file": "b1_baseline_runner.py",
+    "sha256": "21bdf8b534155047da62eac81e531ca5ceb2a65b77fd4839a31cf34e09e22d0f"
+  },
+  {
+    "file": "baseline_run.log",
+    "sha256": "06c8d78ebb1260f09eebd090871992230037eae3e5d59492e0ae018e7d113e47"
+  },
+  {
+    "file": "build_corpus.py",
+    "sha256": "2ac51f72e7582a3d903324d34fbe13207160321c044fda87ac0abaf190f7ba23"
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "summary": {
+    "leg": "B1-baseline",
+    "n_requested": 20,
+    "n_valid": 20,
+    "n_failed": 0,
+    "min_ms": 3549.6,
+    "median_ms": 4509.1,
+    "p95_ms": 7015.7,
+    "max_ms": 7015.7,
+    "failures": [],
+    "all_runs_recorded": true
+  },
+  "runs": [
+    {
+      "i": 0,
+      "conversation_id": "6acbd858a9daa555fe641b1a",
+      "wall_ms": 5611.6,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 1,
+      "conversation_id": "6acbd85a45d52716dc6d3182",
+      "wall_ms": 3957.1,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 2,
+      "conversation_id": "6acbd85d625044663fe6121c",
+      "wall_ms": 4214.6,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 3,
+      "conversation_id": "6acbd85fb9e36879a84151d7",
+      "wall_ms": 4881.4,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 4,
+      "conversation_id": "6acbd86245d52716dc6d318e",
+      "wall_ms": 4554.2,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 5,
+      "conversation_id": "6acbd86595d2236ac9e0edff",
+      "wall_ms": 3569.3,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 6,
+      "conversation_id": "6acbd8677c02b0c92062e860",
+      "wall_ms": 4747.5,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 7,
+      "conversation_id": "6acbd869d51d3568d4f7e875",
+      "wall_ms": 5679.8,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 8,
+      "conversation_id": "6acbd86c545711756a2cd721",
+      "wall_ms": 4059.6,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 9,
+      "conversation_id": "6acbd8729980b98eec915e36",
+      "wall_ms": 5991.3,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 10,
+      "conversation_id": "6acbd8778b6427344e0744f3",
+      "wall_ms": 7015.7,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 11,
+      "conversation_id": "6acbd87a51fa7837fb207082",
+      "wall_ms": 4464.0,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 12,
+      "conversation_id": "6acbd87c51ab75ee4e544f5e",
+      "wall_ms": 5526.7,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 13,
+      "conversation_id": "6acbd87f063cc5e119e2d5f1",
+      "wall_ms": 3549.6,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 14,
+      "conversation_id": "6acbd883bb4b9c3e749e4b8d",
+      "wall_ms": 3631.5,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 15,
+      "conversation_id": "6acbd885dd141e5fea91526b",
+      "wall_ms": 6910.3,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 16,
+      "conversation_id": "6acbd88816f5bf331650577b",
+      "wall_ms": 3585.5,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 17,
+      "conversation_id": "6acbd88ba5e7a5803014a07b",
+      "wall_ms": 4256.1,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 18,
+      "conversation_id": "6acbd88d34f759439626face",
+      "wall_ms": 3883.0,
+      "valid": true,
+      "detail": ""
+    },
+    {
+      "i": 19,
+      "conversation_id": "6acbd8906c04f5d041d78011",
+      "wall_ms": 4825.7,
+      "valid": true,
+      "detail": ""
+    }
+  ]
+}

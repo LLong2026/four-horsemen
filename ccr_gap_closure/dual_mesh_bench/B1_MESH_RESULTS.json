@@ -1,0 +1,11 @@
+{
+  "leg": "B1-mesh",
+  "n": 200,
+  "misses": 0,
+  "min_ms": 0.000408,
+  "median_ms": 0.000443,
+  "p95_ms": 0.000559,
+  "max_ms": 0.004778,
+  "total_ms": 0.097706,
+  "all_runs_recorded": true
+}

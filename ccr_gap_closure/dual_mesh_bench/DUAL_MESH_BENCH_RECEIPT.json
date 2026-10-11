@@ -1,0 +1,84 @@
+{
+  "series_signature": "dual_mesh_benchmark_20261011",
+  "executed_utc": "2026-10-11T18:46:51.731811+00:00",
+  "status": "EXECUTED \u2014 results under Leon review. Public status remains NOT MEASURED until two-key curation.",
+  "protocol": "DUAL_MESH_BENCHMARK_PREREG_20261011.md (prereg f65378e601eb3560, ledger 0044), committed BEFORE execution; corpus frozen+committed BEFORE any leg (13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59, commit 2eb3879)",
+  "gating": "Leon GO received 2026-10-11 13:39 CT (\"GO lets finish this\") responding to the two-gate framing; both the zero-credit legs and the ~20-call baseline leg executed under that GO",
+  "B1_mesh": {
+    "leg": "B1-mesh",
+    "n": 200,
+    "misses": 0,
+    "min_ms": 0.000408,
+    "median_ms": 0.000443,
+    "p95_ms": 0.000559,
+    "max_ms": 0.004778,
+    "total_ms": 0.097706,
+    "all_runs_recorded": true
+  },
+  "B1_baseline": {
+    "leg": "B1-baseline",
+    "n_requested": 20,
+    "n_valid": 20,
+    "n_failed": 0,
+    "min_ms": 3549.6,
+    "median_ms": 4509.1,
+    "p95_ms": 7015.7,
+    "max_ms": 7015.7,
+    "failures": [],
+    "all_runs_recorded": true
+  },
+  "B1_speedup": {
+    "median_over_median": 10178555.304740408,
+    "human_readable": "1.018e+07x",
+    "disclosure": "BASELINE: platform default (Automatic) engine, fresh API conversation per instance, wall-clock request-to-validated-tuple (includes the platform agent loop). MESH: local reference resolver (in-memory exact-match hash index + decision assembly). The measured ratio characterizes THIS environment: deterministic in-process lookup vs platform API conversation loop. It does NOT confirm or supersede the historical production figures (267x / 800ms->3ms); those remain historical observations of a different environment."
+  },
+  "B2": {
+    "leg": "B2",
+    "executed_utc": "2026-10-11T18:43:17.083909+00:00",
+    "records_ingested": 50,
+    "node_id_prefix": "bench-",
+    "content_type": "sim_benchmark (synthetic, sim corpus only)",
+    "distribution_by_mesh_type": {
+      "interconnect": 25,
+      "write": 15,
+      "read": 10
+    },
+    "layers_used": {
+      "read": 1,
+      "interconnect": 3,
+      "agent-sim": 4,
+      "write": 5
+    },
+    "collision_hash_uniqueness": "50/50 unique (aggregate query: zero duplicate collision_hash groups)",
+    "lock_state_integrity": "all 50 open (valid)",
+    "validation_status": "all 50 validated",
+    "notes": "50 synthetic benchmark nodes remain in the hub own app as the measured artifact, labeled bench-* / sim_benchmark; no production or customer data. Entity conventions matched existing DualMeshNode records (mesh_type read/interconnect/write, layers 1/3/4/5).",
+    "pass": true
+  },
+  "B3": {
+    "leg": "B3",
+    "journal_actions_replayed": 72,
+    "mismatches": 0,
+    "negative_probes": [
+      "LATENCY_SPIKE",
+      "unregistered_synthetic_fault"
+    ],
+    "false_positives": 0,
+    "pass": true
+  },
+  "falsifiers": {
+    "FB-1": "PASS \u2014 all raw logs preserved verbatim (B1_MESH_RESULTS, B1_BASELINE_RESULTS + per-run raw/content files, B2 aggregates, B3 inputs)",
+    "FB-2": "PASS \u2014 identical frozen corpus (same file, same hash) used by both B1 legs; mesh n=200, baseline n=20 as declared",
+    "FB-3": "PASS \u2014 all 200 mesh runs and all 20 baseline runs recorded in the distributions; zero runs removed; baseline had 0 failures",
+    "FB-4": "PASS \u2014 no metrics added beyond the preregistered B1/B2/B3",
+    "FB-5": "PASS \u2014 no PHI, customer identity, or credentials in any artifact (all synthetic sim corpus)"
+  },
+  "environment_readback": {
+    "model": "default (Automatic) verified before and after legs",
+    "memory": "disabled (verified)"
+  },
+  "claim_discipline": "No universal performance claim. Scoped: anomaly-to-playbook lookup on the frozen 3-type corpus in the tested environment; mesh ingestion integrity on 50 synthetic nodes; resolution correctness on the CCR-1 72-action replay. Not model certification. Not public release.",
+  "is_model_certification": false,
+  "public_release": false,
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them."
+}
