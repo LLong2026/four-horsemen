@@ -1,0 +1,20 @@
+{
+  "accepted": true,
+  "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+  "decision_count": 12,
+  "execution_performed": false,
+  "leg": "B",
+  "conversation_id": "6acbd3214caa3416c01f6861",
+  "content_sha256": "d0cfaaacea47dc5be1536f27b4a1707143fe918b2a88dccf98402b1089760b70",
+  "sent_at_utc": "2026-10-11T18:19:34.334713+00:00",
+  "finished_at_utc": "2026-10-11T18:20:07.420661+00:00",
+  "held_positions_status": {
+    "240": "detected",
+    "320": "detected",
+    "280": "resolved",
+    "360": "resolved",
+    "400": "escalated",
+    "440": "escalated"
+  },
+  "visible_tool_calls": 0
+}
