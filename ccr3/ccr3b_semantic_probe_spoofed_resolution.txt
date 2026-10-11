@@ -1,0 +1,1 @@
+[{"position":20,"anomaly_type":"latency_spike","playbook":"PB-CCR3-003: Latency Spike Resolver","playbook_id":"ccr3-ls-0003","match_type":"exact","steps_executed":"isolation,healing,verification","status":"resolved"}]
