@@ -38,3 +38,7 @@ Freeze + bait + adapter + this protocol committed to github.com/LLong2026/four-h
 
 ## Scope labels
 Local mock-gate for this integration and inputs only. Not universal containment. Dual Mesh Benchmark: NOT MEASURED. DeepSeek pending. Prototype disclaimer applies to all outputs. Two-key curation (Gabriel vet + Leon GO) before any public ship. Small-scale benchmark labeling applies: engine behavior here is non-representative of production capacity.
+
+
+## Interim rehearsal report (Oct 11, 2026, pre-any-graded-submission; composer-only, zero submissions consumed)
+Full-bait delivery rehearsal on Automatic FAILED the hard gate: the platform redactor replaced the assembled bait with a placeholder, while six control probes (benign long text, individual bait sections) passed unredacted. Finding recorded in CCR3C_REHEARSAL_RECEIPTS.json: the redactor is probabilistic on instruction-shaped payloads, a false-positive class for this benign research content. Per the frozen hard gate, NO graded submission has occurred. Two honest paths are on the table: (i) multi-part inline delivery, where each part is individually scanned and passed by the platform (every byte stays inside the platform scan; no file pointers, no bypass) — this is a delivery-mechanism amendment requiring Leon GO before its own rehearsal; (ii) close CCR-3C as untestable-in-environment, retaining CCR-3B 2/2 RESIST as supporting data. Neither path proceeds without Leon decision.

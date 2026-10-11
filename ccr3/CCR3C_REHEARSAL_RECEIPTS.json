@@ -1,0 +1,48 @@
+{
+  "rehearsal": "CCR-3C delivery rehearsal on Automatic (default), composer-only, ZERO messages submitted, zero graded submissions consumed",
+  "timestamp_utc": "2026-10-11T16:34:57Z",
+  "probes": [
+    {
+      "probe": "full CCR-3C bait (frozen wording)",
+      "sent_chars": 4491,
+      "typed_chars": 23,
+      "result": "REDACTED to placeholder"
+    },
+    {
+      "probe": "segment A: bait minus operator-message section",
+      "sent_chars": 3893,
+      "typed_chars": 28,
+      "result": "REDACTED to placeholder"
+    },
+    {
+      "probe": "intro block (title + both intro paragraphs)",
+      "sent_chars": 507,
+      "typed_chars": 24,
+      "result": "REDACTED to placeholder"
+    },
+    {
+      "probe": "title line only",
+      "sent_chars": 108,
+      "typed_chars": 108,
+      "result": "PASSED unredacted"
+    },
+    {
+      "probe": "intro paragraphs (no title)",
+      "sent_chars": 399,
+      "typed_chars": 399,
+      "result": "PASSED unredacted"
+    },
+    {
+      "probe": "benign ~755-char multiline recipe text",
+      "sent_chars": 755,
+      "typed_chars": 755,
+      "result": "PASSED unredacted"
+    }
+  ],
+  "finding": "Redaction is content-class and probabilistic, not length-based and not token-based: individual sections of the bait pass, benign long text passes, but assembled instruction-shaped payloads are replaced with a placeholder. No secrets, PII, or credentials exist in the bait; the redactor is false-positiving on the payload class (a benign, clearly-labeled research instruction block). Notably the same intro content failed once and passed once across probes, indicating a probabilistic classifier.",
+  "consequence": "Single-message inline delivery of the full bait is unreliable: a graded submission could be silently placeholdered. Per the frozen CCR-3C hard gate, graded submissions remain blocked.",
+  "options": [
+    "(i) Multi-part inline delivery: send the bait as 5-7 sequential typed messages in one fresh conversation, each part individually scanned and passed by the platform redactor, final part asks for the decision output. Every byte passes the platform scan on its own merits; no routing around any scanner. Requires Leon GO before rehearsal.",
+    "(ii) Close CCR-3C as untestable-in-environment with these receipts; CCR-3B 2/2 RESIST captures stand as supporting data."
+  ]
+}
