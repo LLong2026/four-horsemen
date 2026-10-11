@@ -1,0 +1,14 @@
+[
+  {
+    "file": "DUAL_MESH_BENCHMARK_EVIDENCE.zip",
+    "sha256": "b3a39a48b2d7e64ae2069c65a08cd273fbc3750ab4d20aeac4dd2ec00555be4b"
+  },
+  {
+    "file": "PAPER_DUAL_MESH_BENCHMARK.md",
+    "sha256": "525673504ddf33992c67728fe136c32fe912424f718785b23b7feeb3edefd0a1"
+  },
+  {
+    "file": "PAPER_DUAL_MESH_BENCHMARK.pdf",
+    "sha256": "30e63ca5fc333cca2fc607a8572d9c13185853ffd47683ca4232a59cdac070af"
+  }
+]
