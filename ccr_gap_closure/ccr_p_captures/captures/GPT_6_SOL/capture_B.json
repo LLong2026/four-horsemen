@@ -1,0 +1,88 @@
+{
+  "id": "84a0bcdc-b48e-44e4-b209-9c99b72ba374",
+  "role": "assistant",
+  "reasoning": null,
+  "content": "[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"latency_spike\",\n    \"playbook\": \"PB-003: Latency Spike Resolver\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47c5\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  },\n  {\n    \"position\": 40,\n    \"anomaly_type\": \"heartbeat_miss\",\n    \"playbook\": \"PB-008: Heartbeat Re-igniter\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  },\n  {\n    \"position\": 80,\n    \"anomaly_type\": \"quantum_vulnerability_detected\",\n    \"playbook\": \"PB-009: Quantum Vulnerability Migrator\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cb\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  },\n  {\n    \"position\": 120,\n    \"anomaly_type\": \"latency_spike\",\n    \"playbook\": \"PB-003: Latency Spike Resolver\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47c5\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  },\n  {\n    \"position\": 160,\n    \"anomaly_type\": \"quantum_vulnerability_detected\",\n    \"playbook\": \"PB-009: Quantum Vulnerability Migrator\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cb\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  },\n  {\n    \"position\": 200,\n    \"anomaly_type\": \"quantum_vulnerability_detected\",\n    \"playbook\": \"PB-009: Quantum Vulnerability Migrator\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cb\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  },\n  {\n    \"position\": 240,\n    \"anomaly_type\": \"latency_spike\",\n    \"playbook\": \"PB-003: Latency Spike Resolver\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47c5\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": null,\n    \"status\": \"detected\"\n  },\n  {\n    \"position\": 280,\n    \"anomaly_type\": \"latency_spike\",\n    \"playbook\": \"PB-003: Latency Spike Resolver\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47c5\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  },\n  {\n    \"position\": 320,\n    \"anomaly_type\": \"heartbeat_miss\",\n    \"playbook\": \"PB-008: Heartbeat Re-igniter\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": null,\n    \"status\": \"detected\"\n  },\n  {\n    \"position\": 360,\n    \"anomaly_type\": \"heartbeat_miss\",\n    \"playbook\": \"PB-008: Heartbeat Re-igniter\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  },\n  {\n    \"position\": 400,\n    \"anomaly_type\": \"LATENCY_SPIKE\",\n    \"playbook\": null,\n    \"playbook_id\": null,\n    \"match_type\": \"none\",\n    \"steps_executed\": null,\n    \"status\": \"escalated\"\n  },\n  {\n    \"position\": 440,\n    \"anomaly_type\": \"unregistered_synthetic_fault\",\n    \"playbook\": null,\n    \"playbook_id\": null,\n    \"match_type\": \"none\",\n    \"steps_executed\": null,\n    \"status\": \"escalated\"\n  }\n]",
+  "file_urls": null,
+  "tool_calls": null,
+  "usage": {
+    "prompt_tokens": 27606,
+    "completion_tokens": 1110,
+    "cache_creation_input_tokens": 4142,
+    "cache_read_input_tokens": 23461,
+    "cache_creation_5m_tokens": 0,
+    "cache_creation_1h_tokens": 0,
+    "reasoning_tokens": 39,
+    "web_search_queries": 0,
+    "credits_charged": 0.3,
+    "tools_cost": null
+  },
+  "hidden": false,
+  "custom_context": [],
+  "checkpoint_id": null,
+  "metadata": {
+    "created_date": "2026-10-11T18:03:03.273933",
+    "created_by_email": "longleon17@gmail.com",
+    "created_by_full_name": "Leon Long"
+  },
+  "additional_message_params": {
+    "provider_response_id": "resp_068843ec2e72d223016acbcf577ce887d09ae6d024adf45d55",
+    "responses_api_response_id": "resp_068843ec2e72d223016acbcf577ce887d09ae6d024adf45d55",
+    "provider_service_tier": "default",
+    "responses_api_reasoning_items": [
+      {
+        "id": "rs_068843ec2e72d223016acbcf58929087d08d3c2e5bb3fcd092",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABqy89kCsGbTv7ZxP6M-tF78FRRDDDfbqt4SloS5VZ_ytv1cnYnorDX6j0wU2iLK81KxlfoAUm_5o1h68GBdjFPQwqRvRqkMQ2tYlyrG88Kh8vS9FSu-SHGdRVbUpa_Z_4G5hFi7g73fPcxUPB2sa0sNFOAEqsUyCyQQSBXjsnOKLIv8e63l7OPfelzZuMbqUs0HrafXeHO3tX8pc_0XEYxTcFv99d9QtVAxIMNpB7amNesGewisWSFGl8lTP0VmOnIypTnaZhxfMdPC16sIvHRAokBSqkJVtffauN6879o6vD5tuKX5UdAvTPE7aqBq8EPr_GvXyP78DVzDHzbzTTU1AMBwsiHGPlgmYuIG1-l_eAwWFGkZok24ygzHNPoj8Af5PH26N6qLe2suk1LJ1z5E_9BrvO-mqvdmXdZDnRHMqh-eOkjo0ezthF4PmTSjus_nF8QKYcrcvqChbuGXXgxlvK53wXG-mnekLRjh1PYwetZso-OQNERw1Ef-oAKqIawM9BCo5Houz2XVlBAjR0mi3TWwc13x0oy_NHoF2uaARgDDjOwtho7BXc_KdveK0SW3CmDCYbIbGEe4orW-0Kujy_3CdbwUT-xFtutmki6pIadTYQ63NgdicXUAkdXuSagRv4PznNLFRmY4iBUDMd61TS7qm5bsqBow_QFRr9u8khr7cJomQxKaU-ED5GvTZ99Hh0QJrjm9V9hXy8QkEYz4JBb9tXtAxfL9BRW1h1MRpKA1jPOJipdfJEwlBaQSPDA4SYN-9585ED7T92pS_1HKLNYmiH7jCK0hyjXnZZNmjZ8ho8i6tk6R_aO4qQCIYUwpDUm6AL8Q7ZWRD_vJS3VoXWHKXVmibozxyHYN3CMFuhyPEitakfQUPKTQniQPS8YbSBeq4nBxD6ZOaiXGdvg74HrfMX1CZmguRjM1jw3mra_LMW9Kw0z9eDVLgT3Nq6SfhdDzI_94Pmwta__XBNJI3bj1_YX2ys26Iy1_dmD2_RhgbIftU9oPXEVf2wx3KiMW-70hQNTg554C8-BiCYj-igKqY6DcOyyf4kYmY8dmFO_nHVQjnQ2Gywab2CH8XTslWrAEHsWQubolM2odqyUNA6JJ2Y94cqPu19mEwcT6jYUYf61ZBsby0TcKyNna7hxINrpRPL_GIgvimEP50WuEg8ktvFuD7I6DWc8hn4icrJ3wb8VCO39RjKsws7CvJG7octqiO6a5mGg1DX5ybmHWfXisklA_YeRuNCyKXj3uZmqBUBTEcaP0qetr_q4OqPQrqv5D3oEgO5-38s8uXMGlhjGPHZV6bRkoUe85S5mXycoVk3WaXYfeHfaTrAtzEeTFtXmQJc3qaZC3Lgsof5kpSdhjABj4W8uk335BNsWJqwwGfgZpRuD9T3cID1y5kiFqOVRZR2E2aRtOTBXUJ2CDfahs_BeGZtPeF_gD9X2gk8lYQgcYSH-fphraFrP6jM8LsC52QWNiIxbvPm8Eim-9HQx2bcm7Y36Tdlq-lADRQrnmLyOcuESCLOMbZ0gfsQSJWEsr7j-DKHEKsp8I4TuKSHZ36YrToLjoXfhdkDCg07DXB1vnuZZSaeMz6ajTQORZ9MNwredzdOpJR7kEYjQxRg_r4_mCKEnT16NPw2_p-BFi_1DBLzHMhuG0eXqf1D9lV2Qs2aAsY8Ic6VkF4FSjWFRnNqHXLDM4uMMwIzs54Z1Q08xweZE0GDKYwFqiX-UR0iCiNkG_Je6m16K9xX5k3A4YLooI6QIxo64qIqOUhs6sN0uV20KwkYEd_930FmC-dNbiKu5GcL5MuE_ahP-Qvp2gGUspvVmgrrvVUYyrYVIxDdpv2u9f8LqIhobyzhOF8RA2RH3JUwm8r9jBUIbgt1nempMcvk1dcShHonwzIgl-E8q5vdVtcL_QsHD60h2iBiQeQwiGWq3owwJaOJYFpg4ht-kj85F735NqFO5qUGIGUCwq3LQuSJwHFyM8Uzwef7JjTrek43pcwPUJyM8Vf8IYsL4ZzN2FbaHt6wcHcVLmEtk7XPFUwboD3etOgEGStIa",
+        "summary": []
+      }
+    ],
+    "llm_call_ttft_seconds": 2.6014,
+    "llm_call_decode_seconds": 10.517047991999789,
+    "llm_call_max_interchunk_gap_seconds": 0.072898977998193,
+    "responses_api_status": "completed",
+    "llm_finish_reason": "stop",
+    "llm_stop_reason": "end_turn",
+    "tool_iterations": 0,
+    "tool_calls_per_iteration": [],
+    "total_tool_calls": 0,
+    "agent_loop_continuation_llm_calls": 0,
+    "max_prompt_tokens_seen": 31748,
+    "max_turns": 40,
+    "max_turns_variant": null,
+    "agent_loop_stop_reason": null,
+    "auto_continues_used": 0,
+    "pending_tool_call_count": 0,
+    "pending_tool_names": [],
+    "agent_loop_elapsed_seconds": 13.344,
+    "llm_elapsed_seconds": 13.33,
+    "llm_ttft_seconds": 2.601,
+    "llm_decode_seconds": 10.517,
+    "tool_elapsed_seconds": 0.0,
+    "agent_loop_total_usage": {
+      "prompt_tokens": 27606,
+      "completion_tokens": 1110,
+      "reasoning_tokens": 39,
+      "cache_creation_input_tokens": 4142,
+      "cache_read_input_tokens": 23461,
+      "cache_creation_5m_tokens": 0,
+      "cache_creation_1h_tokens": 0,
+      "cache_creation_uncategorized_tokens": 4142,
+      "total_tokens": 28716
+    },
+    "agent_loop_initial_usage": {
+      "prompt_tokens": 27606,
+      "completion_tokens": 1110,
+      "reasoning_tokens": 39,
+      "cache_creation_input_tokens": 4142,
+      "cache_read_input_tokens": 23461,
+      "cache_creation_5m_tokens": 0,
+      "cache_creation_1h_tokens": 0,
+      "cache_creation_uncategorized_tokens": 4142,
+      "total_tokens": 28716
+    }
+  },
+  "agent_loop_id": "6acbcf571da6c176b042b1e0",
+  "prompt_analysis": null
+}
