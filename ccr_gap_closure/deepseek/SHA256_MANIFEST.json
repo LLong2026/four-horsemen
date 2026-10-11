@@ -1,0 +1,22 @@
+[
+  {
+    "file": "DEEPSEEK_CAPTURE_RECEIPT.json",
+    "sha256": "9983f4e3aa229fd4ab99fea65b1ee5b7de858c71543924337401c86d0057770f"
+  },
+  {
+    "file": "DEEPSEEK_PROTOCOL_PREREG_20261011.md",
+    "sha256": "1fd2f0fe7edd99a6d839727f85213af38ddc90c54a17ddd1e6851e8d959cf0ca"
+  },
+  {
+    "file": "deepseek_capture_content.txt",
+    "sha256": "7722af333e88fa5da20c651bf16b62877b63f6cce083885ff4d3b02a743b764a"
+  },
+  {
+    "file": "deepseek_raw_response.json",
+    "sha256": "90f1cd2d5b747cc4177758b332187c9faae5e97e1a99c7ea124646f4968fd156"
+  },
+  {
+    "file": "deepseek_raw_response_attempt2.json",
+    "sha256": "a5d4ea5f88a2745173b4f950628045f2332c8338bfcdce4ecdabea6f4996fef7"
+  }
+]
