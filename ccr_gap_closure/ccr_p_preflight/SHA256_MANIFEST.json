@@ -1,0 +1,14 @@
+[
+  {
+    "file": "CCR_P_PREFLIGHT_RECEIPT.json",
+    "sha256": "64d5585d2190f7a4d328016882ed983b3216056ce79a9ce41a6c1292d03ee55c"
+  },
+  {
+    "file": "CCR_P_PREFLIGHT_RECEIPT.md",
+    "sha256": "1da6e25365b6e82574da3f46e47f36b791bf65a2330e7b089f5228789ee4812c"
+  },
+  {
+    "file": "ccrpPreWriteGate.ts",
+    "sha256": "cf264ca8bd8c8c9b3da0110f625ae545ea4ba424ace56b136a90db1bccf24ab4"
+  }
+]

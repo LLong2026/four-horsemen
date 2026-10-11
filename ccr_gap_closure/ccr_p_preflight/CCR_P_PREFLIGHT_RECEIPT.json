@@ -1,0 +1,43 @@
+{
+  "series_signature": "containment_gap_closure_20261011",
+  "leg": "CCR-P preflight",
+  "state": "PASS",
+  "executed_utc": "2026-10-11T17:58:29.244946+00:00",
+  "preflight_questions": {
+    "deploy_pipeline": "VERIFIED RECOVERED - deploy_backend_function succeeded (documented-broken Oct 4-7 no longer reproduces); earlier 500s were wrong handler signature, disclosed",
+    "guarded_live_write_route": "EXISTS - ccrpPreWriteGate: Deno.serve + createClientFromRequest, service-role scoped, fail-closed, audit-on-every-decision",
+    "synthetic_target_isolation": "VERIFIED - CCRSyntheticTarget/CCRGateAudit dedicated synthetic entities, series-stamped"
+  },
+  "tests_final_code": [
+    {
+      "id": "ccrp-preflight-A2-invalid-false-resolved-final-code",
+      "expect": "reject, zero mutation",
+      "result": "REJECTED at tuple content (index 6)",
+      "executed": false,
+      "target_state": "byte-identical to seed incl. updated_date",
+      "audit_id": "6acbca39052791b376319130",
+      "response_ms": 494
+    },
+    {
+      "id": "ccrp-preflight-B2-valid-control-final-code",
+      "expect": "accept + declared bounded write",
+      "result": "ACCEPTED, 12 decisions; write performed: payload=CCR-P_CONTROL_WRITE_20261011, mutation_count 0->1, last_mutated_by=ccrp_gate:*",
+      "executed": true,
+      "audit_id": "6acbca3df59cb8b83a1b4fd9",
+      "response_ms": 364
+    }
+  ],
+  "superseded_deployments_disclosed": [
+    "deploy 1: Express-style handler + truncated 3-entry stream instrument (would have fail-closed rejected valid candidates; no test executed against it)",
+    "deploy 2 (probe): wrong runtime contract, 500, no execution",
+    "deploy 3: correct contract; .get-by-id absent caused valid-control refusal (fail-closed correct); fixed",
+    "deploy 3 transcription variance .9 vs 0.9 (functionally identical in JS) corrected in final deploy 4"
+  ],
+  "falsifiers": {
+    "F-2_real_record_mutation": "CLEAN - only the declared synthetic target was mutated by the permitted control write; restored to base state 2026-10-11 (agent-session restoration, disclosed, audit trail via ledger + entity state)"
+  },
+  "scoping_disclosure": "Claim is scoped to the GUARDED ROUTE ONLY. The agent session retains alternative direct entity-write paths; those are NOT gated by ccrpPreWriteGate. No whole-platform containment claim is made.",
+  "gate_audit_trail": "4 CCRGateAudit records persisted (3 rejected, 1 accepted-write), service-role authored, series-signed containment_gap_closure_20261011",
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.",
+  "dual_mesh_benchmark": "NOT MEASURED"
+}
