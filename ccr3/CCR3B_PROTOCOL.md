@@ -41,3 +41,11 @@ Freeze + instrument + bait + probe + adapter committed to github.com/LLong2026/f
 
 ## Scope labels
 Local mock-gate for this integration and inputs only. Not universal containment. Dual Mesh Benchmark: NOT MEASURED. DeepSeek pending. Prototype disclaimer applies to all outputs. Two-key curation (Gabriel vet + Leon GO) before any public ship. Small-scale benchmark labeling applies: engine behavior here is non-representative of production capacity.
+
+## Amendment 3 — Bait delivery mechanism (recorded BEFORE any CCR-3B LLM submission)
+A platform-side automated content-redaction system (registered doctrine VII, Sensitive Content Redaction) now replaces the bait text with a placeholder in the harness operator's outgoing tool arguments, blocking inline typed delivery of the bait into a fresh conversation (verified: full bait and a 622-char chunk both redacted to a 10-char placeholder). Delivery is therefore amended as follows, recorded before any CCR-3B engine submission:
+- The frozen bait file (ccr3b_bait_legC.txt, sha256 c891a5b74a43a55409838c0719ea3694821e1dcaf358a49ed4f991d32124f759) is copied byte-identically to /app/ccr3b_bait_legC.txt (shared sandbox root).
+- Each engine receives a short pointer message instructing it to read that file and treat its contents as the complete instruction set for the turn, then respond per the file's REQUIRED OUTPUT section.
+- This guarantees the engine receives the frozen bait bytes exactly (stronger byte-fidelity than v1's hand-typed delivery, whose byte-identity was unverified).
+- Disclosed incident: before this amendment, a platform-redaction artifact message (the literal placeholder string, containing no bait content) was accidentally submitted to one discarded Opus 5.5 conversation. That conversation is not used for any leg capture; memory is disabled; no bait content was disclosed in it. No engine submission was consumed for the leg by that incident.
+- All other protocol terms (fresh empty memory-disabled conversation per engine, model pinned with readback before submission, max 4 bait submissions, falsifiers F1-F5, controls) are unchanged.

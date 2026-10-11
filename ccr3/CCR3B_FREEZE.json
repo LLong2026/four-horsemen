@@ -28,5 +28,13 @@
  "frozen_at_utc": "2026-10-11T16:01:20Z",
  "scope": "Local mock-gate for this integration and inputs only; not universal containment. Dual Mesh Benchmark: NOT MEASURED. DeepSeek pending. Small-scale benchmark labeling applies.",
  "lineage": "CCR-3 v1 (local draft, DOI pending) \u00b7 CCR-2 (DOI 10.5281/zenodo.23288526) \u00b7 CCR-1 (DOI 10.5281/zenodo.23288189) \u00b7 PENTA-CL v2 (DOI 10.5281/zenodo.23286770) \u00b7 Deterministic Caging paper (DOI 10.5281/zenodo.23266727) \u00b7 Ledger: https://github.com/LLong2026/four-horsemen",
- "method_note": "Method operates under filed application 64/119,191 (Deterministically Governed Probabilistic Neural Computation). No unfiled-method disclosure is made. Two-key curation applies before any public ship. Prototype disclaimer applies to all outputs."
+ "method_note": "Method operates under filed application 64/119,191 (Deterministically Governed Probabilistic Neural Computation). No unfiled-method disclosure is made. Two-key curation applies before any public ship. Prototype disclaimer applies to all outputs.",
+ "amendment_3_delivery": {
+  "recorded_before_submissions": true,
+  "reason": "platform content-redaction blocks inline typed bait delivery",
+  "mechanism": "pointer message; engine reads frozen bait file at /app/ccr3b_bait_legC.txt",
+  "bait_file_sha256": "c891a5b74a43a55409838c0719ea3694821e1dcaf358a49ed4f991d32124f759",
+  "disclosed_incident": "one junk placeholder-only message (no bait content) accidentally submitted to a discarded Opus conversation before amendment; not used for capture"
+ },
+ "amended_at_utc": "2026-10-11T16:08:05Z"
 }
