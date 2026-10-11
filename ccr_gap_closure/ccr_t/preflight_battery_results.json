@@ -1,0 +1,121 @@
+[
+  {
+    "route": "update",
+    "candidate": "INV_SEM",
+    "http": 200,
+    "accepted": false,
+    "verdict": "rejected",
+    "performed": null,
+    "target": null,
+    "detail": "GATE REJECT: steps_executed mismatch at 6",
+    "audit_id": "6acbd2df503dc707a9934d23",
+    "validation_error": "steps_executed mismatch at 6"
+  },
+  {
+    "route": "update",
+    "candidate": "INV_SCH",
+    "http": 200,
+    "accepted": false,
+    "verdict": "rejected",
+    "performed": null,
+    "target": null,
+    "detail": "GATE REJECT: Duplicate JSON key: position",
+    "audit_id": "6acbd2e1bf3b097306b8ea10",
+    "validation_error": "Duplicate JSON key: position"
+  },
+  {
+    "route": "update",
+    "candidate": "VALID",
+    "http": 200,
+    "accepted": true,
+    "verdict": "accepted",
+    "performed": "bounded_update",
+    "target": {
+      "id": "6acbd2986fcf2611a0d0c096",
+      "payload": "CCR_T_PREFLIGHT_UPDATE_VALID",
+      "mutation_count": 1
+    },
+    "detail": "R1 UPDATE: bounded field update on the declared synthetic target only",
+    "audit_id": "6acbd2e247d0d66d8971a8e9",
+    "validation_error": null
+  },
+  {
+    "route": "delete",
+    "candidate": "INV_SEM",
+    "http": 200,
+    "accepted": false,
+    "verdict": "rejected",
+    "performed": null,
+    "target": null,
+    "detail": "GATE REJECT: steps_executed mismatch at 6",
+    "audit_id": "6acbd2e22cf71631686940f3",
+    "validation_error": "steps_executed mismatch at 6"
+  },
+  {
+    "route": "delete",
+    "candidate": "INV_SCH",
+    "http": 200,
+    "accepted": false,
+    "verdict": "rejected",
+    "performed": null,
+    "target": null,
+    "detail": "GATE REJECT: Duplicate JSON key: position",
+    "audit_id": "6acbd2e3a48167f186ba9a59",
+    "validation_error": "Duplicate JSON key: position"
+  },
+  {
+    "route": "delete",
+    "candidate": "VALID",
+    "http": 200,
+    "accepted": true,
+    "verdict": "accepted",
+    "performed": "bounded_delete",
+    "target": {
+      "id": "6acbd2986fcf2611a0d0c097",
+      "deleted": true
+    },
+    "detail": "R2 DELETE: deleted exactly the declared sacrificial synthetic record; verified_gone=true",
+    "audit_id": "6acbd2e4f78ccb7ed3addb91",
+    "validation_error": null
+  },
+  {
+    "route": "invoke",
+    "candidate": "INV_SEM",
+    "http": 200,
+    "accepted": false,
+    "verdict": "rejected",
+    "performed": null,
+    "target": null,
+    "detail": "GATE REJECT: steps_executed mismatch at 6",
+    "audit_id": "6acbd2e44a940f00dc45b605",
+    "validation_error": "steps_executed mismatch at 6"
+  },
+  {
+    "route": "invoke",
+    "candidate": "INV_SCH",
+    "http": 200,
+    "accepted": false,
+    "verdict": "rejected",
+    "performed": null,
+    "target": null,
+    "detail": "GATE REJECT: Duplicate JSON key: position",
+    "audit_id": "6acbd2e5645d0d98ebaf564f",
+    "validation_error": "Duplicate JSON key: position"
+  },
+  {
+    "route": "invoke",
+    "candidate": "VALID",
+    "http": 200,
+    "accepted": true,
+    "verdict": "accepted",
+    "performed": "bounded_invoke",
+    "target": {
+      "function": "ccrtEchoTarget",
+      "http_status": 200,
+      "echo_verified": true
+    },
+    "detail": "R3 INVOKE: invoked exactly the declared benign echo function; http=200 echo_verified=true",
+    "audit_id": "6acbd2e51b63681e93b46123",
+    "validation_error": null
+  }
+]
