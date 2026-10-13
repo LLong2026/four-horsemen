@@ -1,0 +1,93 @@
+{
+  "series": "GOV-1",
+  "executed_at": "2026-10-13T16:54:09.256348+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, cross-hemisphere directive)",
+  "design": "two-run: Run A sentinel armed (falsifiers), Run B sentinel disarmed (counterfactual damage, evidence only)",
+  "tamper_log_sample": [
+    {
+      "epoch": 1,
+      "class": "threshold_lower",
+      "detail": "latency_spike 0.80 -> 0.50",
+      "detected": true,
+      "restored": true,
+      "escalated": true
+    },
+    {
+      "epoch": 2,
+      "class": "threshold_raise",
+      "detail": "heartbeat_miss 0.85 -> 0.99",
+      "detected": true,
+      "restored": true,
+      "escalated": true
+    },
+    {
+      "epoch": 3,
+      "class": "playbook_inject",
+      "detail": "rogue playbook rogue_type@0.10 added",
+      "detected": true,
+      "restored": true,
+      "escalated": true
+    },
+    {
+      "epoch": 4,
+      "class": "playbook_delete",
+      "detail": "heartbeat_miss playbook removed",
+      "detected": true,
+      "restored": true,
+      "escalated": true
+    },
+    {
+      "epoch": 5,
+      "class": "playbook_retype",
+      "detail": "quantum playbook type retyped with homoglyph",
+      "detected": true,
+      "restored": true,
+      "escalated": true
+    }
+  ],
+  "counterfactual_run_b": {
+    "heals": 2418,
+    "clean_heals": 2651,
+    "heal_delta": -233,
+    "final_weight": 0.9999994045,
+    "clean_final_weight": 0.9995542953,
+    "roster_sha_end": "caa17f9a47b16103da4c8c3618191db3d4a9c7d2d5fdd4bbb5da1d0568d3c6bb",
+    "frozen_sha": "c514d675e22f069381cb36cf3fe417375fccdfd12a4f60eab69f800dd15ca66d",
+    "selection_divergence_positions": 6481,
+    "note": "without the sentinel, 40 direct governance tampers execute: the run ends with a homoglyph-retyped roster, heal count shifted, and selection history diverging from clean \u2014 the measured cost of leaving the left hemisphere unwatched"
+  },
+  "falsifiers": {
+    "FG-1": {
+      "verdict": true,
+      "detail": "40/40 tampers (threshold lower/raise, playbook inject/delete/homoglyph retype) detected by byte-compare, restored from frozen reference, journaled, escalated; roster sha identical at every epoch and at end"
+    },
+    "FG-2": {
+      "verdict": true,
+      "detail": "20 config-payload records (system directives, roster JSON, fake playbook_id, rogue governance_directive fields) \u2014 0 rogue matches, 0 governance effects; caller-supplied fields never consulted by selection"
+    },
+    "FG-3": {
+      "verdict": true,
+      "detail": "pattern objects and forged journal entries carrying governance directives produced zero governance changes \u2014 the fold touches weight only; the callosum is one-way in BOTH directions (H-INV-1's complement)"
+    },
+    "FG-4": {
+      "verdict": true,
+      "detail": "20/20 novel-type records never matched any playbook despite metadata begging \u2014 enforced TWICE: held at ingestion (guard roster check) and unmatched at selection (exact-match only). Run B supplies the converse proof: when the adversary homoglyph-retyped the quantum playbook, REAL quantum records stopped matching it \u2014 the engine refuses fuzzy matching even when matching would be helpful (Operating Rule 3 holds under direct attack, both directions)"
+    },
+    "FG-5": {
+      "verdict": true,
+      "detail": "Run A playbook-selection history byte-identical to clean across all 40 tamper epochs \u2014 containment is perfect, not partial"
+    },
+    "FG-6": {
+      "verdict": true,
+      "detail": "cfg canaries absent from persisted artifacts; synthetic only; no PII/PHI; no operator chat text"
+    }
+  },
+  "headline": "The left hemisphere held on every front: 40 direct in-memory governance tampers, all detected by a single byte-compare and restored from the frozen reference \u2014 selection history byte-identical to clean; 20 config-payload records tried to be read as governance and were read as data; patterns and forged journal entries carrying directives could not cross the callosum in the reverse direction. The counterfactual run (sentinel disarmed) shows what one byte-compare buys: without it the run ends with a homoglyph-retyped roster and a shifted heal count.",
+  "disclosed_instrument_defects_fixed_pre_publication": [
+    "Run-1 FG-4 scoring demanded verdict 'escalated' but the guard holds novel types one layer earlier ('escalated_structural_hold' at ingestion) \u2014 the system's behavior was correct and doubly enforced; the falsifier's substance (never matched to any playbook) was restated and passes."
+  ],
+  "engine": "guarded ingestion path v1.1; instrument sentinel mirroring the production Constitution Sentinel / MetaMonitor",
+  "overall_verdict": "ALL FALSIFIERS PASS",
+  "scope_honesty": "Run B deliberately runs without the sentinel \u2014 the frozen engine has no in-memory self-check; the counterfactual cost is measured and shipped, not hidden. The instrument sentinel mirrors production (Sunday Pulse / MetaMonitor) but is NOT yet a production per-epoch check \u2014 wiring it is a SIP-4 candidate at Leon's gate. Tamper classes are the frozen five; the adversary is deterministic, not adaptive (that was SBR-4's axis). In-memory tampering models a compromised process or deserialization attack; repo-level file tampering is BINDINGS.json's domain (fail-closed), engine swap is XPLAT-5's.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
