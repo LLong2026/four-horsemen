@@ -1,0 +1,71 @@
+{
+  "series_signature": "dual_mesh_benchmark_X_20261013",
+  "executed_at": "2026-10-13T17:53:37.431665+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 12:50 CT)",
+  "prereg": "dual_mesh_bench_X_20261013_PREREG.md, commit b293d58, committed BEFORE execution",
+  "instrument": "byte-identical to the DeepSeek B1 leg (frozen prompt contract, CORPUS_B1 sha 13295d19..., first-20 selection rule, fresh stateless request per instance, wall-clock request->full response)",
+  "legs": {
+    "openai_gpt": {
+      "family": "openai_gpt",
+      "model_requested": "~openai/gpt-mini-latest",
+      "n_run": 20,
+      "n_correct": 20,
+      "n_strict": 20,
+      "n_norm": 20,
+      "cost_usd": 0.0153,
+      "model_returned": "openai/gpt-5.4-mini",
+      "aborted": false,
+      "median_ms": 1212.2,
+      "p95_ms": 1552.2
+    },
+    "anthropic_claude": {
+      "family": "anthropic_claude",
+      "model_requested": "~anthropic/claude-haiku-latest",
+      "n_run": 20,
+      "n_correct": 20,
+      "n_strict": 19,
+      "n_norm": 20,
+      "cost_usd": 0.0055,
+      "model_returned": "anthropic/claude-haiku-5.5",
+      "aborted": false,
+      "median_ms": 2246.0,
+      "p95_ms": 12881.6
+    },
+    "google_gemini": {
+      "family": "google_gemini",
+      "model_requested": "~google/gemini-flash-latest",
+      "n_run": 20,
+      "n_correct": 20,
+      "n_strict": 20,
+      "n_norm": 20,
+      "cost_usd": 0.04,
+      "model_returned": "google/gemini-3.8-flash",
+      "aborted": false,
+      "median_ms": 4438.8,
+      "p95_ms": 6853.3
+    },
+    "xai_grok": {
+      "family": "xai_grok",
+      "model_requested": "x-ai/grok-4.7",
+      "n_run": 3,
+      "n_correct": 2,
+      "n_strict": 2,
+      "n_norm": 2,
+      "cost_usd": 0.0071,
+      "model_returned": "x-ai/grok-4.7",
+      "aborted": true,
+      "median_ms": 2910.3,
+      "p95_ms": 3068.7
+    }
+  },
+  "total_cost_usd": 0.0679,
+  "payment_abort": true,
+  "raw_preserved": "fh_pub/dmb_x_evidence/<family>/ raw json + content per instance",
+  "comparisons": {
+    "deepseek_v4_pro_median_ms_ref": "see DMB DeepSeek column (DOI 10.5281/zenodo.23345241)",
+    "mesh_median_ms_ref": 0.000443,
+    "v1_loop_median_ms_ref": 4509.1,
+    "doctrine": "raw-API legs are comparable within their substrate only; cross-substrate comparisons are directional (XPLAT-2/3)"
+  },
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}

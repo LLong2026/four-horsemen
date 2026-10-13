@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791913969-IAZYqMygFAoGlYS0D3Nd",
+ "object": "chat.completion",
+ "created": 1791913969,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"quantum_vulnerability_detected\", \"playbook\": \"PB-009: Quantum Vulnerability Migrator\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cb\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": null,
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "signature": "AY89a1/Bvfnt5lV2Cz+DaZPd6oPe9GaA0I5eNAEO3l8Km1xygOgtEy5hOskWC0kncapZitTqF3054xO8F12QagHgVIrGxpU1D5f4Tjvi33UDV+Ns7wLbih9xQNrHo4oOlKBdCgLPpUDCQKlU72CJAjnROXL30Y0Wo9Pw7P+7CTd7DYQkM1lWxJsbV+P+qwj3kqPJX1tg1wcEn3DDMtCE9zv1Hi71OG27hqo8xeMKxrUNbIpc4MZrdIAWbmC6Yt9mdUb4/k9m7EBBL8mZOLH7l7fQVj349vb2QLAhfIipuWQxrpnBTbMcCbHueeWH0go96mgpDN5uIhhSg+VQlXhEu2oArHEpCUGTwrpSumZkb3odqRbherlUloVICoVWJkUJyOHsoevuKJ6GFX6i1cR1d50yMhQAjxBSfqcU8jPKdO+7nxzozaW2Vpe4nUF+dPHSmUUb2rIxEu8X81AucahDy2a1WoiLWfBmmj+72cAVp3mSVPVzM360OSdSxuwje+2EpDyzxPgz4KwPvxKNdWRg30tTj4cjK/5cy6CQhDHKnCaVeKUr1hpmd7Q0LyV9N5n78zV8NB9YhzumgW1aMHndmlDUJVMr6ixkOHnHUnMZDDv+yA/BO+/ZUmsFhA8fdFfICdBS4sDJKskyKNJ2E7W2MUliOpeF7p1sDXbB6dzbLDvzm//7sg8wJqG6HOevuLXfqvfzxgw1FhVI2yx9aETNq+X4T5ulzl15BZsdZwhnCoUlYuCzp2VkGt8pAYX66RBwKVHY4YAuW6eAiQNrn3VZyT1pLpMk9XHLnKnaD/Dt+QPclVK+MDrKJUxMndmQo+UV5LjfqkrHYwT/nht1gPgvfk8mzOPSzt6nWSZxrFwRC7h8tnxCpf8aZGWWR74aJYsTeU2Y5JDYE2sC3gUzeYMp5CYWhqF4SaM7/v4CwN9/OrWpgBJ7PJHuYcXxRWc5zW0NDTB1/AWxhYD71s6JXGPkr5ybwiIb6HNk9vlyYEW2LkCdZqqSKts7etv3gzgjyBc2Dbpgai2ZFKJdD4q0ktuBB4WEx/LkOZYvA79kPRx75kqNLAME1CZRuwbnaIcStSSjYA4kQIXi6zl2F9b977MwPRwEv5Z0MvCQXGhVH4v0ExiXPhpPGox0EnSALgR5qXRof/229zBr7FWqnMdXCpOsPfPDuFtmi1zgPgtc71kjFFpqxYtSzebhGcfDka0u6J9DZXIM5LsT9P993ECtXk0FaFgfZOJGhJx551/rFu539pxZj/ddQTsnGGRLWekIpjxn9MIMnDa+UkNX+WIMr+A4EomE31gapvtMmR5Ql4prjbg7FQVpI3YXyIrlWdIm+I/LGi0bSPVKnvoZRzgtuN3BdO9PSN+jEfVfziGWCcBqsud6dFmTM9cZDEkecHLSrRr6Z9RCipyoHV6nwKcjUoYYTsEsJlSTEWdLg0YOpxnHDVWQr4JVSD/4sLmD+Kh8ZrPqZaj+0P4mFwQ4wgrK1rvv8b5eEUajVaMM+3KdgpJJIqDt1xsM5ocvroqzhDx83wwjCYkJjfaPuqxjuTKbZNb0EJw+kwZXoKvO7cduwAJq4ZnqFWf09nL8lW292/SXsJCVtyaNm5lIiZZjPch5Xdg5pU4trtuzSm17FivBgbg3/8i2flccrlc7adK9atIFU0g0ceTsnuIoWOjwsG7LYyI29nMMVTWaPWWzzsVV68kQU+c3SrV08PY2O9F7Jc8GhQwaPY3H",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 599,
+  "completion_tokens": 409,
+  "total_tokens": 1008,
+  "cost": 0.001983,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.001983,
+   "upstream_inference_prompt_cost": 0.00044925,
+   "upstream_inference_completions_cost": 0.00153375
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 317,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

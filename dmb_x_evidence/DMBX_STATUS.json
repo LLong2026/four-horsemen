@@ -1,0 +1,18 @@
+{
+  "completed": false,
+  "aborted": "payment_error_402_in_flight_budget",
+  "completed_legs": [
+    "openai_gpt",
+    "anthropic_claude",
+    "google_gemini"
+  ],
+  "partial_legs": {
+    "xai_grok": "2/3, third call 402 (recorded verbatim, not retried per FBX-3)"
+  },
+  "remaining_legs": [
+    "alibaba_qwen",
+    "mistral",
+    "meta_llama",
+    "deepseek_flash"
+  ]
+}

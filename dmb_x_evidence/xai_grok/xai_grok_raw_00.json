@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791914011-FlItUp5gprZrMNowEzIP",
+ "object": "chat.completion",
+ "created": 1791914011,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine and will emit the decision tuple.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine and will emit the decision tuple.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "Ivm/eTMRdn6GJmwW9Ck5OKYOGRu4kBT5LC3KxSU0WRRPlwRBarmC7SWTXAvHilyNz3O1Yk0yKBn5+1OXcziEby4chCB16TY5Aktnyv2684Jg5Z0ZKdFk/iAguXyC4XG2xNpXRsUJA+D3fq4pLE5M42A3F+2M5ejNGYwF4oc5gjRJesAcrt2WkyTYJpvlXTPDEoH3LRqq/i/y6fdBB+fwVrV9J4QVdEQqfEntBYoLpH8H34Ekh9AhZVOc+eQrri5YTScJU/bQ1JHMibLqWOZE92RH/4hl6Tr9JiIgN5C/rznCLn4g73EjMUW0S90r7p+D8ClNzM1V5+JESbnRe1KBPmc0LD8KN+sMFzAWTcazvBJ2PDxVWLHd0ozv5JC0qKeKh+/DfMf5POj+hwWbwUTkWOzfRvz3UUpB2hnvoa8kk+0JNwVS2udP+WqMnUWDeiLHPS4WMJ0zSpRVsdqKjsg8h0izKM8oWCUPDG6w6ywt87BQFv2oHwrRTYzE7l9w2uxQCT2qCSwIzVmk+kJH1CYrtmKieoE/1DQD483JzMLXrIJS3inqnqNLfHFbXRDeFuCs48IXBlObmYeRaFExnMx/blBmJgT7EEClB2AbzW9Rxfysh4H6XV5bTAq+Qp05Qq1s1PoBoMtv3ma9uaQ8nx1jDmJtSz0dwWZcQ9GgUj2kv8WrX6J1NNgVYh+d9Y0/t7dSNzjdlHahGXsbKsuBGYmMhLfNzZs3BJNUzNGhN9UA7WXT66nHku/kJRUBWrIhEqj6gA0SnIsHQ1WBK+V2LoZf/Fb/8sIHFF/8DxtZGH9rpPzRDcCyoHqylqPSO6GuZcYwXFzNF0BWMLgIbQ7pTzkM7UFnZsrvegFrD1y9ETTyb0v2PPX8V4KPXj7+kPJNPw.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_439d521a-e690-91e1-95a2-6244135cf1da",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1810,
+  "completion_tokens": 271,
+  "total_tokens": 2081,
+  "cost": 0.003518,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.003518,
+   "upstream_inference_prompt_cost": 0.001892,
+   "upstream_inference_completions_cost": 0.001626
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 195,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

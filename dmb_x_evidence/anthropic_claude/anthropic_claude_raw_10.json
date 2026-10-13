@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791913900-DHz4xgCAJkVkoG6hqJIN",
+ "object": "chat.completion",
+ "created": 1791913900,
+ "model": "anthropic/claude-haiku-5.5",
+ "provider": "Anthropic",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "end_turn",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"quantum_vulnerability_detected\", \"playbook\": \"PB-009: Quantum Vulnerability Migrator\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cb\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": null,
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "signature": "CAQSsQgKEAgSGAI4AUIIdGhpbmtpbmcSDK5Oaf/2qyDPuYU3IhoMiiCPyEhENdM7Sg+5IjBTah6x8ZELG0bvRzjyNaPeK7TmeI3JTLCgk1jBLtrsuE6fUlwR7V3NdRSWK4l9Il4qzgdwGPft9p3z7fKmWnadn/Zk0kioAmZA2G7evGDlQMs+/S/hvxR9dBr6JMI7Zh/WBk0w4dNjbDxCU5B+9glNI83nsVjopAggl8fYf31ScXdsuhEi1myjshp/fNTw+1rDnnDPRqawIe0b2Kpr+prHHP1AUR0NxHMS5N5uZxOTfJLNb7DYv/7gLUby9jq+q/AWMbF8K058dfdffSgEAgGv2gzPcg4igxqD0qlALkJ5YCwLmaDApphoHbYjzq0FTV1CjyQURCop7vZcFfcYqq4fbUruJklIZOCEXIw5RLvzm2dc3+fhkP7Eu1oaViEru5Q8sohXNfCJn29fyNYj0GYIICQpsNAVHYf6HfJ6QLUm9ez5OIiGfHjjaobRbACsr4jUCSBNIQsU+pnIwQkKAmh3HjJGEET/Sa1Jj//4s6gQ5ZrehVTnDqj5GOBYS5rotU65fhKEItMSN+LxOKyhAXTjshkatGnUwqrxigwgdCGrVknX5Tj5BGnxtXan2dL9FBP+7v/y80yaUpRgDbcoEVDjwGyR2ztIJrmYXGvOpU9natKqZ+uqW7jxnV5G1hmWB0MJW8uWewj8NEKJxx852DmfLEJFJ82e3QeyzxTY5M3b6QTOkR+aXo3hrFiGbRvWtXH2a/d0QxLfJj4v/nJdwTo5fwFodUYHDoYh3vgvBBrxlyH28A69QJPkFsPk2+cB0aEEXRg/sA1BixXNiz0LHjDuEAfVO9rq2zmRT+L3LJwdgwZo4iKPZD5jQJggaooOmE+yEwdxmOVp/FskqRarTH+8lwCX0HIiZIRx6fos469zMScOCQcxVilEBbpJMrhyYMDjhCGzuAukpVh2S/2s0h7T1LlJB+0w/L7eSCQWU5JAdc3gUo1gK+YBkzos7Otods1GoxE42nDMV2xUodVH5Pl+1nLEXay6BMWpCZrOh8k8YFgQa+h9BqEj+E56SOxxb+Vea8wuuH4EHksC3bjei7+4hXLGYec+sSpAfE40AowaFOVmC+7L33WFD1bpUipujjiQ1rBqmt6t7BB2lfb85XNMqKuLatfSkOSPCBmdzib93FDTGdRyOQFKiyUGd+0fegdAgtFiG7PWPvYPKqHQ7pmGYjTPG7TaGWCL0j84sF0d4gvd4TdzYxbUC2Adkn2x6qwSwKVvy0s1Xbk/FFPZFLjX8Ez40WIaVEWEgL1vj1XZpv/kypSUaqK6GIEbIfOr4quPoUa4+uFuFsMt2a/GoD7LmezkGShe/bHdFiKSyT8HkC+0NyWwsR8jxc0AYDPAC63XKm2dMVypghi+1TA8tfwQihgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8YW50aHJvcGljIn0",
+      "format": "anthropic-claude-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 875,
+  "completion_tokens": 308,
+  "total_tokens": 1183,
+  "cost": 0.0002415,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0002415,
+   "upstream_inference_prompt_cost": 8.75e-05,
+   "upstream_inference_completions_cost": 0.000154
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 185,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}
