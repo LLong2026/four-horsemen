@@ -19,7 +19,10 @@
       "sha256_git_head": "c40ff09b7766f9394a206429c55e19af4e1fd314c8165ea5faa93ac331553812"
     }
   ],
-  "enforcement_note": "The maximal attacker (both keys + commit access) can rewrite local git, but this record's DOI publication on Zenodo is an immutable external surface: the run-end audit compares live anchor shas against this record, and a divergence is a DETECTED forgery. The one number becomes 1.",
+  "enforcement_note": "The maximal attacker (both keys + commit access) can rewrite local git, but this record's DOI publication on Zenodo is an immutable external surface: the run-end audit compares live anchor shas against this record, and a divergence is a DETECTED forgery. The one number becomes 1. This record (DOI 10.5281/zenodo.23348528) publishes the anchor fingerprints; the binding is enforcement-live as of publication.",
   "disclosure": "Pre-publication, this record lives only in git (attacker-forgeable with commit access); the check is enforcement-live the moment its DOI publishes. DHB-3R runs against the staged record and the worker confirms enforcement-live after publish.",
-  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic.",
+  "doi_published": "10.5281/zenodo.23348528",
+  "record_url": "https://zenodo.org/records/23348528",
+  "enforcement_live": true
 }
