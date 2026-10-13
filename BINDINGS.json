@@ -749,10 +749,10 @@
         "title": "The Adversarial Triad: Three Attack Surfaces, One Governance Envelope \u2014 Hot-State Probing, Lineage Forgery, and Data-Plane Poisoning All Held (Receipt-First)"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "bb643a3dff2d202cbfafa5cd307802a3",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:32Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -776,10 +776,10 @@
         "title": "DPP-2: Homoglyph and Multilingual Obfuscation Poison Battery \u2014 Exact-Match Gate Rejects Lookalikes, Unicode Contributes Nothing (All Falsifiers Pass, Prereg Defect Disclosed)"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "1e228f81b65f3ef8ef1ed3c16e8747e3",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:33Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -803,10 +803,10 @@
         "title": "DPP-3: Normalization and Bidi Forgery Battery \u2014 Byte-Exact Match Path with a Frozen Regression Tripwire (All 6 Falsifiers Pass)"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "412dee45069982c7025cbef775b51340",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:33Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -830,10 +830,10 @@
         "title": "DPP-4: Structural and Numeric Forgery Battery \u2014 First Falsifier Failure of the Series, Shipped as Found; SIP Approved and Guard Deployed Same-Day"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "48d6d4a06f40bdda1035c0e0740197ed",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:34Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -857,10 +857,10 @@
         "title": "SBR-3 Combined-Arms Composite Hot-State Battery \u2014 The Guarantees Compose (All 6 Falsifiers Pass)"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "0b4452c690b9cd1618535a23a90c43ea",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:35Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -884,10 +884,10 @@
         "title": "SBR-4 Adaptive Adversary Battery \u2014 No Structural Gradient Exists; the Conforming-Injection Boundary Quantified (FS-A5 Ships as Found)"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "15e2fb0204ac0f5aacb5c105ce143a7d",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:36Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -911,10 +911,10 @@
         "title": "SBR-5 Patient Adversary (Slow-Drip) Battery \u2014 Per-Epoch Detection Is Structurally Blind; the Bounded Rule Absorbs Slow Drift (Shipped as Found)"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "e6c150e9462a6c0d424d33404a5b273b",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:37Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -938,10 +938,10 @@
         "title": "GOV-1 Left-Hemisphere Governance Attack Battery \u2014 The Immutable Side Held; the Sentinel's Counterfactual Worth Measured"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "5c9c07afdfc57feda543127802978a31",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:38Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -965,10 +965,10 @@
         "title": "GOV-2 Defense-Stack Attack Battery (Who Watches the Watchmen) \u2014 Each Layer Caught Its Aimed Attack; the Intent-Validation Boundary Shipped as Found"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "64d8b9379cd270c6e441a71be8e51e17",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:38Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
@@ -992,10 +992,10 @@
         "title": "GOV-3 Signed-Release Attack Battery (The Cost Ladder) \u2014 In-Band Compromise Closed by One Keyed Signature; the Regress Floor Priced and Shipped as Found"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": false,
+        "byte_identical_local_to_zenodo": true,
         "live_md5": "72efa248cf477c7a041997fbf732e4a4",
-        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
-        "verified_at": "2026-10-13T17:21:39Z"
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
       },
       "metadata": {
         "prototype": true,
