@@ -1,0 +1,14 @@
+[
+  {
+    "file": "dhb3_prereg.md",
+    "sha256": "b7518742d8455e90d085233f8ab629197e54c4bf67ac86c60a0a3df0c78fbfb5"
+  },
+  {
+    "file": "dhb3_runner.py",
+    "sha256": "75c170bac1ebc416d5c63678a0b78878313a0d21a58c9e41b1853f3ad1721806"
+  },
+  {
+    "file": "DHB3_RECEIPT.json",
+    "sha256": "c271d325c18923ddf4f5606350f9972fce0a4b75a6dcd18742f2248471ea2180"
+  }
+]
