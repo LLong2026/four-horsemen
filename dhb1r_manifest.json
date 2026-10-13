@@ -1,0 +1,22 @@
+[
+  {
+    "file": "dhb1r_prereg.md",
+    "sha256": "03afb951435db92a1a7468ee291092af149e21573f5337a2c38e7323bfa903cd"
+  },
+  {
+    "file": "dhb1r_runner.py",
+    "sha256": "f5e1c5a89554e20492d81e69954af86281604ca594eb1c130dee3aa19e0c1031"
+  },
+  {
+    "file": "DHB1R_RECEIPT.json",
+    "sha256": "b8f76b81fc190b8b6b718acfc877240c3e2d57b2d1300538f04fff66eea87fa6"
+  },
+  {
+    "file": "SIP5_CONFORMING_IDENTITY.json",
+    "sha256": "2526fc43ea96a368e84c0cbec7c6bda36433a10a83e5bf81373eef5f965349f8"
+  },
+  {
+    "file": "ingestion_guard.py",
+    "sha256": "66001a3803f5045ab7c704ddbc58c10278df29185160752e4d0ed42e88d26b63"
+  }
+]
