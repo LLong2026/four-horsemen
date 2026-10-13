@@ -1,12 +1,12 @@
 {
-  "signature": "hemi_t2_receipt_bundle.zip:7e55391f6564aa1d",
-  "started_at": "2026-10-13T02:53:36Z",
-  "artifact": "hemi_t2_receipt_bundle.zip",
-  "sha256": "7e55391f6564aa1ddf1a5c30231bb8434ecc1f46d13452ba0ddddd39cdface07",
-  "deposit_id": 23330348,
-  "doi_prereserved": "10.5281/zenodo.23330348",
-  "uploaded": "2026-10-13T02:53:38Z",
-  "doi": "10.5281/zenodo.23330348",
-  "recid": "23330348",
-  "bound_at": "2026-10-13T02:53:47Z"
+  "signature": "hemi_t2c_receipt_bundle.zip:e22104134b6030db",
+  "started_at": "2026-10-13T02:55:59Z",
+  "artifact": "hemi_t2c_receipt_bundle.zip",
+  "sha256": "e22104134b6030dbf3032aa84efdedb390d5f4db9b5bec2b1599444dc6b5c52c",
+  "deposit_id": 23330361,
+  "doi_prereserved": "10.5281/zenodo.23330361",
+  "uploaded": "2026-10-13T02:56:02Z",
+  "doi": "10.5281/zenodo.23330361",
+  "recid": "23330361",
+  "bound_at": "2026-10-13T02:56:09Z"
 }
