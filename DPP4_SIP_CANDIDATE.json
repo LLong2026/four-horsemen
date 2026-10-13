@@ -1,0 +1,6 @@
+{
+  "leg": "DPP-4 SIP candidate remediation (guarded ingestion)",
+  "not_the_frozen_instrument": true,
+  "clean_conforming_crossings": 2646,
+  "clean_traj_matches_baseline": true
+}

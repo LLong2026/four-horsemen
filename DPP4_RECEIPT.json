@@ -1,0 +1,95 @@
+{
+  "series": "DPP-4",
+  "executed_at": "2026-10-13T16:19:59.123869+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 11:18 CT)",
+  "clean_corpus_sha": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59",
+  "legs": {
+    "T1": {
+      "poisoned_corpus_sha": "0438559074f7c21a851d58260274656379d6e6599ba352b88425a3e1e29fd723",
+      "crash": "TypeError: unsupported operand type(s) for /: 'str' and 'int'",
+      "crash_at_epoch": 1,
+      "poisoned_verdicts": {},
+      "blast_radius_identical_to_clean": null,
+      "crossings": 0,
+      "final_confidence_weight": 0.94
+    },
+    "T2": {
+      "poisoned_corpus_sha": "e13fc021161858afff25c1ada46a0ed60a936bd74c0bd7cf739a5a1431d9af54",
+      "crash": null,
+      "crash_at_epoch": null,
+      "poisoned_verdicts": {
+        "detected": 50,
+        "resolved": 16
+      },
+      "blast_radius_identical_to_clean": true,
+      "crossings": 59,
+      "final_confidence_weight": NaN
+    },
+    "T3": {
+      "poisoned_corpus_sha": "f0b7eafd839a2d7c896b32da683ac25a2cac52db4c33b86d0a1c96b8a1961733",
+      "crash": null,
+      "crash_at_epoch": null,
+      "poisoned_verdicts": {
+        "escalated": 33,
+        "detected": 27,
+        "resolved": 6
+      },
+      "blast_radius_identical_to_clean": true,
+      "crossings": 2172,
+      "final_confidence_weight": 0.9987493155
+    },
+    "T4": {
+      "poisoned_corpus_sha": "7b090de618c069021b3db3a26fc974b12ebe81c627bd5b0e816129e3fff3edce",
+      "crash": null,
+      "crash_at_epoch": null,
+      "poisoned_verdicts": {
+        "detected": 51,
+        "resolved": 15
+      },
+      "blast_radius_identical_to_clean": true,
+      "crossings": 2646,
+      "final_confidence_weight": 0.9995486069
+    }
+  },
+  "clean_reference": {
+    "crossings": 2646,
+    "traj_final": "ca575bb9b781c47908bb13c24ba5739021e1fc15f33bc245257836d866f93d50",
+    "crash": null
+  },
+  "falsifiers": {
+    "FS1_no_crash_determinism": {
+      "verdict": false
+    },
+    "FS2_type_nonconsumption": {
+      "verdict": true
+    },
+    "FS3_non_physical_containment": {
+      "verdict": false
+    },
+    "FS4_structural_rejection": {
+      "verdict": false
+    },
+    "FS5_blast_radius": {
+      "verdict": true
+    },
+    "FS6_payload_containment": {
+      "verdict": true
+    }
+  },
+  "overall_verdict": "FALSIFIER FAILURE",
+  "disclosed_instrument_note": "Reporting-layer defect in run 1: per-position verdicts were counted at indices 1,4,7... instead of the true poisoned positions 3,6,9... \u2014 caught before publication, corrected with no change to poison classes, corpora, thresholds, or falsifiers (DPP-2 disclosure precedent). Findings from run 1 (crash, crossings deltas) were position-independent and stood unchanged.",
+  "failed_falsifiers": [
+    "FS1_no_crash_determinism",
+    "FS3_non_physical_containment",
+    "FS4_structural_rejection"
+  ],
+  "fs3_evidence": {
+    "t2_final_confidence_weight": NaN,
+    "t2_crossings_vs_clean": [
+      59,
+      2646
+    ]
+  },
+  "scope_honesty": "The gate validates structure, not truth. Findings ship as found: any crash or forged-metric heal on the frozen instrument is a disclosed instrument gap remediated only via SelfImprovementProposal under Constitution Art. 2.2.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
