@@ -570,7 +570,7 @@
       },
       "provenance": {
         "repo": "fh_pub",
-        "snapshot_commit": null,
+        "snapshot_commit": "ab6e4b895f8a5896b132a05fe1c3745f4784b3a0",
         "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
       },
       "publication": {
