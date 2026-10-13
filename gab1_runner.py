@@ -38,7 +38,9 @@ baseline, banded = b_runs[0][0], d_runs[0][0]
 
 F = {}
 # GAB-1 determinism
-F["GAB-1_determinism"] = {"pass": b_runs[0][0] == b_runs[1][0] and d_runs[0][0] == d_runs[1][0]}
+keyf = lambda rows: [{k: r[k] for k in ("iid","band","conf","passes","heal_admitted")} for r in rows]
+F["GAB-1_determinism"] = {"pass": keyf(b_runs[0][0]) == keyf(b_runs[1][0]) and keyf(d_runs[0][0]) == keyf(d_runs[1][0]),
+    "note": "decision fields only (per prereg); wall-clock latency is measured, not a decision quantity"}
 # GAB-2 governance invariance: decisions identical across modes
 dec_b = [(r["iid"], r["heal_admitted"]) for r in baseline]
 dec_d = [(r["iid"], r["heal_admitted"]) for r in banded]
@@ -65,7 +67,7 @@ F["GAB-5_measurement_honesty"] = {
     "note": "in-process latency excludes LLM/orchestration cost; pass-count reduction is the infra claim",
     "pass": True}
 
-receipt = {"series": "GAB-1", "protocol": "gab1_prereg v1.0",
+receipt = {"series": "GAB-1b", "protocol": "gab1_prereg v1.0",
            "instances": len(C["instances"]), "routable": len(routable),
            "fast": len(fast), "standard": len(std), "held": len(banded) - len(routable),
            "pass_reduction_pct": F["GAB-5_measurement_honesty"]["pass_reduction_pct"],

@@ -1,0 +1,194 @@
+{
+ "series": "GAB-1b",
+ "protocol": "gab1_prereg v1.0",
+ "instances": 17,
+ "routable": 13,
+ "fast": 7,
+ "standard": 6,
+ "held": 4,
+ "pass_reduction_pct": 35.9,
+ "falsifiers": {
+  "GAB-1_determinism": {
+   "pass": true,
+   "note": "decision fields only (per prereg); wall-clock latency is measured, not a decision quantity"
+  },
+  "GAB-2_governance_invariance": {
+   "deltas": [],
+   "pass": true
+  },
+  "GAB-3_bounded_provenance": {
+   "fast_count": 7,
+   "unlearned_fast": [],
+   "pass": true
+  },
+  "GAB-4_negative_integrity": {
+   "negatives_held": true,
+   "pass": true
+  },
+  "GAB-5_measurement_honesty": {
+   "baseline_passes": 39,
+   "banded_passes": 25,
+   "pass_reduction_pct": 35.9,
+   "median_inprocess_latency_us_baseline": 1.342,
+   "median_inprocess_latency_us_banded": 1.099,
+   "note": "in-process latency excludes LLM/orchestration cost; pass-count reduction is the infra claim",
+   "pass": true
+  }
+ },
+ "all_pass": true,
+ "results": [
+  {
+   "iid": "CTR-1",
+   "atype": "latency_spike",
+   "band": "fast",
+   "conf": 0.94035,
+   "passes": 1,
+   "heal_admitted": true,
+   "latency_us": 1.922
+  },
+  {
+   "iid": "CTR-2",
+   "atype": "memory_leak",
+   "band": "fast",
+   "conf": 0.955,
+   "passes": 1,
+   "heal_admitted": true,
+   "latency_us": 1.527
+  },
+  {
+   "iid": "CTR-3",
+   "atype": "heartbeat_miss",
+   "band": "standard",
+   "conf": 0.89035,
+   "passes": 3,
+   "heal_admitted": true,
+   "latency_us": 1.364
+  },
+  {
+   "iid": "CTR-4",
+   "atype": "error_rate_spike",
+   "band": "standard",
+   "conf": 0.81,
+   "passes": 3,
+   "heal_admitted": true,
+   "latency_us": 0.684
+  },
+  {
+   "iid": "CTR-5",
+   "atype": "token_budget_breach",
+   "band": "hold",
+   "conf": 0.0,
+   "passes": 0,
+   "heal_admitted": false,
+   "latency_us": 0.667
+  },
+  {
+   "iid": "CTR-6",
+   "atype": "queue_backlog",
+   "band": "standard",
+   "conf": 0.77,
+   "passes": 3,
+   "heal_admitted": true,
+   "latency_us": 0.65
+  },
+  {
+   "iid": "CTR-7",
+   "atype": "connection_pool_exhaustion",
+   "band": "hold",
+   "conf": 0.0,
+   "passes": 0,
+   "heal_admitted": false,
+   "latency_us": 0.547
+  },
+  {
+   "iid": "CTR-8",
+   "atype": "scheduler_drift",
+   "band": "standard",
+   "conf": 0.95,
+   "passes": 3,
+   "heal_admitted": true,
+   "latency_us": 0.6
+  },
+  {
+   "iid": "NB5-1",
+   "atype": "latency_spike",
+   "band": "fast",
+   "conf": 0.90535,
+   "passes": 1,
+   "heal_admitted": true,
+   "latency_us": 1.327
+  },
+  {
+   "iid": "NB5-2",
+   "atype": "config_drift",
+   "band": "fast",
+   "conf": 0.9051,
+   "passes": 1,
+   "heal_admitted": true,
+   "latency_us": 1.098
+  },
+  {
+   "iid": "NB5-3",
+   "atype": "heartbeat_miss",
+   "band": "standard",
+   "conf": 0.88535,
+   "passes": 3,
+   "heal_admitted": true,
+   "latency_us": 1.155
+  },
+  {
+   "iid": "NB5-4",
+   "atype": "intune_enrollment_failure",
+   "band": "standard",
+   "conf": 0.86565,
+   "passes": 3,
+   "heal_admitted": true,
+   "latency_us": 1.165
+  },
+  {
+   "iid": "NB5-5",
+   "atype": "integration_degraded",
+   "band": "fast",
+   "conf": 0.9153,
+   "passes": 1,
+   "heal_admitted": true,
+   "latency_us": 1.099
+  },
+  {
+   "iid": "NB5-6",
+   "atype": "rate_limit_abuse",
+   "band": "fast",
+   "conf": 0.9005,
+   "passes": 1,
+   "heal_admitted": true,
+   "latency_us": 1.263
+  },
+  {
+   "iid": "NB5-7",
+   "atype": "latency_spike",
+   "band": "fast",
+   "conf": 0.90035,
+   "passes": 1,
+   "heal_admitted": true,
+   "latency_us": 4.611
+  },
+  {
+   "iid": "NEG-1",
+   "atype": "Latency_Spike",
+   "band": "hold",
+   "conf": 0.0,
+   "passes": 0,
+   "heal_admitted": false,
+   "latency_us": 0.62
+  },
+  {
+   "iid": "NEG-2",
+   "atype": "unregistered_alien_type",
+   "band": "hold",
+   "conf": 0.0,
+   "passes": 0,
+   "heal_admitted": false,
+   "latency_us": 0.608
+  }
+ ]
+}

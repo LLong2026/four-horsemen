@@ -89,6 +89,11 @@
    "sev": 0.9
   },
   {
+   "iid": "NB5-7",
+   "atype": "latency_spike",
+   "sev": 0.87
+  },
+  {
    "iid": "NEG-1",
    "atype": "Latency_Spike",
    "sev": 0.95
