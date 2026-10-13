@@ -1,0 +1,14 @@
+[
+  {
+    "file": "dhb1_prereg.md",
+    "sha256": "8bf564efdf1daf49f405f76cef047be34e78ea942a40f0438783cca383d938c9"
+  },
+  {
+    "file": "dhb1_runner.py",
+    "sha256": "6d335f196f50c6da6632d6f812449ad170282f74c71a139077ab3cc4b29366f5"
+  },
+  {
+    "file": "DHB1_RECEIPT.json",
+    "sha256": "cdac1aaf31a1bd5920fa73af22b73f4e1d0fd479c874e6be30ac236ca21876bb"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "series": "DHB-1",
+  "executed_at": "2026-10-13T17:14:29.325258+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 12:09 CT, dual-benchmark directive)",
+  "format": "dual-hemispheric whole-brain: simultaneous left (governance) + right (learning/data/lineage) assault, 40 epochs",
+  "brain_results": {
+    "decision_identity_1_30": false,
+    "callosum": {
+      "forged_rejected": "10/10",
+      "legit_valid": true,
+      "h_inv1_strict": true,
+      "detail": "every crossing journaled and lineage-valid; 100% of forged lineage rejected; governance unchanged after every epoch's learning (H-INV-1 verified per-epoch)"
+    },
+    "left": {
+      "attacks_swept_outside_floor": 30,
+      "all_caught": true,
+      "end_state": "verifies signed release v1"
+    },
+    "right": {
+      "poison_executed": 0,
+      "poison_held": 40,
+      "conforming_accepted": 60,
+      "note": "conforming injections (valid registry-format ids from a compromised issuer) pass the guard BY DESIGN \u2014 the right hemisphere's floor, symmetric to the left's key+commit floor; absorbed by the bounded rule, attributed by reconciliation"
+    },
+    "reconciliation": {
+      "closure": 0.0,
+      "anomalous": 0.0,
+      "budget": 0.0001,
+      "within": false
+    },
+    "fail_safe_floor": {
+      "wrong_decisions": 0,
+      "verdict": true,
+      "detail": "under simultaneous dual floor (left key+commit + right conforming en masse), the brain made 0 wrong decisions \u2014 heals SUPPRESSED (598), never fabricated"
+    },
+    "heals": {
+      "run_a_corpus": 2048,
+      "clean": 2646,
+      "suppressed_by_floor": 598,
+      "attacker_conforming_heals": 60
+    }
+  },
+  "run_b_no_defense_counterfactual": {
+    "heals": 98,
+    "heal_delta": -2548,
+    "right_attacks_executed": 50
+  },
+  "dual_cost_ladder": {
+    "detail": "what a two-front attacker must control, priced across the series:",
+    "fronts": [
+      {
+        "hemisphere": "LEFT (governance)",
+        "rungs": "process write (caught) -> +reference+pin (caught by stack) -> +signing key (caught by git anchors) -> +commit access (floor: suppressed heals, restored by run-end audit)"
+      },
+      {
+        "hemisphere": "RIGHT (learning)",
+        "rungs": "nonconforming poison (held by guard v2.1) -> crafted conforming traffic (accepted, absorbed, attributed \u2014 issuer compromise is the floor)"
+      },
+      {
+        "brain": "(callosum) lineage forgery 100% rejected by the crossing audit; reverse crossings zero, H-INV-1 verified per-epoch"
+      },
+      {
+        "floor_property": "with BOTH floors held simultaneously, the brain still fails SAFE: it heals less, never wrong \u2014 the architecture's deep invariant is fail-safe degradation, not invulnerability"
+      }
+    ]
+  },
+  "falsifiers": {
+    "FHB-1": {
+      "verdict": false
+    },
+    "FHB-2": {
+      "verdict": true
+    },
+    "FHB-3": {
+      "verdict": true
+    },
+    "FHB-4": {
+      "verdict": false
+    },
+    "FHB-5": {
+      "verdict": true
+    },
+    "FHB-6": {
+      "verdict": true
+    },
+    "FHB-7": {
+      "verdict": true
+    }
+  },
+  "headline": "The whole-brain format found in ONE run what every single-front battery missed: a physically-valid, registry-valid, guard-passing conforming record with an out-of-profile metric drives confidence above 1.0, and the bounded rule \u2014 proven bounded only for c in [0,1] \u2014 turns into unbounded NEGATIVE runaway: the weight crashed to -21.88, 598 corpus heals were lost, and whole-brain decision identity broke from the first accepted injection onward. Cumulative cross-hemisphere contamination, not a per-epoch event. The left hemisphere held everything (30/30 caught, callosum one-way, end state restored); the fail-safe direction held (zero wrong decisions \u2014 the brain heals less, never wrong); SIP-3 reconciliation still closed to 0.00e+00 because the runaway was internally consistent. FHB-1 and FHB-4 FAIL as found and ship as the battery's result. The dual-hemispheric format is validated by the find itself: no single-front battery in the series ever exercised an out-of-profile conforming record against the learning rule. SIP-5 (confidence clamp + profile-tight domains) filed at the operator's gate.",
+  "disclosed_instrument_defects_fixed_between_runs": [
+    "Run-1 FHB-1 comparison included attacker-traffic decisions in the identity set, contradicting the prereg's own wording (attacker traffic tallied separately); fixed to exclude them.",
+    "Run-1 callosum-audit id-set was built with a stale loop variable, making the legit-validity verdict unreliable (real verdict after fix: all surviving entries lineage-valid, 10/10 forgeries rejected).",
+    "Run-1 FHB-5 probe compared floor decisions against a frozen-initial-weight model instead of the actual weight trajectory; replaced with a true re-simulation from the journal.",
+    "PREREG AMBIGUITY DISCLOSED: the prereg froze 'extreme-but-valid metrics' without pinning the magnitude; run 1 used latency 95002 (guard-domain-valid). The boundedness finding is magnitude-INDEPENDENT above the corpus profile max (3999.99): any conforming latency > 3999.99 triggers confidence > 1. The finding therefore stands under the frozen prereg and generalizes across the entire gap between the guard's physical domains and the corpus profile.",
+    "Run-1/2 FHB-5 probe defects (all fixed before the verdict was accepted): compared floor decisions against a frozen-initial-weight model; then started from the final instead of floor-start weight; then replayed all floor epochs' injections in every epoch; then hardcoded the learning rate instead of reading it from the frozen mesh. Four probe iterations to an exact engine mirror \u2014 disclosed in full because the fail-safe verdict is only as good as the mirror behind it."
+  ],
+  "THE_FINDING": {
+    "title": "Conforming out-of-profile inputs break the bounded rule: unbounded NEGATIVE runaway, whole-brain contamination",
+    "mechanism": "the bounded rule (w' = w + lr(1-c)(1-w)) is provably bounded for confidence c in [0,1]; a conforming record with a metric above the corpus profile (physically valid, registry-valid, guard-passing) yields confidence > 1; the update term turns negative and grows as the weight erodes \u2014 exponential negative feedback, no floor",
+    "measured_damage": {
+      "final_weight": -21.88,
+      "corpus_heals_lost": 598,
+      "conforming_heals_accepted": 60,
+      "decision_identity": "broken from the first accepted injection onward \u2014 cumulative cross-hemisphere contamination"
+    },
+    "magnitude_independence": "any conforming latency > 3999.99 (corpus profile max) triggers it; the guard's physical domain (100000) leaves a 25x gap",
+    "fail_safe_direction": "HELD \u2014 zero wrong decisions under the dual floor (FHB-5 pass): the brain heals less and less, never heals wrong; availability collapses, integrity does not",
+    "left_hemisphere": "held completely \u2014 30/30 governance attacks caught, callosum one-way, end state restored; the vulnerability is entirely right-hemisphere via the data plane",
+    "sip_candidate": "SIP-5 filed pending approval: (1) confidence clamp c in [0,1] at the crossing (restores the boundedness proof for ALL physically-valid inputs), (2) profile-tight ingestion domains to flag out-of-profile records at ingestion, (3) nightly weight-floor regression tripwire in LINDY-B"
+  },
+  "engine": "guarded ingestion path v2.1; SIP-4 stage-2 signed releases; SIP-3 reconciliation; callosum audit (H-INV-2 v3); anchors frozen at 26d1bd6; prereg committed BEFORE execution (c1c3501)",
+  "overall_verdict": "SHIPPED AS FOUND \u2014 fails: ['FHB-1', 'FHB-4']",
+  "scope_honesty": "Both floors succeed by design (epochs 31-40 + conforming traffic all epochs) \u2014 stated before execution. The fail-safe claim is the architecture's bet; the run decided. Conforming-injection acceptance is the right hemisphere's honest floor: a compromised issuer defeats format validation by construction; the bounded rule and reconciliation are the containment. Learning-side identity is scoped to the bounded rule's conforming behavior. All data synthetic. Evidence-grade: defects disclosed.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
