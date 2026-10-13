@@ -497,6 +497,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "PSR1_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23331333_PSR1_EVIDENCE.zip",
+        "size_bytes": 3056,
+        "sha256": "4dcebb914cb4b6d93df9890ae307d4fc589eb6b8c60d52bf8b391208ca59eee0"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23331333",
+        "zenodo_recid": "23331333",
+        "zenodo_file": "PSR1_EVIDENCE.zip",
+        "zenodo_md5": "17e7cbc4590a12c74f8cdf74eb01507f",
+        "title": "PSR-1: Live Cross-Session Pulse Double-Fire Race \u2014 Honest Incident, Remediation, and Stamp-Before-Execute Doctrine v1.1 (Human-Amended)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T04:18:21Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -510,7 +541,7 @@
     }
   ],
   "counts": {
-    "bound": 16,
+    "bound": 17,
     "gaps": 2,
     "dois_checked": 13
   }
