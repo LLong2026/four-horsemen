@@ -1,0 +1,14 @@
+[
+  {
+    "file": "gov4_prereg.md",
+    "sha256": "a64073dda368fbe374859a891d891f72a6d5596e5a0064d58baded797fb6bd98"
+  },
+  {
+    "file": "gov4_runner.py",
+    "sha256": "7ba7e2620cd3170622c80bdadf6dabcd245b7e551ce284d30338dd60c45a48f9"
+  },
+  {
+    "file": "GOV4_RECEIPT.json",
+    "sha256": "3e41da8c44309c334eef7c23bbab0c17950be3b774e8b0ba805235a6edbc7d05"
+  }
+]

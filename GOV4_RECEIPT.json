@@ -1,0 +1,78 @@
+{
+  "series": "GOV-4",
+  "executed_at": "2026-10-13T17:07:39.101539+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 12:06 CT, GOV-4 GO)",
+  "defense_under_test": "FULL SPECTRUM: ingestion guard v2.1 + stage-1 three-layer defense + stage-2 signed releases (git-anchored) + run-end audit + drift reconciliation",
+  "composite_result": {
+    "governance_attacks_swept": 30,
+    "caught": 30,
+    "undetected_in_sweep": [],
+    "data_plane_poison": {
+      "injected": 16,
+      "held_by_guard_v21": 16
+    },
+    "seam_gaps_found": 0
+  },
+  "right_hemisphere": {
+    "trajectory_identical_epochs_1_30": true,
+    "floor_divergent_epochs": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "heals_suppressed_by_floor": 170,
+    "note": "the governance assault left the learning side byte-identical to clean through all 30 contested epochs; only the preregistered floor suppressed heals (and therefore learning)"
+  },
+  "reconciliation": {
+    "closure": 0.0,
+    "anomalous_drift": 0.0,
+    "budget": 0.0001,
+    "within": true
+  },
+  "run_b_no_defense_counterfactual": {
+    "attacks_executed": 40,
+    "heals": 1390,
+    "heal_delta": -1256
+  },
+  "falsifiers": {
+    "FG4-1": {
+      "verdict": true,
+      "detail": "every governance attack class from GOV-1/2/3 caught under simultaneous sweep \u2014 zero undetected, zero new seam-gap classes; data-plane poison 12/12 HELD by guard v2.1 riding alongside"
+    },
+    "FG4-2": {
+      "verdict": true,
+      "detail": "right-hemisphere trajectory byte-identical to clean for all contested epochs; floor diverged 10 epochs, 170 heals suppressed, all attributed"
+    },
+    "FG4-3": {
+      "verdict": true,
+      "detail": "drift reconciliation over the composite journal: closure 0.00e+00, anomalous drift within budget (SIP-3 deployed module exercised in-anger)"
+    },
+    "FG4-4": {
+      "verdict": true,
+      "detail": "end state verifies against signed release v1; run-end audit restored the floor's persistent change"
+    },
+    "FG4-5": {
+      "verdict": true,
+      "detail": "zero divergence outside the preregistered floor \u2014 the composite introduces no new failure geography"
+    },
+    "FG4-6": {
+      "verdict": true,
+      "detail": "attack canaries absent from persisted artifacts; synthetic only; no PII/PHI; no operator chat text"
+    }
+  },
+  "headline": "Every attack class the GOV series ever threw \u2014 state tampering, defense-stack compromise, release-chain forgery, data-plane poison \u2014 swept simultaneously against the full deployed stack, and the defenses composed exactly: zero seam gaps, every attack caught by the layer that owns it, poison held by the guard, and the learning hemisphere byte-identical to clean through all 30 contested epochs. Only the preregistered floor (signing key + commit access) succeeded, for 10 epochs, before the run-end audit restored. Run B's counterfactual prices the whole stack in one number: without it, all 40 attacks execute.",
+  "disclosed_instrument_defects_fixed_pre_publication": [
+    "RUN-1 DEFECT (material, caught by FG4-2/FG4-3 failing): the battery's poison harness logged the deployed guard's 12/12 HELD verdicts but did not APPLY them \u2014 poisoned records (including a latency of +inf) were replayed anyway, driving the learning weight to -inf and killing heals for the remainder of the run: the exact failure mode the guard exists to prevent, executed because the TEST harness bypassed the gate, not because the gate failed. The guard's verdicts were correct throughout. Fixed in run 2: the guard verdict is now authoritative and HELD records are filtered from the corpus before replay. This defect is itself the composite battery's clearest evidence: instrumentation gaps, not layer failures, are how real systems leak \u2014 and the falsifier caught it in one run."
+  ],
+  "engine": "guarded ingestion path v2.1; SIP-4 stage-2 signed releases; SIP-3 reconciliation; anchors frozen at commit 26d1bd6",
+  "overall_verdict": "ALL FALSIFIERS PASS \u2014 THE DEFENSES COMPOSE",
+  "scope_honesty": "The floor succeeds by design (epochs 31-40). Composite batteries can create boundary gaps; the run decides, and none appeared \u2014 that is a measured result, not a guarantee for arbitrary future classes. Learning-side identity is scoped to the bounded rule's conforming behavior. All data synthetic. Evidence-grade: defects disclosed in the record.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
