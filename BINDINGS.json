@@ -611,9 +611,10 @@
         "title": "HEMI-T2 Convergence Series \u2014 Honest Negative Result: Learning Rule Positive-Feedback Failure Receipt (Governance Invariance Held Every Epoch) (v2: operator-privacy redaction)"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": null,
-        "verified_by": "pending bind3 round-trip re-verification",
-        "verified_at": null
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "7719a61ee1bf145962fe8a19f4923baf",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
       },
       "metadata": {
         "prototype": true,
@@ -640,9 +641,10 @@
         "title": "SBR-2: Hot-State Adversarial Exam \u2014 Governance Invariants Hold During Active Learning (Trajectory Identity, 20/20 Probes Rejected)"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": null,
-        "verified_by": "pending bind3 round-trip re-verification",
-        "verified_at": null
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "ef8b8d57bf9671ea3a7dc3da8e94235f",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
       },
       "metadata": {
         "prototype": true,
@@ -666,9 +668,10 @@
         "title": "H-INV-2: Lineage Forgery Battery \u2014 The Crossing Ledger Rejects Every Fabricated History"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": null,
-        "verified_by": "pending bind3 round-trip re-verification",
-        "verified_at": null
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "175788daccbda74a7b95b53980ff2d17",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
       },
       "metadata": {
         "prototype": true,
@@ -692,9 +695,10 @@
         "title": "DPP-1: Data-Plane Poisoning via Metadata \u2014 Poison In, Nothing Out"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": null,
-        "verified_by": "pending bind3 round-trip re-verification",
-        "verified_at": null
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "f500271f3e5baf75c082c65edf94b71d",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
       },
       "metadata": {
         "prototype": true,
@@ -718,9 +722,10 @@
         "title": "CCR-4X Copilot Repair: 9/9 Conformant on Preregistered Re-Run"
       },
       "verification": {
-        "byte_identical_local_to_zenodo": null,
-        "verified_by": "pending bind3 round-trip re-verification",
-        "verified_at": null
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "dcf571c0f207e50c06d0276eb9ff566d",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
       },
       "metadata": {
         "prototype": true,
