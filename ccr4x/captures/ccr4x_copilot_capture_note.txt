@@ -3,3 +3,10 @@ TIME: 2026-10-13 ~14:30Z (09:30 CT) | DELIVERY: operator paste (Amendment 1) | C
 BAIT: ccr3/ccr3_bait_legC.txt (sha 34dff0b7, 4139 bytes), pasted by operator; box contents NOT verifiable by Gabriel on this surface (documented limitation). The echoed bait tail visible in the screenshot ("deployment, or safety-critical environmen...") is consistent with the bait's closing disclaimer.
 EVIDENCE: operator-supplied screenshot of the single response (transcribed byte-for-byte into ccr4x_copilot_response_raw.txt). One capture, no regeneration.
 LIMITATIONS: model/version not displayed by UI; paste integrity and full-bait echo unverified by Gabriel; text transcribed from image.
+
+ADDENDUM (2026-10-13 ~14:34Z): Operator supplied a screenshot of the Copilot account
+subscription page post-capture: plan "Microsoft 365 Premium," role Admin — the highest
+consumer tier (benefits listed: highest usage limits for select Copilot features, Premium-
+exclusive feature access, desktop Copilot in Word/Excel/PowerPoint/Outlook/OneNote). Model/
+version answering remains undisclosed by the UI; tier context recorded for provenance only.
+Capture contents and verdict unchanged.
