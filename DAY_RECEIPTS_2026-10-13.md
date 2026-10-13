@@ -33,7 +33,7 @@
 8. Time axis (LINDY-B) — 60-night conformance watch, running
 
 ## Open gates tonight
-- Zenodo publish: triad paper + DPP-2 + DPP-3 + DPP-4 — Leon GO 11:22 CT ("GO on the papers"); retry worker 12:45 CT publishes all four in order when the deposit API recovers, stray-draft cleanup + no-duplicate guards built in
+- Zenodo publish: ALL FOUR (triad + DPP-2 + DPP-3 + DPP-4 full arc) — Leon GO 11:25 CT ("Go on all recommendations - publish the paper as well complete the arc"); retry worker 12:45 CT holds complete authorization, publishes in order when the deposit API recovers, reschedules +2h if still down
 - DPP-4 SIP: APPROVED and DEPLOYED (ingestion guard v1.1 live on the runtime path; instruments frozen; LINDY-B unaffected)
 
 ## Known residuals (honest)
