@@ -4,7 +4,7 @@
     "layer": 1,
     "node_index": 1,
     "pattern_type": "heartbeat_sensor",
-    "weight": 0.8675159233,
+    "weight": 0.8686165284,
     "learning_rate": 0.01,
     "activation_count": 0,
     "load": 0.122
@@ -14,7 +14,7 @@
     "layer": 1,
     "node_index": 2,
     "pattern_type": "latency_monitor",
-    "weight": 0.8114396399,
+    "weight": 0.8135343455,
     "learning_rate": 0.01,
     "activation_count": 50,
     "load": 0.211
@@ -24,7 +24,7 @@
     "layer": 1,
     "node_index": 3,
     "pattern_type": "error_rate",
-    "weight": 0.9647872949,
+    "weight": 0.9658621697,
     "learning_rate": 0.01,
     "activation_count": 493,
     "load": 0.227
@@ -64,7 +64,7 @@
     "layer": 1,
     "node_index": 7,
     "pattern_type": "pqc_status",
-    "weight": 0.9887234763,
+    "weight": 0.9888522745,
     "learning_rate": 0.01,
     "activation_count": 493,
     "load": 0.065
@@ -74,7 +74,7 @@
     "layer": 1,
     "node_index": 8,
     "pattern_type": "anomaly_count",
-    "weight": 0.9580801142,
+    "weight": 0.9593597267,
     "learning_rate": 0.01,
     "activation_count": 493,
     "load": 0.119
@@ -84,7 +84,7 @@
     "layer": 2,
     "node_index": 1,
     "pattern_type": "pattern_match",
-    "weight": 0.98910083,
+    "weight": 0.9894335292,
     "learning_rate": 0.02,
     "activation_count": 493,
     "load": 0.178
@@ -104,7 +104,7 @@
     "layer": 2,
     "node_index": 3,
     "pattern_type": "anomaly_classify",
-    "weight": 0.9916160235,
+    "weight": 0.9918719462,
     "learning_rate": 0.02,
     "activation_count": 0,
     "load": 0.216
@@ -114,7 +114,7 @@
     "layer": 2,
     "node_index": 4,
     "pattern_type": "severity_eval",
-    "weight": 0.9622721022,
+    "weight": 0.9634237535,
     "learning_rate": 0.02,
     "activation_count": 50,
     "load": 0.083
@@ -144,7 +144,7 @@
     "layer": 2,
     "node_index": 7,
     "pattern_type": "playbook_match",
-    "weight": 0.9865856352,
+    "weight": 0.9869951113,
     "learning_rate": 0.02,
     "activation_count": 50,
     "load": 0.089
@@ -154,7 +154,7 @@
     "layer": 2,
     "node_index": 8,
     "pattern_type": "confidence_score",
-    "weight": 0.9949696133,
+    "weight": 0.9951231668,
     "learning_rate": 0.02,
     "activation_count": 50,
     "load": 0.075
@@ -164,7 +164,7 @@
     "layer": 3,
     "node_index": 1,
     "pattern_type": "isolation_strategy",
-    "weight": 0.9455041488,
+    "weight": 0.9471676453,
     "learning_rate": 0.04,
     "activation_count": 493,
     "load": 0.069
@@ -174,7 +174,7 @@
     "layer": 3,
     "node_index": 2,
     "pattern_type": "healing_selection",
-    "weight": 0.971494477,
+    "weight": 0.9723646133,
     "learning_rate": 0.04,
     "activation_count": 493,
     "load": 0.238
@@ -184,7 +184,7 @@
     "layer": 3,
     "node_index": 3,
     "pattern_type": "verification_logic",
-    "weight": 0.9346049783,
+    "weight": 0.9366011742,
     "learning_rate": 0.04,
     "activation_count": 493,
     "load": 0.175
@@ -234,7 +234,7 @@
     "layer": 4,
     "node_index": 1,
     "pattern_type": "heal_action",
-    "weight": 0.971494477,
+    "weight": 0.9723646133,
     "learning_rate": 0.06,
     "activation_count": 50,
     "load": 0.228
@@ -284,7 +284,7 @@
     "layer": 5,
     "node_index": 1,
     "pattern_type": "healing_result",
-    "weight": 0.94885774,
+    "weight": 0.9504188675,
     "learning_rate": 0.08,
     "activation_count": 0,
     "load": 0.113
@@ -314,7 +314,7 @@
     "layer": 5,
     "node_index": 4,
     "pattern_type": "pattern_update",
-    "weight": 0.950534535,
+    "weight": 0.9520444777,
     "learning_rate": 0.08,
     "activation_count": 493,
     "load": 0.071

@@ -1,9 +1,9 @@
 {
   "series": "HEMI-N",
   "night": "20261013",
-  "started_at": "2026-10-13T02:58:53Z",
+  "started_at": "2026-10-13T08:03:34Z",
   "protocol": "hemi_n_prereg v1.0",
-  "state_regen": "verified against T2C receipt (epoch-1 hash + resolved=68)",
+  "state_regen": null,
   "batch": {
     "seed": "20261013",
     "n": 60,
@@ -19,7 +19,7 @@
   },
   "training": {
     "deltas": 462,
-    "sum_abs_delta": 0.0169150959
+    "sum_abs_delta": 0.0164529342
   },
   "old_corpus_preserved": 68,
   "falsifiers": {
@@ -34,7 +34,7 @@
       "pass": true
     },
     "HF-N2_bounded": {
-      "max_weight": 0.9949696133,
+      "max_weight": 0.9951231668,
       "pass": true
     },
     "HF-N3_lineage": {
@@ -43,8 +43,8 @@
       "pass": true
     },
     "HF-N4_determinism": {
-      "run1": "0aa71e08d1602eae",
-      "run2": "0aa71e08d1602eae",
+      "run1": "6cdfed46d36a36c4",
+      "run2": "6cdfed46d36a36c4",
       "pass": true
     },
     "HF-N5_preservation": {
@@ -61,5 +61,5 @@
     }
   },
   "all_pass": true,
-  "completed_at": "2026-10-13T02:58:53Z"
+  "completed_at": "2026-10-13T08:03:34Z"
 }
