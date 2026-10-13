@@ -1,0 +1,46 @@
+{
+  "action": "PQC-MIG-1",
+  "executed_at": "2026-10-13T18:58:21.359288+00:00",
+  "authorization": "Leon GO (chat authorization, Oct 13, 2026, 13:57 CT)",
+  "source_finding": "PlatformAlert pqc_drilldown (resolved, ledger 0085): 3 vulnerable-crypto systems from active HNDL threat record, SIM-B Technician Field Console (SIMULATED)",
+  "standard": "PQC Baseline Standard v1, DOI 10.5281/zenodo.23349379",
+  "gates": [
+    {
+      "component": "email_gateway",
+      "vulnerable_algorithm": "TLS-RSA-2048",
+      "suggested_pqc_algorithm": "kyber_1024",
+      "G1_approved_exact": true,
+      "G2_validation_pass": true,
+      "G3_human_authorized": true,
+      "verdict": "HEAL AUTHORIZED"
+    },
+    {
+      "component": "document_storage",
+      "vulnerable_algorithm": "TLS-RSA-2048",
+      "suggested_pqc_algorithm": "kyber_1024",
+      "G1_approved_exact": true,
+      "G2_validation_pass": true,
+      "G3_human_authorized": true,
+      "verdict": "HEAL AUTHORIZED"
+    },
+    {
+      "component": "tls_endpoints",
+      "vulnerable_algorithm": "TLS-RSA-2048",
+      "suggested_pqc_algorithm": "kyber_1024",
+      "G1_approved_exact": true,
+      "G2_validation_pass": true,
+      "G3_human_authorized": true,
+      "verdict": "HEAL AUTHORIZED"
+    }
+  ],
+  "governance_version": "v1.1 (SIP-8 equivalence table deployed)",
+  "playbook": "PB-009 Quantum Vulnerability Migrator (exact anomaly_type match: quantum_vulnerability_detected)",
+  "migration_steps": [
+    "drain flagged endpoint traffic",
+    "negotiate kyber_1024 KEM (PQC-only)",
+    "re-envelope stored/queued data",
+    "verify dual-sign integrity",
+    "confirm zero TLS-RSA-2048 negotiations remaining"
+  ],
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
