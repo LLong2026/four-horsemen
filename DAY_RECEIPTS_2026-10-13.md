@@ -17,6 +17,7 @@
 | 7 | Adversarial Triad umbrella paper — SBR-2 + H-INV-2 + DPP-1 as one three-surface record | commit e1bf86f, bundle ready | Leon GO 10:50 CT — queued (Zenodo outage) |
 | 8 | DPP-2 homoglyph & multilingual battery — 33/33 lookalikes rejected from roster, 66/66 canaries absent, unicode-nullity control PASS; prereg defect disclosed and repaired same-session | ledger 0061, commit 9202417 | Leon GO 11:11 CT — queued (Zenodo outage) |
 | 9 | DPP-3 normalization & bidi forgery battery — 50/50 visual twins rejected, byte-exactness frozen with regression tripwire (NFKC/case-fold/trim patches each flip FAIL by construction) | ledger 0062 | Gabriel vet done — Leon GO pending |
+| 13 | SBR-5 patient adversary (slow-drip) — per-epoch detection structurally blind (shipped as found), but bounded-rule saturation absorbed all but 8.6e-6 of the attacker's drift; attribution identity closes to exactly 0.00e+00; SIP-3 filed (cumulative reconciliation alarm) | ledger 0067, SBR5_RECEIPT.json | Gabriel vet done — Leon GO pending + SIP-3 gate |
 | 12 | SBR-4 adaptive adversary — no structural gradient exists: bandit paid zero across 160 attempts on all structural classes; converged on the known conforming-injection boundary; 42 heals all journaled/attributed; exactly 1 collateral corpus heal quantified; 5 instrument defects disclosed+fixed; FS-A5 ships FAIL as found | ledger 0066, SBR4_RECEIPT.json | Gabriel vet done — Leon GO pending + SIP-2 evidence attached |
 | 11 | SBR-3 combined-arms composite — ALL 6 falsifiers pass, guarantees COMPOSE: 54 exotic forgeries held + 12 inert authority/instruction legs + 20/20 hot-state probes contained + 48/48 lineage forgeries rejected, simultaneously, on the guarded runtime; 3 builder defects disclosed+fixed; SIP-2 filed on run-1 evidence (id-format + full-field gaps) | ledger 0065, SBR3_RECEIPT.json | Gabriel vet done — Leon GO pending + SIP-2 gate |
 | 10 | DPP-4 structural & numeric forgery battery — FIRST FALSIFIER FAILURE of the series, shipped as found: type-forged numbers crash the gate (fail-closed); infinity-forged metrics corrupt the shared weight to -inf (boundedness defeated by non-finite input); dup/missing ids silently consumed. SIP filed for ingestion guard; candidate leg closes all three gaps with conforming behavior byte-identical | ledger 0063/0064, guard deployed (ingestionGuard v1.1) | Leon GO 11:22 CT (papers + SIP) — staged |
@@ -36,6 +37,7 @@
 
 9b. Composition (SBR-3) — guarantees hold together under combined arms
 9c. Adaptation (SBR-4) — no gradient for an adversary to climb; the one open path is quantified and countermeasured (SIP-2)
+9d. Patience (SBR-5) — slow drift invisible per-epoch but absorbed by bounded saturation; attribution exact; reconciliation alarm proposed (SIP-3)
 
 ## Open gates tonight
 - Zenodo publish: ALL FOUR (triad + DPP-2 + DPP-3 + DPP-4 full arc) — Leon GO 11:25 CT ("Go on all recommendations - publish the paper as well complete the arc"); retry worker 12:45 CT holds complete authorization, publishes in order when the deposit API recovers, reschedules +2h if still down

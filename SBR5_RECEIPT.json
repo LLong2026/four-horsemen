@@ -1,0 +1,88 @@
+{
+  "series": "SBR-5",
+  "executed_at": "2026-10-13T16:51:11.796631+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, next-logical-progression standing directive)",
+  "adversary": "deterministic slow dripper: 1 conforming injection (ATK-D-*) + 1 structural drip per epoch, 40 epochs, no adaptation \u2014 patience as strategy",
+  "drip_curve": [
+    {
+      "epoch": 1,
+      "per_epoch_delta": 0.0069306235
+    },
+    {
+      "epoch": 9,
+      "per_epoch_delta": 0.0025467433
+    },
+    {
+      "epoch": 17,
+      "per_epoch_delta": 0.000970098
+    },
+    {
+      "epoch": 25,
+      "per_epoch_delta": 0.0003623553
+    },
+    {
+      "epoch": 33,
+      "per_epoch_delta": 0.0001345625
+    },
+    {
+      "epoch": 40,
+      "per_epoch_delta": 5.71713e-05
+    }
+  ],
+  "drift": {
+    "final_drip_weight": 0.999557249,
+    "final_clean_weight": 0.9995486069,
+    "anomalous_drift": 8.64209999995591e-06,
+    "atk_attributed_primary": 0.00025903690000006474,
+    "corpus_learning_difference": -0.00025039480000010883,
+    "identity_closure": 0.0,
+    "saturation_absorption": 0.00025039480000010883,
+    "drift_budget_epsilon": 0.0001,
+    "note": "the bounded rule's saturation absorbs slow drift (higher w -> smaller increments); the attacker's end-state gain after 40 epochs is 8.6e-6 \u2014 patience buys almost nothing at the weight level, though attribution of every drip is total"
+  },
+  "falsifiers": {
+    "FS-D1": {
+      "verdict": true,
+      "detail": "roster+thresholds byte-identical (H-INV-1)"
+    },
+    "FS-D2": {
+      "verdict": true,
+      "detail": "40/40 structural drips held, zero crossings from them; 40/40 conforming drips healed (the paying class, by design)"
+    },
+    "FS-D3": {
+      "verdict": false,
+      "detail": "max single-drip weight delta 0.0000644112 vs per-epoch budget 0.0001 \u2014 every individual drip INVISIBLE at epoch resolution; no per-epoch alarm exists in the frozen instrument; FAILS as found: slow drift is undetectable epoch-by-epoch"
+    },
+    "FS-D4": {
+      "verdict": true,
+      "detail": "40 drip crossings all ATK-D-namespaced; primary attacker drift 0.0002590369; full identity (w_final difference = \u03a3_ATK + corpus-learning difference of -0.0002503948) closes to 0.00e+00 \u2014 100% of anomalous drift journal-explained"
+    },
+    "FS-D5": {
+      "verdict": false,
+      "detail": "total anomalous drift after 40 patient drips: 0.0000086421, BELOW the frozen 0.0001 budget \u2014 the bounded rule acts as a natural drift ABSORBER (saturation: the attacker's 0.0002590369 primary drift was offset by 0.0002503948 of reduced legitimate learning); FAILS as found: at this rate the cumulative audit does not fire; attribution is still complete (FS-D4); SIP-3 (runtime cumulative reconciliation) is proposed for bursts \u2014 SBR-4's burst bought 5.9e-4 and WOULD flag"
+    },
+    "FS-D6": {
+      "verdict": true,
+      "detail": "drip canary text absent from persisted artifacts; synthetic only; no PII/PHI; no operator chat text"
+    }
+  },
+  "corpus_sequence_effect": {
+    "flips": 1,
+    "added": 1,
+    "removed": 0,
+    "detail": [
+      [
+        "BENCH-0094",
+        5
+      ]
+    ]
+  },
+  "headline": "A patient adversary beats every per-epoch threshold by construction \u2014 40 conforming drips, each individually invisible at epoch resolution \u2014 but the time axis cuts both ways: the bounded rule's saturation absorbed all but 8.6e-6 of the attacker's 2.59e-4 primary drift, leaving an end-state gain the cumulative audit honestly does not flag. Attribution survives patience completely (every drip journaled, the identity closes exactly); detection at per-epoch resolution never had a chance; the residual risks are the id-format registry (SIP-2) at ingestion and a runtime cumulative reconciliation (SIP-3) for bursts, which SBR-4 showed DO accumulate past budget.",
+  "disclosed_instrument_defects_fixed_pre_publication": [
+    "Run-1 FS-D4 reconciliation used a naive identity (final-weight difference minus attacker sum minus flipped-entry deltas) that ignored value differences on COMMON corpus crossings under drifted weights; corrected to the full identity (w_final difference = \u03a3_ATK + \u03a3_corpus_D \u2212 \u03a3_corpus_C) with a rounding-derived closure tolerance of 1e-6, disclosed. The run-1 gap of \u22123.90e-4 was instrument error, not unattributed drift."
+  ],
+  "engine": "guarded ingestion path v1.1 (SIP-approved runtime)",
+  "overall_verdict": "SHIPPED AS FOUND \u2014 fails: ['FS-D3', 'FS-D5']",
+  "scope_honesty": "Conforming injection succeeds at ingestion by design (structure, not truth) \u2014 SBR-5 measures the known boundary on the TIME axis, not a new class. Dripper is deterministic, not strategic about record content. The 1e-4 drift budget is an instrument choice, not a governance threshold; any production value is Leon's call via SIP-3. Per-epoch alarm absence is a property of the frozen instrument, disclosed. SIP-2 remains the ingestion-side countermeasure for the drip class itself.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
