@@ -156,7 +156,22 @@ def main():
     json.dump(st, open(STATE, "w"), indent=2)
     print(f"[5] binding record appended ({B['counts']['bound']} total)")
 
-    # ---- 7. ledger + commit + push ----
+    # ---- 7. archive artifact into repo, then ledger + commit + push ----
+    # (v1.1 fix: v1.0 crashed at git-add when the artifact lived outside the repo;
+    #  artifacts now get copied into binding_archive/ before the commit step.)
+    arch_dir = os.path.join(FH, "binding_archive")
+    os.makedirs(arch_dir, exist_ok=True)
+    arch_path = os.path.join(arch_dir, f"zenodo-{recid}_{name}")
+    if not os.path.isfile(arch_path):
+        with open(arch_path, "wb") as f:
+            f.write(blob)
+        assert hashlib.sha256(open(arch_path, "rb").read()).hexdigest() == sha256, "archive copy corrupted"
+    for r in B["bound"]:
+        if r["publication"].get("zenodo_recid") == recid:
+            r["artifact"]["local_path"] = f"fh_pub/binding_archive/zenodo-{recid}_{name}"
+    json.dump(B, open(BINDINGS, "w"), indent=2)
+
+    # ---- ledger + commit + push ----
     with open(LEDGER, "a") as f:
         f.write(
             f"- OPS ({NOW()}): BIND-3 RELEASE WORKER v1.0 EXECUTED per Leon GO (Oct 12 21:20 CT). "
@@ -165,7 +180,7 @@ def main():
             f"round-trip verified live. BINDINGS.json now {B['counts']['bound']} records. "
             f"Dual Mesh Benchmark: NOT MEASURED. Prototype disclaimer applies.\n")
     subprocess.run(["git", "add", "BINDINGS.json", "LEDGER.md", "bind3_state.json",
-                    os.path.relpath(artifact, FH)],
+                    f"binding_archive/zenodo-{recid}_{name}"],
                    cwd=FH, check=True)
     subprocess.run(["git", "-c", "user.name=Leon Long", "-c", "user.email=longleon17@gmail.com",
                     "commit", "-q", "-m",
