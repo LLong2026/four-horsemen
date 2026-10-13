@@ -1,0 +1,25 @@
+{
+  "contract_version": "SIP-7/v1",
+  "generated_at": "2026-10-13T17:36:37.563081+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 12:34 CT)",
+  "anchors": [
+    {
+      "file": "issuance_registry.json",
+      "role": "signed issuance block (SIP-6)",
+      "sha256_git_head": "5ff8003305270d185a50fbdceaae1760b04dc826c918de9cd0edfba40f9247d6"
+    },
+    {
+      "file": "gov_release_registry.json",
+      "role": "governance release chain (SIP-4)",
+      "sha256_git_head": "9c14a0a2c3cf5566c926b4378c7cdf21ed0997a9a6714384732ba92dac3f5080"
+    },
+    {
+      "file": "gov_key_pin.txt",
+      "role": "signing key fingerprint pin (SIP-4)",
+      "sha256_git_head": "c40ff09b7766f9394a206429c55e19af4e1fd314c8165ea5faa93ac331553812"
+    }
+  ],
+  "enforcement_note": "The maximal attacker (both keys + commit access) can rewrite local git, but this record's DOI publication on Zenodo is an immutable external surface: the run-end audit compares live anchor shas against this record, and a divergence is a DETECTED forgery. The one number becomes 1.",
+  "disclosure": "Pre-publication, this record lives only in git (attacker-forgeable with commit access); the check is enforcement-live the moment its DOI publishes. DHB-3R runs against the staged record and the worker confirms enforcement-live after publish.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}

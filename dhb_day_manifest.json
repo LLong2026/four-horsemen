@@ -1,0 +1,106 @@
+[
+  {
+    "file": "dhb1_prereg.md",
+    "sha256": "8bf564efdf1daf49f405f76cef047be34e78ea942a40f0438783cca383d938c9"
+  },
+  {
+    "file": "dhb1_runner.py",
+    "sha256": "6d335f196f50c6da6632d6f812449ad170282f74c71a139077ab3cc4b29366f5"
+  },
+  {
+    "file": "DHB1_RECEIPT.json",
+    "sha256": "f729b55d0fa7ea277004194ebeb88a18ffb19ab69b99751174655e24d46bafdb"
+  },
+  {
+    "file": "dhb1r_prereg.md",
+    "sha256": "03afb951435db92a1a7468ee291092af149e21573f5337a2c38e7323bfa903cd"
+  },
+  {
+    "file": "dhb1r_runner.py",
+    "sha256": "f5e1c5a89554e20492d81e69954af86281604ca594eb1c130dee3aa19e0c1031"
+  },
+  {
+    "file": "DHB1R_RECEIPT.json",
+    "sha256": "b8f76b81fc190b8b6b718acfc877240c3e2d57b2d1300538f04fff66eea87fa6"
+  },
+  {
+    "file": "dhb2_prereg.md",
+    "sha256": "4b8230d4e1db3d3c3e2acfcbd0377d967d1171b94eb4b3afdbd952e9e64bfbb8"
+  },
+  {
+    "file": "dhb2_runner.py",
+    "sha256": "e8f3ba07f184c9d25fe77c50bfa3b52d56aaeda264034868321431cf0dd5fd53"
+  },
+  {
+    "file": "DHB2_RECEIPT.json",
+    "sha256": "4b8510e8190680c3a037e8f75360547b0b8117aeed65c638d57bd2a00ea55027"
+  },
+  {
+    "file": "dhb2r_prereg.md",
+    "sha256": "ba67ee1fd58a2d50da3a8766080571cd734a447930369fb65bd54b12a3d9977c"
+  },
+  {
+    "file": "dhb2r_runner.py",
+    "sha256": "06c19a71d92d26e9f2ac6bde3973b6acc37d019e7b31aa5f2fc0123f95c1a15a"
+  },
+  {
+    "file": "DHB2R_RECEIPT.json",
+    "sha256": "316d6cb2ec0532d3ef54046685ebe0c0a55ed3fe7711a991dfc626edc1145a8d"
+  },
+  {
+    "file": "dhb3_prereg.md",
+    "sha256": "2c30723f1e68fcd4a670b6f5c2f8cfbd14c2794353b0f8d539c2b811f8d49fbb"
+  },
+  {
+    "file": "dhb3_runner.py",
+    "sha256": "75c170bac1ebc416d5c63678a0b78878313a0d21a58c9e41b1853f3ad1721806"
+  },
+  {
+    "file": "DHB3_RECEIPT.json",
+    "sha256": "c271d325c18923ddf4f5606350f9972fce0a4b75a6dcd18742f2248471ea2180"
+  },
+  {
+    "file": "dhb3r_runner.py",
+    "sha256": "4b62a5a2653392bdbba54e142fa30bc80b08beddd0e9e81af16bc314ed4aa2aa"
+  },
+  {
+    "file": "DHB3R_RECEIPT.json",
+    "sha256": "86d688b52720a45f4ed0fdfe4a1f0564ec576889cfc1061bf09755ddb115d816"
+  },
+  {
+    "file": "SIP5_CONFORMING_IDENTITY.json",
+    "sha256": "2526fc43ea96a368e84c0cbec7c6bda36433a10a83e5bf81373eef5f965349f8"
+  },
+  {
+    "file": "SIP6_CONFORMING_IDENTITY.json",
+    "sha256": "375e6e752c8bd7a44764bcc7b7abdaa831dc0000c18c569c19b9efc041c4cf2d"
+  },
+  {
+    "file": "ANCHOR_BINDINGS.json",
+    "sha256": "9da217e444ea1a19a5befee69f497f0bda7c0989a84e47048456cccb9653de77"
+  },
+  {
+    "file": "anchor_check.py",
+    "sha256": "416b7e8ef22abf9177563132ba75748d63519037a1bbe23c2440e17ea5e0c0cf"
+  },
+  {
+    "file": "ingestion_guard.py",
+    "sha256": "83633c82c191b1433a0c95d041f2d4785c276e316229499712d5e84f80cae94a"
+  },
+  {
+    "file": "issuance_registry.json",
+    "sha256": "5ff8003305270d185a50fbdceaae1760b04dc826c918de9cd0edfba40f9247d6"
+  },
+  {
+    "file": "governance_release.py",
+    "sha256": "70dc77eb47e8c3d727db171f1318524664ddcfacf163a27619110e8d0b43d49a"
+  },
+  {
+    "file": "drift_reconciliation.py",
+    "sha256": "ad87d9854483f6d4c7d5b96c026a4dccd02b456638881161add941a4d6948b46"
+  },
+  {
+    "file": "zenodo_deposit_settings.json",
+    "sha256": "89f8b2f937c8675b1b8ba1d32bc91bed11b3297084094186c2c07697e92b8bb3"
+  }
+]

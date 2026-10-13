@@ -1,0 +1,13 @@
+{
+  "contract_version": "ZENODO_SETTINGS/v1",
+  "saved_at": "2026-10-13T17:36:37.563304+00:00",
+  "license": "CC-BY-NC-ND-4.0",
+  "communities": [
+    "dcai",
+    "squirlos-technologies"
+  ],
+  "record_type": "dataset",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic.",
+  "dual_mesh_benchmark_policy": "Every published description must carry the Dual Mesh Benchmark section, marked MEASURED only for the DeepSeek column (DOI 10.5281/zenodo.23345241) and NOT MEASURED otherwise.",
+  "standing_directive": "Operator directive Oct 13, 2026 (12:34 CT): a day's related battery series (e.g., the dual-hemispheric DHB arc) bundles into ONE DOI per day rather than one DOI per battery; these saved settings apply to every record. Authorization form: Leon GO (chat authorization, timestamp)."
+}
