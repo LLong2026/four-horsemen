@@ -82,6 +82,21 @@ def series():
                        "median_confidence": round(statistics.median(r[2] for r in leg), 6)})
     return mesh, control, epochs
 
+def train_t1(mesh, leg):
+    trained = copy.deepcopy(mesh)
+    idx = {n["pattern_type"]: n for n in trained}
+    types = {i["instance_id"]: i["anomaly_type"] for i in corpus}
+    deltas = []
+    for iid, playbook, c, status in leg:
+        if status != "resolved":
+            continue
+        for pt in ACT(types[iid]):
+            n = idx[pt]
+            before = n["weight"]
+            n["weight"] = round(before + 0.01 * (1 - c) * (1 - before), 10)  # HEMI-2.2 bounded rule
+            deltas.append({"node": pt, "instance_id": iid, "before": before, "after": n["weight"]})
+    return trained, deltas
+
 # ---------- RUN ----------
 mesh_final, control, epochs = series()
 receipt = {"series": "HEMI-T2B", "protocol": "hemi_t2b_prereg v1.0 (HEMI-2.2 bounded rule)", "started_at": NOW(),
