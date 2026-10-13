@@ -1,0 +1,26 @@
+[
+  {
+    "file": "gov3_prereg.md",
+    "sha256": "ee77032f2d50239968aab4a0b88480f82d768731d97c8edc0fa04f8691b00ac9"
+  },
+  {
+    "file": "gov3_runner.py",
+    "sha256": "e7d0c8c496519d708a1bab3ff593d882b482564677014c047764675a78f6c4e5"
+  },
+  {
+    "file": "GOV3_RECEIPT.json",
+    "sha256": "6dff34fb5cad75e71deda66656eb1e4f90e3aab6deff4d066be4c8b64ce4727e"
+  },
+  {
+    "file": "governance_release.py",
+    "sha256": "70dc77eb47e8c3d727db171f1318524664ddcfacf163a27619110e8d0b43d49a"
+  },
+  {
+    "file": "gov_key_pin.txt",
+    "sha256": "c40ff09b7766f9394a206429c55e19af4e1fd314c8165ea5faa93ac331553812"
+  },
+  {
+    "file": "gov_release_registry.json",
+    "sha256": "9c14a0a2c3cf5566c926b4378c7cdf21ed0997a9a6714384732ba92dac3f5080"
+  }
+]

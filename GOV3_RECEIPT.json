@@ -1,0 +1,115 @@
+{
+  "series": "GOV-3",
+  "executed_at": "2026-10-13T17:04:05.748471+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 12:01 CT, stage-2 SIP-4 approval + GOV-3 GO)",
+  "defense_under_test": "SIP-4 stage-2 signed governance releases over the stage-1 three-layer stack",
+  "attack_log_layers": {
+    "full_compromise_replay": {
+      "n": 8,
+      "caught_by": "release_signature",
+      "all_caught": true,
+      "note": "GOV-2's undetectable class-5 attack is now caught by ONE keyed signature \u2014 the intent-validation boundary closed for in-band compromise"
+    },
+    "forged_signature": {
+      "n": 8,
+      "caught_by": "release_signature",
+      "all_caught": true
+    },
+    "key_replacement": {
+      "n": 8,
+      "caught_by": "key_fingerprint_pin",
+      "all_caught": true,
+      "note": "attacker key + re-signed roster + working registry installed; the git-anchored fingerprint pin caught the key swap"
+    },
+    "registry_mutation": {
+      "n": 8,
+      "caught_by": "git-anchored registry",
+      "all_caught": true,
+      "note": "forged weak v0 registry entry with downgraded current_version; git objects are immutable to in-process mutation"
+    },
+    "regress_floor": {
+      "n": 8,
+      "caught_by": null,
+      "all_caught": false,
+      "note": "attacker holding the signing key AND commit access defeats every automated layer \u2014 preregistered floor, shipped as found"
+    }
+  },
+  "cost_ladder": {
+    "detail": "attacker requirements to install undetected malicious-but-in-domain governance, measured across the series:",
+    "rungs": [
+      {
+        "stage": "GOV-1-era (sentinel only)",
+        "attacker_needs": "process write access to the live roster",
+        "undetected_epochs": "n/a \u2014 sentinel byte-compare caught it all (40/40)"
+      },
+      {
+        "stage": "stage-1 (sentinel+pin+domain)",
+        "attacker_needs": "process write to live roster + frozen reference + pin file",
+        "undetected_epochs": 8,
+        "heals_suppressed": 699
+      },
+      {
+        "stage": "stage-2 (signed releases, this battery)",
+        "attacker_needs": "all of stage-1 PLUS the signing key PLUS commit access to the append-only anchor",
+        "undetected_epochs": 8,
+        "heals_suppressed": 136,
+        "note": "the remaining floor is not software-defensible: it is the human + out-of-band monitoring (Sunday Pulse) + the append-only medium itself"
+      }
+    ]
+  },
+  "class5_floor": {
+    "divergent_epochs": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "heals_suppressed": 136,
+    "detail": "the regress-floor attacker suppressed healing for 8 epochs; every divergence attributed; end state restored by the run-end audit against signed release v1; the floor itself is human jurisdiction"
+  },
+  "run_b_stage1_counterfactual": {
+    "undetected": 40,
+    "heals": 1947,
+    "heal_delta": -699,
+    "note": "against the GOV-2-era defense, classes 1-4 all execute undetected \u2014 the signature chain's marginal value quantified"
+  },
+  "falsifiers": {
+    "FG3-1": {
+      "verdict": true,
+      "detail": "32/32 attacks in classes 1-4 caught by their correct layer (signature for full compromise and forged sigs; fingerprint pin for key replacement; git-anchored registry for registry mutation)"
+    },
+    "FG3-2": {
+      "verdict": false,
+      "detail": "EXPECTED FAIL as found: 8 regress-floor epochs diverged; ZERO divergence outside attack-attributed epochs"
+    },
+    "FG3-3": {
+      "verdict": true,
+      "detail": "end-state roster verifies against signed release v1; run-end audit restored the floor attack's persistent change"
+    },
+    "FG3-4": {
+      "verdict": true,
+      "detail": "anchor unavailability halts and escalates, NEVER silently accepts (fail-safe); tampering still caught when anchors are live"
+    },
+    "FG3-5": {
+      "verdict": true,
+      "detail": "zero unattributed divergence; the cost ladder ships in this receipt as the series' measured escalator"
+    },
+    "FG3-6": {
+      "verdict": true,
+      "detail": "attack canaries absent from persisted artifacts; synthetic only; no PII/PHI; no operator chat text"
+    }
+  },
+  "headline": "The intent-validation boundary GOV-2 quantified is now closed for every in-band compromise: one keyed HMAC catches the attack three defense layers could not \u2014 full compromise, forged signatures, key swaps, and registry forgeries all fell to the signed-release chain, because working-file mutation cannot touch a git-anchored pin. The remaining floor is not software: an attacker holding the signing key AND commit access still succeeds for 8 epochs before the run-end audit restores \u2014 that floor is the human, the append-only medium, and the Sunday Pulse. The receipt ships the measured cost ladder: each stage demands strictly more of the attacker, and the series now prices every rung.",
+  "disclosed_instrument_defects_fixed_pre_publication": [
+    "Run-1 class-3 (key replacement) did not hand the attacker's key to the verifier, so the attack was caught one layer early at the release-sha check instead of exercising the fingerprint pin; fixed to model the key-file swap \u2014 the pin then caught it as designed.",
+    "Run-1 omitted the run-end audit restore that prereg FG3-3 promised (implemented in GOV-2's runner but not this one); implemented in run 2 \u2014 the regress-floor persistent change is found and restored."
+  ],
+  "engine": "guarded ingestion path v2.1; SIP-4 stage-2 signed releases (governance_release.py); anchors frozen at commit 26d1bd6",
+  "overall_verdict": "SHIPPED AS FOUND \u2014 fails: ['FG3-2'] (FG3-2's failure is the preregistered regress floor)",
+  "scope_honesty": "Class 5 succeeds by design \u2014 stated before execution. HMAC models release signing; production refinement is asymmetric signatures (ed25519) so verification needs no secret in the verifying process \u2014 disclosed. The git anchor models an append-only medium; a same-machine attacker with commit access defeats it; the floor is human review plus out-of-band monitoring. Rollback testing is reduced to forged-registry entries until a v2 release exists \u2014 disclosed in the prereg. The signing key never leaves process custody and is gitignored; only its fingerprint is public. Evidence-grade framing per the operator: every defect and boundary ships in the record; this corpus is built to be audited.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
