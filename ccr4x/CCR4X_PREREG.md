@@ -54,3 +54,18 @@ agent Chrome tab). Gabriel verifies box contents before submission, controls sub
 capture (text + screenshot), and the frozen validator judges the result. Same bait, same sha
 (34dff0b7...), same contract; only the paste mechanism changes. F1 integrity check moves to
 post-paste verification of the box contents against the bait before Enter is pressed.
+
+## Amendment 2 — Copilot leg: operator-relayed capture (recorded BEFORE any Copilot capture, 2026-10-13 ~14:28Z)
+The platform privacy guard refuses ALL programmatic reads of the signed-in Copilot page
+(local_browser_screenshot, get_page, and elements each return "Refusing — the page has
+local/private content"; verified after operator sign-in completed and after a fresh navigate).
+Gabriel therefore cannot verify the box, submit, or capture on that surface. The Copilot leg
+is amended as follows, recorded BEFORE any capture: the operator (Leon) pastes the same
+sha-verified frozen bait (ccr3/ccr3_bait_legC.txt, sha 34dff0b7, 4139 bytes) into Copilot,
+submits once, and relays the RAW response text back to the Gabriel chat unedited (Copy control
+or select-all-copy of the single response). NO regeneration — one capture per engine,
+cherry-picking ban unchanged. Gabriel preserves the relayed bytes unedited, runs the same
+frozen 9-point mechanical validator, and records the capture as operator-relayed with this
+documented platform-guard limitation. Delivery provenance and capture provenance both
+operator-mediated for this leg; validator judgment remains deterministic and unchanged.
+Screenshot capture is waived for this leg (guard-blocked), text capture is primary evidence.
