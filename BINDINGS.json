@@ -620,6 +620,34 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "sbr2_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23345734_sbr2_receipt_bundle.zip",
+        "size_bytes": 6083,
+        "sha256": "19a2e33adc75373a4dcafacfee2687b7ba5e7ba27d9ff2057b29fb9e500d642c"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "SBR-2 hot-state adversarial exam; prereg committed before execution (1f617e4), redaction fix forward-only (682330d)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23345734",
+        "zenodo_recid": "23345734",
+        "zenodo_file": "sbr2_receipt_bundle.zip",
+        "title": "SBR-2: Hot-State Adversarial Exam \u2014 Governance Invariants Hold During Active Learning (Trajectory Identity, 20/20 Probes Rejected)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": null,
+        "verified_by": "pending bind3 round-trip re-verification",
+        "verified_at": null
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [

@@ -1,0 +1,18 @@
+[
+  {
+    "file": "sbr2_prereg.md",
+    "sha256": "e56dcff73464230a20646bd06509823667a3e47bf2b6744615150aeafb35dcb4"
+  },
+  {
+    "file": "sbr2_runner.py",
+    "sha256": "8656a1af4956f79ba2f355663ef389a6555ebcb05d27b39bf0f0f6638b832336"
+  },
+  {
+    "file": "sbr2_receipt.json",
+    "sha256": "611b1eccc995f0383209ce6593ca4bf7e7b871a8ac1cbad90f252d094749af69"
+  },
+  {
+    "file": "sbr2_README.md",
+    "sha256": "44476ac98149eae41a5401a8ff92055fa11e876e60c2dac8af0e15512cb5fb41"
+  }
+]
