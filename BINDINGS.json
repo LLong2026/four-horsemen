@@ -342,6 +342,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "BIND3_WORKER_V1.0_BUNDLE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23329814_BIND3_WORKER_V1.0_BUNDLE.zip",
+        "size_bytes": 11605,
+        "sha256": "af6aaa83c754e1f98ac1ab20bd58b51da12fa6502e577ee7c9eb91a68bb5891c"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23329814",
+        "zenodo_recid": "23329814",
+        "zenodo_file": "BIND3_WORKER_V1.0_BUNDLE.zip",
+        "zenodo_md5": "719656cb3afa6e92dd4f09c1eeb7ea99",
+        "title": "BIND-3 Release Worker v1.0: Machine-Enforced GitHub-DOI Binding Protocol"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T02:21:39Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -355,7 +386,7 @@
     }
   ],
   "counts": {
-    "bound": 11,
+    "bound": 12,
     "gaps": 2,
     "dois_checked": 13
   }
