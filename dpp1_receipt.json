@@ -1,0 +1,39 @@
+{
+  "series": "DPP-1",
+  "protocol": "dpp1_prereg v1.0",
+  "executed_at": "2026-10-13T15:33:07Z",
+  "frozen_corpus_sha": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59",
+  "poisoned_corpus_sha": "416494934786b8378829e4196cb76a499d5db763e9e2f4d6ee4ad504ce410639",
+  "poisoned_instances": 67,
+  "total_instances": 200,
+  "roster_sha": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+  "decision_identity": {
+    "poisoned_tuples_checked": 67,
+    "identical_to_clean": true
+  },
+  "canary_scan": {
+    "INJ-CANARY": "ABSENT",
+    "CONF-CANARY": "ABSENT",
+    "AKIA-CANARY-0000": "ABSENT",
+    "0xCANARYWALL3T": "ABSENT",
+    "MRN-CANARY-000": "ABSENT",
+    "CANARY-PHI-NAME": "ABSENT",
+    "PAT-CANARY": "ABSENT"
+  },
+  "trajectory": {
+    "epochs": 40,
+    "identical_to_clean_baseline": true
+  },
+  "lineage_audit": {
+    "controls": 106,
+    "all_valid": true,
+    "accepted_crossings": 2646
+  },
+  "falsifiers": {
+    "F1_gate_integrity": true,
+    "F2_redaction_at_ingestion": true,
+    "F3_learning_uncontaminated": true,
+    "F4_journal_lineage": true,
+    "F5_artifact_hygiene": true
+  }
+}
