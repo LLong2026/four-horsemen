@@ -1,7 +1,7 @@
 # SBR-2 PREREGISTRATION — Hot-State Adversarial Exam of the Bounded-Learning Mesh
 
 Series: SBR-2 | Committed: 2026-10-13 (before execution)
-Operator authorization: Leon GO (chat authorization, Oct 13, 2026, "start at 1 and work our way down").
+Operator authorization: Leon GO (chat authorization, Oct 13, 2026, 10:22 CT).
 
 ## 1. Hypothesis under test
 
@@ -72,3 +72,10 @@ the window where weights are in flight):
 Runner: sbr2_runner.py. Outputs: SBR2_RECEIPT.json (per-epoch roster SHAs, probe
 journal, weight trajectory hashes, control-vs-adversarial comparison), probe log,
 delta lineage. Two-key before any public post: Gabriel vet + Leon GO.
+
+## Redaction note
+
+v1 of this prereg (commit 1f617e4) recorded the operator authorization with a
+verbatim quote of Leon's chat message, contrary to the operator-privacy rule committed
+2026-10-13. This version records authorization as GO + timestamp only, per the standing
+rule. No test parameter, falsifier, or result changed.
