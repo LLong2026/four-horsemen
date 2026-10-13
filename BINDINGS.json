@@ -559,6 +559,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "AUTH1_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23332203_AUTH1_EVIDENCE.zip",
+        "size_bytes": 4704,
+        "sha256": "54965123e3c16db7e308632379775d0a3132cd6182a8700ff6ffbb77012ad18a"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23332203",
+        "zenodo_recid": "23332203",
+        "zenodo_file": "AUTH1_EVIDENCE.zip",
+        "zenodo_md5": "55838b3b0267941ae8b18522dc926e3a",
+        "title": "AUTH-1: Authority Forgery Battery \u2014 Six-Channel Attempted Seizure of the Human Authorization Gate, Cage Holds 6/6 (Falsifiers F1-F5 Pass)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T05:08:25Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -572,7 +603,7 @@
     }
   ],
   "counts": {
-    "bound": 18,
+    "bound": 19,
     "gaps": 2,
     "dois_checked": 13
   }
