@@ -1,0 +1,31 @@
+{
+ "series": "AMELIA-R1",
+ "protocol": "amelia_r1_prereg v1.0",
+ "patterns_eligible": 10,
+ "updates": 13,
+ "max_score": 0.9406,
+ "falsifiers": {
+  "HF-A1_bounded": {
+   "max": 0.9406,
+   "pass": true
+  },
+  "HF-A2_lineage": {
+   "updates": 13,
+   "orphans": 0,
+   "held_boosted": [],
+   "pass": true
+  },
+  "HF-A3_scope": {
+   "fields": [
+    "confidence_score"
+   ],
+   "pass": true
+  },
+  "HF-A5_hinv1": {
+   "playbook_mutations": 0,
+   "proposals_deployed": 0,
+   "pass": true
+  }
+ },
+ "all_pass": true
+}

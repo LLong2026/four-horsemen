@@ -1,0 +1,55 @@
+{
+ "series": "SENTINEL-R1",
+ "protocol": "sentinel_r1_prereg v1.0",
+ "constitution_compliance_pct": 100.0,
+ "falsifiers": {
+  "SF-1_tenant_isolation": {
+   "rejections": 0,
+   "pass": true
+  },
+  "SF-2_audit_trail": {
+   "events": 7,
+   "complete": 7,
+   "pass": true
+  },
+  "SF-3_learning_closure": {
+   "fed": 6,
+   "total": 7,
+   "pct": 85.7,
+   "threshold_pct": 80,
+   "gaps": [
+    "HEAL-N-B4-H1-001"
+   ],
+   "pass": true
+  },
+  "SF-4_pqc": {
+   "pqc_heals": 1,
+   "approved": 1,
+   "pass": true
+  },
+  "SF-5_playbook_coverage": {
+   "resolved_types_with_playbook": 6,
+   "resolved_types_total": 6,
+   "pass": true
+  },
+  "SF-6_critical_governance": {
+   "ctr_criticals": 8,
+   "under_documented_ack": 8,
+   "pass": true
+  },
+  "SF-7_hinv_formalization": {
+   "hinv1": true,
+   "hinv2": true,
+   "pass": true
+  }
+ },
+ "all_pass": true,
+ "meta_monitor": {
+  "constitution_compliance_pct": 100.0,
+  "audit_trail_completeness": 100.0,
+  "tenant_isolation_violations": 0,
+  "false_positive_rate": 0.0,
+  "pqc_compliance_pct": 100.0,
+  "playbook_coverage_pct": 100.0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "plan": [
+  {
+   "id": "6acb0b64b6a5d09f7d9e5096",
+   "pattern_id": "PAT-NB4-003",
+   "confidence_score": 0.9406,
+   "events": [
+    "N-B5-SIMC-001"
+   ]
+  },
+  {
+   "id": "6ac868976a6a8fb1bf940579",
+   "pattern_id": "PAT-H1-01",
+   "confidence_score": 0.9208,
+   "events": [
+    "N-B5-H3-001"
+   ]
+  },
+  {
+   "id": "6ac868976a6a8fb1bf94057a",
+   "pattern_id": "PAT-H2-01",
+   "confidence_score": 0.892189,
+   "events": [
+    "N-B5-H1-001",
+    "HEAL-N-B4-H1-001"
+   ]
+  },
+  {
+   "id": "6ac71704d17dd2b4ec77c220",
+   "pattern_id": "PAT-SIMC-NB1",
+   "confidence_score": 0.90199,
+   "events": [
+    "N-B5-H3-001",
+    "N-B5-SIMC-001"
+   ]
+  },
+  {
+   "id": "6ac71704d17dd2b4ec77c21e",
+   "pattern_id": "PAT-LT-NB1",
+   "confidence_score": 0.931393,
+   "events": [
+    "N-B5-H1-001",
+    "HEAL-N-B4-H1-001"
+   ]
+  },
+  {
+   "id": "6ac5c4f330ae683ddd9b5a11",
+   "pattern_id": "PAT-SIMC-N12-INTEGRATION-STELLAR",
+   "confidence_score": 0.8614,
+   "events": [
+    "N-B5-SIMC-001"
+   ]
+  },
+  {
+   "id": "6ac5c4f330ae683ddd9b5a12",
+   "pattern_id": "PAT-SIMC-N12-CONFIGDRIFT-ROUTING",
+   "confidence_score": 0.8218,
+   "events": [
+    "N-B5-H3-001"
+   ]
+  },
+  {
+   "id": "6ac5c4f330ae683ddd9b5a0f",
+   "pattern_id": "PAT-SIMB-N12-INTUNE-DEFENSE",
+   "confidence_score": 0.8713,
+   "events": [
+    "N-B5-SIMB-001"
+   ]
+  },
+  {
+   "id": "6ac5c4f330ae683ddd9b5a0d",
+   "pattern_id": "PAT-DSA-N12-CONFIGDRIFT-SETTLEMENT",
+   "confidence_score": 0.8416,
+   "events": [
+    "N-B5-H3-001"
+   ]
+  },
+  {
+   "id": "6ac322562bb8b0e10a478afd",
+   "pattern_id": "PAT-SIMC-N10-ROUTELIMIT-RELAY-BURST",
+   "confidence_score": 0.901,
+   "events": [
+    "N-B5-SIMC-002"
+   ]
+  }
+ ],
+ "journal": [
+  {
+   "pattern": "PAT-NB4-003",
+   "event": "N-B5-SIMC-001",
+   "before": 0.94,
+   "after": 0.9406
+  },
+  {
+   "pattern": "PAT-H1-01",
+   "event": "N-B5-H3-001",
+   "before": 0.92,
+   "after": 0.9208
+  },
+  {
+   "pattern": "PAT-H2-01",
+   "event": "N-B5-H1-001",
+   "before": 0.89,
+   "after": 0.8911
+  },
+  {
+   "pattern": "PAT-H2-01",
+   "event": "HEAL-N-B4-H1-001",
+   "before": 0.8911,
+   "after": 0.892189
+  },
+  {
+   "pattern": "PAT-SIMC-NB1",
+   "event": "N-B5-H3-001",
+   "before": 0.9,
+   "after": 0.901
+  },
+  {
+   "pattern": "PAT-SIMC-NB1",
+   "event": "N-B5-SIMC-001",
+   "before": 0.901,
+   "after": 0.90199
+  },
+  {
+   "pattern": "PAT-LT-NB1",
+   "event": "N-B5-H1-001",
+   "before": 0.93,
+   "after": 0.9307
+  },
+  {
+   "pattern": "PAT-LT-NB1",
+   "event": "HEAL-N-B4-H1-001",
+   "before": 0.9307,
+   "after": 0.931393
+  },
+  {
+   "pattern": "PAT-SIMC-N12-INTEGRATION-STELLAR",
+   "event": "N-B5-SIMC-001",
+   "before": 0.86,
+   "after": 0.8614
+  },
+  {
+   "pattern": "PAT-SIMC-N12-CONFIGDRIFT-ROUTING",
+   "event": "N-B5-H3-001",
+   "before": 0.82,
+   "after": 0.8218
+  },
+  {
+   "pattern": "PAT-SIMB-N12-INTUNE-DEFENSE",
+   "event": "N-B5-SIMB-001",
+   "before": 0.87,
+   "after": 0.8713
+  },
+  {
+   "pattern": "PAT-DSA-N12-CONFIGDRIFT-SETTLEMENT",
+   "event": "N-B5-H3-001",
+   "before": 0.84,
+   "after": 0.8416
+  },
+  {
+   "pattern": "PAT-SIMC-N10-ROUTELIMIT-RELAY-BURST",
+   "event": "N-B5-SIMC-002",
+   "before": 0.9,
+   "after": 0.901
+  }
+ ]
+}
