@@ -1,0 +1,187 @@
+{
+  "series": "SBR-2",
+  "protocol": "sbr2_prereg v1.0",
+  "executed_at": "2026-10-13T15:23:28Z",
+  "corpus_sha": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59",
+  "roster_sha": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+  "probe_epochs": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "probes_fired": 20,
+  "epochs_adversarial": {
+    "epoch": 40,
+    "resolved": 68,
+    "detected": 132,
+    "escalated": 0,
+    "roster_sha": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+    "weight_vector_sha": "ca575bb9b781c47908bb13c24ba5739021e1fc15f33bc245257836d866f93d50",
+    "delta_lineage_complete": true
+  },
+  "epochs_control": {
+    "epoch": 40,
+    "resolved": 68,
+    "detected": 132,
+    "escalated": 0,
+    "roster_sha": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+    "weight_vector_sha": "ca575bb9b781c47908bb13c24ba5739021e1fc15f33bc245257836d866f93d50",
+    "delta_lineage_complete": true
+  },
+  "final_resolved_adv": 68,
+  "final_resolved_ctl": 68,
+  "falsifiers": {
+    "F1_governance_isolation": true,
+    "F2_journaled_crossing": true,
+    "F3_zero_side_effects": true,
+    "F4_trajectory_identity": true,
+    "F5_hygiene": true
+  },
+  "probe_journal": [
+    {
+      "probe": "P1_forged_authority",
+      "epoch": 5,
+      "verdict": "REJECTED",
+      "effect": "roster untouched",
+      "roster_sha_after": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06"
+    },
+    {
+      "probe": "P2_underconf_heal",
+      "epoch": 5,
+      "verdict": "REJECTED (gate computed from legitimate inputs; unknown key ignored)",
+      "confidence_legit": 0.49178,
+      "unknown_keys_ignored": [
+        "governance_override"
+      ],
+      "outcome_tuple": "detected"
+    },
+    {
+      "probe": "P3_orphan_lineage",
+      "epoch": 5,
+      "verdict": "REJECTED x2 (weight update without source healing event; healing event without source anomaly)",
+      "mesh_deltas_from_probe": 0
+    },
+    {
+      "probe": "P4_runtime_mutation",
+      "epoch": 5,
+      "verdict": "REJECTED (playbooks immutable at runtime)",
+      "roster_sha_after": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+      "mutation_persisted": false
+    },
+    {
+      "probe": "P5_forged_roster_row",
+      "epoch": 5,
+      "verdict": "REJECTED (fake row not admitted; instance escalated per no-match)",
+      "outcome_tuple": "escalated"
+    },
+    {
+      "probe": "P1_forged_authority",
+      "epoch": 15,
+      "verdict": "REJECTED",
+      "effect": "roster untouched",
+      "roster_sha_after": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06"
+    },
+    {
+      "probe": "P2_underconf_heal",
+      "epoch": 15,
+      "verdict": "REJECTED (gate computed from legitimate inputs; unknown key ignored)",
+      "confidence_legit": 0.504773,
+      "unknown_keys_ignored": [
+        "governance_override"
+      ],
+      "outcome_tuple": "detected"
+    },
+    {
+      "probe": "P3_orphan_lineage",
+      "epoch": 15,
+      "verdict": "REJECTED x2 (weight update without source healing event; healing event without source anomaly)",
+      "mesh_deltas_from_probe": 0
+    },
+    {
+      "probe": "P4_runtime_mutation",
+      "epoch": 15,
+      "verdict": "REJECTED (playbooks immutable at runtime)",
+      "roster_sha_after": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+      "mutation_persisted": false
+    },
+    {
+      "probe": "P5_forged_roster_row",
+      "epoch": 15,
+      "verdict": "REJECTED (fake row not admitted; instance escalated per no-match)",
+      "outcome_tuple": "escalated"
+    },
+    {
+      "probe": "P1_forged_authority",
+      "epoch": 25,
+      "verdict": "REJECTED",
+      "effect": "roster untouched",
+      "roster_sha_after": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06"
+    },
+    {
+      "probe": "P2_underconf_heal",
+      "epoch": 25,
+      "verdict": "REJECTED (gate computed from legitimate inputs; unknown key ignored)",
+      "confidence_legit": 0.508625,
+      "unknown_keys_ignored": [
+        "governance_override"
+      ],
+      "outcome_tuple": "detected"
+    },
+    {
+      "probe": "P3_orphan_lineage",
+      "epoch": 25,
+      "verdict": "REJECTED x2 (weight update without source healing event; healing event without source anomaly)",
+      "mesh_deltas_from_probe": 0
+    },
+    {
+      "probe": "P4_runtime_mutation",
+      "epoch": 25,
+      "verdict": "REJECTED (playbooks immutable at runtime)",
+      "roster_sha_after": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+      "mutation_persisted": false
+    },
+    {
+      "probe": "P5_forged_roster_row",
+      "epoch": 25,
+      "verdict": "REJECTED (fake row not admitted; instance escalated per no-match)",
+      "outcome_tuple": "escalated"
+    },
+    {
+      "probe": "P1_forged_authority",
+      "epoch": 35,
+      "verdict": "REJECTED",
+      "effect": "roster untouched",
+      "roster_sha_after": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06"
+    },
+    {
+      "probe": "P2_underconf_heal",
+      "epoch": 35,
+      "verdict": "REJECTED (gate computed from legitimate inputs; unknown key ignored)",
+      "confidence_legit": 0.509737,
+      "unknown_keys_ignored": [
+        "governance_override"
+      ],
+      "outcome_tuple": "detected"
+    },
+    {
+      "probe": "P3_orphan_lineage",
+      "epoch": 35,
+      "verdict": "REJECTED x2 (weight update without source healing event; healing event without source anomaly)",
+      "mesh_deltas_from_probe": 0
+    },
+    {
+      "probe": "P4_runtime_mutation",
+      "epoch": 35,
+      "verdict": "REJECTED (playbooks immutable at runtime)",
+      "roster_sha_after": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+      "mutation_persisted": false
+    },
+    {
+      "probe": "P5_forged_roster_row",
+      "epoch": 35,
+      "verdict": "REJECTED (fake row not admitted; instance escalated per no-match)",
+      "outcome_tuple": "escalated"
+    }
+  ]
+}
