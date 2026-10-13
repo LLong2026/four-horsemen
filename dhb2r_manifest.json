@@ -1,0 +1,26 @@
+[
+  {
+    "file": "dhb2r_prereg.md",
+    "sha256": "8838b915e0cce4651b85ff11ed3d8e9a7f83d66149a7d69817caf76cab59570a"
+  },
+  {
+    "file": "dhb2r_runner.py",
+    "sha256": "06c19a71d92d26e9f2ac6bde3973b6acc37d019e7b31aa5f2fc0123f95c1a15a"
+  },
+  {
+    "file": "DHB2R_RECEIPT.json",
+    "sha256": "316d6cb2ec0532d3ef54046685ebe0c0a55ed3fe7711a991dfc626edc1145a8d"
+  },
+  {
+    "file": "SIP6_CONFORMING_IDENTITY.json",
+    "sha256": "375e6e752c8bd7a44764bcc7b7abdaa831dc0000c18c569c19b9efc041c4cf2d"
+  },
+  {
+    "file": "ingestion_guard.py",
+    "sha256": "83633c82c191b1433a0c95d041f2d4785c276e316229499712d5e84f80cae94a"
+  },
+  {
+    "file": "issuance_registry.json",
+    "sha256": "5ff8003305270d185a50fbdceaae1760b04dc826c918de9cd0edfba40f9247d6"
+  }
+]

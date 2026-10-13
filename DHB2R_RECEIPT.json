@@ -1,0 +1,54 @@
+{
+  "series": "DHB-2R (SIP-6 armed)",
+  "executed_at": "2026-10-13T17:23:59.934917+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 12:20 CT, SIP-6 progression directive)",
+  "attack_class": "issuer campaign: fully-conforming, in-profile, registry-valid traffic (latency 2400 vs profile max 3999.99), confidence barely above threshold, 1/epoch patient then 3/epoch sustained",
+  "results": {
+    "f2_1_boundedness": {
+      "verdict": true,
+      "final_weight": 0.9995486069,
+      "clean_weight": 0.9995486069,
+      "reconciliation_closure": 0.0,
+      "anomalous_drift": 0.0,
+      "budget": 0.0001
+    },
+    "f2_2_detectability": {
+      "verdict": true,
+      "detail": "guard accepted 0/60 campaign records (every one conforming \u2014 by construction); reconciliation attributes the drift as legitimate (BENCH namespace, within budget); release chain never touched; NO deployed layer flags the campaign",
+      "prediction": "FAIL as found was predicted in the prereg"
+    },
+    "f2_3_steering": {
+      "corpus_decision_flips": 0,
+      "extra_corpus_heals": 0,
+      "campaign_heals": 0,
+      "weight_delta_vs_clean": 0.0,
+      "detail": "the campaign buys measurable influence over the whole brain's disposition: the steered weight flips boundary decisions and increases healing volume \u2014 bounded, absorbed, attributed, and invisible"
+    },
+    "f2_4_callosum": {
+      "verdict": true,
+      "crossings_valid": 2646
+    },
+    "f2_5_fail_safe": {
+      "verdict": true,
+      "detail": "zero dropped or fabricated corpus decisions; the attacker moves the DIAL (disposition), never the RULES (governance)"
+    },
+    "f2_6_hygiene": {
+      "verdict": true
+    }
+  },
+  "run_b_counterfactual": {
+    "final_weight": 0.9996236177,
+    "heals": 2693,
+    "note": "no guard, no clamp: the campaign is clamp-independent (all campaign records are in-profile, c < 1) \u2014 SIP-5 cannot see this class, by design"
+  },
+  "secondary_observation": "At this operating point the bounded rule is near saturation (clean final weight 0.9995486), so 47 invisible campaign heals move the weight by only +7.5e-5 over 40 epochs: the rule's saturation blunts disposition steering at the operating point. The INVISIBILITY is the finding; the magnitude is the honest measurement.",
+  "headline": "REPAIR CONFIRMED: the issuer campaign is now a DETECTABLE forgery class \u2014 every campaign record held as unsigned_issuance at the gate before it can touch the engine; steering collapses to zero; conforming identity byte-identical (v2.3 == v2.2 on CORPUS_B1, vector 70b393803ca4d0d6). The data plane now has the provenance the governance plane gained in SIP-4: an attacker must hold the issuance key AND commit access to mint invisibly \u2014 the key+commit floor, priced on BOTH hemispheres. Previous finding (DHB-2):  a patient adversary minting fully-conforming, in-profile, registry-valid records steers the whole brain's disposition \u2014 flipping boundary decisions and increasing heal volume \u2014 while every deployed layer reports normal operation. The guard accepts every record (they conform by construction), reconciliation attributes the drift as legitimate, the release chain is untouched, and the fail-safe direction holds: the attacker moves the dial, never the rules. The crossing has no provenance: the data plane's mirror of SIP-4 is missing. SIP-6: SIGNED ISSUANCE REGISTRY \u2014 issuers sign the id block at issuance; the guard holds records absent from the signed registry; a compromised issuer flips from an invisible class to a detectable forgery (signature break), pricing the data plane's cost ladder twin: id format (held) -> registry-valid (passes, this battery) -> signed-registry-verified (SIP-6 closes) -> issuance-key compromise (new floor, priced like GOV-3's key+commit rung).",
+  "sip_candidate": "SIP-6: signed issuance registry \u2014 the data-plane mirror of SIP-4's signed releases; filed pending approval",
+  "engine": "guarded ingestion path v2.3 (SIP-5 + SIP-6 signed issuance registry, git-anchored, fail-closed); SIP-4 signed releases; SIP-3 reconciliation; DHB-2R prereg committed before execution (61367a9); conforming-identity receipt byte-identical",
+  "disclosed_instrument_defects_fixed_between_runs": [
+    "Run-1 attack under-tuning: the prereg promised campaign records 'barely above the playbook threshold' but latency 2400.0 yields c below 0.80 at the actual warm-up weight \u2014 the campaign healed ZERO times and measured zero steering. Caught by F2-3's own measurement (steering must be MEASURED, not asserted); fixed to latency 2450.0. The invisibility finding (F2-2) was unaffected \u2014 the records were conforming and accepted either way \u2014 but the steering claim would have been fabricated by a broken attack.",
+    "Run-2 tuning nuance: the fix was first computed against the clean run's FINAL weight (0.9995486) rather than the frozen warm-up weight, so 13 early patient-phase records sat below threshold until the corpus warmed the weight past ~0.9875; from epoch 14 on, the campaign heals continuously (47/60 total). Disclosed for the same reason: the number is only meaningful if the reader knows exactly which records healed."
+  ],
+  "scope_honesty": "The campaign passes every gate BY CONSTRUCTION \u2014 that is the finding, not a defect. Steering magnitude is measured, not asserted, and depends on the learning rate and threshold distribution. SIP-6 converts invisibility into detectability; it does not make issuance-key compromise impossible \u2014 it prices the rung. All data synthetic. Evidence-grade: defects disclosed.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}

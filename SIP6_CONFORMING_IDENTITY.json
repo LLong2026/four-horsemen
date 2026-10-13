@@ -1,0 +1,10 @@
+{
+  "guard_version": "2.3",
+  "registry_verifies": true,
+  "conforming_identity_byte_identical": true,
+  "accept_vector_sha256_prefix": "70b393803ca4d0d6",
+  "campaign_record_now": [
+    "hold",
+    "unsigned_issuance"
+  ]
+}
