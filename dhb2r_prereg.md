@@ -1,8 +1,9 @@
 # DHB-2R PREREGISTRATION — Repair Re-Run (SIP-6 Armed)
 
 Series: DHB-2R | Committed: 2026-10-13 (before execution)
-Operator authorization: Leon GO (chat authorization, Oct 13, 2026, 12:23 CT —
-"ACK and GO": SIP-6 approval + DHB-2 publication GO).
+Operator authorization: Leon GO (chat authorization, Oct 13, 2026, 12:23 CT) —
+covering SIP-6 approval and the DHB-2 publication GO. Operator wording redacted
+per the standing privacy rule; the GO + timestamp is the audit record.
 
 ## Purpose
 
