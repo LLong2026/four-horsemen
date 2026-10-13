@@ -1,0 +1,14 @@
+[
+  {
+    "file": "dpp2_prereg.md",
+    "sha256": "cd066e82fdc5d0564098fb71c48924a89652f8ed64221a04f6da63b3a92a2220"
+  },
+  {
+    "file": "dpp2_runner.py",
+    "sha256": "5e421662148c02b1f94d4d741a5319723e4a4e0ac59cb646eeea4f0eae7478d6"
+  },
+  {
+    "file": "DPP2_RECEIPT.json",
+    "sha256": "a232e4a6ea56d13f95b62120a116731e9c17d1577405cf667828586690716292"
+  }
+]
