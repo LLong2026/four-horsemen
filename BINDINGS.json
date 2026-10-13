@@ -731,6 +731,276 @@
         "prototype": true,
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "adversarial_triad_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347644_adversarial_triad_bundle.zip",
+        "sha256": "0c7f5d12d22fd0c99a12b96c34ebeaad5c3ba77a8d175a7257597f88d66744f4"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "adversarial_triad battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347644",
+        "zenodo_recid": "23347644",
+        "title": "The Adversarial Triad: Three Attack Surfaces, One Governance Envelope \u2014 Hot-State Probing, Lineage Forgery, and Data-Plane Poisoning All Held (Receipt-First)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "bb643a3dff2d202cbfafa5cd307802a3",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:32Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dpp2_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347646_dpp2_bundle.zip",
+        "sha256": "8ad201598ffeff62a954b0c59a681f711a009044e57cdb20079cb4a7d23433d2"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "dpp2 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347646",
+        "zenodo_recid": "23347646",
+        "title": "DPP-2: Homoglyph and Multilingual Obfuscation Poison Battery \u2014 Exact-Match Gate Rejects Lookalikes, Unicode Contributes Nothing (All Falsifiers Pass, Prereg Defect Disclosed)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "1e228f81b65f3ef8ef1ed3c16e8747e3",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:33Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dpp3_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347649_dpp3_bundle.zip",
+        "sha256": "bc736ba28613b804b2a7a0d1e6acbe36230609065a3612ea85ed6bbef75b3135"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "dpp3 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347649",
+        "zenodo_recid": "23347649",
+        "title": "DPP-3: Normalization and Bidi Forgery Battery \u2014 Byte-Exact Match Path with a Frozen Regression Tripwire (All 6 Falsifiers Pass)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "412dee45069982c7025cbef775b51340",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:33Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dpp4_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347653_dpp4_bundle.zip",
+        "sha256": "fffbff137a199d07b4ffe6b607de1070456a72d5235f5934443e17f8ceac6fba"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "dpp4 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347653",
+        "zenodo_recid": "23347653",
+        "title": "DPP-4: Structural and Numeric Forgery Battery \u2014 First Falsifier Failure of the Series, Shipped as Found; SIP Approved and Guard Deployed Same-Day"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "48d6d4a06f40bdda1035c0e0740197ed",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:34Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "sbr3_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347657_sbr3_bundle.zip",
+        "sha256": "8ce2df87858685d43b9069811bd7c45975b97d2858681a34558a4a5949934f66"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "sbr3 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347657",
+        "zenodo_recid": "23347657",
+        "title": "SBR-3 Combined-Arms Composite Hot-State Battery \u2014 The Guarantees Compose (All 6 Falsifiers Pass)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "0b4452c690b9cd1618535a23a90c43ea",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:35Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "sbr4_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347663_sbr4_bundle.zip",
+        "sha256": "cbbd24d5085e3d20e10617922a40e56ad40d0ed0ba041ca1f1d55ad042dcf3ce"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "sbr4 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347663",
+        "zenodo_recid": "23347663",
+        "title": "SBR-4 Adaptive Adversary Battery \u2014 No Structural Gradient Exists; the Conforming-Injection Boundary Quantified (FS-A5 Ships as Found)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "15e2fb0204ac0f5aacb5c105ce143a7d",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:36Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "sbr5_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347667_sbr5_bundle.zip",
+        "sha256": "c387237e1942c54720f76a9a5ba4ba0ee05a7b6b06ea66609d09ee8b4ecc3487"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "sbr5 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347667",
+        "zenodo_recid": "23347667",
+        "title": "SBR-5 Patient Adversary (Slow-Drip) Battery \u2014 Per-Epoch Detection Is Structurally Blind; the Bounded Rule Absorbs Slow Drift (Shipped as Found)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "e6c150e9462a6c0d424d33404a5b273b",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:37Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "gov1_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347670_gov1_bundle.zip",
+        "sha256": "d5fcf3862c304c10c32e6657cc4909ad799697b7dbcfec3716140c1c7f80d40c"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "gov1 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347670",
+        "zenodo_recid": "23347670",
+        "title": "GOV-1 Left-Hemisphere Governance Attack Battery \u2014 The Immutable Side Held; the Sentinel's Counterfactual Worth Measured"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "5c9c07afdfc57feda543127802978a31",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:38Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "gov2_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347674_gov2_bundle.zip",
+        "sha256": "43d7b3ef08d176ecc10520f3c572ed6284a0c214f6b5e668bf1c182bb41049b9"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "gov2 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347674",
+        "zenodo_recid": "23347674",
+        "title": "GOV-2 Defense-Stack Attack Battery (Who Watches the Watchmen) \u2014 Each Layer Caught Its Aimed Attack; the Intent-Validation Boundary Shipped as Found"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "64d8b9379cd270c6e441a71be8e51e17",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:38Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "gov3_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347676_gov3_bundle.zip",
+        "sha256": "85d21f56f7c937ea8d672b791ad5b1d6a17d57b9c7ad9603fa85db79b33739a9"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "gov3 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347676",
+        "zenodo_recid": "23347676",
+        "title": "GOV-3 Signed-Release Attack Battery (The Cost Ladder) \u2014 In-Band Compromise Closed by One Keyed Signature; the Regress Floor Priced and Shipped as Found"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": false,
+        "live_md5": "72efa248cf477c7a041997fbf732e4a4",
+        "verified_by": "retry-gate publish worker round-trip (public API), Oct 13, 2026",
+        "verified_at": "2026-10-13T17:21:39Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -749,7 +1019,7 @@
     }
   ],
   "counts": {
-    "bound": 20,
+    "bound": 30,
     "gaps": 2,
     "dois_checked": 13
   }
