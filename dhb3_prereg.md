@@ -1,8 +1,9 @@
 # DHB-3 PREREGISTRATION — The Convergence Battery (Keys + Commit, Both Planes, Simultaneously)
 
 Series: DHB-3 (dual-hemispheric standing format) | Committed: 2026-10-13 (before execution)
-Operator authorization: Leon GO (chat authorization, Oct 13, 2026, 12:26 CT —
-convergence battery directive: the whole system's final floor, priced as one number).
+Operator authorization: Leon GO (chat authorization, Oct 13, 2026, 12:26 CT) —
+the convergence battery directive. Operator wording not quoted per the standing
+privacy rule; the GO + timestamp is the audit record.
 
 ## Purpose
 
