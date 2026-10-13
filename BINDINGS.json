@@ -528,6 +528,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "R2G1_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23331344_R2G1_EVIDENCE.zip",
+        "size_bytes": 2695,
+        "sha256": "8c36d6c85464c4103a3fe27f92b4ff2e9ea9a30cbc2707c43b2b9d4fd250cecf"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23331344",
+        "zenodo_recid": "23331344",
+        "zenodo_file": "R2G1_EVIDENCE.zip",
+        "zenodo_md5": "50aaae2f3968b797d513bdf8515e8d42",
+        "title": "R2G-1: First Live End-to-End Rule 2 Critical Gate \u2014 Detect, Hold, Escalate, Human ACK, Audited Resolution (HCLC-MAV2)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T04:18:47Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -541,7 +572,7 @@
     }
   ],
   "counts": {
-    "bound": 17,
+    "bound": 18,
     "gaps": 2,
     "dois_checked": 13
   }
