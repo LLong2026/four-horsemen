@@ -1,0 +1,5 @@
+{
+  "key_fingerprint_sha256": "3c6cb47aba8a6c385bc0304d6791af8965313e8c5e277800342e9adc7f4bbd45",
+  "pinned_by": "SIP-4 stage-2 freeze, Leon GO 12:01 CT",
+  "note": "the signing key itself never leaves process custody; only this fingerprint is public/anchored"
+}

@@ -1,0 +1,12 @@
+{
+  "releases": [
+    {
+      "version": 1,
+      "roster_sha256": "c514d675e22f069381cb36cf3fe417375fccdfd12a4f60eab69f800dd15ca66d",
+      "signature": "b36aa5547f11a3d2fe1671ef6a62d84afced71e22d7e737500ad3903164b6875",
+      "released_by": "SIP-4 stage-2 freeze, Leon GO 12:01 CT"
+    }
+  ],
+  "current_version": 1,
+  "monotonicity": "releases must be strictly increasing; replay of any prior release is rejected as stale"
+}
