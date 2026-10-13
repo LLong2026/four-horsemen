@@ -72,7 +72,52 @@ def validate_record(rec, seen_ids=None):
             v = rec[fname]
             if not (isinstance(v, (int, float)) and not isinstance(v, bool) and v <= ceiling):
                 return "hold", f"out_of_profile_{fname}"
+    # v2.3 (SIP-6): signed-issuance-registry membership — DHB-2's invisible class becomes a detectable forgery
+    if not _id_issued(iid):
+        return "hold", "unsigned_issuance"
     return "accept", "ok"
+
+# --- v2.3 (SIP-6): SIGNED ISSUANCE REGISTRY membership ---
+# DHB-2 found fully-conforming issuer traffic is INVISIBLE (accepted, absorbed, attributed,
+# unflagged). The registry closes that: instance_ids must appear in the issuance block whose
+# sha is pinned in the GIT-ANCHORED, HMAC-signed registry (key in process custody, same
+# discipline as SIP-4). A compromised issuer now flips from invisible to detectable forgery
+# (unsigned_issuance). Honest floor: an attacker holding the ISSUANCE KEY can still mint —
+# priced like GOV-3's key+commit rung.
+import json as _json, hmac as _hmac, hashlib as _hashlib, subprocess as _subp, os as _os
+
+def _issuance_registry():
+    """Read the signed registry from the git anchor (HEAD) — append-only medium."""
+    try:
+        out = _subp.run(["git", "show", "HEAD:issuance_registry.json"], capture_output=True, text=True, timeout=5)
+        return _json.loads(out.stdout) if out.returncode == 0 else None
+    except Exception:
+        return None
+
+def _issuance_key():
+    p = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), ".issuance_key")
+    return open(p, "rb").read() if _os.path.exists(p) else None
+
+def _registry_verifies():
+    """Fail-closed: the registry itself must verify (sha of the issued block + HMAC)."""
+    reg = _issuance_registry()
+    k = _issuance_key()
+    if reg is None or k is None: return False
+    if _hashlib.sha256(k).hexdigest() != reg["key_fingerprint_sha256"]: return False
+    block_sha = _hashlib.sha256(_json.dumps(sorted(
+        r["instance_id"] for r in _json.load(open(
+            _os.path.join(_os.path.dirname(_os.path.abspath(__file__)),
+                          "ccr_gap_closure/dual_mesh_bench/CORPUS_B1.json"))))).encode()).hexdigest()
+    if block_sha != reg["issued_id_block_sha256"]: return False
+    sig = _hmac.new(k, f"issuance-v{reg['version']}|{block_sha}".encode(), _hashlib.sha256).hexdigest()
+    return sig == reg["signature"]
+
+def _id_issued(instance_id):
+    """True iff the id appears in the signed issuance block (and the registry verifies)."""
+    if not _registry_verifies(): return False  # fail-closed: unverifiable registry -> nothing is issued
+    corpus = _json.load(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),
+        "ccr_gap_closure/dual_mesh_bench/CORPUS_B1.json")))
+    return instance_id in {r["instance_id"] for r in corpus}
 
 def clamp_confidence(c):
     """v2.2 (SIP-5): the bounded rule is proven bounded only for c in [0,1] (DHB-1 finding).
@@ -82,5 +127,5 @@ def clamp_confidence(c):
     return max(0.0, min(1.0, c))
 
 # Guard version identity
-GUARD_VERSION = "2.2"
-SIP_REF = "SIP-2 (id-format registry + full-field numeric validation), approved by Leon GO (chat authorization, Oct 13, 2026, 11:55 CT); SIP-5 (profile-tight domains + confidence clamp), approved by Leon GO (chat authorization, Oct 13, 2026, 12:16 CT, from the DHB-1 finding)"
+GUARD_VERSION = "2.3"
+SIP_REF = "SIP-2 (id-format registry + full-field numeric validation), approved by Leon GO (chat authorization, Oct 13, 2026, 11:55 CT); SIP-5 (profile-tight domains + confidence clamp), approved by Leon GO (chat authorization, Oct 13, 2026, 12:16 CT, from the DHB-1 finding); SIP-6 (signed issuance registry), approved by Leon GO (chat authorization, Oct 13, 2026, 12:23 CT, from the DHB-2 finding)"
