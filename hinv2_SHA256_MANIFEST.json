@@ -1,0 +1,18 @@
+[
+  {
+    "file": "hinv2_prereg.md",
+    "sha256": "b0f048e983eaab1f6bf4f3e7ad10e047f8923907ee772fd6b56622186e03314f"
+  },
+  {
+    "file": "hinv2_runner.py",
+    "sha256": "d595a5568643f604232c7dd989d0aed792e96a40fe58520dc7529656ca6b6e3f"
+  },
+  {
+    "file": "hinv2_receipt.json",
+    "sha256": "f9a5beff564dd53742d006c79707c9bf73645a80de72c97d5552fd3d20dd3246"
+  },
+  {
+    "file": "hinv2_README.md",
+    "sha256": "352c1b40c2a312b31c1df3641b97951f4e32100085ca800d124b4b23fd181969"
+  }
+]

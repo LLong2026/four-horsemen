@@ -648,6 +648,32 @@
         "prototype": true,
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hinv2_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23345859_hinv2_receipt_bundle.zip",
+        "sha256": "2637aae84ce7339791af81ef97cf54ff5f22d88cc70cd8a1c095ad740dc14f42"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "H-INV-2 lineage forgery battery; prereg committed before execution; two disclosed validator repairs (ledger 0053)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23345859",
+        "zenodo_recid": "23345859",
+        "title": "H-INV-2: Lineage Forgery Battery \u2014 The Crossing Ledger Rejects Every Fabricated History"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": null,
+        "verified_by": "pending bind3 round-trip re-verification",
+        "verified_at": null
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
