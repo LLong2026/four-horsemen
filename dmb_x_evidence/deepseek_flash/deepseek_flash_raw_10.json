@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791914460-BPlTJh3ZHuwwYVTSIN8m",
+ "object": "chat.completion",
+ "created": 1791914460,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"quantum_vulnerability_detected\",\"playbook\":\"PB-009: Quantum Vulnerability Migrator\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cb\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one tuple. Need follow rules. Need inspect. Incoming anomaly has anomaly_type \"quantum_vulnerability_detected\". Roster has exact match with playbook_id 6a5d29cb54e45d7e8bad47cb, playbook PB-009: Quantum Vulnerability Migrator, threshold 0.8. Confidence_score 0.9 >= 0.8. So match_type exact, steps_executed \"isolation,healing,verification\", status resolved. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0. Need no prose. Ensure JSON valid. Note incoming anomaly_type in output. playbook field should be playbook string? Yes.\n\nFinal.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one tuple. Need follow rules. Need inspect. Incoming anomaly has anomaly_type \"quantum_vulnerability_detected\". Roster has exact match with playbook_id 6a5d29cb54e45d7e8bad47cb, playbook PB-009: Quantum Vulnerability Migrator, threshold 0.8. Confidence_score 0.9 >= 0.8. So match_type exact, steps_executed \"isolation,healing,verification\", status resolved. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0. Need no prose. Ensure JSON valid. Note incoming anomaly_type in output. playbook field should be playbook string? Yes.\n\nFinal.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 609,
+  "completion_tokens": 245,
+  "total_tokens": 854,
+  "cost": 0.000147339,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 512,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000147339,
+   "upstream_inference_prompt_cost": 1.2589e-05,
+   "upstream_inference_completions_cost": 0.00013475
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 165,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

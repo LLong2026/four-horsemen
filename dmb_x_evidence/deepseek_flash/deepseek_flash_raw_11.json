@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791914461-SB15vRCoYIXwjCoFRX8N",
+ "object": "chat.completion",
+ "created": 1791914461,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one object keys order. Need exact match heartbeat_miss playbook exists threshold 0.85, confidence 0.9 >= threshold. match_type exact, steps_executed \"isolation,healing,verification\", status resolved. Include playbook and playbook_id from roster. anomaly_type incoming. position 0. Need no markdown. Ensure JSON valid. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. Values:\nposition 0\nanomaly_type \"heartbeat_miss\"\nplaybook \"PB-008: Heartbeat Re-igniter\"\nplaybook_id \"6a5d29cb54e45d7e8bad47ca\"\nmatch_type \"exact\"\nsteps_executed \"isolation,healing,verification\"\nstatus \"resolved\"\n\nFinal only.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one object keys order. Need exact match heartbeat_miss playbook exists threshold 0.85, confidence 0.9 >= threshold. match_type exact, steps_executed \"isolation,healing,verification\", status resolved. Include playbook and playbook_id from roster. anomaly_type incoming. position 0. Need no markdown. Ensure JSON valid. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. Values:\nposition 0\nanomaly_type \"heartbeat_miss\"\nplaybook \"PB-008: Heartbeat Re-igniter\"\nplaybook_id \"6a5d29cb54e45d7e8bad47ca\"\nmatch_type \"exact\"\nsteps_executed \"isolation,healing,verification\"\nstatus \"resolved\"\n\nFinal only.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 608,
+  "completion_tokens": 261,
+  "total_tokens": 869,
+  "cost": 0.000190366,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000190366,
+   "upstream_inference_prompt_cost": 4.6816e-05,
+   "upstream_inference_completions_cost": 0.00014355
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 183,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

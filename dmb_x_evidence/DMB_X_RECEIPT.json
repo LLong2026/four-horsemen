@@ -1,6 +1,6 @@
 {
   "series_signature": "dual_mesh_benchmark_X_20261013",
-  "executed_at": "2026-10-13T17:53:37.431665+00:00",
+  "executed_at": "2026-10-13T18:01:11.329540+00:00",
   "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 12:50 CT)",
   "prereg": "dual_mesh_bench_X_20261013_PREREG.md, commit b293d58, committed BEFORE execution",
   "instrument": "byte-identical to the DeepSeek B1 leg (frozen prompt contract, CORPUS_B1 sha 13295d19..., first-20 selection rule, fresh stateless request per instance, wall-clock request->full response)",
@@ -56,10 +56,64 @@
       "aborted": true,
       "median_ms": 2910.3,
       "p95_ms": 3068.7
+    },
+    "alibaba_qwen": {
+      "family": "alibaba_qwen",
+      "model_requested": "qwen/qwen3.8-omni-flash",
+      "n_run": 20,
+      "n_correct": 20,
+      "n_strict": 20,
+      "n_norm": 20,
+      "cost_usd": 0.0051,
+      "model_returned": "qwen/qwen3.8-omni-flash",
+      "aborted": false,
+      "median_ms": 4744.8,
+      "p95_ms": 6347.7
+    },
+    "mistral": {
+      "family": "mistral",
+      "model_requested": "mistralai/mistral-small-3.2-24b-instruct",
+      "n_run": 20,
+      "n_correct": 20,
+      "n_strict": 20,
+      "n_norm": 20,
+      "cost_usd": 0.0013,
+      "model_returned": "mistralai/mistral-small-3.2-24b-instruct",
+      "aborted": false,
+      "median_ms": 2764.1,
+      "p95_ms": 6798.5
+    },
+    "meta_llama": {
+      "family": "meta_llama",
+      "model_requested": "meta-llama/llama-4-scout",
+      "n_run": 4,
+      "n_correct": 4,
+      "n_strict": 4,
+      "n_norm": 4,
+      "n_rate_limited_remaining": 16,
+      "cost_usd": 0.0006,
+      "model_returned": "meta-llama/llama-4-scout",
+      "resumed": true,
+      "resume_disclosure": "first leg: 19/20 instances rate-limited upstream (HTTP 429, DeepInfra) - availability, not capability; disclosed resume re-ran ONLY the rate-limited instances; no measured instance was re-run (FBX-3); original raw preserved",
+      "median_ms": 13588.4,
+      "p95_ms": 16096.4
+    },
+    "deepseek_flash": {
+      "family": "deepseek_flash",
+      "model_requested": "~deepseek/deepseek-flash-latest",
+      "n_run": 20,
+      "n_correct": 20,
+      "n_strict": 20,
+      "n_norm": 20,
+      "cost_usd": 0.003,
+      "model_returned": "deepseek/deepseek-v4.1-flash",
+      "aborted": false,
+      "median_ms": 1196.5,
+      "p95_ms": 1874.4
     }
   },
-  "total_cost_usd": 0.0679,
-  "payment_abort": true,
+  "total_cost_usd": 0.0779,
+  "payment_abort": false,
   "raw_preserved": "fh_pub/dmb_x_evidence/<family>/ raw json + content per instance",
   "comparisons": {
     "deepseek_v4_pro_median_ms_ref": "see DMB DeepSeek column (DOI 10.5281/zenodo.23345241)",
@@ -67,5 +121,9 @@
     "v1_loop_median_ms_ref": 4509.1,
     "doctrine": "raw-API legs are comparable within their substrate only; cross-substrate comparisons are directional (XPLAT-2/3)"
   },
-  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic.",
+  "llama_resume": {
+    "executed_at": "2026-10-13T18:06:35.562466+00:00",
+    "reason": "HTTP 429 upstream rate-limit (availability), not capability; disclosed resume per protocol; grok remains partial (payment abort, never retried)"
+  }
 }

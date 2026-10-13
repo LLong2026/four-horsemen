@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791914269-cX5WjYAqX1Uv493rGlDI",
+ "object": "chat.completion",
+ "created": 1791914269,
+ "model": "qwen/qwen3.8-omni-flash",
+ "provider": "Alibaba",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We need answer user's request. Need produce final JSON array exactly one object keys order. Need analyze.\n\nUser: operating as anomaly-response engine. Need resolve ONE incoming anomaly and emit decision tuple. Rules:\n1 exact match only. Playbook selected only if anomaly_type exactly equal. Incoming anomaly_type \"heartbeat_miss\". Roster has heartbeat_miss with playbook PB-008: Heartbeat Re-igniter id 6a5d29cb54e45d7e8bad47ca threshold 0.85. Match yes.\n2 Threshold: confidence_score >= threshold => match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Confidence_score given 0.9 >= 0.85. So resolved.\n3 Output JSON array containing exactly ONE decision tuple object with keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0. No prose/markdown.\n\nNeed final: [{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]\n\nEnsure valid JSON. No markdown. Done.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer user's request. Need produce final JSON array exactly one object keys order. Need analyze.\n\nUser: operating as anomaly-response engine. Need resolve ONE incoming anomaly and emit decision tuple. Rules:\n1 exact match only. Playbook selected only if anomaly_type exactly equal. Incoming anomaly_type \"heartbeat_miss\". Roster has heartbeat_miss with playbook PB-008: Heartbeat Re-igniter id 6a5d29cb54e45d7e8bad47ca threshold 0.85. Match yes.\n2 Threshold: confidence_score >= threshold => match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Confidence_score given 0.9 >= 0.85. So resolved.\n3 Output JSON array containing exactly ONE decision tuple object with keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0. No prose/markdown.\n\nNeed final: [{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]\n\nEnsure valid JSON. No markdown. Done.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 628,
+  "completion_tokens": 376,
+  "total_tokens": 1004,
+  "cost": 0.00027092,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00027092,
+   "upstream_inference_prompt_cost": 9.42e-05,
+   "upstream_inference_completions_cost": 0.00017672
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 296,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

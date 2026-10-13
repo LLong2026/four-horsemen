@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791914355-JCscCWFyH2Pdhyd8PPHD",
+ "object": "chat.completion",
+ "created": 1791914355,
+ "model": "qwen/qwen3.8-omni-flash",
+ "provider": "Alibaba",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We need answer user's request. Need produce final JSON array exactly one object keys order. Let's analyze rules.\n\nIncoming anomaly_type: \"heartbeat_miss\". Roster has exact match: PB-008, id 6a5d29cb54e45d7e8bad47ca, threshold 0.85. Confidence_score 0.9 >= threshold. So match_type exact, steps_executed \"isolation,healing,verification\", status resolved. position 0. Output JSON array containing object. No prose/markdown. Ensure keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. Values strings/number/null. Need probably anomaly_type from incoming. playbook string. playbook_id string. steps string. status string. Final:\n[{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]\n\nDouble-check no extra whitespace? acceptable JSON. Need not include confidence_score. Done.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer user's request. Need produce final JSON array exactly one object keys order. Let's analyze rules.\n\nIncoming anomaly_type: \"heartbeat_miss\". Roster has exact match: PB-008, id 6a5d29cb54e45d7e8bad47ca, threshold 0.85. Confidence_score 0.9 >= threshold. So match_type exact, steps_executed \"isolation,healing,verification\", status resolved. position 0. Output JSON array containing object. No prose/markdown. Ensure keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. Values strings/number/null. Need probably anomaly_type from incoming. playbook string. playbook_id string. steps string. status string. Final:\n[{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]\n\nDouble-check no extra whitespace? acceptable JSON. Need not include confidence_score. Done.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 629,
+  "completion_tokens": 345,
+  "total_tokens": 974,
+  "cost": 0.0002565,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0002565,
+   "upstream_inference_prompt_cost": 9.435e-05,
+   "upstream_inference_completions_cost": 0.00016215
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 265,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

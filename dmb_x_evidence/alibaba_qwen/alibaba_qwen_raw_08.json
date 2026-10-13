@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791914304-Z9pmybWdpRK1vhtRpXr6",
+ "object": "chat.completion",
+ "created": 1791914304,
+ "model": "qwen/qwen3.8-omni-flash",
+ "provider": "Alibaba",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"heartbeat_miss\",\n    \"playbook\": \"PB-008: Heartbeat Re-igniter\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  }\n]",
+    "refusal": null,
+    "reasoning": "We need answer user's request. Need produce final only JSON array no markdown. Need analyze.\n\nUser: operating rules. Incoming anomaly: {\"instance_id\": \"BENCH-0008\", \"anomaly_type\": \"heartbeat_miss\", ...}. confidence_score 0.9. Registered roster includes heartbeat_miss playbook PB-008 threshold 0.85. Exact match. confidence >= threshold => match_type exact, steps_executed \"isolation,healing,verification\", status resolved. Output JSON array containing exactly one object keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0.\n\nNeed ensure no prose. JSON array. Values: position 0, anomaly_type \"heartbeat_miss\", playbook \"PB-008: Heartbeat Re-igniter\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\".\n\nDouble-check exact case: incoming anomaly_type heartbeat_miss matches roster. threshold 0.85, conf 0.9. Yes.\n\nFinal only JSON. Ensure valid JSON. Could include newline? okay. No markdown fences.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer user's request. Need produce final only JSON array no markdown. Need analyze.\n\nUser: operating rules. Incoming anomaly: {\"instance_id\": \"BENCH-0008\", \"anomaly_type\": \"heartbeat_miss\", ...}. confidence_score 0.9. Registered roster includes heartbeat_miss playbook PB-008 threshold 0.85. Exact match. confidence >= threshold => match_type exact, steps_executed \"isolation,healing,verification\", status resolved. Output JSON array containing exactly one object keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0.\n\nNeed ensure no prose. JSON array. Values: position 0, anomaly_type \"heartbeat_miss\", playbook \"PB-008: Heartbeat Re-igniter\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\".\n\nDouble-check exact case: incoming anomaly_type heartbeat_miss matches roster. threshold 0.85, conf 0.9. Yes.\n\nFinal only JSON. Ensure valid JSON. Could include newline? okay. No markdown fences.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 629,
+  "completion_tokens": 380,
+  "total_tokens": 1009,
+  "cost": 0.00027295,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00027295,
+   "upstream_inference_prompt_cost": 9.435e-05,
+   "upstream_inference_completions_cost": 0.0001786
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 266,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}
