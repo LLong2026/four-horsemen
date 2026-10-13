@@ -197,7 +197,7 @@ print(f"VERDICT: {'ALL PASS' if overall else 'SHIPPED AS FOUND — fails: ' + st
 
 receipt = {
   "series": "GOV-2", "executed_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, Gov-2 GO)",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 11:55 CT GO gate)",
   "defense_stack_under_test": "SIP-4 three-layer governance defense (deployed 11:55 CT, stage-1)",
   "run_end_audit": audit_a,
   "attack_log_layer_counts": {

@@ -5,10 +5,10 @@
   },
   {
     "file": "gov2_runner.py",
-    "sha256": "f74ede29f07872c56d8d0b1a120eb7f2df19a3abc3cebbfa341c370afaee6b92"
+    "sha256": "9818db14a84255647dfff06d457edd765b45eb3929cc4384439b7ca6796e708b"
   },
   {
     "file": "GOV2_RECEIPT.json",
-    "sha256": "9affbacf5d708fefd96184c00ca97b5cde08a1cb95d848d4a1275d91074e5a1c"
+    "sha256": "82d2099a54bbc7111106b0c18e3af44e48f84ccf57a40b55b9b94d6f759fe951"
   }
 ]
