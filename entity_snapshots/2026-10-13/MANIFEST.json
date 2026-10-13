@@ -1,0 +1,301 @@
+{
+ "snapshot_date": "2026-10-13",
+ "generated_by": "exportEntitySnapshot (DR-1)",
+ "entities": [
+  {
+   "entity": "AegisAnomaly",
+   "count": 5000,
+   "possible_truncation": true
+  },
+  {
+   "entity": "AegisHealingEvent",
+   "count": 2104,
+   "possible_truncation": false
+  },
+  {
+   "entity": "AegisPlaybook",
+   "count": 617,
+   "possible_truncation": false
+  },
+  {
+   "entity": "AssetRecord",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "BackupStatus",
+   "count": 5,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CCRGateAudit",
+   "count": 21,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CCRSyntheticTarget",
+   "count": 3,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Candidate",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "ChangeRequest",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CircuitBreaker",
+   "count": 19,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CompliancePolicy",
+   "count": 98,
+   "possible_truncation": false
+  },
+  {
+   "entity": "ConnectedApp",
+   "count": 85,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CreditUsage",
+   "count": 492,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Customer",
+   "count": 558,
+   "possible_truncation": false
+  },
+  {
+   "entity": "DeploymentJob",
+   "count": 10,
+   "possible_truncation": false
+  },
+  {
+   "entity": "DualMeshNode",
+   "count": 75,
+   "possible_truncation": false
+  },
+  {
+   "entity": "EmailQueue",
+   "count": 26,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Employee",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "GrantFund",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "GrantOpportunity",
+   "count": 5,
+   "possible_truncation": false
+  },
+  {
+   "entity": "HRCompliance",
+   "count": 16,
+   "possible_truncation": false
+  },
+  {
+   "entity": "HealingEventLog",
+   "count": 21,
+   "possible_truncation": false
+  },
+  {
+   "entity": "HealthManifest",
+   "count": 554,
+   "possible_truncation": false
+  },
+  {
+   "entity": "HouseholdBill",
+   "count": 69,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Insight",
+   "count": 7,
+   "possible_truncation": false
+  },
+  {
+   "entity": "KnowledgeBase",
+   "count": 69,
+   "possible_truncation": false
+  },
+  {
+   "entity": "LearningMetric",
+   "count": 275,
+   "possible_truncation": false
+  },
+  {
+   "entity": "MetaMonitor",
+   "count": 59,
+   "possible_truncation": false
+  },
+  {
+   "entity": "NeuralMeshSnapshot",
+   "count": 4,
+   "possible_truncation": false
+  },
+  {
+   "entity": "NeuralNode",
+   "count": 42,
+   "possible_truncation": false
+  },
+  {
+   "entity": "NeuralNodeTemplate",
+   "count": 31,
+   "possible_truncation": false
+  },
+  {
+   "entity": "OptimizationProposal",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "OrchestratorAgent",
+   "count": 158,
+   "possible_truncation": false
+  },
+  {
+   "entity": "OrchestratorNode",
+   "count": 75,
+   "possible_truncation": false
+  },
+  {
+   "entity": "OrchestratorTask",
+   "count": 32,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Pattern",
+   "count": 221,
+   "possible_truncation": false
+  },
+  {
+   "entity": "PayrollRecord",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "PlatformAlert",
+   "count": 260,
+   "possible_truncation": false
+  },
+  {
+   "entity": "PlaybookTemplate",
+   "count": 40,
+   "possible_truncation": false
+  },
+  {
+   "entity": "PredictiveAlert",
+   "count": 182,
+   "possible_truncation": false
+  },
+  {
+   "entity": "RateLimitLog",
+   "count": 333,
+   "possible_truncation": false
+  },
+  {
+   "entity": "RelayedKit",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "RemediationSweep",
+   "count": 153,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SLAPolicy",
+   "count": 2,
+   "possible_truncation": false
+  },
+  {
+   "entity": "ScalingEvent",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SelfImprovementProposal",
+   "count": 63,
+   "possible_truncation": false
+  },
+  {
+   "entity": "ServiceTicket",
+   "count": 1903,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SimBuilder",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SkillTemplate",
+   "count": 4,
+   "possible_truncation": false
+  },
+  {
+   "entity": "StaffingRequisition",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SystemHealth",
+   "count": 640,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SystemHeartbeat",
+   "count": 611,
+   "possible_truncation": false
+  },
+  {
+   "entity": "TaxFiling",
+   "count": 9,
+   "possible_truncation": false
+  },
+  {
+   "entity": "TelemetryEvent",
+   "count": 4,
+   "possible_truncation": false
+  },
+  {
+   "entity": "TierConfiguration",
+   "count": 4,
+   "possible_truncation": false
+  },
+  {
+   "entity": "VendorContract",
+   "count": 533,
+   "possible_truncation": false
+  },
+  {
+   "entity": "WorkdaySync",
+   "count": 0,
+   "possible_truncation": false
+  }
+ ],
+ "notes": [
+  "Redactions: VendorContract lead_contact_email/phone redacted (third-party contacts, not covered by open-book doctrine).",
+  "Excluded: HouseholdBill \u2014 owner's personal finance, not company open-book; preserved in sandbox + available for private escrow on request.",
+  "created_by/created_by_id stripped server-side at export (exportEntitySnapshot).",
+  "Customer entity: 558 records, ~555 synthetic seeded (demo domains per seedMockMSPFleet) + company's own tenants (open-book).",
+  "AegisAnomaly flagged possible_truncation: SDK list cap at 5000 records (most recent); historical anomaly summaries live in the ledger receipts."
+ ],
+ "excluded": {
+  "HouseholdBill": "owner personal finance (not public)"
+ }
+}
