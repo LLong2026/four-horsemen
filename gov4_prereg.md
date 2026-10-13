@@ -1,8 +1,9 @@
 # GOV-4 PREREGISTRATION — Full-Spectrum Composite (The Capstone)
 
 Series: GOV-4 | Committed: 2026-10-13 (before execution)
-Operator authorization: Leon GO (chat authorization, Oct 13, 2026, 12:06 CT,
-"proceed to Gov 4 or whatever the natural class is").
+Operator authorization: Leon GO (chat authorization, Oct 13, 2026, 12:06 CT).
+[Redaction note, Oct 13: earlier versions quoted the operator's chat wording;
+redacted per the Operator Privacy standing rule — authorization is GO + timestamp only.]
 
 ## 1. Purpose — do the defenses compose?
 
