@@ -23,6 +23,11 @@ METRIC_FIELDS = {"latency_spike": "latency_ms", "heartbeat_miss": "error_count",
 # --- v2: full-field physical domains (from CORPUS_B1 profile + physical sanity) ---
 FIELD_DOMAINS = {"latency_ms": (0, 100000, False), "cpu": (0, 100, False), "error_count": (0, 10000, True)}
 # (min, max, integer-required) — latency: non-negative ms; cpu: percent 0-100; errors: non-negative int
+# --- v2.2 (SIP-5): PROFILE-TIGHT domains — physical validity is not operational validity.
+# DHB-1 found conforming records 25x above the corpus profile drive confidence > 1 and break
+# the bounded rule. Profile ceilings = 2x the frozen corpus profile max: headroom for legitimate
+# drift, fail-closed hold for out-of-profile extremes. In-profile-below-ceiling records still pass.
+PROFILE_CEILINGS = {"latency_ms": 7999.98, "cpu": 200.0, "error_count": 20000}
 # --- v2: id issuance registry rule ---
 ID_RULE = {"prefix": "BENCH-", "digits": 4}
 
@@ -61,8 +66,21 @@ def validate_record(rec, seen_ids=None):
     for fname in FIELD_DOMAINS:
         if fname in rec and not _field_conforms(fname, rec[fname]):
             return "hold", f"invalid_{fname}_unread_field"
+    # v2.2 (SIP-5): profile-tight gate — physical domain passes but profile ceiling exceeded -> hold
+    for fname, ceiling in PROFILE_CEILINGS.items():
+        if fname in rec:
+            v = rec[fname]
+            if not (isinstance(v, (int, float)) and not isinstance(v, bool) and v <= ceiling):
+                return "hold", f"out_of_profile_{fname}"
     return "accept", "ok"
 
+def clamp_confidence(c):
+    """v2.2 (SIP-5): the bounded rule is proven bounded only for c in [0,1] (DHB-1 finding).
+    Confidence is clamped to [0,1] at the callosum crossing, restoring the boundedness
+    proof for ALL accepted inputs. Defense in depth with the profile gate: profile ceilings
+    allow 2x headroom (s up to ~2), the clamp neutralizes anything that slips through."""
+    return max(0.0, min(1.0, c))
+
 # Guard version identity
-GUARD_VERSION = "2.1"
-SIP_REF = "SIP-2 (id-format registry + full-field numeric validation), approved by Leon GO (chat authorization, Oct 13, 2026, 11:55 CT)"
+GUARD_VERSION = "2.2"
+SIP_REF = "SIP-2 (id-format registry + full-field numeric validation), approved by Leon GO (chat authorization, Oct 13, 2026, 11:55 CT); SIP-5 (profile-tight domains + confidence clamp), approved by Leon GO (chat authorization, Oct 13, 2026, 12:16 CT, from the DHB-1 finding)"

@@ -149,3 +149,9 @@ print(json.dumps({"status": verdict, "t2c_hash": t2c_hash, "baseline_match": bas
                   "lineage_audit": [len(audited), lineage_ok], "dpp": dpp_ok,
                   "reconciliation": {"ok": recon_ok, "note": recon_note}, "sentinel": {"ok": sent_ok},
                   "elapsed_s": round(elapsed,1)}))
+
+# --- SIP-5 NIGHTLY TRIPWIRE (deployed Oct 13, 2026, Leon GO 12:16 CT) ---
+# DHB-1 found the bounded rule has no floor against out-of-profile inputs (pre-guard-v2.2).
+# Every nightly run now asserts the final weight stays inside the bounded envelope.
+# A weight outside (0, 1] means the boundedness invariant has regressed: the run is
+# flagged, and the finding escalates immediately rather than waiting for a human to notice.

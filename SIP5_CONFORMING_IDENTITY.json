@@ -1,0 +1,14 @@
+{
+  "guard_version": "2.2",
+  "conforming_identity": true,
+  "accept_vector_sha256_prefix": "70b393803ca4d0d6",
+  "dhb1_attack_record_now": [
+    "hold",
+    "out_of_profile_latency_ms"
+  ],
+  "in_profile_still_accepted": [
+    "accept",
+    "ok"
+  ],
+  "clamp": "c in [0,1] at the crossing"
+}
