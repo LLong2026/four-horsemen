@@ -28,7 +28,7 @@ def pii_scan(text):
     return [m.pattern for pat in PII_PATTERNS if pat.search(text)]
 
 # ---- instance corpora (frozen) ----
-LEG_A = APPROVED * 2 + ["CRYSTALS-Dilithium3"]          # 8 approved, valid vectors
+LEG_A = APPROVED * 2 + ["CRYSTALS-Dilithium3", "kyber_1024"]  # 8 approved, valid vectors
 LEG_B = ["RSA-2048", "ECDSA-P256", "AES-256-GCM", "DSA-1024",
          "ECDH-P384", "3DES-CBC", "SHA-1-sig", "RC4"]
 LEG_C = ["CRYSTALS-Dilithium2", "kyber_768", "falcon-512", "sphincs+-128s",
@@ -39,7 +39,7 @@ LEG_D = ["crystals-dilithium3", "CRYSTALS-Dilithium 3", "CRYSTALSDilithium3",
 LEG_E = ["ML-DSA-65", "ML-KEM-1024", "SLH-DSA-256f", "CRYSTALS-Kyber-1024",
          "ML-DSA-44", "ML-KEM-768", "SLH-DSA-128s", "ML-DSA-87"]
 LEG_F = LEG_A[:8]   # approved algorithms, CORRUPTED vectors
-LEG_G = APPROVED * 2 + ["CRYSTALS-Dilithium3"]
+LEG_G = APPROVED * 2 + ["kyber_1024", "SPHINCS+-256f"]
 
 def run_instance(inst_id, leg, alg, corrupt_vector=False):
     payload = f"synthetic-anomaly-{inst_id}"
@@ -128,6 +128,7 @@ receipt = {
     "open_escalations": ["SIM-D crypto key staleness (open, pending review)"],
     "naming_variance_in_fleet_history": "July 2026 AegisAnomaly record used 'CRYSTALS-Kyber-1024'; approved-set string is 'kyber_1024'"},
   "authorization": "Leon GO (chat authorization, Oct 13, 2026, 13:51 CT)",
+  "instrument_defect_disclosure": "Run 1 (preserved in pqc_b1_evidence_defectiverun1/) had corpora of 7 on legs A/G instead of the preregistered 8 — falsifiers FBP-1/FBP-3 correctly failed on the count mismatch. Corpus-definition repair (no gate logic touched, governance hash unchanged), disclosed per DPP-4 precedent; run 2 is the scored run.",
   "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. "
     "It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."}
 (OUT.parent / "PQC_B1_RECEIPT.json").write_text(json.dumps(receipt, indent=2))

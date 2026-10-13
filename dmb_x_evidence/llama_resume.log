@@ -9,3 +9,7 @@ preserved from interrupted attempt: 6 | to measure: 13
   14 BENCH-0014 15822.1ms correct=True
   15 BENCH-0015 19557.7ms correct=True
   16 BENCH-0016 17443.2ms correct=True
+  17 BENCH-0017 ERRms correct=None HTTP429
+  18 BENCH-0018 14945.4ms correct=True
+  19 BENCH-0019 14724.1ms correct=True
+DONE: llama 16/13 correct, 6 still limited, median 14945.4ms | total spend $0.0819

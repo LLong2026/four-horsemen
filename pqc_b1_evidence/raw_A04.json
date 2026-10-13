@@ -1,0 +1,17 @@
+{
+ "inst_id": "PQC-B1-A04",
+ "leg": "A",
+ "algorithm": "kyber_1024",
+ "governance_hash_pre": "d785ffd39d044a2a6b49a7b278d952accb2b843e366f915cf4e276011930d3a8",
+ "verdict": "heal",
+ "playbook": "PB-009: Quantum Vulnerability Migrator",
+ "heal_steps": 3,
+ "escalated": false,
+ "alert": false,
+ "journal": "{\"action\": \"heal\", \"algorithm_string\": \"kyber_1024\", \"anomaly_type\": \"quantum_vulnerability_detected\", \"epoch\": \"PQC-B1-A04\", \"source_inst\": \"PQC-B1-A04\"}",
+ "pii_hits": [],
+ "governance_hash_post": "d785ffd39d044a2a6b49a7b278d952accb2b843e366f915cf4e276011930d3a8",
+ "gov_unchanged": true,
+ "expected": "heal",
+ "conforms": true
+}

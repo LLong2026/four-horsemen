@@ -1,0 +1,97 @@
+{
+  "battery": "PQC-B1",
+  "executed_at": "2026-10-13T18:52:51.197029+00:00",
+  "governance_hash": "d785ffd39d044a2a6b49a7b278d952accb2b843e366f915cf4e276011930d3a8",
+  "summary": {
+    "A": {
+      "n": 8,
+      "conforms": 8,
+      "detail": "approved-set conformance"
+    },
+    "B": {
+      "n": 8,
+      "conforms": 8,
+      "detail": "classical fallback rejection"
+    },
+    "C": {
+      "n": 8,
+      "conforms": 8,
+      "detail": "unapproved-PQC rejection"
+    },
+    "D": {
+      "n": 8,
+      "conforms": 8,
+      "detail": "exactness/canonicalization attacks"
+    },
+    "E": {
+      "n": 8,
+      "conforms": 8,
+      "detail": "FIPS name gap (expected fail of strict FIPS-name acceptance \u2014 ships as found)"
+    },
+    "F": {
+      "n": 8,
+      "conforms": 8,
+      "detail": "crypto validation failure escalation"
+    },
+    "G": {
+      "n": 8,
+      "conforms": 8,
+      "detail": "dual-hemispheric invariant audit"
+    }
+  },
+  "n_epochs": 56,
+  "falsifiers": {
+    "FBP-1_conformance_rejection": true,
+    "FBP-2_naming_gap_as_found": true,
+    "FBP-3_fail_safe_validation": true,
+    "FBP-4_hemispheric_invariants": true,
+    "FBP-5_idempotency": true,
+    "FBP-6_hygiene_raws_preserved": true
+  },
+  "naming_gap_disclosure": "LEG E: ML-DSA-65 (FIPS 204 name of Dilithium3), ML-KEM-1024 (FIPS 203 name of Kyber-1024), SLH-DSA-256f (FIPS 205 name of SPHINCS+-256f), and the fleet's own historical 'CRYSTALS-Kyber-1024' (July 2026 AegisAnomaly) are all REJECTED under byte-exact identification. These are the same algorithms under their published FIPS names. Ships as found: the standard draft includes a human-approved name-equivalence table (SIP-8); the gate is NOT silently patched, per Constitution Art. 2.2.",
+  "fleet_baseline": {
+    "as_of": "2026-10-13T18:05:00Z pulse reads",
+    "per_app": {
+      "SIM-B-Hub": {
+        "pqc_readiness": 98,
+        "vulnerable_crypto": 0
+      },
+      "Conquest": {
+        "pqc_algorithm_on_record": "CRYSTALS-Dilithium3",
+        "vulnerable_crypto": 0
+      },
+      "War": {
+        "pqc_readiness": 50,
+        "vulnerable_crypto": 0
+      },
+      "Famine": {
+        "pqc_readiness": 50,
+        "vulnerable_crypto": 0
+      },
+      "Death": {
+        "pqc_algorithm_on_record": "Kyber-1024",
+        "vulnerable_crypto": 0
+      },
+      "Corral": {
+        "pqc_readiness": 100,
+        "vulnerable_crypto": 0
+      },
+      "SIM-B-Hypervisor": {
+        "pqc_readiness": 98,
+        "vulnerable_crypto": 0
+      },
+      "SIM-B-Technician": {
+        "pqc_readiness": 98,
+        "vulnerable_crypto": 3,
+        "note": "count only in CyberDashboard as of 2026-09-26T00:50:00Z \u2014 items not exposed; drill-down flagged"
+      }
+    },
+    "open_escalations": [
+      "SIM-D crypto key staleness (open, pending review)"
+    ],
+    "naming_variance_in_fleet_history": "July 2026 AegisAnomaly record used 'CRYSTALS-Kyber-1024'; approved-set string is 'kyber_1024'"
+  },
+  "authorization": "Leon GO (chat authorization, Oct 13, 2026, 13:51 CT)",
+  "instrument_defect_disclosure": "Run 1 (preserved in pqc_b1_evidence_defectiverun1/) had corpora of 7 on legs A/G instead of the preregistered 8 \u2014 falsifiers FBP-1/FBP-3 correctly failed on the count mismatch. Corpus-definition repair (no gate logic touched, governance hash unchanged), disclosed per DPP-4 precedent; run 2 is the scored run.",
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}

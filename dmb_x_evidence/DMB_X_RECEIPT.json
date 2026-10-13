@@ -86,19 +86,17 @@
     "meta_llama": {
       "family": "meta_llama",
       "model_requested": "meta-llama/llama-4-scout",
-      "n_run": 4,
-      "n_correct": 4,
-      "n_strict": 4,
-      "n_norm": 4,
-      "n_rate_limited_remaining": 16,
-      "cost_usd": 0.0006,
+      "n_run": 13,
+      "n_correct": 16,
+      "n_strict": 16,
+      "n_norm": 16,
+      "n_rate_limited": 6,
+      "cost_usd": 0.002,
       "model_returned": "meta-llama/llama-4-scout",
       "resumed": true,
-      "resume_disclosure": "first leg: 19/20 instances rate-limited upstream (HTTP 429, DeepInfra) - availability, not capability; disclosed resume re-ran ONLY the rate-limited instances; no measured instance was re-run (FBX-3); original raw preserved",
-      "median_ms": 13588.4,
-      "p95_ms": 16096.4,
-      "n_rate_limited": 16,
-      "status": "partial-availability: 4/20 measured (4/4 correct), 16 upstream rate-limited (HTTP 429, DeepInfra) across both the first leg and the disclosed resume; capability clean on every instance that landed; column recorded UNAVAILABLE-rate-limited for the remaining 16"
+      "resume_disclosure": "First leg: 19/20 upstream rate-limited (HTTP 429, DeepInfra \u2014 availability, not capability). Disclosed resume re-ran only unmeasured instances with 45s pacing; instances completed by the timed-out first resume attempt were scored from their preserved raw files, never re-called. FBX-3 held: no measured instance was re-run.",
+      "median_ms": 14945.4,
+      "p95_ms": 75032.6
     },
     "deepseek_flash": {
       "family": "deepseek_flash",
@@ -114,7 +112,7 @@
       "p95_ms": 1874.4
     }
   },
-  "total_cost_usd": 0.0779,
+  "total_cost_usd": 0.0819,
   "payment_abort": false,
   "raw_preserved": "fh_pub/dmb_x_evidence/<family>/ raw json + content per instance",
   "comparisons": {
@@ -125,7 +123,8 @@
   },
   "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic.",
   "llama_resume": {
-    "executed_at": "2026-10-13T18:06:35.562466+00:00",
-    "reason": "HTTP 429 upstream rate-limit (availability), not capability; disclosed resume per protocol; grok remains partial (payment abort, never retried)"
+    "executed_at": "2026-10-13T18:20:02.126039+00:00",
+    "reason": "HTTP 429 upstream rate-limit (availability), not capability; disclosed resume",
+    "note": "grok remains partial (payment abort, never retried \u2014 distinct doctrine)"
   }
 }

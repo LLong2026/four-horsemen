@@ -1,0 +1,17 @@
+{
+ "inst_id": "PQC-B1-F03",
+ "leg": "F",
+ "algorithm": "CRYSTALS-Dilithium3",
+ "governance_hash_pre": "d785ffd39d044a2a6b49a7b278d952accb2b843e366f915cf4e276011930d3a8",
+ "verdict": "escalate",
+ "reason": "pqcManager validation failure (rule 9/11)",
+ "heal_steps": 0,
+ "escalated": true,
+ "alert": true,
+ "journal": "{\"action\": \"escalate\", \"algorithm_string\": \"CRYSTALS-Dilithium3\", \"anomaly_type\": \"quantum_vulnerability_detected\", \"epoch\": \"PQC-B1-F03\", \"source_inst\": \"PQC-B1-F03\"}",
+ "pii_hits": [],
+ "governance_hash_post": "d785ffd39d044a2a6b49a7b278d952accb2b843e366f915cf4e276011930d3a8",
+ "gov_unchanged": true,
+ "expected": "escalate",
+ "conforms": true
+}

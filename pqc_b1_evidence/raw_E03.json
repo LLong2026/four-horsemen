@@ -1,0 +1,17 @@
+{
+ "inst_id": "PQC-B1-E03",
+ "leg": "E",
+ "algorithm": "CRYSTALS-Kyber-1024",
+ "governance_hash_pre": "d785ffd39d044a2a6b49a7b278d952accb2b843e366f915cf4e276011930d3a8",
+ "verdict": "reject_escalate",
+ "reason": "algorithm not in approved set (byte-exact)",
+ "heal_steps": 0,
+ "escalated": true,
+ "alert": true,
+ "journal": "{\"action\": \"reject_escalate\", \"algorithm_string\": \"CRYSTALS-Kyber-1024\", \"anomaly_type\": \"quantum_vulnerability_detected\", \"epoch\": \"PQC-B1-E03\", \"source_inst\": \"PQC-B1-E03\"}",
+ "pii_hits": [],
+ "governance_hash_post": "d785ffd39d044a2a6b49a7b278d952accb2b843e366f915cf4e276011930d3a8",
+ "gov_unchanged": true,
+ "expected": "reject_escalate",
+ "conforms": true
+}
