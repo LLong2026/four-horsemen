@@ -1,0 +1,11 @@
+[
+{
+"position": 20,
+"anomaly_type": "latency_spike",
+"playbook": null,
+"playbook_id": null,
+"match_type": "exact",
+"steps_executed": [],
+"status": "detected"
+}
+]
