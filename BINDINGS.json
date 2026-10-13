@@ -674,6 +674,32 @@
         "prototype": true,
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dpp1_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23345907_dpp1_receipt_bundle.zip",
+        "sha256": "f872b507f093592a5301b5451ee52e7d313cf9f58217b504dc8c9271e8c9a724"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "DPP-1 data-plane poisoning battery; prereg committed before execution; first-run clean (ledger 0055)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23345907",
+        "zenodo_recid": "23345907",
+        "title": "DPP-1: Data-Plane Poisoning via Metadata \u2014 Poison In, Nothing Out"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": null,
+        "verified_by": "pending bind3 round-trip re-verification",
+        "verified_at": null
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "dpp1_prereg.md",
+    "sha256": "303d53367ddac92da9f61ed24a84b9e1805fd1fadd7d711bd67b75386c04f0c1"
+  },
+  {
+    "file": "dpp1_runner.py",
+    "sha256": "b0f655889bcfebb41aa059551d0a86c06e6df2f92d3ac01fc8098a9d04cada1e"
+  },
+  {
+    "file": "poisoned_CORPUS_B1.json",
+    "sha256": "416494934786b8378829e4196cb76a499d5db763e9e2f4d6ee4ad504ce410639"
+  },
+  {
+    "file": "dpp1_receipt.json",
+    "sha256": "c1f3315b1e29a959acae68d97ade2de5eba9798b5f666b790dac41413b2378f4"
+  },
+  {
+    "file": "dpp1_README.md",
+    "sha256": "49a30cbb27f8178b8bfd72377ba3ad84507c7512bf761d9ce175495fa880e713"
+  }
+]
