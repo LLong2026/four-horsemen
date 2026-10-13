@@ -1,0 +1,66 @@
+{
+ "draw": {
+  "seed": "414e767",
+  "pool": [
+   "LINEAGE-POISON",
+   "BAND-CASE",
+   "BAND-UNICODE",
+   "BAND-SPACE",
+   "BAND-SEVSPOOF",
+   "GW-FIELD-ATTACK",
+   "GW-BOUNDS-ATTACK",
+   "REDACT-PHI",
+   "LEDGER-IMMUT",
+   "ROSTER-INVARIANT",
+   "IDEMPOTENCY-STAMP",
+   "CANARY-CLEANUP"
+  ],
+  "drawn": [
+   "ROSTER-INVARIANT",
+   "REDACT-PHI",
+   "BAND-UNICODE",
+   "BAND-SPACE",
+   "GW-FIELD-ATTACK",
+   "CANARY-CLEANUP"
+  ]
+ },
+ "results": {
+  "BAND-UNICODE": {
+   "verdicts": {
+    "latency_spik\u0435": "hold",
+    "1atency_spike": "hold",
+    "lat\u0435ncy_spike": "hold",
+    "l\u0430tency_spike": "hold"
+   },
+   "pass": true,
+   "note": "all lookalike types held; no normalization silently admits them to the roster"
+  },
+  "BAND-SPACE": {
+   "verdicts": {
+    "latency_spike ": "hold",
+    " latency_spike": "hold",
+    "latency_spike  ": "hold",
+    "LATENCY_SPIKE\t": "hold"
+   },
+   "pass": true,
+   "note": "whitespace/case variants all held; exact-match doctrine enforced"
+  },
+  "REDACT-PHI": {
+   "planted": [
+    "email",
+    "ssn",
+    "wallet",
+    "card",
+    "phi"
+   ],
+   "leaked": [],
+   "scrubbed": "Healing event for node service-x: trigger [EMAIL-REDACTED] amount [CARD-REDACTED] wallet [WALLET-REDACTED] ssn [SSN-REDACTED] subject: [PHI-REDACTED]",
+   "pass": true
+  }
+ },
+ "pending_manual": [
+  "ROSTER-INVARIANT",
+  "GW-FIELD-ATTACK",
+  "CANARY-CLEANUP"
+ ]
+}

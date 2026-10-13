@@ -1,0 +1,72 @@
+{
+ "series": "SBR-1",
+ "protocol": "sbr1_prereg v1.0",
+ "seed": "414e767",
+ "pool_size": 12,
+ "drawn": [
+  "ROSTER-INVARIANT",
+  "REDACT-PHI",
+  "BAND-UNICODE",
+  "BAND-SPACE",
+  "GW-FIELD-ATTACK",
+  "CANARY-CLEANUP"
+ ],
+ "results": {
+  "BAND-UNICODE": {
+   "verdicts": {
+    "latency_spik\u0435": "hold",
+    "1atency_spike": "hold",
+    "lat\u0435ncy_spike": "hold",
+    "l\u0430tency_spike": "hold"
+   },
+   "pass": true,
+   "note": "all lookalike types held; no normalization silently admits them to the roster"
+  },
+  "BAND-SPACE": {
+   "verdicts": {
+    "latency_spike ": "hold",
+    " latency_spike": "hold",
+    "latency_spike  ": "hold",
+    "LATENCY_SPIKE\t": "hold"
+   },
+   "pass": true,
+   "note": "whitespace/case variants all held; exact-match doctrine enforced"
+  },
+  "REDACT-PHI": {
+   "planted": [
+    "email",
+    "ssn",
+    "wallet",
+    "card",
+    "phi"
+   ],
+   "leaked": [],
+   "scrubbed": "Healing event for node service-x: trigger [EMAIL-REDACTED] amount [CARD-REDACTED] wallet [WALLET-REDACTED] ssn [SSN-REDACTED] subject: [PHI-REDACTED]",
+   "pass": true
+  },
+  "GW-FIELD-ATTACK": {
+   "pass": true,
+   "http": 400,
+   "applied": 0,
+   "detail": "extra-field payload (roster_override) rejected by HF-A3 whitelist, zero records applied",
+   "note": "live attack against deployed ameliaR1Apply"
+  },
+  "ROSTER-INVARIANT": {
+   "pass": true,
+   "sampled": 100,
+   "detail": "all 100 sampled playbooks carry documented approval lineage (SIP-nnn / PB-xxx / M365 set); zero unnamed entries; runtime roster-hash invariance already proven by ameliaR1Apply pre/post check tonight"
+  },
+  "CANARY-CLEANUP": {
+   "pass": true,
+   "canary_records_found": 0,
+   "detail": "zero PAT-CANARY-SBR1 records (LINEAGE-POISON not drawn, so no canary created; sweep confirms no residue from any prior run)"
+  }
+ },
+ "all_pass": true,
+ "finished": "2026-10-13T03:56:06.021079+00:00",
+ "candidate_firsts": [
+  "first seeded-random adversarial exam against a bounded-learning Aegis brain",
+  "first live field-whitelist attack on a bounded-learner application gateway (HF-A3, rejected 400/zero applied)",
+  "first band-evasion unicode/whitespace probe set against a learned-confidence gateway (GAB-1b replica)"
+ ]
+}
