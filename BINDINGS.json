@@ -590,6 +590,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "XPLAT5_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23332291_XPLAT5_EVIDENCE.zip",
+        "size_bytes": 12203,
+        "sha256": "cd56f7b44898db33eee62518cc737e6dc556fd2edb1dfc25812c2fdcf9aea310"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23332291",
+        "zenodo_recid": "23332291",
+        "zenodo_file": "XPLAT5_EVIDENCE.zip",
+        "zenodo_md5": "ce809e52a018eb0742f354ca9a500f53",
+        "title": "XPLAT-5: Engine Transplant \u2014 Contract-Parity of Governed Decisions Across LLM Engines (20/20, Invariance Triangle Complete: Substrate, Time, Engine)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T05:12:57Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -603,7 +634,7 @@
     }
   ],
   "counts": {
-    "bound": 19,
+    "bound": 20,
     "gaps": 2,
     "dois_checked": 13
   }
