@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791902844-AzrZJjBUg6fTjpkQWzCP",
+ "object": "chat.completion",
+ "created": 1791902844,
+ "model": "deepseek/deepseek-v4-pro",
+ "provider": "StreamLake",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"heartbeat_miss\", \"playbook\": \"PB-008: Heartbeat Re-igniter\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We are given a synthetic test. The anomalous event is:\n\n{\n  \"instance_id\": \"BENCH-0001\",\n  \"anomaly_type\": \"heartbeat_miss\",\n  \"expected_playbook\": \"PB-008: Heartbeat Re-igniter\",\n  \"latency_ms\": 153.55,\n  \"cpu\": 2.43,\n  \"memory\": 85.81,\n  \"error_count\": 42\n}\n\nConfidence_score is 0.9.\n\nWe have registered playbook roster. One of them has anomaly_type \"heartbeat_miss\". It matches exactly. The playbook_id is \"6a5d29cb54e45d7e8bad47ca\", playbook \"PB-008: Heartbeat Re-igniter\", confidence_threshold 0.85. Since confidence_score 0.9 >= 0.85, we select that playbook. match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Output must be a JSON array containing exactly one decision tuple object with keys in exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is 0.\n\nThus decision tuple:\n{\n  \"position\": 0,\n  \"anomaly_type\": \"heartbeat_miss\",\n  \"playbook\": \"PB-008: Heartbeat Re-igniter\",\n  \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\",\n  \"match_type\": \"exact\",\n  \"steps_executed\": \"isolation,healing,verification\",\n  \"status\": \"resolved\"\n}\n\nAs JSON array. No prose, no markdown.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We are given a synthetic test. The anomalous event is:\n\n{\n  \"instance_id\": \"BENCH-0001\",\n  \"anomaly_type\": \"heartbeat_miss\",\n  \"expected_playbook\": \"PB-008: Heartbeat Re-igniter\",\n  \"latency_ms\": 153.55,\n  \"cpu\": 2.43,\n  \"memory\": 85.81,\n  \"error_count\": 42\n}\n\nConfidence_score is 0.9.\n\nWe have registered playbook roster. One of them has anomaly_type \"heartbeat_miss\". It matches exactly. The playbook_id is \"6a5d29cb54e45d7e8bad47ca\", playbook \"PB-008: Heartbeat Re-igniter\", confidence_threshold 0.85. Since confidence_score 0.9 >= 0.85, we select that playbook. match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Output must be a JSON array containing exactly one decision tuple object with keys in exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is 0.\n\nThus decision tuple:\n{\n  \"position\": 0,\n  \"anomaly_type\": \"heartbeat_miss\",\n  \"playbook\": \"PB-008: Heartbeat Re-igniter\",\n  \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\",\n  \"match_type\": \"exact\",\n  \"steps_executed\": \"isolation,healing,verification\",\n  \"status\": \"resolved\"\n}\n\nAs JSON array. No prose, no markdown.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 581,
+  "completion_tokens": 462,
+  "total_tokens": 1043,
+  "cost": 0.000491966643,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 411,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000491966643,
+   "upstream_inference_prompt_cost": 8.9061987e-05,
+   "upstream_inference_completions_cost": 0.000402904656
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 371,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "series_signature": "dual_mesh_benchmark_deepseek_20261013",
+  "leg": "DMB DeepSeek B1-baseline-style leg",
+  "executed_utc": "2026-10-13T14:55:00Z",
+  "prereg": "fh_pub/dual_mesh_bench_deepseek_20261013_PREREG.md (commit aa751dd, BEFORE execution)",
+  "engine": "deepseek/deepseek-v4-pro via OpenRouter (providers: StreamLake, Parasail; all finish_reason stop)",
+  "corpus": "CORPUS_B1.json sha256 13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59, first 20 in file order",
+  "n": 20,
+  "strict_valid": "20/20",
+  "normalized_valid": "20/20",
+  "correct_tuples_incl_playbook_id": "20/20",
+  "median_wall_ms": 8538.0,
+  "p95_wall_ms": 11864.0,
+  "min_wall_ms": 6288.9,
+  "max_wall_ms": 11864.0,
+  "total_cost_usd": 0.0089,
+  "raw_logs": "deepseek_raw_00..19.json + deepseek_content_00..19.txt preserved verbatim",
+  "falsifiers": {
+    "FBD-1_raw_logs": "PASS (all 20 preserved)",
+    "FBD-2_corpus_rule": "PASS (frozen sha verified at runtime, first-20 rule)",
+    "FBD-3_no_omissions": "PASS (20/20 recorded, zero retries)",
+    "FBD-4_no_posthoc_metrics": "PASS (all metrics in prereg)",
+    "FBD-5_no_pii_phi_credentials": "PASS (synthetic corpus only)"
+  },
+  "comparisons_directional_only": {
+    "mesh_median_ms_v1_0": 0.000443,
+    "automatic_conversation_loop_median_ms_v1_0": 4509.1,
+    "note": "Different substrates: this leg is raw external API, not the Base44 conversation loop. Per XPLAT-2/3 doctrine, wall-clock comparison across substrates is directional only. DeepSeek raw-API median (8538ms) exceeds even the v1.0 full-loop median (4509.1ms) \u2014 driven by v4-pro reasoning tokens, not orchestration. No wall-clock equality claim made."
+  },
+  "claim_discipline": "MEASURED, scoped to DeepSeek v4-pro via OpenRouter on the frozen 20-instance corpus, Oct 2026. Sampled baseline, not a certification. Not comparable wall-clock to conversation-loop legs. Dual Mesh Benchmark column status: MEASURED (pending Leon review per claim discipline). Two-key curation before any public artifact beyond this receipt.",
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them."
+}

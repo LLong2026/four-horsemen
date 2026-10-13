@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791902872-Z0T3yP98kjM43own70sX",
+ "object": "chat.completion",
+ "created": 1791902872,
+ "model": "deepseek/deepseek-v4-pro",
+ "provider": "StreamLake",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"latency_spike\",\"playbook\":\"PB-003: Latency Spike Resolver\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47c5\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We are asked to resolve one incoming anomaly and emit a decision tuple. We have operating rules, registered playbook roster, and an incoming anomaly. The incoming anomaly has anomaly_type \"latency_spike\" and confidence_score 0.9. The playbook roster includes an entry with anomaly_type \"latency_spike\" exactly. That playbook has confidence_threshold 0.8. Since 0.9 >= 0.8, we apply rule 2: match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". According to output format: JSON array with one object with keys: position (0), anomaly_type (\"latency_spike\"), playbook (\"PB-003: Latency Spike Resolver\"), playbook_id (\"6a5d29cb54e45d7e8bad47c5\"), match_type (\"exact\"), steps_executed (\"isolation,healing,verification\"), status (\"resolved\"). Ensure exact copy of playbook string from roster. No prose, no markdown. So output: [{\"position\":0,\"anomaly_type\":\"latency_spike\",\"playbook\":\"PB-003: Latency Spike Resolver\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47c5\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We are asked to resolve one incoming anomaly and emit a decision tuple. We have operating rules, registered playbook roster, and an incoming anomaly. The incoming anomaly has anomaly_type \"latency_spike\" and confidence_score 0.9. The playbook roster includes an entry with anomaly_type \"latency_spike\" exactly. That playbook has confidence_threshold 0.8. Since 0.9 >= 0.8, we apply rule 2: match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". According to output format: JSON array with one object with keys: position (0), anomaly_type (\"latency_spike\"), playbook (\"PB-003: Latency Spike Resolver\"), playbook_id (\"6a5d29cb54e45d7e8bad47c5\"), match_type (\"exact\"), steps_executed (\"isolation,healing,verification\"), status (\"resolved\"). Ensure exact copy of playbook string from roster. No prose, no markdown. So output: [{\"position\":0,\"anomaly_type\":\"latency_spike\",\"playbook\":\"PB-003: Latency Spike Resolver\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47c5\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 580,
+  "completion_tokens": 378,
+  "total_tokens": 958,
+  "cost": 0.000411480188,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 428,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000411480188,
+   "upstream_inference_prompt_cost": 8.1830924e-05,
+   "upstream_inference_completions_cost": 0.000329649264
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 300,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

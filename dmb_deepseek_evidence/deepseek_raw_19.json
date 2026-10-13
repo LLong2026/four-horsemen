@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791903000-xyXqzQ43DgCyevcJO3Yi",
+ "object": "chat.completion",
+ "created": 1791903000,
+ "model": "deepseek/deepseek-v4-pro",
+ "provider": "StreamLake",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"heartbeat_miss\", \"playbook\": \"PB-008: Heartbeat Re-igniter\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We are given an incoming anomaly: {\"instance_id\": \"BENCH-0019\", \"anomaly_type\": \"heartbeat_miss\", ...} and its confidence_score is 0.9. We need to match it against the playbook roster. The playbook roster has an entry with anomaly_type \"heartbeat_miss\", playbook \"PB-008: Heartbeat Re-igniter\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", confidence_threshold 0.85. The incoming anomaly type string exactly matches. The confidence_score 0.9 >= 0.85 threshold, so match_type is \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Output a JSON array with one object, keys in order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is 0. So the object: {\"position\": 0, \"anomaly_type\": \"heartbeat_miss\", \"playbook\": \"PB-008: Heartbeat Re-igniter\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}. Put that in a JSON array. No other text.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We are given an incoming anomaly: {\"instance_id\": \"BENCH-0019\", \"anomaly_type\": \"heartbeat_miss\", ...} and its confidence_score is 0.9. We need to match it against the playbook roster. The playbook roster has an entry with anomaly_type \"heartbeat_miss\", playbook \"PB-008: Heartbeat Re-igniter\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", confidence_threshold 0.85. The incoming anomaly type string exactly matches. The confidence_score 0.9 >= 0.85 threshold, so match_type is \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Output a JSON array with one object, keys in order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is 0. So the object: {\"position\": 0, \"anomaly_type\": \"heartbeat_miss\", \"playbook\": \"PB-008: Heartbeat Re-igniter\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}. Put that in a JSON array. No other text.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 582,
+  "completion_tokens": 393,
+  "total_tokens": 975,
+  "cost": 0.000416240335,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 451,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000416240335,
+   "upstream_inference_prompt_cost": 7.3509751e-05,
+   "upstream_inference_completions_cost": 0.000342730584
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 302,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

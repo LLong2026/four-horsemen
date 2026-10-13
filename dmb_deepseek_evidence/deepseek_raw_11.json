@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791902933-WJ8ku5bFfNP2Lej9h6M3",
+ "object": "chat.completion",
+ "created": 1791902933,
+ "model": "deepseek/deepseek-v4-pro",
+ "provider": "StreamLake",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"heartbeat_miss\", \"playbook\": \"PB-008: Heartbeat Re-igniter\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We are given an incoming anomaly with anomaly_type \"heartbeat_miss\" and confidence_score 0.9. The playbook roster has a playbook with anomaly_type \"heartbeat_miss\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", playbook \"PB-008: Heartbeat Re-igniter\", confidence_threshold 0.85. Since confidence_score (0.9) >= threshold (0.85), we use match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". We must output a JSON array with one object: position 0, anomaly_type \"heartbeat_miss\", playbook \"PB-008: Heartbeat Re-igniter\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". The keys must be in that exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. No markdown, just JSON.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We are given an incoming anomaly with anomaly_type \"heartbeat_miss\" and confidence_score 0.9. The playbook roster has a playbook with anomaly_type \"heartbeat_miss\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", playbook \"PB-008: Heartbeat Re-igniter\", confidence_threshold 0.85. Since confidence_score (0.9) >= threshold (0.85), we use match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". We must output a JSON array with one object: position 0, anomaly_type \"heartbeat_miss\", playbook \"PB-008: Heartbeat Re-igniter\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". The keys must be in that exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. No markdown, just JSON.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 582,
+  "completion_tokens": 333,
+  "total_tokens": 915,
+  "cost": 0.00036591359,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 446,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00036591359,
+   "upstream_inference_prompt_cost": 7.5508286e-05,
+   "upstream_inference_completions_cost": 0.000290405304
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 242,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

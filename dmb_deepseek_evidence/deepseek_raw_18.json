@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791902992-gYok9G79qKFrw7uMHFkn",
+ "object": "chat.completion",
+ "created": 1791902992,
+ "model": "deepseek/deepseek-v4-pro",
+ "provider": "StreamLake",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"heartbeat_miss\", \"playbook\": \"PB-008: Heartbeat Re-igniter\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We are asked to produce a JSON array with exactly one decision tuple. The incoming anomaly has anomaly_type \"heartbeat_miss\" and confidence_score 0.9. The playbook roster has a playbook with anomaly_type \"heartbeat_miss\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", playbook \"PB-008: Heartbeat Re-igniter\", confidence_threshold 0.85. Since the anomaly_type is an exact match, and confidence_score (0.9) >= threshold (0.85), we emit match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". The position is 0. The keys in exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. So the tuple: position: 0, anomaly_type: \"heartbeat_miss\", playbook: \"PB-008: Heartbeat Re-igniter\", playbook_id: \"6a5d29cb54e45d7e8bad47ca\", match_type: \"exact\", steps_executed: \"isolation,healing,verification\", status: \"resolved\". No prose, just the JSON array.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We are asked to produce a JSON array with exactly one decision tuple. The incoming anomaly has anomaly_type \"heartbeat_miss\" and confidence_score 0.9. The playbook roster has a playbook with anomaly_type \"heartbeat_miss\", playbook_id \"6a5d29cb54e45d7e8bad47ca\", playbook \"PB-008: Heartbeat Re-igniter\", confidence_threshold 0.85. Since the anomaly_type is an exact match, and confidence_score (0.9) >= threshold (0.85), we emit match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". The position is 0. The keys in exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. So the tuple: position: 0, anomaly_type: \"heartbeat_miss\", playbook: \"PB-008: Heartbeat Re-igniter\", playbook_id: \"6a5d29cb54e45d7e8bad47ca\", match_type: \"exact\", steps_executed: \"isolation,healing,verification\", status: \"resolved\". No prose, just the JSON array.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 582,
+  "completion_tokens": 358,
+  "total_tokens": 940,
+  "cost": 0.000382119892,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 460,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000382119892,
+   "upstream_inference_prompt_cost": 6.9912388e-05,
+   "upstream_inference_completions_cost": 0.000312207504
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 267,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

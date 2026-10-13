@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791902975-0J8AVvaretqf3IwCXRtm",
+ "object": "chat.completion",
+ "created": 1791902975,
+ "model": "deepseek/deepseek-v4-pro",
+ "provider": "StreamLake",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"latency_spike\", \"playbook\": \"PB-003: Latency Spike Resolver\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47c5\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We are given an incoming anomaly with anomaly_type \"latency_spike\" and confidence_score 0.9. The playbook roster has a playbook with anomaly_type \"latency_spike\", playbook_id \"6a5d29cb54e45d7e8bad47c5\", playbook \"PB-003: Latency Spike Resolver\", confidence_threshold 0.8. The confidence_score 0.9 >= 0.8, so it matches with \"exact\" match_type, steps_executed \"isolation,healing,verification\", status \"resolved\". The output must be a JSON array with one object, keys in order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is 0. No markdown, no prose. So I'll output exactly that JSON array.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We are given an incoming anomaly with anomaly_type \"latency_spike\" and confidence_score 0.9. The playbook roster has a playbook with anomaly_type \"latency_spike\", playbook_id \"6a5d29cb54e45d7e8bad47c5\", playbook \"PB-003: Latency Spike Resolver\", confidence_threshold 0.8. The confidence_score 0.9 >= 0.8, so it matches with \"exact\" match_type, steps_executed \"isolation,healing,verification\", status \"resolved\". The output must be a JSON array with one object, keys in order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is 0. No markdown, no prose. So I'll output exactly that JSON array.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 581,
+  "completion_tokens": 273,
+  "total_tokens": 854,
+  "cost": 0.000316749629,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 437,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000316749629,
+   "upstream_inference_prompt_cost": 7.8669605e-05,
+   "upstream_inference_completions_cost": 0.000238080024
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 182,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

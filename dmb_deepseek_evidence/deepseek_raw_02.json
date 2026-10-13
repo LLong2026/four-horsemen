@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791902855-mIQqwnphT87EooBk8SOx",
+ "object": "chat.completion",
+ "created": 1791902855,
+ "model": "deepseek/deepseek-v4-pro",
+ "provider": "StreamLake",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"heartbeat_miss\",\"playbook\":\"PB-008: Heartbeat Re-igniter\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47ca\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We are given an incoming anomaly with anomaly_type \"heartbeat_miss\" and confidence_score 0.9. We need to match this against the registered playbook roster. The playbook roster has an entry for \"heartbeat_miss\" with playbook_id \"6a5d29cb54e45d7e8bad47ca\", playbook \"PB-008: Heartbeat Re-igniter\", confidence_threshold 0.85. The anomaly_type matches exactly. The confidence_score (0.9) is >= threshold (0.85), so match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Output a JSON array with one object, keys in order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is 0. No other text.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We are given an incoming anomaly with anomaly_type \"heartbeat_miss\" and confidence_score 0.9. We need to match this against the registered playbook roster. The playbook roster has an entry for \"heartbeat_miss\" with playbook_id \"6a5d29cb54e45d7e8bad47ca\", playbook \"PB-008: Heartbeat Re-igniter\", confidence_threshold 0.85. The anomaly_type matches exactly. The confidence_score (0.9) is >= threshold (0.85), so match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Output a JSON array with one object, keys in order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position is 0. No other text.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 581,
+  "completion_tokens": 260,
+  "total_tokens": 841,
+  "cost": 0.000314206039,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 415,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000314206039,
+   "upstream_inference_prompt_cost": 8.7463159e-05,
+   "upstream_inference_completions_cost": 0.00022674288
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 182,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}
