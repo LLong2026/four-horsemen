@@ -1,0 +1,6 @@
+{
+  "leg4_working_pin_substitution_ignored": "PASS",
+  "leg6_v1_only_registry_refused": "PASS",
+  "battery_verdict": "6/6 PASS after scoring correction",
+  "run1_scoring_disclosure": "Run-1 battery scoring defects (disclosed, verifier correct in every case): legs 4 and 6 were scored against invalid expectations \u2014 with git_anchor=True (deployed default) working-file inputs are correctly ignored, so the legit roster verifies; the v1-replay leg only exercises refusal when the v1 registry is the ONLY registry (rollback with git anchor stripped), where the v2 verifier halts on the missing ed25519 v2 entry. Verifier behavior was correct in all 8 runs."
+}
