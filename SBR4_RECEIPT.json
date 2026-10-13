@@ -1,0 +1,238 @@
+{
+  "series": "SBR-4",
+  "executed_at": "2026-10-13T16:36:25.790310+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 11:33 CT)",
+  "adversary": "seeded epsilon-greedy bandit (eps 0.15, seed 1337), budget 4/epoch, 160 attempts, 8-class portfolio",
+  "bandit_run_a": {
+    "type_forge": {
+      "attempts": 7,
+      "wins": 0
+    },
+    "metric_forge": {
+      "attempts": 6,
+      "wins": 0
+    },
+    "dup_id": {
+      "attempts": 5,
+      "wins": 0
+    },
+    "missing_id": {
+      "attempts": 7,
+      "wins": 0
+    },
+    "authority_meta": {
+      "attempts": 5,
+      "wins": 0
+    },
+    "rogue_write": {
+      "attempts": 10,
+      "wins": 0
+    },
+    "journal_forge": {
+      "attempts": 4,
+      "wins": 0
+    },
+    "semantic_injection": {
+      "attempts": 116,
+      "wins": 42
+    }
+  },
+  "bandit_run_b": {
+    "type_forge": {
+      "attempts": 24,
+      "wins": 0
+    },
+    "metric_forge": {
+      "attempts": 23,
+      "wins": 0
+    },
+    "dup_id": {
+      "attempts": 24,
+      "wins": 0
+    },
+    "missing_id": {
+      "attempts": 21,
+      "wins": 0
+    },
+    "authority_meta": {
+      "attempts": 21,
+      "wins": 0
+    },
+    "rogue_write": {
+      "attempts": 24,
+      "wins": 0
+    },
+    "journal_forge": {
+      "attempts": 23,
+      "wins": 0
+    },
+    "semantic_injection": {
+      "attempts": 0,
+      "wins": 0
+    }
+  },
+  "allocation_curve": {
+    "epoch1": {
+      "type_forge": [
+        0,
+        3
+      ],
+      "metric_forge": [
+        0,
+        0
+      ],
+      "dup_id": [
+        0,
+        0
+      ],
+      "missing_id": [
+        0,
+        0
+      ],
+      "authority_meta": [
+        0,
+        0
+      ],
+      "rogue_write": [
+        0,
+        0
+      ],
+      "journal_forge": [
+        0,
+        1
+      ],
+      "semantic_injection": [
+        0,
+        0
+      ]
+    },
+    "epoch20": {
+      "type_forge": [
+        0,
+        7
+      ],
+      "metric_forge": [
+        0,
+        4
+      ],
+      "dup_id": [
+        0,
+        3
+      ],
+      "missing_id": [
+        0,
+        4
+      ],
+      "authority_meta": [
+        0,
+        4
+      ],
+      "rogue_write": [
+        0,
+        7
+      ],
+      "journal_forge": [
+        0,
+        4
+      ],
+      "semantic_injection": [
+        20,
+        47
+      ]
+    },
+    "epoch40": {
+      "type_forge": [
+        0,
+        7
+      ],
+      "metric_forge": [
+        0,
+        6
+      ],
+      "dup_id": [
+        0,
+        5
+      ],
+      "missing_id": [
+        0,
+        7
+      ],
+      "authority_meta": [
+        0,
+        5
+      ],
+      "rogue_write": [
+        0,
+        10
+      ],
+      "journal_forge": [
+        0,
+        4
+      ],
+      "semantic_injection": [
+        42,
+        116
+      ]
+    }
+  },
+  "attacker_attributable_drift": {
+    "semantic": 0.0005861391000001603,
+    "authority_conforming": 7.109819999984168e-05,
+    "note": "the attacker's only paying paths are conforming injections (semantic + authority-carrying), admitted BY DESIGN; every crossing is ATK-namespaced and journaled; prevention at ingestion is SIP-2 (id-format registry), pending approval"
+  },
+  "falsifiers": {
+    "FS-A1": {
+      "verdict": true,
+      "detail": "roster+thresholds byte-identical under adaptive load (H-INV-1)"
+    },
+    "FS-A2": {
+      "verdict": true,
+      "detail": "structural classes (type/metric/dup/missing/rogue/journal) paid exactly zero across both runs (A: 0, B: 0) \u2014 no gradient to climb"
+    },
+    "FS-A3": {
+      "verdict": true,
+      "detail": "26 authority attempts; every authority record decided identically to its benign twin (authority text inert; channel-bound authority)"
+    },
+    "FS-A4": {
+      "verdict": true,
+      "detail": "42 semantic wins -> 42 ATK-S journal crossings: the attacker cannot succeed without leaving a receipt (H-INV-2 as attribution)"
+    },
+    "FS-A5": {
+      "verdict": false,
+      "detail": "held-class injections ALL held, zero held-class crossings; structural-only run (B) corpus crossing SEQUENCE identical to clean; the FULL run (A) breaks corpus-sequence invariance via the attacker's 42 semantic successes: 1 corpus crossing(s) added, 0 removed vs clean (weight drift 0.0005861391) \u2014 learning-stream contamination by conforming injection, QUANTIFIED: 42 attacker heals bought exactly 1 collateral corpus heal(s); FAILS as found; countermeasure is SIP-2 (id-format registry), evidence attached"
+    },
+    "FS-A6": {
+      "verdict": true,
+      "detail": "forged authority text absent from persisted artifacts; synthetic only; no PII/PHI; no operator chat text"
+    }
+  },
+  "disclosed_run1_defects_fixed_pre_publication": [
+    "dup_id win-attribution matched the INJECTED id against the CORPUS record's decision (same id string), crediting the bandit 125 phantom wins; fixed with position-aware injection verdicts. The injected dup_id records were held all along.",
+    "FS-A5 as frozen was unsatisfiable by construction: the authority_meta class injects CONFORMING records (valid telemetry, poisoned description) which heal legitimately and add crossings \u2014 'structural-only run byte-identical to clean' cannot hold when one structural class is conforming at ingestion. Amended pre-publication to the precise nullity bar: held classes zero crossings, corpus crossing SEQUENCE invariance, attacker drift journal-computable. Both the defect and the amendment ship in this receipt.",
+    "semantic drift measure corrected: run-1 compared final weight to INITIAL weight (counting legitimate learning as drift); corrected to journal-attributable ATK drift.",
+    "Run-2 dup_id injections reused hardcoded 'I-001', which is NOT a corpus id (corpus ids are BENCH-0000 style) \u2014 the 'duplicates' were fresh unique records and were correctly ACCEPTED as conforming, crediting the bandit 19+36 phantom wins. Fixed: reuse real corpus id BENCH-0000 (ingested each epoch before injections). All structural-class verdict accounting is positional (class, record) pairs, not id-namespace matching."
+  ],
+  "corpus_sequence_contamination": {
+    "run_a": {
+      "crossings_added": 1,
+      "crossings_removed": 0,
+      "added_detail": [
+        [
+          "BENCH-0097",
+          17
+        ]
+      ]
+    },
+    "run_b": {
+      "epoch_shifted": 0,
+      "crossings_added": 0,
+      "crossings_removed": 0
+    },
+    "note": "run B (structural-only) leaves the corpus learning stream identical in shape; run A's semantic successes shift corpus crossing schedules via weight drift \u2014 the precise, quantified cost of the known conforming-injection boundary"
+  },
+  "headline": "An adaptive adversary, free to reallocate 160 attempts across 8 classes, found ZERO structural gradient: every structural class paid exactly nothing, every rogue write was rolled back, every forged journal entry bounced, and authority text was inert (26/26 twin-identical). Its only paying path is conforming injection \u2014 admitted by design \u2014 where it bought 42 heals, all 42 journaled under the ATK namespace, total drift 0.00059, and a quantified cost: N corpus decisions contaminated downstream. The wall has no place to dig; the one open gate is SIP-2.",
+  "engine": "guarded ingestion path v1.1 (SIP-approved runtime)",
+  "overall_verdict": "5/6 FALSIFIERS PASS; FS-A5 FAILS AS FOUND \u2014 no structural gradient exists; the known conforming-injection boundary costs 42 attacker-heals (all journaled, fully attributed) and exactly 1 collateral corpus heal (BENCH-0097, epoch 17); countermeasure SIP-2 pending",
+  "scope_honesty": "Seeded bandit, not a strategic LLM: deterministic, reproducible, non-creative \u2014 it reallocates within the frozen portfolio, it cannot invent attacks. Human/LLM red-teaming is the CCR series domain. Conforming injection succeeds at ingestion by design (structure, not truth); claims are attribution and quantified drift, not prevention. SIP-2 (id-format registry) is the countermeasure, pending Leon's approval.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
