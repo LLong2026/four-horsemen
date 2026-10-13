@@ -1,0 +1,3959 @@
+{
+  "baseline": [
+    {
+      "instance_id": "BENCH-0000",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.69449,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0001",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.898571,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0002",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.551633,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0003",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.623061,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0004",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.567988,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0005",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.69449,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0006",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.585299,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0007",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.699127,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0008",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.612857,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0009",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.533457,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0010",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.907659,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0011",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.888367,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0012",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.633265,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0013",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.507286,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0014",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.731083,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0015",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.818179,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0016",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.927859,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0017",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.740062,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0018",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.684286,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0019",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.592449,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0020",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.857755,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0021",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.697748,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0022",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.96371,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0023",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.857755,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0024",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.579618,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0025",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.94413,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0026",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.684286,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0027",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.751289,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0028",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.540153,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0029",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.550146,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0030",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.758216,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0031",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.711148,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0032",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.572041,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0033",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.696567,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0034",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.90918,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0035",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.881789,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0036",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.781121,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0037",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.964522,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0038",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.724033,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0039",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.942405,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0040",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.97,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0041",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.47866,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0042",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.638104,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0043",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.519711,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0044",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.861803,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0045",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.965739,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0046",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.735306,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0047",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.568211,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0048",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.560693,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0049",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.663974,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0050",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.490408,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0051",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.786327,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0052",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.794237,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0053",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.492522,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0054",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.897513,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0055",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.517276,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0056",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.851056,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0057",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.551633,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0058",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.551633,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0059",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.74551,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0060",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.69449,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0061",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.506218,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0062",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.582245,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0063",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.940245,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0064",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.950978,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0065",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.51124,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0066",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.672039,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0067",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.673409,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0068",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.510229,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0069",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.605185,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0070",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.857755,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0071",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.8773,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0072",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.857755,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0073",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.77509,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0074",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.95042,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0075",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.878187,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0076",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.725102,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0077",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.846636,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0078",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.596002,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0079",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.685786,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0080",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.605424,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0081",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.666561,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0082",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.738806,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0083",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.531224,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0084",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.837347,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0085",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.617712,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0086",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.638713,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0087",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.47,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0088",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.640035,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0089",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.52102,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0090",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.51337,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0091",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.947782,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0092",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.941409,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0093",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.803962,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0094",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.788403,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0095",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.727583,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0096",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.769187,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0097",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.7742,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0098",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.601318,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0099",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.703286,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0100",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.898571,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0101",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.724017,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0102",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.758119,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0103",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.634147,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0104",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.500612,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0105",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.823759,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0106",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.905607,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0107",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.932615,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0108",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.735306,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0109",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.708823,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0110",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.642239,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0111",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.604016,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0112",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.643469,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0113",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.567849,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0114",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.490408,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0115",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.500545,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0116",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.759033,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0117",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.723221,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0118",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.765918,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0119",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.737851,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0120",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.837347,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0121",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.564974,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0122",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.74551,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0123",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.619691,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0124",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.743192,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0125",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.682742,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0126",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.564501,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0127",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.730272,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0128",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.814451,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0129",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.60077,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0130",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.799613,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0131",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.633265,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0132",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.949592,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0133",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.874332,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0134",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.827143,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0135",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.655198,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0136",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.47,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0137",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.869462,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0138",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.956203,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0139",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.670314,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0140",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.91898,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0141",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.687105,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0142",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.85181,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0143",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.748736,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0144",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.803925,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0145",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.898021,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0146",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.818225,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0147",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.829302,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0148",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.718047,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0149",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.623061,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0150",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.48887,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0151",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.877426,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0152",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.545074,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0153",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.600023,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0154",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.532518,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0155",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.52102,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0156",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.869767,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0157",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.853328,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0158",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.515653,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0159",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.474139,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0160",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.605285,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0161",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.89726,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0162",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.74551,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0163",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.967579,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0164",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.561837,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0165",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.92871,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0166",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.548066,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0167",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.84344,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0168",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.594125,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0169",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.97,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0170",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.825483,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0171",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.738794,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0172",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.71825,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0173",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.736114,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0174",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.554001,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0175",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.704694,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0176",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.533403,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0177",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.556994,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0178",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.933794,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0179",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.602653,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0180",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.653673,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0181",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.765918,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0182",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.814676,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0183",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.728637,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0184",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.714898,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0185",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.588667,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0186",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.733917,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0187",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.510816,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0188",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.948442,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0189",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.729866,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0190",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.495109,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0191",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.754214,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0192",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.714898,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0193",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.926077,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0194",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.792021,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0195",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.751214,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0196",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.97,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0197",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.552885,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0198",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.592449,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0199",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.582245,
+      "status": "detected",
+      "outcome_sign": 0
+    }
+  ],
+  "post": [
+    {
+      "instance_id": "BENCH-0000",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.724834,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0001",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.928915,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0002",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.581976,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0003",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.653405,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0004",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.598331,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0005",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.724834,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0006",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.615642,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0007",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.72947,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0008",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.643201,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0009",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.563801,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0010",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.938002,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0011",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.918711,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0012",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.663609,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0013",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.53763,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0014",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.761427,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0015",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.848523,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0016",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.958202,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0017",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.770406,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0018",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.714629,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0019",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.622793,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0020",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.888099,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0021",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.728092,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0022",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.994054,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0023",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.888099,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0024",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.609961,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0025",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.974474,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0026",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.714629,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0027",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.781633,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0028",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.570497,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0029",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.58049,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0030",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.788559,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0031",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.741492,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0032",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.602385,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0033",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.726911,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0034",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.939524,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0035",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.912132,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0036",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.811464,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0037",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.994865,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0038",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.754376,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0039",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.972749,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0040",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 1.000344,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0041",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.509004,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0042",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.668448,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0043",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.550055,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0044",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.892146,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0045",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.996083,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0046",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.76565,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0047",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.598555,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0048",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.591036,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0049",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.694318,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0050",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.520752,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0051",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.81667,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0052",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.82458,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0053",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.522866,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0054",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.927857,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0055",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.54762,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0056",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.8814,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0057",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.581976,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0058",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.581976,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0059",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.775854,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0060",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.724834,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0061",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.536562,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0062",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.612589,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0063",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.970589,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0064",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.981322,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0065",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.541583,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0066",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.702383,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0067",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.703752,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0068",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.540573,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0069",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.635529,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0070",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.888099,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0071",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.907643,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0072",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.888099,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0073",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.805433,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0074",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.980764,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0075",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.908531,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0076",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.755446,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0077",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.87698,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0078",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.626346,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0079",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.716129,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0080",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.635768,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0081",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.696905,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0082",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.769149,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0083",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.561568,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0084",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.867691,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0085",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.648056,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0086",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.669056,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0087",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.500344,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0088",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.670379,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0089",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.551364,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0090",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.543714,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0091",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.978126,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0092",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.971752,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0093",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.834306,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0094",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.818747,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0095",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.757927,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0096",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.799531,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0097",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.804544,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0098",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.631662,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0099",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.73363,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0100",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.928915,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0101",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.754361,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0102",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.788463,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0103",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.66449,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0104",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.530956,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0105",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.854102,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0106",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.935951,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0107",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.962959,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0108",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.76565,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0109",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.739167,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0110",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.672583,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0111",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.63436,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0112",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.673813,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0113",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.598193,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0114",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.520752,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0115",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.530889,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0116",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.789377,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0117",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.753565,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0118",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.796262,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0119",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.768194,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0120",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.867691,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0121",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.595318,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0122",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.775854,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0123",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.650034,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0124",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.773536,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0125",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.713086,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0126",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.594845,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0127",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.760616,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0128",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.844795,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0129",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.631114,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0130",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.829957,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0131",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.663609,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0132",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.979936,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0133",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.904676,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0134",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.857487,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0135",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.685542,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0136",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.500344,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0137",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.899806,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0138",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.986546,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0139",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.700658,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0140",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.949323,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0141",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.717448,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0142",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.882154,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0143",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.77908,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0144",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.834269,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0145",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.928364,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0146",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.848568,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0147",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.859646,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0148",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.748391,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0149",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.653405,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0150",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.519214,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0151",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.90777,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0152",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.575417,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0153",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.630367,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0154",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.562861,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0155",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.551364,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0156",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.90011,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0157",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.883672,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0158",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.545997,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0159",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.504482,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0160",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.635628,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0161",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.927604,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0162",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.775854,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0163",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.997922,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0164",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.59218,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0165",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.959053,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0166",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.57841,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0167",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.873784,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0168",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.624469,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0169",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 1.000344,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0170",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.855827,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0171",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.769137,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0172",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.748594,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0173",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.766458,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0174",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.584345,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0175",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.735038,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0176",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.563746,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0177",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.587338,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0178",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.964137,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0179",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.632997,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0180",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.684017,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0181",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.796262,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0182",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.84502,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0183",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.758981,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0184",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.745242,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0185",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.61901,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0186",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.764261,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0187",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.54116,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0188",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.978785,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0189",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.76021,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0190",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.525453,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0191",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.784558,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0192",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.745242,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0193",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.956421,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0194",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.822365,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0195",
+      "anomaly_type": "latency_spike",
+      "playbook": "PB-003: Latency Spike Resolver",
+      "match": "exact",
+      "confidence": 0.781558,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0196",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 1.000344,
+      "status": "resolved",
+      "outcome_sign": 1
+    },
+    {
+      "instance_id": "BENCH-0197",
+      "anomaly_type": "quantum_vulnerability_detected",
+      "playbook": "PB-009: Quantum Vulnerability Migrator",
+      "match": "exact",
+      "confidence": 0.583229,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0198",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.622793,
+      "status": "detected",
+      "outcome_sign": 0
+    },
+    {
+      "instance_id": "BENCH-0199",
+      "anomaly_type": "heartbeat_miss",
+      "playbook": "PB-008: Heartbeat Re-igniter",
+      "match": "exact",
+      "confidence": 0.612589,
+      "status": "detected",
+      "outcome_sign": 0
+    }
+  ],
+  "deltas": [
+    {
+      "node": "heartbeat_sensor",
+      "instance_id": "BENCH-0001",
+      "before": 0.79,
+      "after": 0.79101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "error_rate",
+      "instance_id": "BENCH-0001",
+      "before": 0.58,
+      "after": 0.58101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "anomaly_count",
+      "instance_id": "BENCH-0001",
+      "before": 0.5,
+      "after": 0.50101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pattern_match",
+      "instance_id": "BENCH-0001",
+      "before": 0.87,
+      "after": 0.87101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "anomaly_classify",
+      "instance_id": "BENCH-0001",
+      "before": 0.9,
+      "after": 0.90101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "severity_eval",
+      "instance_id": "BENCH-0001",
+      "before": 0.55,
+      "after": 0.55101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "playbook_match",
+      "instance_id": "BENCH-0001",
+      "before": 0.84,
+      "after": 0.84101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "confidence_score",
+      "instance_id": "BENCH-0001",
+      "before": 0.94,
+      "after": 0.94101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "isolation_strategy",
+      "instance_id": "BENCH-0001",
+      "before": 0.35,
+      "after": 0.35101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "healing_selection",
+      "instance_id": "BENCH-0001",
+      "before": 0.66,
+      "after": 0.66101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "verification_logic",
+      "instance_id": "BENCH-0001",
+      "before": 0.22,
+      "after": 0.22101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "heal_action",
+      "instance_id": "BENCH-0001",
+      "before": 0.66,
+      "after": 0.66101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "healing_result",
+      "instance_id": "BENCH-0001",
+      "before": 0.39,
+      "after": 0.39101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pattern_update",
+      "instance_id": "BENCH-0001",
+      "before": 0.41,
+      "after": 0.41101429,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pqc_status",
+      "instance_id": "BENCH-0010",
+      "before": 0.96,
+      "after": 0.96092341,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "error_rate",
+      "instance_id": "BENCH-0010",
+      "before": 0.58101429,
+      "after": 0.5819377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "anomaly_count",
+      "instance_id": "BENCH-0010",
+      "before": 0.50101429,
+      "after": 0.5019377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pattern_match",
+      "instance_id": "BENCH-0010",
+      "before": 0.87101429,
+      "after": 0.8719377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "anomaly_classify",
+      "instance_id": "BENCH-0010",
+      "before": 0.90101429,
+      "after": 0.9019377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "severity_eval",
+      "instance_id": "BENCH-0010",
+      "before": 0.55101429,
+      "after": 0.5519377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "playbook_match",
+      "instance_id": "BENCH-0010",
+      "before": 0.84101429,
+      "after": 0.8419377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "confidence_score",
+      "instance_id": "BENCH-0010",
+      "before": 0.94101429,
+      "after": 0.9419377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "isolation_strategy",
+      "instance_id": "BENCH-0010",
+      "before": 0.35101429,
+      "after": 0.3519377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "healing_selection",
+      "instance_id": "BENCH-0010",
+      "before": 0.66101429,
+      "after": 0.6619377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "verification_logic",
+      "instance_id": "BENCH-0010",
+      "before": 0.22101429,
+      "after": 0.2219377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "heal_action",
+      "instance_id": "BENCH-0010",
+      "before": 0.66101429,
+      "after": 0.6619377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "healing_result",
+      "instance_id": "BENCH-0010",
+      "before": 0.39101429,
+      "after": 0.3919377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pattern_update",
+      "instance_id": "BENCH-0010",
+      "before": 0.41101429,
+      "after": 0.4119377,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "heartbeat_sensor",
+      "instance_id": "BENCH-0011",
+      "before": 0.79101429,
+      "after": 0.79213062,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "error_rate",
+      "instance_id": "BENCH-0011",
+      "before": 0.5819377,
+      "after": 0.58305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "anomaly_count",
+      "instance_id": "BENCH-0011",
+      "before": 0.5019377,
+      "after": 0.50305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pattern_match",
+      "instance_id": "BENCH-0011",
+      "before": 0.8719377,
+      "after": 0.87305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "anomaly_classify",
+      "instance_id": "BENCH-0011",
+      "before": 0.9019377,
+      "after": 0.90305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "severity_eval",
+      "instance_id": "BENCH-0011",
+      "before": 0.5519377,
+      "after": 0.55305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "playbook_match",
+      "instance_id": "BENCH-0011",
+      "before": 0.8419377,
+      "after": 0.84305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "confidence_score",
+      "instance_id": "BENCH-0011",
+      "before": 0.9419377,
+      "after": 0.94305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "isolation_strategy",
+      "instance_id": "BENCH-0011",
+      "before": 0.3519377,
+      "after": 0.35305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "healing_selection",
+      "instance_id": "BENCH-0011",
+      "before": 0.6619377,
+      "after": 0.66305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "verification_logic",
+      "instance_id": "BENCH-0011",
+      "before": 0.2219377,
+      "after": 0.22305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "heal_action",
+      "instance_id": "BENCH-0011",
+      "before": 0.6619377,
+      "after": 0.66305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "healing_result",
+      "instance_id": "BENCH-0011",
+      "before": 0.3919377,
+      "after": 0.39305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pattern_update",
+      "instance_id": "BENCH-0011",
+      "before": 0.4119377,
+      "after": 0.41305403,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pqc_status",
+      "instance_id": "BENCH-0015",
+      "before": 0.96092341,
+      "after": 0.96274162,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "error_rate",
+      "instance_id": "BENCH-0015",
+      "before": 0.58305403,
+      "after": 0.58487224,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "anomaly_count",
+      "instance_id": "BENCH-0015",
+      "before": 0.50305403,
+      "after": 0.50487224,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "pattern_match",
+      "instance_id": "BENCH-0015",
+      "before": 0.87305403,
+      "after": 0.87487224,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "anomaly_classify",
+      "instance_id": "BENCH-0015",
+      "before": 0.90305403,
+      "after": 0.90487224,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "severity_eval",
+      "instance_id": "BENCH-0015",
+      "before": 0.55305403,
+      "after": 0.55487224,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "playbook_match",
+      "instance_id": "BENCH-0015",
+      "before": 0.84305403,
+      "after": 0.84487224,
+      "source_outcome": "resolved+verified"
+    },
+    {
+      "node": "confidence_score",
+      "instance_id": "BENCH-0015",
+      "before": 0.94305403,
+      "after": 0.94487224,
+      "source_outcome": "resolved+verified"
+    },
+    "...truncated..."
+  ]
+}

@@ -35,7 +35,8 @@ mismatch aborts before any computation.
 """
 import json, hashlib, statistics, sys, datetime
 
-FH = "fh_pub"
+FH = "."
+ROOT = ".."
 NOW = lambda: datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 def sha(p):
@@ -48,7 +49,7 @@ assert corpus_sha == "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a38966
     f"CORPUS HASH MISMATCH {corpus_sha} — abort (fail-closed)"
 corpus = json.load(open(corpus_path))
 
-pack = json.load(open("mesh_repo/data/SQUIRREL_OS_67_APP_TELEMETRY_PACK.json"))
+pack = json.load(open(f"{ROOT}/mesh_repo/data/SQUIRREL_OS_67_APP_TELEMETRY_PACK.json"))
 nodes = pack["topology"]["nodes"]
 assert len(nodes) == 32, "topology drift"
 
