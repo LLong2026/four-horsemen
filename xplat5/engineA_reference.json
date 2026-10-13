@@ -1,0 +1,115 @@
+{
+ "source": "B1_BASELINE_RESULTS.json (Oct 11) \u2014 raw tuple bytes were validated-not-archived; this is the archived verdict record",
+ "n_valid": 20,
+ "n_failed": 0,
+ "conversation_ids": [
+  "6acbd858a9daa555fe641b1a",
+  "6acbd85a45d52716dc6d3182",
+  "6acbd85d625044663fe6121c",
+  "6acbd85fb9e36879a84151d7",
+  "6acbd86245d52716dc6d318e",
+  "6acbd86595d2236ac9e0edff",
+  "6acbd8677c02b0c92062e860",
+  "6acbd869d51d3568d4f7e875",
+  "6acbd86c545711756a2cd721",
+  "6acbd8729980b98eec915e36",
+  "6acbd8778b6427344e0744f3",
+  "6acbd87a51fa7837fb207082",
+  "6acbd87c51ab75ee4e544f5e",
+  "6acbd87f063cc5e119e2d5f1",
+  "6acbd883bb4b9c3e749e4b8d",
+  "6acbd885dd141e5fea91526b",
+  "6acbd88816f5bf331650577b",
+  "6acbd88ba5e7a5803014a07b",
+  "6acbd88d34f759439626face",
+  "6acbd8906c04f5d041d78011"
+ ],
+ "validated_fields_all_20": {
+  "position": 0,
+  "match_type": "exact",
+  "steps_executed": "isolation,healing,verification",
+  "status": "resolved",
+  "per_instance": {
+   "BENCH-0000": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0001": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0002": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0003": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0004": {
+    "anomaly_type": "latency_spike",
+    "playbook": "PB-003: Latency Spike Resolver"
+   },
+   "BENCH-0005": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0006": {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "playbook": "PB-009: Quantum Vulnerability Migrator"
+   },
+   "BENCH-0007": {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "playbook": "PB-009: Quantum Vulnerability Migrator"
+   },
+   "BENCH-0008": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0009": {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "playbook": "PB-009: Quantum Vulnerability Migrator"
+   },
+   "BENCH-0010": {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "playbook": "PB-009: Quantum Vulnerability Migrator"
+   },
+   "BENCH-0011": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0012": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0013": {
+    "anomaly_type": "latency_spike",
+    "playbook": "PB-003: Latency Spike Resolver"
+   },
+   "BENCH-0014": {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "playbook": "PB-009: Quantum Vulnerability Migrator"
+   },
+   "BENCH-0015": {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "playbook": "PB-009: Quantum Vulnerability Migrator"
+   },
+   "BENCH-0016": {
+    "anomaly_type": "latency_spike",
+    "playbook": "PB-003: Latency Spike Resolver"
+   },
+   "BENCH-0017": {
+    "anomaly_type": "quantum_vulnerability_detected",
+    "playbook": "PB-009: Quantum Vulnerability Migrator"
+   },
+   "BENCH-0018": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   },
+   "BENCH-0019": {
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter"
+   }
+  }
+ }
+}

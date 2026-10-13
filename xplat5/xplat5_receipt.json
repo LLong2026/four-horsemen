@@ -1,0 +1,126 @@
+{
+ "series": "XPLAT-5 Engine Transplant",
+ "executed_utc": "2026-10-13T05:22Z",
+ "authorized_by": "Leon GO 2026-10-13 00:11 CT; prereg frozen commit 4e34464 BEFORE Engine B emission",
+ "engine_a": "platform engine 2026-10-11, fresh API conversations, 20/20 frozen-validator pass (Dual Mesh Benchmark B1 baseline leg); raw bytes validated-not-archived (disclosed)",
+ "engine_b": "platform engine 2026-10-13 ('new machine'), in-conversation, loaded context + batch mode (disclosed stressors)",
+ "instrument": {
+  "corpus_sha256": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59",
+  "prompt_contract_sha256": "21bdf8b534155047da62eac81e531ca5ceb2a65b77fd4839a31cf34e09e22d0f",
+  "engineA_reference_sha256": "3987e26225cf5ef1cfeba0a70deb893438641390ea7686d2b3856cf35cd35483",
+  "engineA_validation": "20/20 valid per DUAL_MESH_BENCH_RECEIPT (B1 baseline leg, Oct 11, 2026)"
+ },
+ "result": "CONTRACT-PARITY HOLDS \u2014 20/20 Engine B tuples pass the byte-identical frozen validator; zero divergences",
+ "engineB_raw_sha256": "bdb96640b1a7459f801837ea7629dd5df94f23f9864547c37a5dd985e4c15100",
+ "falsifiers": {
+  "F1_contract_parity": "PASS \u2014 20/20, zero failures (frozen six-field validator + roster-id parity + frozen key order)",
+  "F2_instrument_freeze": "PASS \u2014 corpus and contract shas equal to Oct 11 originals (manifest)",
+  "F3_shape_key_order": "PASS \u2014 one tuple per instance, frozen key order, parseable, no prose",
+  "F4_no_leakage": "PASS \u2014 synthetic corpus only",
+  "F5_archive": "PASS \u2014 Engine B raw emissions archived and hashed; future transplants checkable for TRUE byte-parity"
+ },
+ "invariance_triangle": "substrate (XPLAT-1, done) + time (nightly, done) + engine (XPLAT-5, this leg)",
+ "disclaimers": "Prototype; educational and research purposes only; not for production use. Not a model certification; weight-level engine identity not asserted. Dual Mesh Benchmark: NOT MEASURED.",
+ "per_instance": [
+  {
+   "instance_id": "BENCH-0000",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0001",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0002",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0003",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0004",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0005",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0006",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0007",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0008",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0009",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0010",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0011",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0012",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0013",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0014",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0015",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0016",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0017",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0018",
+   "valid": true,
+   "detail": ""
+  },
+  {
+   "instance_id": "BENCH-0019",
+   "valid": true,
+   "detail": ""
+  }
+ ]
+}

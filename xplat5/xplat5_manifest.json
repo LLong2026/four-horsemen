@@ -1,0 +1,6 @@
+{
+ "corpus_sha256": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59",
+ "prompt_contract_sha256": "21bdf8b534155047da62eac81e531ca5ceb2a65b77fd4839a31cf34e09e22d0f",
+ "engineA_reference_sha256": "3987e26225cf5ef1cfeba0a70deb893438641390ea7686d2b3856cf35cd35483",
+ "engineA_validation": "20/20 valid per DUAL_MESH_BENCH_RECEIPT (B1 baseline leg, Oct 11, 2026)"
+}
