@@ -1,7 +1,9 @@
 # GOV-2 PREREGISTRATION — Defense-Stack Attack Battery (Who Watches the Watchmen)
 
 Series: GOV-2 | Committed: 2026-10-13 (before execution)
-Operator authorization: Leon GO (chat authorization, Oct 13, 2026, "Gov-2 GO").
+Operator authorization: Leon GO (chat authorization, Oct 13, 2026, 11:55 CT).
+[Redaction note, Oct 13: earlier versions quoted the operator's chat wording; redacted
+per the Operator Privacy standing rule — authorization is GO + timestamp only.]
 
 ## 1. Purpose — attack the defense, not just the state
 
