@@ -466,6 +466,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SBR1_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23331224_SBR1_EVIDENCE.zip",
+        "size_bytes": 5581,
+        "sha256": "a9a7eb553e550dde80ae021f5e6fd0d9a245defe8e22367bfd269ab4af6f1fae"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23331224",
+        "zenodo_recid": "23331224",
+        "zenodo_file": "SBR1_EVIDENCE.zip",
+        "zenodo_md5": "9044a23cd6ea1a5f99b3c7a787c21813",
+        "title": "SBR-1: Randomized Security Benchmark Run \u2014 Seeded Adversarial Exam of a Bounded-Learning Aegis Brain (6/6 Pass)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T04:09:58Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -479,7 +510,7 @@
     }
   ],
   "counts": {
-    "bound": 15,
+    "bound": 16,
     "gaps": 2,
     "dois_checked": 13
   }
