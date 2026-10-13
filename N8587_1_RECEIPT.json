@@ -1,0 +1,60 @@
+{
+  "battery": "N8587-1",
+  "core_finding": "Blast radius of a stolen issuer signing key = exactly the conforming subset (3/8): bounded by validity window, revocation list, delegation depth, and session-side authority/tenant context \u2014 NOT by scope or identity claims, which the stolen key mints freely. Authority that lives only in the token is unlimited authority; authority that lives in the session policy is bounded. Verifier compromise: with HMAC the learned secret forges 4/4; with ed25519 the verifier holds no secret and forgeries reject 4/4.",
+  "executed_at": "2026-10-13T19:05:10.544601+00:00",
+  "falsifiers": {
+    "F1_true_accept": true,
+    "F2_reject_all": true,
+    "F3_blast_radius": true,
+    "F4_asymmetry": true,
+    "F5_tenant": true,
+    "F6_determinism": true,
+    "F7_hygiene": true,
+    "note": "F6 verified: journal run2 sha256 236deeb3039e7c01... == run3 (byte-identical)"
+  },
+  "legs": {
+    "A_validity_window": {
+      "expired_rejected": 4,
+      "in_window_accepted": 4
+    },
+    "B_revocation": {
+      "live_accepted": 2,
+      "replay_rejected": 2,
+      "revoked_rejected": 2
+    },
+    "C_delegation_decay": {
+      "L0_direct_wildcard": "accepted",
+      "L1_broken_chain_rejected": "rejected",
+      "L1_expired_rejected": "rejected",
+      "L1_scope_exceeding_delegator_rejected": "rejected",
+      "L1_valid_delegation": "accepted",
+      "L2_valid_chain": "accepted",
+      "L3_depth_limit_rejected": "rejected",
+      "self_delegation_loop_rejected": "rejected"
+    },
+    "D_scope_binding": {
+      "cross_scope_rejected": 4
+    },
+    "E_stolen_key_blast_radius": {
+      "accepts": [
+        "conforming_1",
+        "conforming_2",
+        "conforming_3"
+      ],
+      "forged_accepted": 3,
+      "forged_rejected": 5
+    },
+    "F_verifier_compromise": {
+      "ed25519_forged_rejected": 4,
+      "hmac_forged_accepted_control": 4
+    },
+    "G_cross_tenant": {
+      "cross_tenant_rejected": 4
+    }
+  },
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 14:03 CT)",
+  "prereg": "9e271f2e7777a3c9",
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic.",
+  "run": 2,
+  "run1_disclosure": "Run 1 failed F1/F3/F4 on instrument defects, preserved in n8587_evidence/runner_run1_defective.py + journal_run1.json. Defect 1: no wildcard-scope semantics (owner heal:* wrongly rejected). Defect 2 (the headline): the gate took session tenant and entitlement from the PRESENTED TOKEN \u2014 the exact tenantGuard anti-pattern \u2014 and stolen-key forgeries sailed through (5/8). With session-side injected context the same attacker gets 3/8: the delta is the doctrine, measured. Defect 3: HMAC control modeled the attacker with a wrong secret instead of the one learned from verifier memory."
+}

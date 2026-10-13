@@ -1,0 +1,262 @@
+[
+ {
+  "depth": 0,
+  "jti": "LX-0",
+  "leg": "A",
+  "rule": "R2_window",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LX-1",
+  "leg": "A",
+  "rule": "R2_window",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LX-2",
+  "leg": "A",
+  "rule": "R2_window",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LX-3",
+  "leg": "A",
+  "rule": "R2_window",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LBR-0",
+  "leg": "B",
+  "rule": "R3_revocation",
+  "scope": "heal:rate_limit",
+  "sub": "sim-agent-1",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LBR-1",
+  "leg": "B",
+  "rule": "R3_revocation",
+  "scope": "heal:rate_limit",
+  "sub": "sim-agent-1",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LD-0",
+  "leg": "D",
+  "rule": "R4_scope_token",
+  "scope": "heal:rate_limit",
+  "sub": "sim-agent-1",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LD-1",
+  "leg": "D",
+  "rule": "R4_scope_token",
+  "scope": "heal:rate_limit",
+  "sub": "sim-agent-1",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LD-2",
+  "leg": "D",
+  "rule": "R4_scope_token",
+  "scope": "heal:rate_limit",
+  "sub": "sim-agent-1",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LD-3",
+  "leg": "D",
+  "rule": "R4_scope_token",
+  "scope": "heal:rate_limit",
+  "sub": "sim-agent-1",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LE-1",
+  "leg": "E",
+  "rule": "R2_window",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LBR-1",
+  "leg": "E",
+  "rule": "R3_revocation",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LE-3",
+  "leg": "E",
+  "rule": "R4_scope_authority",
+  "scope": "deploy:governance",
+  "sub": "sim-owner",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LE-4",
+  "leg": "E",
+  "rule": "R6_tenant",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "TENANT-B",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 3,
+  "jti": "LE-5",
+  "leg": "E",
+  "rule": "R5_depth",
+  "scope": "heal:rate_limit",
+  "sub": "sim-agent-2",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LE-6",
+  "leg": "E",
+  "rule": "R_all",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "SIMZ",
+  "verdict": "accepted"
+ },
+ {
+  "depth": 0,
+  "jti": "LE-7",
+  "leg": "E",
+  "rule": "R_all",
+  "scope": "heal:rate_limit",
+  "sub": "sim-agent-1",
+  "tenant": "SIMZ",
+  "verdict": "accepted"
+ },
+ {
+  "depth": 0,
+  "jti": "LE-8",
+  "leg": "E",
+  "rule": "R_all",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "SIMZ",
+  "verdict": "accepted"
+ },
+ {
+  "depth": 0,
+  "jti": "LF-0",
+  "leg": "F",
+  "rule": "R_asym",
+  "scope": "verify:release",
+  "sub": "verifier-compromise-leg",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LF-1",
+  "leg": "F",
+  "rule": "R_asym",
+  "scope": "verify:release",
+  "sub": "verifier-compromise-leg",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LF-2",
+  "leg": "F",
+  "rule": "R_asym",
+  "scope": "verify:release",
+  "sub": "verifier-compromise-leg",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LF-3",
+  "leg": "F",
+  "rule": "R_asym",
+  "scope": "verify:release",
+  "sub": "verifier-compromise-leg",
+  "tenant": "SIMZ",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LG-0",
+  "leg": "G",
+  "rule": "R6_tenant",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "TENANT-A",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LG-1",
+  "leg": "G",
+  "rule": "R6_tenant",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "TENANT-A",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LG-2",
+  "leg": "G",
+  "rule": "R6_tenant",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "TENANT-A",
+  "verdict": "rejected"
+ },
+ {
+  "depth": 0,
+  "jti": "LG-3",
+  "leg": "G",
+  "rule": "R6_tenant",
+  "scope": "heal:rate_limit",
+  "sub": "sim-sub-a0",
+  "tenant": "TENANT-A",
+  "verdict": "rejected"
+ }
+]
