@@ -1,0 +1,34 @@
+{
+  "battery": "DR-1",
+  "title": "Disaster Recovery Drill: Cold Restore of the State of Record, Verified Against External Anchors",
+  "executed_at": "2026-10-13T19:22:00Z",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 14:10 CT) - disaster recovery frontier",
+  "scenarios": {
+    "S2_transparency_repo_loss": {
+      "method": "cold re-clone from public GitHub remote into a clean directory (simulated total local loss); verify HEAD integrity + anchor bindings + ledger completeness",
+      "rto_seconds": 0.43,
+      "rpo_commits": 0,
+      "commits_recovered": "212/212",
+      "head_integrity": "restored HEAD byte-identical to live HEAD",
+      "anchor_verification": "issuance_registry.json MATCHES; gov_release_registry.json MATCHES; gov_key_pin.txt MATCHES (all 3 against SIP-7/v2 binding)",
+      "ledger_completeness": "ledger 0089 (latest entry) present in restored copy",
+      "verdict": "RECOVERED + VERIFIED"
+    },
+    "external_surface_reachability": {
+      "zenodo_doi": "10.5281/zenodo.23348528 (SIP-7 v1 anchor record)",
+      "verdict": "REACHABLE (live API read; recovered from earlier 504 window)"
+    },
+    "S4_full_stack_loss_doctrine": {
+      "claim": "the state of record is git + Zenodo, not the sandbox: a fresh machine re-clones in <1s and verifies integrity against DOI-bound anchor records",
+      "status": "STRUCTURALLY PROVEN for repo+corpus; entity layer and key custody remain open (below)"
+    }
+  },
+  "findings": [
+    "F1 (PASS): transparency repo cold-restore RTO 0.43s, RPO 0 (push-on-write doctrine), verified against anchor bindings 3/3.",
+    "F2 (PASS): external immutable surface (Zenodo) reachable and live - the out-of-band anchor for maximal-attacker detection survives local loss by construction.",
+    "F3 (GAP, disclosed): hub entity layer has NO byte-exact backup surface - LEDGER.md and DAY_RECEIPTS carry structural summaries (RPO: since last receipt), raw entity payloads are not exportable from this session type. Candidate: scheduled entity-export snapshots committed to the transparency repo.",
+    "F4 (GAP, disclosed, owner decision): signing keys (.gov_release_key, .gov_ed25519_key, .issuance_key) are process-bound, gitignored by design, no escrow. Loss recovery = rotation cycle (new keypair + git-anchored re-pin + human GO), which is legitimate but leaves a signing gap window. Escrow policy (encrypted shards, owner custody) is an owner decision gate - surfaced, not decided.",
+    "F5 (CONTEXT): the Hub has survived one real disaster already (frontend loss to GitHub history-rewrite sync, rebuilt per hub-recovery note); this drill is the first FORMAL DR receipt. The old BackupStatus record (qe-001, Sept 1) was stale; superseded by 4 live-surface records."
+  ],
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
