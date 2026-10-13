@@ -1,0 +1,53 @@
+[
+ {
+  "i": 0,
+  "instance_id": "BENCH-0000",
+  "expected_playbook": "PB-008: Heartbeat Re-igniter",
+  "wall_ms": 2752.0,
+  "model_returned": "x-ai/grok-4.7",
+  "provider": "xAI",
+  "finish_reason": "stop",
+  "cost": 0.003518,
+  "strict_valid": true,
+  "norm_valid": true,
+  "correct": true,
+  "tuple": {
+   "position": 0,
+   "anomaly_type": "heartbeat_miss",
+   "playbook": "PB-008: Heartbeat Re-igniter",
+   "playbook_id": "6a5d29cb54e45d7e8bad47ca",
+   "match_type": "exact",
+   "steps_executed": "isolation,healing,verification",
+   "status": "resolved"
+  }
+ },
+ {
+  "i": 1,
+  "instance_id": "BENCH-0001",
+  "expected_playbook": "PB-008: Heartbeat Re-igniter",
+  "wall_ms": 3068.7,
+  "model_returned": "x-ai/grok-4.7",
+  "provider": "xAI",
+  "finish_reason": "stop",
+  "cost": 0.003606,
+  "strict_valid": true,
+  "norm_valid": true,
+  "correct": true,
+  "tuple": {
+   "position": 0,
+   "anomaly_type": "heartbeat_miss",
+   "playbook": "PB-008: Heartbeat Re-igniter",
+   "playbook_id": "6a5d29cb54e45d7e8bad47ca",
+   "match_type": "exact",
+   "steps_executed": "isolation,healing,verification",
+   "status": "resolved"
+  }
+ },
+ {
+  "i": 2,
+  "instance_id": "BENCH-0002",
+  "expected_playbook": "PB-008: Heartbeat Re-igniter",
+  "http_error": 402,
+  "error_body": "{\"error\":{\"message\":\"This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.\",\"code\":402,\"metadata\":{\"reason\":\"in_flight_budget_exhausted\",\"limit_source\":\"openrouter_in_flight_budget\",\"remedy_hint\":\"Retry after yo"
+ }
+]

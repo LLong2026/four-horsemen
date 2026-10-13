@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791913897-nOrOPSTp79pwzmYBa3fc",
+ "object": "chat.completion",
+ "created": 1791913897,
+ "model": "anthropic/claude-haiku-5.5",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "end_turn",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"quantum_vulnerability_detected\",\"playbook\":\"PB-009: Quantum Vulnerability Migrator\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cb\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": null,
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "signature": "CAQS4AUKEggSEAIYAjgBQgh0aGlua2luZxIMrlRAI6FGUHI0u7+uGgwNE1np/RLbXW+d6AYiMLCBC5YDsU6CkawCkYiu+H9PKAJepn4Zx8JbPmTQNENqF8zko9pRq8Mesk4Mh4Gd9Cr7BA3Dsyh2ib68E8/nCHMOXCmx+dmQpJyWgONScI8s+U1Sa81DSFBD0FgIUNo2CPyW+SeLqnkmxOSMwX60EPbEwz2So1q65H0j5I7rJq5dd20abCff9CDoV6ug9S7mZTs90PX8k8bVh5pWZXTMmQR+VNEApwI0bs1NpS/IGU83YmNqiDWbUMQ/k2c8oTmHJzHnt8RR8DuJpBTnPUfMSPXE66RjTu6hfZMFGGBMFG9SfdtaN4vsRDoympEl/iXmFWO/qHj71hGi6gRS4nMzBiXxTq9ZLmoKDT7gt2ch2I9M+sSeKwbxa+ROQyd7bDApGotmJUBGmyewAV8eZt9432KcWpVwHH5Llx2HBZ+/5JW6HJ0VJc2nLxthjTwLxbB5c0noUsKv+f0esKTII7eYp+7VwYB9X8i6Li1jGXrPiWzv3Py1cVHgZyPtalrjmi10buQi7gZZybOLwjyz8qExduwuMS/4a7pVX/zL7lpycVguQnyRjiVZY+ZVkjXCkfXp0kuw+/1daXxP8nPXEzqAjVqm3O+fwPA72b2r8uNLoLb0UljXysKXg9sg83bbwvOW0pseDWbwJA9iJo1hrLkxwhzib0+a7qr/uP5D1WpDAXpi6kni8SGJRY+4myUcj0giq0RMpVjhDj/eEc/nVk2yt0bPjfayRCJ5OwMTPiRKMqbhwxK6dpG14K1O6LY1qwBd1yumxDX3rZXv5DqywD1YCX5i22YGJyqYns+bYj9RQ+MavK6QOm1jyIi5tAzkmTyjb6URp6ItcUqM6p0E0W8cG7tvWploCJxCJMCZQ+gLCVtReQSk4l0xxXP/J4BOlvRxzSd1hB8KT1U5V0XKoNkQGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ",
+      "format": "anthropic-claude-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 875,
+  "completion_tokens": 234,
+  "total_tokens": 1109,
+  "cost": 0.0002045,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0002045,
+   "upstream_inference_prompt_cost": 8.75e-05,
+   "upstream_inference_completions_cost": 0.000117
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 117,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

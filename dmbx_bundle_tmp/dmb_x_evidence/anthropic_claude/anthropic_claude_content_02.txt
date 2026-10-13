@@ -1,0 +1,13 @@
+```json
+[
+  {
+    "position": 0,
+    "anomaly_type": "heartbeat_miss",
+    "playbook": "PB-008: Heartbeat Re-igniter",
+    "playbook_id": "6a5d29cb54e45d7e8bad47ca",
+    "match_type": "exact",
+    "steps_executed": "isolation,healing,verification",
+    "status": "resolved"
+  }
+]
+```

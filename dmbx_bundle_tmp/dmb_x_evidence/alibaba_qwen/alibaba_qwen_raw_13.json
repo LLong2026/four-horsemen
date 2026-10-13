@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791914328-IGTipbxW3QknIZ8V3KeA",
+ "object": "chat.completion",
+ "created": 1791914328,
+ "model": "qwen/qwen3.8-omni-flash",
+ "provider": "Alibaba",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"latency_spike\",\n    \"playbook\": \"PB-003: Latency Spike Resolver\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47c5\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  }\n]",
+    "refusal": null,
+    "reasoning": "We need answer user's request. Need produce final JSON array exactly one object keys order. Need analyze.\n\nUser: operating rules. Incoming anomaly: anomaly_type \"latency_spike\", confidence_score 0.9. Playbook roster has exact match latency_spike id 6a5d... playbook PB-003 threshold 0.8. Confidence >= threshold => match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Output JSON array containing exactly ONE decision tuple object keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0. No prose/markdown. Need ensure valid JSON. Values: position integer 0, anomaly_type string \"latency_spike\", playbook \"PB-003: Latency Spike Resolver\", playbook_id \"6a5d29cb54e45d7e8bad47c5\", match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Final only JSON array.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer user's request. Need produce final JSON array exactly one object keys order. Need analyze.\n\nUser: operating rules. Incoming anomaly: anomaly_type \"latency_spike\", confidence_score 0.9. Playbook roster has exact match latency_spike id 6a5d... playbook PB-003 threshold 0.8. Confidence >= threshold => match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Output JSON array containing exactly ONE decision tuple object keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0. No prose/markdown. Need ensure valid JSON. Values: position integer 0, anomaly_type string \"latency_spike\", playbook \"PB-003: Latency Spike Resolver\", playbook_id \"6a5d29cb54e45d7e8bad47c5\", match_type \"exact\", steps_executed \"isolation,healing,verification\", status \"resolved\". Final only JSON array.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 628,
+  "completion_tokens": 338,
+  "total_tokens": 966,
+  "cost": 0.00025306,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00025306,
+   "upstream_inference_prompt_cost": 9.42e-05,
+   "upstream_inference_completions_cost": 0.00015886
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 223,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

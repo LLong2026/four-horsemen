@@ -1,0 +1,11 @@
+[ 
+  {
+    "position": 0,
+    "anomaly_type": "quantum_vulnerability_detected",
+    "playbook": "PB-009: Quantum Vulnerability Migrator",
+    "playbook_id": "6a5d29cb54e45d7e8bad47cb",
+    "match_type": "exact",
+    "steps_executed": "isolation,healing,verification",
+    "status": "resolved"
+  }
+]

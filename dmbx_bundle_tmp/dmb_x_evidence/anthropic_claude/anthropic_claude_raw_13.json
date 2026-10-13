@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791913907-k0ToFE4BX8PL5RzRbvy1",
+ "object": "chat.completion",
+ "created": 1791913907,
+ "model": "anthropic/claude-haiku-5.5",
+ "provider": "Anthropic",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "end_turn",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"latency_spike\", \"playbook\": \"PB-003: Latency Spike Resolver\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47c5\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": null,
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "signature": "CAQSiQgKEAgSGAI4AUIIdGhpbmtpbmcSDEs/HjV+L2SYgIoTDRoMlkEfhbp7aJK96VOXIjDeN4224djaDuVHx7iNrz9zhfTUSkdB2MfyUE/kNokQ9O6MHfVxB5GXAPwQW1qgFFgqpgfBcRUArmygAuAap734sqIWUhkzcaIqVA4nJt7YVezVx6Ih/acj7NibB+4IMdIdoxAKrN4qpXNhTPynUTs0zxn/7tyRvGUHeErw///5iv2XNp9GOYndia2ZSZwyjtjm8G58aZ3KBjDQwm5+wv+1e4aDB4P/cjr3wKZhGXuSPwB2NQA2OA2LCj9hvqlwjlfikj1I23joC2zfkyItJcDM1L8mQE62YUf3HPZIiyrwKwR5cVhkoHvcvz3GPPis9bJ0fL3GyWuzlGkhKeQxoOccX9f4Wk93HunqWGlPuWL5m/nER00naLQGPvABdZB4M3Ab8D9NzVchtVTn5VgMwvI375C/yw37XvKvDWGRL1a3FeQPDgRzKApPzTFXfyTJiI4T7VidIAveqX7wUbZVKlMW8YFd3GhvclcHtTa3RLEnXqETkWQ17qwaaNUnw8e6Y9Ya5bA/UT6O2lERATFUDIUD+REakMUmqnu+J8fVrqgJYmTLitzUWBcg2OdBKCSX6CwDJhuVErnAGm4RyYgp6gxzVCkyj4XEDQusUIgq/4oqWRxgMibGn07Z8QwTnrevFB4dBllNVGDhIDVw06CVVVOuvjdtsn5eCB6DrW9nvA3/wu6ocDjUqWcaRBOxQUVKHJSE0Gwhlfr7S4Kagu2MfIIVfHYwJL53kLKA2HIYs7DRc/32uJwnjrc1c4hMllfP7HTeKQr0+TvUSeT3wGffNF6iUm+yYkYMcco5cDOv9YYVOo8xQxp+Fx7r0JVWnYFq+0lG8UXT1RLQxszTp5IuCjM7d5/+EfHRFE8IncOsRhuFEm9xRwFqtgWlT+v0Z9SZ5gSvZ3gw13VqJcedS1As11f2u2ACl5ebalEQdC6XEWpfP83IrB9rh/47fQUUwFSEgoDieOUwzkEGYeluRwV5ab1XnXzcO0dL977fz+0VlzmoaB4SL5quUxUJJIVsn3lXwncX5we7I84gbryU8wPEfrFtyiRE+ZkZxqHl/064b3QlEjGv7GiZ2WvQLsWbtTM6BGQUCbddgrgmk1mz+jCK03I1rxOBg5qIs7yOZF52byXv3Gzjelv/fVHthbaBfE5dwSqT7lKB+TCCYZi0+Z4HzZeVC7g41MwIqcPI7UmeaHtxo41XhXtoVj4gko1GIHj38lsURieFlI9Ns8xD6a1tXNuK4Cov1KFJADAocBXfhZL+JiH8FYWS0ckQAKkxNpM6Gj8bCnUvBE/ASq1GVmFhdrIHWMAAf6RqrxBtGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8YW50aHJvcGljIn0",
+      "format": "anthropic-claude-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 864,
+  "completion_tokens": 285,
+  "total_tokens": 1149,
+  "cost": 0.0002289,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0002289,
+   "upstream_inference_prompt_cost": 8.64e-05,
+   "upstream_inference_completions_cost": 0.0001425
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 173,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

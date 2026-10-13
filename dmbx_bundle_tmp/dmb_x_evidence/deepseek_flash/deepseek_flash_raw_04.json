@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791914452-hLI6OvvzUddWdm2T9QCY",
+ "object": "chat.completion",
+ "created": 1791914452,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"latency_spike\",\"playbook\":\"PB-003: Latency Spike Resolver\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47c5\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": "We need answer JSON array one object exact order. Need determine match. anomaly_type latency_spike exactly matches playbook. confidence_score 0.9 >= threshold 0.8. So match_type exact, steps_executed \"isolation,healing,verification\", status resolved. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0. anomaly_type \"latency_spike\". playbook \"PB-003: Latency Spike Resolver\". playbook_id \"6a5d29cb54e45d7e8bad47c5\". match_type \"exact\". steps_executed \"isolation,healing,verification\". status \"resolved\". No prose. Ensure valid JSON.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer JSON array one object exact order. Need determine match. anomaly_type latency_spike exactly matches playbook. confidence_score 0.9 >= threshold 0.8. So match_type exact, steps_executed \"isolation,healing,verification\", status resolved. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status. position 0. anomaly_type \"latency_spike\". playbook \"PB-003: Latency Spike Resolver\". playbook_id \"6a5d29cb54e45d7e8bad47c5\". match_type \"exact\". steps_executed \"isolation,healing,verification\". status \"resolved\". No prose. Ensure valid JSON.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 606,
+  "completion_tokens": 238,
+  "total_tokens": 844,
+  "cost": 0.000143258,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 512,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000143258,
+   "upstream_inference_prompt_cost": 1.2358e-05,
+   "upstream_inference_completions_cost": 0.0001309
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 160,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}
