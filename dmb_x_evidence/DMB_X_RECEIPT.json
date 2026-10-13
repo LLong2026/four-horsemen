@@ -96,7 +96,9 @@
       "resumed": true,
       "resume_disclosure": "first leg: 19/20 instances rate-limited upstream (HTTP 429, DeepInfra) - availability, not capability; disclosed resume re-ran ONLY the rate-limited instances; no measured instance was re-run (FBX-3); original raw preserved",
       "median_ms": 13588.4,
-      "p95_ms": 16096.4
+      "p95_ms": 16096.4,
+      "n_rate_limited": 16,
+      "status": "partial-availability: 4/20 measured (4/4 correct), 16 upstream rate-limited (HTTP 429, DeepInfra) across both the first leg and the disclosed resume; capability clean on every instance that landed; column recorded UNAVAILABLE-rate-limited for the remaining 16"
     },
     "deepseek_flash": {
       "family": "deepseek_flash",

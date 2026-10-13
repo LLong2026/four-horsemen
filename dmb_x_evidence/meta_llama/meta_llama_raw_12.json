@@ -1,7 +1,7 @@
 {
- "id": "gen-1791914751-9lUUJEnBYvjQG6XXwnYC",
+ "id": "gen-1791915089-70sEffC6UexNRJmhwmsM",
  "object": "chat.completion",
- "created": 1791914751,
+ "created": 1791915089,
  "model": "meta-llama/llama-4-scout",
  "provider": "Novita",
  "system_fingerprint": null,
@@ -14,7 +14,7 @@
    "native_finish_reason": "stop",
    "message": {
     "role": "assistant",
-    "content": "[ \n  {\n    \"position\": 0,\n    \"anomaly_type\": \"heartbeat_miss\",\n    \"playbook\": \"PB-008: Heartbeat Re-igniter\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\"\n  }\n]",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"heartbeat_miss\", \"playbook\": \"PB-008: Heartbeat Re-igniter\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
     "refusal": null,
     "reasoning": null
    }
@@ -22,9 +22,9 @@
  ],
  "usage": {
   "prompt_tokens": 559,
-  "completion_tokens": 97,
-  "total_tokens": 656,
-  "cost": 0.00015785,
+  "completion_tokens": 84,
+  "total_tokens": 643,
+  "cost": 0.00015018,
   "is_byok": false,
   "prompt_tokens_details": {
    "cached_tokens": 0,
@@ -33,9 +33,9 @@
    "video_tokens": 0
   },
   "cost_details": {
-   "upstream_inference_cost": 0.00015785,
+   "upstream_inference_cost": 0.00015018,
    "upstream_inference_prompt_cost": 0.00010062,
-   "upstream_inference_completions_cost": 5.723e-05
+   "upstream_inference_completions_cost": 4.956e-05
   },
   "completion_tokens_details": {
    "reasoning_tokens": 0,
