@@ -1,0 +1,114 @@
+{
+ "type_confidence": {
+  "latency_spike": 0.9307,
+  "config_drift": 0.9402,
+  "heartbeat_miss": 0.9307,
+  "intune_enrollment_failure": 0.8713,
+  "integration_degraded": 0.9406,
+  "rate_limit_abuse": 0.901,
+  "memory_leak": 0.95,
+  "crypto_key_stale": 0.98
+ },
+ "baseline_passes": 3,
+ "bands": {
+  "fast": 0.9,
+  "standard": 0.8
+ },
+ "fast_passes": 1,
+ "standard_passes": 3,
+ "hold_passes": 0,
+ "instances": [
+  {
+   "iid": "CTR-1",
+   "atype": "latency_spike",
+   "sev": 0.95
+  },
+  {
+   "iid": "CTR-2",
+   "atype": "memory_leak",
+   "sev": 0.96
+  },
+  {
+   "iid": "CTR-3",
+   "atype": "heartbeat_miss",
+   "sev": 0.85
+  },
+  {
+   "iid": "CTR-4",
+   "atype": "error_rate_spike",
+   "sev": 0.81
+  },
+  {
+   "iid": "CTR-5",
+   "atype": "token_budget_breach",
+   "sev": 0.93
+  },
+  {
+   "iid": "CTR-6",
+   "atype": "queue_backlog",
+   "sev": 0.77
+  },
+  {
+   "iid": "CTR-7",
+   "atype": "connection_pool_exhaustion",
+   "sev": 0.74
+  },
+  {
+   "iid": "CTR-8",
+   "atype": "scheduler_drift",
+   "sev": 0.95
+  },
+  {
+   "iid": "NB5-1",
+   "atype": "latency_spike",
+   "sev": 0.88
+  },
+  {
+   "iid": "NB5-2",
+   "atype": "config_drift",
+   "sev": 0.87
+  },
+  {
+   "iid": "NB5-3",
+   "atype": "heartbeat_miss",
+   "sev": 0.84
+  },
+  {
+   "iid": "NB5-4",
+   "atype": "intune_enrollment_failure",
+   "sev": 0.86
+  },
+  {
+   "iid": "NB5-5",
+   "atype": "integration_degraded",
+   "sev": 0.89
+  },
+  {
+   "iid": "NB5-6",
+   "atype": "rate_limit_abuse",
+   "sev": 0.9
+  },
+  {
+   "iid": "NEG-1",
+   "atype": "Latency_Spike",
+   "sev": 0.95
+  },
+  {
+   "iid": "NEG-2",
+   "atype": "unregistered_alien_type",
+   "sev": 0.99
+  }
+ ],
+ "roster": [
+  "latency_spike",
+  "memory_leak",
+  "heartbeat_miss",
+  "config_drift",
+  "integration_degraded",
+  "rate_limit_abuse",
+  "intune_enrollment_failure",
+  "error_rate_spike",
+  "queue_backlog",
+  "scheduler_drift"
+ ]
+}
