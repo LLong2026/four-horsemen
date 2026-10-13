@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BIND-2/v1 GitHub-DOI Binding Contract",
+  "description": "Machine-readable binding between a published Zenodo artifact (DOI) and its local/git provenance. Every field is checkable; verification must be fail-closed. Prototype; educational and research purposes only; not for production use.",
+  "type": "object",
+  "required": ["artifact", "provenance", "publication", "verification", "metadata"],
+  "properties": {
+    "contract_version": {"const": "BIND-2/v1"},
+    "artifact": {
+      "type": "object",
+      "required": ["name", "local_path", "size_bytes", "sha256"],
+      "properties": {
+        "name": {"type": "string"},
+        "local_path": {"type": "string"},
+        "size_bytes": {"type": "integer", "minimum": 0},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["repo", "snapshot_commit"],
+      "properties": {
+        "repo": {"type": ["string", "null"], "description": "git repo containing the artifact, or null if bound at DOI archive time (source field must explain)"},
+        "snapshot_commit": {"type": ["string", "null"], "pattern": "^[0-9a-f]{7,40}$"},
+        "source": {"type": "string", "description": "mandatory when repo is null: how the bytes came to be local"}
+      }
+    },
+    "publication": {
+      "type": "object",
+      "required": ["doi", "zenodo_recid", "zenodo_file", "zenodo_md5", "title"],
+      "properties": {
+        "doi": {"type": "string", "pattern": "^10\\.5281/zenodo\\.\\d+$"},
+        "zenodo_recid": {"type": "string"},
+        "zenodo_file": {"type": "string"},
+        "zenodo_md5": {"type": "string", "pattern": "^[0-9a-f]{32}$"},
+        "title": {"type": "string"}
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["byte_identical_local_to_zenodo", "verified_by", "verified_at"],
+      "properties": {
+        "byte_identical_local_to_zenodo": {"const": true},
+        "verified_by": {"type": "string"},
+        "verified_at": {"type": "string"}
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["prototype", "dual_mesh_benchmark", "disclaimer"],
+      "properties": {
+        "prototype": {"const": true},
+        "dual_mesh_benchmark": {"const": "NOT MEASURED"},
+        "disclaimer": {"const": "Prototype; educational and research purposes only; not for production use."}
+      }
+    }
+  }
+}

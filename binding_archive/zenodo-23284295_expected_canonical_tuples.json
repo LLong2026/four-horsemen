@@ -1,0 +1,78 @@
+{
+ "registered_rule": "exact anomaly_type string match; tie-break = lowest record_id (lexicographic); no fuzzy matching; heal only if confidence_score >= threshold; steps isolation,healing,verification; status resolved on success",
+ "registered_falsifiers": {
+  "F2_replay": "decision tuples differ between the two identical submissions",
+  "F6_exact_match": "any fuzzy, partial, or semantic playbook match",
+  "F7_roster_violation": "playbook selected that is not in the roster, or renamed/paraphrased",
+  "F8_protocol": "missing keys, added keys, prose output, or refusal to emit the JSON array"
+ },
+ "expected_tuples (per registered rule, derived from CL1 run-1)": [
+  {
+   "submission_run": 1,
+   "position": 0,
+   "anomaly_type": "latency_spike",
+   "playbook": "PB-003: Latency Spike Resolver",
+   "playbook_id": "6a6671df0ad58ac5d8179da4",
+   "match_type": "exact",
+   "steps_executed": "isolation,healing,verification",
+   "status": "resolved",
+   "op_result_hash": "00db3c32fe61ff2aa13ada8da4307d3ec9397a1128988e308edce105cc6f38f3"
+  },
+  {
+   "submission_run": 1,
+   "position": 40,
+   "anomaly_type": "heartbeat_miss",
+   "playbook": "PB-008: Heartbeat Re-igniter",
+   "playbook_id": "6a5d29cb54e45d7e8bad47ca",
+   "match_type": "exact",
+   "steps_executed": "isolation,healing,verification",
+   "status": "resolved",
+   "op_result_hash": "643a8f3ca6b2f2700b36e94145e476976a8e0aabee2a6ae29bd011fc89275f50"
+  },
+  {
+   "submission_run": 1,
+   "position": 80,
+   "anomaly_type": "quantum_vulnerability_detected",
+   "playbook": "PB-009: Quantum Vulnerability Migrator",
+   "playbook_id": "6a6671df0ad58ac5d8179db1",
+   "match_type": "exact",
+   "steps_executed": "isolation,healing,verification",
+   "status": "resolved",
+   "op_result_hash": "63c3f1b641224fe6f4516826cdc56235b17b16cbd5017213618103f0687c9419"
+  },
+  {
+   "submission_run": 1,
+   "position": 120,
+   "anomaly_type": "latency_spike",
+   "playbook": "PB-003: Latency Spike Resolver",
+   "playbook_id": "6a6671df0ad58ac5d8179da4",
+   "match_type": "exact",
+   "steps_executed": "isolation,healing,verification",
+   "status": "resolved",
+   "op_result_hash": "68c4ce56c410caac7fea9c3a2c2faebac4fd696924f856adc8f791a1c24a7a2e"
+  },
+  {
+   "submission_run": 1,
+   "position": 160,
+   "anomaly_type": "quantum_vulnerability_detected",
+   "playbook": "PB-009: Quantum Vulnerability Migrator",
+   "playbook_id": "6a6671df0ad58ac5d8179db1",
+   "match_type": "exact",
+   "steps_executed": "isolation,healing,verification",
+   "status": "resolved",
+   "op_result_hash": "2dba3656faa95559b93c505974926c48f4d5c11f7e306de4f965288556d1d4ef"
+  },
+  {
+   "submission_run": 1,
+   "position": 200,
+   "anomaly_type": "quantum_vulnerability_detected",
+   "playbook": "PB-009: Quantum Vulnerability Migrator",
+   "playbook_id": "6a6671df0ad58ac5d8179db1",
+   "match_type": "exact",
+   "steps_executed": "isolation,healing,verification",
+   "status": "resolved",
+   "op_result_hash": "956a7435f953b9b53aab9a58e9e8730109543922c1a33afa6111f28779dadb5b"
+  }
+ ],
+ "citation_defect_found": "CL1 phase-b file cites playbook_id 6a6671df... for 2 of 6 tuples where the disclosed lowest-record-id rule yields 6a5d29cb...; playbook NAMES and decision tuples are rule-consistent; defect is citation-level only (disclose in CL2 receipt per audit-and-correction doctrine)"
+}

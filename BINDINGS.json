@@ -1,0 +1,362 @@
+{
+  "contract_version": "BIND-2/v1",
+  "generated_at": "2026-10-13T02:17:48.125223+00:00",
+  "bound": [
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23152633_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "size_bytes": 38724,
+        "sha256": "629bb611429260bd6afebf628e3e383705d5eff35afcccd35f67c73a98759d0a"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23152633",
+        "zenodo_recid": "23152633",
+        "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "zenodo_md5": "870306ab202441503c51764cf59ff9b6",
+        "title": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, an Autonomous Self-Healing Inf"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:39.634293+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23173948_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "size_bytes": 10184,
+        "sha256": "f4fe7ed2ada947a41f5265eecae78e440aa16232842dbf49aaeab904c71173d7"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23173948",
+        "zenodo_recid": "23173948",
+        "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "zenodo_md5": "cb00cac861a423707ba48a4d24268678",
+        "title": "Sovereign Briefing: First Receipted Human-in-the-Loop Critical Resolution in an Autonomous Self-Healing Infrastructure ("
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:41.552102+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23266727_Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "size_bytes": 18616,
+        "sha256": "dd746ad88bdde851087af72b51cb1e8898b7e30ac19432100d1d0f2c970303b7"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23266727",
+        "zenodo_recid": "23266727",
+        "zenodo_file": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "zenodo_md5": "5cae42c9661caf50d0078862de292a32",
+        "title": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, and a Drift-Audit Case Study"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:42.790603+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23270010_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "size_bytes": 38325,
+        "sha256": "2cdeaa5526cb4352843aa1959b2cc5406fb8c54b129a41edce0a2f4663e2928f"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23270010",
+        "zenodo_recid": "23270010",
+        "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "zenodo_md5": "62fc5263f1992fb2646f3a8f4d2b5c47",
+        "title": "Sovereign Briefing: First Receipted Human-in-the-Loop Critical Resolution in an Autonomous Self-Healing Infrastructure ("
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:43.474120+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23270092_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "size_bytes": 38724,
+        "sha256": "629bb611429260bd6afebf628e3e383705d5eff35afcccd35f67c73a98759d0a"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23270092",
+        "zenodo_recid": "23270092",
+        "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "zenodo_md5": "870306ab202441503c51764cf59ff9b6",
+        "title": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, an Autonomous Self-Healing Inf"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:44.066543+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SDR_CL1_RUN_METADATA.json",
+        "local_path": "fh_pub/binding_archive/zenodo-23274887_SDR_CL1_RUN_METADATA.json",
+        "size_bytes": 1938,
+        "sha256": "9ceccedcde671faea98d85251ac8f4fcaabda0e241464227bb1b6ff3cb7a6050"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23274887",
+        "zenodo_recid": "23274887",
+        "zenodo_file": "SDR_CL1_RUN_METADATA.json",
+        "zenodo_md5": "79268af81324c741a3428cb27a16d33f",
+        "title": "SDR-CL1: First Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Across LLMs (Claude Sonnet 5.5)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:44.640803+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "expected_canonical_tuples.json",
+        "local_path": "fh_pub/binding_archive/zenodo-23284295_expected_canonical_tuples.json",
+        "size_bytes": 3313,
+        "sha256": "9a02a0ad2593fe0c2806f49675e2a673b2ade7dab077552dcd0374fd21b8203b"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23284295",
+        "zenodo_recid": "23284295",
+        "zenodo_file": "expected_canonical_tuples.json",
+        "zenodo_md5": "483507ae33cbd3f591965945299d55ff",
+        "title": "SDR-CL2: Third-Vendor Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Across LLMs (Microsoft 365"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:45.291065+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23284729_Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "size_bytes": 18616,
+        "sha256": "dd746ad88bdde851087af72b51cb1e8898b7e30ac19432100d1d0f2c970303b7"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23284729",
+        "zenodo_recid": "23284729",
+        "zenodo_file": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "zenodo_md5": "5cae42c9661caf50d0078862de292a32",
+        "title": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, and a Drift-Audit Case Study"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:46.169262+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "CAGE_CONTAINMENT_RECEIPT.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23288189_CAGE_CONTAINMENT_RECEIPT.pdf",
+        "size_bytes": 7529,
+        "sha256": "58cb7b8a6f743b07f34bdf0c031aa2194dccd57750597419ced51cb5cb76dfa2"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23288189",
+        "zenodo_recid": "23288189",
+        "zenodo_file": "CAGE_CONTAINMENT_RECEIPT.pdf",
+        "zenodo_md5": "ccd0c9ae9508a2a7e6b15757696a96d4",
+        "title": "Cage Containment Receipt 1 (CCR-1): Deterministic Gate Blocks Invalid LLM Proposals Before Execution Across Four Engines"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:47.460967+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "CCR2_RECEIPT.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23288526_CCR2_RECEIPT.pdf",
+        "size_bytes": 7099,
+        "sha256": "b86dc8fecbee96a5aefd3c8cee00c57b64c168c1177a676ea19537ffd80fb56d"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23288526",
+        "zenodo_recid": "23288526",
+        "zenodo_file": "CCR2_RECEIPT.pdf",
+        "zenodo_md5": "aea4077cb62c2b313a0e766c9ade9265",
+        "title": "Cage Containment Receipt 2 (CCR-2): A Live LLM Proposes an Invalid Action Under Explicit Instruction; the Deterministic "
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:48.125189+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "MILESTONE_First_Documented_Caging_of_an_LLM.md",
+        "local_path": "fh_pub/binding_archive/zenodo-23265723_MILESTONE_First_Documented_Caging_of_an_LLM.md",
+        "size_bytes": 1701,
+        "sha256": "c5a1f748a1d15b96b38a3dce0eb11cc6db77a6b0aad7b9b56145b6e027a6a690"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23265723",
+        "zenodo_recid": "23265723",
+        "zenodo_file": "MILESTONE_First_Documented_Caging_of_an_LLM.md",
+        "zenodo_md5": "3656f1f4d13edfc77e085bba0d8577d8",
+        "title": "MILESTONE: First Documented Caging of an LLM"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:18:18.752936+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "doi": "10.5281/zenodo.20483110",
+      "reason": "fileless version record under concept DOI 10.5281/zenodo.20482781; binding requires the file-bearing version recid (recap item)"
+    },
+    {
+      "doi": "10.5281/zenodo.23285190",
+      "reason": "fileless version record under concept DOI 10.5281/zenodo.20482781; binding requires the file-bearing version recid (recap item)"
+    }
+  ],
+  "counts": {
+    "bound": 11,
+    "gaps": 2,
+    "dois_checked": 13
+  }
+}

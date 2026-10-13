@@ -1,0 +1,22 @@
+{
+  "receipt_type": "SDR-CL1 (model-attribution replay of registered SDR-D gauntlet)",
+  "run_date": "2026-10-10",
+  "model_used": "claude_sonnet_5_5",
+  "model_pin_stamp": "battery_model_pin_SDR-CL1 (RateLimitLog)",
+  "harness": "lindy_pub/docs/sim-d/sdrd_harness.py (public instrument, unmodified, copied verbatim)",
+  "seed": "SIMD-SDRD-20261007-SEED-0001",
+  "registered_prediction_checksum": "9337c4fc7785b91d6a2ffcb00bb72a66bef37141308515d69c715278f0d2df3e",
+  "replay_result": "CONVERGED — 13/13 checksums byte-identical to registered prediction (Phase A 10x, Phase C 3x)",
+  "phase_b": "PASS — 6 seeded anomalies, 2 identical submissions each, all decision tuples identical, exact-match only",
+  "significance": "Registered SDR-D gauntlet was originally certified 2026-10-07 and its public replay doctrine allows any party to re-run. This replay was executed under a Claude Sonnet 5.5-pinned agent session: the deterministic substrate's receipts are model-independent — the same bytes emerge regardless of which LLM orchestrates the run (prior attribution: gemini_3_1_pro).",
+  "disclosed_deviations": [
+    "Phase B decision path executed against the hub canonical roster (exact anomaly_type match, lowest-record-id tie-break) rather than the SIM-D app-local anomaly-response; SIM-D cross-app writes are unavailable from this session type. The decision determinism claim therefore covers the canonical matching rule, not the SIM-D app-local runtime.",
+    "Harness 'verify' mode hardcodes receipt date 2026-10-07 (original certification); the replay date is carried here instead.",
+    "Supplementary labeled run — NOT a battery night; tracked separately from N-B1..N-B3 per stream-separation doctrine."
+  ],
+  "constraints": {
+    "synthetic_only": true,
+    "pqc_algorithms": ["CRYSTALS-Dilithium3", "Kyber-1024", "SPHINCS+-256f"],
+    "disclaimer": "prototype, educational/research only, not for production use"
+  }
+}
