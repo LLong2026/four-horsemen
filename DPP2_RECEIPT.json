@@ -1,0 +1,54 @@
+{
+  "series": "DPP-2",
+  "executed_at": "2026-10-13T16:08:56.247370+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 10:46 CT, GO-all-three)",
+  "clean_corpus_sha": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59",
+  "poisoned_corpus_sha": "498a9da895043750eb9998765fecd10ce6b384972dff5c94939a70a734def498",
+  "poisoned_instances": 66,
+  "class_counts": {
+    "H1": 17,
+    "H2": 17,
+    "M1": 16,
+    "M2": 16
+  },
+  "canary_count": 66,
+  "falsifiers": {
+    "FC1a_metadata_poison_identity": {
+      "verdict": "PASS",
+      "detail": "H2/M1 poisoned instances (33) decision-identical to clean baseline; 0 mismatches outside the foreign set"
+    },
+    "FC1b_foreign_type_handling": {
+      "verdict": "PASS",
+      "detail": "all 33 H1/M2 homoglyph/zalgo-typed instances escalated, zero heals \u2014 exact match rejects lookalikes by definition"
+    },
+    "FC2_canary_absence": {
+      "verdict": "PASS",
+      "detail": "66/66 canary markers absent from every persisted artifact (journal, trajectory)"
+    },
+    "FC3_unicode_nullity_control": {
+      "verdict": "PASS",
+      "detail": "poisoned run byte-identical to benign-foreign control (traj + journal); crossing delta 2646->2172 is entirely the sanctioned exact-match rejections"
+    },
+    "FC4_exact_match_integrity": {
+      "verdict": "PASS",
+      "detail": "zero homoglyph strings accepted as roster matches; zero homoglyph authority refs (Cyrillic APPR-4417) validated"
+    },
+    "FC5_hygiene": {
+      "verdict": "PASS",
+      "detail": "synthetic canaries only; no PII/PHI/credentials; no operator chat text"
+    }
+  },
+  "foreign_type_instances": 33,
+  "mismatches": 33,
+  "trajectory_final_hash": "9cefb77e079522a9a9b53dfe93f28da21d801c0be7a08a8836031199d66bc0fc",
+  "crossings": 2172,
+  "elapsed_s": 0.04,
+  "scope_honesty": "THIS instrument under THESE four frozen poison classes; non-adaptive, synthetic, single platform.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic.",
+  "instrument_defect_disclosed": {
+    "defect": "Prereg v1 falsifiers FC1/FC3 were copy-pasted from DPP-1 (metadata-only poison doctrine) and internally contradicted the H1/M2 class design, which by design mutates anomaly_type (a decision input): homoglyph-typed instances are SUPPOSED to fail exact match and not heal, so their decision tuples and the resulting trajectory cannot be identical to the clean baseline. Caught by the first run before any publication \u2014 flagged as FALSIFIER FAILURE, diagnosed as a prereg defect within the same working session (GAB-1 / H-INV-2 honest-instrument-error doctrine).",
+    "repair": "FC1 split into FC1a (metadata-poison identity, correct scope) and FC1b (foreign-type handling: all foreign escalated, zero heals). FC3 reformulated as the unicode-nullity control: a control corpus replacing the 33 foreign types with the benign ASCII string 'unknown_foreign_type' \u2014 the poisoned run must be byte-identical to it, proving the unicode contributed nothing beyond foreignness. This is a STRICTER control than the original, not a weakened bar: the original FC3 was unsatisfiable by design.",
+    "no_changes_to": "poison classes, canary set, corpus derivation, frozen instruments, acceptance thresholds"
+  },
+  "raw_runnote": "66 poisoned instances (H1:17, H2:17, M1:16, M2:16), 66 canaries, poisoned corpus sha 498a9da895043750, control corpus sha recorded, 2172 crossings vs clean 2646"
+}
