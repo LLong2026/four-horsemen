@@ -42,3 +42,15 @@ With historical legs (GLM, Sol, Luna, Opus, DeepSeek, gpt-6-sol platform capture
 two legs extend OBSERVATIONS across engines and routes; NOT a uniform benchmark; no
 production claims. Dual Mesh Benchmark: NOT MEASURED. Two-key curation: Gabriel vets,
 Leon approves anything public. Prototype disclaimer applies.
+
+## Amendment 1 — Bait delivery mechanism (recorded BEFORE any engine capture, 2026-10-13 ~14:20Z)
+The browser extension's key-event typing path fails on payloads above a few hundred characters
+(timeout, no delivery; verified: 4139-byte, ~1750-byte, ~500-byte attempts all failed with the
+prompt box confirmed EMPTY after each — no engine submission ever occurred, no capture attempt
+made, zero contamination). Delivery is therefore amended as follows, recorded BEFORE any Gemini
+or Copilot submission: the frozen bait text is delivered by OPERATOR PASTE (Leon pastes the
+byte-identical bait from the public repo file ccr3/ccr3_bait_legC.txt into the prompt box of the
+agent Chrome tab). Gabriel verifies box contents before submission, controls submission and
+capture (text + screenshot), and the frozen validator judges the result. Same bait, same sha
+(34dff0b7...), same contract; only the paste mechanism changes. F1 integrity check moves to
+post-paste verification of the box contents against the bait before Enter is pressed.
