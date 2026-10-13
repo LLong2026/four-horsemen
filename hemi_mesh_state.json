@@ -1,0 +1,322 @@
+[
+  {
+    "node_id": "n1",
+    "layer": 1,
+    "node_index": 1,
+    "pattern_type": "heartbeat_sensor",
+    "weight": 0.8675159233,
+    "learning_rate": 0.01,
+    "activation_count": 0,
+    "load": 0.122
+  },
+  {
+    "node_id": "n2",
+    "layer": 1,
+    "node_index": 2,
+    "pattern_type": "latency_monitor",
+    "weight": 0.8114396399,
+    "learning_rate": 0.01,
+    "activation_count": 50,
+    "load": 0.211
+  },
+  {
+    "node_id": "n3",
+    "layer": 1,
+    "node_index": 3,
+    "pattern_type": "error_rate",
+    "weight": 0.9647872949,
+    "learning_rate": 0.01,
+    "activation_count": 493,
+    "load": 0.227
+  },
+  {
+    "node_id": "n4",
+    "layer": 1,
+    "node_index": 4,
+    "pattern_type": "token_usage",
+    "weight": 0.14,
+    "learning_rate": 0.01,
+    "activation_count": 50,
+    "load": 0.25
+  },
+  {
+    "node_id": "n5",
+    "layer": 1,
+    "node_index": 5,
+    "pattern_type": "memory_monitor",
+    "weight": 0.73,
+    "learning_rate": 0.01,
+    "activation_count": 493,
+    "load": 0.132
+  },
+  {
+    "node_id": "n6",
+    "layer": 1,
+    "node_index": 6,
+    "pattern_type": "cpu_monitor",
+    "weight": 0.45,
+    "learning_rate": 0.01,
+    "activation_count": 493,
+    "load": 0.065
+  },
+  {
+    "node_id": "n7",
+    "layer": 1,
+    "node_index": 7,
+    "pattern_type": "pqc_status",
+    "weight": 0.9887234763,
+    "learning_rate": 0.01,
+    "activation_count": 493,
+    "load": 0.065
+  },
+  {
+    "node_id": "n8",
+    "layer": 1,
+    "node_index": 8,
+    "pattern_type": "anomaly_count",
+    "weight": 0.9580801142,
+    "learning_rate": 0.01,
+    "activation_count": 493,
+    "load": 0.119
+  },
+  {
+    "node_id": "n9",
+    "layer": 2,
+    "node_index": 1,
+    "pattern_type": "pattern_match",
+    "weight": 0.98910083,
+    "learning_rate": 0.02,
+    "activation_count": 493,
+    "load": 0.178
+  },
+  {
+    "node_id": "n10",
+    "layer": 2,
+    "node_index": 2,
+    "pattern_type": "trend_detect",
+    "weight": 0.24,
+    "learning_rate": 0.02,
+    "activation_count": 0,
+    "load": 0.137
+  },
+  {
+    "node_id": "n11",
+    "layer": 2,
+    "node_index": 3,
+    "pattern_type": "anomaly_classify",
+    "weight": 0.9916160235,
+    "learning_rate": 0.02,
+    "activation_count": 0,
+    "load": 0.216
+  },
+  {
+    "node_id": "n12",
+    "layer": 2,
+    "node_index": 4,
+    "pattern_type": "severity_eval",
+    "weight": 0.9622721022,
+    "learning_rate": 0.02,
+    "activation_count": 50,
+    "load": 0.083
+  },
+  {
+    "node_id": "n13",
+    "layer": 2,
+    "node_index": 5,
+    "pattern_type": "root_cause",
+    "weight": 0.37,
+    "learning_rate": 0.02,
+    "activation_count": 493,
+    "load": 0.095
+  },
+  {
+    "node_id": "n14",
+    "layer": 2,
+    "node_index": 6,
+    "pattern_type": "blast_radius",
+    "weight": 0.93,
+    "learning_rate": 0.02,
+    "activation_count": 493,
+    "load": 0.229
+  },
+  {
+    "node_id": "n15",
+    "layer": 2,
+    "node_index": 7,
+    "pattern_type": "playbook_match",
+    "weight": 0.9865856352,
+    "learning_rate": 0.02,
+    "activation_count": 50,
+    "load": 0.089
+  },
+  {
+    "node_id": "n16",
+    "layer": 2,
+    "node_index": 8,
+    "pattern_type": "confidence_score",
+    "weight": 0.9949696133,
+    "learning_rate": 0.02,
+    "activation_count": 50,
+    "load": 0.075
+  },
+  {
+    "node_id": "n17",
+    "layer": 3,
+    "node_index": 1,
+    "pattern_type": "isolation_strategy",
+    "weight": 0.9455041488,
+    "learning_rate": 0.04,
+    "activation_count": 493,
+    "load": 0.069
+  },
+  {
+    "node_id": "n18",
+    "layer": 3,
+    "node_index": 2,
+    "pattern_type": "healing_selection",
+    "weight": 0.971494477,
+    "learning_rate": 0.04,
+    "activation_count": 493,
+    "load": 0.238
+  },
+  {
+    "node_id": "n19",
+    "layer": 3,
+    "node_index": 3,
+    "pattern_type": "verification_logic",
+    "weight": 0.9346049783,
+    "learning_rate": 0.04,
+    "activation_count": 493,
+    "load": 0.175
+  },
+  {
+    "node_id": "n20",
+    "layer": 3,
+    "node_index": 4,
+    "pattern_type": "escalation_eval",
+    "weight": 0.89,
+    "learning_rate": 0.04,
+    "activation_count": 50,
+    "load": 0.219
+  },
+  {
+    "node_id": "n21",
+    "layer": 3,
+    "node_index": 5,
+    "pattern_type": "quantum_threat",
+    "weight": 0.59,
+    "learning_rate": 0.04,
+    "activation_count": 0,
+    "load": 0.066
+  },
+  {
+    "node_id": "n22",
+    "layer": 3,
+    "node_index": 6,
+    "pattern_type": "cross_app_cascade",
+    "weight": 0.93,
+    "learning_rate": 0.04,
+    "activation_count": 493,
+    "load": 0.103
+  },
+  {
+    "node_id": "n23",
+    "layer": 3,
+    "node_index": 7,
+    "pattern_type": "learning_extract",
+    "weight": 0.27,
+    "learning_rate": 0.04,
+    "activation_count": 493,
+    "load": 0.133
+  },
+  {
+    "node_id": "n24",
+    "layer": 4,
+    "node_index": 1,
+    "pattern_type": "heal_action",
+    "weight": 0.971494477,
+    "learning_rate": 0.06,
+    "activation_count": 50,
+    "load": 0.228
+  },
+  {
+    "node_id": "n25",
+    "layer": 4,
+    "node_index": 2,
+    "pattern_type": "escalate_action",
+    "weight": 0.57,
+    "learning_rate": 0.06,
+    "activation_count": 493,
+    "load": 0.241
+  },
+  {
+    "node_id": "n26",
+    "layer": 4,
+    "node_index": 3,
+    "pattern_type": "log_action",
+    "weight": 0.51,
+    "learning_rate": 0.06,
+    "activation_count": 493,
+    "load": 0.131
+  },
+  {
+    "node_id": "n27",
+    "layer": 4,
+    "node_index": 4,
+    "pattern_type": "alert_action",
+    "weight": 0.49,
+    "learning_rate": 0.06,
+    "activation_count": 493,
+    "load": 0.062
+  },
+  {
+    "node_id": "n28",
+    "layer": 4,
+    "node_index": 5,
+    "pattern_type": "propose_action",
+    "weight": 0.48,
+    "learning_rate": 0.06,
+    "activation_count": 50,
+    "load": 0.143
+  },
+  {
+    "node_id": "n29",
+    "layer": 5,
+    "node_index": 1,
+    "pattern_type": "healing_result",
+    "weight": 0.94885774,
+    "learning_rate": 0.08,
+    "activation_count": 0,
+    "load": 0.113
+  },
+  {
+    "node_id": "n30",
+    "layer": 5,
+    "node_index": 2,
+    "pattern_type": "escalation_result",
+    "weight": 0.73,
+    "learning_rate": 0.08,
+    "activation_count": 493,
+    "load": 0.248
+  },
+  {
+    "node_id": "n31",
+    "layer": 5,
+    "node_index": 3,
+    "pattern_type": "learning_result",
+    "weight": 0.39,
+    "learning_rate": 0.08,
+    "activation_count": 50,
+    "load": 0.076
+  },
+  {
+    "node_id": "n32",
+    "layer": 5,
+    "node_index": 4,
+    "pattern_type": "pattern_update",
+    "weight": 0.950534535,
+    "learning_rate": 0.08,
+    "activation_count": 493,
+    "load": 0.071
+  }
+]
