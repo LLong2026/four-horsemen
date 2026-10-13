@@ -1,6 +1,6 @@
 # SQUIRL OS PQC Baseline Standard — v1 (DRAFT, two-key review pending)
 
-**Status: DRAFT — Gabriel vet complete; awaiting Leon's review and GO before any publication.**
+**Status: APPROVED — Leon ACK (chat ack, Oct 13, 2026, 13:53 CT). Gabriel vet complete. Two-key curation satisfied.**
 Basis: PQC-B1 battery receipt (56/56 epochs, 6/6 falsifiers, 2026-10-13) + fleet inventory baseline.
 Authorization context: Leon (chat authorization, Oct 13, 2026, 13:51 CT).
 
@@ -25,7 +25,7 @@ Per operating rule: PQC adaptation must use ONLY these approved algorithms. Neve
 ## 3. Identification doctrine
 
 1. **Byte-exact by default.** An algorithm is identified by exact string match against §2. No normalization, no canonicalization, no fuzzy matching. PQC-B1 LEG D proved visual/canonicalization variants (lowercase, fullwidth, homoglyphs, zero-width) are rejected.
-2. **Name-equivalence table (pending SIP-8).** FIPS published names name the same algorithms but are not approved strings. The equivalence mapping ships ONLY as a human-approved, versioned governance change (SIP-8, Constitution Art. 2.2 cycle). Until SIP-8 is approved, FIPS-name references escalate to a human — never auto-resolved, never silently patched.
+2. **Name-equivalence table (SIP-8 — APPROVED AND DEPLOYED as governance v1.1).** FIPS published names name the same algorithms but are not approved strings. The equivalence mapping (ML-DSA-65 -> CRYSTALS-Dilithium3; ML-KEM-1024 -> kyber_1024; SLH-DSA-256f -> SPHINCS+-256f; CRYSTALS-Kyber-1024 -> kyber_1024, the fleet's own historical variant) shipped through the human-approval cycle (Leon ACK, Oct 13, 2026, 13:53 CT, Constitution Art. XII). The table is byte-exact key lookup — NOT string normalization: lowercase, spaced, zero-width variants still reject, and ML-DSA-44 (Dilithium2's FIPS name) correctly rejects because it maps to nothing in the approved set. Deployment verification: PQC-B1b, 8/8 conform, 3/3 falsifiers (FBPB-1/2/3).
 
 ## 4. Migration gates (enforcement)
 

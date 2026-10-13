@@ -1046,6 +1046,23 @@
       "authorization": "Leon GO (chat authorization, Oct 13, 2026, 13:15 CT)",
       "bound_at": "2026-10-13T18:16:58.130686+00:00",
       "description": "DMB-X multi-engine extension: prereg (commit b293d58), receipt, runners, per-instance raw evidence for 8 engine legs; round-trip verified byte-identical"
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "pqc_b1_bundle.zip",
+        "local_path": "fh_pub/binding_archive/pqc_b1_23349379_045bef7e365d.zip",
+        "size_bytes": 70759,
+        "sha256": "045bef7e365d1ed08b5e4ed59c536e9f7d9c95ed27bc39cc7281672478ee59b9"
+      },
+      "provenance": {
+        "doi": "10.5281/zenodo.23349379",
+        "record_url": "https://zenodo.org/records/23349379",
+        "published_at": "2026-10-13T18:56:00Z"
+      },
+      "authorization": "Leon GO (chat authorization, 13:51 CT) + Leon ACK (chat ack, 13:53 CT)",
+      "bound_at": "2026-10-13T18:54:50.619533+00:00",
+      "description": "PQC Baseline Standard v1 (approved) + PQC-B1 battery receipt + PQC-B1b SIP-8 deployment verification; round-trip verified byte-identical"
     }
   ],
   "gaps": [
@@ -1064,7 +1081,7 @@
     }
   ],
   "counts": {
-    "bound": 31,
+    "bound": 32,
     "gaps": 2,
     "dois_checked": 14
   }

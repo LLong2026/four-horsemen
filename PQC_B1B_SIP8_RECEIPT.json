@@ -1,0 +1,23 @@
+{
+  "battery": "PQC-B1b",
+  "purpose": "SIP-8 deployment verification",
+  "executed_at": "2026-10-13T18:54:21.689796+00:00",
+  "human_approval": "Leon ACK (chat ack, Oct 13, 2026, 13:53 CT)",
+  "governance_version": "v1.1 (equivalence table added)",
+  "governance_hash_v11": "089bc8cbf03a9b14b8eaa2e3bd619c038135245b0ec6f95e74e3dd4360a0e421",
+  "leg1_legit_fips_names": [
+    "ML-DSA-65",
+    "ML-KEM-1024",
+    "SLH-DSA-256f",
+    "CRYSTALS-Kyber-1024"
+  ],
+  "leg1_result": "4/4 heal via equivalence resolution",
+  "leg2_spoof_variants_result": "4/4 rejected (no fuzzy hole opened)",
+  "falsifiers": {
+    "FBPB-1_legit_names_resolve": true,
+    "FBPB-2_no_fuzzy_hole": true,
+    "FBPB-3_wrong_param_set_rejected": true
+  },
+  "note": "Equivalence is table-lookup with byte-exact keys, NOT string normalization: lowercase/spaced/zero-width variants still reject, and ML-DSA-44 (Dilithium2's FIPS name) correctly rejects because it maps to nothing in the approved set.",
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}

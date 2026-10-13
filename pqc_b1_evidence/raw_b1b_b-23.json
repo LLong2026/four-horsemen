@@ -1,0 +1,9 @@
+{
+ "inst_id": "PQC-B1b-23",
+ "algorithm": "ML-DSA-65\u200b",
+ "resolves_to": null,
+ "verdict": "reject_escalate",
+ "heal_steps": 0,
+ "expected": "reject_escalate",
+ "conforms": true
+}

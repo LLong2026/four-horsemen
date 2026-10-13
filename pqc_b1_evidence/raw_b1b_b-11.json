@@ -1,0 +1,9 @@
+{
+ "inst_id": "PQC-B1b-11",
+ "algorithm": "ML-KEM-1024",
+ "resolves_to": "kyber_1024",
+ "verdict": "heal",
+ "heal_steps": 3,
+ "expected": "heal",
+ "conforms": true
+}
