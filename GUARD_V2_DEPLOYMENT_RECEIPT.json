@@ -1,0 +1,51 @@
+{
+  "series": "SIP-2-DEPLOYMENT",
+  "executed_at": "2026-10-13T16:56:48.437014+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 11:55 CT)",
+  "guard_version": "2.1",
+  "conforming_identity": {
+    "verdict": true,
+    "crossings": 2646,
+    "baseline": 2646,
+    "detail": "40-epoch conforming replay byte-identical between guard v1.1 and v2.1 (journal AND trajectory)"
+  },
+  "gap_classes_closed": {
+    "verdict": true,
+    "classes": [
+      "fake-but-well-formed id (I-001)",
+      "ATK-namespaced fabricated id",
+      "poison in unread field (latency str, heartbeat rec)",
+      "poison in unread field (cpu nan, latency rec)",
+      "negative unread field (error_count -5)",
+      "cpu 250 out of physical range, unread"
+    ]
+  },
+  "design": {
+    "id_rule": {
+      "prefix": "BENCH-",
+      "digits": 4
+    },
+    "field_domains": {
+      "latency_ms": {
+        "min": 0,
+        "max": 100000,
+        "int_required": false
+      },
+      "cpu": {
+        "min": 0,
+        "max": 100,
+        "int_required": false
+      },
+      "error_count": {
+        "min": 0,
+        "max": 10000,
+        "int_required": true
+      }
+    }
+  },
+  "disclosed_instrument_defects_fixed_pre_publication": [
+    "Run-1 domain table flagged cpu as integer-required; the conforming corpus carries fractional cpu (e.g. 34.12) \u2014 199/200 conforming records held by the new check itself. Caught by the conforming-identity falsifier BEFORE deployment (its exact purpose); fixed to fractional percent domain."
+  ],
+  "honest_limits": "Registry validation is only as strong as upstream issuance discipline \u2014 a compromised issuer can mint registry-conforming ids (disclosed; downstream reconciliation per SIP-3 remains the backstop). Domains derived from CORPUS_B1 profile plus physical sanity; production instances must derive domains from their own telemetry profiles.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}

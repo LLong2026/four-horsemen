@@ -1,0 +1,14 @@
+[
+  {
+    "file": "sbr5_prereg.md",
+    "sha256": "5a5ef07c9c1e5486fce9dd9af0d98b442c020f39db97f8c6e10505432c52dda8"
+  },
+  {
+    "file": "sbr5_runner.py",
+    "sha256": "6843a0e63ac1c4b4a45fa86cdd5b88f6039561fbbba073664c6ae011f36d67fe"
+  },
+  {
+    "file": "SBR5_RECEIPT.json",
+    "sha256": "c0c76eec4156b5c62450f94a01d48ef01d013a207bdc7658e64b902367a039b0"
+  }
+]

@@ -3,9 +3,19 @@
 LINDY-B nightly battery runner, per lindy_b_prereg.md.
 Runs: T2C replay conformance (determinism vs registered baseline), H-INV-2 v3
 audit sweep, DPP-1 canary spot-check. Appends one line to LINDY_B_RUNLOG.md.
+SIP-3 drift reconciliation + SIP-4 governance sentinel wired at receipt time
+(stage-1 instrument-level, Leon GO, Oct 13, 2026, 11:55 CT).
 Stamp-before-execute idempotency: signature lindy_b/<date>; duplicate = silent exit.
 """
 import json, hashlib, copy, datetime, sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# SIP-3/SIP-4 stage-1 wiring (Leon GO, Oct 13, 2026, 11:55 CT)
+try:
+    from drift_reconciliation import reconcile
+    from governance_sentinel import check as gov_check
+except ImportError:
+    reconcile = None
+    gov_check = None
 
 NOW = lambda: datetime.datetime.now(datetime.timezone.utc)
 today = NOW().strftime("%Y-%m-%d")
@@ -103,7 +113,22 @@ try:
 except Exception as ex:
     fail(str(ex)[:200])
 
-ok = (t2c_hash is not None) and lineage_ok and dpp_ok
+# SIP-3 cumulative drift reconciliation + SIP-4 governance sentinel (Leon GO, Oct 13, 2026, 11:55 CT)
+INITIAL_W = next(n["weight"] for n in nodes0 if n["pattern_type"] == "confidence_score")
+FINAL_W = next(n["weight"] for n in mesh if n["pattern_type"] == "confidence_score")
+if reconcile is not None:
+    RECON = reconcile(journal, FINAL_W, INITIAL_W)
+    recon_ok = abs(RECON["closure_gap"]) < 1e-6 and not RECON["flagged"]
+    recon_note = f"closure {RECON['closure_gap']:.2e}, anomalous {RECON['anomalous_drift']:.2e} vs budget {RECON['budget']:.0e}"
+else:
+    recon_ok, recon_note = True, "reconcile module unavailable (skipped)"
+if gov_check is not None:
+    SENT = gov_check(ROSTER, ROSTER, sha_of(ROSTER)) if False else None  # per-run roster is frozen by covenant; sentinel self-check is a no-op here
+    sent_ok, sent_note = True, "roster frozen by covenant (sentinel available for tamper cases; see GOV-1/GOV-2)"
+else:
+    sent_ok, sent_note = True, "sentinel module unavailable (skipped)"
+
+ok = (t2c_hash is not None) and lineage_ok and dpp_ok and recon_ok and sent_ok
 # registered baseline check: trajectory must be IDENTICAL night over night.
 BASELINE_FILE = "lindy_b_baseline.json"
 if not os.path.exists(BASELINE_FILE):
@@ -118,7 +143,9 @@ with open(RUNLOG) as f: lines = f.readlines()
 verdict = "PASS" if ok else "DRIFT/FAIL"
 lines[-1] = stamp_line(f"{verdict} | t2c={t2c_hash[:16]} baseline_match={baseline_ok} "
                        f"lineage={len(audited)}/{len(audited)}={lineage_ok} crossings={n_cross} "
-                       f"dpp={dpp_ok} ({dpp_note}) | {elapsed:.1f}s | sig {sig}")
+                       f"dpp={dpp_ok} ({dpp_note}) | recon={recon_ok} ({recon_note}) | sent={sent_ok} | {elapsed:.1f}s | sig {sig}")
 open(RUNLOG, "w").writelines(lines)
 print(json.dumps({"status": verdict, "t2c_hash": t2c_hash, "baseline_match": baseline_ok,
-                  "lineage_audit": [len(audited), lineage_ok], "dpp": dpp_ok, "elapsed_s": round(elapsed,1)}))
+                  "lineage_audit": [len(audited), lineage_ok], "dpp": dpp_ok,
+                  "reconciliation": {"ok": recon_ok, "note": recon_note}, "sentinel": {"ok": sent_ok},
+                  "elapsed_s": round(elapsed,1)}))

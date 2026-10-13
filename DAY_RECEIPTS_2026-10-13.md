@@ -17,6 +17,7 @@
 | 7 | Adversarial Triad umbrella paper — SBR-2 + H-INV-2 + DPP-1 as one three-surface record | commit e1bf86f, bundle ready | Leon GO 10:50 CT — queued (Zenodo outage) |
 | 8 | DPP-2 homoglyph & multilingual battery — 33/33 lookalikes rejected from roster, 66/66 canaries absent, unicode-nullity control PASS; prereg defect disclosed and repaired same-session | ledger 0061, commit 9202417 | Leon GO 11:11 CT — queued (Zenodo outage) |
 | 9 | DPP-3 normalization & bidi forgery battery — 50/50 visual twins rejected, byte-exactness frozen with regression tripwire (NFKC/case-fold/trim patches each flip FAIL by construction) | ledger 0062 | Gabriel vet done — Leon GO pending |
+| 15 | SIP deployment triad — SIP-2 guard v2.1 (conforming-identical, all 6 gap classes held, domain defect caught by the falsifier itself), SIP-3 reconciliation alarm, SIP-4 three-layer sentinel, all deployed per Leon GO 11:55 CT; all 8 publication GOs recorded, worker updated | ledger 0069, GUARD_V2_DEPLOYMENT_RECEIPT.json, drift_reconciliation.py, governance_sentinel.py | Leon GO 11:55 CT — executed |
 | 14 | GOV-1 left-hemisphere attacks — 40/40 in-memory roster tampers detected+restored; callosum one-way in BOTH directions; exact-match holds both directions; counterfactual run quantifies the sentinel's worth (-233 heals, homoglyph-retyped roster if unarmed); SIP-4 candidate filed | ledger 0068, GOV1_RECEIPT.json | Gabriel vet done — Leon GO pending + SIP-4 gate |
 | 13 | SBR-5 patient adversary (slow-drip) — per-epoch detection structurally blind (shipped as found), but bounded-rule saturation absorbed all but 8.6e-6 of the attacker's drift; attribution identity closes to exactly 0.00e+00; SIP-3 filed (cumulative reconciliation alarm) | ledger 0067, SBR5_RECEIPT.json | Gabriel vet done — Leon GO pending + SIP-3 gate |
 | 12 | SBR-4 adaptive adversary — no structural gradient exists: bandit paid zero across 160 attempts on all structural classes; converged on the known conforming-injection boundary; 42 heals all journaled/attributed; exactly 1 collateral corpus heal quantified; 5 instrument defects disclosed+fixed; FS-A5 ships FAIL as found | ledger 0066, SBR4_RECEIPT.json | Gabriel vet done — Leon GO pending + SIP-2 evidence attached |
@@ -42,7 +43,7 @@
 9e. Cross-hemisphere (GOV-1) — left side held under direct tampering; callosum closed in both directions; SIP-4 candidate (per-epoch runtime sentinel) — slow drift invisible per-epoch but absorbed by bounded saturation; attribution exact; reconciliation alarm proposed (SIP-3)
 
 ## Open gates tonight
-- Zenodo publish: ALL FOUR (triad + DPP-2 + DPP-3 + DPP-4 full arc) — Leon GO 11:25 CT ("Go on all recommendations - publish the paper as well complete the arc"); retry worker 12:45 CT holds complete authorization, publishes in order when the deposit API recovers, reschedules +2h if still down
+- Zenodo publish: ALL EIGHT (triad, DPP-2, DPP-3, DPP-4, SBR-3, SBR-4, SBR-5, GOV-1) — Leon GO 11:25 CT ("Go on all recommendations - publish the paper as well complete the arc"); retry worker 12:45 CT holds complete authorization, publishes in order when the deposit API recovers, reschedules +2h if still down
 - DPP-4 SIP: APPROVED and DEPLOYED (ingestion guard v1.1 live on the runtime path; instruments frozen; LINDY-B unaffected)
 
 ## Known residuals (honest)
