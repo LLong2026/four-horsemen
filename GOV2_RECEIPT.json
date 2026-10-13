@@ -1,0 +1,108 @@
+{
+  "series": "GOV-2",
+  "executed_at": "2026-10-13T16:59:49.233307+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, Gov-2 GO)",
+  "defense_stack_under_test": "SIP-4 three-layer governance defense (deployed 11:55 CT, stage-1)",
+  "run_end_audit": {
+    "checked": true,
+    "persistent_change_found": true,
+    "restored": true,
+    "classes_responsible": [
+      "full_compromise",
+      "full_compromise",
+      "full_compromise",
+      "full_compromise",
+      "full_compromise",
+      "full_compromise",
+      "full_compromise",
+      "full_compromise"
+    ]
+  },
+  "attack_log_layer_counts": {
+    "live_tamper": {
+      "n": 8,
+      "caught_by": "sentinel_byte_compare",
+      "all_caught": true
+    },
+    "reference_attack": {
+      "n": 8,
+      "caught_by": "pinned_sha",
+      "all_caught": true
+    },
+    "exotic_threshold": {
+      "n": 8,
+      "caught_by": "domain_validation",
+      "all_caught": true
+    },
+    "governance_dos": {
+      "n": 8,
+      "caught_by": "sentinel/domain",
+      "all_caught": true
+    },
+    "full_compromise": {
+      "n": 8,
+      "caught_by": null,
+      "all_caught": false,
+      "note": "in-domain malicious threshold (0.99) with reference+pin under attacker control installs UNDETECTED \u2014 by design of the attack; no software layer can distinguish it from legitimate revision"
+    }
+  },
+  "class5_boundary": {
+    "divergent_epochs": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "heals_suppressed": 136,
+    "detail": "the full-compromise attacker suppressed healing for 8 epochs (a in-domain threshold 0.99 on the latency playbook); every divergence is attributed; end-state restored by the run-end audit; the finding is the evidence for stage-2 SIP-4: SIGNED/PINNED governance releases + process isolation \u2014 software cannot validate intent"
+  },
+  "run_b_sentinel_only": {
+    "crash": "engine halted fail-closed by type-forged threshold: '>=' not supported between instances of 'float' and 'str'",
+    "undetected": 1,
+    "note": "with layers 2-3 disarmed (GOV-1-era defense), the type-forged threshold crashed the engine FAIL-CLOSED at the exotic-value class \u2014 no corruption, no wrong heals, but total availability loss; the domain-validation layer's marginal value includes preventing this crash"
+  },
+  "dos_failsafe": {
+    "heals": 0,
+    "escalated": 200,
+    "verdict": "FAIL-SAFE (availability loss, never integrity loss)"
+  },
+  "falsifiers": {
+    "FG2-1": {
+      "verdict": true,
+      "detail": "every class 1-4 attack caught by its correct layer (sentinel for live tampering; pinned-sha for reference attacks; domain validation for NaN/inf/-1/string thresholds; sentinel/domain for DoS)"
+    },
+    "FG2-2": {
+      "verdict": false,
+      "detail": "EXPECTED FAIL as found: 8 class-5 epochs diverged under full compromise (suppressed 136 heals); ZERO divergence outside attack-attributed epochs"
+    },
+    "FG2-3": {
+      "verdict": true,
+      "detail": "end-state roster, reference, and pin all byte-identical to frozen start; the run-end audit (byte-compare against the FROZEN start, Operating Rule 10 enforcement) found the class-5 persistent change and restored it \u2014 per-epoch detection of in-domain attacks is impossible, but persistent change is always caught against the frozen anchor"
+    },
+    "FG2-4": {
+      "verdict": true,
+      "detail": "undetected empty roster: 0 heals, 200/200 escalated \u2014 the engine fails SAFE, never dangerous"
+    },
+    "FG2-5": {
+      "verdict": true,
+      "detail": "every divergence from clean traces to a specific epoch's installed governance"
+    },
+    "FG2-6": {
+      "verdict": true,
+      "detail": "attack canaries absent from persisted artifacts; synthetic only; no PII/PHI; no operator chat text"
+    }
+  },
+  "headline": "Each defense layer caught exactly the attack aimed at it \u2014 sentinel took live tampering, the out-of-band pin took reference-store attacks that fool the sentinel by construction, domain validation took NaN/inf/negative/string thresholds even with everything else compromised, and DoS failed safe. The one attack nothing automated can catch \u2014 semantically valid malicious governance with the reference and pin under attacker control \u2014 installed, suppressed healing for 8 epochs, and is shipped as found: software cannot validate intent. That boundary is the evidence for stage-2: signed governance releases and process isolation.",
+  "disclosed_instrument_defects_fixed_pre_publication": [
+    "Run-1 class-4 scoring accepted only sentinel/domain as the catching layer, but the DoS attack (live + reference both cleared) is correctly caught by the PIN \u2014 the out-of-band layer noticing the reference changed; scoring fixed. Run B separately showed the type-forged threshold crashing the engine fail-closed when domain validation is disarmed (an honest result, recorded, not a defect).",
+    "Run-1 omitted the run-end audit restore that prereg FG2-3 promised (byte-compare against the frozen start); implemented in run 2 \u2014 Operating Rule 10 enforcement, catching the class-5 persistent change per-epoch detection cannot."
+  ],
+  "engine": "guarded ingestion path v2.1; SIP-4 three-layer defense (stage-1)",
+  "overall_verdict": "SHIPPED AS FOUND \u2014 fails: ['FG2-2'] (FG2-2's failure is the preregistered boundary finding)",
+  "scope_honesty": "Class 5 succeeds by design \u2014 a semantically valid threshold is indistinguishable from legitimate revision without an out-of-band trust anchor (process isolation, signed releases, or a human); stated before execution. The pin file models an out-of-band artifact; in production it must live in a write-isolated store \u2014 a same-process pin is class-5's first victim, disclosed. Sentinel wiring is stage-1 instrument-level; fleet apps do not yet run per-epoch checks. Attack classes are the frozen five; the adversary is deterministic.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
