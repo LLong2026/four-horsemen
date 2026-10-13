@@ -1,6 +1,6 @@
 # HEMI-T2 PREREGISTRATION — Multi-Epoch Convergence Series v1.0
 
-**Registered:** 2026-10-13T02:55Z, before execution, per Leon GO ("HEMI-T2", Oct 12 21:52 CT).
+**Registered:** 2026-10-13T02:55Z, before execution, per Leon GO (chat authorization, Oct 12 21:52 CT).
 **Lineage:** HEMI-1 topology freeze (1779355) -> HEMI-2 protocol (254e58e) -> HEMI-T1 epoch
 (DOI 10.5281/zenodo.23330308, all six falsifiers pass).
 

@@ -1,6 +1,6 @@
 # SENTINEL-R1 PREREGISTRATION — Falsifier-Verified Constitution Sentinel Retrofit v1.0
 
-**Registered:** 2026-10-13T03:45Z, before execution, per Leon GO ("go on both", Oct 12 22:26 CT).
+**Registered:** 2026-10-13T03:45Z, before execution, per Leon GO (chat authorization, Oct 12 22:26 CT).
 **Lineage:** The Sunday 12-article Constitution Sentinel audit becomes a pre-registered
 falsifier suite with pass/fail receipts written to MetaMonitor, per Constitution Art. 12.3
 (Self-Audit mandate). Hemispheric invariants H-INV-1/H-INV-2 are formalized into the

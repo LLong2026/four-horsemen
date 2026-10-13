@@ -1,6 +1,6 @@
 # BIND-3 PREREGISTRATION — Release Worker v1.0 (self-hosting first release)
 
-**Registered:** 2026-10-13T02:26Z, BEFORE any run, per Leon GO ("GO", Oct 12 21:20 CT, following the BIND-3 proposal of 21:13 CT).
+**Registered:** 2026-10-13T02:26Z, BEFORE any run, per Leon GO (chat authorization, Oct 12 21:20 CT, following the BIND-3 proposal of 21:13 CT).
 
 ## Frozen artifact (before execution)
 

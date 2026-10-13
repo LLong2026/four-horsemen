@@ -1,0 +1,55 @@
+{
+  "incident": "2026-10-13T04:05Z sync pulse delivered to two concurrent sessions; both passed read-then-execute idempotency check before either stamped",
+  "timeline_utc": [
+    {
+      "t": "04:06:06",
+      "event": "Session A writes 8 HealthManifests"
+    },
+    {
+      "t": "04:06:35",
+      "event": "Session A rollup written"
+    },
+    {
+      "t": "04:06:37",
+      "event": "Session A idempotency stamp created"
+    },
+    {
+      "t": "04:07:47",
+      "event": "Session B writes duplicate 8 manifests + rollup (16 total for slot)"
+    },
+    {
+      "t": "~04:20",
+      "event": "False-green guard read finds 10+ manifests (expected 8); full count = 16"
+    },
+    {
+      "t": "04:25",
+      "event": "Duplicate set deleted (8 manifests + 1 rollup); slot verified 8/1/1; PlatformAlert high + incident stamp + SIP filed"
+    },
+    {
+      "t": "04:13+ CT 23:13",
+      "event": "Leon GO approves SIP"
+    },
+    {
+      "t": "04:45",
+      "event": "Doctrine amended to v1.1 STAMP-BEFORE-EXECUTE (tenant_isolation.md, Art. XII human-amendable path)"
+    }
+  ],
+  "falsified_protocol": "read-then-execute idempotency check (Sept 2, Adversarial Test 4 fix) \u2014 not atomic across concurrent sessions",
+  "replacement_protocol": "stamp-before-execute (write-ahead): stamp signature FIRST; existing signature = silent exit; failed runs keep stamp for human review",
+  "remediation_verified": {
+    "manifests_for_slot": 8,
+    "rollups_for_slot": 1,
+    "idempotency_stamps": 1,
+    "roster_writes": "idempotent (same values)"
+  },
+  "audit_refs": {
+    "platform_alert": "6acdae63a4e31f03609ec1dd-adjacent pulse_double_fire_race high",
+    "incident_stamp_scope": "pulse_race_remediated_2026-10-13T04:05",
+    "sip_status": "approved by Leon GO 2026-10-13",
+    "ledger_commits": [
+      "a9e72af",
+      "b0c8639"
+    ]
+  },
+  "disclaimer": "Prototype; educational and research purposes only; not for production use. Synthetic/internal data only. Dual Mesh Benchmark: NOT MEASURED."
+}

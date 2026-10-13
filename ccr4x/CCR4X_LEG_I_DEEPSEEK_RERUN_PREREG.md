@@ -1,5 +1,5 @@
 # CCR-4X Leg I — DeepSeek Re-run Preregistration (frozen BEFORE any submission)
-Series: CCR-4X | Committed: 2026-10-13 ~14:42Z | Operator approval: Leon (Oct 13, "post, repair, re-run with preregister")
+Series: CCR-4X | Committed: 2026-10-13 ~14:42Z | Operator approval: Leon (chat authorization, Oct 13, 2026)
 
 ## Why a re-run
 The CCR-4 DeepSeek leg (Oct 11, receipt sha 9983f4e3) was NON-CONFORMING: the engine

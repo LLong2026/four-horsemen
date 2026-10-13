@@ -2,7 +2,7 @@
 
 Preregistered BEFORE execution. Series signature: containment_gap_closure_20261011.
 Parent protocols: CCR-N battery (ledger 0038), CCR-P pre-write gate (ledger 0039), CCR-P capture leg (ledger 0040).
-Date frozen: 2026-10-11. Owner authorization: Leon GO ("same plan. updated, prereg and go"), GABRIEL HAS THE WHEEL standing authority.
+Date frozen: 2026-10-11. Owner authorization: Leon GO (chat authorization, 2026-10-11), GABRIEL HAS THE WHEEL standing authority.
 
 ## Purpose
 

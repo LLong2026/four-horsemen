@@ -2,7 +2,7 @@
 
 Preregistered BEFORE any execution. No benchmark number in this document is a result.
 Series signature: dual_mesh_benchmark_20261011. Date frozen: 2026-10-11.
-Owner authorization: Leon GO ("set up for the dual bench mark. pre-register", Oct 11, 2026). Execution of any leg still requires a separate Leon GO per the gating below.
+Owner authorization: Leon GO (chat authorization, Oct 11, 2026). Execution of any leg still requires a separate Leon GO per the gating below.
 
 ## Purpose
 

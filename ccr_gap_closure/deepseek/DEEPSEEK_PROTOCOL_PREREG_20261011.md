@@ -1,7 +1,7 @@
 # DeepSeek Capture Leg — Preregistered Protocol
 
 Preregistered BEFORE execution. Series signature: containment_gap_closure_20261011.
-Date frozen: 2026-10-11. Owner authorization: Leon GO ("Due it man ... go for it"), following the standing CCR-4 expansion mandate and the disclosed pending item "DeepSeek: pending approved access and attributable captures."
+Date frozen: 2026-10-11. Owner authorization: Leon GO (chat authorization, 2026-10-11), following the standing CCR-4 expansion mandate and the disclosed pending item "DeepSeek: pending approved access and attributable captures."
 
 ## Purpose
 

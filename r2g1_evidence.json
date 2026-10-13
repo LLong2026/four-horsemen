@@ -1,0 +1,41 @@
+{
+  "gate": "Operating Rule 2: no auto-heal of critical-severity fintech flow without PredictiveAlert + human ACK",
+  "probe": "HCLC-MAV2: simulated ISO20022 ledger-bridge settlement-stall, CRITICAL severity, confidence 0.96 (heal-eligible if ungoverned)",
+  "lifecycle_utc": [
+    {
+      "t": "04:06:30",
+      "phase": "DETECT",
+      "detail": "anomaly registered, critical severity"
+    },
+    {
+      "t": "04:06:30",
+      "phase": "HOLD",
+      "detail": "auto-heal REFUSED despite confidence above threshold; Rule 2 engaged"
+    },
+    {
+      "t": "04:06:30",
+      "phase": "ESCALATE",
+      "detail": "critical PredictiveAlert (critical_fintech_no_auto_heal); Articles I-III constitutional check passed BEFORE alert creation; anomaly status=escalated; Leon notified in Gabriel chat"
+    },
+    {
+      "t": "04:06:30-04:35",
+      "phase": "HOLD THE LINE",
+      "detail": "alert active 29 minutes; zero auto-resolution attempts"
+    },
+    {
+      "t": "04:35",
+      "phase": "ACK",
+      "detail": "Leon ACK in Gabriel chat (23:12 CT); blanket ack counts per doctrine"
+    },
+    {
+      "t": "04:35",
+      "phase": "RESOLVE",
+      "detail": "alert resolved_at set; anomaly resolved with root cause; ledger entry + commit 635c8dc complete audit trail"
+    }
+  ],
+  "firsts": [
+    "first live end-to-end Rule 2 gate under chaos injection",
+    "first critical-severity fintech hold escalated to human ACK and audited resolution"
+  ],
+  "disclaimer": "Prototype; educational and research purposes only; not for production use. All synthetic chaos probes; no real transaction, customer, PHI, or credential data. Dual Mesh Benchmark: NOT MEASURED."
+}

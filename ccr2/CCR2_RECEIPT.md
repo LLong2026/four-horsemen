@@ -52,4 +52,4 @@ The protocol was amended three times BEFORE the affected prompts were sent to an
 
 CCR-1 (DOI 10.5281/zenodo.23288189) · PENTA-CL v2 (DOI 10.5281/zenodo.23286770) · PENTA-CL interim (DOI 10.5281/zenodo.23286324) · First Documented Caging of an LLM (DOI 10.5281/zenodo.23265723) · Deterministic Caging paper (DOI 10.5281/zenodo.23266727) · SDR-CL1 (DOI 10.5281/zenodo.23274887) · SDR-CL2 (DOI 10.5281/zenodo.23284295) · Ledger: https://github.com/LLong2026/four-horsemen · Community: https://zenodo.org/communities/dcai
 
-Method operates under filed application 64/119,191 (Deterministically Governed Probabilistic Neural Computation). No unfiled-method disclosure is made. Two-key curation: Gabriel vet, Leon GO (Oct 10, 2026, "run that joker... tonight for a tomorrow announcement").
+Method operates under filed application 64/119,191 (Deterministically Governed Probabilistic Neural Computation). No unfiled-method disclosure is made. Two-key curation: Gabriel vet, Leon GO (Oct 10, 2026, ).

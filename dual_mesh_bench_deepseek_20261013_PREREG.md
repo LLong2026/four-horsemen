@@ -2,9 +2,7 @@
 
 **Series signature:** dual_mesh_benchmark_deepseek_20261013
 **Prereg committed:** 2026-10-13, BEFORE any execution.
-**Owner authorization:** Leon GO, Oct 13, 2026 ("then lest dual bench mark this joker" — DeepSeek,
-immediately after the CCR-4X leg I re-run, with the $10 OpenRouter top-up supplied for exactly
-this batch).
+**Owner authorization:** Leon GO (chat authorization, Oct 13, 2026, immediately after the CCR-4X leg I re-run, with the OpenRouter credit top-up supplied for this batch).
 **Lineage:** extends the Dual Mesh Benchmark series (v1.0 DOI 10.5281/zenodo.23303081, v2.0 DOI
 10.5281/zenodo.23321637) and XPLAT-2/3 (raw external API vs conversation-loop decomposition, ~41x
 orchestration gap). This leg adds a DeepSeek v4-pro column to the raw-external-API baseline.

@@ -1,7 +1,6 @@
 # HEMI-N PREREGISTRATION — Nightly Cognitive Training Epoch Series v1.0
 
-**Registered:** 2026-10-13T03:15Z, before first nightly run, per Leon GO ("Yes nightly
-epochs going forward, we train now", Oct 12 21:58 CT).
+**Registered:** 2026-10-13T03:15Z, before first nightly run, per Leon GO (chat authorization, Oct 12 21:58 CT).
 **Lineage:** HEMI-T2C converged series (DOI 10.5281/zenodo.23330361) provides the
 converged mesh state that nightly epochs maintain and extend.
 

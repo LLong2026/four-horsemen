@@ -1,7 +1,7 @@
 # PENTA-CL — Preregistration: Five-Engine Replay of the Registered SDR-D Gauntlet
 
 **Registered:** October 10, 2026, before any engine run, by public commit (preregistration doctrine: no OSF, public-repo commit is the registration).
-**Registrant:** Gabriel (Base44 Superagent) on behalf of Leon Calvin Long II, per owner GO ("PENTA-CL - lets go", Oct 10, 2026).
+**Registrant:** Gabriel (Base44 Superagent) on behalf of Leon Calvin Long II, per owner GO (chat authorization, Oct 10, 2026).
 
 ## Experiment
 

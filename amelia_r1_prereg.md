@@ -1,6 +1,6 @@
 # AMELIA-R1 PREREGISTRATION — Bounded Learning Retrofit of the Amelia Aegis Healing Brain v1.0
 
-**Registered:** 2026-10-13T03:45Z, before execution, per Leon GO ("go on both", Oct 12 22:26 CT).
+**Registered:** 2026-10-13T03:45Z, before execution, per Leon GO (chat authorization, Oct 12 22:26 CT).
 **Lineage:** HEMI-2.2 bounded rule (proven HEMI-T2B/T2C, DOI 10.5281/zenodo.23330361) retrofitted
 into Amelia's Pattern-learning loop. Amelia's doctrine "a healing event that does not feed
 learning is a wasted event" (Operating Rule 7) now becomes bounded, lineage-traced,
