@@ -373,6 +373,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hemi_t1_receipt_bundle.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23330308_hemi_t1_receipt_bundle.zip",
+        "size_bytes": 6173,
+        "sha256": "f3b032e3a3c2e7413c8918f933e29dfaf7eca896211a56782f41e3d7766295eb"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23330308",
+        "zenodo_recid": "23330308",
+        "zenodo_file": "hemi_t1_receipt_bundle.zip",
+        "zenodo_md5": "9e683713299b06d28f2578401cf7527f",
+        "title": "HEMI-T1: First Hemispheric Cognitive Training Epoch Receipt \u2014 812 Weight Deltas, All Six Falsifiers Pass"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T02:48:15Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -386,7 +417,7 @@
     }
   ],
   "counts": {
-    "bound": 12,
+    "bound": 13,
     "gaps": 2,
     "dois_checked": 13
   }

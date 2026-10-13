@@ -1,12 +1,12 @@
 {
-  "signature": "BIND3_WORKER_V1.0_BUNDLE.zip:af6aaa83c754e1f9",
-  "started_at": "2026-10-13T02:21:29Z",
-  "artifact": "BIND3_WORKER_V1.0_BUNDLE.zip",
-  "sha256": "af6aaa83c754e1f98ac1ab20bd58b51da12fa6502e577ee7c9eb91a68bb5891c",
-  "deposit_id": 23329814,
-  "doi_prereserved": "10.5281/zenodo.23329814",
-  "uploaded": "2026-10-13T02:21:31Z",
-  "doi": "10.5281/zenodo.23329814",
-  "recid": "23329814",
-  "bound_at": "2026-10-13T02:21:39Z"
+  "signature": "hemi_t1_receipt_bundle.zip:f3b032e3a3c2e741",
+  "started_at": "2026-10-13T02:48:06Z",
+  "artifact": "hemi_t1_receipt_bundle.zip",
+  "sha256": "f3b032e3a3c2e7413c8918f933e29dfaf7eca896211a56782f41e3d7766295eb",
+  "deposit_id": 23330308,
+  "doi_prereserved": "10.5281/zenodo.23330308",
+  "uploaded": "2026-10-13T02:48:08Z",
+  "doi": "10.5281/zenodo.23330308",
+  "recid": "23330308",
+  "bound_at": "2026-10-13T02:48:15Z"
 }
