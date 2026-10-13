@@ -404,6 +404,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hemi_t2_receipt_bundle.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23330348_hemi_t2_receipt_bundle.zip",
+        "size_bytes": 3438,
+        "sha256": "7e55391f6564aa1ddf1a5c30231bb8434ecc1f46d13452ba0ddddd39cdface07"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23330348",
+        "zenodo_recid": "23330348",
+        "zenodo_file": "hemi_t2_receipt_bundle.zip",
+        "zenodo_md5": "b65ba1cca68598034458db9336c55c6d",
+        "title": "HEMI-T2 Convergence Series \u2014 Honest Negative Result: Learning Rule Positive-Feedback Failure Receipt (Governance Invariance Held Every Epoch)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T02:53:47Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -417,7 +448,7 @@
     }
   ],
   "counts": {
-    "bound": 13,
+    "bound": 14,
     "gaps": 2,
     "dois_checked": 13
   }
