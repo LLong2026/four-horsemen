@@ -1,5 +1,8 @@
 {
   "key_fingerprint_sha256": "3c6cb47aba8a6c385bc0304d6791af8965313e8c5e277800342e9adc7f4bbd45",
   "pinned_by": "SIP-4 stage-2 freeze, Leon GO 12:01 CT",
-  "note": "the signing key itself never leaves process custody; only this fingerprint is public/anchored"
+  "note": "the HMAC signing key itself never leaves process custody; only this fingerprint is public/anchored",
+  "ed25519_public_key_hex": "2d77db180fd87059e3472fe3648765fa04a743be148234e1f8c7c4246622521d",
+  "ed25519_public_key_fingerprint_sha256": "650699b3f130bb0c5142701d7f02c9df6e5dbf79c3843fe3fb6c98034aac5923",
+  "ed25519_pinned_by": "SIP-10 deployment, Leon GO 14:06 CT, Oct 13 2026 \u2014 asymmetric verification: the verifying process needs NO secret"
 }

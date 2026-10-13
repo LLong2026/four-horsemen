@@ -5,8 +5,17 @@
       "roster_sha256": "c514d675e22f069381cb36cf3fe417375fccdfd12a4f60eab69f800dd15ca66d",
       "signature": "b36aa5547f11a3d2fe1671ef6a62d84afced71e22d7e737500ad3903164b6875",
       "released_by": "SIP-4 stage-2 freeze, Leon GO 12:01 CT"
+    },
+    {
+      "version": 2,
+      "roster_sha256": "c514d675e22f069381cb36cf3fe417375fccdfd12a4f60eab69f800dd15ca66d",
+      "signature": "bbad1fc496470ac7b21a32c3565c0080f191f42e3e754f438aef4b46989e4ebbff895c218026a373accef7ed49f316d667472a33f52ab877a3f8dd8bbdec7f0f",
+      "signature_scheme": "ed25519 (SIP-10)",
+      "ed25519_public_key_fingerprint_sha256": "650699b3f130bb0c5142701d7f02c9df6e5dbf79c3843fe3fb6c98034aac5923",
+      "released_by": "SIP-10 deployment, Leon GO 14:06 CT, Oct 13 2026",
+      "transition": "dual-verify cycle 1: ed25519 primary, HMAC v1 retained for one clean cycle then retires"
     }
   ],
-  "current_version": 1,
+  "current_version": 2,
   "monotonicity": "releases must be strictly increasing; replay of any prior release is rejected as stale"
 }
