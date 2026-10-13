@@ -2,7 +2,10 @@
 
 Series: GOV-1 | Committed: 2026-10-13 (before execution)
 Operator authorization: Leon GO (chat authorization, Oct 13, 2026,
-"cross-hemisphere (left-side governance attacks" directive).
+cross-hemisphere left-side governance attack directive). [Redaction note,
+Oct 13: an earlier version of this prereg quoted the operator's chat wording
+verbatim; redacted per the Operator Privacy standing rule — authorization is
+recorded as GO + timestamp only.]
 
 ## 1. Purpose — attack the immutable side
 
