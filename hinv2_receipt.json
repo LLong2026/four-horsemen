@@ -1,0 +1,1573 @@
+{
+  "series": "HINV2-1",
+  "protocol": "hinv2_prereg v1.0",
+  "executed_at": "2026-10-13T15:30:44Z",
+  "corpus_sha": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59",
+  "roster_sha": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+  "journal": {
+    "accepted_crossings": 2646,
+    "epochs": 40,
+    "sha_before": "d10afeecf91a35c5e3d9ee92714eee0d0792e270bd8f04e24e682556db4ce9f9",
+    "sha_after": "d10afeecf91a35c5e3d9ee92714eee0d0792e270bd8f04e24e682556db4ce9f9"
+  },
+  "mesh_state_sha_before": "ca575bb9b781c47908bb13c24ba5739021e1fc15f33bc245257836d866f93d50",
+  "mesh_state_sha_after": "ca575bb9b781c47908bb13c24ba5739021e1fc15f33bc245257836d866f93d50",
+  "controls": {
+    "n": 106,
+    "all_valid": true
+  },
+  "forgeries": {
+    "n": 48,
+    "all_rejected": true
+  },
+  "verdicts": [
+    {
+      "probe_id": "C-000",
+      "mode": "audit",
+      "class": null,
+      "epoch": 1,
+      "event_id": "BENCH-0001",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-001",
+      "mode": "audit",
+      "class": null,
+      "epoch": 1,
+      "event_id": "BENCH-0077",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-002",
+      "mode": "audit",
+      "class": null,
+      "epoch": 1,
+      "event_id": "BENCH-0167",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-003",
+      "mode": "audit",
+      "class": null,
+      "epoch": 2,
+      "event_id": "BENCH-0056",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-004",
+      "mode": "audit",
+      "class": null,
+      "epoch": 2,
+      "event_id": "BENCH-0145",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-005",
+      "mode": "audit",
+      "class": null,
+      "epoch": 3,
+      "event_id": "BENCH-0025",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-006",
+      "mode": "audit",
+      "class": null,
+      "epoch": 3,
+      "event_id": "BENCH-0107",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-007",
+      "mode": "audit",
+      "class": null,
+      "epoch": 3,
+      "event_id": "BENCH-0193",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-008",
+      "mode": "audit",
+      "class": null,
+      "epoch": 4,
+      "event_id": "BENCH-0072",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-009",
+      "mode": "audit",
+      "class": null,
+      "epoch": 4,
+      "event_id": "BENCH-0157",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-010",
+      "mode": "audit",
+      "class": null,
+      "epoch": 5,
+      "event_id": "BENCH-0039",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-011",
+      "mode": "audit",
+      "class": null,
+      "epoch": 5,
+      "event_id": "BENCH-0133",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-012",
+      "mode": "audit",
+      "class": null,
+      "epoch": 6,
+      "event_id": "BENCH-0010",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-013",
+      "mode": "audit",
+      "class": null,
+      "epoch": 6,
+      "event_id": "BENCH-0077",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-014",
+      "mode": "audit",
+      "class": null,
+      "epoch": 6,
+      "event_id": "BENCH-0157",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-015",
+      "mode": "audit",
+      "class": null,
+      "epoch": 7,
+      "event_id": "BENCH-0039",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-016",
+      "mode": "audit",
+      "class": null,
+      "epoch": 7,
+      "event_id": "BENCH-0128",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-017",
+      "mode": "audit",
+      "class": null,
+      "epoch": 7,
+      "event_id": "BENCH-0194",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-018",
+      "mode": "audit",
+      "class": null,
+      "epoch": 8,
+      "event_id": "BENCH-0072",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-019",
+      "mode": "audit",
+      "class": null,
+      "epoch": 8,
+      "event_id": "BENCH-0147",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-020",
+      "mode": "audit",
+      "class": null,
+      "epoch": 9,
+      "event_id": "BENCH-0034",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-021",
+      "mode": "audit",
+      "class": null,
+      "epoch": 9,
+      "event_id": "BENCH-0106",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-022",
+      "mode": "audit",
+      "class": null,
+      "epoch": 9,
+      "event_id": "BENCH-0182",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-023",
+      "mode": "audit",
+      "class": null,
+      "epoch": 10,
+      "event_id": "BENCH-0063",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-024",
+      "mode": "audit",
+      "class": null,
+      "epoch": 10,
+      "event_id": "BENCH-0142",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-025",
+      "mode": "audit",
+      "class": null,
+      "epoch": 11,
+      "event_id": "BENCH-0020",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-026",
+      "mode": "audit",
+      "class": null,
+      "epoch": 11,
+      "event_id": "BENCH-0092",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-027",
+      "mode": "audit",
+      "class": null,
+      "epoch": 11,
+      "event_id": "BENCH-0165",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-028",
+      "mode": "audit",
+      "class": null,
+      "epoch": 12,
+      "event_id": "BENCH-0044",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-029",
+      "mode": "audit",
+      "class": null,
+      "epoch": 12,
+      "event_id": "BENCH-0132",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-030",
+      "mode": "audit",
+      "class": null,
+      "epoch": 13,
+      "event_id": "BENCH-0001",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-031",
+      "mode": "audit",
+      "class": null,
+      "epoch": 13,
+      "event_id": "BENCH-0074",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-032",
+      "mode": "audit",
+      "class": null,
+      "epoch": 13,
+      "event_id": "BENCH-0147",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-033",
+      "mode": "audit",
+      "class": null,
+      "epoch": 14,
+      "event_id": "BENCH-0034",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-034",
+      "mode": "audit",
+      "class": null,
+      "epoch": 14,
+      "event_id": "BENCH-0105",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-035",
+      "mode": "audit",
+      "class": null,
+      "epoch": 14,
+      "event_id": "BENCH-0170",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-036",
+      "mode": "audit",
+      "class": null,
+      "epoch": 15,
+      "event_id": "BENCH-0054",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-037",
+      "mode": "audit",
+      "class": null,
+      "epoch": 15,
+      "event_id": "BENCH-0137",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-038",
+      "mode": "audit",
+      "class": null,
+      "epoch": 16,
+      "event_id": "BENCH-0011",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-039",
+      "mode": "audit",
+      "class": null,
+      "epoch": 16,
+      "event_id": "BENCH-0075",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-040",
+      "mode": "audit",
+      "class": null,
+      "epoch": 16,
+      "event_id": "BENCH-0151",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-041",
+      "mode": "audit",
+      "class": null,
+      "epoch": 17,
+      "event_id": "BENCH-0035",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-042",
+      "mode": "audit",
+      "class": null,
+      "epoch": 17,
+      "event_id": "BENCH-0105",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-043",
+      "mode": "audit",
+      "class": null,
+      "epoch": 17,
+      "event_id": "BENCH-0170",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-044",
+      "mode": "audit",
+      "class": null,
+      "epoch": 18,
+      "event_id": "BENCH-0054",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-045",
+      "mode": "audit",
+      "class": null,
+      "epoch": 18,
+      "event_id": "BENCH-0133",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-046",
+      "mode": "audit",
+      "class": null,
+      "epoch": 19,
+      "event_id": "BENCH-0001",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-047",
+      "mode": "audit",
+      "class": null,
+      "epoch": 19,
+      "event_id": "BENCH-0073",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-048",
+      "mode": "audit",
+      "class": null,
+      "epoch": 19,
+      "event_id": "BENCH-0145",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-049",
+      "mode": "audit",
+      "class": null,
+      "epoch": 20,
+      "event_id": "BENCH-0023",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-050",
+      "mode": "audit",
+      "class": null,
+      "epoch": 20,
+      "event_id": "BENCH-0093",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-051",
+      "mode": "audit",
+      "class": null,
+      "epoch": 20,
+      "event_id": "BENCH-0163",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-052",
+      "mode": "audit",
+      "class": null,
+      "epoch": 21,
+      "event_id": "BENCH-0040",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-053",
+      "mode": "audit",
+      "class": null,
+      "epoch": 21,
+      "event_id": "BENCH-0120",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-054",
+      "mode": "audit",
+      "class": null,
+      "epoch": 21,
+      "event_id": "BENCH-0188",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-055",
+      "mode": "audit",
+      "class": null,
+      "epoch": 22,
+      "event_id": "BENCH-0064",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-056",
+      "mode": "audit",
+      "class": null,
+      "epoch": 22,
+      "event_id": "BENCH-0138",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-057",
+      "mode": "audit",
+      "class": null,
+      "epoch": 23,
+      "event_id": "BENCH-0015",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-058",
+      "mode": "audit",
+      "class": null,
+      "epoch": 23,
+      "event_id": "BENCH-0077",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-059",
+      "mode": "audit",
+      "class": null,
+      "epoch": 23,
+      "event_id": "BENCH-0151",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-060",
+      "mode": "audit",
+      "class": null,
+      "epoch": 24,
+      "event_id": "BENCH-0035",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-061",
+      "mode": "audit",
+      "class": null,
+      "epoch": 24,
+      "event_id": "BENCH-0100",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-062",
+      "mode": "audit",
+      "class": null,
+      "epoch": 24,
+      "event_id": "BENCH-0169",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-063",
+      "mode": "audit",
+      "class": null,
+      "epoch": 25,
+      "event_id": "BENCH-0052",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-064",
+      "mode": "audit",
+      "class": null,
+      "epoch": 25,
+      "event_id": "BENCH-0132",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-065",
+      "mode": "audit",
+      "class": null,
+      "epoch": 25,
+      "event_id": "BENCH-0196",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-066",
+      "mode": "audit",
+      "class": null,
+      "epoch": 26,
+      "event_id": "BENCH-0072",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-067",
+      "mode": "audit",
+      "class": null,
+      "epoch": 26,
+      "event_id": "BENCH-0144",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-068",
+      "mode": "audit",
+      "class": null,
+      "epoch": 27,
+      "event_id": "BENCH-0022",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-069",
+      "mode": "audit",
+      "class": null,
+      "epoch": 27,
+      "event_id": "BENCH-0092",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-070",
+      "mode": "audit",
+      "class": null,
+      "epoch": 27,
+      "event_id": "BENCH-0161",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-071",
+      "mode": "audit",
+      "class": null,
+      "epoch": 28,
+      "event_id": "BENCH-0039",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-072",
+      "mode": "audit",
+      "class": null,
+      "epoch": 28,
+      "event_id": "BENCH-0107",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-073",
+      "mode": "audit",
+      "class": null,
+      "epoch": 28,
+      "event_id": "BENCH-0182",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-074",
+      "mode": "audit",
+      "class": null,
+      "epoch": 29,
+      "event_id": "BENCH-0063",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-075",
+      "mode": "audit",
+      "class": null,
+      "epoch": 29,
+      "event_id": "BENCH-0137",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-076",
+      "mode": "audit",
+      "class": null,
+      "epoch": 30,
+      "event_id": "BENCH-0011",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-077",
+      "mode": "audit",
+      "class": null,
+      "epoch": 30,
+      "event_id": "BENCH-0075",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-078",
+      "mode": "audit",
+      "class": null,
+      "epoch": 30,
+      "event_id": "BENCH-0147",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-079",
+      "mode": "audit",
+      "class": null,
+      "epoch": 31,
+      "event_id": "BENCH-0034",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-080",
+      "mode": "audit",
+      "class": null,
+      "epoch": 31,
+      "event_id": "BENCH-0097",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-081",
+      "mode": "audit",
+      "class": null,
+      "epoch": 31,
+      "event_id": "BENCH-0167",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-082",
+      "mode": "audit",
+      "class": null,
+      "epoch": 32,
+      "event_id": "BENCH-0045",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-083",
+      "mode": "audit",
+      "class": null,
+      "epoch": 32,
+      "event_id": "BENCH-0130",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-084",
+      "mode": "audit",
+      "class": null,
+      "epoch": 32,
+      "event_id": "BENCH-0194",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-085",
+      "mode": "audit",
+      "class": null,
+      "epoch": 33,
+      "event_id": "BENCH-0071",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-086",
+      "mode": "audit",
+      "class": null,
+      "epoch": 33,
+      "event_id": "BENCH-0142",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-087",
+      "mode": "audit",
+      "class": null,
+      "epoch": 34,
+      "event_id": "BENCH-0020",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-088",
+      "mode": "audit",
+      "class": null,
+      "epoch": 34,
+      "event_id": "BENCH-0091",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-089",
+      "mode": "audit",
+      "class": null,
+      "epoch": 34,
+      "event_id": "BENCH-0157",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-090",
+      "mode": "audit",
+      "class": null,
+      "epoch": 35,
+      "event_id": "BENCH-0037",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-091",
+      "mode": "audit",
+      "class": null,
+      "epoch": 35,
+      "event_id": "BENCH-0106",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-092",
+      "mode": "audit",
+      "class": null,
+      "epoch": 35,
+      "event_id": "BENCH-0178",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-093",
+      "mode": "audit",
+      "class": null,
+      "epoch": 36,
+      "event_id": "BENCH-0056",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-094",
+      "mode": "audit",
+      "class": null,
+      "epoch": 36,
+      "event_id": "BENCH-0134",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-095",
+      "mode": "audit",
+      "class": null,
+      "epoch": 37,
+      "event_id": "BENCH-0010",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-096",
+      "mode": "audit",
+      "class": null,
+      "epoch": 37,
+      "event_id": "BENCH-0074",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-097",
+      "mode": "audit",
+      "class": null,
+      "epoch": 37,
+      "event_id": "BENCH-0146",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-098",
+      "mode": "audit",
+      "class": null,
+      "epoch": 38,
+      "event_id": "BENCH-0025",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-099",
+      "mode": "audit",
+      "class": null,
+      "epoch": 38,
+      "event_id": "BENCH-0094",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-100",
+      "mode": "audit",
+      "class": null,
+      "epoch": 38,
+      "event_id": "BENCH-0165",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-101",
+      "mode": "audit",
+      "class": null,
+      "epoch": 39,
+      "event_id": "BENCH-0044",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-102",
+      "mode": "audit",
+      "class": null,
+      "epoch": 39,
+      "event_id": "BENCH-0128",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-103",
+      "mode": "audit",
+      "class": null,
+      "epoch": 39,
+      "event_id": "BENCH-0193",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-104",
+      "mode": "audit",
+      "class": null,
+      "epoch": 40,
+      "event_id": "BENCH-0070",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "C-105",
+      "mode": "audit",
+      "class": null,
+      "epoch": 40,
+      "event_id": "BENCH-0140",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "VALID (complete lineage, chain intact)"
+    },
+    {
+      "probe_id": "B1-000",
+      "mode": "gate",
+      "class": "B1",
+      "epoch": 38,
+      "event_id": null,
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (orphan weight update: no source event id)"
+    },
+    {
+      "probe_id": "B2-000",
+      "mode": "gate",
+      "class": "B2",
+      "epoch": 38,
+      "event_id": "FORGED-8669481",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (forged event id: no such source healing event)"
+    },
+    {
+      "probe_id": "B3-000",
+      "mode": "gate",
+      "class": "B3",
+      "epoch": 41,
+      "event_id": "BENCH-0163",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (temporal forgery: event did not occur at this epoch)"
+    },
+    {
+      "probe_id": "B4-000",
+      "mode": "gate",
+      "class": "B4",
+      "epoch": 38,
+      "event_id": "BENCH-0163",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B5-000",
+      "mode": "gate",
+      "class": "B5",
+      "epoch": 38,
+      "event_id": "BENCH-0163",
+      "node_pattern": "confidence_score",
+      "pattern_update": false,
+      "verdict": "INTEGRITY_FAILURE (orphan healing event: feeds no pattern update)"
+    },
+    {
+      "probe_id": "B6-000",
+      "mode": "gate",
+      "class": "B6",
+      "epoch": 38,
+      "event_id": "BENCH-0163",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B1-001",
+      "mode": "gate",
+      "class": "B1",
+      "epoch": 13,
+      "event_id": null,
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (orphan weight update: no source event id)"
+    },
+    {
+      "probe_id": "B2-001",
+      "mode": "gate",
+      "class": "B2",
+      "epoch": 13,
+      "event_id": "FORGED-6501660",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (forged event id: no such source healing event)"
+    },
+    {
+      "probe_id": "B3-001",
+      "mode": "gate",
+      "class": "B3",
+      "epoch": 41,
+      "event_id": "BENCH-0134",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (temporal forgery: event did not occur at this epoch)"
+    },
+    {
+      "probe_id": "B4-001",
+      "mode": "gate",
+      "class": "B4",
+      "epoch": 13,
+      "event_id": "BENCH-0134",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B5-001",
+      "mode": "gate",
+      "class": "B5",
+      "epoch": 13,
+      "event_id": "BENCH-0134",
+      "node_pattern": "confidence_score",
+      "pattern_update": false,
+      "verdict": "INTEGRITY_FAILURE (orphan healing event: feeds no pattern update)"
+    },
+    {
+      "probe_id": "B6-001",
+      "mode": "gate",
+      "class": "B6",
+      "epoch": 13,
+      "event_id": "BENCH-0134",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B1-002",
+      "mode": "gate",
+      "class": "B1",
+      "epoch": 30,
+      "event_id": null,
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (orphan weight update: no source event id)"
+    },
+    {
+      "probe_id": "B2-002",
+      "mode": "gate",
+      "class": "B2",
+      "epoch": 30,
+      "event_id": "FORGED-2627045",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (forged event id: no such source healing event)"
+    },
+    {
+      "probe_id": "B3-002",
+      "mode": "gate",
+      "class": "B3",
+      "epoch": 41,
+      "event_id": "BENCH-0130",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (temporal forgery: event did not occur at this epoch)"
+    },
+    {
+      "probe_id": "B4-002",
+      "mode": "gate",
+      "class": "B4",
+      "epoch": 30,
+      "event_id": "BENCH-0130",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B5-002",
+      "mode": "gate",
+      "class": "B5",
+      "epoch": 30,
+      "event_id": "BENCH-0130",
+      "node_pattern": "confidence_score",
+      "pattern_update": false,
+      "verdict": "INTEGRITY_FAILURE (orphan healing event: feeds no pattern update)"
+    },
+    {
+      "probe_id": "B6-002",
+      "mode": "gate",
+      "class": "B6",
+      "epoch": 30,
+      "event_id": "BENCH-0130",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B1-003",
+      "mode": "gate",
+      "class": "B1",
+      "epoch": 27,
+      "event_id": null,
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (orphan weight update: no source event id)"
+    },
+    {
+      "probe_id": "B2-003",
+      "mode": "gate",
+      "class": "B2",
+      "epoch": 27,
+      "event_id": "FORGED-1895915",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (forged event id: no such source healing event)"
+    },
+    {
+      "probe_id": "B3-003",
+      "mode": "gate",
+      "class": "B3",
+      "epoch": 41,
+      "event_id": "BENCH-0020",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (temporal forgery: event did not occur at this epoch)"
+    },
+    {
+      "probe_id": "B4-003",
+      "mode": "gate",
+      "class": "B4",
+      "epoch": 27,
+      "event_id": "BENCH-0020",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B5-003",
+      "mode": "gate",
+      "class": "B5",
+      "epoch": 27,
+      "event_id": "BENCH-0020",
+      "node_pattern": "confidence_score",
+      "pattern_update": false,
+      "verdict": "INTEGRITY_FAILURE (orphan healing event: feeds no pattern update)"
+    },
+    {
+      "probe_id": "B6-003",
+      "mode": "gate",
+      "class": "B6",
+      "epoch": 27,
+      "event_id": "BENCH-0020",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B1-004",
+      "mode": "gate",
+      "class": "B1",
+      "epoch": 16,
+      "event_id": null,
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (orphan weight update: no source event id)"
+    },
+    {
+      "probe_id": "B2-004",
+      "mode": "gate",
+      "class": "B2",
+      "epoch": 16,
+      "event_id": "FORGED-2235764",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (forged event id: no such source healing event)"
+    },
+    {
+      "probe_id": "B3-004",
+      "mode": "gate",
+      "class": "B3",
+      "epoch": 41,
+      "event_id": "BENCH-0070",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (temporal forgery: event did not occur at this epoch)"
+    },
+    {
+      "probe_id": "B4-004",
+      "mode": "gate",
+      "class": "B4",
+      "epoch": 16,
+      "event_id": "BENCH-0070",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B5-004",
+      "mode": "gate",
+      "class": "B5",
+      "epoch": 16,
+      "event_id": "BENCH-0070",
+      "node_pattern": "confidence_score",
+      "pattern_update": false,
+      "verdict": "INTEGRITY_FAILURE (orphan healing event: feeds no pattern update)"
+    },
+    {
+      "probe_id": "B6-004",
+      "mode": "gate",
+      "class": "B6",
+      "epoch": 16,
+      "event_id": "BENCH-0070",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B1-005",
+      "mode": "gate",
+      "class": "B1",
+      "epoch": 2,
+      "event_id": null,
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (orphan weight update: no source event id)"
+    },
+    {
+      "probe_id": "B2-005",
+      "mode": "gate",
+      "class": "B2",
+      "epoch": 2,
+      "event_id": "FORGED-4711706",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (forged event id: no such source healing event)"
+    },
+    {
+      "probe_id": "B3-005",
+      "mode": "gate",
+      "class": "B3",
+      "epoch": 41,
+      "event_id": "BENCH-0063",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (temporal forgery: event did not occur at this epoch)"
+    },
+    {
+      "probe_id": "B4-005",
+      "mode": "gate",
+      "class": "B4",
+      "epoch": 2,
+      "event_id": "BENCH-0063",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B5-005",
+      "mode": "gate",
+      "class": "B5",
+      "epoch": 2,
+      "event_id": "BENCH-0063",
+      "node_pattern": "confidence_score",
+      "pattern_update": false,
+      "verdict": "INTEGRITY_FAILURE (orphan healing event: feeds no pattern update)"
+    },
+    {
+      "probe_id": "B6-005",
+      "mode": "gate",
+      "class": "B6",
+      "epoch": 2,
+      "event_id": "BENCH-0063",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B1-006",
+      "mode": "gate",
+      "class": "B1",
+      "epoch": 36,
+      "event_id": null,
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (orphan weight update: no source event id)"
+    },
+    {
+      "probe_id": "B2-006",
+      "mode": "gate",
+      "class": "B2",
+      "epoch": 36,
+      "event_id": "FORGED-2752988",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (forged event id: no such source healing event)"
+    },
+    {
+      "probe_id": "B3-006",
+      "mode": "gate",
+      "class": "B3",
+      "epoch": 41,
+      "event_id": "BENCH-0137",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (temporal forgery: event did not occur at this epoch)"
+    },
+    {
+      "probe_id": "B4-006",
+      "mode": "gate",
+      "class": "B4",
+      "epoch": 36,
+      "event_id": "BENCH-0137",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B5-006",
+      "mode": "gate",
+      "class": "B5",
+      "epoch": 36,
+      "event_id": "BENCH-0137",
+      "node_pattern": "confidence_score",
+      "pattern_update": false,
+      "verdict": "INTEGRITY_FAILURE (orphan healing event: feeds no pattern update)"
+    },
+    {
+      "probe_id": "B6-006",
+      "mode": "gate",
+      "class": "B6",
+      "epoch": 36,
+      "event_id": "BENCH-0137",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B1-007",
+      "mode": "gate",
+      "class": "B1",
+      "epoch": 17,
+      "event_id": null,
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (orphan weight update: no source event id)"
+    },
+    {
+      "probe_id": "B2-007",
+      "mode": "gate",
+      "class": "B2",
+      "epoch": 17,
+      "event_id": "FORGED-3163000",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (forged event id: no such source healing event)"
+    },
+    {
+      "probe_id": "B3-007",
+      "mode": "gate",
+      "class": "B3",
+      "epoch": 41,
+      "event_id": "BENCH-0025",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "INTEGRITY_FAILURE (temporal forgery: event did not occur at this epoch)"
+    },
+    {
+      "probe_id": "B4-007",
+      "mode": "gate",
+      "class": "B4",
+      "epoch": 17,
+      "event_id": "BENCH-0025",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    },
+    {
+      "probe_id": "B5-007",
+      "mode": "gate",
+      "class": "B5",
+      "epoch": 17,
+      "event_id": "BENCH-0025",
+      "node_pattern": "confidence_score",
+      "pattern_update": false,
+      "verdict": "INTEGRITY_FAILURE (orphan healing event: feeds no pattern update)"
+    },
+    {
+      "probe_id": "B6-007",
+      "mode": "gate",
+      "class": "B6",
+      "epoch": 17,
+      "event_id": "BENCH-0025",
+      "node_pattern": "confidence_score",
+      "pattern_update": true,
+      "verdict": "REJECTED_DUPLICATE"
+    }
+  ],
+  "instrument_defect_disclosure": "Two instrument defects were caught by the battery's own controls before any publication, both disclosed per the GAB-1 honest-instrument-error precedent. v1 checked historical controls against the CURRENT mesh weight instead of the chain state at the crossing's position. v2 matched event ids globally instead of per-epoch (the corpus replays every epoch, so the same id legitimately occurs in all 40) and broke the duplicate check with a full-dict compare after the confidence field was added. v3 (this run) splits validation into audit mode (lineage of an already-accepted crossing) and gate mode (admission of a new crossing), with per-epoch source lookup, subset duplicate comparison, and chain + bounded-rule recomputation. No probe class, falsifier definition, or acceptance bar changed across repairs; all 48 forgeries were rejected in every version.",
+  "falsifiers": {
+    "F1_true_positives": true,
+    "F2_rejections_journaled": true,
+    "F3_zero_side_effects": true,
+    "F4_determinism_append_only": true,
+    "F5_hygiene": true
+  }
+}
