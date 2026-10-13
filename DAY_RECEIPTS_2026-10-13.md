@@ -17,7 +17,7 @@
 | 7 | Adversarial Triad umbrella paper — SBR-2 + H-INV-2 + DPP-1 as one three-surface record | commit e1bf86f, bundle ready | Leon GO 10:50 CT — queued (Zenodo outage) |
 | 8 | DPP-2 homoglyph & multilingual battery — 33/33 lookalikes rejected from roster, 66/66 canaries absent, unicode-nullity control PASS; prereg defect disclosed and repaired same-session | ledger 0061, commit 9202417 | Leon GO 11:11 CT — queued (Zenodo outage) |
 | 9 | DPP-3 normalization & bidi forgery battery — 50/50 visual twins rejected, byte-exactness frozen with regression tripwire (NFKC/case-fold/trim patches each flip FAIL by construction) | ledger 0062 | Gabriel vet done — Leon GO pending |
-| 10 | DPP-4 structural & numeric forgery battery — FIRST FALSIFIER FAILURE of the series, shipped as found: type-forged numbers crash the gate (fail-closed); infinity-forged metrics corrupt the shared weight to -inf (boundedness defeated by non-finite input); dup/missing ids silently consumed. SIP filed for ingestion guard; candidate leg closes all three gaps with conforming behavior byte-identical | ledger 0063, DPP4_RECEIPT.json, DPP4_SIP_CANDIDATE.json | Gabriel vet done — Leon GO pending + SIP approval gate |
+| 10 | DPP-4 structural & numeric forgery battery — FIRST FALSIFIER FAILURE of the series, shipped as found: type-forged numbers crash the gate (fail-closed); infinity-forged metrics corrupt the shared weight to -inf (boundedness defeated by non-finite input); dup/missing ids silently consumed. SIP filed for ingestion guard; candidate leg closes all three gaps with conforming behavior byte-identical | ledger 0063/0064, guard deployed (ingestionGuard v1.1) | Leon GO 11:22 CT (papers + SIP) — staged |
 
 ## Adversarial surface coverage after today
 
@@ -33,9 +33,8 @@
 8. Time axis (LINDY-B) — 60-night conformance watch, running
 
 ## Open gates tonight
-- Zenodo publish: triad paper (GO 10:50) + DPP-2 (GO 11:11) — retry worker 12:45 CT
-- DPP-3 + DPP-4 two-key GO for publication
-- DPP-4 SIP (ingestion guard) — approval gate with Leon, candidate leg demonstrated
+- Zenodo publish: triad paper + DPP-2 + DPP-3 + DPP-4 — Leon GO 11:22 CT ("GO on the papers"); retry worker 12:45 CT publishes all four in order when the deposit API recovers, stray-draft cleanup + no-duplicate guards built in
+- DPP-4 SIP: APPROVED and DEPLOYED (ingestion guard v1.1 live on the runtime path; instruments frozen; LINDY-B unaffected)
 
 ## Known residuals (honest)
 

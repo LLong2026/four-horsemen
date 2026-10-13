@@ -91,5 +91,13 @@
     ]
   },
   "scope_honesty": "The gate validates structure, not truth. Findings ship as found: any crash or forged-metric heal on the frozen instrument is a disclosed instrument gap remediated only via SelfImprovementProposal under Constitution Art. 2.2.",
-  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic.",
+  "sip_resolution_addendum": {
+    "note": "Executed 11:18 CT with SIP filed pending approval. Leon GO (chat authorization, Oct 13, 2026, 11:22 CT) approved the ingestion-guard SIP four minutes after the run. The complete arc now lives in this one record: battery executed -> three falsifier failures shipped as found -> SIP filed per Constitution Art. 2.2 -> SIP approved -> guard deployed to the runtime ingestion path (backend function ingestionGuard v1.1 + instrument-library copy) with the conforming-identity receipt (2646 crossings, ca575bb9). LINDY-B watch NOT invalidated: frozen runner untouched.",
+    "disclosed_deployment_fix": "v1 accepted a second record whose id had been presented in a held record (only accepted ids entered the uniqueness set); v1.1 is fail-closed (every presented id counts); verification batch 6/6 correct.",
+    "ledger_refs": [
+      "0063",
+      "0064"
+    ]
+  }
 }

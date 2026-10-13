@@ -1,0 +1,26 @@
+[
+  {
+    "file": "dpp4_prereg.md",
+    "sha256": "0a3e9917b326cd980e1eaf72d3c89b5048a09ca0ea7b1f7b28650e59f9b94fa3"
+  },
+  {
+    "file": "dpp4_runner.py",
+    "sha256": "0476bc3ae67001c405e75b9b5abbcabe7e1d49bab99c4ce84400a27456c4ed4d"
+  },
+  {
+    "file": "dpp4_sip_candidate_leg.py",
+    "sha256": "e18bf617da07cd32f65751816dd19625bc5e760a746771936550d061b1ed5b17"
+  },
+  {
+    "file": "ingestion_guard.py",
+    "sha256": "f11fea32bf19039c32b14115009fcab21cfa17c9d21184586a185676bcf422c1"
+  },
+  {
+    "file": "DPP4_RECEIPT.json",
+    "sha256": "d1ca1a133536e6f16e5fa211decbdf18d9a7319b8042a914cdeeb5e7823a12c8"
+  },
+  {
+    "file": "DPP4_SIP_CANDIDATE.json",
+    "sha256": "cf6b52e0e8254e5196f3c01c6df3257c00795e2c7f84458ba4e6aaf3466654f8"
+  }
+]

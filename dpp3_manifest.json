@@ -1,0 +1,14 @@
+[
+  {
+    "file": "dpp3_prereg.md",
+    "sha256": "6be91354fd075e7f3f699e1697227733e515f025ee24225db89f4c7c71039d0f"
+  },
+  {
+    "file": "dpp3_runner.py",
+    "sha256": "d028ce0ca8fc39ed1e62e1cab55cc6fdbbfcf8dd73d7353937bffe00a7b80498"
+  },
+  {
+    "file": "DPP3_RECEIPT.json",
+    "sha256": "5b6b49b2124422f861360898bdb83878833432dfe18dc875b1af128635d9a072"
+  }
+]
