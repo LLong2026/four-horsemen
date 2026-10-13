@@ -700,6 +700,32 @@
         "prototype": true,
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "ccr4x_copilot_repair_bundle.zip",
+        "local_path": "binding_archive/zenodo-23346047_ccr4x_copilot_repair_bundle.zip",
+        "sha256": "d6c32c77c238c1658a6a538e56e78a378614c495c46f58c23bc987c440adab1e"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "CCR-4X Copilot repair leg; prereg 2bef7fe; receipt 667f8aa (ledger 0057)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23346047",
+        "zenodo_recid": "23346047",
+        "title": "CCR-4X Copilot Repair: 9/9 Conformant on Preregistered Re-Run"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": null,
+        "verified_by": "pending bind3 round-trip re-verification",
+        "verified_at": null
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [

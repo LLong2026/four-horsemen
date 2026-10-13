@@ -1,0 +1,14 @@
+[
+  {
+    "file": "ccr4x_copilot_repair_prereg.md",
+    "sha256": "887674e2f4a39dddf381b810de65e9a4c28d08f59ad2eee75e6d52f7cb1e4980"
+  },
+  {
+    "file": "CCR4X_COPILOT_REPAIR_RECEIPT.json",
+    "sha256": "d10c5dfc453d4e4fe7a4994f6f48f733b06e398a9070017aa4f38a181fe5ad62"
+  },
+  {
+    "file": "ccr4x_copilot_repair_README.md",
+    "sha256": "009429f4f950b01e62523c4e84f6b1abf15884aae475b951a775c148e5a6d831"
+  }
+]
