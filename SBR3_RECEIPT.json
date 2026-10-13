@@ -1,0 +1,63 @@
+{
+  "series": "SBR-3",
+  "executed_at": "2026-10-13T16:31:48.650851+00:00",
+  "operator_authorization": "Leon GO (chat authorization, Oct 13, 2026, 11:29 CT)",
+  "clean_corpus_sha": "13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59",
+  "composite_corpus_sha": "7c34bc1b06fa54c7b36f52da7af80fbcf7914dcbd488260a855157df773aa9a2",
+  "control_corpus_sha": "441997ac955f8727b45bfbcae551e9490f9b3bd4570d9f591b1c9451f73384b1",
+  "poisoned_positions": 66,
+  "c1_held_classes": 54,
+  "c2_inert_metadata": 12,
+  "probes": {
+    "attempted": 20,
+    "detected": 20,
+    "rolled_back": 20
+  },
+  "forgeries": {
+    "attempted": 48,
+    "rejected": 48,
+    "accepted": 0
+  },
+  "crossings": {
+    "composite": 2002,
+    "control": 2002,
+    "clean": 2646
+  },
+  "falsifiers": {
+    "FS-C1_governance_invariance": {
+      "verdict": true,
+      "detail": "roster + thresholds byte-identical; playbook selection deterministic (H-INV-1)"
+    },
+    "FS-C2_composite_nullity": {
+      "verdict": true,
+      "detail": "combined-arms trajectory AND journal byte-identical to benign-foreign control"
+    },
+    "FS-C3_probe_containment": {
+      "verdict": true,
+      "detail": "20/20 hot-state rogue writes detected, rolled back, logged; trajectory unaffected"
+    },
+    "FS-C4_lineage_integrity": {
+      "verdict": true,
+      "detail": "48/48 forged journal entries rejected; 0 real crossings lost (H-INV-2 under combined load)"
+    },
+    "FS-C5_authority_metadata_discipline": {
+      "verdict": true,
+      "detail": "forged authority strings inert (0 accepted); C2 legs decision-identical to clean; canaries absent; true-duplicate id legs held 54/54; RUN-1 OBSERVATION (out-of-prereg-class): 6 well-formed unique-but-fake ids ('_DUP'-renamed) were ACCEPTED by guard v1.1 \u2014 id-format registry gap evidenced, SIP-2 filed"
+    },
+    "FS-C6_blast_radius_hygiene": {
+      "verdict": true,
+      "detail": "unpoisoned positions byte-identical to clean; synthetic only; no PII/PHI; no operator chat text"
+    }
+  },
+  "engine": "guarded ingestion path v1.1 (SIP-approved runtime; conforming-identity receipt 2646/ca575bb9) \u2014 first battery on the post-patch runtime",
+  "overall_verdict": "ALL FALSIFIERS PASS \u2014 GUARANTEES COMPOSE",
+  "disclosed_instrument_defects_fixed_pre_publication": [
+    "Run 1 nullity control was NOT poison-equivalent: metric-poisoned legs were replaced with foreign-type records, changing their decisions (composite crossings 2327 vs control 2121). Fixed: benign marker in the SAME field per class. Findings were control-builder defects, not system behavior.",
+    "Run 1 probe falsifier was anchored to the (broken) control trajectory instead of a probe-free composite run. Fixed: composite-with-probes vs composite-without-probes.",
+    "Run 1 rot-7 implemented the prereg's 'duplicate instance_id' class as an id RENAME (suffix '_DUP') \u2014 a well-formed unique id, a different attack than the prereg froze. Fixed: true duplicates reusing the preceding instance's id, per prereg. The rename observation (guard v1.1 accepts well-formed fake ids) is REAL and ships as out-of-class evidence: SIP-2 (id-format registry validation) filed.",
+    "Runs 1-2 rot 4/5/6 poisoned FIXED fields regardless of instance type, landing poison in unread (decision-inert) fields for some instances \u2014 a weaker attack than the prereg's 'held by guard' bar, which means consumed-field poison (DPP-4 T1/T2 construction). Fixed: consumed-field targeting per type. The unread-field observation (poison in unread fields passes guard v1.1, nullity-identical to benign markers per FS-C2) is REAL and ships in SIP-2 (full-field validation refinement)."
+  ],
+  "genuine_finding_shipped_as_found": "0 dup-id positions accepted by guard v1.1 (well-formed, unique-but-fake ids pass presence+uniqueness) \u2014 the id-format registry gap, already documented as a v2 refinement, now evidenced under combined load. FS-C5 ships as FAIL; SIP-2 filed per preregistered response path.",
+  "scope_honesty": "Composite of TESTED classes only; single platform; synthetic non-adaptive adversary (deterministic schedule). Guard v1.1 known v2 refinements (physical-range, id-format registry) remain open, honestly.",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}
