@@ -1,0 +1,54 @@
+{
+ "events": [
+  {
+   "eid": "N-B5-H1-001",
+   "atype": "latency_spike",
+   "outcome": "success",
+   "learning": true
+  },
+  {
+   "eid": "N-B5-H3-001",
+   "atype": "config_drift",
+   "outcome": "success",
+   "learning": true
+  },
+  {
+   "eid": "N-B5-H4-001",
+   "atype": "heartbeat_miss",
+   "outcome": "success",
+   "learning": true
+  },
+  {
+   "eid": "N-B5-SIMB-001",
+   "atype": "intune_enrollment_failure",
+   "outcome": "success",
+   "learning": true
+  },
+  {
+   "eid": "N-B5-SIMC-001",
+   "atype": "integration_degraded",
+   "outcome": "success",
+   "learning": true
+  },
+  {
+   "eid": "N-B5-SIMC-002",
+   "atype": "rate_limit_abuse",
+   "outcome": "success",
+   "learning": true
+  },
+  {
+   "eid": "HEAL-N-B4-H1-001",
+   "atype": "latency_spike",
+   "outcome": "resolved",
+   "learning": null
+  }
+ ],
+ "tenant_guard_rejections": 0,
+ "ctr_criticals_resolved_under_ack": 8,
+ "pqc_heals": [
+  {
+   "eid": "N-B5-SIMD-rotation",
+   "algo": "CRYSTALS-Dilithium3"
+  }
+ ]
+}

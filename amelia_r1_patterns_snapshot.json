@@ -1,0 +1,216 @@
+{
+ "patterns": [
+  {
+   "id": "6acb0b64b6a5d09f7d9e5094",
+   "pid": "PAT-NB4-001",
+   "conf": 0.78,
+   "types": [
+    "config_drift"
+   ],
+   "auto": false
+  },
+  {
+   "id": "6acb0b64b6a5d09f7d9e5095",
+   "pid": "PAT-NB4-002",
+   "conf": 0.89,
+   "types": [
+    "pii_injection_attempt"
+   ],
+   "auto": false
+  },
+  {
+   "id": "6acb0b64b6a5d09f7d9e5096",
+   "pid": "PAT-NB4-003",
+   "conf": 0.94,
+   "types": [
+    "integration_degraded"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6acb0b64b6a5d09f7d9e5097",
+   "pid": "PAT-NB4-004",
+   "conf": 0.95,
+   "types": [
+    "crypto_key_stale"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac9cab56e9c9ca6a056c974",
+   "pid": "PAT-NB3-001",
+   "conf": 0.93,
+   "types": [
+    "heartbeat_miss"
+   ],
+   "auto": null
+  },
+  {
+   "id": "6ac9cab56e9c9ca6a056c975",
+   "pid": "PAT-NB3-002",
+   "conf": 0.9,
+   "types": [
+    "duplicate_task_race"
+   ],
+   "auto": null
+  },
+  {
+   "id": "6ac9cab56e9c9ca6a056c976",
+   "pid": "PAT-NB3-003",
+   "conf": 0.94,
+   "types": [
+    "quantum_vulnerability_detected"
+   ],
+   "auto": null
+  },
+  {
+   "id": "6ac868976a6a8fb1bf94057f",
+   "pid": "PAT-SIMC-01",
+   "conf": 0.91,
+   "types": [
+    "integration_degraded"
+   ],
+   "auto": false
+  },
+  {
+   "id": "6ac868976a6a8fb1bf94057e",
+   "pid": "PAT-SIMB-01",
+   "conf": 0.99,
+   "types": [
+    "heartbeat_miss"
+   ],
+   "auto": false
+  },
+  {
+   "id": "6ac868976a6a8fb1bf94057d",
+   "pid": "PAT-SIMD-01",
+   "conf": 0.98,
+   "types": [
+    "crypto_key_stale"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac868976a6a8fb1bf940579",
+   "pid": "PAT-H1-01",
+   "conf": 0.92,
+   "types": [
+    "config_drift"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac868976a6a8fb1bf94057a",
+   "pid": "PAT-H2-01",
+   "conf": 0.89,
+   "types": [
+    "latency_spike"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac868976a6a8fb1bf94057b",
+   "pid": "PAT-H3-01",
+   "conf": 0.95,
+   "types": [
+    "memory_leak"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac868976a6a8fb1bf94057c",
+   "pid": "PAT-H4-01",
+   "conf": 0.72,
+   "types": [
+    "integration_failure"
+   ],
+   "auto": false
+  },
+  {
+   "id": "6ac71704d17dd2b4ec77c220",
+   "pid": "PAT-SIMC-NB1",
+   "conf": 0.9,
+   "types": [
+    "integration_degraded",
+    "config_drift"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac71704d17dd2b4ec77c221",
+   "pid": "PAT-SIMD-NB1",
+   "conf": 0.95,
+   "types": [
+    "crypto_key_stale"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac71704d17dd2b4ec77c21f",
+   "pid": "PAT-MAV-NB1",
+   "conf": 0.91,
+   "types": [
+    "latency_spike-lowconf",
+    "agent_orchestration_desync"
+   ],
+   "auto": false
+  },
+  {
+   "id": "6ac71704d17dd2b4ec77c21e",
+   "pid": "PAT-LT-NB1",
+   "conf": 0.93,
+   "types": [
+    "latency_spike",
+    "resource_pressure_profile",
+    "ldap_sync_timeout"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac5c4f330ae683ddd9b5a11",
+   "pid": "PAT-SIMC-N12-INTEGRATION-STELLAR",
+   "conf": 0.86,
+   "types": [
+    "integration_degraded"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac5c4f330ae683ddd9b5a12",
+   "pid": "PAT-SIMC-N12-CONFIGDRIFT-ROUTING",
+   "conf": 0.82,
+   "types": [
+    "config_drift"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac5c4f330ae683ddd9b5a0f",
+   "pid": "PAT-SIMB-N12-INTUNE-DEFENSE",
+   "conf": 0.87,
+   "types": [
+    "intune_enrollment_failure"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac5c4f330ae683ddd9b5a0d",
+   "pid": "PAT-DSA-N12-CONFIGDRIFT-SETTLEMENT",
+   "conf": 0.84,
+   "types": [
+    "config_drift"
+   ],
+   "auto": true
+  },
+  {
+   "id": "6ac322562bb8b0e10a478afd",
+   "pid": "PAT-SIMC-N10-ROUTELIMIT-RELAY-BURST",
+   "conf": 0.9,
+   "types": [
+    "rate_limit_abuse",
+    "resource_exhaustion"
+   ],
+   "auto": true
+  }
+ ]
+}
