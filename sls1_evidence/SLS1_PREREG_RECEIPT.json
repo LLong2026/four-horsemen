@@ -1,0 +1,20 @@
+{
+ "test_id": "SLS-1",
+ "frozen_at_utc": "2026-10-14T16:46:58Z",
+ "authorization": "Leon GO (chat, 2026-10-14 ~11:44 CT)",
+ "spec_sha256": "bd8b770cb4bbc9815694daa6b2587158b36e1bf1a5ba85ce4ed42e76748a4d9b",
+ "gate_sha256": "0b1252b30d8cb3a42d33041b22363a08c1c6096f2e732b3aa80d2f9b7d2891b8",
+ "roster_frozen_sha256": "c514d675e22f069381cb36cf3fe417375fccdfd12a4f60eab69f800dd15ca66d",
+ "falsifiers": [
+  "F1",
+  "F2",
+  "F3",
+  "F4",
+  "F5",
+  "F6",
+  "F7",
+  "F8"
+ ],
+ "declaration": "Instrument frozen before execution. Any post-freeze edit to spec or gate is disclosed as an amendment; frozen copies pinned by hash.",
+ "prototype_disclaimer": true
+}
