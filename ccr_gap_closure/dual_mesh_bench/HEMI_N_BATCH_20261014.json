@@ -1,0 +1,542 @@
+[
+  {
+    "instance_id": "HEMI-N-20261014-0000",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2184.79,
+    "cpu": 67.4,
+    "memory": 15.65,
+    "error_count": 30
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0001",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2034.15,
+    "cpu": 63.04,
+    "memory": 32.31,
+    "error_count": 22
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0002",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3736.94,
+    "cpu": 43.74,
+    "memory": 31.43,
+    "error_count": 28
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0003",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1084.97,
+    "cpu": 6.87,
+    "memory": 83.37,
+    "error_count": 45
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0004",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3900.92,
+    "cpu": 50.32,
+    "memory": 62.26,
+    "error_count": 40
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0005",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1261.48,
+    "cpu": 26.83,
+    "memory": 42.35,
+    "error_count": 12
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0006",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2811.06,
+    "cpu": 22.13,
+    "memory": 38.42,
+    "error_count": 0
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0007",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 196.98,
+    "cpu": 28.14,
+    "memory": 92.05,
+    "error_count": 27
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0008",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 364.14,
+    "cpu": 94.45,
+    "memory": 15.01,
+    "error_count": 46
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0009",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1453.06,
+    "cpu": 37.72,
+    "memory": 68.74,
+    "error_count": 8
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0010",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 819.55,
+    "cpu": 93.89,
+    "memory": 51.86,
+    "error_count": 0
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0011",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3973.86,
+    "cpu": 27.35,
+    "memory": 9.6,
+    "error_count": 34
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0012",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3097.56,
+    "cpu": 49.09,
+    "memory": 10.59,
+    "error_count": 22
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0013",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1053.99,
+    "cpu": 12.06,
+    "memory": 57.45,
+    "error_count": 44
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0014",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 858.54,
+    "cpu": 82.72,
+    "memory": 17.36,
+    "error_count": 35
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0015",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2763.09,
+    "cpu": 80.91,
+    "memory": 37.61,
+    "error_count": 0
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0016",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 597.81,
+    "cpu": 93.52,
+    "memory": 57.99,
+    "error_count": 13
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0017",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 379.8,
+    "cpu": 21.86,
+    "memory": 98.22,
+    "error_count": 16
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0018",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 604.83,
+    "cpu": 77.79,
+    "memory": 22.38,
+    "error_count": 1
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0019",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 1821.58,
+    "cpu": 58.62,
+    "memory": 47.25,
+    "error_count": 39
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0020",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2663.85,
+    "cpu": 69.71,
+    "memory": 1.78,
+    "error_count": 46
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0021",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3166.91,
+    "cpu": 26.94,
+    "memory": 83.11,
+    "error_count": 18
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0022",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3203.71,
+    "cpu": 39.9,
+    "memory": 37.61,
+    "error_count": 37
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0023",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3953.42,
+    "cpu": 41.85,
+    "memory": 28.98,
+    "error_count": 31
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0024",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 2447.91,
+    "cpu": 37.76,
+    "memory": 43.55,
+    "error_count": 22
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0025",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3404.37,
+    "cpu": 81.81,
+    "memory": 45.54,
+    "error_count": 42
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0026",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 694.26,
+    "cpu": 76.53,
+    "memory": 38.95,
+    "error_count": 9
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0027",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1290.85,
+    "cpu": 28.14,
+    "memory": 24.09,
+    "error_count": 27
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0028",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 297.56,
+    "cpu": 55.13,
+    "memory": 38.87,
+    "error_count": 3
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0029",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3135.97,
+    "cpu": 17.84,
+    "memory": 42.18,
+    "error_count": 19
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0030",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 891.11,
+    "cpu": 32.59,
+    "memory": 84.13,
+    "error_count": 6
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0031",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 975.73,
+    "cpu": 46.26,
+    "memory": 19.32,
+    "error_count": 40
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0032",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2244.04,
+    "cpu": 37.49,
+    "memory": 52.66,
+    "error_count": 39
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0033",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2675.43,
+    "cpu": 46.46,
+    "memory": 59.19,
+    "error_count": 47
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0034",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2837.26,
+    "cpu": 51.64,
+    "memory": 46.84,
+    "error_count": 20
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0035",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2524.43,
+    "cpu": 20.69,
+    "memory": 61.98,
+    "error_count": 7
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0036",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 633.58,
+    "cpu": 32.34,
+    "memory": 54.09,
+    "error_count": 6
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0037",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1206.46,
+    "cpu": 74.12,
+    "memory": 66.47,
+    "error_count": 48
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0038",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 2223.4,
+    "cpu": 5.1,
+    "memory": 44.2,
+    "error_count": 32
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0039",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1468.18,
+    "cpu": 75.19,
+    "memory": 67.26,
+    "error_count": 5
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0040",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2772.4,
+    "cpu": 59.19,
+    "memory": 10.58,
+    "error_count": 16
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0041",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 939.07,
+    "cpu": 88.76,
+    "memory": 17.9,
+    "error_count": 14
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0042",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 218.35,
+    "cpu": 57.68,
+    "memory": 91.27,
+    "error_count": 4
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0043",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 923.25,
+    "cpu": 67.66,
+    "memory": 35.22,
+    "error_count": 30
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0044",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3698.68,
+    "cpu": 49.89,
+    "memory": 6.7,
+    "error_count": 3
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0045",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3818.85,
+    "cpu": 1.38,
+    "memory": 80.7,
+    "error_count": 13
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0046",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3315.41,
+    "cpu": 71.43,
+    "memory": 66.22,
+    "error_count": 42
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0047",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3610.95,
+    "cpu": 41.78,
+    "memory": 52.68,
+    "error_count": 10
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0048",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3755.79,
+    "cpu": 3.72,
+    "memory": 66.02,
+    "error_count": 28
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0049",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 571.71,
+    "cpu": 51.98,
+    "memory": 17.26,
+    "error_count": 8
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0050",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2745.44,
+    "cpu": 57.97,
+    "memory": 12.71,
+    "error_count": 11
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0051",
+    "anomaly_type": "latency_spike",
+    "expected_playbook": "PB-003: Latency Spike Resolver",
+    "latency_ms": 3267.42,
+    "cpu": 24.71,
+    "memory": 18.22,
+    "error_count": 17
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0052",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3657.56,
+    "cpu": 6.53,
+    "memory": 38.37,
+    "error_count": 11
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0053",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2981.84,
+    "cpu": 16.33,
+    "memory": 89.62,
+    "error_count": 37
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0054",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 3646.9,
+    "cpu": 55.39,
+    "memory": 94.45,
+    "error_count": 36
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0055",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 2876.62,
+    "cpu": 44.43,
+    "memory": 26.07,
+    "error_count": 10
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0056",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 1961.42,
+    "cpu": 35.6,
+    "memory": 62.68,
+    "error_count": 17
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0057",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "expected_playbook": "PB-009: Quantum Vulnerability Migrator",
+    "latency_ms": 3016.72,
+    "cpu": 38.72,
+    "memory": 5.41,
+    "error_count": 17
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0058",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 422.86,
+    "cpu": 49.24,
+    "memory": 84.81,
+    "error_count": 8
+  },
+  {
+    "instance_id": "HEMI-N-20261014-0059",
+    "anomaly_type": "heartbeat_miss",
+    "expected_playbook": "PB-008: Heartbeat Re-igniter",
+    "latency_ms": 1127.64,
+    "cpu": 9.15,
+    "memory": 72.11,
+    "error_count": 25
+  }
+]
