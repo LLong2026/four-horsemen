@@ -1,0 +1,21 @@
+{
+ "release_verification": {
+  "valid": true,
+  "layer": "none",
+  "version": 2
+ },
+ "gate_valid": true,
+ "decisions": [
+  {
+   "candidate_id": "C11-ACK",
+   "decision": "ADMIT",
+   "rule": "n/a",
+   "side_effects": 0,
+   "reason": "all governance layers passed",
+   "signature": null
+  }
+ ],
+ "journal_entries": 1,
+ "journal_chain_valid": true,
+ "journal_head": "dfdba4eec8c93877cb59fbe585350f91d5455388e0f51498dc29052ef7adf12e"
+}

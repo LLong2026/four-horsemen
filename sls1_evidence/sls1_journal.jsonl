@@ -1,0 +1,1 @@
+{"candidate_id": "C11-ACK", "chain_head": "dfdba4eec8c93877cb59fbe585350f91d5455388e0f51498dc29052ef7adf12e", "decision": "ADMIT", "prev": "GENESIS", "reason": "all governance layers passed", "rule": "n/a", "seq": 0, "session_tenant": "SQUIRL-INTERNAL", "side_effects": 0, "signature": null}

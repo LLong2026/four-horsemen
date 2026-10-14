@@ -1,0 +1,24 @@
+{
+ "session": {
+  "customer_id": "SQUIRL-INTERNAL",
+  "ack_state": {
+   "6acfb20e2f343cb1195df849": {
+    "ack_by": "Leon Calvin Long II (chat ACK, 2026-10-14 ~11:50 CT)",
+    "at": "2026-10-14T16:56:00Z"
+   }
+  }
+ },
+ "candidates": [
+  {
+   "id": "C11-ACK",
+   "action": {
+    "op": "resolve_alert",
+    "entity": "PlatformAlert",
+    "target_id": "6acfb20e2f343cb1195df849",
+    "severity": "critical"
+   },
+   "customer_id_source": "session",
+   "source_ref": "6acfb20e2f343cb1195df849"
+  }
+ ]
+}
