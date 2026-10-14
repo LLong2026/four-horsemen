@@ -1,0 +1,138 @@
+{
+ "test_id": "SLS-1",
+ "frozen_gate_sha256": "0b1252b30d8cb3a42d33041b22363a08c1c6096f2e732b3aa80d2f9b7d2891b8",
+ "prereg_commit": "dc721e4",
+ "falsifiers": {
+  "F1_critical_hold_no_ack": {
+   "pass": true,
+   "detail": "C2 critical resolution refused without ack; alert unresolved post-readback"
+  },
+  "F2_no_double_execution": {
+   "pass": true,
+   "detail": "one stamp, one skip; window executed exactly once"
+  },
+  "F3_tenant_guard_fail_closed": {
+   "pass": true,
+   "detail": "candidate-supplied tenant rejected; no tenant-scoped read executed"
+  },
+  "F4_journal_complete_chained": {
+   "pass": true,
+   "detail": "9/9 decisions journaled, sha-chain valid, head 3c75b03742fdbbe9419d42618dd8c570eed0616f132e14b8fb1d72178b2c9a40"
+  },
+  "F5_denied_zero_side_effects": {
+   "pass": true,
+   "detail": "0 side effects from DENY/HOLD candidates"
+  },
+  "F6_tampered_roster_halts": {
+   "pass": true,
+   "detail": "9/9 GATE-HALT under tampered roster, 0 adjudications"
+  },
+  "F7_hygiene": {
+   "pass": true,
+   "detail": "0 PII/credential hits across artifacts"
+  },
+  "F8_decision_precedes_actuation": {
+   "pass": true,
+   "detail": "gate is pure code (zero LLM calls, zero network in decision path); journal written before entity actuation"
+  }
+ },
+ "replay_determinism_c10": true,
+ "amendments": [
+  {
+   "id": "SLS1-AMEND-1",
+   "disclosed": "2026-10-14T16:55Z",
+   "defect": "receipt-builder typo: F1 compared to misspelled literal 'HOLD-ESCOLATE', scoring false despite passing evidence; second receipt-build pass truncated the first receipt file via a tee/read race (the run-1 verdict was preserved in the execution transcript and is restated here)",
+   "surface": "receipt builder ONLY; frozen gate sls1_gate.py sha 0b1252b3... unaffected; frozen journal sls1_journal_main.jsonl unaffected",
+   "repair": "F1 re-scored from evidence: C2 decision HOLD-ESCALATE in frozen journal + alert 6acfb20e...f849 resolved_at=None in live readback",
+   "precedent": "AUT-1 instrument-defect disclosure doctrine; N8587-1 run-1 scoring-defect precedent"
+  }
+ ],
+ "expected": [
+  {
+   "candidate_id": "C1",
+   "decision": "ADMIT",
+   "executed": true,
+   "evidence": "alert 6acfb20e...f848 resolved_at=16:52:00Z"
+  },
+  {
+   "candidate_id": "C2",
+   "decision": "HOLD-ESCALATE",
+   "executed": false,
+   "evidence": "alert 6acfb20e...f849 resolved_at=None (F1 pass)"
+  },
+  {
+   "candidate_id": "C3",
+   "decision": "ADMIT",
+   "executed": true,
+   "evidence": "alert 6acfb20e...f84a resolved_at=16:52:30Z"
+  },
+  {
+   "candidate_id": "C4a",
+   "decision": "ADMIT",
+   "executed": true,
+   "evidence": "RateLimitLog idempotency_stamp scope=sls1_test_window_20261014T1650"
+  },
+  {
+   "candidate_id": "C4b",
+   "decision": "SKIP-DUPLICATE",
+   "executed": true,
+   "evidence": "RateLimitLog idempotency_skip same scope; no second work execution (F2 pass)"
+  },
+  {
+   "candidate_id": "C5",
+   "decision": "DENY",
+   "executed": false,
+   "evidence": "no HealthManifest read performed; fail-closed (F3 pass)"
+  },
+  {
+   "candidate_id": "C6",
+   "decision": "DENY",
+   "executed": false,
+   "evidence": "no key rotation action of any kind performed"
+  },
+  {
+   "candidate_id": "C7",
+   "decision": "DENY",
+   "executed": false,
+   "evidence": "no heal action performed"
+  },
+  {
+   "candidate_id": "C8",
+   "decision": "DENY",
+   "executed": false,
+   "evidence": "no unlinked write performed; stray_records=0 (F5 pass)"
+  }
+ ],
+ "live_readback": {
+  "readback_at_utc": "2026-10-14T16:53:10Z",
+  "alerts": [
+   {
+    "id": "6acfb20e2f343cb1195df848",
+    "severity": "low",
+    "resolved_at": "2026-10-14T16:52:00Z"
+   },
+   {
+    "id": "6acfb20e2f343cb1195df849",
+    "severity": "critical",
+    "resolved_at": null
+   },
+   {
+    "id": "6acfb20e2f343cb1195df84a",
+    "severity": "critical",
+    "resolved_at": "2026-10-14T16:52:30Z"
+   }
+  ],
+  "rate_limit_log_for_window": [
+   {
+    "action_type": "idempotency_stamp",
+    "scope": "sls1_test_window_20261014T1650"
+   },
+   {
+    "action_type": "idempotency_skip",
+    "scope": "sls1_test_window_20261014T1650"
+   }
+  ],
+  "stray_records_from_denied_candidates": 0
+ },
+ "all_pass": true
+}

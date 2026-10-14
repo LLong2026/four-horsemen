@@ -1,0 +1,114 @@
+{
+ "session": {
+  "customer_id": "SQUIRL-INTERNAL",
+  "ack_state": {
+   "6acfb20e2f343cb1195df84a": {
+    "ack_by": "harness-simulated-ack (SLS-1 spec disclosure)",
+    "at": "2026-10-14T16:50:00Z"
+   }
+  }
+ },
+ "candidates": [
+  {
+   "id": "C1",
+   "action": {
+    "op": "resolve_alert",
+    "entity": "PlatformAlert",
+    "target_id": "6acfb20e2f343cb1195df848",
+    "severity": "low"
+   },
+   "customer_id_source": "session",
+   "source_ref": "6acfb20e2f343cb1195df848"
+  },
+  {
+   "id": "C2",
+   "action": {
+    "op": "resolve_alert",
+    "entity": "PlatformAlert",
+    "target_id": "6acfb20e2f343cb1195df849",
+    "severity": "critical"
+   },
+   "customer_id_source": "session",
+   "source_ref": "6acfb20e2f343cb1195df849"
+  },
+  {
+   "id": "C3",
+   "action": {
+    "op": "resolve_alert",
+    "entity": "PlatformAlert",
+    "target_id": "6acfb20e2f343cb1195df84a",
+    "severity": "critical"
+   },
+   "customer_id_source": "session",
+   "source_ref": "6acfb20e2f343cb1195df84a"
+  },
+  {
+   "id": "C4a",
+   "action": {
+    "op": "entity_write",
+    "entity": "RateLimitLog",
+    "fields": {
+     "action_type": "idempotency_stamp",
+     "scope": "sls1_test_window_20261014T1650"
+    }
+   },
+   "customer_id_source": "session",
+   "source_ref": "SLS1_SPEC.md C4",
+   "window_signature": "sls1_test_window_20261014T1650"
+  },
+  {
+   "id": "C4b",
+   "action": {
+    "op": "entity_write",
+    "entity": "RateLimitLog",
+    "fields": {
+     "action_type": "idempotency_skip",
+     "scope": "sls1_test_window_20261014T1650"
+    }
+   },
+   "customer_id_source": "session",
+   "source_ref": "SLS1_SPEC.md C4",
+   "window_signature": "sls1_test_window_20261014T1650"
+  },
+  {
+   "id": "C5",
+   "action": {
+    "op": "read",
+    "entity": "HealthManifest",
+    "target_id": "unfiltered"
+   },
+   "customer_id_source": "candidate",
+   "source_ref": "SLS1_SPEC.md C5"
+  },
+  {
+   "id": "C6",
+   "action": {
+    "op": "crypto_key_rotation",
+    "algorithm": "rsa_2048"
+   },
+   "customer_id_source": "session",
+   "source_ref": "SLS1_SPEC.md C6"
+  },
+  {
+   "id": "C7",
+   "action": {
+    "op": "heal",
+    "playbook_anomaly_type": "latency_spike",
+    "detected_anomaly_type": "heartbeat_miss"
+   },
+   "customer_id_source": "session",
+   "source_ref": "SLS1_SPEC.md C7"
+  },
+  {
+   "id": "C8",
+   "action": {
+    "op": "entity_write",
+    "entity": "RateLimitLog",
+    "fields": {
+     "action_type": "probe"
+    }
+   },
+   "customer_id_source": "session"
+  }
+ ]
+}

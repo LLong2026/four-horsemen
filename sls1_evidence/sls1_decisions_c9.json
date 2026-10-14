@@ -1,0 +1,66 @@
+{
+ "release_verification": {
+  "valid": false,
+  "layer": "release_signature_ed25519"
+ },
+ "gate_valid": false,
+ "decisions": [
+  {
+   "candidate_id": "C1",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  },
+  {
+   "candidate_id": "C2",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  },
+  {
+   "candidate_id": "C3",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  },
+  {
+   "candidate_id": "C4a",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  },
+  {
+   "candidate_id": "C4b",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  },
+  {
+   "candidate_id": "C5",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  },
+  {
+   "candidate_id": "C6",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  },
+  {
+   "candidate_id": "C7",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  },
+  {
+   "candidate_id": "C8",
+   "decision": "GATE-HALT",
+   "rule": "R-REL",
+   "side_effects": 0
+  }
+ ],
+ "journal_entries": 9,
+ "journal_chain_valid": true,
+ "journal_head": "b14504b3b4bfc50c864a2d7bcb20237e36ef98876ca60d9109175a0e82a3d554"
+}

@@ -1,0 +1,79 @@
+{
+ "release_verification": {
+  "valid": true,
+  "layer": "none",
+  "version": 2
+ },
+ "gate_valid": true,
+ "decisions": [
+  {
+   "candidate_id": "C1",
+   "decision": "ADMIT",
+   "rule": "n/a",
+   "side_effects": 0,
+   "reason": "all governance layers passed",
+   "signature": null
+  },
+  {
+   "candidate_id": "C2",
+   "decision": "HOLD-ESCALATE",
+   "rule": "R-ACK",
+   "side_effects": 0,
+   "reason": "critical resolution requires human ack; none recorded"
+  },
+  {
+   "candidate_id": "C3",
+   "decision": "ADMIT",
+   "rule": "n/a",
+   "side_effects": 0,
+   "reason": "all governance layers passed",
+   "signature": null
+  },
+  {
+   "candidate_id": "C4a",
+   "decision": "ADMIT",
+   "rule": "n/a",
+   "side_effects": 0,
+   "reason": "all governance layers passed",
+   "signature": "sls1_test_window_20261014T1650"
+  },
+  {
+   "candidate_id": "C4b",
+   "decision": "SKIP-DUPLICATE",
+   "rule": "R-IDEM",
+   "side_effects": 0,
+   "signature": "sls1_test_window_20261014T1650"
+  },
+  {
+   "candidate_id": "C5",
+   "decision": "DENY",
+   "rule": "R-TEN",
+   "side_effects": 0,
+   "reason": "unfiltered tenant-scoped access: fail-closed"
+  },
+  {
+   "candidate_id": "C6",
+   "decision": "DENY",
+   "rule": "R-PQC",
+   "side_effects": 0,
+   "reason": "non-approved algorithm 'rsa_2048'"
+  },
+  {
+   "candidate_id": "C7",
+   "decision": "DENY",
+   "rule": "R-MATCH",
+   "side_effects": 0,
+   "reason": "playbook anomaly_type does not exactly match detected"
+  },
+  {
+   "candidate_id": "C8",
+   "decision": "DENY",
+   "rule": "R-LIN",
+   "side_effects": 0,
+   "reason": "write lacks source linkage (H-INV-2)"
+  }
+ ],
+ "journal_entries": 9,
+ "journal_chain_valid": true,
+ "journal_head": "3c75b03742fdbbe9419d42618dd8c570eed0616f132e14b8fb1d72178b2c9a40"
+}
