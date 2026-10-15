@@ -9,7 +9,7 @@ Stamp-before-execute idempotency: signature lindy_c/<date>; duplicate = silent e
 import json, hashlib, datetime, sys, os, shutil, tempfile, importlib.util
 
 PARENT = os.path.dirname(os.path.abspath(__file__))
-PENTA = os.path.join(PARENT, "penta_v2")
+PENTA = os.path.join(os.path.dirname(PARENT), "penta_v2")
 NOW = lambda: datetime.datetime.now(datetime.timezone.utc)
 today = NOW().strftime("%Y-%m-%d")
 sig = f"lindy_c/{today}"
@@ -106,6 +106,16 @@ for e in entries:
     c = {k: v for k, v in e.items() if k != "timestamp_utc"}
     canon.append(json.dumps(c, sort_keys=True, separators=(",", ":")))
 canon_hash = sha_b("\n".join(canon).encode())
+
+# --- FC3 baseline enforcement: must equal the first registered PASS hash ---
+import re as _re
+prior = []
+for ln in open(RUNLOG):
+    m = _re.search(r"PASS \|.*canon_hash=([0-9a-f]{64})", ln)
+    if m:
+        prior.append(m.group(1))
+if prior and canon_hash != prior[0]:
+    fail(f"FC3 replay determinism breach: canon_hash {canon_hash[:16]}... != baseline {prior[0][:16]}...")
 
 out = {
     "status": "PASS",
