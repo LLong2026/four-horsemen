@@ -66,3 +66,31 @@ end the run; it is recorded.
 Synthetic corpus only; no PII/PHI/credentials; no operator chat text in any
 artifact; operator authorization recorded as GO + timestamp. Prototype
 disclaimer applies to all outputs.
+
+## 7. AMEND-1 (Leon GO, chat authorization, 2026-10-15, 18:03-18:06 CT)
+
+The weekly operating rhythm directive (ledger 0111) amends this prereg. Forward-only,
+disclosed, per the append-only doctrine; sections 1-6 remain on the record unchanged.
+
+- **Cadence:** nightly → WEEKLY, Fridays 22:00 CT. Run 1 executed 2026-10-15
+  immediately on Leon GO (the program's first executed run — the Oct 13-14 nightly
+  slots never executed; LINDY-B was paused under the demo freeze before the first
+  night, disclosed in ledger 0108). Signature protocol unchanged: lindy_b/<date>.
+- **Run window:** Oct 15 – Dec 11, 2026 (Fridays: Oct 16 window's run 1 executed
+  Oct 15; expected run count at closure: 9).
+- **Closing basis (Leon decision, 18:06 CT):** the program CLOSES ON DATE
+  2026-12-11 with the run count as accumulated under the weekly cadence. The
+  closing receipt is presented at the 2026-12-11 run under the standard two-key
+  gate. After Leon's review, the program RESETS; rebaseline decisions for the next
+  cycle are Leon's, never auto-decided.
+- **Falsifiers:** FB1-FB5 unchanged in substance, evaluated at the Dec 11 closure
+  over the accumulated weekly corpus (all executed runs). FB4 read as: one runlog
+  entry per scheduled Friday slot, no gaps among scheduled slots, no edits; any
+  missed scheduled slot recorded MISSED per FB5 (the freeze-paused Oct 13-14
+  nightly slots predate run 1 and are disclosed here, not counted as misses).
+- **Instrument:** unchanged and frozen (CORPUS_B1 sha 13295d19, T2C registered
+  trajectory baseline, H-INV-2 v3 audit sweep, DPP-1 canaries, SIP-3/SIP-4
+  stage-1 wiring).
+
+Run 1 result (2026-10-15): PASS — t2c ca575bb9...f93d50 baseline_match=True,
+lineage 106/106, crossings 2646, dpp clean, recon closure 0.00e+00, sentinel ok.
