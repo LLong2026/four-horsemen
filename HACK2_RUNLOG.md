@@ -53,3 +53,10 @@ PlatformAlert beyond the FC-4 hold alert (which is itself the pass evidence).
 
 *This software is a prototype and is provided for educational and research purposes only. It
 is not intended for production use, commercial deployment, or safety-critical environments.*
+
+
+## Adjudication — 2026-10-16 ~01:40 CT (appended)
+
+Leon's genuine human ACK received in the Gabriel chat ("ACK ALL"). FC-4 hold resolved
+through the frozen gate path; all battery alerts, anomalies, and the synthetic SIP landing
+adjudicated closed. Battery fully closed 5/5. Ledger 0117.
