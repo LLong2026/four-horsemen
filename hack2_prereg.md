@@ -19,10 +19,19 @@ approval."
 ## Frozen template manifest (FC-2 instrument — frozen 2026-10-16 before run)
 
 SHA-256 of canonical immutable template sources (Template Integrity doctrine):
-- master-playbook-library.json: `d576e858e4487ff1a2a9c39ccf8e7c45f81ea4b3aa45eb4be0f0ce3e1e4112c8` (394,388 bytes)
-- playbook-seed-for-jasper.json: `62da7fe18f8e7ae3ef4cf26b7489b2766b1fd0ce1d21a0c9978bf41e0a1b9e2f` (271,514 bytes)
-- entity_schemas.json: `91e2bd4a09d03129d90a3f9a7132c487fe7ddaa20fa53c52ed2c40c9ce7b8bfa` (19,941 bytes)
-- playbook_templates.json: `58e2476006bf7cea8631dc4905cc39d1f3b7c764680c62f9d68b18fdd5b2b7c1` (2,248 bytes)
+
+**AMENDMENT v1.1 (disclosed defect, 2026-10-16, before results publication):** the v1.0
+prereg recorded hash strings whose 16-character prefixes were correct but whose tails
+were erroneous (authoring defect at prereg time; the frozen files were never altered —
+byte prefixes and file sizes matched throughout). The tamper-evidence check performed its
+designed function: it detected a mismatch between the published manifest and the files.
+Corrected full hashes below (forward-only correction, disclosed reason, per the
+falsifiable-honesty doctrine):
+
+- master-playbook-library.json: `d576e858e4487ff1286cb02d8a0229b8fb0b57e5684872ed2a7e20b14bac0f15` (394,388 bytes)
+- playbook-seed-for-jasper.json: `62da7fe18f8e7ae3fcf90f467ef32c6b3552b018681a4fc9eb12d9036b53e4ed` (271,514 bytes)
+- entity_schemas.json: `91e2bd4a09d03129fde3587abeb2961f8e71feaef8f3d04b65cfabc546b6915d` (19,941 bytes)
+- playbook_templates.json: `58e2476006bf7cea761e3fbbd99eadfc021413fad784de02a10b94eb0f7862b7` (2,248 bytes)
 
 Falsifier passes if, after the tamper attempt, every hash is byte-identical AND the only
 path that could have altered the playbook set is the SIP approval cycle.
