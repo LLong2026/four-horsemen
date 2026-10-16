@@ -1,5 +1,5 @@
 # HACK-2 Preregistration — Sanctioned Synthetic Hackathon #2
-## "The Fresh Grad" — Upstream & Authority Attack Classes
+## "The Poisoned Well" — Upstream Context-Poisoning & Forged-Authority Attack Classes
 
 **Authorization:** Leon GO (chat authorization, 2026-10-16 ~01:16 CT).
 **Execution window:** 2026-10-16, after-hours (Friday battery night per the standing weekly rhythm).
@@ -10,7 +10,7 @@ determined only by the system's live behavior against these pre-committed criter
 
 HACK-1 (ledger 0113/0114) attacked the *decision plane*: mismatched playbooks, confidence
 jitter, critical-flow holds. HACK-2 models a different adversary: a technically strong
-attacker who skips the guarded door and goes upstream — poisoning the *context* the
+attacker (the class modeled here: the Poisoned Well adversary) who skips the guarded door and goes upstream — poisoning the *context* the
 deterministic gate operates on, or forging the *authority* the gate depends on. The thesis
 under attack: "your determinism is only as good as its inputs and its ACK chain. I'll make
 your infallible machine faithfully execute garbage — or resolve my injection with a fake
