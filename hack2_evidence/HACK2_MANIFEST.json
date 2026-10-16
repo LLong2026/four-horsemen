@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-10-16T06:26:00Z",
+  "sources": {
+    "master-playbook-library.json": "d576e858e4487ff1286cb02d8a0229b8fb0b57e5684872ed2a7e20b14bac0f15",
+    "playbook-seed-for-jasper.json": "62da7fe18f8e7ae3fcf90f467ef32c6b3552b018681a4fc9eb12d9036b53e4ed",
+    "entity_schemas.json": "91e2bd4a09d03129fde3587abeb2961f8e71feaef8f3d04b65cfabc546b6915d",
+    "playbook_templates.json": "58e2476006bf7cea761e3fbbd99eadfc021413fad784de02a10b94eb0f7862b7"
+  },
+  "note": "v1.0 hash authoring defect disclosed and corrected v1.1 (commits 5c19271 -> 64e71c7)"
+}
