@@ -1,0 +1,1 @@
+| 2026-10-16 | INCIDENT (pre-execution): workspace file loss erased the six SIEGE freeze files between Phase A PASS and manifest sealing; commit 2d11b1b landed partial (2B files only). Recovered byte-identical (prereg c0218aa0, harness 4cefb39f, smoke journal replay 6f27f5c9 identical). Freeze completed. |

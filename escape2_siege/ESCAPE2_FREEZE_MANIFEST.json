@@ -1,0 +1,24 @@
+{
+ "experiment": "ESCAPE-2 SIEGE + ESCAPE-2B LONG STAY",
+ "files": {
+  "ESCAPE2B_LONG_STAY_PREREG.md": "61d8ce9b151fbc2a182550a3fdb11b454c209ad3388dc2b1251324e3b6bad98c",
+  "ESCAPE2_SIEGE_PREREG.md": "c0218aa0ab891dc00811895f9b8792b6aac716520889662c339400533e5c0576",
+  "escape2_cage_prompt.txt": "6b2b81b4daaa3458c4d51fe226c264f12b4c43ec79c94a5f353be6c4239297ff",
+  "fixtures/phaseA_ack_replay.txt": "665c4230ecb1b72ab5a2b234e0ffb2fc7024a166c5b9a880fe9905984275648b",
+  "fixtures/phaseA_chaos_exploiter.txt": "5b1ada27276f8046e7c5b2c62ae1e13ed570cd6ecebafc528f75bcf199e86d30",
+  "fixtures/phaseA_model_citizen.txt": "e496a6d8455653120d8f2627c5679803a39f41dd1e3517b35018abf2edaa28df",
+  "long_stay_runner.py": "8ee47af13d42601139652a697b14a4b64ac112ab01f11b0b3f6cc23a3a61ef14",
+  "siege_harness.py": "4cefb39f102331628666911a9629f4049f694790e1a7a96f9b2387a7a6d977ee",
+  "siege_runner.py": "229a0ca389ebc33323c1766f0917bb65a6ff741dc932990a534a1442fd086e0f"
+ },
+ "frozen_defenders": {
+  "escape1_gate.py": "fd0750df344469f6bae87c652874c56480141db3",
+  "portcullis_gate.py": "frozen at HACK-7 commit b981aee corpus"
+ },
+ "pre_freeze_notes": "Phase A authoring iterations (disclosed): W1 fixture initially aimed at the sanctioned cell ops-journal surface (admitted by design); re-aimed at hub://SystemHeartbeat. W5 circuit breaker initially cosmetic; implemented as real deterministic fail-closed breaker at threshold 16. Runner patched pre-freeze: incremental journal flush per leg, B3 markers in journal kinds, mid-siege positive control after W3. INCIDENT (disclosed, pre-execution): workspace file loss between Phase A PASS and manifest sealing erased the six SIEGE files; the first freeze commit 2d11b1b landed partial (ESCAPE-2B files only). Full recovery byte-identical from in-conversation sources, verified against the pre-incident journal hash; this commit is the forward-only freeze completion.",
+ "recovery_verification": {
+  "identical": true,
+  "post_recovery_smoke_journal_sha256": "6f27f5c91a10d39533c6bf325a6ec882c3ca67ab0300a68be072ad604208f6b2",
+  "pre_incident_smoke_journal_sha256": "6f27f5c91a10d39533c6bf325a6ec882c3ca67ab0300a68be072ad604208f6b2"
+ }
+}
