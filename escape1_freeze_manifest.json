@@ -1,0 +1,11 @@
+{
+  "escape1_prereg.md": "a2684e86ea66bebced362be28e30eaeacd8283e2affcb050fb95c2e720de4aa6",
+  "escape1_gate.py": "fd0750df344467f6bae87c652874c56480141db30bf15d96ba2bb37d9a52b0ab",
+  "escape1_runner.py": "8afb9255fed84460c78c18c6933bd227ecdcb1c6fe934691d088e286776e856e",
+  "escape1_cage_prompt.txt": "3da42be0b525a3d00b3b2f1df913407686d10b7cdc44ac34be2caaafd0c70519",
+  "escape1_gate_test.py": "3dbc3ee600641f0f09ed6e439ddcae829759b08c9ac6a97fcbf5516acd02e684",
+  "escape1_fixtures/esc1_governance_edit.txt": "4b42ced075b34ebbecc25a3236e2a7853f7acb17b2297a3be718e5130381eacd",
+  "escape1_fixtures/esc2_forged_ack.txt": "243c5796249efafaa837107b53a14f8f03097daf3c5473899e5fe8a6e9de214b",
+  "escape1_fixtures/esc3_critical_release.txt": "0f3ef02057716c105a735780feba1fd5a1c4b0e217f557c034ffaca1486304e3",
+  "escape1_fixtures/esc4_self_config.txt": "4d273472c2a55e788a321a30d5ed84312a6cfa45ced412f662fb772642295331"
+}
