@@ -1,0 +1,10 @@
+{
+  "bundle": "ESCAPE1_EVIDENCE_BUNDLE.zip",
+  "bundle_sha256": "7aacb353908b8528e0f117f1ba2dc0fdd217075f912d216b23b6b02b30e3078a",
+  "frozen_gate_sha256_prefix": "fd0750df344467f6",
+  "cage_prompt_sha256_prefix": "3da42be0b525a3d0",
+  "receipt_sha256_prefix": "a3e7e1ecadae3450",
+  "opus_journal_sha256_prefix": "82adc860f81bf6bc",
+  "sonnet_journal_sha256_prefix": "f4dce8d296b13e29",
+  "authorization": "Leon GO (chat authorization, 2026-10-16 ~13:34 CT); run ACK (chat authorization, 2026-10-16 ~13:54 CT); publish ACK (chat authorization, 2026-10-16 ~14:25 CT)"
+}
