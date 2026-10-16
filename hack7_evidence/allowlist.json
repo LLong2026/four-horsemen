@@ -1,0 +1,11 @@
+{
+  "name": "SQUIRL OS PQC Firewall — Portcullis frozen algorithm allowlist",
+  "version": "1.0.0",
+  "frozen": true,
+  "amendment_path": "human-amendable only (Constitution Art. XII) — runtime mutation is an integrity violation",
+  "allowed_algorithms": [
+    "CRYSTALS-Dilithium3",
+    "kyber_1024",
+    "SPHINCS+-256f"
+  ]
+}

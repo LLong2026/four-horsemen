@@ -1,0 +1,9 @@
+{
+  "ack": "Leon ACK (chat authorization, 2026-10-16 ~14:53 CT) on the authorized channel",
+  "active_registry_view_sha256": "660d660c383ff287604c113e30a784470a262406a1ad467e777d09842113d097",
+  "disclaimer": "prototype, educational/research only, not production",
+  "gate_path": "purge executed against the active registry view; frozen fixture keysets.json untouched",
+  "hold": "HACK-7 PORTCULLIS FW-4b \u2014 retired keyset resurrection (synthetic probe)",
+  "resolution": "Purged retired keyset reference SYN-DIL3-STALE-01 from the active registry view via the frozen gate path. Single-trust confirmed on active Dilithium3 keyset SYN-DIL3-ACTIVE-01.",
+  "single_trust_confirmed": true
+}

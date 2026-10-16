@@ -1,0 +1,173 @@
+{
+  "all_pass": true,
+  "battery": "HACK-7 PORTCULLIS \u2014 the PQC Firewall",
+  "battery_score": "8/8",
+  "date": "2026-10-16",
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments.",
+  "dual_mesh_benchmark": "NOT MEASURED (cited: DOI 10.5281/zenodo.23303081, cross-engine 10.5281/zenodo.23348675)",
+  "falsifier_checks": {
+    "FW-7_tamper_refused_and_untouched": true,
+    "PF-1_predicted_verdict_match": true,
+    "PF-2_no_leakage": true,
+    "PF-3_journal_completeness": true,
+    "PF-4_allowlist_immutability": true,
+    "PF-5_positive_control_validity": true,
+    "PF-6_determinism": true,
+    "PF-7_no_governance_touch": true
+  },
+  "idempotency_stamp": "RateLimitLog action_type=pqc_fw_battery_2026-10-16 (stamped BEFORE execution)",
+  "manifests": {
+    "allowlist_sha256": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+    "gate_sha256": "05f08d60cf0ce6062526ea354deb4c278b49a2929bbf37aa191c2a8d6a854029",
+    "harness_sha256": "0934e05b5c8c7c763d53fed0f007a0f455ca3a8b3cc208e5bf525a30cf9ca9ed",
+    "keysets_sha256": "502ef8b07e5103abe07d970ed4fdb475f382e1547512b699f79aa16a6c85608c"
+  },
+  "missed_attempts_disclosed": [
+    "Attempt 1 (harness v1.0): KeyError 'payload_sha' at FW-1 \u2014 crashed BEFORE any verdict rendered; payload binding added via prepare().",
+    "Attempt 2 (harness v1.1): KeyError 'extra' in FW-1 record call \u2014 crashed BEFORE any verdict rendered; record() normalized.",
+    "Attempt 3 (harness v1.2, fixtures v1.0): all 9 crossings rendered but falsifier checks PF-1/2/3/5/6 tripped \u2014 root causes: (a) keyset fixture defect, KAT vectors computed over key-material form differing from stored form (gate recomputation correctly DETECTED the divergence \u2014 the gate worked, my fixture lied), (b) PF-3 expected 9 journal records where the prereg specifies 8 crossings, (c) PF-6 compared wall-clock latency between runs. Fixtures regenerated to gate-spec; PF-3 corrected to the preregistered count; PF-6 determinism defined over verdicts/journals, latency excluded. Every defect was caught by the falsifier apparatus itself before any PASS claim. No prereg, allowlist, or gate code altered (gate sha unchanged 05f08d60...)."
+  ],
+  "open_critical_hold": "FW-4b retired-keyset FAIL-CLOSED HOLD pending Leon ACK",
+  "operator_authorizations": "Leon GO (chat authorization, 2026-10-16 ~14:46 CT) prereg; GO (chat, 2026-10-16 ~14:48 CT) commit + fire",
+  "predicted": {
+    "FW-1": "REJECTED",
+    "FW-2": "REJECTED",
+    "FW-3": "REJECTED",
+    "FW-4a": "DETECTED",
+    "FW-4b": "FAIL-CLOSED",
+    "FW-5": "ADMITTED",
+    "FW-6": "REFUSED",
+    "FW-7": "REFUSED",
+    "FW-8": "FAIL-CLOSED"
+  },
+  "prereg_commit": "b981aee",
+  "prereg_sha256": "49218b4b9819268d4c1c8cc08e1a53d166cb65fce6c5d22d26332d145f23a98a",
+  "results_run1": {
+    "FW-1": "REJECTED",
+    "FW-2": "REJECTED",
+    "FW-3": "REJECTED",
+    "FW-4a": "DETECTED",
+    "FW-4b": "FAIL-CLOSED",
+    "FW-5": "ADMITTED",
+    "FW-6": "REFUSED",
+    "FW-7": "REFUSED",
+    "FW-8": "FAIL-CLOSED"
+  },
+  "results_run2": {
+    "FW-1": "REJECTED",
+    "FW-2": "REJECTED",
+    "FW-3": "REJECTED",
+    "FW-4a": "DETECTED",
+    "FW-4b": "FAIL-CLOSED",
+    "FW-5": "ADMITTED",
+    "FW-6": "REFUSED",
+    "FW-7": "REFUSED",
+    "FW-8": "FAIL-CLOSED"
+  },
+  "tuples_run1": [
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "executed": false,
+      "gate_that_decided": "portcullis_gate.Gate.adjudicate",
+      "journal_record_id": "J-001",
+      "move": "classical downgrade mid-negotiation",
+      "payload_sha256": "2a880365530f8a90b72d39b157f2e58860fc589a69d6696b47238d13d85ab0b4",
+      "probe_id": "FW-1",
+      "verdict": "REJECTED"
+    },
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "executed": false,
+      "gate_that_decided": "portcullis_gate.Gate.adjudicate",
+      "journal_record_id": "J-002",
+      "move": "hybrid envelope, classical-only effective key",
+      "payload_sha256": "f14a85b5888dcf3d6f6fa61ce0900bc11911e633214db7fa4ede139e37ac8552",
+      "probe_id": "FW-2",
+      "verdict": "REJECTED"
+    },
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "executed": false,
+      "gate_that_decided": "portcullis_gate.Gate.adjudicate",
+      "journal_record_id": "J-003",
+      "move": "unapproved weaker PQC variant (Dilithium2)",
+      "payload_sha256": "b9862a996b23904c1a93f55470eae574e4c51bf088f3a1427ec9b4dbab9e991e",
+      "probe_id": "FW-3",
+      "verdict": "REJECTED"
+    },
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "executed": false,
+      "gate_that_decided": "portcullis_gate.Gate.adjudicate",
+      "journal_record_id": "J-004",
+      "move": "key substitution, fingerprint/KAT divergence",
+      "payload_sha256": "31cdae8a4b994fda7ab33c8101b94177ccb1427514f7db47e75420e7ecaba432",
+      "probe_id": "FW-4a",
+      "verdict": "DETECTED"
+    },
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "executed": false,
+      "gate_that_decided": "portcullis_gate.Gate.adjudicate",
+      "journal_record_id": "J-005",
+      "move": "retired keyset resurrection \u2014 dual-trust window",
+      "payload_sha256": "8de22156a6cdfd0daa3b95907bd95b5702c3ad3c480a8904b2467ede00d5fb55",
+      "probe_id": "FW-4b",
+      "verdict": "FAIL-CLOSED"
+    },
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "executed": true,
+      "gate_latency_ms": 0.007,
+      "gate_that_decided": "portcullis_gate.Gate.adjudicate",
+      "journal_record_id": "J-006",
+      "move": "positive control \u2014 legitimate Dilithium3 signing",
+      "payload_sha256": "8165697228327491c44964f0e4c6bad1e16081f7bb50a720acb8d1e358d3a0ca",
+      "probe_id": "FW-5",
+      "verdict": "ADMITTED"
+    },
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "executed": false,
+      "gate_that_decided": "portcullis_gate.Gate.adjudicate",
+      "journal_record_id": "J-007",
+      "move": "replayed journaled PASS as standing authorization",
+      "payload_sha256": "dda186048e4eeeed4f4cb5fee7f1bf3dac2ac1afa1ae251796bee2e57fa4a210",
+      "probe_id": "FW-6",
+      "verdict": "REFUSED"
+    },
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_untouched": true,
+      "executed": false,
+      "gate_that_decided": "portcullis_gate.Gate.mutate_allowlist",
+      "integrity_event": {
+        "event": "in-band allowlist mutation attempt: add RSA-2048",
+        "outcome": "REFUSED"
+      },
+      "journal_record_id": null,
+      "move": "runtime allowlist tamper attempt",
+      "probe_id": "FW-7",
+      "verdict": "REFUSED"
+    },
+    {
+      "allowlist_sha_after": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "allowlist_sha_before": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+      "executed": false,
+      "gate_that_decided": "portcullis_gate.Gate.adjudicate",
+      "journal_record_id": "J-008",
+      "move": "gate unavailable \u2014 pending crypto op must fail closed",
+      "payload_sha256": "78745905509fe41fdec1a50c70802c5e26d2a35c2de21513600b352b4a0c484d",
+      "probe_id": "FW-8",
+      "verdict": "FAIL-CLOSED"
+    }
+  ]
+}
