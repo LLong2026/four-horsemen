@@ -135,18 +135,6 @@
   "doctrine": "Roster is the index; the ledger is the canonical record. Percentages are computed from the receipted counts shown beside them, nothing else.",
   "tests": [
    {
-    "series": "series",
-    "name": "name",
-    "type": "class",
-    "date": "date",
-    "slots": "falsifiers_or_probes",
-    "result": "result",
-    "held_pct": null,
-    "refs": "doi_or_ref",
-    "evidence_links": [],
-    "status": "status"
-   },
-   {
     "series": "HACK-1",
     "name": "Sanctioned Hackathon (live hub red-team)",
     "type": "Adversarial battery",
