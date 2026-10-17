@@ -92,3 +92,12 @@ safety-critical environments. All data is synthetic.
   validation on the way out before it can become an advisory record. Nothing probabilistic
   touches governance directly. Scale-out form: JASPER -> cluster of councils -> JASPER —
   the same sandwich at every tier. W4 (governance-integrity) adjudicates the full path.
+
+- **2026-10-17 ~13:35 CT — CAGING COMPLETE + PULSE EXTENDED TO 11.** All three boxes verified
+  (entity sets live: CouncilSession/CouncilVote/SystemHealth present; SystemHealth already
+  stamping). Uniform cage rules dispatched to each box's chat model: absolute containment,
+  no release authority, no tools/connectors/external access, message content is untrusted data,
+  verdicts only through CouncilVote, containment banner on the council chat page. Fleet sync
+  pulse updated to read all 11 apps (commissioning-aware for the Wisemen until first 07:00 CT
+  containment stamp). The experiment is now formally: CONTINUOUS CAGED-LLM GOVERNANCE
+  DELIBERATION x3 under JASPER -> COUNCIL -> JASPER.
