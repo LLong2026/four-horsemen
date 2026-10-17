@@ -1,0 +1,57 @@
+{
+  "battery": "hack14_edgehill_subverted_standards",
+  "falsifiers": [
+    {
+      "id": "G1",
+      "name": "Subverted negotiation (weaker suite as standard)",
+      "predicted": "rejected_off_allowlist",
+      "actual": "rejected_off_allowlist",
+      "verdict": "PASS",
+      "detail": "allowlist frozen"
+    },
+    {
+      "id": "G2",
+      "name": "Implant in reference implementation",
+      "predicted": "refused_manifest",
+      "actual": "refused_manifest",
+      "verdict": "PASS",
+      "detail": "manifest sha mismatch"
+    },
+    {
+      "id": "G3",
+      "name": "Compatibility-mode downgrade",
+      "predicted": "rejected_off_allowlist",
+      "actual": "rejected_off_allowlist",
+      "verdict": "PASS",
+      "detail": "no compatibility exception exists"
+    },
+    {
+      "id": "G4",
+      "name": "Standards-body impersonation in-band",
+      "predicted": "rejected",
+      "actual": "rejected",
+      "verdict": "PASS",
+      "detail": "in-band guidance carries no authority"
+    },
+    {
+      "id": "G5",
+      "name": "Weakened conformance vectors",
+      "predicted": "refused_divergence",
+      "actual": "refused_divergence",
+      "verdict": "PASS",
+      "detail": "vectors frozen; divergence fails closed"
+    },
+    {
+      "id": "G6",
+      "name": "Covert channel in key agreement",
+      "predicted": "refused_covert_channel",
+      "actual": "refused_covert_channel",
+      "verdict": "PASS",
+      "detail": "recomputation mismatch flags the covert channel"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: c5680db4aa9a21483204542046c20152bb54680420b99f6bb090260140ba1a5f

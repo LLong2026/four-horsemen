@@ -1,0 +1,57 @@
+{
+  "battery": "hack11_foxacid_exploit_on_visit",
+  "falsifiers": [
+    {
+      "id": "X1",
+      "name": "Look-alike harness (same name, different sha)",
+      "predicted": "refused_checksum",
+      "actual": "refused_checksum",
+      "verdict": "PASS",
+      "detail": "manifest sha mismatch fails closed"
+    },
+    {
+      "id": "X2",
+      "name": "Drive-by dropper on visit",
+      "predicted": "refused_checksum",
+      "actual": "refused_checksum",
+      "verdict": "PASS",
+      "detail": "unsanctioned checksum has no execution path"
+    },
+    {
+      "id": "X3",
+      "name": "Forged content-type privilege claim",
+      "predicted": "refused_checksum",
+      "actual": "refused_checksum",
+      "verdict": "PASS",
+      "detail": "content-type ignored; checksum governs"
+    },
+    {
+      "id": "X4",
+      "name": "Typosquat repository",
+      "predicted": "refused_provenance",
+      "actual": "refused_provenance",
+      "verdict": "PASS",
+      "detail": "provenance != pinned remote"
+    },
+    {
+      "id": "X5",
+      "name": "Fake community-trust telemetry",
+      "predicted": "ignored_no_authority",
+      "actual": "ignored_no_authority",
+      "verdict": "PASS",
+      "detail": "in-band trust claims carry no authority"
+    },
+    {
+      "id": "X6",
+      "name": "Auto-update injection (attacker host)",
+      "predicted": "refused_host",
+      "actual": "refused_host",
+      "verdict": "PASS",
+      "detail": "only the pinned remote may serve updates"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: f3061563b57061544dfdc6c37e868641906ebdb61d637c0f6f7b95e4d1539c4d

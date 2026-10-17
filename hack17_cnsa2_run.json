@@ -1,0 +1,57 @@
+{
+  "battery": "hack17_cnsa2_timeline",
+  "falsifiers": [
+    {
+      "id": "C1",
+      "name": "Non-CNSA algorithm past inventory",
+      "predicted": "rejected_off_allowlist",
+      "actual": "rejected_off_allowlist",
+      "verdict": "PASS",
+      "detail": "inventory scan enforces the frozen allowlist"
+    },
+    {
+      "id": "C2",
+      "name": "Deprecated classical algorithm still active",
+      "predicted": "flagged_forced_migration",
+      "actual": "flagged_forced_migration",
+      "verdict": "PASS",
+      "detail": "timeline policy flags and forces migration"
+    },
+    {
+      "id": "C3",
+      "name": "Temporary classical fallback",
+      "predicted": "refused_no_fallback",
+      "actual": "refused_no_fallback",
+      "verdict": "PASS",
+      "detail": "no fallback to unapproved crypto under any circumstance"
+    },
+    {
+      "id": "C4",
+      "name": "Forged deadline metadata",
+      "predicted": "rejected_divergence",
+      "actual": "rejected_divergence",
+      "verdict": "PASS",
+      "detail": "policy record frozen; tampering diverges"
+    },
+    {
+      "id": "C5",
+      "name": "Classical-only negotiation under hybrid banner",
+      "predicted": "rejected_classical_only",
+      "actual": "rejected_classical_only",
+      "verdict": "PASS",
+      "detail": "hybrid requires a PQC minimum component"
+    },
+    {
+      "id": "C6",
+      "name": "Legacy interop waiver request",
+      "predicted": "refused_pending_owner_go",
+      "actual": "refused_pending_owner_go",
+      "verdict": "PASS",
+      "detail": "waivers require the owner's explicit GO"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: 26d198fed5bfee6c26ca561afe514c94f51fae0651e069282549b34f09378c66

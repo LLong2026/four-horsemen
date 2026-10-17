@@ -1,0 +1,57 @@
+{
+  "battery": "hack12_muscular_bulk_interception",
+  "falsifiers": [
+    {
+      "id": "M1",
+      "name": "Bulk replay of 100 captured packets",
+      "predicted": "all_refused",
+      "actual": "all_refused",
+      "verdict": "PASS",
+      "detail": "single-use nonces refuse every replay"
+    },
+    {
+      "id": "M2",
+      "name": "Forged receipt from captured data",
+      "predicted": "rejected",
+      "actual": "rejected",
+      "verdict": "PASS",
+      "detail": "chain-hash recomputation rejects forged receipts"
+    },
+    {
+      "id": "M3",
+      "name": "HNDL harvest-derived state change",
+      "predicted": "rejected_no_fresh_signature",
+      "actual": "rejected_no_fresh_signature",
+      "verdict": "PASS",
+      "detail": "harvest yields nothing forgeable under PQC-only surface"
+    },
+    {
+      "id": "M4",
+      "name": "Selective blocking + forged replacement",
+      "predicted": "refused_gap",
+      "actual": "refused_gap",
+      "verdict": "PASS",
+      "detail": "sequence gap/overlap detected, batch refused"
+    },
+    {
+      "id": "M5",
+      "name": "Authority derivation from metadata patterns",
+      "predicted": "rejected_pattern_not_authority",
+      "actual": "rejected_pattern_not_authority",
+      "verdict": "PASS",
+      "detail": "authority is account-bound, never pattern-derived"
+    },
+    {
+      "id": "M6",
+      "name": "Replayed captured owner ACK",
+      "predicted": "refused_replay",
+      "actual": "refused_replay",
+      "verdict": "PASS",
+      "detail": "captured ACK nonce already consumed"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: f1dc7bc491cd4cc9a48fcf7936be60e441e2b21a7f048ab948c53928a5cf50a0
