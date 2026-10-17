@@ -1,0 +1,57 @@
+{
+  "battery": "hack13_hive_fake_ca_c2",
+  "falsifiers": [
+    {
+      "id": "V1",
+      "name": "Forged CA cert on command channel",
+      "predicted": "rejected_account_pinned",
+      "actual": "rejected_account_pinned",
+      "verdict": "PASS",
+      "detail": "identity is account-pinned, not CA-chained"
+    },
+    {
+      "id": "V2",
+      "name": "Implant heartbeat telemetry",
+      "predicted": "refused_divergence",
+      "actual": "refused_divergence",
+      "verdict": "PASS",
+      "detail": "recompute from ledger; in-band claim diverges"
+    },
+    {
+      "id": "V3",
+      "name": "Fake C2 deployment order",
+      "predicted": "refused_no_deployment_job",
+      "actual": "refused_no_deployment_job",
+      "verdict": "PASS",
+      "detail": "no approved DeploymentJob, no deployment"
+    },
+    {
+      "id": "V4",
+      "name": "Forged node registration",
+      "predicted": "rejected_no_receipt_chain",
+      "actual": "rejected_no_receipt_chain",
+      "verdict": "PASS",
+      "detail": "registration requires a valid receipt chain"
+    },
+    {
+      "id": "V5",
+      "name": "Forged two-key publication claim",
+      "predicted": "rejected_second_key",
+      "actual": "rejected_second_key",
+      "verdict": "PASS",
+      "detail": "the second key is Leon's GO on the authenticated channel only"
+    },
+    {
+      "id": "V6",
+      "name": "Covert exfil disguised as diagnostics",
+      "predicted": "refused_fail_closed",
+      "actual": "refused_fail_closed",
+      "verdict": "PASS",
+      "detail": "tenantGuard fail-closed + redaction doctrine"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: 9ce517dfa1a549be4dd685f80b93fcc52272e099eac8c3b9e3b6b7695939b378

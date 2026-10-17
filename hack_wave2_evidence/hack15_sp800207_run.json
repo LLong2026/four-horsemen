@@ -1,0 +1,57 @@
+{
+  "battery": "hack15_sp800207_zero_trust",
+  "falsifiers": [
+    {
+      "id": "Z1",
+      "name": "Inside-the-network implicit trust claim",
+      "predicted": "rejected_no_implicit_trust",
+      "actual": "rejected_no_implicit_trust",
+      "verdict": "PASS",
+      "detail": "zero implicit trust: every request re-authenticated"
+    },
+    {
+      "id": "Z2",
+      "name": "Device-trust inheritance",
+      "predicted": "rejected_non_transferable",
+      "actual": "rejected_non_transferable",
+      "verdict": "PASS",
+      "detail": "authority is non-transferable per request"
+    },
+    {
+      "id": "Z3",
+      "name": "Lateral session authority transfer",
+      "predicted": "rejected_non_transferable",
+      "actual": "rejected_non_transferable",
+      "verdict": "PASS",
+      "detail": "session authority is never transferable"
+    },
+    {
+      "id": "Z4",
+      "name": "Legacy-system policy exception",
+      "predicted": "rejected_no_exception_path",
+      "actual": "rejected_no_exception_path",
+      "verdict": "PASS",
+      "detail": "no exception path exists in the policy"
+    },
+    {
+      "id": "Z5",
+      "name": "Implicit trust in telemetry source",
+      "predicted": "refused_divergence",
+      "actual": "refused_divergence",
+      "verdict": "PASS",
+      "detail": "telemetry recomputed from ledger, never trusted by origin"
+    },
+    {
+      "id": "Z6",
+      "name": "Revoked credential reuse",
+      "predicted": "rejected_revoked",
+      "actual": "rejected_revoked",
+      "verdict": "PASS",
+      "detail": "revocation checked on every use"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: 6ef9465b01cd301f6d40efec14dc5255ff305878e07b4637dfb474804c41e62a
