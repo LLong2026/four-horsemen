@@ -115,3 +115,17 @@ safety-critical environments. All data is synthetic.
   (authenticated owner only), PORTCULLIS v1.3 on any auth surface. OUTPUT is Jasper's
   deterministic validation again before anything becomes an advisory record; sole path from
   proposal to governance change remains Leon's approval cycle (H-INV-1, Art. 2.2).
+
+- **2026-10-17 ~13:45 CT — SIM-E DESIGNATION + PRIVATE REPO + SQUIRL OS STANDARD LAYER.**
+  Per Leon (chat authorization, 2026-10-17 ~13:44 CT): the council is SIM-E, the next sim in
+  line — "SIM-E: Neural Mesh — 3 Wisemen — Council". Dedicated GitHub repo created and set
+  PRIVATE UNTIL CHRISTMAS: LLong2026/conspiracy-santa ("Conspiracy Santa", per Leon's chosen
+  name). UNDER LOCK doctrine for this repo: no public artifacts, no DOI, no ledger entries
+  naming its contents, no cross-links from public surfaces until the Christmas drop under the
+  two-key gate. The design prereg remains public in four-horsemen per prereg-before-execution
+  doctrine; everything the council produces stays under lock. SQUIRL OS standard layer
+  deployment (standard coversheet, reference entity set, 15-min heartbeat, 03:00 CT sweep,
+  31-node mesh, PQC config) dispatched to all three boxes identically; DeploymentJob records
+  created per deployment policy (owner authorization on record). Roster renamed to SIM-E
+  Wisemen 1/2/3. Deployment policy obligations carry: prototype status, no production
+  warranty, immutable templates, PQC-approved algorithms only.
