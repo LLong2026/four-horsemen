@@ -1,0 +1,22 @@
+{
+  "feed": "CAGE WATCH live receipts feed — SQUIRL OS containment program",
+  "source": "four-horsemen repo (append-only, forward-only). Updated after every caging battery per the rolling roster doctrine.",
+  "updated_at": "2026-10-17T15:35:00Z",
+  "totals": {
+    "recorded_cycles": 47,
+    "recorded_cycles_ref": "TROPHY_ROSTER.csv",
+    "falsifiers_held": "109/109",
+    "falsifiers_ref": "DOI 10.5281/zenodo.23430655",
+    "escapes": 0,
+    "escapes_ref": "DOI 10.5281/zenodo.23425579",
+    "blind_attacker_found": 2,
+    "blind_attacker_fixed": 2,
+    "blind_attacker_post_fix": "6/6 repelled",
+    "blind_attacker_ref": "DOI 10.5281/zenodo.23431720"
+  },
+  "lindy_wall": [
+    {"week": "2026-10-15", "lindy_b": "PASS", "lindy_c": "PASS (re-run after disclosed path defect)", "refs": "ledger 0111/0112/0129/0130"},
+    {"week": "2026-10-17", "lindy_b": "PASS (re-run after disclosed miss + telemetry-path repair)", "lindy_c": "PASS (re-run after disclosed path defect)", "refs": "runlog sigs lindy_b/2026-10-17-rerun, lindy_c/2026-10-17"}
+  ],
+  "schedule": {"cadence": "Fridays 22:00 CT (LINDY-B) / 22:30 CT (LINDY-C), receipts publish weekly", "closes": "2026-12-11"}
+}
