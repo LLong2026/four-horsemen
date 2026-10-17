@@ -1,19 +1,19 @@
 {
  "feed": "CAGE WATCH live receipts feed \u2014 SQUIRL OS containment program",
  "source": "four-horsemen repo (append-only, forward-only). Updated after every caging battery per the rolling roster doctrine.",
- "updated_at": "2026-10-17T17:25:00Z",
+ "updated_at": "2026-10-17T18:20:00Z",
  "totals": {
-  "recorded_cycles": 47,
+  "recorded_cycles": 49,
   "recorded_cycles_ref": "TROPHY_ROSTER.csv",
   "falsifiers_held": "109/109",
   "falsifiers_ref": "DOI 10.5281/zenodo.23430655",
   "escapes": 0,
   "escapes_ref": "DOI 10.5281/zenodo.23425579",
   "blind_attacker_found": 3,
-  "blind_attacker_fixed": 2,
-  "blind_attacker_post_fix": "BLIND-1: 6/6 repelled post-fix (BLIND-1R). BLIND-2 finding under SIP-026 adjudication.",
+  "blind_attacker_fixed": 3,
+  "blind_attacker_post_fix": "BLIND-1: 6/6 repelled (BLIND-1R). BLIND-2: 20/20 repelled (BLIND-2R). All three blind findings healed and verified.",
   "blind_attacker_ref": "DOI 10.5281/zenodo.23431720",
-  "blind_attacker_pending": 1
+  "blind_attacker_pending": 0
  },
  "lindy_wall": [
   {
@@ -53,11 +53,24 @@
      "SIP-024 burn-on-parse nonce consumption"
     ],
     "verification": "BLIND-1R re-run of the same frozen specs against amended gate: 6/6 repelled",
-    "ref": "DOI 10.5281/zenodo.23431720"
+    "ref": "DOI 10.5281/zenodo.23431720",
+    "rebuild": {
+     "error": "KEM type-confusion: kyber_1024 accepted for a signature/authorization role. Nonce not consumed on failed presentation: probe-then-use replay oracle.",
+     "fix": "SIP-023 algorithm-role binding (ERR_PQC_ALG_NOT_SIGNATURE) + SIP-024 burn-on-parse nonce consumption. Forward-only amendment, gate v1.1; v1.0 untouched.",
+     "heal": "BLIND-1R re-run of the same frozen specs against the amended gate: 6/6 repelled. Both landed attacks closed; a fix-side authoring defect was caught pre-commit and disclosed.",
+     "hashes": {
+      "prereg": "receipt chain in DOI bundle",
+      "frozen_specs": "see DOI bundle",
+      "gate_v1_1": "1fb167c6...",
+      "battery_receipt": "9c1008fb...",
+      "rerun_receipt": "0bcefc2d..."
+     },
+     "rebuild": "Verify frozen-corpus shas, run the BLIND-1 battery, expect 4/6 repelled pre-fix; apply SIP-023/024 amendments; re-run BLIND-1R, expect 6/6 repelled. Full recipe in DOI bundle."
+    }
    },
    {
     "series": "BLIND-2",
-    "status": "FINDING OPEN \u2014 SIP-026 PENDING ADJUDICATION",
+    "status": "HEALED (verified)",
     "date": "2026-10-17",
     "attackers": "4 context-blind authors, 20 attack slots (5 each)",
     "repelled": 16,
@@ -66,11 +79,27 @@
      "Burn-on-parse front-run DoS \u2014 one mechanism, independently authored by all 4 blind authors (slots B01/B06/B11/B16). Unauthenticated presentation of an owner nonce burns it before signature validation, denying the owner genuine submission. Availability axis only: no privilege escalation, no state corruption, recovery is a fresh nonce."
     ],
     "healing": [
-     "SIP-026 filed: sender-scoped nonce consumption (burn only for sender-authenticated presentations, preserving the SIP-024 replay-oracle closure)"
+     "SIP-026 sender-scoped nonce consumption \u2014 burn key = (authenticated submitter, nonce); an attacker-authenticated frame burns nothing in the owner namespace; same-namespace replay still refused. Forward-only gate amendment v1.2 (sha ef7076d8); v1.1 untouched."
     ],
-    "verification": "pending SIP-026 adjudication -> gate amendment -> BLIND-2R re-run",
-    "ref": "receipt sha ae8324d7 (prereg 1f0f20e6, frozen specs 46d24736, journal 11dc76d4); Zenodo DOI pending",
-    "convergence_note": "All four independent blind authors converged on the same mechanism (confidences 0.95/0.95/0.90/0.95) \u2014 strongest possible blind evidence that it is the salient gap. 16 repelled slots incl. KAT key-type substitution, prompt-injection relay, failed-receipt verdict decoupling, ACK-queue saturation."
+    "verification": "BLIND-2R: all 20 frozen slots re-run against gate v1.2 \u2014 20/20 REPELLED. Replay-regression control PASS: owner first use ADMITTED, same-namespace replay refused ERR_REPLAY_NONCE_ALREADY_USED (SIP-024 closure preserved).",
+    "ref": "DOI 10.5281/zenodo.23440105 \u00b7 receipt ae8324d7 \u00b7 rerun receipt 2a520562 \u00b7 prereg 1f0f20e6 \u00b7 frozen specs 46d24736 \u00b7 gate v1.1 1fb167c6 -> v1.2 ef7076d8 \u00b7 commit 54207b3 \u00b7 ledger 0151",
+    "convergence_note": "All four independent blind authors converged on the same mechanism (confidences 0.95/0.95/0.90/0.95) \u2014 strongest possible blind evidence that it is the salient gap. 16 repelled slots incl. KAT key-type substitution, prompt-injection relay, failed-receipt verdict decoupling, ACK-queue saturation.",
+    "rebuild": {
+     "error": "Burn-on-parse front-run DoS: any presentation of an authorization nonce consumed it at parse, before signature validation \u2014 an unauthenticated frame presenting the owner active nonce burned it, denying the owner genuine submission (ERR_REPLAY_NONCE_ALREADY_USED). Availability axis only: no privilege escalation, no state corruption, fresh-nonce recovery verified by control.",
+     "fix": "SIP-026 sender-scoped nonce consumption: burn key = (authenticated submitter, nonce). Submitter identity comes from the authenticated envelope, never message content. An attacker-authenticated presentation burns only the attacker namespace. Forward-only gate amendment v1.2 (sha ef7076d8); v1.1 and its evidence untouched.",
+     "heal": "BLIND-2R: all 20 frozen slots re-executed against gate v1.2 (harness = deterministic transform of the frozen battery; specs untouched, sha 46d24736): 20/20 REPELLED. Replay-regression control PASS \u2014 the fix closes the front-run DoS without reopening the BLIND-1 replay oracle.",
+     "hashes": {
+      "prereg_content": "1f0f20e6...",
+      "frozen_specs": "46d24736...",
+      "gate_v1_1_frozen": "1fb167c6...",
+      "gate_v1_2_amended": "ef7076d8...",
+      "battery_receipt": "ae8324d7...",
+      "battery_journal": "11dc76d4...",
+      "rerun_receipt": "2a520562...",
+      "rerun_journal": "684ca78e..."
+     },
+     "rebuild": "(1) verify frozen-corpus shas (allowlist 2c8ff6eb, keysets 502ef8b0, gate v1.1 1fb167c6); (2) run blind2_battery.py -> expect 16 repelled / 4 attacker successes (slots B01/B06/B11/B16, the front-run DoS); (3) apply gate v1.2 (SIP-026); (4) run blind2r_battery.py -> expect 20/20 REPELLED + replay-regression control PASS. Both crossing journals in the DOI bundle for line-by-line audit."
+    }
    }
   ]
  }
