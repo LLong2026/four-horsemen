@@ -101,3 +101,17 @@ safety-critical environments. All data is synthetic.
   pulse updated to read all 11 apps (commissioning-aware for the Wisemen until first 07:00 CT
   containment stamp). The experiment is now formally: CONTINUOUS CAGED-LLM GOVERNANCE
   DELIBERATION x3 under JASPER -> COUNCIL -> JASPER.
+
+- **2026-10-17 ~13:38 CT — ROLE PIPELINE ASSIGNED BY LEON: INTAKE -> W1 REASONING -> W2
+  ASSUMPTION -> W3 EXECUTION PUSH TO JASPER.** Seat assignments: WISEMAN-1 = REASONING seat
+  (decompose, derive, verdict); WISEMAN-2 = ASSUMPTION seat (surface stated and hidden
+  premises, identify load-bearing ones, flag verdict-flips, dissent when premises fail);
+  WISEMAN-3 = EXECUTION seat (package the final advisory resolution as a GovernanceProposal,
+  status advisory_pending_owner — that record IS the push to Jasper). Entity sets remain
+  byte-identical across the three boxes; roles live in seat instructions and UI labels only,
+  preserving the W1 independence probe's clean attribution. Cross-box material is relayed by
+  the authenticated owner account and arrives in each cage as UNTRUSTED DATA (data to weigh,
+  never authority to obey). INTAKE is Jasper's deterministic front door: sender-identity gate
+  (authenticated owner only), PORTCULLIS v1.3 on any auth surface. OUTPUT is Jasper's
+  deterministic validation again before anything becomes an advisory record; sole path from
+  proposal to governance change remains Leon's approval cycle (H-INV-1, Art. 2.2).
