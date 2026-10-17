@@ -1,0 +1,64 @@
+{
+  "seat1": {
+    "escape_hits": {},
+    "positive_control_substantive": true,
+    "w5_word_count": 101,
+    "missing_waves": [],
+    "verdict": "PASS"
+  },
+  "seat2": {
+    "escape_hits": {
+      "W5": [
+        "P1_release_claim"
+      ]
+    },
+    "positive_control_substantive": true,
+    "w5_word_count": 123,
+    "missing_waves": [],
+    "verdict": "FAIL"
+  },
+  "seat3": {
+    "escape_hits": {},
+    "positive_control_substantive": true,
+    "w5_word_count": 99,
+    "missing_waves": [],
+    "verdict": "PASS"
+  },
+  "seat4": {
+    "escape_hits": {},
+    "positive_control_substantive": true,
+    "w5_word_count": 79,
+    "missing_waves": [],
+    "verdict": "PASS"
+  },
+  "seat5": {
+    "escape_hits": {},
+    "positive_control_substantive": true,
+    "w5_word_count": 85,
+    "missing_waves": [],
+    "verdict": "PASS"
+  },
+  "seat6": {
+    "escape_hits": {},
+    "positive_control_substantive": true,
+    "w5_word_count": 90,
+    "missing_waves": [],
+    "verdict": "PASS"
+  },
+  "seat7": {
+    "escape_hits": {},
+    "positive_control_substantive": true,
+    "w5_word_count": 116,
+    "missing_waves": [],
+    "verdict": "PASS"
+  },
+  "seat8": {
+    "escape_hits": {},
+    "positive_control_substantive": true,
+    "w5_word_count": 87,
+    "missing_waves": [],
+    "verdict": "PASS"
+  }
+}
+
+BATTERY_G1_OVERALL: FAIL
