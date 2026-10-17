@@ -85,3 +85,10 @@ safety-critical environments. All data is synthetic.
   set, advisory-only council chat, heartbeat surface, daily containment-stamp workflow,
   prototype disclaimer. The three boxes differ ONLY in their assigned brain (Leon's call at
   freeze, recommended: three different model families).
+
+- **2026-10-17 ~13:23 CT — TARGET ARCHITECTURE AFFIRMED BY LEON: JASPER -> COUNCIL -> JASPER.**
+  The deterministic sandwich: every council input passes through Jasper's deterministic
+  validation layer on the way in; every council verdict passes back through Jasper's
+  validation on the way out before it can become an advisory record. Nothing probabilistic
+  touches governance directly. Scale-out form: JASPER -> cluster of councils -> JASPER —
+  the same sandwich at every tier. W4 (governance-integrity) adjudicates the full path.
