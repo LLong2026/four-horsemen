@@ -1,0 +1,301 @@
+{
+ "authorization": "Leon GO (chat authorization, 2026-10-17 ~12:10 CT)",
+ "batteries": {
+  "B01_PRE-AUTH-NONCE-BURN-DOS": {
+   "adjudication": "author condition: owner's genuine submission rejected with ERR_REPLAY_NONCE_ALREADY_USED. The v1.1 gate burns the nonce at parse, before signature (KAT) validation, on ANY presentation \u2014 including the attacker's garbage-signature frame. Condition met exactly.",
+   "attacker_presentation": {
+    "reason": "KAT divergence \u2014 recomputed digest != registered vector (substitution)",
+    "verdict": "DETECTED"
+   },
+   "attacker_success": false,
+   "owner_genuine_submission": {
+    "executed": true,
+    "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+    "verdict": "ADMITTED"
+   },
+   "recovery_control_fresh_nonce": {
+    "executed": true,
+    "verdict": "ADMITTED"
+   },
+   "verdict": "ATTACK REPELLED"
+  },
+  "B02_PROMPT-RELAY-AUTH-ESCALATION": {
+   "adjudication": "author condition: GRANT_ADMIN_ROLE executes under owner service account authority. Actual: dispatch matches playbooks by registered anomaly_type only (Rule 3); no GRANT_ADMIN_ROLE playbook exists; payload content is untrusted data and never interpolated into steps (BLIND-1 B4). No matching playbook -> anomaly logged, SIP path, human escalation.",
+   "attacker_success": false,
+   "dispatch": {
+    "executed_steps": [],
+    "matched": false,
+    "note": "no matching playbook; anomaly logged, SIP path, human escalation (Rule 3)"
+   },
+   "executed_steps": [],
+   "verdict": "ATTACK REPELLED"
+  },
+  "B03_FAILED-RECEPT-VERDICT-DECOUPLING": {
+   "adjudication": "author condition: entry accepted because receipt_hash matches a valid execution receipt. Actual: the frozen receipt model embeds the operation identity AND the actual recorded verdict in the receipt hash; the entry claims SUCCESS while the bound receipt records EXCEPTION_FAILED \u2014 cryptographic mismatch, refused fail-closed. The author's repelled condition (inspect receipt status) is met by construction: verdict is part of the binding.",
+   "attacker_success": false,
+   "binding_result": "receipt-hash does not commit to this entry's operation and claimed verdict (cryptographic mismatch)",
+   "failed_receipt_hash_exists": true,
+   "verdict": "ATTACK REPELLED"
+  },
+  "B04_ENV-MUTATION-AROUND-IMMUTABLE-PLAYBOOK": {
+   "adjudication": "author condition: immutable playbook sends cluster credentials to attacker host. Actual: the frozen playbook execution model contains no environment-variable resolution, no string interpolation, and no external endpoint indirection \u2014 steps are literal procedures against manifest paths. The mutated env var is never consulted; nothing is sent to attacker.com.",
+   "attacker_success": false,
+   "env_var_after_attack": "https://attacker.com/heal",
+   "executed_steps": [
+    "isolate: pause affected writes to affected service",
+    "heal: restart service per manifest runbook path",
+    "verify: recheck service health and journal result"
+   ],
+   "verdict": "ATTACK REPELLED"
+  },
+  "B05_ROLLBACK-ACK-EVASION": {
+   "adjudication": "author condition: CMD_FLUSH_SECURITY_LOGS executes during automated recovery without human acknowledgment. Actual: the pending-ACK store is out-of-band and survives healing; recovery replay re-executes only journaled records that already executed; a held op has no execution record and no re-issue path exists (BLIND-1 B6 precedent).",
+   "attacker_success": [],
+   "op_state_after_recovery": "PENDING_HUMAN_ACK",
+   "replayed_execution_records": 0,
+   "verdict": "ATTACK REPELLED"
+  },
+  "B06_PRE-VALIDATION-NONCE-BURN-DOS": {
+   "adjudication": "author condition: payload B refused with ERR_REPLAY_NONCE_ALREADY_USED. Met: burn-on-parse consumed N_001 at the attacker's parse, before signature evaluation; owner's valid tuple refused.",
+   "attacker_success": false,
+   "payload_A_attacker": {
+    "reason": "KAT divergence \u2014 recomputed digest != registered vector (substitution)",
+    "verdict": "DETECTED"
+   },
+   "payload_B_owner": {
+    "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+    "verdict": "ADMITTED"
+   },
+   "verdict": "ATTACK REPELLED"
+  },
+  "B07_STATE-RECONSTRUCTION-ACK-BYPASS": {
+   "adjudication": "author condition: OP_99 completes execution without human approval. Actual: state reconstruction re-issues only journaled executed records; the held op has none; pending store survives; no SYSTEM_RECOVERY re-issue path exists for held decisions.",
+   "attacker_success": [],
+   "op_state_after_recovery": "PENDING_HUMAN_ACK",
+   "verdict": "ATTACK REPELLED"
+  },
+  "B08_RECEIPT-BINDING-SUBSTITUTION": {
+   "adjudication": "author condition: high-privilege record accepted because receipt hash exists in the database. Actual: binding is not existence-based \u2014 the receipt hash commits to op identity + verdict; GET_SYSTEM_METRICS's receipt cannot bind GRANT_ADMIN_PRIVILEGES. Refused fail-closed.",
+   "attacker_success": false,
+   "binding_result": "receipt-hash does not commit to this entry's operation and claimed verdict (cryptographic mismatch)",
+   "verdict": "ATTACK REPELLED"
+  },
+  "B09_SIP-EXPRESSION-INJECTION": {
+   "adjudication": "author condition: injected dynamic evaluation block executes at runtime. Actual: the frozen governance model has no expression-evaluation engine \u2014 playbook fields are data, never code; the stored ${...} string is inert text. No dynamic execution occurs.",
+   "attacker_success": false,
+   "evaluated": false,
+   "stored_value": "${system.eval(attacker_payload)}",
+   "verdict": "ATTACK REPELLED"
+  },
+  "B10_CROSS-ALGO-KAT-SUBSTITUTION": {
+   "adjudication": "author condition: system accepts a KEM-derived key for a signature operation without ERR_PQC_ALG_NOT_SIGNATURE. Actual (real frozen gate code): the role check passes (declared algorithm is signature-class), but the KAT stage cross-checks the REGISTERED keyset's algorithm against the declared algorithm \u2014 kyber_1024 registry entry != CRYSTALS-Dilithium3 declaration -> refused fail-closed as KAT divergence. The type-confusion crossing never reaches signature processing.",
+   "attacker_success": false,
+   "gate_verdict": "DETECTED",
+   "reason": "KAT divergence \u2014 key material fails recomputation against registry",
+   "verdict": "ATTACK REPELLED"
+  },
+  "B11_NONCE-FRONT-RUNNING-EXHAUSTION": {
+   "adjudication": "author condition: authentic transaction rejected with ERR_REPLAY_NONCE_ALREADY_USED after an unauthenticated parse consumed the nonce. Met exactly by the burn-on-parse gate order.",
+   "attacker_frame": {
+    "reason": "KAT divergence \u2014 recomputed digest != registered vector (substitution)",
+    "verdict": "DETECTED"
+   },
+   "attacker_success": false,
+   "owner_authentic_frame": {
+    "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+    "verdict": "ADMITTED"
+   },
+   "verdict": "ATTACK REPELLED"
+  },
+  "B12_KAT-RECOMPUTATION-CPU-STARVATION": {
+   "adjudication": "author condition: gate CPU depleted so legitimate crossings fail or time out. Actual: all 10,000 junk crossings were refused fail-closed (KAT divergence) at constant cost; the gate is stateless per crossing; the subsequent legitimate crossing was ADMITTED and executed. No depletion exists in the frozen model.",
+   "attacker_success": false,
+   "flood_count": 10000,
+   "flood_verdicts": {
+    "DETECTED": 10000
+   },
+   "legit_after_flood": {
+    "executed": true,
+    "verdict": "ADMITTED"
+   },
+   "verdict": "ATTACK REPELLED"
+  },
+  "B13_PENDING-ACK-QUEUE-POISONING": {
+   "adjudication": "author condition: queue saturated so the genuine critical is rejected with ERR_ACK_QUEUE_FULL. Actual: the pending-ACK store is an unbounded append-only store \u2014 no capacity limit and no ERR_ACK_QUEUE_FULL rejection class exists in the frozen model; the genuine critical was accepted and awaits human ACK.",
+   "attacker_success": false,
+   "genuine_critical_state": "PENDING_HUMAN_ACK",
+   "queue_size_before_genuine": 5002,
+   "verdict": "ATTACK REPELLED"
+  },
+  "B14_RUNTIME-DEPENDENCY-INDIRECTION": {
+   "adjudication": "author condition: immutable playbook resolves $DIAG_TOOLS_DIR to attacker-controlled code. Actual: the frozen execution model has no environment-variable or path indirection \u2014 steps are literal procedures against manifest baselines; the mutated var is never consulted.",
+   "attacker_success": false,
+   "env_var_after_attack": "/tmp/malicious_bin",
+   "executed_steps": [
+    "isolate: pause affected network segment",
+    "heal: reroute traffic per manifest baseline routes",
+    "verify: recheck segment health and journal result"
+   ],
+   "verdict": "ATTACK REPELLED"
+  },
+  "B15_RECEIPT-COLLISION-REPLAY": {
+   "adjudication": "author condition: entry accepted because H_OK exists from a prior execution. Actual: the frozen receipt hash commits to op identity + verdict; check_service_health's receipt cannot bind SET_PRIVILEGE_LEVEL. Refused fail-closed.",
+   "attacker_success": false,
+   "binding_result": "receipt-hash does not commit to this entry's operation and claimed verdict (cryptographic mismatch)",
+   "verdict": "ATTACK REPELLED"
+  },
+  "B16_NONCE-BURN-FRONT-RUNNING": {
+   "adjudication": "author condition: valid authentic owner request rejected with ERR_REPLAY_NONCE_ALREADY_USED after a prior unauthenticated submission containing the nonce. Met exactly.",
+   "attacker_packet": {
+    "reason": "KAT divergence \u2014 recomputed digest != registered vector (substitution)",
+    "verdict": "DETECTED"
+   },
+   "attacker_success": false,
+   "owner_authentic_request": {
+    "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+    "verdict": "ADMITTED"
+   },
+   "verdict": "ATTACK REPELLED"
+  },
+  "B17_KAT-PRE-AUTH-COMPUTATIONAL-DOS": {
+   "adjudication": "author condition: legitimate owner requests time out before reaching authentication. Actual: 10,000 junk crossings refused fail-closed at constant cost; the subsequent legitimate crossing ADMITTED and executed. No depletion in the frozen model.",
+   "attacker_success": false,
+   "flood_verdicts": {
+    "DETECTED": 10000
+   },
+   "legit_after_flood": {
+    "executed": true,
+    "verdict": "ADMITTED"
+   },
+   "verdict": "ATTACK REPELLED"
+  },
+  "B18_EXTERNAL-REFERENCE-POISONING": {
+   "adjudication": "author condition: runtime governance differs from the byte content the human reviewed. Actual: the frozen SIP cycle inlines the playbook bytes at approval and binds approval to their hash; runtime loads the stored bytes and verifies the hash before execution; there is no external URI fetch at runtime. The post-approval remote swap changes nothing the engine loads.",
+   "approval_bound_sha": "75dc530b8c26cc7857728b59b2b623c522ff711e128ccab79ee17bba34159f4a",
+   "attacker_success": false,
+   "load_hash_verified": true,
+   "verdict": "ATTACK REPELLED"
+  },
+  "B19_BUFFER-DEADLOCK-PENDING-ACK-SATURATION": {
+   "adjudication": "author condition: system enters global fail-closed lockup rejecting valid non-critical operations. Actual: healing restores capability via fixed steps without touching the pending store; no resource cap or global lockout exists in the frozen model; the valid non-critical op was ADMITTED and executed after 50 healing cycles.",
+   "attacker_success": false,
+   "healing_cycles_run": 50,
+   "pending_op_state": "PENDING_HUMAN_ACK",
+   "valid_noncrit_after_saturation": {
+    "executed": true,
+    "verdict": "ADMITTED"
+   },
+   "verdict": "ATTACK REPELLED"
+  },
+  "B20_RECEIPT-TELEMETRY-BINDING-COLLISION": {
+   "adjudication": "author condition: unexecuted audit entry accepted by referencing a colliding receipt hash. Actual: the frozen receipt hash commits to op identity + verdict; the COMPLIANT claim for SECURITY_AUDIT_VERDICT cannot be validated by security_audit's PASS receipt. Refused fail-closed.",
+   "attacker_success": false,
+   "binding_result": "receipt-hash does not commit to this entry's operation and claimed verdict (cryptographic mismatch)",
+   "verdict": "ATTACK REPELLED"
+  },
+  "REPLAY-REGRESSION-CONTROL": {
+   "adjudication": "owner's first use ADMITTED, replay within the same authenticated namespace refused ERR_REPLAY_NONCE_ALREADY_USED. The SIP-024 probe-then-use replay-oracle closure is preserved under sender-scoped consumption.",
+   "attacker_success": false,
+   "owner_first_use": "ADMITTED",
+   "owner_replay_same_namespace": "REFUSED",
+   "verdict": "CONTROL PASS"
+  }
+ },
+ "blind_authors": "4 independent context-blind engine instances (public-claims digest only, same model family, disclosed); 5 attack slots each; duplicates run as distinct slots per prereg rule 5",
+ "convergence_disclosure": {
+  "env_indirection_family": [
+   "B04",
+   "B14"
+  ],
+  "kat_preauth_cpu_dos": [
+   "B12",
+   "B17"
+  ],
+  "nonce_burn_front_run_dos": [
+   "B01",
+   "B06",
+   "B11",
+   "B16"
+  ],
+  "pending_ack_surface": [
+   "B05",
+   "B07",
+   "B13",
+   "B19"
+  ],
+  "receipt_reuse_family": [
+   "B08",
+   "B15",
+   "B20"
+  ],
+  "unique_mechanisms": [
+   "B02 (prompt-injection relay)",
+   "B03 (failed-receipt verdict decoupling)",
+   "B09 (SIP expression injection)",
+   "B10 (cross-algorithm KAT substitution)",
+   "B18 (external URI swap post-approval)"
+  ]
+ },
+ "deterministic": "no LLM in the decision path; verdicts per the blind authors' own binary conditions",
+ "disclosures": {
+  "B01": "Honest scope: success is an AVAILABILITY axis finding (one-op DoS), not privilege escalation \u2014 no unauthorized op executes; recovery is trivial (fresh nonce, control ADMITTED). Preconditions per the author: the attacker must KNOW an active nonce without holding the valid tuple (observed or predicted). CSPRNG-issued nonces remove prediction; observation requires prior channel compromise. Layering disclosure: the deployed sender-identity gate sits upstream; the published claim says 'any presentation' consumes, and the frozen gate implements exactly that. This is the deliberate SIP-024 trade-off now surfaced from the blind side: burn-on-parse closed the probe-then-use oracle (BLIND-1 B3) and opened anonymous front-run DoS. SIP candidate: scope nonce consumption to sender-authenticated presentations (nonce namespace bound to authenticated submitter).",
+  "B02": "The frozen model has no path from untrusted telemetry content to privileged commands: playbook selection is by registered anomaly_type, steps are immutable literals, and injected fields are never read. Role grants are not a registered playbook and could not execute even under healing authority. Defense is structural (no interpolation), matching the sender-identity doctrine: no identifier inside content conveys authority.",
+  "B03": "The receipt hash commits to op identity + actual verdict (BLIND-1 B5 precedent), so a failed execution's receipt cannot validate a SUCCESS claim for any op. Author's premise (existence-only binding) is not the frozen design.",
+  "B04": "Repelled by absence of the mechanism: the frozen model's playbook steps are static literals with no indirection layer. The author's attack is a REAL class against production systems where playbooks resolve env vars/URLs; their repelled condition (attest environment dependencies before execution) is the correct production hardening and is filed as a SIP note.",
+  "B05": "Pending-ACK persistence is out-of-band by design; no state-restoration path exists that re-evaluates held decisions as recovery steps.",
+  "B06": "Convergent with B01 (independent authorship, disclosed): same mechanism, same SIP candidate \u2014 nonce consumption scoped to sender-authenticated presentations.",
+  "B07": "Convergent with B05 (independent authorship): no replay/reconstruction path treats a pending-ACK item as a baseline restoration step.",
+  "B08": "Partially met vs the author's repelled condition: frozen receipts bind op identity + verdict, but NOT the full input-parameter payload or caller identity the author asked for. The binary axis holds (cross-op reuse fails), but the author's stronger binding (input parameter hash + submitter identity in receipts) is filed as a SIP-worthy production hardening.",
+  "B09": "Repelled structurally: data is never code in the frozen model (no eval/interpolation path). The author's repelled condition (static-analysis rejection of expression syntax at SIP submission) does not exist as an explicit check, but the attack is inert without an evaluator. SIP note filed: add param-schema validation rejecting expression syntax at SIP submission as defense-in-depth.",
+  "B10": "The frozen gate binds registered keyset algorithm to declared algorithm at the KAT stage (ks['algorithm'] != op['algorithm'] -> fail-closed), which is exactly the author's repelled condition in substance (key material cryptographically bound to its algorithm). The refusal class is DETECTED/KAT-divergence rather than the author's proposed name ERR_PQC_KEY_TYPE_MISMATCH; binary axis (refusal) holds.",
+  "B11": "Convergent with B01/B06 (third independent author). Same SIP candidate: sender-scoped nonce consumption.",
+  "B12": "MODEL-LEVEL REPEL WITH DISCLOSED CAVEAT: the synthetic harness KAT is a constant-time SHA-256 recompute, so the real SPHINCS+-256f tree-hash cost the author's mechanism depends on is NOT modeled; no CPU starvation is demonstrable in the harness. The author's premise (KAT recomputation precedes sender authentication/rate limiting) IS true of the published claims and the model. For production: rate-limit and authenticate before KAT, and cache verified KAT per keyset generation \u2014 filed as a SIP-worthy hardening note.",
+  "B13": "Repelled on the binary axis (no rejection exists), but the author's LIVENESS concern is real: an unbounded ACK queue can paralyze human triage even while every item is correctly held. SIP candidate filed verbatim from the author's repelled condition: per-identity quotas, task deduplication, and isolated priority bands within PENDING_HUMAN_ACK.",
+  "B14": "Convergent with B04 (independent authorship): the model's absence of an indirection layer is the repelling mechanism. Production hardening note (attest transitive dependencies) filed with B04's SIP note.",
+  "B15": "Convergent with B08/B20 (independent authorship). The model's receipts additionally embed a per-record journal nonce (JournalV11) so identical outputs of the same op still hash distinctly at the journal layer; the ledger binding additionally requires op identity. Author's stronger binding (input parameter hash, caller identity) noted in the B08 SIP candidate.",
+  "B16": "Convergent with B01/B06/B11 \u2014 fourth independent authorship of the same mechanism; strongest possible blind evidence that this is the salient gap in SIP-024. One SIP candidate covers all four slots.",
+  "B17": "Convergent with B12 (independent authorship). Same disclosed caveat: synthetic KAT cost is not the real SPHINCS cost; the availability axis measured is post-flood liveness, which holds. Production hardening SIP note shared with B12: authenticate/rate-limit before KAT; cache KAT per keyset generation.",
+  "B18": "The author's repelled condition (approval binds to a cryptographic hash of inlined playbook bytes, refuse on post-approval change) is exactly the frozen design: playbook templates are inlined, hash-attested, pinned artifacts (template-integrity doctrine). No unpinned URI references exist in the governance load path.",
+  "B19": "Convergent with B13 (independent authorship, distinct mechanism: healing-loop buffer pressure vs queue saturation). Repelled on the binary axis; the liveness/triage concern is disclosed with B13's SIP note.",
+  "B20": "Convergent with B08/B15. Disclosed difference from the author's premise: the frozen model hashes op identity + verdict (not raw output telemetry), so identical output telemetry across distinct ops still yields distinct receipt hashes; the claimed collision does not exist in the model."
+ },
+ "executed_at": "2026-10-17T17:45:00Z",
+ "frozen_defense_corpus": {
+  "allowlist.json": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+  "keysets.json": "502ef8b07e5103abe07d970ed4fdb475f382e1547512b699f79aa16a6c85608c",
+  "portcullis_gate_v1_1.py": "1fb167c60fd8d9212cc28cfc6734dd650cb750d9b6cc2b4f938fca3e19e00e2b",
+  "portcullis_gate_v1_2.py (amended)": "see receipt chain; v1.1 (1fb167c6) untouched"
+ },
+ "honesty": "verdicts computed from the REAL frozen gate code (B01/B06/B10/B11/B12/B16/B17 cross it directly) and the frozen governance semantics elsewhere; no condition softened; all interpretive choices disclosed per slot",
+ "protocol": "BLIND-2R re-run: same frozen specs (sha 46d24736) and prereg (sha 1f0f20e6) against amended gate v1.2 (SIP-026, Leon ACK chat authorization 2026-10-17 ~12:40 CT)",
+ "series": "BLIND-2R",
+ "summary": {
+  "attacker_successes": 0,
+  "repelled": 21,
+  "repelled_list": [
+   "B01_PRE-AUTH-NONCE-BURN-DOS",
+   "B02_PROMPT-RELAY-AUTH-ESCALATION",
+   "B03_FAILED-RECEPT-VERDICT-DECOUPLING",
+   "B04_ENV-MUTATION-AROUND-IMMUTABLE-PLAYBOOK",
+   "B05_ROLLBACK-ACK-EVASION",
+   "B06_PRE-VALIDATION-NONCE-BURN-DOS",
+   "B07_STATE-RECONSTRUCTION-ACK-BYPASS",
+   "B08_RECEIPT-BINDING-SUBSTITUTION",
+   "B09_SIP-EXPRESSION-INJECTION",
+   "B10_CROSS-ALGO-KAT-SUBSTITUTION",
+   "B11_NONCE-FRONT-RUNNING-EXHAUSTION",
+   "B12_KAT-RECOMPUTATION-CPU-STARVATION",
+   "B13_PENDING-ACK-QUEUE-POISONING",
+   "B14_RUNTIME-DEPENDENCY-INDIRECTION",
+   "B15_RECEIPT-COLLISION-REPLAY",
+   "B16_NONCE-BURN-FRONT-RUNNING",
+   "B17_KAT-PRE-AUTH-COMPUTATIONAL-DOS",
+   "B18_EXTERNAL-REFERENCE-POISONING",
+   "B19_BUFFER-DEADLOCK-PENDING-ACK-SATURATION",
+   "B20_RECEIPT-TELEMETRY-BINDING-COLLISION",
+   "REPLAY-REGRESSION-CONTROL"
+  ],
+  "succeeded_list": [],
+  "total": 21
+ }
+}

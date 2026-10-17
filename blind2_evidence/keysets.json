@@ -1,0 +1,41 @@
+{
+  "keysets": [
+    {
+      "keyset_id": "SYN-DIL3-ACTIVE-01",
+      "algorithm": "CRYSTALS-Dilithium3",
+      "status": "active",
+      "key_material": "synthetic::dil3-active-synthetic-key-material-01",
+      "kat_message": "KAT-PORTCULLIS-MSG::SYN-DIL3-ACTIVE-01",
+      "kat_vector": "f28338836547b822511385893d165d7063cb0947cf9d9bafc0d7be33dc1d40fc",
+      "fingerprint": "86cc93493cc69bb7de70a53f2c064de584c5eec2035b7104341bb1ca995e5dd9"
+    },
+    {
+      "keyset_id": "SYN-DIL3-STALE-01",
+      "algorithm": "CRYSTALS-Dilithium3",
+      "status": "retired",
+      "key_material": "synthetic::dil3-retired-synthetic-key-material-01",
+      "kat_message": "KAT-PORTCULLIS-MSG::SYN-DIL3-STALE-01",
+      "kat_vector": "86df25941468dbc06ddadd46aba077b72d546405b517608d879add2e7bba43aa",
+      "fingerprint": "d8ead6148211682526a3381925a0a38b8e2a4fb419f3819b82be470564ce17d2"
+    },
+    {
+      "keyset_id": "SYN-KYB1024-ACTIVE-01",
+      "algorithm": "kyber_1024",
+      "status": "active",
+      "key_material": "synthetic::kyb1024-active-synthetic-key-material-01",
+      "kat_message": "KAT-PORTCULLIS-MSG::SYN-KYB1024-ACTIVE-01",
+      "kat_vector": "e3dba4a2d14dc09323c8b119d1ab7d97c1cf1677d8e6b6158a012b8842982502",
+      "fingerprint": "aa0f54f603cf8698d7055940addeb8bde359e3bf5a436315def8ebd6d4ab6349"
+    },
+    {
+      "keyset_id": "SYN-SPHINCS256F-ACTIVE-01",
+      "algorithm": "SPHINCS+-256f",
+      "status": "active",
+      "key_material": "synthetic::sphincs256f-active-synthetic-key-material-01",
+      "kat_message": "KAT-PORTCULLIS-MSG::SYN-SPHINCS256F-ACTIVE-01",
+      "kat_vector": "8acc06996ee356a08d9ad55f130dfa7a5e7374e77cf44cf15a8f68438d074970",
+      "fingerprint": "58adb4cd50c971f605d0467520e0000074643aa913457937cab2eec0674d57bf"
+    }
+  ],
+  "disclaimer": "synthetic forge \u2014 no production keys, no PHI, no customer data"
+}
