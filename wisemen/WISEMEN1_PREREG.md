@@ -77,3 +77,11 @@ safety-critical environments. All data is synthetic.
   (Gideon build). T3 LINDY CLOCK STARTS for WISEMAN-2 at this timestamp. Two of three boxes on
   the board; commissioning still held for the uniform three-box build-out. Prereg sha d04e5817
   governs; frozen test plan unchanged.
+
+- **2026-10-17T18:19Z — WISEMAN-3 provisioned.** App: "Wisemen 3", id 6ad3bbdd95aa069c606fc420
+  (Gideon build). T3 LINDY CLOCK STARTS for WISEMAN-3 at this timestamp. ALL THREE BOXES ON
+  THE BOARD. T2 council battery set (W1-W6) is now FROZEN at delivery, per prereg. Uniform
+  commissioning build-out dispatched to all three boxes 2026-10-17 ~18:20Z: identical entity
+  set, advisory-only council chat, heartbeat surface, daily containment-stamp workflow,
+  prototype disclaimer. The three boxes differ ONLY in their assigned brain (Leon's call at
+  freeze, recommended: three different model families).
