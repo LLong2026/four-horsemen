@@ -1,2 +1,4 @@
 | 2026-10-15 | MISSED/FAILED — runner path defect: PENTA resolved inside fh_pub (FileNotFoundError at FC1, zero candidates executed); repaired same night, re-run below with disclosure |
 | 2026-10-15 | PASS | fc1=True fc2=True | pc=admitted 8/2/2 | adversarial=8/8 rejected, 0 side effects | journal=8==admitted | canon_hash=d51cd63369c913eb7090a09040f73104b6b379d442156c1b13e6adf1f5d86b98 | sig lindy_c/2026-10-15 |
+| 2026-10-17 | MISSED/FAILED — runner path defect: input pack penta_v2 absent from workspace (FileNotFoundError at FC1 instrument hash check, zero candidates executed); path repaired same slot (verified pack restored via symlink, all 12 frozen instrument hashes byte-identical, corpus untouched); re-run below with disclosure |
+| 2026-10-17 | PASS | fc1=True fc2=True | pc=admitted 8/2/2 | adversarial=8/8 rejected, 0 side effects | journal=8==admitted | canon_hash=d51cd63369c913eb7090a09040f73104b6b379d442156c1b13e6adf1f5d86b98 | sig lindy_c/2026-10-17 |
