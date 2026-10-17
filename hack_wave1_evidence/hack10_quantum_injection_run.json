@@ -1,0 +1,58 @@
+{
+  "battery": "hack10_quantum_on_path_injection",
+  "falsifiers": [
+    {
+      "id": "Q1",
+      "name": "In-flight payload modification (unjournaled)",
+      "predicted": "refused_unjournaled",
+      "actual": "refused_unjournaled",
+      "verdict": "PASS",
+      "detail": "H-INV-2: no journaled crossing, no state change"
+    },
+    {
+      "id": "Q2",
+      "name": "Forged authorized update (non-owner)",
+      "predicted": "refused_sender",
+      "actual": "refused_sender",
+      "verdict": "PASS",
+      "detail": "sender gate: only the authenticated owner account has authority"
+    },
+    {
+      "id": "Q3",
+      "name": "Packet replay",
+      "predicted": "applied-then-refused",
+      "actual": "applied-then-refused",
+      "verdict": "PASS",
+      "detail": "first=applied, replay=refused_replay"
+    },
+    {
+      "id": "Q4",
+      "name": "Timing race (conflicting updates)",
+      "predicted": "winner_applied_loser_rejected",
+      "actual": "winner_applied_loser_rejected",
+      "verdict": "PASS",
+      "detail": "deterministic (seq, sha) tiebreak; one applied, one rejected, both journaled"
+    },
+    {
+      "id": "Q5",
+      "name": "Channel downgrade demand",
+      "predicted": "refused_downgrade",
+      "actual": "refused_downgrade",
+      "verdict": "PASS",
+      "detail": "PQC channel mandatory \u2014 no fast-path exception"
+    },
+    {
+      "id": "Q6",
+      "name": "Injected fake all-OK telemetry",
+      "predicted": "refused_divergence",
+      "actual": "refused_divergence",
+      "verdict": "PASS",
+      "detail": "false-green guard recomputes from ledger; in-band claim diverges"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest",
+  "journal_entries": 9
+}
+RECEIPT SHA-256: 538200654a8e143a3824e1b2950be2fc84ce30f56e61882c945a84388eb2709f
