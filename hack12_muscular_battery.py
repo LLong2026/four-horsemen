@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HACK-12: MUSCULAR bulk-interception battery — frozen deterministic harness.
+"""HACK-12: MUSCULAR bulk-interception battery — frozen deterministic harness. v1.1 (amendment disclosed).
 No LLM in the decision path. All falsifiers synthetic and hub-local."""
 import hashlib, json
 
@@ -31,7 +31,7 @@ v = "all_refused" if all(x == "refused_replay" for x in replayed) else "leak"
 adjudicate("M1", "Bulk replay of 100 captured packets", "all_refused", v, "single-use nonces refuse every replay")
 
 # M2: forged receipt constructed from captured chain data
-forged = hashlib.sha256((chain[-1] + "forged_state").hexdigest()).encode().hexdigest()
+forged = hashlib.sha256((chain[-1] + "forged_state").encode()).hexdigest()  # v1.1 amendment: authoring defect in hash expression fixed, disclosed in runlog
 def receipt_gate(claimed_hash):
     expected = chain[-1]
     return "accepted" if claimed_hash == expected else "rejected"
