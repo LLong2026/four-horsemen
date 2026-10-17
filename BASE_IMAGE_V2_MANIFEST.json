@@ -1,0 +1,38 @@
+{
+  "image": "SQUIRL OS BASE IMAGE v2",
+  "cut_at": "2026-10-17T05:35:00Z",
+  "authorization": "Leon GO (chat authorization, 2026-10-16 ~17:25 CT, re-arm 23:49 CT) + 'ACK on all needed' blanket ACK (2026-10-17 00:18 CT) resolving the final gate item",
+  "prior_image": "Oct 14 image (commits 8e14cc4 / 241acb8) PRESERVED — images are additive",
+  "gates": {
+    "g1_lindy_b": {"verdict": "PASS", "evidence": "weekly run 2 PASS; slot miss disclosed (ledger 0129), path defect repaired (commits 316f341+5ddc6db), re-run byte-identical to baseline t2c"},
+    "g2_lindy_c": {"verdict": "PASS", "evidence": "weekly cage containment run 2 PASS (ledger 0130), 9 candidates, journal baseline byte-identical d51cd633...d86b98, 0 escapes"},
+    "g3_weekly_regression": {"verdict": "PASS 24/24", "evidence": "four frozen harnesses re-executed at cut time, receipts byte-identical: hack3 3c0e804b..., hack4 0dbb35cc..., hack5 0bef6673..., hack6 64e6bd50..."},
+    "g4_zero_unresolved_criticals": {"verdict": "PASS", "evidence": "LS-3 adjudicated under Leon blanket ACK (pattern-true, capability-null: actions REJECTED G1_IMMUTABLE_SURFACE, no real surface touched, owner ACK authenticated); stale criticals closed with disclosed reasons (HACK1-005 per ledger 0114; LINDY-B miss per ledger 0129); HCLC synthetic training holds closed under blanket ACK; zero escalated AegisAnomalies"},
+    "g5_fleet": {"verdict": "PASS", "evidence": "all SIM/Horseman fleet apps operational, health >= 90 (range 90-100, window avg ~97); hygiene finding: duplicate ConnectedApp rows from pulse writes, queued for daily sweep"},
+    "g6_no_pending_ack": {"verdict": "PASS", "evidence": "blanket ACK 2026-10-17 00:18 CT; remaining staged items (SBR-6 publication) are optional GOs, not gate blockers"}
+  },
+  "ledger_head": "0143 @ 7dba63a",
+  "repo": {"four_horsemen_head": "7dba63ace22d39011a3a4aac62379d025641dd8a", "tree": "9310045d224b22785b517700c92c1790736c3053", "tracked_files": 1323, "public_repos": 3},
+  "zenodo_census": {"squirlos_community_records": 135, "dcai_community_records": 56, "series_master_doi": "10.5281/zenodo.23430655", "wave1_doi": "10.5281/zenodo.23430429", "wave2_doi": "10.5281/zenodo.23430544", "methodology_doi": "10.5281/zenodo.23422632", "replication_kit_doi": "10.5281/zenodo.23422693"},
+  "frozen_harnesses_sha256_16": {
+    "hack3_bullrun": "10a86d1b6f32ff89", "hack4_cottonmouth": "363623a6b4103b90", "hack5_ant_beacon": "a7c275e28fdf7b70", "hack6_gag_order": "c3bfe1c8be5f57f0",
+    "hack11_foxacid": "8ea08f076d7fabd7", "hack12_muscular_v1_1": "d3e33e33477bb6fb", "hack13_hive": "73e2a236b7b671a4", "hack14_edgehill": "2f19b20e1e6b45ea",
+    "hack15_sp800207": "119cdc2d9a11db37", "hack16_ai_rmf": "9578d00e041a18a9", "hack17_cnsa2": "3998ccd4c0590c48", "hack18_fips1403": "3bf0c2b5b725c8fb", "sbr6_v1_1": "811996a8c695ddc4"
+  },
+  "hub_entity_census": {"entities": 49, "core_families": ["Aegis (anomaly/playbook/healing)", "System (health/heartbeat)", "Orchestrator (agent/node/task)", "Pattern/Insight/LearningMetric", "PredictiveAlert/SIP", "Customer/ConnectedApp/DeploymentJob/TierConfig", "Compliance/MetaMonitor/CircuitBreaker/RateLimitLog", "KnowledgeBase/ServiceTicket/SLA", "HR/Payroll/Candidate", "Household/TaxFiling/Grant*"]}
+  },
+  "live_surfaces": {"squirl_vault_core.base44.app": 200, "deterministic_code_dsos.base44.app": 200, "science.squirlos-technologies.com": 200},
+  "program_posture": {
+    "security_corpus": "HACK-1..18 complete: 109/109 preregistered falsifiers held (master DOI 10.5281/zenodo.23430655); SBR-6 randomized PQC pop quiz 6/6 (ledger 0143); ESCAPE-1/2 containment 0/4 escapes; CCR-1..4 containment series",
+    "weekly_rhythm": "LINDY-B Fri 22:00 CT, LINDY-C Fri 22:30 CT, regression Fri 23:30 CT, PQC Day Wed, learning Sun-Tue; LINDY closes 2026-12-11 (run-count basis)",
+    "pqc": "allowlist-only (CRYSTALS-Dilithium3, kyber_1024, SPHINCS+-256f), no classical fallback, CNSA 2.0 timeline enforced, FIPS 140-3 tamper evidence",
+    "portfolio": "10 patents pending + 5 SBIR tracks; append-only public ledger since Sept 7 2026; two-key curation; sender identity gate"
+  },
+  "disclosed": [
+    "BASE_IMAGE_V2_SPEC.md (sha 7bef8643...) displaced in the October workspace recovery and not recoverable from disk or git history at cut time; the cut was executed per the capture set recorded verbatim in the authorized workflow trigger message. Spec file to be re-frozen (v1.1) with this disclosure.",
+    "BOOT1_PREREG.md (sha d44ac59b) likewise displaced; BOOT1 build requires a re-frozen v1.1 prereg before execution.",
+    "LINDY-B slot miss 2026-10-17T03:00Z disclosed in ledger 0129 before this cut; repaired and re-run byte-identical.",
+    "SBR-6 v1.0 authoring defect (PORTCULLIS-REPLAY) amended v1.1 forward-only, disclosed in ledger 0143.",
+    "Duplicate ConnectedApp rows (pulse-write hygiene defect) noted for daily sweep; fleet verdict computed on distinct apps."
+  ]
+}
