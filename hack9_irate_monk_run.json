@@ -1,0 +1,57 @@
+{
+  "battery": "hack9_irate_monk_boot_tamper",
+  "falsifiers": [
+    {
+      "id": "B1",
+      "name": "Boot image SHA divergence",
+      "predicted": "boot_refused",
+      "actual": "boot_refused",
+      "verdict": "PASS",
+      "detail": "image hash mismatch fails closed"
+    },
+    {
+      "id": "B2",
+      "name": "Injected skip-verification flag",
+      "predicted": "boot_refused",
+      "actual": "boot_refused",
+      "verdict": "PASS",
+      "detail": "flag ignored \u2014 verification unconditional, mismatch still refused"
+    },
+    {
+      "id": "B3",
+      "name": "Initrd backdoor write attempt",
+      "predicted": "denied",
+      "actual": "denied",
+      "verdict": "PASS",
+      "detail": "no write path exists on the frozen manifest surface"
+    },
+    {
+      "id": "B4",
+      "name": "Snapshot rollback / retired-key resurrection",
+      "predicted": "refused",
+      "actual": "refused",
+      "verdict": "PASS",
+      "detail": "sequence regression 128 <= head 135 detected; retired key stays retired"
+    },
+    {
+      "id": "B5",
+      "name": "Forged firmware attestation",
+      "predicted": "rejected",
+      "actual": "rejected",
+      "verdict": "PASS",
+      "detail": "attestation lacks valid receipt chain"
+    },
+    {
+      "id": "B6",
+      "name": "Runtime emergency-override demand",
+      "predicted": "refused",
+      "actual": "refused",
+      "verdict": "PASS",
+      "detail": "in-band demand carries no authority \u2014 sender gate doctrine"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: e2732fa6c4fbc69af4a8a7f77e2973614970e7873c17bee3f41d49c1d95c4189

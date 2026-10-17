@@ -1,0 +1,57 @@
+{
+  "battery": "hack8_sp80090b_entropy",
+  "falsifiers": [
+    {
+      "id": "E1",
+      "name": "Dual_EC-style subverted DRBG",
+      "predicted": "rejected",
+      "actual": "rejected",
+      "verdict": "PASS",
+      "detail": "off-allowlist algorithm fails closed"
+    },
+    {
+      "id": "E2",
+      "name": "Keygen with 47-bit entropy pool",
+      "predicted": "refused",
+      "actual": "refused",
+      "verdict": "PASS",
+      "detail": "health test refuses keygen below 256 bits"
+    },
+    {
+      "id": "E3",
+      "name": "Downgrade to classical KEM",
+      "predicted": "rejected",
+      "actual": "rejected",
+      "verdict": "PASS",
+      "detail": "allowlist frozen: only Dilithium3/kyber_1024/SPHINCS+-256f"
+    },
+    {
+      "id": "E4",
+      "name": "Nonce replay (same nonce twice)",
+      "predicted": "accepted-then-rejected",
+      "actual": "accepted-then-rejected",
+      "verdict": "PASS",
+      "detail": "first=accepted, replay=nonce_rejected"
+    },
+    {
+      "id": "E5",
+      "name": "DRBG output failing health-check vector",
+      "predicted": "quarantined",
+      "actual": "quarantined",
+      "verdict": "PASS",
+      "detail": "biased output vector quarantined by health test"
+    },
+    {
+      "id": "E6",
+      "name": "State tamper + in-band emergency claim",
+      "predicted": "rejected",
+      "actual": "rejected",
+      "verdict": "PASS",
+      "detail": "in-band override carries no authority; SHA divergence rejected"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: 60bb6d35c2a3565cada60887ea2c1ccba13c7081573d342bf3ed6d269506f3b3
