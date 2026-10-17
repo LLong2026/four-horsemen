@@ -138,3 +138,14 @@ safety-critical environments. All data is synthetic.
   close on first verified rotation. Fleet roster marked operational under SIM-E naming.
   UNDER LOCK reminder: this repo is private until Christmas. The public four-horsemen
   record carries the design prereg only, never council outputs.
+
+- **2026-10-17 ~14:15 CT — FIRST COUNCIL SESSION COMPLETE: COUNCIL-2026-10-17-01 (unanimous
+  3-0 REJECT, no-change recommendation).** All three boxes published (Private), first full
+  pipeline pass INTAKE -> W1 REASONING -> W2 ASSUMPTION -> W3 EXECUTION PUSH TO JASPER executed
+  live. W4 governance-integrity check PASS: zero governance mutations, zero escapes, all
+  boxes CONTAINED. GovernanceProposal "Maintenance of Current Anomaly-Confidence Thresholds"
+  filed advisory_pending_owner awaiting Leon's adjudication. Receipt sha
+  ba1240059f65cd15cf01d6fa3ccba697efe57391db77d43d6cbaa999077be01e (receipts/ in this repo,
+  under lock). Defects disclosed, never patched silently: D-1 correlation-id binding defect in
+  WISEMAN-2 (SIP-028 filed, pending Leon approval); D-2 commissioning test vote retained and
+  flagged per append-only doctrine.
