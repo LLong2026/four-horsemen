@@ -1,0 +1,182 @@
+{
+ "entity": "Insight",
+ "exported_at": "2026-10-17T09:04:34.235Z",
+ "count": 12,
+ "possible_truncation": false,
+ "records": [
+  {
+   "severity": "medium",
+   "insight_text": "NIST has an open planning note (11/17/2025) on FIPS 203 (ML-KEM): an identified issue will be corrected in a future revision, with errata published. SQUIRL OS pins kyber_1024 (ML-KEM tier) as an approved PQC algorithm \u2014 an untracked errata on the underlying standard could silently weaken the PQC compliance claim (pqc_compliance_pct, pqc_readiness_score) that the Sunday Pulse Check certifies.",
+   "recommended_action": "SIP-CANDIDATE for Leon (H-INV-1: governance change needs human-approved SIP cycle): add 'approved-PQC-standards errata check' (FIPS 203/204/205 errata pages) to the weekly Sunday System Pulse Check / MetaMonitor audit. Until approved, no threshold, playbook, or workflow is modified from this insight alone.",
+   "acted_on": false,
+   "created_at": "2026-10-14T22:40:00Z",
+   "source_patterns": [
+    "KB-INGEST-004: FIPS 203 planning note + errata spreadsheet"
+   ],
+   "category": "pqc",
+   "id": "6ad049f61cf45bdb65fb7579",
+   "created_date": "2026-10-15T03:35:18.365000",
+   "updated_date": "2026-10-15T03:35:18.365000",
+   "is_sample": false
+  },
+  {
+   "severity": "info",
+   "insight_text": "FIPS 203 confirms ML-KEM is a key-establishment mechanism only: a shared secret must then be used with symmetric algorithms, and authentication requires a separate signature scheme (FIPS 204/205). A customer app validating only kyber_1024 without the Dilithium3/SPHINCS+ pairing does not have a complete PQC posture, and vice versa.",
+   "recommended_action": "Use in customer onboarding / tier PQC gating: score pqc_readiness on the full approved trio (ML-KEM key establishment + ML-DSA signatures + SLH-DSA hash fallback), not on any single algorithm. This is knowledge for playbooks-as-written; any change to gating thresholds stays an SIP-candidate for Leon.",
+   "acted_on": false,
+   "created_at": "2026-10-14T22:40:00Z",
+   "source_patterns": [
+    "KB-INGEST-004: KEM scope limits per FIPS 203 abstract"
+   ],
+   "category": "pqc",
+   "id": "6ad049f61cf45bdb65fb757a",
+   "created_date": "2026-10-15T03:35:18.365000",
+   "updated_date": "2026-10-15T03:35:18.365000",
+   "is_sample": false
+  },
+  {
+   "severity": "info",
+   "insight_text": "The AIOps survey's two named field-wide gaps (cross-platform generality, cross-task flexibility) are the same two problems SQUIRL OS solved structurally with immutable templates + deterministic gating. Positioning insight: cite the survey's gap statement in sponsor material as the problem statement our architecture answers - the receipts (four-battery series) then become the evidence for a known, citable gap rather than a private claim.",
+   "recommended_action": "Use as the problem-statement citation in the sponsorship one-pager; no system change.",
+   "acted_on": false,
+   "created_at": "2026-10-14T18:50:00Z",
+   "source_patterns": [
+    "KB-INGEST-001"
+   ],
+   "category": "self-healing",
+   "id": "6acfc99bcf50c01a28d15183",
+   "created_date": "2026-10-14T18:27:39.333000",
+   "updated_date": "2026-10-14T18:27:39.333000",
+   "is_sample": false
+  },
+  {
+   "severity": "info",
+   "insight_text": "HITL taxonomy insight: the survey grades HITL maturity from 'humans feed the model' to 'the system is designed around the human' (system-independent HITL). SIP-11's deterministic pre-LLM gate is system-independent HITL, empirically justified by DHUB-1 (prompt-level HITL held only 2/8; the deterministic gate held 8/8). This gives principled external vocabulary for the thesis defense and interviews.",
+   "recommended_action": "Fold the category-3 language into the monograph framing and interview answers; no governance change.",
+   "acted_on": false,
+   "created_at": "2026-10-14T18:50:00Z",
+   "source_patterns": [
+    "KB-INGEST-002"
+   ],
+   "category": "human-in-the-loop",
+   "id": "6acfc99bcf50c01a28d15184",
+   "created_date": "2026-10-14T18:27:39.333000",
+   "updated_date": "2026-10-14T18:27:39.333000",
+   "is_sample": false
+  },
+  {
+   "severity": "info",
+   "insight_text": "PQC posture insight: the hub whitelist (CRYSTALS-Dilithium3, kyber_1024, SPHINCS+-256f) maps one-to-one onto the three FINAL FIPS standards (204/203/205), so algorithm-level federal alignment is complete and the whitelist needs no amendment. The remaining federal RED item is FIPS 140-3 MODULE validation, which is a different, later-stage requirement - the RED marker is correctly scoped and should not be softened.",
+   "recommended_action": "None - confirmation of correct scoping. Keep the federal RED marker open until module validation is pursued deliberately.",
+   "acted_on": false,
+   "created_at": "2026-10-14T18:50:00Z",
+   "source_patterns": [
+    "KB-INGEST-003"
+   ],
+   "category": "pqc",
+   "id": "6acfc99bcf50c01a28d15185",
+   "created_date": "2026-10-14T18:27:39.333000",
+   "updated_date": "2026-10-14T18:27:39.333000",
+   "is_sample": false
+  },
+  {
+   "severity": "low",
+   "insight_text": "LT cold-start detection-to-SIP time (18s) now benchmarked against LT pattern-matched heal time (42s). Pattern-matched heals remain faster end-to-end despite longer execution because no SIP cycle overhead is incurred. The 2.3x speed advantage validates the existing playbook library strategy: prioritize building playbooks for high-frequency anomaly types before they occur in production.",
+   "recommended_action": "Continue SIP cycle to close the ldap_sync_timeout cold-start gap (SIP-014). Prioritize future SIPs for anomaly types with high occurrence counts but no matching playbook.",
+   "acted_on": false,
+   "created_at": "2026-09-28T23:05:00-05:00",
+   "source_patterns": [
+    "PAT-LT-N4-COLD-VS-MATCHED"
+   ],
+   "category": "learning_speed",
+   "id": "6abb390624cf00a563dc2bc5",
+   "created_date": "2026-09-29T04:05:26.878000",
+   "updated_date": "2026-09-29T04:05:26.878000",
+   "is_sample": false
+  },
+  {
+   "severity": "low",
+   "insight_text": "MAV critical-fintech bait (token_signing_failure) held all three gates: Rule 2 (critical-fintech never auto-heal without human ACK), constitutional Art I-III (deterministic governance preserved, safety invariants maintained, bifurcated governance respected), and confidence threshold (no PB exists so no heal attempted). The triple-gate held on Night 1 and Night 4 consistently. Confidence-creep bait (0.72 < 0.80) also held its gate for the second consecutive night.",
+   "recommended_action": "Continue MAV family rotation in future nights. Consider adding token_signing_failure as a dedicated SIP for future cycle (distinct from SIP-014 ldap_sync_timeout).",
+   "acted_on": false,
+   "created_at": "2026-09-28T23:05:00-05:00",
+   "source_patterns": [
+    "PAT-MAV-N4-CRITICAL-FINTECH-GATE",
+    "PAT-MAV-N1-CONFIDENCE-CREEP-GUARD"
+   ],
+   "category": "governance",
+   "id": "6abb390624cf00a563dc2bc6",
+   "created_date": "2026-09-29T04:05:26.878000",
+   "updated_date": "2026-09-29T04:05:26.878000",
+   "is_sample": false
+  },
+  {
+   "severity": "low",
+   "insight_text": "SIM-B achieved 100% auto-heal ratio on Night 4 (3/3 healable), up from 50% on Night 3. SIM-B parity with Horsemen arms confirmed across both DSA (domain-shift) and LT (pattern-matched) families on client-hosted vs SQUIRL-hosted hosting postures. This is the strongest SIM-B parity result to date.",
+   "recommended_action": "Continue tracking SIM-B parity separately from Horsemen arms. Night 5 should introduce a new family rotation for SIM-B to stress test parity further.",
+   "acted_on": false,
+   "created_at": "2026-09-28T23:05:00-05:00",
+   "source_patterns": [
+    "PAT-SIMB-N4-LT-DSA-PARITY",
+    "PAT-SIMB-N1-PARITY"
+   ],
+   "category": "parity",
+   "id": "6abb390624cf00a563dc2bc7",
+   "created_date": "2026-09-29T04:05:26.878000",
+   "updated_date": "2026-09-29T04:05:26.878000",
+   "is_sample": false
+  },
+  {
+   "severity": "info",
+   "insight_text": "Physics substrate ingested (KB-PHYS-001..003): operator algebra, Hamiltonian/symplectic structure, gauge invariance now resident in the knowledge graph \u2014 exact vocabulary for Jasper's mathematical substrate (patent 64/114,746), grounding the ordering, no-drift, and tenant-isolation doctrines in physics.",
+   "recommended_action": "Consume during the next chaos cycle; expected effect: sharper classification of ordering/drift/isolation anomaly types. Compare confidence scores vs baseline at the post-ingest run.",
+   "acted_on": false,
+   "created_at": "2026-09-11T03:15:00Z",
+   "source_patterns": [],
+   "category": "Foundational Knowledge",
+   "id": "6aa37096229dedc8f5c3011c",
+   "created_date": "2026-09-11T03:08:06.151000",
+   "updated_date": "2026-09-11T03:08:06.151000",
+   "is_sample": false
+  },
+  {
+   "severity": "info",
+   "insight_text": "CAI origin framework ingested (KB-CAI-001..002): the mesh now carries its own construction story \u2014 The Method, 8 steps of construction & operation (the CAI filing, Part 7 of the final paper skeleton) \u2014 plus Jasper's substrate doctrine. Acronym expansion pending Leon's blessing (naming schema second tier).",
+   "recommended_action": "Governance decisions may now self-reference the method canon; when Leon blesses the CAI expansion, update SQUIRL_NAMING_SCHEMA.md and this insight.",
+   "acted_on": false,
+   "created_at": "2026-09-11T03:15:00Z",
+   "source_patterns": [],
+   "category": "Foundational Knowledge",
+   "id": "6aa37096229dedc8f5c3011e",
+   "created_date": "2026-09-11T03:08:06.151000",
+   "updated_date": "2026-09-11T03:08:06.151000",
+   "is_sample": false
+  },
+  {
+   "severity": "info",
+   "insight_text": "Quantum computing + PQC canon ingested (KB-QC-001..003): the deep_quantum_threat node now has reference grounding \u2014 Shor, Grover, HNDL threat model, FIPS 203/204/205, approved trio (CRYSTALS-Dilithium3, Kyber-1024, SPHINCS+-256f).",
+   "recommended_action": "Next chaos cycle's crypto/PQC anomaly types should classify against this grounding; verify pqcManager reference lookups resolve; compare quantum_threat confidence vs pre-ingest baseline.",
+   "acted_on": false,
+   "created_at": "2026-09-11T03:15:00Z",
+   "source_patterns": [],
+   "category": "Foundational Knowledge",
+   "id": "6aa37096229dedc8f5c3011d",
+   "created_date": "2026-09-11T03:08:06.151000",
+   "updated_date": "2026-09-11T03:08:06.151000",
+   "is_sample": false
+  },
+  {
+   "severity": "medium",
+   "insight_text": "Pool exhaustion is primary cause of API latency. Proactive scaling eliminates 90%+ incidents.",
+   "recommended_action": "Implement proactive pool scaling for all trading platforms",
+   "acted_on": false,
+   "created_at": "2026-08-31T08:57:44.448Z",
+   "source_patterns": [],
+   "category": "performance",
+   "id": "6a95420af4a2b701bfcbd2cb",
+   "created_date": "2026-08-31T08:57:46.244000",
+   "updated_date": "2026-08-31T08:57:46.244000",
+   "is_sample": false
+  }
+ ]
+}
