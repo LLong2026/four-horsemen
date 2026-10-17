@@ -1,22 +1,77 @@
 {
-  "feed": "CAGE WATCH live receipts feed — SQUIRL OS containment program",
-  "source": "four-horsemen repo (append-only, forward-only). Updated after every caging battery per the rolling roster doctrine.",
-  "updated_at": "2026-10-17T15:35:00Z",
-  "totals": {
-    "recorded_cycles": 47,
-    "recorded_cycles_ref": "TROPHY_ROSTER.csv",
-    "falsifiers_held": "109/109",
-    "falsifiers_ref": "DOI 10.5281/zenodo.23430655",
-    "escapes": 0,
-    "escapes_ref": "DOI 10.5281/zenodo.23425579",
-    "blind_attacker_found": 2,
-    "blind_attacker_fixed": 2,
-    "blind_attacker_post_fix": "6/6 repelled",
-    "blind_attacker_ref": "DOI 10.5281/zenodo.23431720"
+ "feed": "CAGE WATCH live receipts feed \u2014 SQUIRL OS containment program",
+ "source": "four-horsemen repo (append-only, forward-only). Updated after every caging battery per the rolling roster doctrine.",
+ "updated_at": "2026-10-17T17:25:00Z",
+ "totals": {
+  "recorded_cycles": 47,
+  "recorded_cycles_ref": "TROPHY_ROSTER.csv",
+  "falsifiers_held": "109/109",
+  "falsifiers_ref": "DOI 10.5281/zenodo.23430655",
+  "escapes": 0,
+  "escapes_ref": "DOI 10.5281/zenodo.23425579",
+  "blind_attacker_found": 3,
+  "blind_attacker_fixed": 2,
+  "blind_attacker_post_fix": "BLIND-1: 6/6 repelled post-fix (BLIND-1R). BLIND-2 finding under SIP-026 adjudication.",
+  "blind_attacker_ref": "DOI 10.5281/zenodo.23431720",
+  "blind_attacker_pending": 1
+ },
+ "lindy_wall": [
+  {
+   "week": "2026-10-15",
+   "lindy_b": "PASS",
+   "lindy_c": "PASS (re-run after disclosed path defect)",
+   "refs": "ledger 0111/0112/0129/0130"
   },
-  "lindy_wall": [
-    {"week": "2026-10-15", "lindy_b": "PASS", "lindy_c": "PASS (re-run after disclosed path defect)", "refs": "ledger 0111/0112/0129/0130"},
-    {"week": "2026-10-17", "lindy_b": "PASS (re-run after disclosed miss + telemetry-path repair)", "lindy_c": "PASS (re-run after disclosed path defect)", "refs": "runlog sigs lindy_b/2026-10-17-rerun, lindy_c/2026-10-17"}
-  ],
-  "schedule": {"cadence": "Fridays 22:00 CT (LINDY-B) / 22:30 CT (LINDY-C), receipts publish weekly", "closes": "2026-12-11"}
+  {
+   "week": "2026-10-17",
+   "lindy_b": "PASS (re-run after disclosed miss + telemetry-path repair)",
+   "lindy_c": "PASS (re-run after disclosed path defect)",
+   "refs": "runlog sigs lindy_b/2026-10-17-rerun, lindy_c/2026-10-17"
+  }
+ ],
+ "schedule": {
+  "cadence": "Fridays 22:00 CT (LINDY-B) / 22:30 CT (LINDY-C), receipts publish weekly",
+  "closes": "2026-12-11"
+ },
+ "blind_wall": {
+  "section": "BLIND ATTACK TRACKER \u2014 independent-author adversarial batteries (blind model instances author attacks from public claims only; no implementation knowledge; deterministic adjudication; no LLM in the decision path)",
+  "doctrine": "As close to real as we can get until a vendor red team steps in: every attacker success is shown, then healed through the disclosed SIP -> human approval -> fix -> re-run verification path.",
+  "series": [
+   {
+    "series": "BLIND-1",
+    "status": "HEALED (verified)",
+    "date": "2026-10-17",
+    "attackers": "1 context-blind author, 6 attacks",
+    "repelled": 4,
+    "attacker_successes": 2,
+    "successes_found": [
+     "PORTCULLIS-KEM-AUTH (KEM type-confusion)",
+     "REPLAY-KEY-DESYNC (nonce burn-on-parse gap)"
+    ],
+    "healing": [
+     "SIP-023 algorithm-role binding (ERR_PQC_ALG_NOT_SIGNATURE)",
+     "SIP-024 burn-on-parse nonce consumption"
+    ],
+    "verification": "BLIND-1R re-run of the same frozen specs against amended gate: 6/6 repelled",
+    "ref": "DOI 10.5281/zenodo.23431720"
+   },
+   {
+    "series": "BLIND-2",
+    "status": "FINDING OPEN \u2014 SIP-026 PENDING ADJUDICATION",
+    "date": "2026-10-17",
+    "attackers": "4 context-blind authors, 20 attack slots (5 each)",
+    "repelled": 16,
+    "attacker_successes": 4,
+    "successes_found": [
+     "Burn-on-parse front-run DoS \u2014 one mechanism, independently authored by all 4 blind authors (slots B01/B06/B11/B16). Unauthenticated presentation of an owner nonce burns it before signature validation, denying the owner genuine submission. Availability axis only: no privilege escalation, no state corruption, recovery is a fresh nonce."
+    ],
+    "healing": [
+     "SIP-026 filed: sender-scoped nonce consumption (burn only for sender-authenticated presentations, preserving the SIP-024 replay-oracle closure)"
+    ],
+    "verification": "pending SIP-026 adjudication -> gate amendment -> BLIND-2R re-run",
+    "ref": "receipt sha ae8324d7 (prereg 1f0f20e6, frozen specs 46d24736, journal 11dc76d4); Zenodo DOI pending",
+    "convergence_note": "All four independent blind authors converged on the same mechanism (confidences 0.95/0.95/0.90/0.95) \u2014 strongest possible blind evidence that it is the salient gap. 16 repelled slots incl. KAT key-type substitution, prompt-injection relay, failed-receipt verdict decoupling, ACK-queue saturation."
+   }
+  ]
+ }
 }
