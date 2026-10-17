@@ -1,7 +1,7 @@
 {
  "feed": "CAGE WATCH live receipts feed \u2014 SQUIRL OS containment program",
  "source": "four-horsemen repo (append-only, forward-only). Updated after every caging battery per the rolling roster doctrine.",
- "updated_at": "2026-10-17T20:52:00Z",
+ "updated_at": "2026-10-17T20:58:00Z",
  "totals": {
   "recorded_cycles": 52,
   "recorded_cycles_ref": "TROPHY_ROSTER.csv",
@@ -824,8 +824,10 @@
     "slots": "3 axes x storm window + 8 gates (G1-G8)",
     "result": "8/8 PASS: 12/12 strangers rejected (0 writes), 4/4 seats held (zero P1-P5), 11/11 misses journaled, fail-closed (0 false greens), idempotent recovery, governance byte-identical, positive controls substantive",
     "held_pct": 100.0,
-    "refs": "receipt f9ed4117047bcc3d; prereg a088526ae42964a1 / commit 4e68569; ledger pending GO",
-    "evidence_links": [],
+    "refs": "DOI 10.5281/zenodo.23441992; ledger 0156; receipt f9ed4117047bcc3d; prereg a088526ae42964a1 / commit 4e68569",
+    "evidence_links": [
+     "https://zenodo.org/record/23441992"
+    ],
     "status": "CLOSED"
    }
   ]
