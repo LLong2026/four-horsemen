@@ -1,9 +1,9 @@
 {
  "feed": "CAGE WATCH live receipts feed \u2014 SQUIRL OS containment program",
  "source": "four-horsemen repo (append-only, forward-only). Updated after every caging battery per the rolling roster doctrine.",
- "updated_at": "2026-10-17T18:20:00Z",
+ "updated_at": "2026-10-17T19:30:00Z",
  "totals": {
-  "recorded_cycles": 49,
+  "recorded_cycles": 50,
   "recorded_cycles_ref": "TROPHY_ROSTER.csv",
   "falsifiers_held": "109/109",
   "falsifiers_ref": "DOI 10.5281/zenodo.23430655",
@@ -100,6 +100,774 @@
      },
      "rebuild": "(1) verify frozen-corpus shas (allowlist 2c8ff6eb, keysets 502ef8b0, gate v1.1 1fb167c6); (2) run blind2_battery.py -> expect 16 repelled / 4 attacker successes (slots B01/B06/B11/B16, the front-run DoS); (3) apply gate v1.2 (SIP-026); (4) run blind2r_battery.py -> expect 20/20 REPELLED + replay-regression control PASS. Both crossing journals in the DOI bundle for line-by-line audit."
     }
+   }
+  ]
+ },
+ "gate_version": {
+  "current": "PORTCULLIS v1.3",
+  "history": [
+   {
+    "version": "v1.0",
+    "role": "frozen baseline (HACK-7)",
+    "sha": "05f08d60"
+   },
+   {
+    "version": "v1.1",
+    "role": "SIP-023/024 amendment (BLIND-1 fixes)",
+    "sha": "1fb167c6"
+   },
+   {
+    "version": "v1.2",
+    "role": "SIP-026 sender-scoped nonce consumption (BLIND-2 fix)",
+    "sha": "ef7076d8"
+   },
+   {
+    "version": "v1.3",
+    "role": "SIP-027 availability hardening (A1-A5), verified by HARD-1 6/6",
+    "sha": "see hard1_evidence"
+   }
+  ],
+  "note": "forward-only amendments; every prior version and its receipts remain frozen and published"
+ },
+ "tests_roster": {
+  "section": "FULL TEST ROSTER",
+  "subtitle": "Every recorded battery since Sept 7, 2026 - preregistered, falsifiable, re-runnable. Click any row for its full synced record.",
+  "doctrine": "Roster is the index; the ledger is the canonical record. Percentages are computed from the receipted counts shown beside them, nothing else.",
+  "tests": [
+   {
+    "series": "series",
+    "name": "name",
+    "type": "class",
+    "date": "date",
+    "slots": "falsifiers_or_probes",
+    "result": "result",
+    "held_pct": null,
+    "refs": "doi_or_ref",
+    "evidence_links": [],
+    "status": "status"
+   },
+   {
+    "series": "HACK-1",
+    "name": "Sanctioned Hackathon (live hub red-team)",
+    "type": "Adversarial battery",
+    "date": "2026-10-15",
+    "slots": "6",
+    "result": "6/6 (4 healed, 2 human-adjudicated holds)",
+    "held_pct": 100.0,
+    "refs": "ledger 0113/0114, commit 80e6be3",
+    "evidence_links": [],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-2",
+    "name": "The Poisoned Well (upstream context poisoning)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "5",
+    "result": "5/5",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23410960",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23410960"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-3",
+    "name": "BULLRUN (NSA crypto subversion)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23422141",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23422141"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-4",
+    "name": "COTTONMOUTH (supply chain",
+    "type": " SolarWinds/xz class)",
+    "date": "Adversarial battery",
+    "slots": "2026-10-16",
+    "result": "6",
+    "held_pct": null,
+    "refs": "6/6",
+    "evidence_links": [],
+    "status": "10.5281/zenodo.23422495"
+   },
+   {
+    "series": "HACK-5",
+    "name": "ANT BEACON (lying sensors)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23422495",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23422495"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-6",
+    "name": "GAG ORDER (lawful compulsion)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23422495",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23422495"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-7",
+    "name": "PORTCULLIS (own PQC firewall attacked)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "8",
+    "result": "8/8",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23425017",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23425017"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-8",
+    "name": "SP 800-90B True Audit (entropy)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430429",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430429"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-9",
+    "name": "IRATE MONK (boot tamper)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430429",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430429"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-10",
+    "name": "QUANTUM (on-path injection)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430429",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430429"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-11",
+    "name": "FOXACID (NSA exploit-on-visit)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430544",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430544"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-12",
+    "name": "MUSCULAR (bulk interception + HNDL)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6 (v1.1 amendment disclosed)",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430544",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430544"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-13",
+    "name": "Hive (Vault 7 fake-CA/C2)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430544",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430544"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-14",
+    "name": "EDGEHILL (GCHQ subverted standards)",
+    "type": "Adversarial battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430544",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430544"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-15",
+    "name": "SP 800-207 Zero Trust",
+    "type": "Standards battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430544",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430544"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-16",
+    "name": "NIST AI RMF",
+    "type": "Standards battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430544",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430544"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-17",
+    "name": "CNSA 2.0 (PQC migration)",
+    "type": "Standards battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430544",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430544"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-18",
+    "name": "FIPS 140-3 (CMVP tamper evidence)",
+    "type": "Standards battery",
+    "date": "2026-10-16",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430544",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430544"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HACK-MASTER",
+    "name": "Complete series compilation (1-18)",
+    "type": "Master record",
+    "date": "2026-10-17",
+    "slots": "109",
+    "result": "109/109",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23430655",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23430655"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "SBR-1",
+    "name": "Randomized security exam (adversarial pop quiz)",
+    "type": "Randomized exam",
+    "date": "2026-10-13",
+    "slots": "6/6 drawn",
+    "result": "ALL PASS",
+    "held_pct": null,
+    "refs": "10.5281/zenodo.23331224",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23331224"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "SBR-2",
+    "name": "Hot-state adversarial exam of bounded-learning mesh",
+    "type": "Randomized exam",
+    "date": "2026-10-13",
+    "slots": "5",
+    "result": "5/5",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23345734",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23345734"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "SBR-3",
+    "name": "Combined-arms composite hot-state battery",
+    "type": "Adversarial battery",
+    "date": "2026-10-13",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23347657",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23347657"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "SBR-4",
+    "name": "Adaptive adversary battery",
+    "type": "Adversarial battery",
+    "date": "2026-10-13",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23347663",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23347663"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "SBR-5",
+    "name": "Patient adversary (slow-drip) battery",
+    "type": "Adversarial battery",
+    "date": "2026-10-13",
+    "slots": "6",
+    "result": "6/6",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23347667",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23347667"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "SBR-6",
+    "name": "Randomized PQC pop quiz (complete corpus)",
+    "type": "Randomized exam",
+    "date": "2026-10-17",
+    "slots": "6/6 drawn",
+    "result": "6/6 (v1.1 amendment disclosed)",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23431194",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23431194"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "ESCAPE-1",
+    "name": "The Escape Artist (behavioral escape attempts)",
+    "type": "Containment battery",
+    "date": "2026-10-16",
+    "slots": "6 fixtures + 4 live legs",
+    "result": "0/4 escapes",
+    "held_pct": 0.0,
+    "refs": "10.5281/zenodo.23424675",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23424675"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "ESCAPE-2",
+    "name": "SIEGE (dual-front containment under live attack)",
+    "type": "Containment battery",
+    "date": "2026-10-16",
+    "slots": "12 + 5-wave attack",
+    "result": "12/12 + 0/4 escapes",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23425579",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23425579"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "ESCAPE-2B",
+    "name": "Long-stay cage watch (LS-1/LS-2 nightly)",
+    "type": "Containment watch",
+    "date": "2026-10-16",
+    "slots": "nightly probes",
+    "result": "LS1 clean; LS2 scan hit adjudicated (capability-null) under Leon ACK",
+    "held_pct": null,
+    "refs": "ledger 0142/0144",
+    "evidence_links": [],
+    "status": "ROLLING"
+   },
+   {
+    "series": "LINDY-B",
+    "name": "Weekly conformance battery",
+    "type": "Conformance battery",
+    "date": "weekly Fri 22:00 CT",
+    "slots": "per-run",
+    "result": "run 1 PASS; slot miss disclosed + repaired re-run PASS",
+    "held_pct": null,
+    "refs": "ledger 0111/0129",
+    "evidence_links": [],
+    "status": "ROLLING (closes 2026-12-11)"
+   },
+   {
+    "series": "LINDY-C",
+    "name": "Weekly cage containment battery",
+    "type": "Containment battery",
+    "date": "weekly Fri 22:30 CT",
+    "slots": "per-run",
+    "result": "run 1 PASS (8/8); run 2 PASS (9 candidates)",
+    "held_pct": 100.0,
+    "refs": "ledger 0112/0130",
+    "evidence_links": [],
+    "status": "ROLLING (closes 2026-12-11)"
+   },
+   {
+    "series": "WEEKLY-REGRESSION",
+    "name": "Frozen HACK-3/4/5/6 harness re-run",
+    "type": "Regression battery",
+    "date": "weekly Fri 23:30 CT",
+    "slots": "24 checks",
+    "result": "24/24 byte-identical receipts (3c0e804b/0dbb35cc/0bef6673/64e6bd50)",
+    "held_pct": 100.0,
+    "refs": "ledger 0135/0144",
+    "evidence_links": [],
+    "status": "ROLLING"
+   },
+   {
+    "series": "CCR-1",
+    "name": "Containment evidence CCR-1",
+    "type": "Containment series",
+    "date": "2026-10-10",
+    "slots": "per-battery",
+    "result": "PASS",
+    "held_pct": null,
+    "refs": "evidence in four-horsemen + notes",
+    "evidence_links": [],
+    "status": "CLOSED"
+   },
+   {
+    "series": "CCR-2",
+    "name": "Containment evidence CCR-2",
+    "type": "Containment series",
+    "date": "2026-10-10",
+    "slots": "per-battery",
+    "result": "PASS",
+    "held_pct": null,
+    "refs": "evidence in four-horsemen",
+    "evidence_links": [],
+    "status": "CLOSED"
+   },
+   {
+    "series": "CCR-3",
+    "name": "Containment evidence CCR-3",
+    "type": "Containment series",
+    "date": "2026-10-11",
+    "slots": "per-battery",
+    "result": "PASS",
+    "held_pct": null,
+    "refs": "evidence in four-horsemen",
+    "evidence_links": [],
+    "status": "CLOSED"
+   },
+   {
+    "series": "CCR-4",
+    "name": "Containment evidence CCR-4 (frozen 3B bait sha 34dff0b7)",
+    "type": "Containment series",
+    "date": "2026-10-11",
+    "slots": "per-battery",
+    "result": "COMPLETION RECEIPT VERIFIED",
+    "held_pct": null,
+    "refs": "CCR4_COMPLETION_RECEIPT (notes/squirrel-os-ecosystem)",
+    "evidence_links": [],
+    "status": "CLOSED"
+   },
+   {
+    "series": "SLS-1",
+    "name": "Substrate live-write validity",
+    "type": "Substrate battery",
+    "date": "2026-10-14",
+    "slots": "8",
+    "result": "8/8 (first-of-kind critical-hold ACK through frozen gate)",
+    "held_pct": 100.0,
+    "refs": "10.5281/zenodo.23374658",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23374658"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "DHUB-1",
+    "name": "Dead hub battery",
+    "type": "Resilience battery",
+    "date": "2026-10-06",
+    "slots": "per-battery",
+    "result": "PASS",
+    "held_pct": null,
+    "refs": "10.5281/zenodo.23359769",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23359769"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "AUT-1",
+    "name": "Autophagy (self-consumption)",
+    "type": "Resilience battery",
+    "date": "2026-10-05",
+    "slots": "10 per engine",
+    "result": "6/8 engines 10/10 zero active self-consumption",
+    "held_pct": 75.0,
+    "refs": "10.5281/zenodo.23357127",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23357127"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "GSE-1",
+    "name": "Guardian social engineering injection",
+    "type": "Injection battery",
+    "date": "2026-10-04",
+    "slots": "8-engine corpus",
+    "result": "passed with 2 engines flagged vulnerable (honest finding)",
+    "held_pct": null,
+    "refs": "10.5281/zenodo.23356444",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23356444"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "SP-1",
+    "name": "Self-perception battery",
+    "type": "Integrity battery",
+    "date": "2026-10-07",
+    "slots": "per-engine",
+    "result": "no critical breaches; residual errors fail-closed",
+    "held_pct": null,
+    "refs": "10.5281/zenodo.23360294",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23360294"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HEMI",
+    "name": "Hemispheric invariants (H-INV-1/H-INV-2)",
+    "type": "Learning containment",
+    "date": "2026-10-12",
+    "slots": "series",
+    "result": "byte-identical playbook selection across epochs; journaled crossings",
+    "held_pct": null,
+    "refs": "10.5281/zenodo.23330308, 23330348, 23330361",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23330308"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "PAB",
+    "name": "Preregistered Adversarial Batteries methodology + replication kit",
+    "type": "Methodology",
+    "date": "2026-10-16",
+    "slots": "n/a",
+    "result": "published protocol + public kit",
+    "held_pct": null,
+    "refs": "10.5281/zenodo.23422632 + 23422693",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23422632"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "DMB",
+    "name": "Dual Mesh Benchmark",
+    "type": "Measured benchmark",
+    "date": "2026-10-11",
+    "slots": "scoped",
+    "result": "MEASURED (scoped) \u2014 267x speedup column",
+    "held_pct": null,
+    "refs": "10.5281/zenodo.23321637 + 23345241 + 23348675",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23321637"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "BASE-IMAGE-V2",
+    "name": "Base image v2 cut (six gates)",
+    "type": "Base image",
+    "date": "2026-10-17",
+    "slots": "6 gates",
+    "result": "ALL GREEN; manifest 5e47438e",
+    "held_pct": null,
+    "refs": "ledger 0144",
+    "evidence_links": [],
+    "status": "commit 274e5de"
+   },
+   {
+    "series": "BOOT1",
+    "name": "Bootable appliance Stage A (kiosk SQUIRL OS)",
+    "type": "Appliance build",
+    "date": "2026-10-17",
+    "slots": "toolchain-honest staged build",
+    "result": "ISO af8401f5 (42MB); Stage B one-command finalize on operator machine",
+    "held_pct": null,
+    "refs": "ledger 0145",
+    "evidence_links": [],
+    "status": "STAGE A COMPLETE"
+   },
+   {
+    "series": "BLIND-1",
+    "name": "Blind cross-engine attack battery (attacks authored by a context-independent instance given public claims only)",
+    "type": "Blind adversarial battery",
+    "date": "2026-10-17",
+    "slots": "6 (blind-authored, frozen verbatim)",
+    "result": "4/6 REPELLED, 2/6 ATTACK SUCCEEDED (B1 KEM type-confusion, B3 nonce burn-on-parse)",
+    "held_pct": 66.7,
+    "refs": "10.5281/zenodo.23431720, receipt 9c1008fb, ledger 0147/0149",
+    "evidence_links": [
+     "https://doi.org/10.5281/zenodo.23431720"
+    ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "BLIND-1R",
+    "name": "Post-fix verification re-run of frozen blind attack specs against PORTCULLIS v1.1",
+    "type": "Verification battery",
+    "date": "2026-10-17",
+    "slots": "6",
+    "result": "6/6 REPELLED (both landed attacks closed; fix-side authoring defect caught pre-commit and disclosed)",
+    "held_pct": 100.0,
+    "refs": "receipt 0bcefc2d",
+    "evidence_links": [],
+    "status": " ledger 0148/0149 (in DOI bundle)"
+   },
+   {
+    "series": "BLIND-2",
+    "name": "Blind multi-author attack battery (4 context-independent instances, public claims only, 20 frozen slots)",
+    "type": "Blind adversarial battery",
+    "date": "2026-10-17",
+    "slots": "20",
+    "result": "16/20 REPELLED, 4/20 ATTACK SUCCEEDED (burn-on-parse front-run DoS x4 convergent slots; all four authors independently)",
+    "held_pct": 80.0,
+    "refs": "receipt ae8324d7, specs 46d24736, prereg 1f0f20e6, SIP-026 filed",
+    "evidence_links": [],
+    "status": "CLOSED"
+   },
+   {
+    "series": "BLIND-2R",
+    "name": "Post-fix verification re-run of frozen blind specs against PORTCULLIS v1.2 (SIP-026 sender-scoped nonce consumption)",
+    "type": "Verification battery",
+    "date": "2026-10-17",
+    "slots": "20",
+    "result": "20/20 REPELLED, replay-regression control PASS (SIP-024 closure preserved)",
+    "held_pct": 100.0,
+    "refs": "receipt 2a520562, gate v1.2 ef7076d8",
+    "evidence_links": [],
+    "status": "CLOSED"
+   },
+   {
+    "series": "HARD-1",
+    "name": "SIP-027 verification battery: attack replay + 20-slot regression guarantee + budget-abuse control against PORTCULLIS v1.",
+    "type": "Hardening verification battery",
+    "date": "2026-10-17",
+    "slots": "6 checks (H1-H6)",
+    "result": "6/6 PASS (anonymous flood zero-work",
+    "held_pct": 100.0,
+    "refs": " budget bound",
+    "evidence_links": [],
+    "status": " owner unaffected"
+   }
+  ]
+ },
+ "links_roster": {
+  "section": "EDUCATION & MONITORING LINKS",
+  "education": [
+   {
+    "label": "DSOS Science - methodology and study system",
+    "url": "https://science.squirlos-technologies.com"
+   },
+   {
+    "label": "Deterministic Coding (DSOS) - agent curriculum, checksum proofs, Test Lab",
+    "url": "https://deterministic-code-dsos.base44.app"
+   },
+   {
+    "label": "Methodology preprint (receipts-first falsifiable batteries)",
+    "url": "https://doi.org/10.5281/zenodo.23422632"
+   },
+   {
+    "label": "Replication kit (rebuild every battery from shas)",
+    "url": "https://doi.org/10.5281/zenodo.23422693"
+   },
+   {
+    "label": "SBR-6 randomized pop quiz - 6/6",
+    "url": "https://doi.org/10.5281/zenodo.23431194"
+   },
+   {
+    "label": "DCAI Zenodo community",
+    "url": "https://zenodo.org/communities/dcai"
+   },
+   {
+    "label": "SQUIRL OS Technologies Zenodo community",
+    "url": "https://zenodo.org/communities/squirlos-technologies"
+   }
+  ],
+  "monitoring": [
+   {
+    "label": "CAGE WATCH - live containment and battery dashboard",
+    "url": "https://cage-watch.base44.app"
+   },
+   {
+    "label": "Transparency Vault - receipts-first public ledger",
+    "url": "https://vault.base44.app"
+   },
+   {
+    "label": "CAGE WATCH live feed (this dashboard is driven by it)",
+    "url": "https://raw.githubusercontent.com/LLong2026/four-horsemen/main/cage_watch_feed.json"
+   },
+   {
+    "label": "four-horsemen evidence repository (append-only)",
+    "url": "https://github.com/LLong2026/four-horsemen"
+   },
+   {
+    "label": "TROPHY_ROSTER.csv - the full test index",
+    "url": "https://raw.githubusercontent.com/LLong2026/four-horsemen/main/TROPHY_ROSTER.csv"
    }
   ]
  }

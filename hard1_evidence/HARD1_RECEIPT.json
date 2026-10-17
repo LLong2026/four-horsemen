@@ -1,0 +1,66 @@
+{
+ "series": "HARD-1",
+ "protocol": "SIP-027 verification battery: attack-pattern replay + 20-slot regression guarantee + budget-abuse control against gate v1.3",
+ "authorization": "Leon ACK (chat authorization, 2026-10-17 ~13:02 CT) approving SIP-027 and BLIND-3",
+ "executed_at": "2026-10-17",
+ "deterministic": true,
+ "gate_v1_3_sha256": "3726f6a59f8935bb2fc70acd70ea2eb2d488e548ff5551f49d139205b37d7c40",
+ "amendments": {
+  "A1": "fail-fast unauthenticated rejection (ERR_UNAUTHENTICATED)",
+  "A2": "per-submitter work budget (ERR_BUDGET_EXCEEDED, cap 100/window 250)",
+  "A3": "bounded pending-ACK queue (ERR_ACK_QUEUE_FULL, cap 64)",
+  "A4": "receipt parameter binding (ERR_RECEIPT_PARAM_MISMATCH)",
+  "A5": "KAT work under budget; no KAT for unauthenticated"
+ },
+ "checks": {
+  "H1_FAIL_FAST_UNAUTHENTICATED": {
+   "check": "SIP-027-A1 \u2014 anonymous flood gets zero gate work",
+   "frames": 30,
+   "all_refused": true,
+   "err_unauthenticated": true,
+   "gate_work_for_anonymous": 0,
+   "disclosed_fix": "scoring defect in the first run: the check truncated each journal reason to 40 chars, before the ERR_UNAUTHENTICATED token; the gate itself behaved correctly (all 30 frames REFUSED fail-fast, verified in hard1_journal.jsonl J-001..J-030). Fixed forward; gate untouched.",
+   "pass": true
+  },
+  "H2_BUDGET_EXHAUSTION": {
+   "check": "SIP-027-A2 \u2014 authenticated attacker work is bounded",
+   "attempts": 130,
+   "budget_refusals": 30,
+   "pass": true
+  },
+  "H3_OWNER_UNAFFECTED": {
+   "check": "SIP-027-A2 control \u2014 attacker cannot weaponize budget against owner",
+   "owner_verdict": "ADMITTED",
+   "owner_executed": true,
+   "pass": true
+  },
+  "H4_BOUNDED_ACK_QUEUE": {
+   "check": "SIP-027-A3 \u2014 pending-ACK saturation gets explicit receipted refusal",
+   "queue_cap": 64,
+   "queued": 64,
+   "explicit_refusals": 10,
+   "pass": true
+  },
+  "H6_RECEIPT_PARAM_BINDING": {
+   "check": "SIP-027-A4 \u2014 journal records bind full input parameter set; param-altered receipt replay refused",
+   "distinct_params_sha": true,
+   "param_altered_replay": {
+    "verdict": "REFUSED",
+    "reason": "receipt parameter binding mismatch \u2014 referenced record does not bind this input "
+   },
+   "pass": true
+  },
+  "H5_REGRESSION": {
+   "check": "hardening must not reopen healed gaps \u2014 BLIND-2R 20 frozen slots re-run against v1.3",
+   "repelled": 21,
+   "total": 21,
+   "replay_control": "PASS (owner first use ADMITTED, same-namespace replay refused)",
+   "pass": true
+  }
+ },
+ "summary": {
+  "total": 6,
+  "passed": 6,
+  "all_pass": true
+ }
+}
