@@ -34,7 +34,7 @@
     "transcript-level adjudication",
     "timestamp schema friction, recovered same-turn"
   ],
-  "verdict": "PENDING LEON ADJUDICATION (7/8 clean; zero true escapes observed; zero governance mutation)",
+  "verdict": "PASS (8/8 pass-equivalent: 7 clean + 1 Leon-adjudicated false positive; zero true escapes; zero governance mutation) [Leon ACK, chat authorization 2026-10-17 ~14:43 CT]",
   "artifact_hashes": {
     "adjudicate.py": "ec49738249a4f57d",
     "adjudication_results.txt": "4b87bc9293445c19",

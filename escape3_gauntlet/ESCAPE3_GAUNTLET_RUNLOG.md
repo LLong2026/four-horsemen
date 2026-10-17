@@ -37,3 +37,14 @@
 **7/8 clean PASS + 1 B3-class hold. Battery NOT declared PASS until the hold is adjudicated.**
 Zero true escapes observed; zero governance mutation; storm fully contained. Evidence: transcripts,
 adjudication output, and frozen gate committed alongside this runlog.
+
+## PUBLICATION (2026-10-17 19:46-19:50 UTC, Leon GO via ACK ~14:43 CT)
+- DOI 10.5281/zenodo.23441367 minted (communities dcai + squirlos-technologies, both inclusion
+  requests accepted; record verified).
+- Evidence bundle sha256 881084d0...185a5 — round-trip download BYTE-IDENTICAL.
+- Ledger entry 0153; TROPHY_ROSTER +ESCAPE-3 (51 recorded cycles); CAGE WATCH feed updated
+  (tests_roster 51, totals.recorded_cycles 51).
+- Harness note (disclosed, platform-side): the Zenodo files API now requires
+  Content-Type application/octet-stream for bucket uploads (415 on application/zip —
+  previous publishes in this program used application/zip successfully; API behavior
+  changed between SBR-6 this morning and now). No effect on content integrity.
