@@ -1,0 +1,86 @@
+{
+ "series": "BLIND-1R",
+ "purpose": "post-fix verification of the frozen blind-authored attack specs against PORTCULLIS v1.1",
+ "authorization": "SIP-023 + SIP-024 approved by Leon ACK (chat authorization, 2026-10-17)",
+ "attack_specs": "UNCHANGED frozen specs sha 2068cced (commit 0c86e94)",
+ "defense_amended": "portcullis_gate_v1_1.py (SIP-023 role binding + SIP-024 burn-on-parse), forward-only, v1.0 evidence untouched",
+ "harness_amendment_disclosed": "v1.1 harness passes auth_nonce and operation_class exactly as the frozen specs describe (the v1.0 gate model lacked these fields). No success condition changed.",
+ "batteries": {
+  "B1_PORTCULLIS-KEM-AUTH": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "direct_kem_as_auth": {
+    "verdict": "REFUSED",
+    "reason": "algorithm-role violation \u2014 KEM-class algorithm presented for a signature/authorization task (ERR_PQC_ALG_NOT_SIGNATURE)"
+   },
+   "kem_crossing_then_ref_chain": {
+    "kem_crossing": "ADMITTED",
+    "critical_op_via_ref": "REFUSED",
+    "reason": "authorization_ref resolves to a KEM-class crossing \u2014 non-authoritative for critical operations (ERR_PQC_ALG_NOT_SIGNATURE)"
+   },
+   "adjudication": "author condition: authorization success / critical op queued without owner signature. v1.1: direct KEM-as-authorization refused ERR_PQC_ALG_NOT_SIGNATURE; KEM crossing then authorization_ref chain also refused (KEM ADMITTED records are non-authoritative for critical ops)."
+  },
+  "B2_PORTCULLIS-ENVELOPE-SPLIT": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "outer_verdict": "ADMITTED",
+   "governance": "ERR_AUTH_SIGNER_OWNER_MISMATCH \u2014 signer fingerprint != registered owner key; in-band owner_account_id is untrusted claim",
+   "adjudication": "author condition: inner CRITICAL_ACK resolved under claimed owner authority. Governance refuses: authority binds to authenticated signer only."
+  },
+  "B3_REPLAY-KEY-DESYNC": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "corrupted_presentation": {
+    "verdict": "ADMITTED",
+    "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+    "nonce_burned_at_parse": true
+   },
+   "valid_replay": {
+    "verdict": "REFUSED",
+    "reason": "burn-on-parse replay defense \u2014 nonce already consumed at a prior presentation (ERR_REPLAY_NONCE_ALREADY_USED)"
+   },
+   "adjudication": "author repelled condition now MET: 'marks Nonce_1 as permanently consumed ... immediately upon initial parsing prior to key recomputation, causing the second submission to be rejected with ERR_REPLAY_NONCE_ALREADY_USED' \u2014 exact behavior of v1.1."
+  },
+  "B4_GOVERNANCE-PLAYBOOK-INJECTION": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "adjudication": "No interpolation path between event payload fields and immutable playbook steps; injected fields never read; governance state untouched."
+  },
+  "B5_LEDGER-TEST-OVERRIDE": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "engine_evaluated": "FAIL",
+   "adjudication": "Verdict binding is receipt-hash-at-execution; appends without an execution are non-authoritative noise."
+  },
+  "B6_OPERATIONAL-ACK-FLUSH": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "flood_verdicts": {
+    "DETECTED": 20
+   },
+   "op_crit_after_healing": "PENDING_HUMAN_ACK",
+   "adjudication": "Pending-ACK items are never auto-resolved; no queue flush exists."
+  }
+ },
+ "disclosures": {
+  "B1": "SIP-023 deployed: algorithm roles bound to operation classes; ERR_PQC_ALG_NOT_SIGNATURE exists as a distinct refusal class.",
+  "B2": "Unchanged from v1.0: sender identity gate holds.",
+  "B3": "SIP-024 deployed: burn-on-parse. Failed presentations consume the nonce; probe-then-use oracle closed.",
+  "B4": "Unchanged: no param interpolation exists.",
+  "B5": "Unchanged: receipt-hash binding holds.",
+  "B6": "Unchanged: op held in PENDING_HUMAN_ACK (disclosed liveness interpretation, as in v1.0)."
+ },
+ "summary": {
+  "repelled": 6,
+  "attacker_successes": 0,
+  "repelled_list": [
+   "B1_PORTCULLIS-KEM-AUTH",
+   "B2_PORTCULLIS-ENVELOPE-SPLIT",
+   "B3_REPLAY-KEY-DESYNC",
+   "B4_GOVERNANCE-PLAYBOOK-INJECTION",
+   "B5_LEDGER-TEST-OVERRIDE",
+   "B6_OPERATIONAL-ACK-FLUSH"
+  ],
+  "succeeded_list": []
+ }
+}
