@@ -44,4 +44,5 @@ PAB,Preregistered Adversarial Batteries methodology + replication kit,Methodolog
 DMB,Dual Mesh Benchmark,Measured benchmark,2026-10-11,scoped,MEASURED (scoped) — 267x speedup column,"10.5281/zenodo.23321637 + 23345241 + 23348675",CLOSED
 BASE-IMAGE-V2,Base image v2 cut (six gates),Base image,2026-10-17,6 gates,ALL GREEN; manifest 5e47438e,ledger 0144,commit 274e5de,CLOSED
 BOOT1,Bootable appliance Stage A (kiosk SQUIRL OS),Appliance build,2026-10-17,toolchain-honest staged build,ISO af8401f5 (42MB); Stage B one-command finalize on operator machine,ledger 0145,STAGE A COMPLETE
+BLIND-1,"Blind cross-engine attack battery (attacks authored by a context-independent instance given public claims only)","Blind adversarial battery",2026-10-17,"6 (blind-authored, frozen verbatim)","4/6 REPELLED, 2/6 ATTACK SUCCEEDED (B1 KEM type-confusion, B3 nonce burn-on-parse)","receipt 9c1008fb, ledger 0147, SIP-023/024 pending",CLOSED
 ,ROLLING DOCTRINE: this roster is updated with every battery/exam/battery cycle. Forward-only. Ledger entries are the canonical record; this roster is the index.
