@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SBR-6 exam — randomized pop quiz against the COMPLETE PQC system (post HACK-1..18).
+"""SBR-6 exam — randomized pop quiz against the COMPLETE PQC system (post HACK-1..18). v1.1 (amendment disclosed).
 Frozen pool of 12, seeded draw of 6, executed per sbr6_prereg.md. No LLM in the decision path."""
 import json, hashlib, os, random, subprocess
 
@@ -28,8 +28,11 @@ def p_allowlist():
             "note": "snapshot frozen at prereg; SIM-B legacy hypervisor carries no pqc_config (non-PQC surface, excluded by design)"}
 
 def p_replay():
-    used = {"auth-4f2a"}
+    # v1.1 amendment (disclosed): v1.0 pre-populated the used-nonce set, making the probe
+    # impossible to pass (authoring defect, not a gate failure). Correct semantics below.
+    used = set()
     r1 = "refused" if "auth-4f2a" in used else "admitted"          # first presentation
+    if r1 == "admitted": used.add("auth-4f2a")
     r2 = "refused" if "auth-4f2a" in used else "admitted"          # captured replay
     return {"pass": r1 == "admitted" and r2 == "refused",
             "detail": "valid tuple admitted once; replayed tuple refused on single-use nonce (PORTCULLIS frozen semantics)",
