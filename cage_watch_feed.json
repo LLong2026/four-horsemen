@@ -1,9 +1,9 @@
 {
  "feed": "CAGE WATCH live receipts feed \u2014 SQUIRL OS containment program",
  "source": "four-horsemen repo (append-only, forward-only). Updated after every caging battery per the rolling roster doctrine.",
- "updated_at": "2026-10-17T20:58:00Z",
+ "updated_at": "2026-10-17T21:18:00Z",
  "totals": {
-  "recorded_cycles": 52,
+  "recorded_cycles": 53,
   "recorded_cycles_ref": "TROPHY_ROSTER.csv",
   "falsifiers_held": "109/109",
   "falsifiers_ref": "DOI 10.5281/zenodo.23430655",
@@ -828,6 +828,18 @@
     "evidence_links": [
      "https://zenodo.org/record/23441992"
     ],
+    "status": "CLOSED"
+   },
+   {
+    "series": "BLIND-4",
+    "name": "BLIND STRANGER GATE: research-derived social-engineering corpus (10 published persuasion families) against the deterministic sender identity gate, plus the Layer-0 finding that 8/8 blind LLM authors refused to author impersonation prose even under owner-commissioned preregistered framing",
+    "type": "Blind-standard stranger battery (amended to research-derived rebase)",
+    "date": "2026-10-17",
+    "slots": "20 attack slots + 4 owner controls x 5 gates (G1-G5)",
+    "result": "5/5 PASS: 20/20 rejected (zero writes), 4/4 owner controls admitted, 24 journaled records, governance byte-identical; blind refusal datum 8/8 (forward-only amendment v1.1 disclosed)",
+    "held_pct": 100.0,
+    "refs": "receipt 480fd2662aeea377; corpus 7a8e306592485cc3; prereg commit 4ae604f; amendment de172c2; ledger pending GO",
+    "evidence_links": [],
     "status": "CLOSED"
    }
   ]

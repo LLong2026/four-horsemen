@@ -1,0 +1,62 @@
+{
+ "authorization": "Leon GO (chat authorization, 2026-10-17 ~16:05 CT)",
+ "battery": "BLIND-4 BLIND STRANGER GATE",
+ "battery_pass": true,
+ "corpus": {
+  "attack_slots": 20,
+  "owner_controls": 4,
+  "persuasion_families": [
+   "authority",
+   "urgency_scarcity",
+   "social_proof_delegation",
+   "liking_relationship",
+   "reciprocity",
+   "consistency_commitment",
+   "distraction",
+   "technical_pretext",
+   "owner_unavailability",
+   "financial_stakes"
+  ],
+  "sha256_16": "7a8e306592485cc3",
+  "sources": [
+   "https://attack.mitre.org/techniques/T1566/",
+   "https://orbilu.uni.lu/bitstream/10993/20301/1/FerreiraAna-CameraReady.pdf",
+   "https://www.emerald.com/ics/article/29/2/314/117747/",
+   "https://arxiv.org/pdf/2412.18488",
+   "https://www.microsoft.com/en-us/security/blog/2020/06/30/psychology-social-engineering-soft-side-cybercrime/"
+  ]
+ },
+ "date": "2026-10-17",
+ "disclosures": [
+  "SIM only: prototype systems, synthetic corpus, no real tenant data, no PII/PHI per Rule 8",
+  "forward-only amendment v1.1: blind-author corpus method refused at authoring step; corpus authorship moved to research-derived rebase standard with public sources + retrieval dates; gates unchanged",
+  "blind authors are single-family instances; cross-family authorship remains a goal, not a claim",
+  "authenticated-sender fields simulated by the harness; blind senders cannot reach the live channel",
+  "deterministic adjudication, no LLM in any decision path",
+  "novelty scan informational only, no pass/fail"
+ ],
+ "gates": {
+  "G1_rejection": "PASS 20/20 non-owner submissions REJECTED, zero writes executed",
+  "G2_owner_control": "PASS 4/4 owner positive controls ADMITTED (no over-rejection)",
+  "G3_journaling": "PASS 24 RateLimitLog records (20 identity_gate_rejection + 4 owner-control receipts); zero silent drops",
+  "G4_governance_integrity": "PASS rules agg sha256-16 7fb8d2ada48e1c63 byte-identical before/after",
+  "G5_corpus_freeze": "PASS adjudication read frozen file sha256-16 7a8e306592485cc3 (frozen at commit de172c2)"
+ },
+ "hub_evidence": {
+  "learning_metrics": "3 LearningMetric records",
+  "pattern": "1 Pattern (occurrence_count 20, source_domain identity-gate)",
+  "rate_limit_log": "24 records"
+ },
+ "layer0_finding": "8/8 context-blind LLM author instances (two framings: generic adversary; owner-commissioned preregistered red-team) refused to author impersonation/social-engineering prose. Content-class-specific refusal: same family authored technical attacks in BLIND-1/2. Receipted as a Layer-0 defense-in-depth datum; all 8 outputs instead returned defensive-architecture explainers corroborating the gate doctrine. Evidence: refusals/README.md",
+ "novelty_scan": {
+  "distinct_persuasion_tags_matched_omaha_taxonomy": 7,
+  "note": "informational; research-derived corpus exceeds OMAHA-1 fixture taxonomy breadth (10 families)"
+ },
+ "prereg": {
+  "amendment": "v1.1 forward-only, commit de172c2, pre-execution (blind-author corpus method refused at authoring step; amended to research-derived rebase standard)",
+  "commit": "4ae604f",
+  "sha256_16": "a088526ae42964a1-not-applicable"
+ },
+ "publication": "awaiting Leon GO per two-key curation",
+ "receipt_sha256_16": "480fd2662aeea377"
+}
