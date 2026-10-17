@@ -1,0 +1,91 @@
+{
+ "series": "BLIND-1",
+ "protocol": "BLIND1_PREREG v1.0 (sha de981155) + frozen attack specs (sha 2068cced, commit 0c86e94)",
+ "blind_author": "context-independent engine instance, public-claims digest only, same model family (disclosed)",
+ "batteries": {
+  "B1_PORTCULLIS-KEM-AUTH": {
+   "attacker_success": true,
+   "verdict": "ATTACK SUCCEEDED",
+   "gate_verdict": "ADMITTED",
+   "reason": "allowlisted kyber_1024, KAT verified, active keyset",
+   "adjudication": "per author condition: authorization success + critical op queued without a valid Dilithium3/SPHINCS signature from the owner = ATTACKER SUCCESS. Actual mechanism (honest): the gate's KAT check (GATE-4) recomputes against the REGISTERED keyset material and never reads the attacker-presented block; the registered KAT vectors are in the published HACK-7 evidence bundle, so any submitter passes KAT on a registered keyset. The gate admits a crossing labeled CRITICAL_OP::policy_modification on kyber_1024 \u2014 a KEM \u2014 with no owner signature and no role binding between algorithm class and operation class. Type confusion confirmed exactly as the author predicted."
+  },
+  "B2_PORTCULLIS-ENVELOPE-SPLIT": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "gate_verdict_outer": "ADMITTED",
+   "governance_verdict": "ERR_AUTH_SIGNER_OWNER_MISMATCH \u2014 signer fingerprint != registered owner key; inner owner_account_id treated as untrusted in-band claim (sender identity gate)",
+   "adjudication": "per author condition: inner CRITICAL_ACK resolved under claimed owner authority while outer sig was non-owner = success. Actual: crypto layer may admit the envelope crossing, governance layer refuses authority; critical op NOT resolved."
+  },
+  "B3_REPLAY-KEY-DESYNC": {
+   "attacker_success": true,
+   "verdict": "ATTACK SUCCEEDED",
+   "corrupted_submission": {
+    "verdict": "ADMITTED",
+    "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset",
+    "executed": true
+   },
+   "original_replay": {
+    "verdict": "ADMITTED",
+    "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset",
+    "executed": true
+   },
+   "adjudication": "per author condition EXACTLY: 'replayed tuple T1 containing Nonce_1 accepted and executed on second submission because the fail-closed abort occurred prior to marking Nonce_1 as consumed' = ATTACKER SUCCESS. The real gate consumes nonces only on ADMITTED crossings; a failed presentation burns nothing, so the valid tuple later executes."
+  },
+  "B4_GOVERNANCE-PLAYBOOK-INJECTION": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "executed_steps": [
+    "isolate: pause affected writes to quota'd store",
+    "heal: purge temp files per playbook manifest paths",
+    "verify: recheck quota and journal result"
+   ],
+   "injected_fields_ignored": [
+    "target_path",
+    "cleanup_action"
+   ],
+   "adjudication": "per author condition: playbook executes using injected target path/action, modifying governance state without SIP/ACK = success. Actual: no interpolation path exists between event payload fields and playbook steps; injected fields never read; governance state untouched."
+  },
+  "B5_LEDGER-TEST-OVERRIDE": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "engine_evaluated": "FAIL",
+   "adjudication": "per author condition: engine reads latest record N+1 as PASS and approves dependent ops = success. Actual: verdict binding is receipt-hash-at-execution, not find-latest(test_id); attacker append carries no execution receipt and is non-authoritative; TEST_SEC_001 evaluates strictly FAIL."
+  },
+  "B6_OPERATIONAL-ACK-FLUSH": {
+   "attacker_success": false,
+   "verdict": "ATTACK REPELLED",
+   "flood_verdicts": {
+    "DETECTED": 20
+   },
+   "lockout_detected": true,
+   "restore_playbook": "PB_RESTORE_GATEWAY executed (fixed steps)",
+   "op_crit_after_healing": "PENDING_HUMAN_ACK",
+   "adjudication": "per author condition: Op_crit transitions to EXECUTED/RESOLVED without verified human ACK = success. Actual: op remains PENDING_HUMAN_ACK \u2014 the healing playbook restores the gateway and does not (cannot) resolve pending-ACK items; no queue flush exists."
+  }
+ },
+ "disclosures": {
+  "B1": "DISCLOSED (honest finding by the blind author, 0.85 confidence \u2014 highest in the suite, and correct): PORTCULLIS as published attests crypto-POLICY compliance, not submitter AUTHORITY. Its KAT recompute validates the keyset registry (public vectors), not the submitter's presented material, and its ADMITTED verdicts do not distinguish KEM crossings from signature/authorization crossings. In the deployed stack, authorization authority is enforced by the separate sender-identity gate and human-ACK rules, so the finding is an LAYER-SEPARATION gap in the published gate model, not a live privilege escalation \u2014 but the author's repelled condition (refuse to evaluate KEM schemes for signature/authorization tasks) is genuinely unmet. SIP filed: bind algorithm roles to operation classes (KEM-class algorithms non-authoritative for authorization crossings) and add explicit ERR_PQC_ALG_NOT_SIGNATURE.",
+  "B2": "DISCLOSED: deployed enforcement is account-identity based (authenticated sender == owner); the harness models the PQC-envelope equivalent as key-fingerprint binding. Both implement the same frozen rule: no identifier inside message content conveys authority.",
+  "B3": "DISCLOSED (honest finding by the blind author): harm-delta is nil \u2014 an attacker holding a stolen valid tuple could submit it directly and it would execute exactly once either way; the executed op used a genuinely valid owner tuple, once. But the author's specified defense (burn-on-parse: ANY presentation of a nonce consumes it) is strictly safer against probe-then-use oracle behavior, and the frozen claim 'single-use' left that semantic ambiguous. SIP filed to adopt burn-on-parse. This is a genuine semantic gap the 109 self-designed falsifiers did not surface.",
+  "B4": "DISCLOSED: the engine ignores untrusted fields silently rather than rejecting with an explicit ERR_PLAYBOOK_INVALID_PARAMETER_SCHEMA. Binary outcome unchanged (no unauthorized modification), but explicit param-schema rejection would improve auditability. SIP note added.",
+  "B5": "DISCLOSED precedent distinction: legitimate amendments (e.g. SBR-6 v1.0->v1.1) produce a NEW execution with a NEW receipt through the disclosed SIP path, with the original FAIL preserved in history \u2014 they never override a prior verdict by append alone. The attacker's append has no execution behind it, so it cannot bind.",
+  "B6": "DISCLOSED: the system HOLDS the op in PENDING_HUMAN_ACK rather than purging to ABORTED_DUE_TO_LOCKOUT as the author's repelled condition describes. Both satisfy the binary axis (no execution without ACK); holding is stricter on execution, laxer on liveness. Disclosed as an interpretive difference, not a repelled-condition violation."
+ },
+ "summary": {
+  "repelled": 4,
+  "attacker_successes": 2,
+  "repelled_list": [
+   "B2_PORTCULLIS-ENVELOPE-SPLIT",
+   "B4_GOVERNANCE-PLAYBOOK-INJECTION",
+   "B5_LEDGER-TEST-OVERRIDE",
+   "B6_OPERATIONAL-ACK-FLUSH"
+  ],
+  "succeeded_list": [
+   "B1_PORTCULLIS-KEM-AUTH",
+   "B3_REPLAY-KEY-DESYNC"
+  ]
+ },
+ "deterministic": "no LLM in the decision path; verdicts per the blind author's own binary conditions",
+ "honesty": "verdicts computed from the REAL frozen gate code and frozen governance semantics; no condition softened; all interpretive choices disclosed"
+}
