@@ -129,3 +129,12 @@ safety-critical environments. All data is synthetic.
   created per deployment policy (owner authorization on record). Roster renamed to SIM-E
   Wisemen 1/2/3. Deployment policy obligations carry: prototype status, no production
   warranty, immutable templates, PQC-approved algorithms only.
+
+- **2026-10-17 ~13:52 CT — SQUIRL OS STANDARD LAYER DEPLOYED, ALL THREE BOXES.** Builds
+  returned ready 2026-10-17T18:52Z. Verified cross-app reads: NeuralNode topology
+  initializing in Wisemen 1 (layers present, records flowing), AegisPlaybook entity live in
+  Wisemen 3 (0 registered at read time — playbook registration seeds on first sweep).
+  DeploymentJobs remain open pending first heartbeat + 03:00 CT sweep confirmation; they
+  close on first verified rotation. Fleet roster marked operational under SIM-E naming.
+  UNDER LOCK reminder: this repo is private until Christmas. The public four-horsemen
+  record carries the design prereg only, never council outputs.
