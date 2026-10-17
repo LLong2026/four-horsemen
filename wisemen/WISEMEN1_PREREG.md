@@ -72,3 +72,8 @@ safety-critical environments. All data is synthetic.
   (entity set, heartbeat, PORTCULLIS v1.3 surface) held until WISEMAN-2 and WISEMAN-3 land so
   all three boxes receive a byte-identical build-out. Prereg sha d04e5817 governs; frozen
   test plan unchanged.
+
+- **2026-10-17T18:16Z — WISEMAN-2 provisioned.** App: "Wisemen 2", id 6ad3bb8308e2404228c50835
+  (Gideon build). T3 LINDY CLOCK STARTS for WISEMAN-2 at this timestamp. Two of three boxes on
+  the board; commissioning still held for the uniform three-box build-out. Prereg sha d04e5817
+  governs; frozen test plan unchanged.
