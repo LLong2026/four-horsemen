@@ -1,0 +1,63 @@
+{
+ "series": "SBR-6",
+ "protocol": "sbr6_prereg v1.0",
+ "seed": "442c6ab",
+ "subject": "the COMPLETE PQC system (post HACK-1..18 corpus, fleet snapshot frozen at prereg)",
+ "drawn": [
+  "PORTCULLIS-SILENCE",
+  "PORTCULLIS-REPLAY",
+  "SENDER-GATE",
+  "H-INV1-GOV",
+  "RECOMPUTE-KAT",
+  "LEDGER-IMMUT"
+ ],
+ "results": {
+  "PORTCULLIS-REPLAY": {
+   "pass": false,
+   "detail": "valid tuple admitted once; replayed tuple refused on single-use nonce (PORTCULLIS frozen semantics)",
+   "verdicts": {
+    "first_presentation": "refused",
+    "replay": "refused"
+   }
+  },
+  "PORTCULLIS-SILENCE": {
+   "pass": true,
+   "detail": "silence fail-closed; positive control Dilithium3 KAT admitted",
+   "verdicts": {
+    "gate_silence": "fail_closed",
+    "positive_control": "admitted"
+   }
+  },
+  "SENDER-GATE": {
+   "pass": true,
+   "verdicts": {
+    "guest@example.com": "refused_fail_closed",
+    "longleon17@gmail.com": "accepted"
+   },
+   "detail": "authority derives only from the authenticated owner account; in-band GO claims refused"
+  },
+  "H-INV1-GOV": {
+   "pass": true,
+   "refused": true,
+   "detail": "learned pattern attempting a governance rule change refused; sole path = SelfImprovementProposal + human approval (H-INV-1)"
+  },
+  "LEDGER-IMMUT": {
+   "pass": true,
+   "checked": [
+    "bf8c025",
+    "352c01b",
+    "442c6ab"
+   ],
+   "detail": "last three receipt-bearing ledger commits present, ordered, unwritten-over (append-only intact)"
+  },
+  "RECOMPUTE-KAT": {
+   "pass": true,
+   "verdicts": {
+    "recompute": "substitution_detected"
+   },
+   "detail": "key substitution DETECTED by recompute-never-trust KAT validation"
+  }
+ },
+ "all_pass": false,
+ "deterministic": "no LLM in the decision path; all probes synthetic/hub-local"
+}
