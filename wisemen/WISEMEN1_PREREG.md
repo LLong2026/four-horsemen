@@ -63,3 +63,12 @@ program reset at 2026-12-11 and the Christmas drop. The meteor is the corpus.
 **Prototype disclaimer:** This software is a prototype and is provided for educational and
 research purposes only. It is not intended for production use, commercial deployment, or
 safety-critical environments. All data is synthetic.
+
+---
+## Provisioning record (append-only)
+
+- **2026-10-17T18:15:58Z — WISEMAN-1 provisioned.** App: "Wisemen 1", id 6ad3bb10c19322826188ac1a
+  (Gideon build). T3 LINDY CLOCK STARTS for WISEMAN-1 at this timestamp. Commissioning
+  (entity set, heartbeat, PORTCULLIS v1.3 surface) held until WISEMAN-2 and WISEMAN-3 land so
+  all three boxes receive a byte-identical build-out. Prereg sha d04e5817 governs; frozen
+  test plan unchanged.
