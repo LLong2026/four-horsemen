@@ -1,3 +1,4 @@
 .gov_release_key
 .issuance_key
 .gov_ed25519_key
+__pycache__/
