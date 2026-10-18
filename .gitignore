@@ -2,3 +2,4 @@
 .issuance_key
 .gov_ed25519_key
 __pycache__/
+xrp_writer_key*.json
