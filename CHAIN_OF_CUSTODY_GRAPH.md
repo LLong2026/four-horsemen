@@ -67,3 +67,11 @@ This spec + the benchmark receipt + SIP-034/035/036 constitute the written descr
 enablement for a provisional covering: "deterministic chain-of-custody graph for AI governance
 corpora, comprising hash-only notarization to a PoW chain, automated drift re-anchoring with
 historical retention, and fail-closed reconciliation gating."
+
+## AMENDMENT v1.0.1 (2026-10-18, disclosed per append-only doctrine)
+**INV-1-C (tip-lag corollary):** the tip of an append-only log is always ahead of its most
+recent stamp — each stamp certifies a *sealed state*, and entries appended after it are covered
+at the next seal cadence. Certified states are snapshotted to `anchors/states/` so every receipt
+reconciles deterministically. This mirrors Bitcoin checkpoints (each block certifies a state;
+new txs await the next block). GATE UPDATE: a receipt matching a live artifact = LIVE MATCH;
+matching a certified state snapshot = CERTIFIED STATE; matching nothing = ORPHAN (FAIL).

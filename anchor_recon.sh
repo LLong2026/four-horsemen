@@ -10,7 +10,11 @@ FAILED=0; CHECKED=0; CONFIRMED=0; PENDING=0
 # index digests of all reconcilable artifacts
 while IFS= read -r f; do
   [ -f "$f" ] && DIGEST_INDEX["$(sha256sum "$f" | cut -d' ' -f1)"]="$f"
-done < <(ls LEDGER.md cage_watch_feed.json "$STAMP_DIR"/ANCHOR-MANIFEST-*.json 2>/dev/null)
+done < <(ls LEDGER.md cage_watch_feed.json "$STAMP_DIR"/ANCHOR-MANIFEST-*.json "$STAMP_DIR"/states/*.md 2>/dev/null)
+# INV-1-C tip-lag corollary: a receipt matching an ARCHIVED state is a certified historical state, not drift
+for sf in "$STAMP_DIR"/states/*.md; do
+  [ -e "$sf" ] && DIGEST_INDEX["$(sha256sum "$sf" | cut -d' ' -f1)"]="$sf (certified state)"
+done
 for ots in "$STAMP_DIR"/*.ots; do
   [ -e "$ots" ] || { echo "RECON FAIL: no stamps present"; exit 1; }
   CHECKED=$((CHECKED+1))
