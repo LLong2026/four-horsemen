@@ -1,0 +1,8 @@
+{
+ "anchor_date_utc": "2026-10-18T03:30:00Z",
+ "purpose": "SIP-034 Transparency Anchor v1.0 \u2014 SQUIRL OS append-only ledger + cage feed, on-chain proof-of-existence via OpenTimestamps (Bitcoin)",
+ "files": {
+  "LEDGER.md": "d6f78786e714f48a1e805dd82e9aef77848e2783e5ed5cf78ac142aeab74d542",
+  "cage_watch_feed.json": "c129f776e239f563be6dad0852460f904fe1634636b7d9d69a233b0aa2a2037c"
+ }
+}
