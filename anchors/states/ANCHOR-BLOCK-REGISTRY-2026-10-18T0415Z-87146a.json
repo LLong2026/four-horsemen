@@ -1,0 +1,17 @@
+{
+ "updated_utc": "2026-10-18T04:15:48Z",
+ "receipts": {
+  "OTS-2026-10-18-anchor_manifest.ots": {
+   "receipt_sha256": "87e75a9c9fd145fd930c9e8190abc53865719e5467886bb937d94ae1723c9eb8",
+   "status": "pending"
+  },
+  "OTS-2026-10-18-cage_feed.ots": {
+   "receipt_sha256": "cda5f9127af8a74f9365388cf8685e318c159838c04efb5d17d5fd8e467fda8b",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0346Z-LEDGER.md.ots": {
+   "receipt_sha256": "06681f53999c3ba05d3b69bb8a4f761d851ead5c26dc91e6a3a8c205080076c6",
+   "status": "pending"
+  }
+ }
+}

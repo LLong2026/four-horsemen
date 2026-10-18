@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-18T04:15:48Z",
+ "updated_utc": "2026-10-18T04:18:31Z",
  "receipts": {
   "OTS-2026-10-18-anchor_manifest.ots": {
    "receipt_sha256": "87e75a9c9fd145fd930c9e8190abc53865719e5467886bb937d94ae1723c9eb8",
@@ -11,6 +11,30 @@
   },
   "OTS-2026-10-18T0346Z-LEDGER.md.ots": {
    "receipt_sha256": "06681f53999c3ba05d3b69bb8a4f761d851ead5c26dc91e6a3a8c205080076c6",
+   "status": "pending"
+  },
+  "ANCHOR-BLOCK-REGISTRY.json.ots": {
+   "receipt_sha256": "3161d19d7d7a87d0b2dfde4abf20e92457ed8b74ea4229588c431e86d891180b",
+   "status": "pending"
+  },
+  "CHAIN_OF_CUSTODY_GRAPH.md.ots": {
+   "receipt_sha256": "a1ffa2d832ba361e1d66d2992aa3e95e849cede825170554ee58ac76deade554",
+   "status": "pending"
+  },
+  "HASH_NOTARIZATION_SPEC_MHCN1.md.ots": {
+   "receipt_sha256": "e731fd6feb056aa0ca7f9901778239a853b8473ff5e99701cf40bf77aebc392a",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0418Z-LEDGER.md.ots": {
+   "receipt_sha256": "f6db08f77be52cf1ac0879191c66be2c2925488e484d115e0c77dfa67181a405",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0418Z-cage_watch_feed.json.ots": {
+   "receipt_sha256": "7e18261ddb8bdf6ac09f86a0c830aff56d1f592f85848f1644160c670893cd3e",
+   "status": "pending"
+  },
+  "SBR7_RECEIPT.json.ots": {
+   "receipt_sha256": "deb12e7703f7118033b09a68b3f4ed0f803845d50efe49d08813f0d6090034fc",
    "status": "pending"
   }
  }
