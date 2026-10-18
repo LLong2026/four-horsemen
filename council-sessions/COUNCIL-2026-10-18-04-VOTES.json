@@ -1,0 +1,38 @@
+{
+ "session": "COUNCIL-2026-10-18-04",
+ "disclosed_discrepancies": [
+  "W1 enum DEFER vs recommendation AMEND",
+  "W3 enum DEFER vs verdict line AMEND",
+  "W1 model self-stamp conflict (deterministic governs)",
+  "W2 duplicate votes (both retained, later operative)"
+ ],
+ "votes": [
+  {
+   "member": "WISEMAN-1",
+   "model": "claude_opus_5.5 (Claude Opus 5)",
+   "verdict": "DEFER (recommendation AMEND)",
+   "dissent": false,
+   "recorded_at": "2026-10-18T05:14:23.628Z",
+   "entity_id": "6ad455ade5520717db034a09",
+   "rationale": "Session: COUNCIL-2026-10-18-04. Model stamp: OpenAI ChatGPT; exact model identifier unavailable. This is a contained, advisory assessment for owner adjudication; it authorizes no execution or governance change. DEFER records withheld approval in the CouncilVote vocabulary; the requested proposal-specific recommendation is AMEND. Strongest technical gap: R6 lacks a verifiable event-time provenance mechanism. An anchored digest can establish that a commitment was recorded by the anchor's independently verifiable publication time, subject to the anchoring system's guarantees. It does not establish when the underlying evidence was produced or when the real-world event occurred. A later-created artifact can contain an earlier asserted event time, and an authority signature authenticates that assertion without independently establishing its truth. Consequently, 'never retroactively' is currently a policy statement rather than an enforceable technical property. Highest-priority amendment: specify a verifiable event-time provenance profile distinguishing asserted event time, authenticated evidence-capture time, and independently verified anchor time; cryptographically bind those fields to the artifact digest and responsible authority; disclose anchoring delay and clock uncertainty. Where event time cannot be independently substantiated, the receipt must label it as asserted rather than verified. Trusted timestamps can constrain commitment timing, but cannot themselves establish the timing or truth of the underlying physical event. Strongest adoption barrier: integrating evidence capture into issuers' existing, multi-party operational workflows. Appraisers, inspectors, custodians, title providers, and issuers would need to produce authenticated evidence consistently at capture time and accept responsibility for those attestations. Without this upstream participation, an issuer can anchor collected documents but cannot reliably deliver the lifecycle provenance R6 promises. A bounded pilot could test this burden before broader adoption commitments. False-assurance risk: yes. An examiner could mistake an immutable commitment and valid authority signature for proof that an appraisal was accurate, ownership was legally established, or evidence existed at the claimed event time. They establish narrower properties: commitment integrity and signature validity under specified verification assumptions. Likewise, a digest alone does not demonstrate possession of its preimage; after artifact deletion, substantive examination may become impossible. LIVE MATCH and CERTIFIED STATE must not be read as legal sufficiency or independently verified real-world truth. R7's separation of authority verification from anchoring is useful, but does not bridge that evidentiary gap. Recommendation: AMEND before pilot approval, prioritizing event-time provenance. Keeping this draft-only and withholding external assurance claims limits owner exposure and preserves reversibility. No formal dissent is recorded. VERDICT | COUNCIL-2026-10-18-04 | (model self-stamp conflicted with deterministic stamp; deterministic governs) | AMEND | Specify verifiable event-time provenance, anchoring delay, and uncertainty"
+  },
+  {
+   "member": "WISEMAN-2",
+   "model": "gpt_6_sol (GPT-6 Sol)",
+   "verdict": "APPROVE (with recorded dissent; de facto AMEND)",
+   "dissent": true,
+   "recorded_at": "2026-10-18T05:14:09.461Z",
+   "entity_id": "6ad455a195631ef931b35ca4",
+   "rationale": "As WISEMAN-2, the Assumption Seat, I have analyzed the MHCN-2 draft against the stated governance principles of auditability, data privacy, and technical integrity. The embedded assumptions include: 1) the anchor infrastructure remains immutable and permanently accessible; 2) the Dilithium3 signature scheme provides sufficient long-term protection against PQC-capable adversaries; 3) issuers have sufficient internal controls to maintain the integrity of 'event-time' reporting. The most load-bearing assumption is that the 'receipt_digest' acts as a sufficient proxy for the underlying legal state without requiring full transactional transparency. If this assumption is false, the entire MHCN-2 framework fails to achieve its intended function of RWA evidentiary provenance. The strongest technical flaw is the lack of a defined revocation or invalidation mechanism within the schema, should an authority signature be compromised. The primary adoption barrier is the 'reconciler_status' overhead, imposing a non-trivial data synchronization burden on legacy real-world asset issuers. The 'reconciler_status' field creates a false-assurance risk, as examiners may interpret a 'LIVE MATCH' status as a definitive guarantee of title, when it merely confirms the presence of an anchored digest, not the underlying asset's health. I record a dissent because the current schema design conflates cryptographic persistence with legal validity, which may mislead non-technical oversight bodies, necessitating clearer disclaimers within the specification. [Duplicate earlier vote (05:14:02Z, DEFER, dissent=true) retained per append-only doctrine: strongest flaw = asset_ref identity-namespace fragmentation; adoption barrier = R8 right-to-be-forgotten jurisdictional conflict; proposes a mandatory Legal Non-Assertion field; later vote operative per last-write-wins.]"
+  },
+  {
+   "member": "WISEMAN-3",
+   "model": "gemini_3_1_pro (Gemini 3.1 Pro)",
+   "verdict": "DEFER (verdict line: AMEND)",
+   "dissent": true,
+   "recorded_at": "2026-10-18T04:57:04.024Z",
+   "entity_id": "6ad4519e9471c37a65fd3ceb",
+   "rationale": "1. Technical flaw: Lack of mechanism to handle key revocation for the PQC authority signature. 2. Adoption barrier: Integration complexity for RWA issuers requiring Dilithium3 signatures. 3. False-assurance risk: Examiners might assume the digest guarantees the artifact's truthfulness, not just its existence. 4. VOTE: AMEND. VERDICT | COUNCIL-2026-10-18-04 | WISEMAN-3 | AMEND | Add PQC key revocation handling."
+  }
+ ]
+}

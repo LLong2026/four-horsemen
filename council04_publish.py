@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+import os, subprocess, json, sys, urllib.request
+TOKEN = os.environ["ZENODO_TOKEN"]; API = "https://zenodo.org"
+DESC = """<p><strong>SQUIRL OS RESEARCH DISCLOSURE — READ FIRST:</strong> AI-assisted, receipt-first research program (open-book doctrine: audit-and-correction, versioned amendments, append-only public ledger). Errors are disclosed, not erased. <em>This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All payloads synthetic; no customer-identifiable data appears in this record (POL-DISC-001).</em></p><p><strong>Council Session 04 (COUNCIL-2026-10-18-04): a three-model advisory council's adversarial review of the MHCN-2 draft spec for RWA (real-world-asset) tokenization evidence — verdict 3-0 AMEND before pilot, all amendments adopted same night.</strong> Three independent LLM seats (Claude Opus 5.5, GPT-6 Sol, Gemini 3.1 Pro) deliberated in isolated, advisory-only, caged environments (no execution, no external access, no governance authority) on the MHCN-2 evidence-lifecycle receipt spec extending the published MHCN-1 hash-anchoring standard. The bundle contains the sealed session prompt, the verbatim votes with deterministic model stamps, the tabulation receipt, and the amended spec (MHCN-2 v0.2).</p><p><strong>Amendments sourced from the council</strong> (convergent across seats): R6.1 verifiable event-time provenance profile (an anchored digest proves commitment time, not event time — asserted / authenticated-capture / verified-anchor times must be distinct and bound); R7.1 PQC authority-key revocation registry; R9 mandatory legal non-assertion field (LIVE MATCH is a reconciliation verdict, never legal sufficiency); R10 asset_ref namespace registration; R8.1 jurisdictional carve-out disclosure.</p><p><strong>Four integrity discrepancies are disclosed in the record, not scrubbed:</strong> two enum/verdict-line mismatches; one model self-stamp conflict (self-report "OpenAI ChatGPT" vs deterministic stamp claude_opus_5.5 — the deterministic layer governs); one duplicate vote journaled by one seat (both records retained per the append-only doctrine, the later operative). Advisory-only doctrine throughout: council votes inform the owner and change no governance, thresholds, or playbooks (H-INV-1).</p><p><strong>Dual Mesh Benchmark: MEASURED (scoped)</strong> — this record documents a three-model advisory deliberation; no neural-mesh inference was involved. Program benchmark: DOI 10.5281/zenodo.23321637 (DeepSeek column: DOI 10.5281/zenodo.23345241). <strong>Companion records:</strong> MHCN-1 standard DOI 10.5281/zenodo.23445938; full anchor stack DOI 10.5281/zenodo.23446098. Scope caveats: MHCN-2 v0.2 remains a concept spec — no issuer integration exists; no legal-sufficiency claim is made or implied for any regime; anchoring notarizes existence, not truth. Provenance: append-only ledger entries 0178-0180, github.com/LLong2026/four-horsemen. Two-key curation: drafted and vetted by the system (Gabriel), published on the owner's explicit GO (chat authorization, 2026-10-18 ~00:17 CT).</p>"""
+META = {"upload_type":"dataset",
+ "title":"Council Session 04 (COUNCIL-2026-10-18-04): Three-Model Adversarial Review of the MHCN-2 RWA Evidence Spec — 3-0 AMEND Verdict, Same-Night v0.2 Amendments, and Disclosed Integrity Discrepancies",
+ "creators":[{"name":"Long, Leon Calvin, II","affiliation":"SquirlOS Technologies LLC"},{"name":"SquirlOS Technologies LLC","type":"ResearchGroup"}],
+ "description":DESC,
+ "keywords":["SQUIRL OS","Three Wisemen","multi-model deliberation","advisory council","RWA tokenization","evidence receipts","MHCN-2","hash anchoring","post-quantum cryptography","Dilithium3","AI governance","append-only ledger"],
+ "license":"cc-by-4.0","publication_date":"2026-10-18","version":"1.0",
+ "communities":[{"identifier":"dcai"},{"identifier":"squirlos-technologies"}]}
+def curl(path, method="GET", body=None):
+    cmd=["curl","-s","-X",method,f"{API}{path}","-H",f"Authorization: Bearer {TOKEN}"]
+    if body is not None: cmd+=["-H","Content-Type: application/json","--data-binary",json.dumps(body)]
+    p=subprocess.run(cmd,capture_output=True,text=True,timeout=120)
+    try: return json.loads(p.stdout)
+    except Exception: return p.stdout
+dep=curl("/api/deposit/depositions","POST",{})
+nid=dep.get("id") if isinstance(dep,dict) else None
+if not nid: print("FAIL draft",str(dep)[:200]); sys.exit(1)
+p=subprocess.run(["curl","-s","-o","/dev/null","-w","%{http_code}","-X","PUT",f"{dep['links']['bucket']}/council_session04_bundle.zip","-H",f"Authorization: Bearer {TOKEN}","-H","Content-Type: application/octet-stream","--data-binary","@council_session04_bundle.zip","--max-time","180"],capture_output=True,text=True,timeout=200)
+if p.stdout.strip() not in ("200","201"): print("FAIL upload",p.stdout.strip()); sys.exit(1)
+req=urllib.request.Request(f"{API}/api/deposit/depositions/{nid}",method="PUT",data=json.dumps({"metadata":META}).encode(),headers={"Authorization":f"Bearer {TOKEN}","Content-Type":"application/json"})
+print("meta:",urllib.request.urlopen(req,timeout=60).status)
+req2=urllib.request.Request(f"{API}/api/deposit/depositions/{nid}/actions/publish",method="POST",headers={"Authorization":f"Bearer {TOKEN}","Content-Type":"application/json"})
+r=json.loads(urllib.request.urlopen(req2,timeout=60).read())
+print("PUBLISHED DOI:",r.get("doi")); print("RECORD:",r.get("links",{}).get("record_html"))
