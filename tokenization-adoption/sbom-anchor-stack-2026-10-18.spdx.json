@@ -1,0 +1,106 @@
+{
+ "spdxVersion": "SPDX-2.3",
+ "dataLicense": "CC0-1.0",
+ "SPDXID": "SPDXRef-DOCUMENT",
+ "name": "SQUIRL OS Transparency Anchor Stack SBOM",
+ "documentNamespace": "https://squirlos-technologies.com/spdx/anchor-stack-2026-10-18",
+ "creationInfo": {
+  "created": "2026-10-18T04:24:00Z",
+  "creators": [
+   "Tool: spdx-lite-v1 (manual)",
+   "Organization: SquirlOS Technologies LLC"
+  ]
+ },
+ "packages": [
+  {
+   "name": "anchor_recover.sh",
+   "versionInfo": "1.0.x (2026-10-18)",
+   "downloadLocation": "https://github.com/LLong2026/four-horsemen",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION (prototype, patent-pending)",
+   "copyrightText": "SquirlOS Technologies LLC",
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "ea4268115b3d31735c87cd50083d0930df246248ecafcb279f5b50aa9605c4f7"
+    }
+   ],
+   "primaryPackagePurpose": "APPLICATION"
+  },
+  {
+   "name": "anchor_recon.sh",
+   "versionInfo": "1.0.x (2026-10-18)",
+   "downloadLocation": "https://github.com/LLong2026/four-horsemen",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION (prototype, patent-pending)",
+   "copyrightText": "SquirlOS Technologies LLC",
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "0dc547705a9a987fca823dbf23e7d9144008a99ffe015fb94fda38c076d372ee"
+    }
+   ],
+   "primaryPackagePurpose": "APPLICATION"
+  },
+  {
+   "name": "anchor_blocks.sh",
+   "versionInfo": "1.0.x (2026-10-18)",
+   "downloadLocation": "https://github.com/LLong2026/four-horsemen",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION (prototype, patent-pending)",
+   "copyrightText": "SquirlOS Technologies LLC",
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "efe913357778e5c068e1232f6bf81fbab3367cc255873f3821873d2cc40d6397"
+    }
+   ],
+   "primaryPackagePurpose": "APPLICATION"
+  },
+  {
+   "name": "opentimestamps-client",
+   "versionInfo": "0.7.x (PyPI)",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "primaryPackagePurpose": "LIBRARY"
+  },
+  {
+   "name": "python3",
+   "versionInfo": ">=3.9",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "primaryPackagePurpose": "LIBRARY"
+  },
+  {
+   "name": "bash",
+   "versionInfo": ">=5",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "primaryPackagePurpose": "OPERATING-SYSTEM"
+  },
+  {
+   "name": "coreutils/sha256sum",
+   "versionInfo": "system",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "primaryPackagePurpose": "OPERATING-SYSTEM"
+  },
+  {
+   "name": "openssl",
+   "versionInfo": "system",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "primaryPackagePurpose": "OPERATING-SYSTEM"
+  }
+ ]
+}

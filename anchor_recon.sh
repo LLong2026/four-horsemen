@@ -10,7 +10,8 @@ FAILED=0; CHECKED=0; CONFIRMED=0; PENDING=0
 # index digests of all reconcilable artifacts
 while IFS= read -r f; do
   [ -f "$f" ] && DIGEST_INDEX["$(sha256sum "$f" | cut -d' ' -f1)"]="$f"
-done < <(ls LEDGER.md cage_watch_feed.json HASH_NOTARIZATION_SPEC_MHCN1.md CHAIN_OF_CUSTODY_GRAPH.md sbr7/SBR7_RECEIPT.json "$STAMP_DIR"/ANCHOR-MANIFEST-*.json "$STAMP_DIR"/states/*.md "$STAMP_DIR"/ANCHOR-BLOCK-REGISTRY.json 2>/dev/null)
+done < <(ls LEDGER.md cage_watch_feed.json HASH_NOTARIZATION_SPEC_MHCN1.md CHAIN_OF_CUSTODY_GRAPH.md sbr7/SBR7_RECEIPT.json tokenization-adoption/sbom-anchor-stack-2026-10-18.spdx.json "$STAMP_DIR"/ANCHOR-MANIFEST-*.json "$STAMP_DIR"/states/*.md "$STAMP_DIR"/ANCHOR-BLOCK-REGISTRY.json 2>/dev/null)
+# v1.0.3 (2026-10-18, disclosed): SBOM admitted to the gate (self-referential demo, SIP-041)
 # v1.0.2 (2026-10-18, disclosed): index extended to the full canonical corpus (specs, receipts, registry)
 # INV-1-C tip-lag corollary: a receipt matching an ARCHIVED state is a certified historical state, not drift
 for sf in "$STAMP_DIR"/states/*.md; do

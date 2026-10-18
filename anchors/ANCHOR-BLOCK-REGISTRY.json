@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-18T04:18:31Z",
+ "updated_utc": "2026-10-18T04:25:20Z",
  "receipts": {
   "OTS-2026-10-18-anchor_manifest.ots": {
    "receipt_sha256": "87e75a9c9fd145fd930c9e8190abc53865719e5467886bb937d94ae1723c9eb8",
@@ -35,6 +35,10 @@
   },
   "SBR7_RECEIPT.json.ots": {
    "receipt_sha256": "deb12e7703f7118033b09a68b3f4ed0f803845d50efe49d08813f0d6090034fc",
+   "status": "pending"
+  },
+  "sbom-anchor-stack-2026-10-18.spdx.json.ots": {
+   "receipt_sha256": "454f148f6cb6e45ac6a0ae4be42b1cd4b036e5b536c4cb05f5241f82261f5677",
    "status": "pending"
   }
  }
