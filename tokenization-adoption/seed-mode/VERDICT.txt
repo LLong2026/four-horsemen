@@ -1,0 +1,6 @@
+seed_sha256=b6f2f6530dec3f248e62a962c2d8cf78d7a04be7575b22dea8a7309aaa085d40
+doc_sha256=e5aa25e98ab36448f9ba61dcd7e430ff613f18be9ddae5acd6cf58fd051e845b
+determinism=BYTE-IDENTICAL
+seed_bytes=32
+doc_bytes=8858
+generator=toy (not TGC)

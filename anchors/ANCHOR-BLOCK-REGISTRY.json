@@ -1,52 +1,52 @@
 {
- "updated_utc": "2026-10-18T04:34:16Z",
+ "updated_utc": "2026-10-18T05:44:14Z",
  "receipts": {
   "OTS-2026-10-18-anchor_manifest.ots": {
-   "receipt_sha256": "87e75a9c9fd145fd930c9e8190abc53865719e5467886bb937d94ae1723c9eb8",
+   "receipt_sha256": "20e75e6630e88c2faa6866e52318b4ef8f9c3c1fb1b19d706cc066e98ede24ff",
    "status": "pending"
   },
   "OTS-2026-10-18-cage_feed.ots": {
-   "receipt_sha256": "cda5f9127af8a74f9365388cf8685e318c159838c04efb5d17d5fd8e467fda8b",
+   "receipt_sha256": "05235e6f2e4404e1c2329b2dc7e303a9eaa6ed3a657be191e5a219f1f3c7983e",
    "status": "pending"
   },
   "OTS-2026-10-18T0346Z-LEDGER.md.ots": {
-   "receipt_sha256": "06681f53999c3ba05d3b69bb8a4f761d851ead5c26dc91e6a3a8c205080076c6",
+   "receipt_sha256": "8b4a937b90342a43e8315e500680c03ace6b4b16d6a57377ab67878a50b054f5",
    "status": "pending"
   },
   "ANCHOR-BLOCK-REGISTRY.json.ots": {
-   "receipt_sha256": "3161d19d7d7a87d0b2dfde4abf20e92457ed8b74ea4229588c431e86d891180b",
+   "receipt_sha256": "730e34fc9610f68570a1d684bc7f151a3f1f759c0326d570ae3defbe0c36a4b8",
    "status": "pending"
   },
   "CHAIN_OF_CUSTODY_GRAPH.md.ots": {
-   "receipt_sha256": "a1ffa2d832ba361e1d66d2992aa3e95e849cede825170554ee58ac76deade554",
+   "receipt_sha256": "60c4f0557d0c72c45a46e0745890038c391196220d4fe21bd7c435a5a2b1ed8d",
    "status": "pending"
   },
   "HASH_NOTARIZATION_SPEC_MHCN1.md.ots": {
-   "receipt_sha256": "e731fd6feb056aa0ca7f9901778239a853b8473ff5e99701cf40bf77aebc392a",
+   "receipt_sha256": "c80545c36a1b0bb4d290d396e8ddd9f191c54918c0e3f412aaae28036bc87210",
    "status": "pending"
   },
   "OTS-2026-10-18T0418Z-LEDGER.md.ots": {
-   "receipt_sha256": "f6db08f77be52cf1ac0879191c66be2c2925488e484d115e0c77dfa67181a405",
+   "receipt_sha256": "33351a799e405536ff8421bd8ea3839284f197e4aff12b39c3998670350c44c8",
    "status": "pending"
   },
   "OTS-2026-10-18T0418Z-cage_watch_feed.json.ots": {
-   "receipt_sha256": "7e18261ddb8bdf6ac09f86a0c830aff56d1f592f85848f1644160c670893cd3e",
+   "receipt_sha256": "6747e79329be8fa8ed198b547596fff7d31e42965aba9c8c2a6eb95faa01781a",
    "status": "pending"
   },
   "SBR7_RECEIPT.json.ots": {
-   "receipt_sha256": "deb12e7703f7118033b09a68b3f4ed0f803845d50efe49d08813f0d6090034fc",
+   "receipt_sha256": "b894b3b87b20d735dca950f86f2837fcc9f59bbd00de8c8ff21b76906cc2bec5",
    "status": "pending"
   },
   "sbom-anchor-stack-2026-10-18.spdx.json.ots": {
-   "receipt_sha256": "454f148f6cb6e45ac6a0ae4be42b1cd4b036e5b536c4cb05f5241f82261f5677",
+   "receipt_sha256": "ff99446561096cf64aa0b43ed464f99619da7161c313baae3d5144d7b8f475b2",
    "status": "pending"
   },
   "OTS-2026-10-18T0425Z-LEDGER.md.ots": {
-   "receipt_sha256": "87acaf9900f2fc70968a219324f5c5ac014e0e1f96397bd8ca31979495839862",
+   "receipt_sha256": "b581c58ef49d79dd4ad741a4a2c32062976a8eba3d4afd4cc898f8f34956f61a",
    "status": "pending"
   },
   "OTS-2026-10-18T0425Z-cage_watch_feed.json.ots": {
-   "receipt_sha256": "f098f5932a9a436f709de38c81d6c8d1ab7b28f6dc967dfb78de56c3bd205e67",
+   "receipt_sha256": "5d94e731f83c083b1cfb555fb2b48f671f24bd420da633ddd84d4538e924ca21",
    "status": "pending"
   },
   "OTS-2026-10-18T0431Z-LEDGER.md.ots": {
@@ -55,6 +55,30 @@
   },
   "OTS-2026-10-18T0431Z-cage_watch_feed.json.ots": {
    "receipt_sha256": "1d85d525a766870397a24335e7038fe4d3713be668c2b2d0ee5584d891ff9064",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0450Z-LEDGER.md.ots": {
+   "receipt_sha256": "9c1f898b4819b4836d2c2c0f30004e562ab857c312aee65faeae77f55c5663fb",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0450Z-cage_watch_feed.json.ots": {
+   "receipt_sha256": "d53cbd3985e35a13b261d4352b335cd6801cfa0152ec35683f720c3224817ddd",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0514Z-LEDGER.md.ots": {
+   "receipt_sha256": "dbde58d28f08134bc477b4b04608c41d60395e269906da3761656313b8147d53",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0514Z-cage_watch_feed.json.ots": {
+   "receipt_sha256": "6aae0f0a1a14e05075203de3d337a4723b802b37404eb6472cd61de9260cf8df",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0517Z-LEDGER.md.ots": {
+   "receipt_sha256": "8f3eb0a67d91725524189a9a45fb47251854825a847c8d631cd94140eb7dfd6c",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0517Z-cage_watch_feed.json.ots": {
+   "receipt_sha256": "7cf90de799f8459c5adb32493045ba46f56b4a849ff151263419c94d723ee110",
    "status": "pending"
   }
  }
