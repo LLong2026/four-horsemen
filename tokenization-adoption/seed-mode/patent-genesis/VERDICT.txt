@@ -1,0 +1,6 @@
+seed_sha256=81d4a5cb97fa972e89a3b65f51076384b64d4b630291a9986bd7b067adc3456c
+png_sha256=4b4fbf0efbcb76b8573ca0ac36b89f32eb2fe32154609fbb36c9f90b17c73796
+determinism=BYTE-IDENTICAL
+seed_bytes=32
+patent=US 19/693,343 (public citation, no method detail)
+series=Patent Genesis No. 1
