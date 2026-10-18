@@ -1,0 +1,19 @@
+{
+ "g1": {
+  "txid": "f76cc76f03aa7b8b604ecba4bab012c2cdd020ec278cd1dace6c70e540dbf892",
+  "fee_sats": 790,
+  "payload": "SQDR+0x01+32B digest",
+  "confirmed": false
+ },
+ "g2": {
+  "hop1": {
+   "txid": "415F01D3097E2F6C4E48A340FC38AD6378572BF85547D3A16628C75467BCF65A",
+   "ledger": 107746772
+  },
+  "hop2": {
+   "txid": "7F3F147EA8E2FDF989B2CD9816F5DF42BBEA1C04DBEB07420DC822C7A417B7F5",
+   "ledger": 107746777
+  }
+ },
+ "g3": "OP_RETURN byte-exact (digest DELIVERED), block confirmation pending"
+}
