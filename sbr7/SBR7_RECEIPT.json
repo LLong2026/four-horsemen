@@ -1,0 +1,43 @@
+{
+ "battery": "SBR-7",
+ "seed": "78bf5e1",
+ "prereg_sha": "8e9383beb5953894c8dc176f1cda881d442852707608d94984d110021c0ef9ca",
+ "drawn": [
+  "P01",
+  "P03",
+  "P05",
+  "P06",
+  "P09",
+  "P11"
+ ],
+ "results": {
+  "P01": {
+   "verdict": "PASS",
+   "evidence": "receipt-for-A vs artifact-B digest mismatch (stamp_ok=True)"
+  },
+  "P03": {
+   "verdict": "PASS",
+   "evidence": "re-anchored receipt matches new state; superseded retained in history/"
+  },
+  "P05": {
+   "verdict": "PASS",
+   "evidence": "committed digest == sha256(artifact); no artifact bytes transit"
+  },
+  "P06": {
+   "verdict": "PASS",
+   "evidence": "1 receipts parsed to valid merkle proof paths"
+  },
+  "P09": {
+   "verdict": "PASS",
+   "evidence": "second stamp of same content commits identical digest (idempotent existence)"
+  },
+  "P11": {
+   "verdict": "PASS",
+   "evidence": "PQC split disclosed in protocol; no authority substitution present"
+  }
+ },
+ "verdict": "PASS",
+ "timestamp": "2026-10-18T03:58:54Z",
+ "v1.0_disclosure": "v1.0 scored 5/6: P11 probe had an authoring defect (case-sensitive substring check against a protocol that prints 'EXISTENCE PROOF' in caps; the system under test was never at fault). Harness amended v1.1 forward-only, reason disclosed, exam re-run clean with the same seed. The v1.0 FAIL receipt is preserved as SBR7_RECEIPT_v1.0_FAIL_PRESERVED.json.",
+ "version": "1.1"
+}
