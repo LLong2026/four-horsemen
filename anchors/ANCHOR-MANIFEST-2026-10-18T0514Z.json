@@ -1,0 +1,4 @@
+{"anchor_date_utc": "2026-10-18T0514Z", "purpose": "SIP-035 re-anchor (drift or recovery)", "files": {
+  "LEDGER.md": "6d45e8d293ccef5402c5ab2fe5943ee8d711b34645fb7ceef27137fe154ab9d8",
+  "cage_watch_feed.json": "c129f776e239f563be6dad0852460f904fe1634636b7d9d69a233b0aa2a2037c"
+}}

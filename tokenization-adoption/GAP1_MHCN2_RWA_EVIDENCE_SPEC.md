@@ -36,3 +36,19 @@ Concept only: no RWA issuer integration exists yet; no legal opinion on sufficie
 specific regime (SEC/MiCA) is claimed or implied. The reference implementation of the
 anchoring layer is proven (DOIs 10.5281/zenodo.23445728, 23445938); the lifecycle schema is
 the proposed extension.
+
+
+## v0.2 AMENDMENTS (COUNCIL SESSION 04, 2026-10-18 — advisory-sourced, owner-adjudicated same night)
+- **R6.1 EVENT-TIME PROVENANCE PROFILE:** receipts carry asserted_event_time, authenticated_capture_time,
+  and verified_anchor_time as distinct bound fields; unverifiable event times must be labeled `asserted`,
+  never `verified`. Anchoring delay and clock uncertainty disclosed. (WISEMAN-1)
+- **R7.1 AUTHORITY KEY REVOCATION:** an authority-key registry with a disclosed revocation list and
+  invalidation path for compromised Dilithium3 keys; revoked-key receipts flagged, never silently trusted.
+  (WISEMAN-3, echoed by WISEMAN-2)
+- **R9 LEGAL NON-ASSERTION (mandatory field):** every receipt states that the anchored digest evidences
+  existence and integrity only — not legal title, ownership, accuracy, or truth. LIVE MATCH is a
+  reconciliation verdict, never a legal-sufficiency claim. (WISEMAN-2)
+- **R10 ASSET_REF NAMESPACE:** asset references must be registered in an issuer-scoped namespace to
+  prevent cross-issuer identity collisions. (WISEMAN-2)
+- **R8.1 JURISDICTIONAL NOTE:** R8 takedown capability must reconcile per-jurisdiction (e.g.,
+  right-to-be-forgotten regimes); adopters disclose their carve-outs. (WISEMAN-2)
