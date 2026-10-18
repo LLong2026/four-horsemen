@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-18T04:25:20Z",
+ "updated_utc": "2026-10-18T04:25:55Z",
  "receipts": {
   "OTS-2026-10-18-anchor_manifest.ots": {
    "receipt_sha256": "87e75a9c9fd145fd930c9e8190abc53865719e5467886bb937d94ae1723c9eb8",
@@ -39,6 +39,14 @@
   },
   "sbom-anchor-stack-2026-10-18.spdx.json.ots": {
    "receipt_sha256": "454f148f6cb6e45ac6a0ae4be42b1cd4b036e5b536c4cb05f5241f82261f5677",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0425Z-LEDGER.md.ots": {
+   "receipt_sha256": "87acaf9900f2fc70968a219324f5c5ac014e0e1f96397bd8ca31979495839862",
+   "status": "pending"
+  },
+  "OTS-2026-10-18T0425Z-cage_watch_feed.json.ots": {
+   "receipt_sha256": "f098f5932a9a436f709de38c81d6c8d1ab7b28f6dc967dfb78de56c3bd205e67",
    "status": "pending"
   }
  }
