@@ -1,0 +1,15 @@
+SQUIRL OS IP LEDGER — ANCHOR STATE 2026-10-18 (SquirlOS Technologies LLC, open-book)
+PATENTS PENDING (10) — USPTO Patent Center records, owner-account view:
+01. 64/174,933 | filed 2026-10-12 | Governed Cognitive Training via Hemispheric Decomposition, Bounded Weight Learning, and Governance-Invariant Convergence Verification in a Self-Healing Infrastructure
+02. 64/157,915 | receipt 2026-09-18 | Deterministic Constitutional Autonomous Infrastructure Systems and Methods
+03. 64/145,825 | receipt 2026-09-01 | Self-Healing AI Infrastructure with Chaos-Trained Neural Mesh
+04. 64/119,191 | receipt 2026-07-25 | Method, System, and Apparatus for Deterministically Governed Probabilistic Neural Computation
+05. 64/114,746 | receipt 2026-07-18 | JASPER: A Method, System, and Apparatus for Universal Adaptive Intelligence Orchestration
+06. 64/094,360 | receipt 2026-06-19 | Universal Rail to ISO 20022 Interoperability Bridge (URIB)
+07. 64/082,606 | receipt 2026-06-04 | System and Method for Deterministic Cross-Ledger Data State Anchoring with Sequential Ordinal Satoshi Targeting, Universal Scribe Capsule Encoding, Zero-Entropy Cross-Chain Parity Bridging, and ISO Compliance
+08. 64/081,911 | receipt 2026-06-03 | Computer-Implemented System and Method for Universal File Reconstruction via Topological Geometric Calculus Engine with Sponge-State Computational Operators
+09. 64/081,490 (THREAD ZERO) | receipt 2026-06-03 | ThreadZero: A Method and System for Gas-Free Off-Chain Asset Transfer, Cryptographic Solvency Verification, and Physically-Pegged Digital Asset Issuance Using Merkle Sum Sparse Merkle Trees and Taproot-Anchored State Commitments
+10. 19/693,343 | receipt 2026-05-30 | System and Method for Reinforcement Learning Based Token Minting and Cross Chain Cryptographic Anchoring
+SBIR TRACKS: 5 (official portfolio count: 10 patents pending + 5 SBIR tracks)
+PERMANENT MAINNET ANCHOR: patent 19/693,343 genesis seed sha256 81d4a5cb97fa972e89a3b65f51076384b64d4b630291a9986bd7b067adc3456c — sealed in OP_RETURN tx 97d8cd38ecb37602aaa93363f4591c5c357721ff0cee9a80455fbc548a8a5b89, Bitcoin mainnet BLOCK 972023, 2026-10-18.
+DISCLOSURE: company-owned open-book records only (POL-DISC-001 compliant; no customer data, no PHI, no credentials). Inventor of record: Leon Calvin Long, II. Prototype disclaimer applies.

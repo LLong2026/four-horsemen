@@ -8,12 +8,15 @@ incl. 64/157,915, 64/119,191, 64/114,746, 64/145,825, 64/174,933 + this full app
 Subject matter: dual-mode evidence receipts with seed-reconstructed originals — a 32-byte
 seed deterministically regenerates the full artifact; the hash IS the artifact.
 
-## Refile status — THREAD ZERO (PENDING OWNER INPUT)
-Owner states 19/693,343 was refiled under a new application he calls "Thread Zero."
-No Thread Zero record exists in the public ledger, notes, or four-horsemen corpus as of
-2026-10-18; the private portfolio repo (squirlos-technologies, private) was not reachable
-from the hub session. NEEDED FROM OWNER: application number, filing date, exact title,
-and confirmation whether it claims priority to 19/693,343. Add to the IP ledger on receipt.
+## Refile status — THREAD ZERO (IDENTIFIED 2026-10-18, owner Patent Center list)
+Application 64/081,490, USPTO Patent Center # 76976892, receipt date 2026-06-03, inventor
+Leon Calvin Long. Full title as filed: "THREADZERO: A METHOD AND SYSTEM FOR GAS-FREE OFF-CHAIN
+ASSET TRANSFER, CRYPTOGRAPHIC SOLVENCY VERIFICATION, AND PHYSICALLY-PEGGED DIGITAL ASSET
+ISSUANCE USING MERKLE SUM SPARSE MERKLE TREES AND TAPROOT-ANCHORED STATE COMMITMENTS."
+Open item for counsel: confirm whether 64/081,490 claims priority to 19/693,343 (relationship
+per owner statement; not independently verified). Also in portfolio, same list: 64/081,911
+(TGC engine, receipt 2026-06-03) and 64/082,606 (cross-ledger anchoring, receipt 2026-06-04).
+
 
 ## Reduction-to-practice evidence chain (chronological)
 1. 2026-10-14 — Genesis artwork minted from 32-byte seed (4f539b5f...d939859), double
