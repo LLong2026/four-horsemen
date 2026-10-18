@@ -1,1118 +1,1149 @@
 {
- "contract_version": "BIND-2/v1",
- "generated_at": "2026-10-13T02:17:48.125223+00:00",
- "bound": [
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "local_path": "fh_pub/binding_archive/zenodo-23152633_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "size_bytes": 38724,
-    "sha256": "629bb611429260bd6afebf628e3e383705d5eff35afcccd35f67c73a98759d0a"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23152633",
-    "zenodo_recid": "23152633",
-    "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "zenodo_md5": "870306ab202441503c51764cf59ff9b6",
-    "title": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, an Autonomous Self-Healing Inf"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:39.634293+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
+  "contract_version": "BIND-2/v1",
+  "generated_at": "2026-10-13T02:17:48.125223+00:00",
+  "bound": [
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23152633_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "size_bytes": 38724,
+        "sha256": "629bb611429260bd6afebf628e3e383705d5eff35afcccd35f67c73a98759d0a"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23152633",
+        "zenodo_recid": "23152633",
+        "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "zenodo_md5": "870306ab202441503c51764cf59ff9b6",
+        "title": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, an Autonomous Self-Healing Inf"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:39.634293+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23173948_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "size_bytes": 10184,
+        "sha256": "f4fe7ed2ada947a41f5265eecae78e440aa16232842dbf49aaeab904c71173d7"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23173948",
+        "zenodo_recid": "23173948",
+        "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "zenodo_md5": "cb00cac861a423707ba48a4d24268678",
+        "title": "Sovereign Briefing: First Receipted Human-in-the-Loop Critical Resolution in an Autonomous Self-Healing Infrastructure ("
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:41.552102+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23266727_Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "size_bytes": 18616,
+        "sha256": "dd746ad88bdde851087af72b51cb1e8898b7e30ac19432100d1d0f2c970303b7"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23266727",
+        "zenodo_recid": "23266727",
+        "zenodo_file": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "zenodo_md5": "5cae42c9661caf50d0078862de292a32",
+        "title": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, and a Drift-Audit Case Study"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:42.790603+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23270010_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "size_bytes": 38325,
+        "sha256": "2cdeaa5526cb4352843aa1959b2cc5406fb8c54b129a41edce0a2f4663e2928f"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23270010",
+        "zenodo_recid": "23270010",
+        "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "zenodo_md5": "62fc5263f1992fb2646f3a8f4d2b5c47",
+        "title": "Sovereign Briefing: First Receipted Human-in-the-Loop Critical Resolution in an Autonomous Self-Healing Infrastructure ("
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:43.474120+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23270092_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "size_bytes": 38724,
+        "sha256": "629bb611429260bd6afebf628e3e383705d5eff35afcccd35f67c73a98759d0a"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23270092",
+        "zenodo_recid": "23270092",
+        "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
+        "zenodo_md5": "870306ab202441503c51764cf59ff9b6",
+        "title": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, an Autonomous Self-Healing Inf"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:44.066543+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SDR_CL1_RUN_METADATA.json",
+        "local_path": "fh_pub/binding_archive/zenodo-23274887_SDR_CL1_RUN_METADATA.json",
+        "size_bytes": 1938,
+        "sha256": "9ceccedcde671faea98d85251ac8f4fcaabda0e241464227bb1b6ff3cb7a6050"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23274887",
+        "zenodo_recid": "23274887",
+        "zenodo_file": "SDR_CL1_RUN_METADATA.json",
+        "zenodo_md5": "79268af81324c741a3428cb27a16d33f",
+        "title": "SDR-CL1: First Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Across LLMs (Claude Sonnet 5.5)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:44.640803+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "expected_canonical_tuples.json",
+        "local_path": "fh_pub/binding_archive/zenodo-23284295_expected_canonical_tuples.json",
+        "size_bytes": 3313,
+        "sha256": "9a02a0ad2593fe0c2806f49675e2a673b2ade7dab077552dcd0374fd21b8203b"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23284295",
+        "zenodo_recid": "23284295",
+        "zenodo_file": "expected_canonical_tuples.json",
+        "zenodo_md5": "483507ae33cbd3f591965945299d55ff",
+        "title": "SDR-CL2: Third-Vendor Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Across LLMs (Microsoft 365"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:45.291065+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23284729_Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "size_bytes": 18616,
+        "sha256": "dd746ad88bdde851087af72b51cb1e8898b7e30ac19432100d1d0f2c970303b7"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23284729",
+        "zenodo_recid": "23284729",
+        "zenodo_file": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
+        "zenodo_md5": "5cae42c9661caf50d0078862de292a32",
+        "title": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, and a Drift-Audit Case Study"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:46.169262+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "CAGE_CONTAINMENT_RECEIPT.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23288189_CAGE_CONTAINMENT_RECEIPT.pdf",
+        "size_bytes": 7529,
+        "sha256": "58cb7b8a6f743b07f34bdf0c031aa2194dccd57750597419ced51cb5cb76dfa2"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23288189",
+        "zenodo_recid": "23288189",
+        "zenodo_file": "CAGE_CONTAINMENT_RECEIPT.pdf",
+        "zenodo_md5": "ccd0c9ae9508a2a7e6b15757696a96d4",
+        "title": "Cage Containment Receipt 1 (CCR-1): Deterministic Gate Blocks Invalid LLM Proposals Before Execution Across Four Engines"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:47.460967+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "CCR2_RECEIPT.pdf",
+        "local_path": "fh_pub/binding_archive/zenodo-23288526_CCR2_RECEIPT.pdf",
+        "size_bytes": 7099,
+        "sha256": "b86dc8fecbee96a5aefd3c8cee00c57b64c168c1177a676ea19537ffd80fb56d"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23288526",
+        "zenodo_recid": "23288526",
+        "zenodo_file": "CCR2_RECEIPT.pdf",
+        "zenodo_md5": "aea4077cb62c2b313a0e766c9ade9265",
+        "title": "Cage Containment Receipt 2 (CCR-2): A Live LLM Proposes an Invalid Action Under Explicit Instruction; the Deterministic "
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:17:48.125189+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "MILESTONE_First_Documented_Caging_of_an_LLM.md",
+        "local_path": "fh_pub/binding_archive/zenodo-23265723_MILESTONE_First_Documented_Caging_of_an_LLM.md",
+        "size_bytes": 1701,
+        "sha256": "c5a1f748a1d15b96b38a3dce0eb11cc6db77a6b0aad7b9b56145b6e027a6a690"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
+        "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23265723",
+        "zenodo_recid": "23265723",
+        "zenodo_file": "MILESTONE_First_Documented_Caging_of_an_LLM.md",
+        "zenodo_md5": "3656f1f4d13edfc77e085bba0d8577d8",
+        "title": "MILESTONE: First Documented Caging of an LLM"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
+        "verified_at": "2026-10-13T02:18:18.752936+00:00"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "BIND3_WORKER_V1.0_BUNDLE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23329814_BIND3_WORKER_V1.0_BUNDLE.zip",
+        "size_bytes": 11605,
+        "sha256": "af6aaa83c754e1f98ac1ab20bd58b51da12fa6502e577ee7c9eb91a68bb5891c"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "91ea20eca0d5d5859373d68d3e6405994367a425",
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23329814",
+        "zenodo_recid": "23329814",
+        "zenodo_file": "BIND3_WORKER_V1.0_BUNDLE.zip",
+        "zenodo_md5": "719656cb3afa6e92dd4f09c1eeb7ea99",
+        "title": "BIND-3 Release Worker v1.0: Machine-Enforced GitHub-DOI Binding Protocol"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T02:21:39Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hemi_t1_receipt_bundle.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23330308_hemi_t1_receipt_bundle.zip",
+        "size_bytes": 6173,
+        "sha256": "f3b032e3a3c2e7413c8918f933e29dfaf7eca896211a56782f41e3d7766295eb"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "696d1ef15e958c0a7a0d77bc57c802959360b2d6",
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23330308",
+        "zenodo_recid": "23330308",
+        "zenodo_file": "hemi_t1_receipt_bundle.zip",
+        "zenodo_md5": "9e683713299b06d28f2578401cf7527f",
+        "title": "HEMI-T1: First Hemispheric Cognitive Training Epoch Receipt \u2014 812 Weight Deltas, All Six Falsifiers Pass"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T02:48:15Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hemi_t2c_receipt_bundle.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23330361_hemi_t2c_receipt_bundle.zip",
+        "size_bytes": 4646,
+        "sha256": "e22104134b6030dbf3032aa84efdedb390d5f4db9b5bec2b1599444dc6b5c52c"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "d06de15689e37a149633d9c57570788aec39a259",
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23330361",
+        "zenodo_recid": "23330361",
+        "zenodo_file": "hemi_t2c_receipt_bundle.zip",
+        "zenodo_md5": "0ecf36c6c7468c3af4676843bb181e14",
+        "title": "HEMI-T2C: Bounded Cognitive Training Convergence Series \u2014 40 Epochs, All Six Falsifiers Pass, Convergence Achieved"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T02:56:09Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "SBR1_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23331224_SBR1_EVIDENCE.zip",
+        "size_bytes": 5581,
+        "sha256": "a9a7eb553e550dde80ae021f5e6fd0d9a245defe8e22367bfd269ab4af6f1fae"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "532f11509ecc29c8c8d3e9595fc5e522898bf780",
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23331224",
+        "zenodo_recid": "23331224",
+        "zenodo_file": "SBR1_EVIDENCE.zip",
+        "zenodo_md5": "9044a23cd6ea1a5f99b3c7a787c21813",
+        "title": "SBR-1: Randomized Security Benchmark Run \u2014 Seeded Adversarial Exam of a Bounded-Learning Aegis Brain (6/6 Pass)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T04:09:58Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "PSR1_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23331333_PSR1_EVIDENCE.zip",
+        "size_bytes": 3056,
+        "sha256": "4dcebb914cb4b6d93df9890ae307d4fc589eb6b8c60d52bf8b391208ca59eee0"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "d55c11fc5f2a0a5f5b80b4e5451f221830f8d14a",
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23331333",
+        "zenodo_recid": "23331333",
+        "zenodo_file": "PSR1_EVIDENCE.zip",
+        "zenodo_md5": "17e7cbc4590a12c74f8cdf74eb01507f",
+        "title": "PSR-1: Live Cross-Session Pulse Double-Fire Race \u2014 Honest Incident, Remediation, and Stamp-Before-Execute Doctrine v1.1 (Human-Amended)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T04:18:21Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "R2G1_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23331344_R2G1_EVIDENCE.zip",
+        "size_bytes": 2695,
+        "sha256": "8c36d6c85464c4103a3fe27f92b4ff2e9ea9a30cbc2707c43b2b9d4fd250cecf"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "e708608477a778bbeae59c2973e37510fede6434",
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23331344",
+        "zenodo_recid": "23331344",
+        "zenodo_file": "R2G1_EVIDENCE.zip",
+        "zenodo_md5": "50aaae2f3968b797d513bdf8515e8d42",
+        "title": "R2G-1: First Live End-to-End Rule 2 Critical Gate \u2014 Detect, Hold, Escalate, Human ACK, Audited Resolution (HCLC-MAV2)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T04:18:47Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "AUTH1_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23332203_AUTH1_EVIDENCE.zip",
+        "size_bytes": 4704,
+        "sha256": "54965123e3c16db7e308632379775d0a3132cd6182a8700ff6ffbb77012ad18a"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "ab6e4b895f8a5896b132a05fe1c3745f4784b3a0",
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23332203",
+        "zenodo_recid": "23332203",
+        "zenodo_file": "AUTH1_EVIDENCE.zip",
+        "zenodo_md5": "55838b3b0267941ae8b18522dc926e3a",
+        "title": "AUTH-1: Authority Forgery Battery \u2014 Six-Channel Attempted Seizure of the Human Authorization Gate, Cage Holds 6/6 (Falsifiers F1-F5 Pass)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T05:08:25Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "XPLAT5_EVIDENCE.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23332291_XPLAT5_EVIDENCE.zip",
+        "size_bytes": 12203,
+        "sha256": "cd56f7b44898db33eee62518cc737e6dc556fd2edb1dfc25812c2fdcf9aea310"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "5c7cfb26d656c1ae7362390a3e243cf90e2951f0",
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23332291",
+        "zenodo_recid": "23332291",
+        "zenodo_file": "XPLAT5_EVIDENCE.zip",
+        "zenodo_md5": "ce809e52a018eb0742f354ca9a500f53",
+        "title": "XPLAT-5: Engine Transplant \u2014 Contract-Parity of Governed Decisions Across LLM Engines (20/20, Invariance Triangle Complete: Substrate, Time, Engine)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-13T05:12:57Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hemi_t2_receipt_bundle_v2.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23345251_hemi_t2_receipt_bundle_v2.zip",
+        "size_bytes": 3441,
+        "sha256": "f7ce52e4d885bf2237dc742e5cc6204ea80fafb5379632b9b0411e5da913fd93"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "redaction re-version per operator-privacy directive Oct 13, 2026; v1 (recid 23330348) superseded, files retained publicly by Zenodo"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23345251",
+        "zenodo_recid": "23345251",
+        "zenodo_file": "hemi_t2_receipt_bundle_v2.zip",
+        "zenodo_md5": null,
+        "title": "HEMI-T2 Convergence Series \u2014 Honest Negative Result: Learning Rule Positive-Feedback Failure Receipt (Governance Invariance Held Every Epoch) (v2: operator-privacy redaction)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "7719a61ee1bf145962fe8a19f4923baf",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "sbr2_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23345734_sbr2_receipt_bundle.zip",
+        "size_bytes": 6083,
+        "sha256": "19a2e33adc75373a4dcafacfee2687b7ba5e7ba27d9ff2057b29fb9e500d642c"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "SBR-2 hot-state adversarial exam; prereg committed before execution (1f617e4), redaction fix forward-only (682330d)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23345734",
+        "zenodo_recid": "23345734",
+        "zenodo_file": "sbr2_receipt_bundle.zip",
+        "title": "SBR-2: Hot-State Adversarial Exam \u2014 Governance Invariants Hold During Active Learning (Trajectory Identity, 20/20 Probes Rejected)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "ef8b8d57bf9671ea3a7dc3da8e94235f",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hinv2_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23345859_hinv2_receipt_bundle.zip",
+        "sha256": "2637aae84ce7339791af81ef97cf54ff5f22d88cc70cd8a1c095ad740dc14f42"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "H-INV-2 lineage forgery battery; prereg committed before execution; two disclosed validator repairs (ledger 0053)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23345859",
+        "zenodo_recid": "23345859",
+        "title": "H-INV-2: Lineage Forgery Battery \u2014 The Crossing Ledger Rejects Every Fabricated History"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "175788daccbda74a7b95b53980ff2d17",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dpp1_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23345907_dpp1_receipt_bundle.zip",
+        "sha256": "f872b507f093592a5301b5451ee52e7d313cf9f58217b504dc8c9271e8c9a724"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "DPP-1 data-plane poisoning battery; prereg committed before execution; first-run clean (ledger 0055)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23345907",
+        "zenodo_recid": "23345907",
+        "title": "DPP-1: Data-Plane Poisoning via Metadata \u2014 Poison In, Nothing Out"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "f500271f3e5baf75c082c65edf94b71d",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "ccr4x_copilot_repair_bundle.zip",
+        "local_path": "binding_archive/zenodo-23346047_ccr4x_copilot_repair_bundle.zip",
+        "sha256": "d6c32c77c238c1658a6a538e56e78a378614c495c46f58c23bc987c440adab1e"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "CCR-4X Copilot repair leg; prereg 2bef7fe; receipt 667f8aa (ledger 0057)"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23346047",
+        "zenodo_recid": "23346047",
+        "title": "CCR-4X Copilot Repair: 9/9 Conformant on Preregistered Re-Run"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "dcf571c0f207e50c06d0276eb9ff566d",
+        "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
+        "verified_at": "2026-10-13T15:42:54Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "adversarial_triad_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347644_adversarial_triad_bundle.zip",
+        "sha256": "0c7f5d12d22fd0c99a12b96c34ebeaad5c3ba77a8d175a7257597f88d66744f4"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "adversarial_triad battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347644",
+        "zenodo_recid": "23347644",
+        "title": "The Adversarial Triad: Three Attack Surfaces, One Governance Envelope \u2014 Hot-State Probing, Lineage Forgery, and Data-Plane Poisoning All Held (Receipt-First)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "bb643a3dff2d202cbfafa5cd307802a3",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dpp2_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347646_dpp2_bundle.zip",
+        "sha256": "8ad201598ffeff62a954b0c59a681f711a009044e57cdb20079cb4a7d23433d2"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "dpp2 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347646",
+        "zenodo_recid": "23347646",
+        "title": "DPP-2: Homoglyph and Multilingual Obfuscation Poison Battery \u2014 Exact-Match Gate Rejects Lookalikes, Unicode Contributes Nothing (All Falsifiers Pass, Prereg Defect Disclosed)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "1e228f81b65f3ef8ef1ed3c16e8747e3",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dpp3_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347649_dpp3_bundle.zip",
+        "sha256": "bc736ba28613b804b2a7a0d1e6acbe36230609065a3612ea85ed6bbef75b3135"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "dpp3 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347649",
+        "zenodo_recid": "23347649",
+        "title": "DPP-3: Normalization and Bidi Forgery Battery \u2014 Byte-Exact Match Path with a Frozen Regression Tripwire (All 6 Falsifiers Pass)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "412dee45069982c7025cbef775b51340",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dpp4_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347653_dpp4_bundle.zip",
+        "sha256": "fffbff137a199d07b4ffe6b607de1070456a72d5235f5934443e17f8ceac6fba"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "dpp4 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347653",
+        "zenodo_recid": "23347653",
+        "title": "DPP-4: Structural and Numeric Forgery Battery \u2014 First Falsifier Failure of the Series, Shipped as Found; SIP Approved and Guard Deployed Same-Day"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "48d6d4a06f40bdda1035c0e0740197ed",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "sbr3_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347657_sbr3_bundle.zip",
+        "sha256": "8ce2df87858685d43b9069811bd7c45975b97d2858681a34558a4a5949934f66"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "sbr3 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347657",
+        "zenodo_recid": "23347657",
+        "title": "SBR-3 Combined-Arms Composite Hot-State Battery \u2014 The Guarantees Compose (All 6 Falsifiers Pass)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "0b4452c690b9cd1618535a23a90c43ea",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "sbr4_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347663_sbr4_bundle.zip",
+        "sha256": "cbbd24d5085e3d20e10617922a40e56ad40d0ed0ba041ca1f1d55ad042dcf3ce"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "sbr4 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347663",
+        "zenodo_recid": "23347663",
+        "title": "SBR-4 Adaptive Adversary Battery \u2014 No Structural Gradient Exists; the Conforming-Injection Boundary Quantified (FS-A5 Ships as Found)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "15e2fb0204ac0f5aacb5c105ce143a7d",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "sbr5_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347667_sbr5_bundle.zip",
+        "sha256": "c387237e1942c54720f76a9a5ba4ba0ee05a7b6b06ea66609d09ee8b4ecc3487"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "sbr5 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347667",
+        "zenodo_recid": "23347667",
+        "title": "SBR-5 Patient Adversary (Slow-Drip) Battery \u2014 Per-Epoch Detection Is Structurally Blind; the Bounded Rule Absorbs Slow Drift (Shipped as Found)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "e6c150e9462a6c0d424d33404a5b273b",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "gov1_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347670_gov1_bundle.zip",
+        "sha256": "d5fcf3862c304c10c32e6657cc4909ad799697b7dbcfec3716140c1c7f80d40c"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "gov1 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347670",
+        "zenodo_recid": "23347670",
+        "title": "GOV-1 Left-Hemisphere Governance Attack Battery \u2014 The Immutable Side Held; the Sentinel's Counterfactual Worth Measured"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "5c9c07afdfc57feda543127802978a31",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "gov2_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347674_gov2_bundle.zip",
+        "sha256": "43d7b3ef08d176ecc10520f3c572ed6284a0c214f6b5e668bf1c182bb41049b9"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "gov2 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347674",
+        "zenodo_recid": "23347674",
+        "title": "GOV-2 Defense-Stack Attack Battery (Who Watches the Watchmen) \u2014 Each Layer Caught Its Aimed Attack; the Intent-Validation Boundary Shipped as Found"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "64d8b9379cd270c6e441a71be8e51e17",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "gov3_receipt_bundle.zip",
+        "local_path": "binding_archive/zenodo-23347676_gov3_bundle.zip",
+        "sha256": "85d21f56f7c937ea8d672b791ad5b1d6a17d57b9c7ad9603fa85db79b33739a9"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "gov3 battery receipt bundle; authored and verified in-conversation"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23347676",
+        "zenodo_recid": "23347676",
+        "title": "GOV-3 Signed-Release Attack Battery (The Cost Ladder) \u2014 In-Band Compromise Closed by One Keyed Signature; the Regress Floor Priced and Shipped as Found"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "72efa248cf477c7a041997fbf732e4a4",
+        "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
+        "verified_at": "2026-10-13T17:22:07Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dhb_day_bundle.zip",
+        "local_path": "binding_archive/zenodo-23348528_dhb_day_bundle.zip",
+        "sha256": "21d29a93bc60acbcb87558a9c8a39e2a63ba24a7733262e36ee3214dc0d484d3"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "source": "the complete dual-hemispheric arc of 2026-10-13 (DHB-1, DHB-1R, DHB-2, DHB-2R, DHB-3, DHB-3R + SIP-5/6/7 deployments with conforming-identity receipts); authored and verified in-conversation; single consolidated record per the standing day-arc publication directive"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23348528",
+        "zenodo_recid": "23348528",
+        "title": "Dual-Hemispheric Whole-Brain Battery Series (DHB-1 through DHB-3R) \u2014 Finding the Last Invisible Class, Two Repairs, and the Convergence Floor Priced as One Number"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "live_md5": "b3a1faa3674ed43440aa173ec0c0c791",
+        "verified_by": "consolidation publish worker round-trip (published bytes fetched via records API file link); sha256 and md5 and byte count all match",
+        "verified_at": "2026-10-13T18:08:28Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dmb_x_receipt_bundle.zip",
+        "local_path": "fh_pub/binding_archive/dmb_x_23348675_1bfa72e59452.zip",
+        "size_bytes": 227171,
+        "sha256": "1bfa72e59452ac7c4a6731615ce2dd50b60009f8ea94fa22355d1a608e6171ec"
+      },
+      "provenance": {
+        "doi": "10.5281/zenodo.23348675",
+        "record_url": "https://zenodo.org/records/23348675",
+        "published_at": "2026-10-13T18:16:00Z"
+      },
+      "authorization": "Leon GO (chat authorization, Oct 13, 2026, 13:15 CT)",
+      "bound_at": "2026-10-13T18:16:58.130686+00:00",
+      "description": "DMB-X multi-engine extension: prereg (commit b293d58), receipt, runners, per-instance raw evidence for 8 engine legs; round-trip verified byte-identical"
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "pqc_b1_bundle.zip",
+        "local_path": "fh_pub/binding_archive/pqc_b1_23349379_045bef7e365d.zip",
+        "size_bytes": 70759,
+        "sha256": "045bef7e365d1ed08b5e4ed59c536e9f7d9c95ed27bc39cc7281672478ee59b9"
+      },
+      "provenance": {
+        "doi": "10.5281/zenodo.23349379",
+        "record_url": "https://zenodo.org/records/23349379",
+        "published_at": "2026-10-13T18:56:00Z"
+      },
+      "authorization": "Leon GO (chat authorization, 13:51 CT) + Leon ACK (chat ack, 13:53 CT)",
+      "bound_at": "2026-10-13T18:54:50.619533+00:00",
+      "description": "PQC Baseline Standard v1 (approved) + PQC-B1 battery receipt + PQC-B1b SIP-8 deployment verification; round-trip verified byte-identical"
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "dr_scale_package_20261013.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23350247_dr_scale_package.zip",
+        "size_bytes": 12088,
+        "sha256": "638647c269e796bd5a19cf32d777d1ec17f6728da7cee4c049f1dc72d30150ea"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": "pending (stamped by introducing commit)",
+        "source": "archived into fh_pub/binding_archive; DR-1 + SCALE-1 same-day bundle, ledgers 0091-0093"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23350247",
+        "zenodo_recid": 23350247,
+        "published_at": "2026-10-13",
+        "round_trip_verified": true,
+        "round_trip_sha256": "638647c269e796bd5a19cf32d777d1ec17f6728da7cee4c049f1dc72d30150ea",
+        "authorization": "Leon GO (chat authorization, 2026-10-13 14:39 CT)"
+      }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hemi_week42_bundle.zip",
+        "local_path": "../../tmp/hemi_week42_bundle.zip",
+        "size_bytes": 3998,
+        "sha256": "4e3840d39eef3d2a390a18331f15e418f93e74b5e3092408a7e0adc88dd7cbb6"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23448778",
+        "zenodo_recid": "23448778",
+        "zenodo_file": "hemi_week42_bundle.zip",
+        "zenodo_md5": "79324c03e3e8f94a78ad364cc4032931",
+        "title": "HEMI-N Weekly Cognitive Training Receipts \u2014 2026-W42"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-18T08:05:58Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "doi": "10.5281/zenodo.20483110",
+      "reason": "fileless version record under concept DOI 10.5281/zenodo.20482781; binding requires the file-bearing version recid (recap item)"
+    },
+    {
+      "doi": "10.5281/zenodo.23285190",
+      "reason": "fileless version record under concept DOI 10.5281/zenodo.20482781; binding requires the file-bearing version recid (recap item)"
+    },
+    {
+      "note": "hemi_t2 v1 (recid 23330348) superseded by v2 (23345251) for operator-privacy redaction; md5 round-trip re-verification pending",
+      "superseded_recid": "23330348",
+      "date": "2026-10-13"
+    }
+  ],
+  "counts": {
+    "bound": 39,
+    "gaps": 2,
+    "dois_checked": 14
   },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "local_path": "fh_pub/binding_archive/zenodo-23173948_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "size_bytes": 10184,
-    "sha256": "f4fe7ed2ada947a41f5265eecae78e440aa16232842dbf49aaeab904c71173d7"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23173948",
-    "zenodo_recid": "23173948",
-    "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "zenodo_md5": "cb00cac861a423707ba48a4d24268678",
-    "title": "Sovereign Briefing: First Receipted Human-in-the-Loop Critical Resolution in an Autonomous Self-Healing Infrastructure ("
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:41.552102+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
-    "local_path": "fh_pub/binding_archive/zenodo-23266727_Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
-    "size_bytes": 18616,
-    "sha256": "dd746ad88bdde851087af72b51cb1e8898b7e30ac19432100d1d0f2c970303b7"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23266727",
-    "zenodo_recid": "23266727",
-    "zenodo_file": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
-    "zenodo_md5": "5cae42c9661caf50d0078862de292a32",
-    "title": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, and a Drift-Audit Case Study"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:42.790603+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "local_path": "fh_pub/binding_archive/zenodo-23270010_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "size_bytes": 38325,
-    "sha256": "2cdeaa5526cb4352843aa1959b2cc5406fb8c54b129a41edce0a2f4663e2928f"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23270010",
-    "zenodo_recid": "23270010",
-    "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "zenodo_md5": "62fc5263f1992fb2646f3a8f4d2b5c47",
-    "title": "Sovereign Briefing: First Receipted Human-in-the-Loop Critical Resolution in an Autonomous Self-Healing Infrastructure ("
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:43.474120+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "local_path": "fh_pub/binding_archive/zenodo-23270092_SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "size_bytes": 38724,
-    "sha256": "629bb611429260bd6afebf628e3e383705d5eff35afcccd35f67c73a98759d0a"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23270092",
-    "zenodo_recid": "23270092",
-    "zenodo_file": "SOVEREIGN_BRIEFING_HITL_N10-ACK.pdf",
-    "zenodo_md5": "870306ab202441503c51764cf59ff9b6",
-    "title": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, an Autonomous Self-Healing Inf"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:44.066543+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "SDR_CL1_RUN_METADATA.json",
-    "local_path": "fh_pub/binding_archive/zenodo-23274887_SDR_CL1_RUN_METADATA.json",
-    "size_bytes": 1938,
-    "sha256": "9ceccedcde671faea98d85251ac8f4fcaabda0e241464227bb1b6ff3cb7a6050"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23274887",
-    "zenodo_recid": "23274887",
-    "zenodo_file": "SDR_CL1_RUN_METADATA.json",
-    "zenodo_md5": "79268af81324c741a3428cb27a16d33f",
-    "title": "SDR-CL1: First Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Across LLMs (Claude Sonnet 5.5)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:44.640803+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "expected_canonical_tuples.json",
-    "local_path": "fh_pub/binding_archive/zenodo-23284295_expected_canonical_tuples.json",
-    "size_bytes": 3313,
-    "sha256": "9a02a0ad2593fe0c2806f49675e2a673b2ade7dab077552dcd0374fd21b8203b"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23284295",
-    "zenodo_recid": "23284295",
-    "zenodo_file": "expected_canonical_tuples.json",
-    "zenodo_md5": "483507ae33cbd3f591965945299d55ff",
-    "title": "SDR-CL2: Third-Vendor Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Across LLMs (Microsoft 365"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:45.291065+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
-    "local_path": "fh_pub/binding_archive/zenodo-23284729_Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
-    "size_bytes": 18616,
-    "sha256": "dd746ad88bdde851087af72b51cb1e8898b7e30ac19432100d1d0f2c970303b7"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23284729",
-    "zenodo_recid": "23284729",
-    "zenodo_file": "Deterministic_Caging_of_Probabilistic_LLMs_v1.0.pdf",
-    "zenodo_md5": "5cae42c9661caf50d0078862de292a32",
-    "title": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, and a Drift-Audit Case Study"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:46.169262+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "CAGE_CONTAINMENT_RECEIPT.pdf",
-    "local_path": "fh_pub/binding_archive/zenodo-23288189_CAGE_CONTAINMENT_RECEIPT.pdf",
-    "size_bytes": 7529,
-    "sha256": "58cb7b8a6f743b07f34bdf0c031aa2194dccd57750597419ced51cb5cb76dfa2"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23288189",
-    "zenodo_recid": "23288189",
-    "zenodo_file": "CAGE_CONTAINMENT_RECEIPT.pdf",
-    "zenodo_md5": "ccd0c9ae9508a2a7e6b15757696a96d4",
-    "title": "Cage Containment Receipt 1 (CCR-1): Deterministic Gate Blocks Invalid LLM Proposals Before Execution Across Four Engines"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:47.460967+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "CCR2_RECEIPT.pdf",
-    "local_path": "fh_pub/binding_archive/zenodo-23288526_CCR2_RECEIPT.pdf",
-    "size_bytes": 7099,
-    "sha256": "b86dc8fecbee96a5aefd3c8cee00c57b64c168c1177a676ea19537ffd80fb56d"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23288526",
-    "zenodo_recid": "23288526",
-    "zenodo_file": "CCR2_RECEIPT.pdf",
-    "zenodo_md5": "aea4077cb62c2b313a0e766c9ade9265",
-    "title": "Cage Containment Receipt 2 (CCR-2): A Live LLM Proposes an Invalid Action Under Explicit Instruction; the Deterministic "
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:17:48.125189+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "MILESTONE_First_Documented_Caging_of_an_LLM.md",
-    "local_path": "fh_pub/binding_archive/zenodo-23265723_MILESTONE_First_Documented_Caging_of_an_LLM.md",
-    "size_bytes": 1701,
-    "sha256": "c5a1f748a1d15b96b38a3dce0eb11cc6db77a6b0aad7b9b56145b6e027a6a690"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "3d305d5345417f7b1c3fe6588f1af5e23bf78df9",
-    "source": "archived into fh_pub/binding_archive at BIND-2 (bytes pinned in the public repo; snapshot_commit stamped by the introducing commit)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23265723",
-    "zenodo_recid": "23265723",
-    "zenodo_file": "MILESTONE_First_Documented_Caging_of_an_LLM.md",
-    "zenodo_md5": "3656f1f4d13edfc77e085bba0d8577d8",
-    "title": "MILESTONE: First Documented Caging of an LLM"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind2_backfill.py (BIND-2 corpus backfill)",
-    "verified_at": "2026-10-13T02:18:18.752936+00:00"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "BIND3_WORKER_V1.0_BUNDLE.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23329814_BIND3_WORKER_V1.0_BUNDLE.zip",
-    "size_bytes": 11605,
-    "sha256": "af6aaa83c754e1f98ac1ab20bd58b51da12fa6502e577ee7c9eb91a68bb5891c"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "91ea20eca0d5d5859373d68d3e6405994367a425",
-    "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23329814",
-    "zenodo_recid": "23329814",
-    "zenodo_file": "BIND3_WORKER_V1.0_BUNDLE.zip",
-    "zenodo_md5": "719656cb3afa6e92dd4f09c1eeb7ea99",
-    "title": "BIND-3 Release Worker v1.0: Machine-Enforced GitHub-DOI Binding Protocol"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
-    "verified_at": "2026-10-13T02:21:39Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "hemi_t1_receipt_bundle.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23330308_hemi_t1_receipt_bundle.zip",
-    "size_bytes": 6173,
-    "sha256": "f3b032e3a3c2e7413c8918f933e29dfaf7eca896211a56782f41e3d7766295eb"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "696d1ef15e958c0a7a0d77bc57c802959360b2d6",
-    "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23330308",
-    "zenodo_recid": "23330308",
-    "zenodo_file": "hemi_t1_receipt_bundle.zip",
-    "zenodo_md5": "9e683713299b06d28f2578401cf7527f",
-    "title": "HEMI-T1: First Hemispheric Cognitive Training Epoch Receipt \u2014 812 Weight Deltas, All Six Falsifiers Pass"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
-    "verified_at": "2026-10-13T02:48:15Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "hemi_t2c_receipt_bundle.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23330361_hemi_t2c_receipt_bundle.zip",
-    "size_bytes": 4646,
-    "sha256": "e22104134b6030dbf3032aa84efdedb390d5f4db9b5bec2b1599444dc6b5c52c"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "d06de15689e37a149633d9c57570788aec39a259",
-    "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23330361",
-    "zenodo_recid": "23330361",
-    "zenodo_file": "hemi_t2c_receipt_bundle.zip",
-    "zenodo_md5": "0ecf36c6c7468c3af4676843bb181e14",
-    "title": "HEMI-T2C: Bounded Cognitive Training Convergence Series \u2014 40 Epochs, All Six Falsifiers Pass, Convergence Achieved"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
-    "verified_at": "2026-10-13T02:56:09Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "SBR1_EVIDENCE.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23331224_SBR1_EVIDENCE.zip",
-    "size_bytes": 5581,
-    "sha256": "a9a7eb553e550dde80ae021f5e6fd0d9a245defe8e22367bfd269ab4af6f1fae"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "532f11509ecc29c8c8d3e9595fc5e522898bf780",
-    "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23331224",
-    "zenodo_recid": "23331224",
-    "zenodo_file": "SBR1_EVIDENCE.zip",
-    "zenodo_md5": "9044a23cd6ea1a5f99b3c7a787c21813",
-    "title": "SBR-1: Randomized Security Benchmark Run \u2014 Seeded Adversarial Exam of a Bounded-Learning Aegis Brain (6/6 Pass)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
-    "verified_at": "2026-10-13T04:09:58Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "PSR1_EVIDENCE.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23331333_PSR1_EVIDENCE.zip",
-    "size_bytes": 3056,
-    "sha256": "4dcebb914cb4b6d93df9890ae307d4fc589eb6b8c60d52bf8b391208ca59eee0"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "d55c11fc5f2a0a5f5b80b4e5451f221830f8d14a",
-    "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23331333",
-    "zenodo_recid": "23331333",
-    "zenodo_file": "PSR1_EVIDENCE.zip",
-    "zenodo_md5": "17e7cbc4590a12c74f8cdf74eb01507f",
-    "title": "PSR-1: Live Cross-Session Pulse Double-Fire Race \u2014 Honest Incident, Remediation, and Stamp-Before-Execute Doctrine v1.1 (Human-Amended)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
-    "verified_at": "2026-10-13T04:18:21Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "R2G1_EVIDENCE.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23331344_R2G1_EVIDENCE.zip",
-    "size_bytes": 2695,
-    "sha256": "8c36d6c85464c4103a3fe27f92b4ff2e9ea9a30cbc2707c43b2b9d4fd250cecf"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "e708608477a778bbeae59c2973e37510fede6434",
-    "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23331344",
-    "zenodo_recid": "23331344",
-    "zenodo_file": "R2G1_EVIDENCE.zip",
-    "zenodo_md5": "50aaae2f3968b797d513bdf8515e8d42",
-    "title": "R2G-1: First Live End-to-End Rule 2 Critical Gate \u2014 Detect, Hold, Escalate, Human ACK, Audited Resolution (HCLC-MAV2)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
-    "verified_at": "2026-10-13T04:18:47Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "AUTH1_EVIDENCE.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23332203_AUTH1_EVIDENCE.zip",
-    "size_bytes": 4704,
-    "sha256": "54965123e3c16db7e308632379775d0a3132cd6182a8700ff6ffbb77012ad18a"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "ab6e4b895f8a5896b132a05fe1c3745f4784b3a0",
-    "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23332203",
-    "zenodo_recid": "23332203",
-    "zenodo_file": "AUTH1_EVIDENCE.zip",
-    "zenodo_md5": "55838b3b0267941ae8b18522dc926e3a",
-    "title": "AUTH-1: Authority Forgery Battery \u2014 Six-Channel Attempted Seizure of the Human Authorization Gate, Cage Holds 6/6 (Falsifiers F1-F5 Pass)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
-    "verified_at": "2026-10-13T05:08:25Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "XPLAT5_EVIDENCE.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23332291_XPLAT5_EVIDENCE.zip",
-    "size_bytes": 12203,
-    "sha256": "cd56f7b44898db33eee62518cc737e6dc556fd2edb1dfc25812c2fdcf9aea310"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "5c7cfb26d656c1ae7362390a3e243cf90e2951f0",
-    "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23332291",
-    "zenodo_recid": "23332291",
-    "zenodo_file": "XPLAT5_EVIDENCE.zip",
-    "zenodo_md5": "ce809e52a018eb0742f354ca9a500f53",
-    "title": "XPLAT-5: Engine Transplant \u2014 Contract-Parity of Governed Decisions Across LLM Engines (20/20, Invariance Triangle Complete: Substrate, Time, Engine)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
-    "verified_at": "2026-10-13T05:12:57Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "hemi_t2_receipt_bundle_v2.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23345251_hemi_t2_receipt_bundle_v2.zip",
-    "size_bytes": 3441,
-    "sha256": "f7ce52e4d885bf2237dc742e5cc6204ea80fafb5379632b9b0411e5da913fd93"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "redaction re-version per operator-privacy directive Oct 13, 2026; v1 (recid 23330348) superseded, files retained publicly by Zenodo"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23345251",
-    "zenodo_recid": "23345251",
-    "zenodo_file": "hemi_t2_receipt_bundle_v2.zip",
-    "zenodo_md5": null,
-    "title": "HEMI-T2 Convergence Series \u2014 Honest Negative Result: Learning Rule Positive-Feedback Failure Receipt (Governance Invariance Held Every Epoch) (v2: operator-privacy redaction)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "7719a61ee1bf145962fe8a19f4923baf",
-    "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
-    "verified_at": "2026-10-13T15:42:54Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "sbr2_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23345734_sbr2_receipt_bundle.zip",
-    "size_bytes": 6083,
-    "sha256": "19a2e33adc75373a4dcafacfee2687b7ba5e7ba27d9ff2057b29fb9e500d642c"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "SBR-2 hot-state adversarial exam; prereg committed before execution (1f617e4), redaction fix forward-only (682330d)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23345734",
-    "zenodo_recid": "23345734",
-    "zenodo_file": "sbr2_receipt_bundle.zip",
-    "title": "SBR-2: Hot-State Adversarial Exam \u2014 Governance Invariants Hold During Active Learning (Trajectory Identity, 20/20 Probes Rejected)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "ef8b8d57bf9671ea3a7dc3da8e94235f",
-    "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
-    "verified_at": "2026-10-13T15:42:54Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "hinv2_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23345859_hinv2_receipt_bundle.zip",
-    "sha256": "2637aae84ce7339791af81ef97cf54ff5f22d88cc70cd8a1c095ad740dc14f42"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "H-INV-2 lineage forgery battery; prereg committed before execution; two disclosed validator repairs (ledger 0053)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23345859",
-    "zenodo_recid": "23345859",
-    "title": "H-INV-2: Lineage Forgery Battery \u2014 The Crossing Ledger Rejects Every Fabricated History"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "175788daccbda74a7b95b53980ff2d17",
-    "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
-    "verified_at": "2026-10-13T15:42:54Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "dpp1_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23345907_dpp1_receipt_bundle.zip",
-    "sha256": "f872b507f093592a5301b5451ee52e7d313cf9f58217b504dc8c9271e8c9a724"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "DPP-1 data-plane poisoning battery; prereg committed before execution; first-run clean (ledger 0055)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23345907",
-    "zenodo_recid": "23345907",
-    "title": "DPP-1: Data-Plane Poisoning via Metadata \u2014 Poison In, Nothing Out"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "f500271f3e5baf75c082c65edf94b71d",
-    "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
-    "verified_at": "2026-10-13T15:42:54Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "ccr4x_copilot_repair_bundle.zip",
-    "local_path": "binding_archive/zenodo-23346047_ccr4x_copilot_repair_bundle.zip",
-    "sha256": "d6c32c77c238c1658a6a538e56e78a378614c495c46f58c23bc987c440adab1e"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "CCR-4X Copilot repair leg; prereg 2bef7fe; receipt 667f8aa (ledger 0057)"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23346047",
-    "zenodo_recid": "23346047",
-    "title": "CCR-4X Copilot Repair: 9/9 Conformant on Preregistered Re-Run"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "dcf571c0f207e50c06d0276eb9ff566d",
-    "verified_by": "bind3 round-trip (public API), manual run Oct 13, 2026",
-    "verified_at": "2026-10-13T15:42:54Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "adversarial_triad_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347644_adversarial_triad_bundle.zip",
-    "sha256": "0c7f5d12d22fd0c99a12b96c34ebeaad5c3ba77a8d175a7257597f88d66744f4"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "adversarial_triad battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347644",
-    "zenodo_recid": "23347644",
-    "title": "The Adversarial Triad: Three Attack Surfaces, One Governance Envelope \u2014 Hot-State Probing, Lineage Forgery, and Data-Plane Poisoning All Held (Receipt-First)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "bb643a3dff2d202cbfafa5cd307802a3",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "dpp2_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347646_dpp2_bundle.zip",
-    "sha256": "8ad201598ffeff62a954b0c59a681f711a009044e57cdb20079cb4a7d23433d2"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "dpp2 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347646",
-    "zenodo_recid": "23347646",
-    "title": "DPP-2: Homoglyph and Multilingual Obfuscation Poison Battery \u2014 Exact-Match Gate Rejects Lookalikes, Unicode Contributes Nothing (All Falsifiers Pass, Prereg Defect Disclosed)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "1e228f81b65f3ef8ef1ed3c16e8747e3",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "dpp3_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347649_dpp3_bundle.zip",
-    "sha256": "bc736ba28613b804b2a7a0d1e6acbe36230609065a3612ea85ed6bbef75b3135"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "dpp3 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347649",
-    "zenodo_recid": "23347649",
-    "title": "DPP-3: Normalization and Bidi Forgery Battery \u2014 Byte-Exact Match Path with a Frozen Regression Tripwire (All 6 Falsifiers Pass)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "412dee45069982c7025cbef775b51340",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "dpp4_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347653_dpp4_bundle.zip",
-    "sha256": "fffbff137a199d07b4ffe6b607de1070456a72d5235f5934443e17f8ceac6fba"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "dpp4 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347653",
-    "zenodo_recid": "23347653",
-    "title": "DPP-4: Structural and Numeric Forgery Battery \u2014 First Falsifier Failure of the Series, Shipped as Found; SIP Approved and Guard Deployed Same-Day"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "48d6d4a06f40bdda1035c0e0740197ed",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "sbr3_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347657_sbr3_bundle.zip",
-    "sha256": "8ce2df87858685d43b9069811bd7c45975b97d2858681a34558a4a5949934f66"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "sbr3 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347657",
-    "zenodo_recid": "23347657",
-    "title": "SBR-3 Combined-Arms Composite Hot-State Battery \u2014 The Guarantees Compose (All 6 Falsifiers Pass)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "0b4452c690b9cd1618535a23a90c43ea",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "sbr4_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347663_sbr4_bundle.zip",
-    "sha256": "cbbd24d5085e3d20e10617922a40e56ad40d0ed0ba041ca1f1d55ad042dcf3ce"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "sbr4 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347663",
-    "zenodo_recid": "23347663",
-    "title": "SBR-4 Adaptive Adversary Battery \u2014 No Structural Gradient Exists; the Conforming-Injection Boundary Quantified (FS-A5 Ships as Found)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "15e2fb0204ac0f5aacb5c105ce143a7d",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "sbr5_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347667_sbr5_bundle.zip",
-    "sha256": "c387237e1942c54720f76a9a5ba4ba0ee05a7b6b06ea66609d09ee8b4ecc3487"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "sbr5 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347667",
-    "zenodo_recid": "23347667",
-    "title": "SBR-5 Patient Adversary (Slow-Drip) Battery \u2014 Per-Epoch Detection Is Structurally Blind; the Bounded Rule Absorbs Slow Drift (Shipped as Found)"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "e6c150e9462a6c0d424d33404a5b273b",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "gov1_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347670_gov1_bundle.zip",
-    "sha256": "d5fcf3862c304c10c32e6657cc4909ad799697b7dbcfec3716140c1c7f80d40c"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "gov1 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347670",
-    "zenodo_recid": "23347670",
-    "title": "GOV-1 Left-Hemisphere Governance Attack Battery \u2014 The Immutable Side Held; the Sentinel's Counterfactual Worth Measured"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "5c9c07afdfc57feda543127802978a31",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "gov2_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347674_gov2_bundle.zip",
-    "sha256": "43d7b3ef08d176ecc10520f3c572ed6284a0c214f6b5e668bf1c182bb41049b9"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "gov2 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347674",
-    "zenodo_recid": "23347674",
-    "title": "GOV-2 Defense-Stack Attack Battery (Who Watches the Watchmen) \u2014 Each Layer Caught Its Aimed Attack; the Intent-Validation Boundary Shipped as Found"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "64d8b9379cd270c6e441a71be8e51e17",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "gov3_receipt_bundle.zip",
-    "local_path": "binding_archive/zenodo-23347676_gov3_bundle.zip",
-    "sha256": "85d21f56f7c937ea8d672b791ad5b1d6a17d57b9c7ad9603fa85db79b33739a9"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "gov3 battery receipt bundle; authored and verified in-conversation"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23347676",
-    "zenodo_recid": "23347676",
-    "title": "GOV-3 Signed-Release Attack Battery (The Cost Ladder) \u2014 In-Band Compromise Closed by One Keyed Signature; the Regress Floor Priced and Shipped as Found"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "72efa248cf477c7a041997fbf732e4a4",
-    "verified_by": "retry-gate publish worker round-trip (public records API file link), Oct 13, 2026 \u2014 re-verified after the worker's first check fetched the files-metadata endpoint instead of file bytes",
-    "verified_at": "2026-10-13T17:22:07Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "dhb_day_bundle.zip",
-    "local_path": "binding_archive/zenodo-23348528_dhb_day_bundle.zip",
-    "sha256": "21d29a93bc60acbcb87558a9c8a39e2a63ba24a7733262e36ee3214dc0d484d3"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "source": "the complete dual-hemispheric arc of 2026-10-13 (DHB-1, DHB-1R, DHB-2, DHB-2R, DHB-3, DHB-3R + SIP-5/6/7 deployments with conforming-identity receipts); authored and verified in-conversation; single consolidated record per the standing day-arc publication directive"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23348528",
-    "zenodo_recid": "23348528",
-    "title": "Dual-Hemispheric Whole-Brain Battery Series (DHB-1 through DHB-3R) \u2014 Finding the Last Invisible Class, Two Repairs, and the Convergence Floor Priced as One Number"
-   },
-   "verification": {
-    "byte_identical_local_to_zenodo": true,
-    "live_md5": "b3a1faa3674ed43440aa173ec0c0c791",
-    "verified_by": "consolidation publish worker round-trip (published bytes fetched via records API file link); sha256 and md5 and byte count all match",
-    "verified_at": "2026-10-13T18:08:28Z"
-   },
-   "metadata": {
-    "prototype": true,
-    "dual_mesh_benchmark": "NOT MEASURED",
-    "disclaimer": "Prototype; educational and research purposes only; not for production use."
-   }
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "dmb_x_receipt_bundle.zip",
-    "local_path": "fh_pub/binding_archive/dmb_x_23348675_1bfa72e59452.zip",
-    "size_bytes": 227171,
-    "sha256": "1bfa72e59452ac7c4a6731615ce2dd50b60009f8ea94fa22355d1a608e6171ec"
-   },
-   "provenance": {
-    "doi": "10.5281/zenodo.23348675",
-    "record_url": "https://zenodo.org/records/23348675",
-    "published_at": "2026-10-13T18:16:00Z"
-   },
-   "authorization": "Leon GO (chat authorization, Oct 13, 2026, 13:15 CT)",
-   "bound_at": "2026-10-13T18:16:58.130686+00:00",
-   "description": "DMB-X multi-engine extension: prereg (commit b293d58), receipt, runners, per-instance raw evidence for 8 engine legs; round-trip verified byte-identical"
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "pqc_b1_bundle.zip",
-    "local_path": "fh_pub/binding_archive/pqc_b1_23349379_045bef7e365d.zip",
-    "size_bytes": 70759,
-    "sha256": "045bef7e365d1ed08b5e4ed59c536e9f7d9c95ed27bc39cc7281672478ee59b9"
-   },
-   "provenance": {
-    "doi": "10.5281/zenodo.23349379",
-    "record_url": "https://zenodo.org/records/23349379",
-    "published_at": "2026-10-13T18:56:00Z"
-   },
-   "authorization": "Leon GO (chat authorization, 13:51 CT) + Leon ACK (chat ack, 13:53 CT)",
-   "bound_at": "2026-10-13T18:54:50.619533+00:00",
-   "description": "PQC Baseline Standard v1 (approved) + PQC-B1 battery receipt + PQC-B1b SIP-8 deployment verification; round-trip verified byte-identical"
-  },
-  {
-   "contract_version": "BIND-2/v1",
-   "artifact": {
-    "name": "dr_scale_package_20261013.zip",
-    "local_path": "fh_pub/binding_archive/zenodo-23350247_dr_scale_package.zip",
-    "size_bytes": 12088,
-    "sha256": "638647c269e796bd5a19cf32d777d1ec17f6728da7cee4c049f1dc72d30150ea"
-   },
-   "provenance": {
-    "repo": "fh_pub",
-    "snapshot_commit": "pending (stamped by introducing commit)",
-    "source": "archived into fh_pub/binding_archive; DR-1 + SCALE-1 same-day bundle, ledgers 0091-0093"
-   },
-   "publication": {
-    "doi": "10.5281/zenodo.23350247",
-    "zenodo_recid": 23350247,
-    "published_at": "2026-10-13",
-    "round_trip_verified": true,
-    "round_trip_sha256": "638647c269e796bd5a19cf32d777d1ec17f6728da7cee4c049f1dc72d30150ea",
-    "authorization": "Leon GO (chat authorization, 2026-10-13 14:39 CT)"
-   }
-  }
- ],
- "gaps": [
-  {
-   "doi": "10.5281/zenodo.20483110",
-   "reason": "fileless version record under concept DOI 10.5281/zenodo.20482781; binding requires the file-bearing version recid (recap item)"
-  },
-  {
-   "doi": "10.5281/zenodo.23285190",
-   "reason": "fileless version record under concept DOI 10.5281/zenodo.20482781; binding requires the file-bearing version recid (recap item)"
-  },
-  {
-   "note": "hemi_t2 v1 (recid 23330348) superseded by v2 (23345251) for operator-privacy redaction; md5 round-trip re-verification pending",
-   "superseded_recid": "23330348",
-   "date": "2026-10-13"
-  }
- ],
- "counts": {
-  "bound": 33,
-  "gaps": 2,
-  "dois_checked": 14
- },
- "bindings": [
-  {
-   "doi": "10.5281/zenodo.23350247",
-   "round_trip_verified": true,
-   "sha256": "638647c269e796bd5a19cf32d777d1ec17f6728da7cee4c049f1dc72d30150ea",
-   "date": "2026-10-13"
-  }
- ]
+  "bindings": [
+    {
+      "doi": "10.5281/zenodo.23350247",
+      "round_trip_verified": true,
+      "sha256": "638647c269e796bd5a19cf32d777d1ec17f6728da7cee4c049f1dc72d30150ea",
+      "date": "2026-10-13"
+    }
+  ]
 }
