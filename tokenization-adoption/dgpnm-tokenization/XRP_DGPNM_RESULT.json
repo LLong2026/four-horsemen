@@ -1,0 +1,34 @@
+{
+ "asset": "DGPNM v1.1",
+ "asset_hash": "66dc843abbfb6d98245187c036cf4a631395cd783debdb852833e31b3ee9de2b",
+ "hop1": [
+  {
+   "txid": "8FE04462B5B1DCE871056D0E265E5870EC18554C84CD1F91E105F2A1F2E115C7",
+   "ledger_index": 107746118,
+   "from": "rBbxYuBkzK6UxKXhvUi8uNtdxhD1h7ZFGR",
+   "to": "rDSbkAZbUHQPdjDzShvze2gTGYBHDExX8C",
+   "amount_drops": null,
+   "result": "tesSUCCESS"
+  },
+  {
+   "txid": "E0CE1153397AD0C7F7BCA003DA254C83B1609712941D4C8556D690E202097949",
+   "ledger_index": 107746115,
+   "from": "rBbxYuBkzK6UxKXhvUi8uNtdxhD1h7ZFGR",
+   "to": "rDSbkAZbUHQPdjDzShvze2gTGYBHDExX8C",
+   "amount_drops": null,
+   "result": "tesSUCCESS"
+  }
+ ],
+ "hop2": {
+  "txid": "E7EE8C79C7065B10815C0E38F1935E17A576FEF9903C6FA97A7B3EC916633B2E",
+  "ledger_index": 107746135,
+  "amount_drops": "3050000",
+  "fee_drops": 10,
+  "from": "rDSbkAZbUHQPdjDzShvze2gTGYBHDExX8C",
+  "to": "rBbxYuBkzK6UxKXhvUi8uNtdxhD1h7ZFGR"
+ },
+ "g4": "PASS",
+ "note": "hop1 executed twice due to a client-side assert defect (disclosed); both sends valid, memoed, funds consolidated by return hop",
+ "final_a_drops": 30476245,
+ "final_b_drops": 1000010
+}
