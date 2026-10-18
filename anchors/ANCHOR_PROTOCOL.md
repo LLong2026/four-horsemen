@@ -33,3 +33,13 @@ cryptographic scheme is used for any SQUIRL OS authority function.
 - cage_watch_feed.json — sha256 c129f776e239f563be6dad0852460f904fe1634636b7d9d69a233b0aa2a2037c
 - ANCHOR-MANIFEST-2026-10-18.json (self-hash: see manifest)
 Receipts: OTS-2026-10-18-ledger.ots / -cage_feed.ots / -anchor_manifest.ots (pending → Bitcoin)
+
+## GOING-FORWARD ANCHORING DOCTRINE (SIP-038, ratified 2026-10-18)
+1. **Everything gets anchored.** Every forward ledger seal re-anchors the corpus (ledger,
+   feed, manifests) via anchor_recover.sh — drift is versioning, history is retained.
+2. **Block tracking.** anchor_blocks.sh upgrades every receipt, and on confirmation records
+   the Bitcoin block height + block hash into anchors/ANCHOR-BLOCK-REGISTRY.json (idempotent:
+   a captured block hash is never overwritten). Block-registry lookup via a public explorer
+   API; verification still trusts no third party (ots verify against a full node).
+3. **Pending is normal.** Calendars batch digests and confirm within hours; the registry
+   distinguishes pending vs confirmed_onchain and never reports a pending stamp as settled.
