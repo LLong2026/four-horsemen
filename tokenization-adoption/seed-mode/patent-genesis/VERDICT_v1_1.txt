@@ -1,0 +1,7 @@
+seed_sha256=81d4a5cb97fa972e89a3b65f51076384b64d4b630291a9986bd7b067adc3456c
+png_sha256=3c130d6626fb78956a35dd177a7be2bd34d80be66104d94dee37ce7d5bd2de69
+determinism=BYTE-IDENTICAL
+generator=v1.1 (v1.0 layout defect disclosed: title-block overflow, graphic collisions)
+seed_bytes=32
+patent=US 19/693,343 (public citation, no method detail)
+series=Patent Genesis No. 1
