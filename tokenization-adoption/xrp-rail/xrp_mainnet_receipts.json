@@ -1,0 +1,28 @@
+{
+ "network": "mainnet",
+ "tx1": "85D3ED28A43E58F318465855EB623AD1004B4C2649D4DB286FC057DDDB7AAEF0",
+ "tx2": "C987C730FAB24D0E899A8475F6BBC5C9682EF79122B45A623EA5662836D2BBCD",
+ "ledger1": 107745079,
+ "ledger2": 107745082,
+ "hop1": {
+  "memo_data": "81d4a5cb97fa972e89a3b65f51076384b64d4b630291a9986bd7b067adc3456c",
+  "memo_match": true,
+  "validated": true
+ },
+ "hop2": {
+  "memo_data": "81d4a5cb97fa972e89a3b65f51076384b64d4b630291a9986bd7b067adc3456c",
+  "memo_match": true,
+  "validated": true
+ },
+ "final_balances": {
+  "A": 29.426225,
+  "B": 2.0500000000000007
+ },
+ "g4_all_pass": true,
+ "ledger_gap": 3,
+ "fees_total_drops": 40,
+ "explorer": {
+  "tx1": "https://livenet.xrpl.org/transactions/85D3ED28A43E58F318465855EB623AD1004B4C2649D4DB286FC057DDDB7AAEF0",
+  "tx2": "https://livenet.xrpl.org/transactions/C987C730FAB24D0E899A8475F6BBC5C9682EF79122B45A623EA5662836D2BBCD"
+ }
+}
