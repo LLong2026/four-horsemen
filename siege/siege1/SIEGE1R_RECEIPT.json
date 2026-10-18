@@ -1,0 +1,164 @@
+{
+  "attacks_total": 17,
+  "authorized": "Leon GO (chat authorization, 2026-10-17 ~21:12 CT)",
+  "battery": "SIEGE-1R \u2014 The Long Siege (corrected re-run; run 1 harness defect disclosed)",
+  "bl2r_regression_failures": [],
+  "cleared_seams_stayed_closed": true,
+  "confirmed_findings": [
+    "C1-identity-forgery-front-run",
+    "C2-shared-ack-queue-saturation",
+    "C3-sig-for-kem-role-abuse",
+    "C4-budget-rotation"
+  ],
+  "corpus_shas": {
+    "allowlist.json": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+    "gate_v1_3.py": "3726f6a59f8935bb2fc70acd70ea2eb2d488e548ff5551f49d139205b37d7c40",
+    "keysets.json": "502ef8b07e5103abe07d970ed4fdb475f382e1547512b699f79aa16a6c85608c"
+  },
+  "date": "2026-10-17",
+  "gate_under_test": "portcullis_gate_v1_3.py (frozen, unmodified)",
+  "owner_controls": {
+    "admitted": 4,
+    "expected": 4
+  },
+  "results": [
+    {
+      "attack_succeeded": true,
+      "id": "C1-identity-forgery-front-run",
+      "note": "C1 CONFIRMED if refused: gate trusts claimed submitter string; forged owner claim burns owner-namespace nonce (production mitigation = platform sender-identity gate; gate model has no envelope binding)",
+      "reason": "burn-on-parse replay defense \u2014 nonce already consumed at a prior presentation in this submitter's namespace (ERR_REPLAY_NONCE_ALREADY_USED)",
+      "verdict": "REFUSED",
+      "wave": "Y4"
+    },
+    {
+      "attack_succeeded": true,
+      "id": "C2-shared-ack-queue-saturation",
+      "note": "C2 CONFIRMED if refused: ACK queue is shared across submitters; one attacker identity (64 fills, under its 100 budget) denies the owner's pending-ACK submission until drain",
+      "reason": "pending-ACK queue at capacity (64); explicit refusal, journal-recorded (ERR_ACK_QUEUE_FULL)",
+      "verdict": "REFUSED",
+      "wave": "Y6"
+    },
+    {
+      "attack_succeeded": true,
+      "id": "C3-sig-for-kem-role-abuse",
+      "note": "C3 CONFIRMED if admitted: role binding is one-directional \u2014 a signature-class algorithm is accepted for a KEM-class operation (asymmetric gap in AMENDMENT 1)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "Y3"
+    },
+    {
+      "attack_succeeded": true,
+      "id": "C4-budget-rotation",
+      "note": "C4 CONFIRMED if >=400: per-submitter budgets are trivially evaded by registering new identities; 500 attempts got full gate work in one window (inherent to namespace design; options: global window cap, registration cost, platform-layer rate limit)",
+      "reason": "5 rotated identities x 100 attempts = 500 full-budget adjudications in one window",
+      "verdict": "measured",
+      "wave": "Y6"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-cross-ns-nonce-prediction",
+      "note": "should be ADMITTED (attack_succeeded=False => CLEARED): SIP-026 namespace scoping holds \u2014 attacker's presentation of a predicted nonce burns only the attacker namespace, not the owner's",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "Y2"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-classical-downgrade",
+      "note": "stays closed if attack_succeeded=False (gate verdict must not be ADMITTED)",
+      "reason": "algorithm 'RSA-2048' not on frozen allowlist",
+      "verdict": "REJECTED",
+      "wave": "REG"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-hybrid-composite",
+      "note": "stays closed if attack_succeeded=False (gate verdict must not be ADMITTED)",
+      "reason": "algorithm 'kyber_1024+RSA-2048' not on frozen allowlist",
+      "verdict": "REJECTED",
+      "wave": "REG"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-kem-in-auth",
+      "note": "stays closed if attack_succeeded=False (gate verdict must not be ADMITTED)",
+      "reason": "algorithm-role violation \u2014 KEM-class algorithm presented for a signature/authorization task (ERR_PQC_ALG_NOT_SIGNATURE)",
+      "verdict": "REFUSED",
+      "wave": "REG"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-wrong-kat",
+      "note": "stays closed if attack_succeeded=False (gate verdict must not be ADMITTED)",
+      "reason": "KAT divergence \u2014 recomputed digest != registered vector (substitution)",
+      "verdict": "DETECTED",
+      "wave": "REG"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-retired-resurrection",
+      "note": "stays closed if attack_succeeded=False (gate verdict must not be ADMITTED)",
+      "reason": "retired keyset resurrection refused \u2014 FAIL-CLOSED HOLD pending human ACK",
+      "verdict": "FAIL-CLOSED",
+      "wave": "REG"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-stale-authz-replay",
+      "note": "stays closed if attack_succeeded=False (gate verdict must not be ADMITTED)",
+      "reason": "receipt parameter binding mismatch \u2014 referenced record does not bind this input parameter set (ERR_RECEIPT_PARAM_MISMATCH)",
+      "verdict": "REFUSED",
+      "wave": "REG"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-registry-poisoning",
+      "note": "stays closed if attack_succeeded=False (gate verdict must not be ADMITTED)",
+      "reason": "KAT divergence \u2014 key material fails recomputation against registry",
+      "verdict": "DETECTED",
+      "wave": "REG"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "CLEARED-same-ns-replay",
+      "note": "same-namespace replay must stay refused (SIP-024 semantics)",
+      "reason": "burn-on-parse replay defense \u2014 nonce already consumed at a prior presentation in this submitter's namespace (ERR_REPLAY_NONCE_ALREADY_USED)",
+      "verdict": "REFUSED",
+      "wave": "REG"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "OWNER-CONTROL-1",
+      "note": "owner control must be ADMITTED (attack_succeeded=False => healthy)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "CTL"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "OWNER-CONTROL-2",
+      "note": "owner control must be ADMITTED (attack_succeeded=False => healthy)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "CTL"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "OWNER-CONTROL-3",
+      "note": "owner control must be ADMITTED (attack_succeeded=False => healthy)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "CTL"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "OWNER-CONTROL-4",
+      "note": "owner control must be ADMITTED (attack_succeeded=False => healthy)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "CTL"
+    }
+  ],
+  "run1_disclosure": "Run 1 (SIEGE1_RECEIPT.json, kept append-only) suffered a harness defect: attacker per-submitter budget exhausted in Y1 and the 250-record window never rolled, masking mid-wave seams. Two findings (C1, C2) still confirmed in run 1 and re-confirmed here; C3 and C4 required fresh identities.",
+  "verdict": "PASS-WITH-FINDINGS"
+}

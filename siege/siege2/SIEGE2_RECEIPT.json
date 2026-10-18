@@ -1,0 +1,208 @@
+{
+  "authorized": "Leon ACK (chat authorization, 2026-10-17 ~21:17 CT)",
+  "battery": "SIEGE-2 \u2014 v1.4 verification (SIP-030)",
+  "date": "2026-10-17",
+  "gate_under_test": "portcullis_gate_v1_4.py",
+  "owner_controls_4_of_4": true,
+  "regression_stayed_closed": true,
+  "results": [
+    {
+      "attack_succeeded": false,
+      "id": "C1R-forged-owner-claim",
+      "note": "v1.4 must REFUSE: claimed owner identity without the owner's envelope key (ERR_UNAUTHENTICATED_ENVELOPE)",
+      "reason": "envelope proof missing or invalid \u2014 claimed submitter not bound to an authenticated envelope; zero namespace work (ERR_UNAUTHENTICATED_ENVELOPE)",
+      "verdict": "REFUSED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "C1R-forged-with-forged-proof",
+      "note": "v1.4 must REFUSE: garbage proof does not bind the claim",
+      "reason": "envelope proof missing or invalid \u2014 claimed submitter not bound to an authenticated envelope; zero namespace work (ERR_UNAUTHENTICATED_ENVELOPE)",
+      "verdict": "REFUSED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "C1R-real-owner-unharmed",
+      "note": "the REAL owner's own nonce op must be ADMITTED (attack_succeeded False => C1 CLOSED)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "C2R-attacker-fill",
+      "note": "attacker must be unable to take more than 48 (64 - 16 owner reserve)",
+      "reason": "attacker filled 48 ACK slots (cap 64, owner reserve 16, per-submitter cap 16)",
+      "verdict": "measured",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "C2R-owner-pending-ack",
+      "note": "owner's pending-ACK submission must be ADMITTED despite the flood (attack_succeeded False => C2 CLOSED)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "C3R-sig-for-kem",
+      "note": "v1.4 must REFUSE a signature-class algorithm for a KEM-class operation (ERR_PQC_ALG_NOT_KEM)",
+      "reason": "algorithm-role violation \u2014 signature-class algorithm presented for a KEM-class operation (ERR_PQC_ALG_NOT_KEM)",
+      "verdict": "REFUSED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "C3R-legit-kem-control",
+      "note": "legit kyber_1024 encapsulation must STILL be ADMITTED (wall must not over-block)",
+      "reason": "allowlisted kyber_1024, KAT verified, active keyset, role=kem_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "C4R-aggregate-cap",
+      "note": "rotation must be bounded well below 800 (aggregate cap 125 per 250-record window; attack_succeeded False => C4 BOUNDED)",
+      "reason": "800 rotation attempts -> 425 adjudicated (aggregate cap 500 per window)",
+      "verdict": "measured",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "C4R-disclosed-residual-owner-after-flood",
+      "note": "DISCLOSED RESIDUAL (recorded, not a finding): aggregate cap is collective \u2014 owner waits for window roll after a full 500 flood (per SIP-030 text)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-classical-downgrade",
+      "note": "stays closed (verdict must not be ADMITTED)",
+      "reason": "algorithm 'RSA-2048' not on frozen allowlist",
+      "verdict": "REJECTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-hybrid-composite",
+      "note": "stays closed (verdict must not be ADMITTED)",
+      "reason": "algorithm 'kyber_1024+RSA-2048' not on frozen allowlist",
+      "verdict": "REJECTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-kem-in-auth",
+      "note": "stays closed (verdict must not be ADMITTED)",
+      "reason": "algorithm-role violation \u2014 KEM-class algorithm presented for a signature/authorization task (ERR_PQC_ALG_NOT_SIGNATURE)",
+      "verdict": "REFUSED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-wrong-kat",
+      "note": "stays closed (verdict must not be ADMITTED)",
+      "reason": "KAT divergence \u2014 recomputed digest != registered vector (substitution)",
+      "verdict": "DETECTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-retired-resurrection",
+      "note": "stays closed (verdict must not be ADMITTED)",
+      "reason": "retired keyset resurrection refused \u2014 FAIL-CLOSED HOLD pending human ACK",
+      "verdict": "FAIL-CLOSED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-stale-authz-replay",
+      "note": "stays closed (verdict must not be ADMITTED)",
+      "reason": "replayed/invalid authorization \u2014 prior PASS grants no future authority",
+      "verdict": "REFUSED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-registry-poisoning",
+      "note": "stays closed (verdict must not be ADMITTED)",
+      "reason": "KAT divergence \u2014 key material fails recomputation against registry",
+      "verdict": "DETECTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-sig-for-kem",
+      "note": "stays closed (verdict must not be ADMITTED)",
+      "reason": "algorithm-role violation \u2014 signature-class algorithm presented for a KEM-class operation (ERR_PQC_ALG_NOT_KEM)",
+      "verdict": "REFUSED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-same-ns-replay",
+      "note": "same-namespace replay must stay refused",
+      "reason": "burn-on-parse replay defense \u2014 nonce already consumed at a prior presentation in this submitter's namespace (ERR_REPLAY_NONCE_ALREADY_USED)",
+      "verdict": "REFUSED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "REG-cross-ns-nonce-prediction",
+      "note": "owner namespace unaffected by attacker's predicted-nonce burn (must be ADMITTED)",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "OWNER-CONTROL-1",
+      "note": "owner control must be ADMITTED",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "OWNER-CONTROL-2",
+      "note": "owner control must be ADMITTED",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "OWNER-CONTROL-3",
+      "note": "owner control must be ADMITTED",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    },
+    {
+      "attack_succeeded": false,
+      "id": "OWNER-CONTROL-4",
+      "note": "owner control must be ADMITTED",
+      "reason": "allowlisted CRYSTALS-Dilithium3, KAT verified, active keyset, role=signature_class",
+      "verdict": "ADMITTED",
+      "wave": "VERIFY"
+    }
+  ],
+  "seams": {
+    "C1_identity_forgery": "CLOSED",
+    "C2_shared_ack_queue": "CLOSED",
+    "C3_reverse_role_wall": "CLOSED",
+    "C4_budget_rotation": "BOUNDED",
+    "c3_availability_control": "PASS"
+  },
+  "v13_corpus_shas": {
+    "allowlist": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+    "gate_v1_3": "3726f6a59f8935bb2fc70acd70ea2eb2d488e548ff5551f49d139205b37d7c40",
+    "keysets": "502ef8b07e5103abe07d970ed4fdb475f382e1547512b699f79aa16a6c85608c"
+  },
+  "v14_sha": "2940b768cd797bc7ea959097eda476739e1fd139b70c114c077963256136cbbf",
+  "verdict": "PASS"
+}

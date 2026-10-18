@@ -1,0 +1,55 @@
+{
+  "attacks_succeeded": 4,
+  "attacks_total": 62,
+  "authorized": "Leon GO (chat authorization, 2026-10-17 ~21:12 CT)",
+  "battery": "SIEGE-1 \u2014 The Long Siege",
+  "corpus_shas": {
+    "allowlist.json": "2c8ff6eb946df266a2a31a098ea87191daabfbfbd0590f24f0146736f11426e9",
+    "gate_v1_3.py": "3726f6a59f8935bb2fc70acd70ea2eb2d488e548ff5551f49d139205b37d7c40",
+    "keysets.json": "502ef8b07e5103abe07d970ed4fdb475f382e1547512b699f79aa16a6c85608c",
+    "prereg": "58ab8326c18d3cf8e61c2dbb0f8d267a39e46d10af15c7f72f02ef721c9ec998"
+  },
+  "date": "2026-10-17",
+  "gate_under_test": "portcullis_gate_v1_3.py",
+  "regression": {
+    "bl2r_slots": 20,
+    "note": "owner controls = REG-CTL slots (i%12==0 => i in 0,12? -> 2 controls) \u2014 see runlog",
+    "owner_controls_admitted": 2,
+    "owner_controls_expected": 4
+  },
+  "succeeded": [
+    {
+      "id": "Y1-04-owner-reuse-after-attacker",
+      "note": "if owner's own nonce was burned by attacker presentation, front-run DoS reopened",
+      "reason": "burn-on-parse replay defense \u2014 nonce already consumed at a prior presentation in this submitter's namespace (ERR_REPLAY_NONCE_ALREADY_USED)",
+      "wave": "Y1"
+    },
+    {
+      "id": "Y3-04-kem-legit",
+      "note": "legit KEM op should be admitted (control); refusal here = availability defect",
+      "reason": "per-submitter work budget exhausted (100 attempts per 250-record window) (ERR_BUDGET_EXCEEDED)",
+      "wave": "Y3"
+    },
+    {
+      "id": "Y4-01-identity-forgery-front-run",
+      "note": "candidate C1: gate trusts claimed submitter; if forged claim burns owner nonce, CRQC-era impersonation reopens the front-run DoS (production mitigation = platform sender-identity gate; gate model has no binding)",
+      "reason": "burn-on-parse replay defense \u2014 nonce already consumed at a prior presentation in this submitter's namespace (ERR_REPLAY_NONCE_ALREADY_USED)",
+      "wave": "Y4"
+    },
+    {
+      "id": "Y6-01-shared-ack-queue-saturation",
+      "note": "candidate C2: pending-ACK queue is shared; attacker fill (64) denies the owner until drain \u2014 cross-submitter availability attack",
+      "reason": "pending-ACK queue at capacity (64); explicit refusal, journal-recorded (ERR_ACK_QUEUE_FULL)",
+      "wave": "Y6"
+    }
+  ],
+  "verdict": "PASS-WITH-FINDINGS",
+  "waves": [
+    "Y1-2026-HNDL",
+    "Y2-2027-NISQ",
+    "Y3-2028-early-FT",
+    "Y4-2029-CRQC-early",
+    "Y5-2030-CRQC-full",
+    "Y6-2031-CRQC-scale"
+  ]
+}
