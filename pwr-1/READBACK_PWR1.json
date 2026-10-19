@@ -1,0 +1,32 @@
+{
+ "btc": {
+  "payload_ok": true,
+  "confirmed": false
+ },
+ "xrp": {
+  "memo_ok": true,
+  "validated": true,
+  "type": "AccountSet"
+ },
+ "stellar": {
+  "ledger_entry_ok": true,
+  "ledger": 65027820,
+  "successful": true
+ },
+ "cardano": {
+  "meta_ok": true,
+  "metadata": {
+   "PWR": "PWR-1",
+   "RAIL": "5",
+   "DIGEST": "e464589cecdcc2d8921c759fdafb3ec93fe0916a67a0fc50b38f636fa2f49ffa"
+  }
+ },
+ "eth": {
+  "receipt_ok": true,
+  "status": "0x1",
+  "block": 26227617,
+  "gasUsed": 22480,
+  "to": "0x96d17f38e50a5372b8fefdd1d121785dabb62c30",
+  "input_hex": "0x5351445203e464589c"
+ }
+}
