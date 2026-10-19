@@ -1,0 +1,28 @@
+{
+ "btc": {
+  "ok": true,
+  "returned": "a02b22db8fcd89bc5fc13f51cb3c84abeafb3055b023051d0b9ac0d1914eba0f",
+  "committed": "a02b22db8fcd89bc5fc13f51cb3c84abeafb3055b023051d0b9ac0d1914eba0f",
+  "interval_s": 0.05
+ },
+ "xrp": {
+  "ok": true,
+  "engine": "tesSUCCESS",
+  "hash": "E3883E43A2249FB180042D60D426F9ABAF53FFA016EDB5A01D425C6742FDA2AA",
+  "interval_s": 0.31
+ },
+ "stellar": {
+  "ok": true,
+  "hash": "d47691a894b85a09f5ec5e532591bd401642459db5ab4a3c138bc2c4a4f18fac",
+  "ledger": 65027198,
+  "wire": "form-encoded",
+  "interval_s": 5.58
+ },
+ "cardano": {
+  "ok": false,
+  "error": "HTTP Error 400: Bad Request",
+  "body": "{\"contents\":{\"contents\":[\"DecoderErrorDeserialiseFailure \\\"Shelley Tx\\\" (DeserialiseFailure 0 \\\"expected list len or indef\\\")\",\"DecoderErrorDeserialiseFailure \\\"Shelley Tx\\\" (DeserialiseFailure 0 \\\"expected list len or indef\\\")\",\"DecoderErrorDeserialiseFailure \\\"Shelley Tx\\\" (DeserialiseFailure 0 \\\"",
+  "wire": "raw-4-array",
+  "interval_s": 6.08
+ }
+}
