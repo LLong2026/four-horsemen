@@ -46,3 +46,14 @@
 This software is a prototype and is provided for educational and research purposes only. It is not
 intended for production use, commercial deployment, or safety-critical environments. All systems are
 experimental and may contain defects.
+
+## Leg set addendum — 2026-10-19 ~12:30 CT — AVAVALANCHE (route 7)
+
+| Rail | Mechanism | Identifier of record | Confirmed | Cost | Byte-exact |
+|------|-----------|---------------------|-----------|------|-----------|
+| Avalanche | calldata zero-value self-send (T2+T3) | T3 txid 0x671d7002098803f53b8bcc7785ba1a0e2048168bb196f55dab3f810973c29988 | block 97987712, 1.1s | 21512 gas, 0.000083 AVAX | YES |
+
+- Funding: 2.5 AVAX from Coinbase (Leon, inbond 2026-10-19 ~12:27 CT). Fired manually on operator notice.
+- T2 rehearsal txid 0x7ebb433c...770443 (disclosed deviation: marker string instead of 32-byte training digest).
+- AVALANCHE T3 PASSED → Tier 1 CERTIFIED (route 7 of 10). DeWR-1 legs now 7/10.
+- Remaining: DOT, SOL (watcher armed), HBAR (alias two-hop pending).
