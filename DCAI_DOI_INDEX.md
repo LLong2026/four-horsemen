@@ -103,3 +103,4 @@ extracted from LEDGER.md entries 0001-0194. Each DOI is independently verifiable
 Total: 93 unique DOI records.
 
 - 10.5281/zenodo.23463132 — The Satoshi Embodiment: A 32-Byte Hash Riding Real Satoshis Across a Bitcoin Mainnet Custody Walk (2026-10-18)
+- 10.5281/zenodo.23463568 — Project SOLACE: A Sponsor's Receipt — What Happened When a Deterministic Gate Machine Rebuilt My Subsea Reactor (Benjamin Eckenfels, 2026-10-18)
