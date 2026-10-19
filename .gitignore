@@ -8,3 +8,4 @@ cardano_writer_key*.json
 eth_writer_key*.json
 dropbox_writer_key*.json
 seed*.bin
+*_writer_key*.json

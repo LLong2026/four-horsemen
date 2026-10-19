@@ -1,0 +1,28 @@
+{
+ "algorand": {
+  "rounds_in_5s": 1,
+  "block_time_s_est": 5.0,
+  "min_fee_algo": 0.001,
+  "last_round": 66138623
+ },
+ "avalanche_c": {
+  "block_interval_s": 3,
+  "gas_gwei": 4.461706889,
+  "est_cost_21k_gas_usd": 0.0033
+ },
+ "solana": {
+  "slots_in_5s": 24,
+  "slot_time_ms_est": 208.0,
+  "min_fee_lamports": 5000
+ },
+ "hedera": {
+  "hbar_usd": 0.0,
+  "block_interval_s": 2,
+  "memo_max_bytes": 100
+ },
+ "polkadot": {
+  "blocks_in_12s": 2,
+  "block_time_s_est": 6.0,
+  "existential_deposit_dot": 1
+ }
+}
