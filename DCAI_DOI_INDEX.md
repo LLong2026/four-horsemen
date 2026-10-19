@@ -112,3 +112,4 @@ Total: 95 unique DOI records.
 - 10.5281/zenodo.23477976 — QWR-2: Quad-Write Receipt No. 2 — First Real Metrics of the 60-Day Run (DRIFT-1 Report, Epoch 20261019) (2026-10-19)
 - 10.5281/zenodo.23482711 — Master Thesis Volume II: Deterministic Containment of Probabilistic Intelligence, Multi-Rail Evidence Anchoring, and Intelligent Route Selection — The Squirrel OS Journey (v2.0, supersedes-and-extends DOI 10.5281/zenodo.23303240; 2026-10-19)
 - 10.5281/zenodo.23482978 — Master Thesis Volume II v2.1 (adds payload doctrine Section 2.5 + 76-proof corpus figure; v2.0 DOI 10.5281/zenodo.23482711 remains live and anchored; 2026-10-19)
+- 10.5281/zenodo.23485222 — IR-2 Final: The Routing Chapter Closed — Preregistered 10-Rail Intelligent-Routing Crossfire, Predicted vs Observed Finality Across All Ten Certified Mainnets (2026-10-19)

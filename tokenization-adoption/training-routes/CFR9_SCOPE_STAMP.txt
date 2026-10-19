@@ -1,0 +1,1 @@
+# CFR-9 CROSSFIRE — scope stamp cfr9_crossfire_2026-10-19 — 21:17:16 UTC — preflight 10/10 PASS — prereg CFR9_PREREG.md sha frozen — fire order latency-ranked: SOL ALGO AVAX XLM XRP DOT ADA ETH DOGE BTC
