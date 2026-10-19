@@ -29,5 +29,18 @@
  "commit": "6d376af",
  "date": "2026-10-19",
  "disclaimer": "Prototype, educational/research purposes only, not production use.",
- "prereg_sha": "c1db2f4eac407b471ebd73b55f644ed9bd303f227786562e5118623807b973c9"
+ "prereg_sha": "c1db2f4eac407b471ebd73b55f644ed9bd303f227786562e5118623807b973c9",
+ "v21": {
+  "doi": "10.5281/zenodo.23482978",
+  "concept_doi": "10.5281/zenodo.23482710",
+  "pdf_sha256": "a5c27a13122f199e406c6a7b21061af7cb0f89d2c074b5d0410137486412a6e9",
+  "adds": "Section 2.5 payload doctrine + 76-proof corpus figure",
+  "bind": {
+   "btc": "922042a0d19041d79b529a48bcd8d44aad951eb79988bfb9ca29dc2e3123706e",
+   "xrp": "2A15A061AC0312AF486E49DF28B26BA08A9161E2EB06D81C2387E256463742CA",
+   "xrp_ledger": 107768397,
+   "g4": "PASS (0.24s)"
+  },
+  "prereg_sha": "b0ae2bb6549744b9999b297b82558256314dc7fd24ed0b48ff8dee654a9c12f1"
+ }
 }

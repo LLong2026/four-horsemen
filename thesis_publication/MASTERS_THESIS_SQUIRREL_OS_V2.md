@@ -6,7 +6,7 @@
 SquirlOS Technologies LLC
 October 2026
 
-> **Authorship and status disclosure.** This is a self-published research monograph written in thesis form, versioned v2.0. It supersedes and extends v1.0 (DOI 10.5281/zenodo.23303240), which remains live and unchanged per the append-only doctrine. It is not a university-issued document and confers no degree or credential. It was AI-assisted under human direction. All empirical claims are scoped to their tested conditions and anchored to a public append-only ledger of receipts (github.com/LLong2026/four-horsemen). This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.
+> **Authorship and status disclosure.** This is a self-published research monograph written in thesis form, versioned v2.1. It supersedes and extends v1.0 (DOI 10.5281/zenodo.23303240), which remains live and unchanged per the append-only doctrine. Version v2.1 adds Section 2.5 (the payload doctrine: the byte-level wrapping conventions used across all nine rails) and the receipts-counted proof-corpus figure (76 mainnet proof transactions, ledger 0248); v2.0 (DOI 10.5281/zenodo.23482711) remains live and unchanged, and its PDF digest remains anchored on-chain as THESIS-V2-BIND-1. It is not a university-issued document and confers no degree or credential. It was AI-assisted under human direction. All empirical claims are scoped to their tested conditions and anchored to a public append-only ledger of receipts (github.com/LLong2026/four-horsemen). This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.
 
 ---
 
@@ -66,6 +66,21 @@ Multi-rail anchoring surfaced a defect class the corpus had not met before: **th
 ### 2.4 Non-custody, and the privacy boundary
 
 The ceremonies write hashes, and — in the custody walks and crossfire only — move the owner's own funds between the owner's own wallets. No third party's assets, no customer data, no PHI, no credentials ever appear in any payload, log, or receipt (POL-DISC-001). The payloads are purity-audited before broadcast (gate G6). Where an exchange was used, it funded the owner's own rail wallets at the owner's instruction, and its withdrawal receipt is disclosed exactly as infrastructure, not as evidence.
+
+### 2.5 The payload doctrine: what actually goes on chain
+
+Every anchoring leg in this corpus carries the same thing: a single 32-byte SHA-256 digest of the artifact, wrapped in a minimal rail-appropriate envelope. Nothing else. The wrapping convention is fixed so that any examiner can reconstruct and compare bytes without asking the author.
+
+**Bitcoin (and Dogecoin, same mechanics):** an OP_RETURN output — script `OP_RETURN <push 37>`, body `SQDR` (4-byte marker) + `0x01` (version byte) + the 32-byte digest, for a 37-byte payload. Full script hex: `6a25 53514452 01 <digest>`. Postage-only fee; no change beyond the writer's own address; no key material, no metadata, no second purpose. The canonical identifier is the witness-stripped txid (Section 2.3).
+
+**XRP Ledger:** a non-payment `AccountSet` transaction (storage without transfer) or a memo-tagged `Payment` (when a custody hop is itself the evidence, as in XTR-1), carrying `MemoType` = an ASCII ceremony tag (e.g., `SQDR-XRP-THESIS-V2`) and `MemoData` = the hex digest — always the raw 32 bytes, never re-hashed, never truncated.
+
+**Stellar:** a `ManageData` entry plus `memo_hash`, value = the digest bytes, 100–200 stroops. **Cardano:** Conway-era metadata at label 1967, with the digest the raw map value (the chain reports the body hash per its own convention). **Ethereum / Avalanche:** zero-value self-send with the envelope in calldata. **Algorand:** the digest in the note field. **Solana:** SPL Memo v2 carrying hex-encoded ASCII.
+
+Two invariants span all rails. First, the digest is the artifact's file hash — the exact sha256 of the published PDF — so any examiner can recompute it from the DOI-retrievable artifact and compare against the chain bytes keylessly. Second, purity: no envelope ever carries credentials, PII/PHI, or customer data (gate G6; POL-DISC-001); the ceremony's only degrees of freedom are which digest and which rails, both frozen in the preregistration before broadcast.
+
+This document itself is an example of the doctrine: its v2.0 PDF digest was anchored to Bitcoin and XRPL as THESIS-V2-BIND-1 (canonical txid `1fb243ab...f3be2d9`; XRP ledger 107768211), payload `SQDR + 0x01 + d676902d...459c827e` on one rail and the same 32 bytes in the `SQDR-XRP-THESIS-V2` memo on the other.
+
 
 ---
 
