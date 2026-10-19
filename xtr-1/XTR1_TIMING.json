@@ -1,0 +1,33 @@
+{
+ "H1": {
+  "txid": "9F1D07A86EA7EF14F5E905826B1618AF6CA82D4391F823DFE55D126DC39B7DC0",
+  "accept_s": 0.318,
+  "finality_s": 5.256,
+  "ledger": 107764951
+ },
+ "H2": {
+  "txid": "C7D2CE5355C86A41A031C4B6EF5B135A742B12899AEE9E2037FF661273494AAA",
+  "accept_s": 0.292,
+  "finality_s": 7.441,
+  "ledger": 107764953
+ },
+ "H3": {
+  "txid": "C263BAC36C063F227AF12237D4E70EC3D7C61FE18FC936673D957D4951ECA91A",
+  "accept_s": 0.313,
+  "finality_s": 6.872,
+  "ledger": 107764955
+ },
+ "H4": {
+  "txid": "EE8A206F10BDB8118963A7176E9584F600E47300BF15763887C4870FFD85532D",
+  "accept_s": 0.297,
+  "finality_s": 7.936,
+  "ledger": 107764957
+ },
+ "H5": {
+  "txid": "BFA90BFD1D12229C6EDC2BCEB963391FB89140B0F541529DEB3768E0B982615B",
+  "accept_s": 0.292,
+  "finality_s": 7.947,
+  "ledger": 107764959
+ },
+ "_chain_total_s": 35.45
+}

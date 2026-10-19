@@ -1,0 +1,42 @@
+{
+ "H1": {
+  "memo_ok": true,
+  "memo_tag": "SQDR-XTR-1-H1",
+  "direction_ok": true,
+  "amount": "700000",
+  "validated": true,
+  "ledger": 107764951
+ },
+ "H2": {
+  "memo_ok": true,
+  "memo_tag": "SQDR-XTR-1-H2",
+  "direction_ok": true,
+  "amount": "700000",
+  "validated": true,
+  "ledger": 107764953
+ },
+ "H3": {
+  "memo_ok": true,
+  "memo_tag": "SQDR-XTR-1-H3",
+  "direction_ok": true,
+  "amount": "700000",
+  "validated": true,
+  "ledger": 107764955
+ },
+ "H4": {
+  "memo_ok": true,
+  "memo_tag": "SQDR-XTR-1-H4",
+  "direction_ok": true,
+  "amount": "700000",
+  "validated": true,
+  "ledger": 107764957
+ },
+ "H5": {
+  "memo_ok": true,
+  "memo_tag": "SQDR-XTR-1-H5",
+  "direction_ok": true,
+  "amount": "700000",
+  "validated": true,
+  "ledger": 107764959
+ }
+}
