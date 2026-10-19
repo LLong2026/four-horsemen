@@ -1,0 +1,8 @@
+{
+ "broadcast_at": "2026-10-19T19:27:36Z",
+ "btc_confirmed_txid": "1fb243ab8460c97ad2eb1d7ab5847ba8c4b003d1e0b366113195ed5ebf3be2d9",
+ "xrp_engine": "tesSUCCESS",
+ "xrp_hash": "7ABEF6066CAB61076E6A4E20966121FB9B5EF881A3FD2CDBDF414CFBB470043B",
+ "interval_note": "BTC->XRP interval exceeded the 60s G4 target: two xrpl-py Submit kwarg rejections (tx_blob, then tx) before falling back to raw JSON-RPC. Both identifiers remained pre-committed; joint commitment unaffected. G4 scored FAIL and disclosed.",
+ "g4": "FAIL (interval) \u2014 disclosed"
+}

@@ -1,0 +1,27 @@
+{
+ "btc": {
+  "txid": "1fb243ab8460c97ad2eb1d7ab5847ba8c4b003d1e0b366113195ed5ebf3be2d9",
+  "readback_blockstream": "BYTE-EXACT",
+  "readback_mempool": "BYTE-EXACT",
+  "confirmed": false,
+  "fee_sats": 790,
+  "vsize": 158
+ },
+ "xrp": {
+  "hash": "7ABEF6066CAB61076E6A4E20966121FB9B5EF881A3FD2CDBDF414CFBB470043B",
+  "readback": "BYTE-EXACT",
+  "ledger_index": 107768211,
+  "fee_drops": "10",
+  "txn_type": "AccountSet",
+  "validated": true,
+  "account": "rBbxYuBkzK6UxKXhvUi8uNtdxhD1h7ZFGR"
+ },
+ "gates": {
+  "g1_joint_commitment": "PASS (prereg sha c1db2f4eac407b471ebd73b55f644ed9bd303f227786562e5118623807b973c9 frozen pre-broadcast)",
+  "g2_btc_payload": "PASS",
+  "g3_xrp_memo": "PASS",
+  "g4_interval": "FAIL \u2014 disclosed (xrpl-py Submit kwarg rejections delayed XRP broadcast past the 60s target; both identifiers remained pre-committed)",
+  "g5_identifier_doctrine": "PASS (BTC canonical txid + XRP hash both match committed)",
+  "g6_purity": "PASS (37-byte OP_RETURN payload + memo-only; no keys, PII, client data)"
+ }
+}
