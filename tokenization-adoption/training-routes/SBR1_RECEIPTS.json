@@ -1,0 +1,100 @@
+{
+ "ceremony": "SBR-1 Speed Burst Record",
+ "cost_summary": "40 drops + 400 stroops per ceremony; per-anchor: 10 drops (XRP rail) or 100 stroops (XLM transport, bundled)",
+ "date_utc": "2026-10-19",
+ "doctrine": "ledger 0261: XRP the rail of record, Stellar the transport",
+ "failed_attempts": [
+  {
+   "cost": 0,
+   "desc": "six xrpl-py 5.2.0 library-shape corrections during build (Wallet ctor kwargs, autofill argument order, Memo model object, frozen dataclass sequence, blob accessor, response dict shape); all local, zero ledger effect, zero fees"
+  }
+ ],
+ "gates": {
+  "G1_payloads_frozen_prereg_pre_broadcast": "PASS (sha ac106167d40b)",
+  "G2_scope_stamp_before_first_submission": "PASS (22:49:10Z stamp, first submit ~22:50:19Z)",
+  "G3_keyless_byte_exact_readback": "PASS 8/8 (4 XRP memos via account_tx, 4 Stellar data entries via account)",
+  "G4_exact_costs_disclosed": "PASS (40 drops + 400 stroops)",
+  "G5_honest_timing": "PASS (per-tx submit offsets and ledger close times recorded verbatim)"
+ },
+ "payload_class": "0x06 DOI binding: SQDR + 0x06 + SHA-256(ASCII DOI string), 37 bytes per anchor",
+ "payloads": [
+  {
+   "digest": "c5d700739060b45be51f6e935ff93b323d88d15941744409c204f99d1f917cc5",
+   "doi": "10.5281/zenodo.23466738"
+  },
+  {
+   "digest": "09b1748878cc51aab6af19338b4ead4fb6c9d9239b06e863856813307f649071",
+   "doi": "10.5281/zenodo.23467440"
+  },
+  {
+   "digest": "6d07bfe08e4ff00b584affe740e98b97e09df22a50c6f3054193873d980b2762",
+   "doi": "10.5281/zenodo.23482978"
+  },
+  {
+   "digest": "a028ba4175ed78732c2b1b93eeaf9274f9104ac94592e509f020f7c59d0c259d",
+   "doi": "10.5281/zenodo.23485222"
+  }
+ ],
+ "prereg_sha256": "ac106167d40bbf8f432bc9611198c716602fd535e7ca9a1d00894ada2800f134",
+ "readback": {
+  "endpoints": [
+   "xrplcluster.com (account_tx, tx)",
+   "horizon.stellar.org (accounts)"
+  ],
+  "stellar": "all 4 data entries read back byte-exact: SQDR+0x06+digest",
+  "xrp": "all 4 memos read back byte-exact: MemoType SBR-1, MemoData = SQDR+0x06+digest"
+ },
+ "scope_stamp": "sbr1_speed_burst_2026-10-19T22:49:10Z (before first submission)",
+ "stellar_transport": {
+  "created": "2026-10-19T22:50:23Z",
+  "data_entries": "SBR-1-DOI-1..4 live on account, all byte-exact",
+  "design": "1 transaction, 4 ManageData operations (SBR-1-DOI-1..4) \u2014 the transport bundling all four DOIs",
+  "fees": "400 stroops (100 per op, 0.0004 XLM)",
+  "hash": "9298f64383f78173fbc0d8df33f86beef619786f3830eb895910f9a863f79d6c",
+  "ledger": 65032888,
+  "ops": 4
+ },
+ "timing_summary": {
+  "stellar_inclusion": "~4 seconds from submit (ledger 65032888 close 22:50:23Z)",
+  "total_ceremony": "8 anchors across 5 transactions, all finalized within ~4 seconds of burst start",
+  "xrp_submit_burst": "4 anchors submitted in 0.97s",
+  "xrp_validated_finality": "1-3 seconds from submit (ledger close 22:50:21Z / 22:50:22Z, t0 ~22:50:19Z)"
+ },
+ "xrp_rail": {
+  "design": "4 pre-signed AccountSet transactions, sequences 107745093-107745096, submitted in one burst",
+  "fees": "10 drops per tx, 40 drops total (0.00004 XRP)",
+  "note": "three of four anchors validated in the SAME ledger (107771300), the fourth one ledger later",
+  "submit_burst_seconds": [
+   0.249,
+   0.487,
+   0.729,
+   0.973
+  ],
+  "validated": [
+   {
+    "close": "2026-10-19T22:50:21Z",
+    "doi": "10.5281/zenodo.23466738",
+    "hash": "075F38E5675F251A59874AD4A998A46B3BB1655D4CC92FB2CE2F4D216F425586",
+    "ledger": 107771300
+   },
+   {
+    "close": "2026-10-19T22:50:21Z",
+    "doi": "10.5281/zenodo.23467440",
+    "hash": "3C57AB013F6566AB7B1F16D3502E12105F6942AF283B3AC5883DAC0DCDE7087D",
+    "ledger": 107771300
+   },
+   {
+    "close": "2026-10-19T22:50:21Z",
+    "doi": "10.5281/zenodo.23482978",
+    "hash": "C9A645F4D215ACAE4348A36F40728035221BA8C1F4F2FDF118AC361E9A38CB59",
+    "ledger": 107771300
+   },
+   {
+    "close": "2026-10-19T22:50:22Z",
+    "doi": "10.5281/zenodo.23485222",
+    "hash": "DFCE46982F89E824FEF4FDD073AD8D7B7D8DA0A862343970E105689B265480B2",
+    "ledger": 107771301
+   }
+  ]
+ }
+}
