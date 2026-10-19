@@ -22,3 +22,5 @@ Per spec §2: t0/t_engine/t_validated per hop, sequential validation discipline.
 MEASURED (scoped): deterministic gates, no LLM in any decision path (program benchmark DOI
 10.5281/zenodo.23321637). No production, customer, or personal data (POL-DISC-001).
 Prototype disclaimer applies.
+
+**Freeze note:** first commit carried pre-edit digest c10e1899... (spec was amended to the B-first chain after hashing); riding digest of record corrected to a0fe4f66... pre-run, before any broadcast. Disclosed in the commit history.
