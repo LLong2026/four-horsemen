@@ -1,0 +1,19 @@
+{
+ "btc": {
+  "ok": true,
+  "returned": "1b559ee015f497b99ae45950925dcec578e0409dc431415889a820eec6b8342f"
+ },
+ "xrp": {
+  "ok": true,
+  "engine": "tesSUCCESS"
+ },
+ "stellar": {
+  "ok": false,
+  "error": "HTTP Error 400: Bad Request",
+  "body": "{\n  \"type\": \"https://stellar.org/horizon-errors/transaction_failed\",\n  \"title\": \"Transaction Failed\",\n  \"status\": 400,\n  \"detail\": \"The transaction failed when submitted to the stellar network. The `e"
+ },
+ "cardano": {
+  "ok": true,
+  "returned": "\"6bc76d6df1d2fb94990efbe5fb78de841718df4b015e4df5a012e9a62810df9f\""
+ }
+}

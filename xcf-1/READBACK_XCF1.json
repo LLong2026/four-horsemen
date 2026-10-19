@@ -1,0 +1,54 @@
+{
+ "btc_B": {
+  "payload_ok": true,
+  "to": "B",
+  "amount": 82000,
+  "confirmed": false
+ },
+ "btc_A": {
+  "payload_ok": true,
+  "to": "A",
+  "amount": 81300,
+  "confirmed": false
+ },
+ "xrp_out": {
+  "memo_ok": true,
+  "from": "rDSbkAZb",
+  "to": "rBbxYuBk",
+  "amount": "700000",
+  "validated": true
+ },
+ "xrp_ret": {
+  "memo_ok": true,
+  "from": "rBbxYuBk",
+  "to": "rDSbkAZb",
+  "amount": "700000",
+  "validated": true
+ },
+ "stellar_create": {
+  "memo_ok": true,
+  "ledger": 65027701,
+  "successful": true
+ },
+ "stellar_payment": {
+  "memo_ok": true,
+  "ledger": 65027720,
+  "successful": true
+ },
+ "cardano_hop1": {
+  "meta_ok": true,
+  "metadata": {
+   "HOP": 1,
+   "XCF": "XCF-1",
+   "DIGEST": "5f69e1bf9a35a6fae4dd2adf8fd19f8e8135a8acb1980279caba2a377efc275e"
+  }
+ },
+ "cardano_hop2": {
+  "meta_ok": true,
+  "metadata": {
+   "HOP": 2,
+   "XCF": "XCF-1",
+   "DIGEST": "5f69e1bf9a35a6fae4dd2adf8fd19f8e8135a8acb1980279caba2a377efc275e"
+  }
+ }
+}

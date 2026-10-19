@@ -1,0 +1,23 @@
+{
+ "btc": {
+  "ok": true,
+  "returned": "2c9aaff0b61863ec7c7cf496be68673b2bbcdd1c86fd443e745ebcd3ef2f5e0a",
+  "s": 0.04
+ },
+ "xrp": {
+  "ok": true,
+  "engine": "tesSUCCESS",
+  "s": 0.35
+ },
+ "stellar": {
+  "ok": true,
+  "hash": "c2c004deb4c90aa3555f91e063a2a91354ce3bd64d2addcdddf06833148985aa",
+  "ledger": 65027701,
+  "s": 6.02
+ },
+ "cardano": {
+  "ok": false,
+  "error": "HTTP Error 400: Bad Request",
+  "body": "{\"contents\":{\"contents\":{\"contents\":{\"era\":\"ShelleyBasedEraConway\",\"error\":[\"ConwayUtxowFailure (UtxoFailure (FeeTooSmallUTxO Mismatch (RelGTEQ) {supplied: Coin 169197, expected: Coin 170957}))\"],\"kin"
+ }
+}
