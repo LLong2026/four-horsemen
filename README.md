@@ -9,6 +9,15 @@
 
 ---
 
+## Tokenization Without Tokens — the proof-day record
+
+Four artifacts tokenized in a single day across Bitcoin and XRP mainnets, with zero tokens:
+only 32-byte SHA-256 fingerprints ever touch a chain. The session record (with live receipts)
+is at https://doi.org/10.5281/zenodo.23462705, and every Zenodo publication in this corpus
+now links to it. Public verification portal: https://deterministic-code-dsos.base44.app/genesis-viewer
+
+---
+
 This repository is the home of the **Four Horsemen** benchmark: four deterministic machines in a 2x2 crossed experiment — **lineage** (Jasper-derived / Gillian-derived) x **governance** (pure deterministic / bifurcated probabilistic-proposer-under-deterministic-cage) — run on matched inputs with a fully simulated dual-company workload corpus (**SIMZ** + the existing simulation corpus).
 
 The H-Line runs **alongside, but isolated from**, the live 60-day Lindy experiment (started September 7, 2026), intentionally offset by one month for clean receipt tracking. Two separate append-only ledgers. No cross-contamination.

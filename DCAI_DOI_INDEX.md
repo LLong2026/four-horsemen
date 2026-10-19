@@ -1,5 +1,8 @@
 # DCAI / SQUIRL OS — MASTER DOI INDEX (as of 2026-10-18)
 
+**TOKENIZATION PROOF-DAY RECORD (linked from every Zenodo publication in the corpus):**
+- https://doi.org/10.5281/zenodo.23462705 — Four-Tokenization Proof Day: seed reconstruct, two dual-rail digest ceremonies, and a UI-initiated hash-only bind on Bitcoin and XRP mainnets (2026-10-18)
+
 All Zenodo DOI records cited in the public transparency ledger,
 extracted from LEDGER.md entries 0001-0194. Each DOI is independently verifiable.
 
