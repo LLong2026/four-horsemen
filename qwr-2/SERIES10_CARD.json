@@ -1,0 +1,23 @@
+{
+  "series": 10,
+  "id": "qwr-2",
+  "title": "QWR-2: The Quad-Write Receipt No. 2 — First Real Metrics of the 60-Day Run",
+  "subtitle": "DRIFT-1 Report, Epoch 20261019 — 280 real weight updates, governance byte-frozen mid-training",
+  "digest": "5f69e1bf9a35a6fae4dd2adf8fd19f8e8135a8acb1980279caba2a377efc275e",
+  "digest_label": "sha256",
+  "class": "quad-write",
+  "rails": {
+    "bitcoin": {"txid": "a02b22db8fcd89bc5fc13f51cb3c84abeafb3055b023051d0b9ac0d1914eba0f", "wtxid": "aa9a1396b0be44ffe2d711fcc4ab0747b5bbd4f74692c1d6a39b5c0e8d830336", "payload": "OP_RETURN SQDR+0x01+digest", "explorer": "https://mempool.space/tx/a02b22db8fcd89bc5fc13f51cb3c84abeafb3055b023051d0b9ac0d1914eba0f"},
+    "xrpl": {"txid": "E3883E43A2249FB180042D60D426F9ABAF53FFA016EDB5A01D425C6742FDA2AA", "ledger": 107764054, "memo_type": "SQDR-XRP-STORE-5", "explorer": "https://xrpscan.com/tx/E3883E43A2249FB180042D60D426F9ABAF53FFA016EDB5A01D425C6742FDA2AA"},
+    "stellar": {"hash": "d47691a894b85a09f5ec5e532591bd401642459db5ab4a3c138bc2c4a4f18fac", "ledger": 65027198, "op": "ManageData SQDR-STORE-4 + memo_hash", "explorer": "https://stellar.expert/explorer/public/tx/d47691a894b85a09f5ec5e532591bd401642459db5ab4a3c138bc2c4a4f18fac"},
+    "cardano": {"txid": "f8d37e9309d3c40a90f2c399a82d1965c190e714f16570184becf7b4a64e6955", "block": 14089165, "metadata_label": 1967, "hash_convention": "blake2b256 over tx body CBOR", "explorer": "https://cexplorer.io/tx/f8d37e9309d3c40a90f2c399a82d1965c190e714f16570184becf7b4a64e6955"}
+  },
+  "doi": "10.5281/zenodo.23477976",
+  "doi_url": "https://doi.org/10.5281/zenodo.23477976",
+  "bundle_sha": "a5875a325b7400138a4ca92670d661f485c92cf9db15bb85124c15a766ff3175",
+  "postage": "700 sats + 10 drops + 200 stroops + 169197 lovelace",
+  "ledger_entry": "0233",
+  "prereg_sha": "dec2d88f1c9b9b75116c336d468c4ac6c4350610e4bcd3e92dd9ea7bd032e785",
+  "date": "2026-10-19",
+  "disclaimer": "Prototype, educational/research purposes only, not production use."
+}
