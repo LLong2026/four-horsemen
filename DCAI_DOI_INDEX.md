@@ -110,3 +110,4 @@ Total: 95 unique DOI records.
 - 10.5281/zenodo.23466738 — RTWR-1: First Recursive Tri-Tokenization — the Receipt of the First Tri-Write, Tri-Written (BTC + XRPL + Stellar, 2026-10-19)
 - 10.5281/zenodo.23467440 — QWR-1: The Quad-Write Receipt — Simultaneous Storage of a 32-Byte Digest on Bitcoin, XRPL, Stellar, and Cardano Mainnets Under One Joint Commitment (2026-10-19)
 - 10.5281/zenodo.23477976 — QWR-2: Quad-Write Receipt No. 2 — First Real Metrics of the 60-Day Run (DRIFT-1 Report, Epoch 20261019) (2026-10-19)
+- 10.5281/zenodo.23482711 — Master Thesis Volume II: Deterministic Containment of Probabilistic Intelligence, Multi-Rail Evidence Anchoring, and Intelligent Route Selection — The Squirrel OS Journey (v2.0, supersedes-and-extends DOI 10.5281/zenodo.23303240; 2026-10-19)
