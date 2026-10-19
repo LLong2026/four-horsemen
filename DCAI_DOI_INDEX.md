@@ -101,3 +101,5 @@ extracted from LEDGER.md entries 0001-0194. Each DOI is independently verifiable
 - https://doi.org/10.5281/zenodo.23455768
 
 Total: 93 unique DOI records.
+
+- 10.5281/zenodo.23463132 — The Satoshi Embodiment: A 32-Byte Hash Riding Real Satoshis Across a Bitcoin Mainnet Custody Walk (2026-10-18)
