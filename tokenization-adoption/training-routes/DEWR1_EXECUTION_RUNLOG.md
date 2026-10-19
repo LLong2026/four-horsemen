@@ -76,3 +76,16 @@ the armed ed25519 writer key stands down (key retained, rail re-openable later u
 DeWR-1 completion basis is now 9 rails: BTC, XRP, Stellar, Cardano, ETH, ALGO (certified),
 AVAX, SOL (certified), DOT (pending funding — watcher armed). The record closes when DOT lands,
 or stands at 8/9 with the waiver disclosed.
+
+## ROUTE 10 REASSIGNMENT — DOGE added, HBAR waiver confirmed (2026-10-19 ~13:10 CT)
+Leon GO (chat authorization, 2026-10-19 ~13:10 CT): Dogecoin (DOGE) selected as Route 10,
+replacing the waived Hedera slot (waiver sealed in ledger 0243; HBAR alias-init limitation
+documented there). Rationale: native OP_RETURN, real PoW security (merge-mined), ~zero
+meme-token semantics on the rail itself, keyless-verifiable by any browser explorer.
+- T1: DOGE writer key generated 2026-10-19; address DGrHsdhpNiDf5aUnE53Y7szskKxjhx4rFD
+  (p2pkh, mainnet); key staged pattern-gitignored (verified via git check-ignore).
+- T2/T3: awaiting owner funding (~$15 DOGE); training marker and DeWR-1 certification
+  digest 99e01327...b9ab6 will fire on funding arrival per the route certification playbook.
+- Record basis on completion: 10 rails attempted (BTC, XRP, Stellar, Cardano, ETH, ALGO,
+  AVAX, SOL, DOT, DOGE) with HBAR waived; certification count target 10/10 attempted rails
+  once DOT + DOGE land.
