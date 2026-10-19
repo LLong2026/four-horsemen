@@ -1,0 +1,59 @@
+{
+ "ts": 1792425493.3251252,
+ "probes": {
+  "xrp": {
+   "close_interval_s": null
+  },
+  "eth": {
+   "block_interval_s": 12,
+   "gas_gwei": 0.166999697
+  },
+  "stellar": {
+   "close_interval_s": 5
+  },
+  "cardano": {
+   "tip": 14089313
+  },
+  "btc": {
+   "sat_vb": 4
+  }
+ },
+ "expected": {
+  "xrp": {
+   "finality_s": 7.09,
+   "cost_usd": 0.002,
+   "source": "XTR-1 measured avg"
+  },
+  "stellar": {
+   "finality_s": 6.5,
+   "cost_usd": 3e-05,
+   "source": "XCF-1 measured 5-8s, midpoint"
+  },
+  "eth": {
+   "finality_s": 13.0,
+   "cost_usd": 0.01,
+   "source": "PWR-1 measured block+receipt"
+  },
+  "cardano": {
+   "finality_s": 30.0,
+   "cost_usd": 0.05,
+   "source": "PWR-1/XCF-1 measured"
+  },
+  "btc": {
+   "finality_s": 900.0,
+   "cost_usd": 0.1,
+   "source": "minutes-hours, mempool feerate 4 sat/vB"
+  }
+ },
+ "ranking": [
+  "stellar",
+  "xrp",
+  "eth",
+  "cardano",
+  "btc"
+ ],
+ "selected": [
+  "stellar",
+  "xrp"
+ ]
+}
