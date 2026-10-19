@@ -3,3 +3,8 @@
 .gov_ed25519_key
 __pycache__/
 xrp_writer_key*.json
+stellar_writer_key*.json
+cardano_writer_key*.json
+eth_writer_key*.json
+dropbox_writer_key*.json
+seed*.bin
