@@ -57,3 +57,13 @@ experimental and may contain defects.
 - T2 rehearsal txid 0x7ebb433c...770443 (disclosed deviation: marker string instead of 32-byte training digest).
 - AVALANCHE T3 PASSED → Tier 1 CERTIFIED (route 7 of 10). DeWR-1 legs now 7/10.
 - Remaining: DOT, SOL (watcher armed), HBAR (alias two-hop pending).
+
+## Leg set addendum 2 — 2026-10-19 ~12:40 CT — SOLANA (route 8)
+
+| Rail | Mechanism | Identifier of record | Confirmed | Cost | Byte-exact |
+|------|-----------|---------------------|-----------|------|-----------|
+| Solana | SPL Memo (hex-ASCII digest) | sig 3nJzuipjPmMj9Uq5rSNLXb5CtdEqjUXhfmjRUg7wETYCohKWPCz6dkWTsUaBEg7UE33MFr2UN4rggQf6cMGUP4aT | slot 458918736 | 5000 lamports | YES |
+
+- Funding: 0.2844 SOL from Coinbase. T2 rehearsal sig 67Cdt1Uid... (byte-exact).
+- SOLANA T3 PASSED → Tier 1 CERTIFIED (route 8 of 10). DeWR-1 legs now 8/10.
+- Remaining: DOT (watcher armed), HBAR (operator deciding — alias address delivered, exchange caveat).
