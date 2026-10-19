@@ -1,0 +1,517 @@
+{
+ "ceremony": "MCR-1 Merkle Root Covenant",
+ "date_utc": "2026-10-19",
+ "corpus_commit": "7c492528c9f9624bb43846b745df9a480f4d1600",
+ "leaf_count": 1891,
+ "mmr_root": "2d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a",
+ "prereg_sha256": "96ffbb53fe193effa1048959bfc7afcfe8f895af01ab803cceb3eb63ed8f73f2",
+ "scope_stamp": "mcr1_covenant_2026-10-19 (stamped 2026-10-19T22:16:48Z, before first broadcast)",
+ "envelope": "SQDR + 0x05 + 32-byte MMR root (37 bytes; hex-ASCII on UTF-8 rails, raw on binary rails)",
+ "peaks": [
+  [
+   10,
+   "fb08442b749b4006d47310e480239b8c374b4009b753096e0747bf2e676225eb"
+  ],
+  [
+   9,
+   "e173493cc6714cd17a9b1d9dfa25127f7e572a3ce25ddddb4672f052b0a0b2d6"
+  ],
+  [
+   8,
+   "9abb165a79b9bdc7fd6ffb06e1d06299f96dcaaa6fdab3c9b6ca906d13afcc62"
+  ],
+  [
+   6,
+   "deea28daf8c478196c08874f07c022c4e2e7c19b1bcfc462d685dc91ad072e32"
+  ],
+  [
+   5,
+   "830136045fd26d6ac05290ecf9ab86020d0d9661df4235b658be06484f6313f5"
+  ],
+  [
+   1,
+   "99c9f2ca7fa84e4b3db07aca2b4ceeb860e11a97398ed3602d30a6daea0e0947"
+  ],
+  [
+   0,
+   "e89ed1267eceba281167f1e0e37337abd4291c9283b7e90756bd8bbdce01288a"
+  ]
+ ],
+ "legs": {
+  "sol": {
+   "sig": "4zgs4tmPvqvRjje8bJCmC7r8iDhF6BQpqvPcYPJjfGCypTTnegSqvN62iAPSXurWGNGhk8HH8Yb4Up16Lx4Qpqnn",
+   "status": "confirmed",
+   "seconds": 2.8,
+   "link": "https://solscan.io/tx/4zgs4tmPvqvRjje8bJCmC7r8iDhF6BQpqvPcYPJjfGCypTTnegSqvN62iAPSXurWGNGhk8HH8Yb4Up16Lx4Qpqnn",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a"
+  },
+  "algo": {
+   "txid": "XLBEIUK6SFKBNUS3FWQNXRDURHFCNEFKTORIE4PTX5M7SY6JFADQ",
+   "round": 66145569,
+   "seconds": 3.2,
+   "link": "https://allo.info/tx/XLBEIUK6SFKBNUS3FWQNXRDURHFCNEFKTORIE4PTX5M7SY6JFADQ",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a"
+  },
+  "avax": {
+   "txid": "0xf386821b1626b53e4d03dc0dc968f1e9d0625f6a5b7de99624798112cc639bb0",
+   "confirmed": true,
+   "block": 98005575,
+   "gas_used": 21592,
+   "seconds": 2.3,
+   "link": "https://snowtrace.io/tx/0xf386821b1626b53e4d03dc0dc968f1e9d0625f6a5b7de99624798112cc639bb0",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a"
+  },
+  "stellar": {
+   "hash": "5f9ea3c815f9a848d4804166a911f9905c1a57b351f511b6989e82b830bdb536",
+   "ledger": 65032495,
+   "confirmed": true,
+   "seconds": 7.9,
+   "link": "https://stellar.expert/explorer/public/tx/5f9ea3c815f9a848d4804166a911f9905c1a57b351f511b6989e82b830bdb536",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a"
+  },
+  "xrp": {
+   "txid": "C42468F0141694969486CBC29005C0E5ACC8623ABF6A4012A14D12C665459480",
+   "status": "VALIDATED",
+   "seconds": 6.1,
+   "link": "https://livenet.xrpl.org/transactions/C42468F0141694969486CBC29005C0E5ACC8623ABF6A4012A14D12C665459480",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a"
+  },
+  "dot": {
+   "txid": "0x94c6997bd853b6d9f86e157bd81ccfd64d700a2de8db9381cc04596bccf96a81",
+   "included": true,
+   "block": "0x13f23a986ac43f0a115b5cdb078a3a3635b66e98695589088f886e2a4dc3df2f",
+   "seconds": 6.6,
+   "fee": 195326835,
+   "link": "https://polkadot.subscan.io/extrinsic/0x13f23a98",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a"
+  },
+  "eth": {
+   "txid": "0xe017e8b2fdc0d645c77fa81f0fdf2c430a8479f6fc9a53c3db08adcbdd0c5289",
+   "confirmed": true,
+   "block": 26229558,
+   "gas_used": 22480,
+   "seconds": 23.5,
+   "link": "https://etherscan.io/tx/0xe017e8b2fdc0d645c77fa81f0fdf2c430a8479f6fc9a53c3db08adcbdd0c5289",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a"
+  },
+  "doge": {
+   "txid": "4dc643c424cf8f374fb5f1810f3209dfe561eeab61ff4026cc93b97afb59b0bd",
+   "push": 201,
+   "seconds": 0.1,
+   "link": "https://dogechain.info/tx/4dc643c424cf8f374fb5f1810f3209dfe561eeab61ff4026cc93b97afb59b0bd",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a",
+   "utxo": "a634c34e2242612627c8604e36acb1789715eb7354803c5b4dcd5025979ec1b4:1"
+  },
+  "btc": {
+   "txid": "8728d0215fd2fc9fb8fb6ff9b011322875e88620a78787d597d529ecc1974195",
+   "fee_sats": 790,
+   "seconds": 0.3,
+   "link": "https://mempool.space/tx/8728d0215fd2fc9fb8fb6ff9b011322875e88620a78787d597d529ecc1974195",
+   "payload_hex": "53514452052d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a",
+   "block": 972219
+  },
+  "cardano": {
+   "txid": "772b4aa631bf24df010f7461629c909a59a6d63ae9dac21bc86c06bb71bfa51d",
+   "submit": "772b4aa631bf24df010f7461629c909a59a6d63ae9dac21bc86c06bb71bfa51d",
+   "seconds": 0.5,
+   "fee_lovelace": 172000,
+   "link": "https://cardanoscan.io/transaction/772b4aa631bf24df010f7461629c909a59a6d63ae9dac21bc86c06bb71bfa51d"
+  }
+ },
+ "readback": {
+  "sol": {
+   "match": true,
+   "sig": "4zgs4tmPvqvRjje8bJCmC7r8iDhF6BQpqvPcYPJjfGCypTTnegSqvN62iAPSXurWGNGhk8HH8Yb4Up16Lx4Qpqnn",
+   "note": "hex-ASCII memo byte-exact via getTransaction"
+  },
+  "dot": {
+   "match": true,
+   "block": "0x13f23a986ac43f0a115b5cdb078a3a3635b66e98695589088f886e2a4dc3df2f",
+   "block_number": 33505287,
+   "payload_in_block": true
+  },
+  "algo": {
+   "round": 66145569,
+   "match": true
+  },
+  "avax": {
+   "block": 98005575,
+   "match": true
+  },
+  "stellar": {
+   "ledger": 65032495,
+   "match": true
+  },
+  "xrp": {
+   "validated": true,
+   "match": true
+  },
+  "eth": {
+   "block": 26229558,
+   "match": true
+  },
+  "cardano": {
+   "label": 1968,
+   "cer": "MCR-1",
+   "digest": "2d1a32145cf89a6b7909d3059abe560e6f3d908e7d510525f4457e096f2cc23a",
+   "match": true,
+   "txid": "772b4aa631bf24df010f7461629c909a59a6d63ae9dac21bc86c06bb71bfa51d",
+   "note": "verified via tx_cbor raw decode (Koios tx_info metadata field returns null for plain-map aux)"
+  },
+  "doge": {
+   "encoding": "raw envelope in OP_RETURN",
+   "match": true,
+   "txid": "4dc643c424cf8f374fb5f1810f3209dfe561eeab61ff4026cc93b97afb59b0bd"
+  },
+  "btc": {
+   "encoding": "raw envelope in OP_RETURN (segwit writer, canonical txid)",
+   "match": true,
+   "confirmed": true,
+   "txid": "8728d0215fd2fc9fb8fb6ff9b011322875e88620a78787d597d529ecc1974195",
+   "block": 972219
+  }
+ },
+ "inclusion_proofs": {
+  ".gitignore": {
+   "leaf_index": 0,
+   "leaf_path": ".gitignore",
+   "leaf_file_sha256": "245bdcce085f199e07db0ba62ceb79a74620913a026ae4137f321fd993fae1ff",
+   "siblings": [
+    {
+     "node_is": "L",
+     "sibling_sha256": "c5c2b75591d228d537d978004a9298bf24a38f197e697566b41b92b613fefceb"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "cc3c2a4ebc279d1c8d5963185d945c13be44361b4d33129aeed77f6f32fd7e41"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "c02bdb274547048b53d69b77592595f4724e5a8a52ab91379d48dcb98a7ee24b"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "fc9b46a8fdfb9959388beeee6175575f286d7f25870758475e0321522262dd04"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "4c202d56633f5490a67f8420dd2deb5b8c375ac5f55e8391150b6d32b185c42d"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "380f072841a8359b9738c415f8604bbf0df2118c00a9eaeef98cf2d5a2928742"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "b425618c58cc93b1586eb4511fa3679463aa22fe3a580bf07c8dc0b2b6389a77"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "1139458089ccc73656ad00cadfbddb41d20f8fb901f3793c09ee695d6c56f8f2"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "0226226f28d68645da374ff15bb462be546bb7a7d5fab2faad4ded994dd63365"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "f61ab10985905612fae8a912df249fff6ad3c081667ea9d0e8c6a98edb33ba84"
+    }
+   ],
+   "final_peak_index": 0,
+   "root_matches_frozen": true
+  },
+  ".gitignore_gov_key": {
+   "leaf_index": 1,
+   "leaf_path": ".gitignore_gov_key",
+   "leaf_file_sha256": "b869b64b1611cee141ea042878eece8e4f0a4703f067bcc2c809ef1526cdfa10",
+   "siblings": [
+    {
+     "node_is": "R",
+     "sibling_sha256": "d1688f9acf7419738570128c569134a42603be3cc5e07e72e0cfd17ef025a9bf"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "cc3c2a4ebc279d1c8d5963185d945c13be44361b4d33129aeed77f6f32fd7e41"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "c02bdb274547048b53d69b77592595f4724e5a8a52ab91379d48dcb98a7ee24b"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "fc9b46a8fdfb9959388beeee6175575f286d7f25870758475e0321522262dd04"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "4c202d56633f5490a67f8420dd2deb5b8c375ac5f55e8391150b6d32b185c42d"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "380f072841a8359b9738c415f8604bbf0df2118c00a9eaeef98cf2d5a2928742"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "b425618c58cc93b1586eb4511fa3679463aa22fe3a580bf07c8dc0b2b6389a77"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "1139458089ccc73656ad00cadfbddb41d20f8fb901f3793c09ee695d6c56f8f2"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "0226226f28d68645da374ff15bb462be546bb7a7d5fab2faad4ded994dd63365"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "f61ab10985905612fae8a912df249fff6ad3c081667ea9d0e8c6a98edb33ba84"
+    }
+   ],
+   "final_peak_index": 0,
+   "root_matches_frozen": true
+  },
+  "entity_snapshots/2026-10-14/StaffingRequisition.json": {
+   "leaf_index": 945,
+   "leaf_path": "entity_snapshots/2026-10-14/StaffingRequisition.json",
+   "leaf_file_sha256": "50bffd5ae6c32129226572a13e08b0bc0b99f74e7cd490615f8168715e2d1119",
+   "siblings": [
+    {
+     "node_is": "R",
+     "sibling_sha256": "d7cd5b1c085e6f081f2b6c52295a595b3aa1b959212d39bb92e2486563aadeef"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "ad95cf5253812e994d3f94607b177c5314269de2112745c69ec4c97e9d934213"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "b22da014eb554a064b01c6b9ea7e1514a5651507924831b211b474256f035820"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "792ee8f9f4ca26a40da1b500faa8a539aa68a243e158dd224d54227e07aea89a"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "df238ec35141e4e5c0e8950a6c0660092de9b59e6a7842a3a8893a4d244daf41"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "440b36092d26e1128d241adf0bfbda7d5afb813014cabca5f1015759d8a375bb"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "a65d3469c2067bd3838a539ef2256abe653cd5cebc2f2222a7bc18cf8cfa2664"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "f8bc43bb0e94ace9cbb6b26ca233e0c1e152292c69c1d02b083a3e6aa6fe15da"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "3d510cc40fa749b25d45a1720d813f32b85f45f6884eb2cead250afcf382942c"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "9bec4bbd8a892d7d4036d56a7d86d54103a68da3b910cbb0b1e4bf2f477ac8f5"
+    }
+   ],
+   "final_peak_index": 0,
+   "root_matches_frozen": true
+  },
+  "zenodo_deposit_settings.json": {
+   "leaf_index": 1890,
+   "leaf_path": "zenodo_deposit_settings.json",
+   "leaf_file_sha256": "89f8b2f937c8675b1b8ba1d32bc91bed11b3297084094186c2c07697e92b8bb3",
+   "siblings": [],
+   "final_peak_index": 6,
+   "root_matches_frozen": true
+  },
+  "LEDGER.md": {
+   "leaf_index": 62,
+   "leaf_path": "LEDGER.md",
+   "leaf_file_sha256": "9c5e00408681bbaf9fc756e19daf4af0598dfb8a736fae35dab37001f1518632",
+   "siblings": [
+    {
+     "node_is": "L",
+     "sibling_sha256": "22f68fbc1b93e4ecd284139b4d4933bd0ca3f36c6946d9860cc158eeaf7c4189"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "0cef65780eece216ecd2a96e7784443132e78b25c7e742a68cfbef2f57d121b9"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "d3224abd8e96c7e992557aa41d50a8a0a978820342be5bfe56372940c1c1cf38"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "53393ac45caa4c02656fa6947ed7464bddd5b4f3f73a0d896b1ff60e7354aa02"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "e09e6cbf39e9fecc353e00528f2b0939c1daac97a2ed4b9cf393ca3e43567de0"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "b7aa7e8b67642f681ae0323f99a0b79877e2f3cb0ddc1127dfc1121f11916d58"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "b425618c58cc93b1586eb4511fa3679463aa22fe3a580bf07c8dc0b2b6389a77"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "1139458089ccc73656ad00cadfbddb41d20f8fb901f3793c09ee695d6c56f8f2"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "0226226f28d68645da374ff15bb462be546bb7a7d5fab2faad4ded994dd63365"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "f61ab10985905612fae8a912df249fff6ad3c081667ea9d0e8c6a98edb33ba84"
+    }
+   ],
+   "final_peak_index": 0,
+   "root_matches_frozen": true
+  },
+  "DCAI_DOI_INDEX.md": {
+   "leaf_index": 21,
+   "leaf_path": "DCAI_DOI_INDEX.md",
+   "leaf_file_sha256": "ff2190471a46f8c1a2b81f04910d7ac907f9d815cb1341319168e02b9eb08695",
+   "siblings": [
+    {
+     "node_is": "R",
+     "sibling_sha256": "ffc2573dc058ad8ede8a5a60dd97ac7883f1b88f3b2965a9a8e33e987144fd4c"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "766692961ec7a55584ef53e74f261b234c5e150f60f6479386ac1470499d17dc"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "f32e4686d0771f29743be3169f362d685d32dcfffa48a4073ee2be069975283d"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "03ecaa9d730ad3eca9671cc21fd994f7235da5820098c5a01c43019e85e48484"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "c24646f81f64d737807e0897e13459d0de30e2f3b5a8a843d8efb4ca1364d0b2"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "380f072841a8359b9738c415f8604bbf0df2118c00a9eaeef98cf2d5a2928742"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "b425618c58cc93b1586eb4511fa3679463aa22fe3a580bf07c8dc0b2b6389a77"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "1139458089ccc73656ad00cadfbddb41d20f8fb901f3793c09ee695d6c56f8f2"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "0226226f28d68645da374ff15bb462be546bb7a7d5fab2faad4ded994dd63365"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "f61ab10985905612fae8a912df249fff6ad3c081667ea9d0e8c6a98edb33ba84"
+    }
+   ],
+   "final_peak_index": 0,
+   "root_matches_frozen": true
+  },
+  "IR2_FINAL_ROUTING_CHAPTER.md": {
+   "leaf_index": 61,
+   "leaf_path": "IR2_FINAL_ROUTING_CHAPTER.md",
+   "leaf_file_sha256": "a4f6743688468ab14a66d374208d2d02d3d0d3eb685500cac11cacbd967a8d19",
+   "siblings": [
+    {
+     "node_is": "R",
+     "sibling_sha256": "48088a612ca7fa41a20e9a08fd940c097073581c31b9dd1b83a96cc9e22f6189"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "057069550abbef162e8857f3e27a0860ab9285bd58613adb1c921f9ae0d390d6"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "d3224abd8e96c7e992557aa41d50a8a0a978820342be5bfe56372940c1c1cf38"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "53393ac45caa4c02656fa6947ed7464bddd5b4f3f73a0d896b1ff60e7354aa02"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "e09e6cbf39e9fecc353e00528f2b0939c1daac97a2ed4b9cf393ca3e43567de0"
+    },
+    {
+     "node_is": "R",
+     "sibling_sha256": "b7aa7e8b67642f681ae0323f99a0b79877e2f3cb0ddc1127dfc1121f11916d58"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "b425618c58cc93b1586eb4511fa3679463aa22fe3a580bf07c8dc0b2b6389a77"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "1139458089ccc73656ad00cadfbddb41d20f8fb901f3793c09ee695d6c56f8f2"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "0226226f28d68645da374ff15bb462be546bb7a7d5fab2faad4ded994dd63365"
+    },
+    {
+     "node_is": "L",
+     "sibling_sha256": "f61ab10985905612fae8a912df249fff6ad3c081667ea9d0e8c6a98edb33ba84"
+    }
+   ],
+   "final_peak_index": 0,
+   "root_matches_frozen": true
+  }
+ },
+ "failed_attempts": [
+  {
+   "rail": "sol",
+   "desc": "1 raw-binary memo simulation rejection (InvalidInstructionData) before the proven hex-ASCII form; no ledger effect",
+   "cost": 0
+  },
+  {
+   "rail": "xrp",
+   "desc": "5 local xrpl-py shape errors (Wallet ctor, autofill arg order, Memo model, sign kwarg, submit arg order); all local, no ledger effect",
+   "cost": 0
+  },
+  {
+   "rail": "cardano",
+   "desc": "2 pre-acceptance 400 rejections (output pair order + aux_data_hash at wrong body key); decoder errors, no ledger effect; first correct submission accepted",
+   "cost": 0
+  },
+  {
+   "rail": "doge",
+   "desc": "1 stale-sort-param 400 on UTXO query; 1 phantom-UTXO submit rejected (script-verify \u2014 Blockchair outputs endpoint returned a nonexistent output bff3312d, cross-checked against node-backed BlockCypher which shows the real unspent CFR-9 change); 1 IP-blacklist 430 on push; resolved via BlockCypher broadcast. The phantom spend never landed: no ledger effect",
+   "cost": 0
+  },
+  {
+   "rail": "btc",
+   "desc": "clean on first broadcast",
+   "cost": 0
+  }
+ ],
+ "gates": {
+  "G1_root_matches_frozen_prereg": "PASS",
+  "G2_scope_stamp_before_first_broadcast": "PASS",
+  "G3_keyless_byte_exact_readback": "PASS (10/10 rails, all block-confirmed)",
+  "G4_fees_and_failed_attempts_disclosed": "PASS",
+  "G5_independent_public_endpoint_verification": "PASS (algonode, koios, horizon, xrplcluster, rpc.polkadot.io, mempool.space, blockcypher, publicnode, api.avax.network, api.mainnet-beta.solana.com)"
+ },
+ "routing_directive": {
+  "directive": "Going forward, Stellar Lumens (XLM) and XRP are the primary anchoring rails for evidence work",
+  "basis": "owner directive 2026-10-19: high market demand + cheapest routes among the ten certified rails (XLM $0.00001/anchor, XRP 10 drops/anchor)",
+  "authorized_as": "Leon GO (chat authorization, 2026-10-19)"
+ }
+}
