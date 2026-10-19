@@ -106,3 +106,4 @@ Total: 94 unique DOI records.
 - 10.5281/zenodo.23463568 — Project SOLACE: A Sponsor's Receipt — What Happened When a Deterministic Gate Machine Rebuilt My Subsea Reactor (Benjamin Eckenfels, 2026-10-18)
 - 10.5281/zenodo.23464082 — The Cage Is Working: A Self-Auditing Scoreboard of Deterministic Guard Refusals in a Self-Healing Operating System (2026-10-18)
 - 10.5281/zenodo.23464516 — DWR-1: The Dual-Write Receipt — Simultaneous Dual-Rail Storage of a 32-Byte Digest on Bitcoin and XRPL Mainnets Under One Joint Commitment (2026-10-19)
+- 10.5281/zenodo.23465945 — TWR-1: The Tri-Write Receipt — Simultaneous Storage of a 32-Byte Digest on Bitcoin, XRPL, and Stellar Mainnets Under One Joint Commitment (2026-10-19)
