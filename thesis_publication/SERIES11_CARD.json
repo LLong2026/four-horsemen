@@ -1,0 +1,19 @@
+{
+  "series": 11,
+  "id": "thesis-v2",
+  "title": "Master Thesis Volume II: Deterministic Containment, Multi-Rail Evidence Anchoring, and Intelligent Route Selection",
+  "subtitle": "The Squirrel OS Journey, Volume II — the eight-day arc from the cage receipt to the certified ten-route evidence layer",
+  "digest": "d676902dd34934c137793910632e02b717e3e17098303348585a5004459c827e",
+  "digest_label": "sha256 (published PDF)",
+  "class": "research-thesis",
+  "md_sha256": "1efb8f5eaf9304c2207c6d905eeca3cb73a9a3e5739152bcedae76eaa116f77d",
+  "doi": "10.5281/zenodo.23482711",
+  "doi_url": "https://doi.org/10.5281/zenodo.23482711",
+  "supersedes_note": "Extends v1.0 (DOI 10.5281/zenodo.23303240), unchanged and live per the append-only doctrine",
+  "rails": {},
+  "rails_note": "No rail legs yet — a multi-rail bind of this digest (e.g., DWR/TWR/QWR-style) is available on owner GO",
+  "ledger_entry": "0245",
+  "commit": "6d376af",
+  "date": "2026-10-19",
+  "disclaimer": "Prototype, educational/research purposes only, not production use."
+}
