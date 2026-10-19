@@ -67,3 +67,12 @@ experimental and may contain defects.
 - Funding: 0.2844 SOL from Coinbase. T2 rehearsal sig 67Cdt1Uid... (byte-exact).
 - SOLANA T3 PASSED → Tier 1 CERTIFIED (route 8 of 10). DeWR-1 legs now 8/10.
 - Remaining: DOT (watcher armed), HBAR (operator deciding — alias address delivered, exchange caveat).
+
+## Scope note — 2026-10-19 ~12:42 CT — HBAR WAIVED BY OWNER
+
+Leon (chat, 2026-10-19 ~12:41 CT): Hedera rail waived — route 10 dropped from the DeWR-1 scope.
+Basis: owner decision (alias auto-create friction; exchange incompatibility). No HBAR leg will fire;
+the armed ed25519 writer key stands down (key retained, rail re-openable later under a new ceremony).
+DeWR-1 completion basis is now 9 rails: BTC, XRP, Stellar, Cardano, ETH, ALGO (certified),
+AVAX, SOL (certified), DOT (pending funding — watcher armed). The record closes when DOT lands,
+or stands at 8/9 with the waiver disclosed.
