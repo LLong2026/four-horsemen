@@ -3,13 +3,22 @@
 # THE FOUR HORSEMEN
 ### SQUIRL OS Deterministic-Machine Benchmark Line (H-Line)
 
+## TERMINOLOGY NOTE (reset, Oct 19 2026 — ledger 0244)
+
+The word "tokenization" is retired from forward-facing language. What this program does is
+**multi-rail evidence anchoring**: non-custodial, keyless-verifiable inscription of artifact
+digests across independent mainnets. No tokens are created, moved, or needed — tokens were
+never the point, and they add nothing to moving assets on-chain in this architecture.
+Historical records below keep their original wording (append-only doctrine); everything
+new says anchoring.
+
 **Four machines. One stable. Matched inputs. Separate ledger.**
 
 </div>
 
 ---
 
-## Tokenization Without Tokens — the proof-day record
+## The Proof-Day Record — Four Anchors in One Day (originally titled "Tokenization Without Tokens"; see terminology note, ledger 0244)
 
 Four artifacts tokenized in a single day across Bitcoin and XRP mainnets, with zero tokens:
 only 32-byte SHA-256 fingerprints ever touch a chain. The session record (with live receipts)

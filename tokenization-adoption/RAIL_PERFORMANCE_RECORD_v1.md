@@ -1,5 +1,7 @@
 # THE RAIL PERFORMANCE RECORD v1.0 — DeWR-1 Artifact
 
+
+> TERMINOLOGY (ledger 0244, Oct 19 2026): forward-facing language is multi-rail evidence ANCHORING. "Tokenization" is retired; historical uses below are preserved as record.
 **SQUIRL OS Technologies LLC — Route Certification Program**
 **Date frozen: 2026-10-19 | Ceremony: DeWR-1, the Deca-Write Receipt**
 **Doctrine: measured, preregistered, keyless-verifiable. No tokenomics.**
