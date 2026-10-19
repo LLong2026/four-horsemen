@@ -100,7 +100,7 @@ extracted from LEDGER.md entries 0001-0194. Each DOI is independently verifiable
 - https://doi.org/10.5281/zenodo.23448049
 - https://doi.org/10.5281/zenodo.23455768
 
-Total: 94 unique DOI records.
+Total: 95 unique DOI records.
 
 - 10.5281/zenodo.23463132 — The Satoshi Embodiment: A 32-Byte Hash Riding Real Satoshis Across a Bitcoin Mainnet Custody Walk (2026-10-18)
 - 10.5281/zenodo.23463568 — Project SOLACE: A Sponsor's Receipt — What Happened When a Deterministic Gate Machine Rebuilt My Subsea Reactor (Benjamin Eckenfels, 2026-10-18)
@@ -108,3 +108,4 @@ Total: 94 unique DOI records.
 - 10.5281/zenodo.23464516 — DWR-1: The Dual-Write Receipt — Simultaneous Dual-Rail Storage of a 32-Byte Digest on Bitcoin and XRPL Mainnets Under One Joint Commitment (2026-10-19)
 - 10.5281/zenodo.23465945 — TWR-1: The Tri-Write Receipt — Simultaneous Storage of a 32-Byte Digest on Bitcoin, XRPL, and Stellar Mainnets Under One Joint Commitment (2026-10-19)
 - 10.5281/zenodo.23466738 — RTWR-1: First Recursive Tri-Tokenization — the Receipt of the First Tri-Write, Tri-Written (BTC + XRPL + Stellar, 2026-10-19)
+- 10.5281/zenodo.23467440 — QWR-1: The Quad-Write Receipt — Simultaneous Storage of a 32-Byte Digest on Bitcoin, XRPL, Stellar, and Cardano Mainnets Under One Joint Commitment (2026-10-19)
