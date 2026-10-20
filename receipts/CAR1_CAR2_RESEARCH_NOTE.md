@@ -62,11 +62,6 @@ All five records are now live in the Satoshi Track app (SAT-COV-2, CAR-1, CAR-2
 HashRecords) — the sat tracker makes every future ceremony leg followable by
 the sat on Bitcoin and the hash on Stellar, dual-verified.
 
-Engraved proofs pointing at wallets would technically work today — but nobody would
-understand them. The sends are how people *see* anchoring until anchoring speaks for
-itself. And now that we still have to send something, we send it in one command,
-with zero repairs, at stroop prices.
-
 ---
 *This software is a prototype and is provided for educational and research purposes
 only. It is not intended for production use, commercial deployment, or safety-critical
