@@ -76,3 +76,11 @@ Never burst XRP submits off a pre-read locally-incremented sequence — it races
 account. Refetch AccountInfo(ledger_index="validated") sequence per anchor, or
 chain from the previous submit response. Refire is free (failed submits never
 validate, no fee charged).
+
+## v2.4 — Race-proof XRP batch sequence chaining (receipted SPB-2, 2026-10-20)
+LOCKED: per-anchor AccountInfo(ledger_index='current') sequence read — the open-ledger
+view includes this burst's own submitted txs, so the next sequence is always accurate.
+tefPAST_SEQ/tefTOO_SOON -> fresh read + retry (SPB-1: 2/10 raced; SPB-2: 0/10, zero
+retries, 10/10 tesSUCCESS). Driver: rails/squirrel_rails_v2.py (v1 frozen untouched).
+XLM bundle fires in parallel with the XRP burst. Measured: XLM half of any batch is
+final in one ledger close (~5s); XRP burst window is round-trip bound (~1.2s/anchor).
