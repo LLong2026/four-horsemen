@@ -56,3 +56,23 @@ The rails exist so people can SEE the anchoring today — engraved proofs pointi
 wallets would work but nobody would understand them. Anchoring will take its place
 eventually; until then, we still have to send something — and now we send it without
 repairing anything.
+
+---
+
+# RAILS v2 — APPENDED LESSONS (frozen v1 above stays untouched)
+
+## v2.1 — System-direct envelope (version byte 0x09, receipted SPB-1, 2026-10-20)
+37 bytes: SQDR + 0x09 + SHA-256(system artifact). Direct ledger-pure mode: XRP
+burst anchors + XLM bundle transport, no Bitcoin required. Reserved for system
+artifacts where the sat epoch seal covers the corpus at the covenant level.
+
+## v2.2 — XLM bundle construction (receipted SPB-1)
+ONE XLM transaction, N manage_data ops (data_name=tag, data_value=37B envelope),
+base_fee=100 stroops PER OP. 10 ops = 1000 stroops ≈ $0.00008. Byte-exact readback
+per entry.
+
+## v2.3 — Burst-sequence lesson (honest defect, SPB-1: 2/10 tefPAST_SEQ)
+Never burst XRP submits off a pre-read locally-incremented sequence — it races the
+account. Refetch AccountInfo(ledger_index="validated") sequence per anchor, or
+chain from the previous submit response. Refire is free (failed submits never
+validate, no fee charged).
