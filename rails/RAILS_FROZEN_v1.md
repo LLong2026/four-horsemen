@@ -95,3 +95,8 @@ ROUTE REMAINS v2.4 (serial, per-anchor current-read chaining). Driver
 rails/squirrel_rails_v3.py retained as the falsification receipt; use squirrel_
 rails_v2.py in production. XLM bundle remains the instant lane (one tx, N anchors,
 ~5s). Remaining v4 lever, if ever needed: dedicated single XRPL endpoint.
+
+## Envelope registry — v0x0A DID CARRIER (receipted FT-1, 2026-10-20, ledger 0279)
+NEW version byte: 0x0A = DID carrier (payload = SHA256 of a DID core document).
+Route recipe frozen at routes/FT1_FRACTAL_DID_ROUTE.md. Registry: 0x07 corpus root,
+0x08 covenant carrier, 0x09 system direct, 0x0A DID carrier.
