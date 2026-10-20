@@ -1,0 +1,17 @@
+{
+ "did_xlm": "GDDMXP23C4PP2HJDG7FRHE4TTYQCJZMZDZU6TRAJSJ3IJD6NRJ3HULCA",
+ "hop1_create": "1793c5570cd82ee87bd0aa970bfe3336294a73ca36a8f6b12c13fe18a328d6da",
+ "hop1_create_ledger": 65048107,
+ "hop1_create_amount": "1.0",
+ "mystery_credit": "03dd54e304cb163f74f9049d91d72fb79fc8ffd0521c4fac8cf51e5d9f200b2c",
+ "mystery_from": "GDIQ4JOS7T4VDBYDYSPOAER323KF2BHFWD4OUAMO2NROVGBJKHTWVLT5",
+ "mystery_amount": "0.0001",
+ "topup": "f503763647bb47",
+ "topup_ledger": 65048169,
+ "dust_probe": "14dd35160b1adee971b954c47059c96004ddf0af3d9367d7e5385bd078badd13",
+ "hop2_return": "ca941425e8ebb39ca044cb5c4096ff66438eef5f9f69292643aafe11b94e9c8a",
+ "hop2_ledger": 65048176,
+ "return_amount": "0.9",
+ "memo_return": "SQDR-HAND-1R 494B1C91FB04C8F",
+ "reserve_note": "Stellar basic-account reserve = (2+0) x 0.5 = 1.0 XLM; failed return attempts each charged 100 stroops; fixed via top-up + 0.9 return; DID wallet retains 1.0999 XLM (reserve)"
+}

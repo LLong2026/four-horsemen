@@ -1,0 +1,18 @@
+{
+ "tag": "SQDR-FL-1",
+ "payload_hex": "535144520bd854e592ed962163f607685fb37c7e642304c81c4b7609cd8a57403f21d5d0a4",
+ "xlm": {
+  "hash": "6a5baf7728df15ecaa180054107db36302c2eb78425ac5110e3932b879469ab4",
+  "ledger": 65047855,
+  "ok": true,
+  "seconds": 8.6,
+  "readback": "https://horizon.stellar.org/accounts/GDIQGGTUC4FTLZ3XCDB7K353W2FUMKVMOWR3QOY5CZHWA2MTD2KMVLT5/data/SQDR-FL-1"
+ },
+ "xrp": {
+  "txid": "80D84D1A43929D6CAA499A78C1347EF8CB6E336DB96748DE948C6E73A55C65D6",
+  "engine": "tesSUCCESS",
+  "ok": true,
+  "seconds": 0.9
+ },
+ "total_seconds": 10.9
+}

@@ -1,0 +1,15 @@
+{
+ "lease": {
+  "anchor_block_hash": "000000000000000000017a1f17cc8976688caede4ec1410b3956f2b8a6cbee0e",
+  "anchor_block_height": 972367,
+  "did": "did:sqdr:ea942df94668c93955fb8792c029a4aa82f6d179",
+  "leasee_pubkey": "08d204fe6763bee1bd975f488bea4334608d75bd7841e86d770b144732293dbb",
+  "owner_pubkey": "dac3255223651af3e97c7bb50e492bd2c80b679c659f4d9cb328a1cfcdef2755",
+  "program": "SQUIRL OS FL-1",
+  "terms": "non-commercial demonstration lease of covenant sat authority; fraction never moves; owner recovery after window",
+  "version": 1,
+  "window": "CSV 7 units x 512s time-based ~= 3584s from lease confirmation"
+ },
+ "lease_json": "{\"anchor_block_hash\":\"000000000000000000017a1f17cc8976688caede4ec1410b3956f2b8a6cbee0e\",\"anchor_block_height\":972367,\"did\":\"did:sqdr:ea942df94668c93955fb8792c029a4aa82f6d179\",\"leasee_pubkey\":\"08d204fe6763bee1bd975f488bea4334608d75bd7841e86d770b144732293dbb\",\"owner_pubkey\":\"dac3255223651af3e97c7bb50e492bd2c80b679c659f4d9cb328a1cfcdef2755\",\"program\":\"SQUIRL OS FL-1\",\"terms\":\"non-commercial demonstration lease of covenant sat authority; fraction never moves; owner recovery after window\",\"version\":1,\"window\":\"CSV 7 units x 512s time-based ~= 3584s from lease confirmation\"}",
+ "lease_digest": "6248b8e31d890742e30a93f04aa918da9ad4f90b588dac915ee9b4ee3112ebf6"
+}

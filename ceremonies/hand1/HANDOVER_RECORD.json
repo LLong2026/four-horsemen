@@ -1,0 +1,17 @@
+{
+ "record": {
+  "anchor_block_hash": "0000000000000000000113b7ba3cd957ab72896bd2cb04e14358ff8104a719cc",
+  "corpus_root_new": "88903202273adeba0f411529abbd522fd2c1f1838f7d0b688e9f1b32ce2c9bd4",
+  "purpose": "global fraction ownership transfer and return demo: authority changes hands across the owner wallets and returns home",
+  "ring": [
+   "SAT-A",
+   "SAT-B",
+   "SAT-C",
+   "SAT-A-return"
+  ],
+  "program": "SQUIRL OS HAND-1",
+  "version": 1
+ },
+ "record_json": "{\"anchor_block_hash\":\"0000000000000000000113b7ba3cd957ab72896bd2cb04e14358ff8104a719cc\",\"corpus_root_new\":\"88903202273adeba0f411529abbd522fd2c1f1838f7d0b688e9f1b32ce2c9bd4\",\"program\":\"SQUIRL OS HAND-1\",\"purpose\":\"global fraction ownership transfer and return demo: authority changes hands across the owner wallets and returns home\",\"ring\":[\"SAT-A\",\"SAT-B\",\"SAT-C\",\"SAT-A-return\"],\"version\":1}",
+ "digest": "0b16140928d34d357967485b2bbd2080745d4b344a435bcbd6ef04b34bef2c14"
+}

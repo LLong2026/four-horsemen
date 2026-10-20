@@ -1,0 +1,22 @@
+{
+ "tag": "SQDR-FL-2",
+ "payload_hex": "535144520baea69c06c9b701b1c271aea159cdeab9010af7086c896424f08c12e2bdeaead9",
+ "composite": "aea69c06c9b701b1c271aea159cdeab9010af7086c896424f08c12e2bdeaead9",
+ "d2": "589a53abd3a639252fc4c2165029115e5d2ba2a39a41ea27202c85029362f6df",
+ "recovery_txid": "4fbdf071d8aa632751bebfdff1fdfb9ba8bb0e1ec9db323072d5fe457f259d3a",
+ "xrp": {
+  "txid": "A5B92EBB2946D9544FDB478B70D9DF16459B2B050EE7FCF38AA3007D469C0BDB",
+  "engine": "tesSUCCESS",
+  "ok": true,
+  "ledger": 107791975,
+  "memo_byte_exact": true,
+  "close_time": "2026-10-20T21:42:40Z"
+ },
+ "xlm": {
+  "hash": "db00318e780c367618dba392ba609247b0285e7e6f02a885da105578b966eaa2",
+  "ledger": 65049367,
+  "ok": true,
+  "seconds": 7.2,
+  "readback": "https://horizon.stellar.org/accounts/GDIQGGTUC4FTLZ3XCDB7K353W2FUMKVMOWR3QOY5CZHWA2MTD2KMVLT5/data/SQDR-FL-2"
+ }
+}
