@@ -100,3 +100,7 @@ rails_v2.py in production. XLM bundle remains the instant lane (one tx, N anchor
 NEW version byte: 0x0A = DID carrier (payload = SHA256 of a DID core document).
 Route recipe frozen at routes/FT1_FRACTAL_DID_ROUTE.md. Registry: 0x07 corpus root,
 0x08 covenant carrier, 0x09 system direct, 0x0A DID carrier.
+
+## Envelope registry — v0x0B LEASE CARRIER (receipted FL-1, 2026-10-20, ledger 0281)
+NEW version byte: 0x0B = lease carrier (payload = SHA256(lease_digest||outpoint)).
+Registry: 0x07 corpus root, 0x08 covenant carrier, 0x09 system direct, 0x0A DID carrier, 0x0B lease carrier.
