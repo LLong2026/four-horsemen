@@ -84,3 +84,14 @@ tefPAST_SEQ/tefTOO_SOON -> fresh read + retry (SPB-1: 2/10 raced; SPB-2: 0/10, z
 retries, 10/10 tesSUCCESS). Driver: rails/squirrel_rails_v2.py (v1 frozen untouched).
 XLM bundle fires in parallel with the XRP burst. Measured: XLM half of any batch is
 final in one ledger close (~5s); XRP burst window is round-trip bound (~1.2s/anchor).
+
+## v3 — PARALLEL SLOTS: FALSIFIED (receipted SPB-3, 2026-10-20)
+Tested: one current-read + deterministic sequence slots + 10 concurrent submit
+threads. Result: heavy intra-burst retrying, 2/10 stranded in persistent
+tefPAST_SEQ (concurrent threads read the same sequence before any tx lands at the
+load-balanced endpoint), all-final 31.9s vs v2.4's clean 14.1s. VERDICT: do not
+parallelize same-account XRP bursts at a community load balancer. LOCKED BATCH
+ROUTE REMAINS v2.4 (serial, per-anchor current-read chaining). Driver
+rails/squirrel_rails_v3.py retained as the falsification receipt; use squirrel_
+rails_v2.py in production. XLM bundle remains the instant lane (one tx, N anchors,
+~5s). Remaining v4 lever, if ever needed: dedicated single XRPL endpoint.
