@@ -1,0 +1,40 @@
+{
+ "sol": {
+  "sol": 0.284380782
+ },
+ "algo": {
+  "algo": 49.894042,
+  "min": 0.1
+ },
+ "avax": {
+  "avax": 2.4997267110822303
+ },
+ "xlm": {
+  "error": "'balance'"
+ },
+ "xrp": {
+  "xrp": 30.176105,
+  "sequence": 107745097
+ },
+ "dot": {
+  "raw": "{'code': 403, 'message': 'Subscan API strictly requires an API key. Unauthenticated access is disabled. Visit https://support.subscan.io/ for details.'}"
+ },
+ "ada": {
+  "utxo_count": 1,
+  "total_ada": 74.553925
+ },
+ "eth": {
+  "eth": 0.0123402032904212,
+  "gas_price_gwei": 0.050942374
+ },
+ "doge": {
+  "doge": 14.8,
+  "n_tx": 5,
+  "mcr1_change_seen": true
+ },
+ "btc": {
+  "utxos": 1,
+  "total_sats": 75549,
+  "largest": 75549
+ }
+}

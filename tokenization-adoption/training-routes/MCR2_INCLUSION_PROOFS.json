@@ -1,0 +1,107 @@
+{
+ "corpus_commit": "bf13210",
+ "leaf_count": 1906,
+ "root": "1929707efa24de4ff12f619af2c58c8c924d8bdbc7c45684608ef6e0fdcccb60",
+ "construction": "SHA-256(0x00||sha256(file)); node SHA-256(0x01||L||R); bag R-to-L; root SHA-256(0x03||bag||n_u64LE)",
+ "proofs": {
+  "first_leaf_0": {
+   "path_index": 0,
+   "path": ".gitignore",
+   "leaf_sha": "d1688f9acf7419738570128c569134a42603be3cc5e07e72e0cfd17ef025a9bf",
+   "path_len": 10,
+   "siblings": [
+    "c5c2b75591d228d537d978004a9298bf24a38f197e697566b41b92b613fefceb",
+    "cc3c2a4ebc279d1c8d5963185d945c13be44361b4d33129aeed77f6f32fd7e41",
+    "c02bdb274547048b53d69b77592595f4724e5a8a52ab91379d48dcb98a7ee24b",
+    "fc9b46a8fdfb9959388beeee6175575f286d7f25870758475e0321522262dd04",
+    "4c202d56633f5490a67f8420dd2deb5b8c375ac5f55e8391150b6d32b185c42d",
+    "25a28678d27196a9e4826b1648f9ad2cf53a8df5a84aee4f2c8dbe1cdfc870ba",
+    "b425618c58cc93b1586eb4511fa3679463aa22fe3a580bf07c8dc0b2b6389a77",
+    "1139458089ccc73656ad00cadfbddb41d20f8fb901f3793c09ee695d6c56f8f2",
+    "0226226f28d68645da374ff15bb462be546bb7a7d5fab2faad4ded994dd63365",
+    "f61ab10985905612fae8a912df249fff6ad3c081667ea9d0e8c6a98edb33ba84"
+   ]
+  },
+  "second_leaf_1": {
+   "path_index": 1,
+   "path": ".gitignore_gov_key",
+   "leaf_sha": "c5c2b75591d228d537d978004a9298bf24a38f197e697566b41b92b613fefceb",
+   "path_len": 10,
+   "siblings": [
+    "d1688f9acf7419738570128c569134a42603be3cc5e07e72e0cfd17ef025a9bf",
+    "cc3c2a4ebc279d1c8d5963185d945c13be44361b4d33129aeed77f6f32fd7e41",
+    "c02bdb274547048b53d69b77592595f4724e5a8a52ab91379d48dcb98a7ee24b",
+    "fc9b46a8fdfb9959388beeee6175575f286d7f25870758475e0321522262dd04",
+    "4c202d56633f5490a67f8420dd2deb5b8c375ac5f55e8391150b6d32b185c42d",
+    "25a28678d27196a9e4826b1648f9ad2cf53a8df5a84aee4f2c8dbe1cdfc870ba",
+    "b425618c58cc93b1586eb4511fa3679463aa22fe3a580bf07c8dc0b2b6389a77",
+    "1139458089ccc73656ad00cadfbddb41d20f8fb901f3793c09ee695d6c56f8f2",
+    "0226226f28d68645da374ff15bb462be546bb7a7d5fab2faad4ded994dd63365",
+    "f61ab10985905612fae8a912df249fff6ad3c081667ea9d0e8c6a98edb33ba84"
+   ]
+  },
+  "mid_leaf_952": {
+   "path_index": 952,
+   "path": "entity_snapshots/2026-10-14/WorkdaySync.json",
+   "leaf_sha": "966caa642c96ed1dc0eebf9e3cf1429abaa9a46b82d927ae2cb3259bc6de082c",
+   "path_len": 10,
+   "siblings": [
+    "3b1841ee9db3edfe791d1d633cbc86698a086ef6beeeac7c1eb8c52893bd90a1",
+    "b2351a443e88fc039db91cf241227c9de364cf6f83469a26645b7b47e0021471",
+    "11628f7e0ccdf0b0af3a975a7909ab98169a485bdafba842bd5784a62599a335",
+    "4ad308be4d5c285d84440c7be9c13a0837fcf201fc76bc3651fe0496f5b5b2b6",
+    "df238ec35141e4e5c0e8950a6c0660092de9b59e6a7842a3a8893a4d244daf41",
+    "440b36092d26e1128d241adf0bfbda7d5afb813014cabca5f1015759d8a375bb",
+    "a65d3469c2067bd3838a539ef2256abe653cd5cebc2f2222a7bc18cf8cfa2664",
+    "f8bc43bb0e94ace9cbb6b26ca233e0c1e152292c69c1d02b083a3e6aa6fe15da",
+    "3d510cc40fa749b25d45a1720d813f32b85f45f6884eb2cead250afcf382942c",
+    "5b16dc35c4fe95366c65fe1dc30dc9a0d8a7f045566a70aaed6774ce98fb5641"
+   ]
+  },
+  "mid_leaf_953": {
+   "path_index": 953,
+   "path": "entity_snapshots/2026-10-16/AegisAnomaly.json",
+   "leaf_sha": "3b1841ee9db3edfe791d1d633cbc86698a086ef6beeeac7c1eb8c52893bd90a1",
+   "path_len": 10,
+   "siblings": [
+    "966caa642c96ed1dc0eebf9e3cf1429abaa9a46b82d927ae2cb3259bc6de082c",
+    "b2351a443e88fc039db91cf241227c9de364cf6f83469a26645b7b47e0021471",
+    "11628f7e0ccdf0b0af3a975a7909ab98169a485bdafba842bd5784a62599a335",
+    "4ad308be4d5c285d84440c7be9c13a0837fcf201fc76bc3651fe0496f5b5b2b6",
+    "df238ec35141e4e5c0e8950a6c0660092de9b59e6a7842a3a8893a4d244daf41",
+    "440b36092d26e1128d241adf0bfbda7d5afb813014cabca5f1015759d8a375bb",
+    "a65d3469c2067bd3838a539ef2256abe653cd5cebc2f2222a7bc18cf8cfa2664",
+    "f8bc43bb0e94ace9cbb6b26ca233e0c1e152292c69c1d02b083a3e6aa6fe15da",
+    "3d510cc40fa749b25d45a1720d813f32b85f45f6884eb2cead250afcf382942c",
+    "5b16dc35c4fe95366c65fe1dc30dc9a0d8a7f045566a70aaed6774ce98fb5641"
+   ]
+  },
+  "last_leaf_1905": {
+   "path_index": 1905,
+   "path": "zenodo_deposit_settings.json",
+   "leaf_sha": "e89ed1267eceba281167f1e0e37337abd4291c9283b7e90756bd8bbdce01288a",
+   "path_len": 1,
+   "siblings": [
+    "6119d2399fe1a16390b57e1bda5f569f11b821cc3fb2fdff5f8b06668febad72"
+   ]
+  },
+  "ledger_md": {
+   "path_index": 62,
+   "path": "LEDGER.md",
+   "leaf_sha": "f9ca2e9be0634c179b268c8a4b2484698550f2a630a8eeb954d9e23f1ffe62ac",
+   "path_len": 10,
+   "siblings": [
+    "22f68fbc1b93e4ecd284139b4d4933bd0ca3f36c6946d9860cc158eeaf7c4189",
+    "0cef65780eece216ecd2a96e7784443132e78b25c7e742a68cfbef2f57d121b9",
+    "d3224abd8e96c7e992557aa41d50a8a0a978820342be5bfe56372940c1c1cf38",
+    "53393ac45caa4c02656fa6947ed7464bddd5b4f3f73a0d896b1ff60e7354aa02",
+    "e09e6cbf39e9fecc353e00528f2b0939c1daac97a2ed4b9cf393ca3e43567de0",
+    "b7aa7e8b67642f681ae0323f99a0b79877e2f3cb0ddc1127dfc1121f11916d58",
+    "b425618c58cc93b1586eb4511fa3679463aa22fe3a580bf07c8dc0b2b6389a77",
+    "1139458089ccc73656ad00cadfbddb41d20f8fb901f3793c09ee695d6c56f8f2",
+    "0226226f28d68645da374ff15bb462be546bb7a7d5fab2faad4ded994dd63365",
+    "f61ab10985905612fae8a912df249fff6ad3c081667ea9d0e8c6a98edb33ba84"
+   ]
+  }
+ }
+}

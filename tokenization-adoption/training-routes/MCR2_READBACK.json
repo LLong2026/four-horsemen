@@ -1,0 +1,64 @@
+{
+ "sol": {
+  "match": true,
+  "slot": 459124851,
+  "note": "hex-ASCII memo byte-exact via getTransaction (base58-decoded)"
+ },
+ "algo": {
+  "match": true,
+  "round": null,
+  "note": "raw 37-byte envelope in note field, via indexer"
+ },
+ "avax": {
+  "match": true,
+  "block": 98033871
+ },
+ "xlm": {
+  "match": true,
+  "ledger": 65038128
+ },
+ "xrp": {
+  "match": true,
+  "validated": true
+ },
+ "dot": {
+  "match": true,
+  "block_number": 33509976,
+  "note": "hex-ASCII remark payload found in block extrinsics (keyless chain_getBlock)"
+ },
+ "eth": {
+  "match": true,
+  "block": 26231900,
+  "status": "0x1"
+ },
+ "cardano": {
+  "match": true,
+  "label": 1968,
+  "cer": "MCR-2"
+ },
+ "doge": {
+  "match": true,
+  "confirmations": 2,
+  "encoding": "raw envelope in OP_RETURN"
+ },
+ "btc": {
+  "match": true,
+  "block": 972275,
+  "confirmed": true,
+  "encoding": "raw envelope in OP_RETURN (segwit writer, canonical txid)"
+ },
+ "g5_mcr1_anchors": {
+  "btc_mcr1": {
+   "unmodified": true,
+   "block": 972219
+  },
+  "xrp_mcr1": {
+   "unmodified": true,
+   "validated": true
+  },
+  "xlm_mcr1": {
+   "unmodified": true,
+   "ledger": 65032495
+  }
+ }
+}
