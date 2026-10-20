@@ -1,0 +1,19 @@
+{
+ "recomputed_cov_key_from_pubkey_plus_root": "38ed58ed8e81e59801378f42117e66481db649602ec0cc533ff96dc19dbb16ed",
+ "matches_broadcast_key": true,
+ "confirmed": false,
+ "block": null,
+ "fee": 2000,
+ "cov_value": 330,
+ "cov_spk_matches_new_root_tweak": true,
+ "tank_value": 4000,
+ "vin": [
+  "d261810cd86c9c616c2f5545a0f14deab9cf9bcac444d5dc64371d1b0e871399:0",
+  "d261810cd86c9c616c2f5545a0f14deab9cf9bcac444d5dc64371d1b0e871399:1"
+ ],
+ "spent_old_covenant": true,
+ "old_covenant_utxo_spent": "n/a",
+ "stellar_byte_exact": true,
+ "xrp_byte_exact": true,
+ "xrp_validated": true
+}

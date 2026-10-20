@@ -1,0 +1,28 @@
+{
+ "txid": "1f6d4b53b386cddc9d47890f2738673246166379b6a19102b2f344f4371be19c",
+ "cov_vout": 0,
+ "tank_vout": 1,
+ "cov_value": 330,
+ "tank_value": 4000,
+ "fee": 2000,
+ "holder": "sat_a",
+ "old_root": "1929707efa24de4ff12f619af2c58c8c924d8bdbc7c45684608ef6e0fdcccb60",
+ "new_root": "267f13b0088c2bb82addf7358e4c50cf7c1e1fc7023be00e1194149bb56f34bf",
+ "new_cov_out_key": "38ed58ed8e81e59801378f42117e66481db649602ec0cc533ff96dc19dbb16ed",
+ "broadcast": "1f6d4b53b386cddc9d47890f2738673246166379b6a19102b2f344f4371be19c",
+ "stellar": {
+  "hash": "26cedf0303aaa3371810c16b964896aa5554979fcd27ace462b039d77901bfe8",
+  "ledger": 65038806,
+  "confirmed": true,
+  "seconds": 6.2,
+  "link": "https://stellar.expert/explorer/public/tx/26cedf0303aaa3371810c16b964896aa5554979fcd27ace462b039d77901bfe8",
+  "payload_hex": "5351445207267f13b0088c2bb82addf7358e4c50cf7c1e1fc7023be00e1194149bb56f34bf"
+ },
+ "xrp": {
+  "txid": "BD43F2EF6E019ED25E72468AC41BB024DA323987FD23B35A5036B2EB3BEB1779",
+  "status": "VALIDATED",
+  "seconds": 1.1,
+  "link": "https://livenet.xrpl.org/transactions/BD43F2EF6E019ED25E72468AC41BB024DA323987FD23B35A5036B2EB3BEB1779",
+  "payload_hex": "5351445207267f13b0088c2bb82addf7358e4c50cf7c1e1fc7023be00e1194149bb56f34bf"
+ }
+}
