@@ -1,0 +1,49 @@
+{
+ "fund": {
+  "txid": "e4e3806fd4243e2db784c08c240d8f592d54cc83dfb90e658265638c507738db",
+  "cov_vout": 0,
+  "tank_vout": 1,
+  "change_vout": 2,
+  "cov_value": 330,
+  "tank_value": 10000,
+  "change": 62429,
+  "fee": 2000,
+  "raw_len": 277,
+  "wtxid_disclosure": "initial legs entry recorded wtxid db387750 (python-bitcoinlib GetTxid on segwit, defect class 0228); hop1 attempts 1-2 rejected bad-txns-inputs-missingorspent (no state change); corrected to canonical txid e4e3806f"
+ },
+ "hop1": {
+  "txid": "67271ff3d6cab58057ea7e6fb85243ccbcfc72996a786b54ae8f9c3747b00038",
+  "cov_vout": 0,
+  "tank_vout": 1,
+  "cov_value": 330,
+  "tank_value": 8000,
+  "fee": 2000,
+  "holder_from": "sat_a",
+  "holder_to": "sat_b"
+ },
+ "hop2": {
+  "txid": "d261810cd86c9c616c2f5545a0f14deab9cf9bcac444d5dc64371d1b0e871399",
+  "cov_vout": 0,
+  "tank_vout": 1,
+  "cov_value": 330,
+  "tank_value": 6000,
+  "fee": 2000,
+  "holder_from": "sat_b",
+  "holder_to": "sat_a"
+ },
+ "stellar": {
+  "hash": "6f7747b45b26f50c2c35c0fd629c7aa671e948a0a2a4838e0e610f00d9a50287",
+  "ledger": 65038556,
+  "confirmed": true,
+  "seconds": 4.0,
+  "link": "https://stellar.expert/explorer/public/tx/6f7747b45b26f50c2c35c0fd629c7aa671e948a0a2a4838e0e610f00d9a50287",
+  "payload_hex": "53514452071929707efa24de4ff12f619af2c58c8c924d8bdbc7c45684608ef6e0fdcccb60"
+ },
+ "xrp": {
+  "txid": "A1ACA5826EBCC2E40DBE2887140DF8692344571494367F7C9DD4C17199BFA2A9",
+  "status": "VALIDATED",
+  "seconds": 1.0,
+  "link": "https://livenet.xrpl.org/transactions/A1ACA5826EBCC2E40DBE2887140DF8692344571494367F7C9DD4C17199BFA2A9",
+  "payload_hex": "53514452071929707efa24de4ff12f619af2c58c8c924d8bdbc7c45684608ef6e0fdcccb60"
+ }
+}

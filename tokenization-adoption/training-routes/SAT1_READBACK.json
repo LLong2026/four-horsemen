@@ -1,0 +1,52 @@
+{
+ "fund": {
+  "txid": "e4e3806fd4243e2db784c08c240d8f592d54cc83dfb90e658265638c507738db",
+  "confirmed": true,
+  "block": 972278,
+  "fee": 2000,
+  "vin": [
+   "909f8ec8ff93d240afa39b332ec6db0ad767be6fce7f2afe01b7904d8b7eb524:1"
+  ],
+  "cov_value": 330,
+  "cov_tweak_match": true,
+  "tank_value": 10000,
+  "tank_tweak_match": true,
+  "change_value": 62429
+ },
+ "hop1": {
+  "txid": "67271ff3d6cab58057ea7e6fb85243ccbcfc72996a786b54ae8f9c3747b00038",
+  "confirmed": true,
+  "block": 972278,
+  "fee": 2000,
+  "vin": [
+   "e4e3806fd4243e2db784c08c240d8f592d54cc83dfb90e658265638c507738db:0",
+   "e4e3806fd4243e2db784c08c240d8f592d54cc83dfb90e658265638c507738db:1"
+  ],
+  "cov_value": 330,
+  "cov_tweak_match": true,
+  "tank_value": 8000,
+  "tank_tweak_match": true
+ },
+ "hop2": {
+  "txid": "d261810cd86c9c616c2f5545a0f14deab9cf9bcac444d5dc64371d1b0e871399",
+  "confirmed": true,
+  "block": 972278,
+  "fee": 2000,
+  "vin": [
+   "67271ff3d6cab58057ea7e6fb85243ccbcfc72996a786b54ae8f9c3747b00038:0",
+   "67271ff3d6cab58057ea7e6fb85243ccbcfc72996a786b54ae8f9c3747b00038:1"
+  ],
+  "cov_value": 330,
+  "cov_tweak_match": true,
+  "tank_value": 6000,
+  "tank_tweak_match": true
+ },
+ "stellar": {
+  "match": true
+ },
+ "xrp": {
+  "match": true,
+  "validated": true
+ },
+ "g5_prior_art_disclosed": true
+}

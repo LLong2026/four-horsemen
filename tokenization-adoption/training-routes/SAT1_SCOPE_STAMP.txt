@@ -1,0 +1,1 @@
+sat1_satoshi_covenant_2026-10-20 2026-10-20T06:38:18Z frozen-root 1929707efa24de4ff12f619af2c58c8c924d8bdbc7c45684608ef6e0fdcccb60 parent-covenant MCR-2(ledger 0265)
