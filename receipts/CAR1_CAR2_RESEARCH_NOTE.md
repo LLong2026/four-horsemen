@@ -62,24 +62,6 @@ All five records are now live in the Satoshi Track app (SAT-COV-2, CAR-1, CAR-2
 HashRecords) — the sat tracker makes every future ceremony leg followable by
 the sat on Bitcoin and the hash on Stellar, dual-verified.
 
-## The last frontier: universal smart routing through SWIFT
-The honest read: SWIFT is a member-owned cooperative. Touching it directly requires
-being a licensed, supervised financial institution with a BIC — a certification we
-do not hold and should not pretend to hold. But the *message standard* it runs on,
-ISO 20022, is public, and the Universal Bridge already speaks it fluently (patent
-pending, 64/094,360 / 19/693,343 family).
-
-So the smart play is exactly the two Leon named, and we recommend the second:
-- **Wait for the right sponsor.** A member bank or licensed fintech partner can plug
-  the bridge into SWIFT without us ever being the member. Our ISO 20022 demonstration
-  corpus (Universal Seed → deterministic routing → canonical settlement receipts) is
-  the asset that makes a sponsor say yes — the value is *being sponsor-ready*, not
-  in chasing a certification we cannot use alone.
-- **Until then, leave it alone.** The public rails already prove the routing thesis
-  end to end, keylessly, for three hundredths of a cent. The frontier is not a door
-  we knock on; it is a door that opens when someone with a BIC wants what is on the
-  other side of it. The record shows the capability. The sponsor brings the keys.
-
 Engraved proofs pointing at wallets would technically work today — but nobody would
 understand them. The sends are how people *see* anchoring until anchoring speaks for
 itself. And now that we still have to send something, we send it in one command,
