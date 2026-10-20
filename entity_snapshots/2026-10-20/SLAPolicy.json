@@ -1,0 +1,40 @@
+{
+ "entity": "SLAPolicy",
+ "exported_at": "2026-10-20T09:04:26.305Z",
+ "count": 2,
+ "possible_truncation": false,
+ "records": [
+  {
+   "resolution_minutes": 240,
+   "priority": "P2",
+   "active": true,
+   "target_compliance_pct": 99.9,
+   "policy_id": "SLA-LF-20260831",
+   "description": "SaaS SLA",
+   "name": "SaaS Premium",
+   "urgency": "high",
+   "first_response_minutes": 60,
+   "impact": "high",
+   "id": "6a95420a20be8ace1bb1e7e1",
+   "created_date": "2026-08-31T08:57:46.336000",
+   "updated_date": "2026-08-31T08:57:46.336000",
+   "is_sample": false
+  },
+  {
+   "resolution_minutes": 240,
+   "priority": "P2",
+   "active": true,
+   "target_compliance_pct": 99.9,
+   "policy_id": "SLA-SAAS-PREMIUM",
+   "description": "Premium 24/7 SaaS SLA",
+   "name": "SaaS Premium 24/7",
+   "urgency": "high",
+   "first_response_minutes": 60,
+   "impact": "high",
+   "id": "6a954209a33f91241f7f8839",
+   "created_date": "2026-08-31T08:57:45.915000",
+   "updated_date": "2026-08-31T08:57:45.915000",
+   "is_sample": false
+  }
+ ]
+}
