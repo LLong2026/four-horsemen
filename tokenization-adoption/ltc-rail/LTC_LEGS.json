@@ -1,0 +1,17 @@
+{
+ "label": "LTC-CERT-1",
+ "txid": "3604955253332f0bd67f59ad1eabc0dda10763265f410d9a0258df0b949abb6e",
+ "digest": "99e01327c26b393f9e871f6ebe71a038da62940ccfb3f328ce90faaf653b9ab6",
+ "envelope_hex": "535144520699e01327c26b393f9e871f6ebe71a038da62940ccfb3f328ce90faaf653b9ab6",
+ "push_http": 201,
+ "push_resp": "{\n  \"tx\": {\n    \"block_height\": -1,\n    \"block_index\": -1,\n    \"hash\": \"3604955253332f0bd67f59ad1eabc0dda10763265f410d9a0258df0b949abb6e\",\n    \"addresses\": [\n      \"LYhD9b7ipytek7KcJSU4EtKfqHLg8Kgiuc\"\n    ],\n    \"total\": 15893393,\n    \"fees\": 100000,\n    \"size\": 240,\n    \"vsize\": 240,\n    \"preferenc",
+ "change_litoshi": 15893393,
+ "funding_utxo": "351c9c980dc385f3d914bb161d0b172d5d82dc5fa3fcda5fc0c2df06caffd049:0",
+ "funding_value": 15993393,
+ "broadcast_at": "2026-10-21T20:12:32Z",
+ "block": 3199221,
+ "readback_byte_exact": true,
+ "verdict": "PASS",
+ "confirmed_at": "2026-10-21T20:2x:00Z",
+ "explorer": "https://litecoinspace.org/tx/3604955253332f0bd67f59ad1eabc0dda10763265f410d9a0258df0b949abb6e"
+}

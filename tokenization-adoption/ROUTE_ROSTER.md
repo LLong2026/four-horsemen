@@ -29,17 +29,27 @@ Tooling lift: solana-py or raw JSON-RPC.
 (eth-account, EIP-155, self-addressed zero-value). ~1-2s finality, sub-cent. LOWEST
 engineering lift of the entire Tier 2 — 90% of the code already exists.
 
-**9. Hedera (HBAR)** — memo field on any transaction. ~$0.0001, ~3s aBFT finality,
-highest throughput family. Tooling: hedera-sdk or REST. Enterprise-flavored; good for
-the bridge narrative.
+**9. Hedera (HBAR) — RAIL #10 RE-OPENED 2026-10-21 (ledger 0243 waiver reversed by
+owner GO, chat ~15:02 CT; armed Oct 19 ed25519 key stands up).** Memo field on a
+CryptoTransfer. ~$0.0001, ~3s aBFT finality. gRPC 50211/50212 verified OPEN on all 8
+live mainnet nodes probed 2026-10-21 (stale-IP block scare resolved). Alias
+0.0.vefaw75r... (ed25519 pub a90a0b7f...83236b). Friction remains the funding hop:
+exchanges require 0.0.x, auto-create needs an alias-capable wallet (HashPack/Blade).
+AWAITING FUNDING HOP 1 (~5 HBAR). Recipe: hbar-rail/HBAR_RECIPE.md.
 
 **10. Polkadot (DOT)** — system.remark extrinsic: literally purpose-built for data
 anchoring, zero movement. Fraction of a DOT; ~12-30s finality. The remark IS the
 inscription — cleanest ideological fit.
 
-**11. Litecoin (LTC)** — OP_RETURN, reuses the Bitcoin segwit writer almost as-is (same
-secp256k1 family, BIP143-style). Minutes finality. Optional — only if a second PoW anchor
-is ever wanted; lowest priority.
+**11. Litecoin (LTC) — CERTIFIED 2026-10-21 (Rail #11, block 3199221).** OP_RETURN
+envelope 6a25 53514452 06 <digest> (thesis v2.1 §2.5 doctrine). Certification leg
+LTC-CERT-1: txid 3604955253332f0bd67f59ad1eabc0dda10763265f410d9a0258df0b949abb6e,
+payload = SQDR + 0x06 + DeWR-1 frozen digest 99e01327...b9ab6 (37 B), byte-exact on
+Blockchair + litecoinspace (keyless, independent). Fee 0.001 LTC; owner-funded
+0.15993393 LTC (tx 351c9c98...fd049:0, 2026-10-21 ~20:07Z); change 0.15893393 LTC
+standing in writer LYhD9b7ipytek7KcJSU4EtKfqHLg8Kgiuc. Second PoW anchor alongside
+DOGE — was 'optional/lowest priority', promoted per owner GO (chat 2026-10-21 ~15:02 CT).
+Receipts: ltc-rail/LTC_FIRE_RUNLOG.md, ltc-rail/LTC_LEGS.json.
 
 **12. Cosmos Hub (ATOM)** — memo field on a bank send. ~$0.01, ~6-7s. Simple, but memo
 tooling is the least standardized of the set.
