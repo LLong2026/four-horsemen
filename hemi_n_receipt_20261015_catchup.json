@@ -1,0 +1,70 @@
+{
+  "series": "HEMI-N-CATCHUP",
+  "catchup_for": "20261015",
+  "night": "20261015",
+  "executed_at": "2026-10-21T17:35:41Z",
+  "started_at": "2026-10-21T17:35:41Z",
+  "protocol": "hemi_n_prereg v1.0 (catch-up application, disclosed)",
+  "reason": "persistence gap disclosed in HEMI-DRIFT-1 sec 5: the 20261015 epoch's training pass was never persisted into the committed mesh lineage; this catch-up re-applies the sealed batch fee4aa7e... to the current committed state so the mesh lineage matches the receipt set",
+  "authorization": "Leon GO (chat authorization, 2026-10-21 ~12:30 CT)",
+  "start_state": "post-20261020 committed state (not the historical post-1014 state - deltas therefore differ from the original sealed receipt; disclosed)",
+  "batch": {
+    "seed": "20261015",
+    "n": 60,
+    "sha256": "fee4aa7e352b346213bf394899d39c31a5345fe3ec6b85efcab071235ce0afc4",
+    "original_receipt_sum_abs_delta": 0.0116697566
+  },
+  "transfer_pre": {
+    "resolved": 22,
+    "detected": 38
+  },
+  "post": {
+    "resolved": 22,
+    "detected": 38
+  },
+  "training": {
+    "deltas": 308,
+    "sum_abs_delta": 0.0108635719
+  },
+  "old_corpus_preserved": 68,
+  "falsifiers": {
+    "HF-N1_governance": {
+      "roster_sha_pre": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+      "roster_sha_post": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+      "negatives": [
+        "LATENCY_SPIKE",
+        "unregistered_synthetic_fault"
+      ],
+      "false_positives": 0,
+      "pass": true
+    },
+    "HF-N2_bounded": {
+      "max_weight": 0.9957093054,
+      "pass": true
+    },
+    "HF-N3_lineage": {
+      "deltas": 308,
+      "orphans": 0,
+      "pass": true
+    },
+    "HF-N4_determinism": {
+      "run1": "187e241a823c0eee",
+      "run2": "187e241a823c0eee",
+      "pass": true
+    },
+    "HF-N5_preservation": {
+      "old_corpus_resolved": 68,
+      "expected": 68,
+      "pass": true
+    },
+    "standing_HF3_collision": {
+      "unique": 32,
+      "pass": true
+    },
+    "standing_control": {
+      "pass": true
+    }
+  },
+  "all_pass": true,
+  "completed_at": "2026-10-21T17:35:41Z"
+}
