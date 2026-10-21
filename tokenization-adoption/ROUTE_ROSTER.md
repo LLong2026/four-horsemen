@@ -37,8 +37,11 @@ lock in `tl1/` (ledger 0286, uploaded 2026-10-21 per ledger 0294).
 finality, ~$0.0001. Blocker: owner funding via alias-capable wallet (HashPack/Blade).
 Recipe: `tokenization-adoption/hbar-rail/HBAR_RECIPE.md`.
 
-**12. Cosmos Hub (ATOM) — CANDIDATE.** Memo field on a bank send. ~$0.01, ~6-7s.
-Least standardized memo tooling of the set. Next in line after HBAR closes.
+**12. Cosmos Hub (ATOM) — ARMED, AWAITING FUNDING HOP 1 (0.5-1 ATOM from Coinbase).**
+Armed 2026-10-21 (ledger 0295): writer cosmos1eyplx3a0rskyes6zmqu9pll03uchf8mclrh0gd
+generated and bech32-validated, runlog stamped pre-funding. Path: bank send memo field,
+envelope SQDR + version byte + digest (37 B doctrine), ~6-7s finality, ~$0.01/leg.
+Receipts: tokenization-adoption/atom-rail/ (ATOM_FIRE_RUNLOG.md, ATOM_WALLET_PUBLIC.json).
 
 ## Tier 3 — NOT SUBSTRATES (watchlist, not routes)
 

@@ -1,0 +1,9 @@
+{
+  "rail": "ATOM",
+  "network": "cosmoshub-4 (Cosmos Hub mainnet)",
+  "address": "cosmos1eyplx3a0rskyes6zmqu9pll03uchf8mclrh0gd",
+  "pubkey_compressed_hex": "02aa7fa58e32d5497f3b03352b112f528248ff767400b6d7f13774cb7dccf9e831",
+  "created": "2026-10-21T23:57:00Z",
+  "custody": "program writer wallet, self-custody, key never enters any registry or repo",
+  "purpose": "ATOM-CERT-1 certification leg (Rail #12), memo-borne SQDR envelope"
+}
