@@ -1,0 +1,301 @@
+{
+ "snapshot_date": "2026-10-21",
+ "generated_by": "exportEntitySnapshot (DR-1)",
+ "generated_at": "2026-10-21T09:07:29Z",
+ "entities": [
+  {
+   "entity": "AegisAnomaly",
+   "count": 5000,
+   "possible_truncation": true
+  },
+  {
+   "entity": "AegisHealingEvent",
+   "count": 2188,
+   "possible_truncation": false
+  },
+  {
+   "entity": "AegisPlaybook",
+   "count": 625,
+   "possible_truncation": false
+  },
+  {
+   "entity": "AssetRecord",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "BackupStatus",
+   "count": 5,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CCRGateAudit",
+   "count": 21,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CCRSyntheticTarget",
+   "count": 3,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Candidate",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "ChangeRequest",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CircuitBreaker",
+   "count": 19,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CompliancePolicy",
+   "count": 98,
+   "possible_truncation": false
+  },
+  {
+   "entity": "ConnectedApp",
+   "count": 89,
+   "possible_truncation": false
+  },
+  {
+   "entity": "CreditUsage",
+   "count": 492,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Customer",
+   "count": 559,
+   "possible_truncation": false
+  },
+  {
+   "entity": "DeploymentJob",
+   "count": 14,
+   "possible_truncation": false
+  },
+  {
+   "entity": "DualMeshNode",
+   "count": 75,
+   "possible_truncation": false
+  },
+  {
+   "entity": "EmailQueue",
+   "count": 26,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Employee",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "GrantFund",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "GrantOpportunity",
+   "count": 5,
+   "possible_truncation": false
+  },
+  {
+   "entity": "HRCompliance",
+   "count": 16,
+   "possible_truncation": false
+  },
+  {
+   "entity": "HealingEventLog",
+   "count": 21,
+   "possible_truncation": false
+  },
+  {
+   "entity": "HealthManifest",
+   "count": 1314,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Insight",
+   "count": 17,
+   "possible_truncation": false
+  },
+  {
+   "entity": "KnowledgeBase",
+   "count": 76,
+   "possible_truncation": false
+  },
+  {
+   "entity": "LearningMetric",
+   "count": 314,
+   "possible_truncation": false
+  },
+  {
+   "entity": "MetaMonitor",
+   "count": 59,
+   "possible_truncation": false
+  },
+  {
+   "entity": "NeuralMeshSnapshot",
+   "count": 5,
+   "possible_truncation": false
+  },
+  {
+   "entity": "NeuralNode",
+   "count": 45,
+   "possible_truncation": false
+  },
+  {
+   "entity": "NeuralNodeTemplate",
+   "count": 31,
+   "possible_truncation": false
+  },
+  {
+   "entity": "OptimizationProposal",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "OrchestratorAgent",
+   "count": 158,
+   "possible_truncation": false
+  },
+  {
+   "entity": "OrchestratorNode",
+   "count": 74,
+   "possible_truncation": false
+  },
+  {
+   "entity": "OrchestratorTask",
+   "count": 32,
+   "possible_truncation": false
+  },
+  {
+   "entity": "Pattern",
+   "count": 243,
+   "possible_truncation": false
+  },
+  {
+   "entity": "PayrollRecord",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "PlatformAlert",
+   "count": 284,
+   "possible_truncation": false
+  },
+  {
+   "entity": "PlaybookTemplate",
+   "count": 40,
+   "possible_truncation": false
+  },
+  {
+   "entity": "PredictiveAlert",
+   "count": 196,
+   "possible_truncation": false
+  },
+  {
+   "entity": "RateLimitLog",
+   "count": 737,
+   "possible_truncation": false
+  },
+  {
+   "entity": "RelayedKit",
+   "count": 1,
+   "possible_truncation": false
+  },
+  {
+   "entity": "RemediationSweep",
+   "count": 164,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SLAPolicy",
+   "count": 2,
+   "possible_truncation": false
+  },
+  {
+   "entity": "ScalingEvent",
+   "count": 4,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SelfImprovementProposal",
+   "count": 89,
+   "possible_truncation": false
+  },
+  {
+   "entity": "ServiceTicket",
+   "count": 1903,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SimBuilder",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SkillTemplate",
+   "count": 4,
+   "possible_truncation": false
+  },
+  {
+   "entity": "StaffingRequisition",
+   "count": 0,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SystemHealth",
+   "count": 718,
+   "possible_truncation": false
+  },
+  {
+   "entity": "SystemHeartbeat",
+   "count": 622,
+   "possible_truncation": false
+  },
+  {
+   "entity": "TaxFiling",
+   "count": 9,
+   "possible_truncation": false
+  },
+  {
+   "entity": "TelemetryEvent",
+   "count": 6,
+   "possible_truncation": false
+  },
+  {
+   "entity": "TierConfiguration",
+   "count": 4,
+   "possible_truncation": false
+  },
+  {
+   "entity": "VendorContract",
+   "count": 533,
+   "possible_truncation": false
+  },
+  {
+   "entity": "WorkdaySync",
+   "count": 0,
+   "possible_truncation": false
+  }
+ ],
+ "excluded": {
+  "HouseholdBill": "owner personal finance (not public)"
+ },
+ "notes": [
+  "Idempotency: signature entity_snapshot_2026-10-21 checked against RateLimitLog (no prior stamp/skip) and stamped BEFORE execution (idempotency_stamp, window 1440).",
+  "Export 56/56 HTTP 200, no failures, no PlatformAlert needed. API key resolved from sandbox .env (documented pattern); curl UA used (python-urllib blocked by CDN, disclosed 2026-10-19).",
+  "Excluded: HouseholdBill - owner personal finance, not company open-book (same basis as all prior daily runs).",
+  "created_by/created_by_id stripped at export; defensive strip re-run before persistence (0 found in persisted files \u2014 export already clean).",
+  "Redactions per 2026-10-14/16/17/18/19/20 doctrine: targeted identity fields [REDACTED:privacy] \u2014 4,639 total (Customer 1,677; ServiceTicket 1,816; VendorContract 1,057; ConnectedApp 89).",
+  "Cross-record identity sweep vs 2026-10-13 baseline: 973 replaceable tokens, 2,060 replacements applied.",
+  "Recursive pattern redaction totals: 108 emails (blanket 2026-10-14 email doctrine), 1 separator-bearing phone string, 2 wallet-shaped strings (RateLimitLog), 0 private keys, 0 API keys. Totals match the 2026-10-20 census (108 emails) and 2026-10-19 basis (4,639 identity ties).",
+  "Post-redaction verification (independent re-scan of persisted files): 0 emails, 0 phones, 0 wallets, 0 private keys, 0 API keys, 0 created_by keys; all 56 files valid JSON; 210 SIMULATED-marker strings retained as sim/demo evidence.",
+  "possible_truncation=true entities (5,000-record export cap, same as prior days): AegisAnomaly; disclosed here, no data loss claimed otherwise."
+ ]
+}

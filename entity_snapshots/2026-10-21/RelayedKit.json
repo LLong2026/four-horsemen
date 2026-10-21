@@ -1,0 +1,26 @@
+{
+ "entity": "RelayedKit",
+ "exported_at": "2026-10-21T09:04:46.103Z",
+ "count": 1,
+ "possible_truncation": false,
+ "records": [
+  {
+   "status": "verified",
+   "modules": [
+    "Console",
+    "Jasper Boot Sequence",
+    "Neural Mesh",
+    "PQC Layer",
+    "Squirrel OS Core"
+   ],
+   "checksum": "d909580ec127f464070ce79172751c6376e57aa60ecab97671124c4d02e2b82e",
+   "source": "agentspark-os-composer",
+   "base": "Buildroot \u2014 pinned release",
+   "payload_json": "{\"base\":\"Buildroot \u2014 pinned release\",\"modules\":[\"Console\",\"Jasper Boot Sequence\",\"Neural Mesh\",\"PQC Layer\",\"Squirrel OS Core\"],\"preinstalled_machines\":[{\"name\":\"Guardian-0\",\"type\":\"Deterministic Chatbot\"}]}",
+   "id": "6ab6f1f69f85b6302e0f4209",
+   "created_date": "2026-09-25T22:13:10.778000",
+   "updated_date": "2026-09-25T22:13:10.778000",
+   "is_sample": false
+  }
+ ]
+}
