@@ -1,7 +1,8 @@
-# TRAINING ROUTES — The Route Certification Roster v1.0
+# TRAINING ROUTES — The Route Certification Roster v1.1
 
-**Status:** 12 rails certified and sealed (Oct 18-22, 2026), Rail #10 HBAR armed and
-awaiting its funding hop. Each rail carries: the mechanism (the path we took), the
+**Status:** 12 rails certified and sealed (Oct 18-22, 2026), speed-sim measured and
+routes hardened (2026-10-22, see Route Speed Table), Rail #10 HBAR armed and awaiting
+its funding hop. Each rail carries: the mechanism (the path we took), the
 certification ceremony that sealed it, its receipts, and its standing costs. New rails
 are added here ONLY after certification (probe -> training leg -> certification ->
 router integration), and certification receipts land in this repo the same day —
@@ -29,6 +30,30 @@ rails incl. first MMR legs on LTC + ATOM, receipts mcr3/); WRAP-1 phase seal 14b
 `wrap1_receipts_2026-10-20/WRAP1_RUNLOG.md`; LTC in
 `tokenization-adoption/ltc-rail/LTC_FIRE_RUNLOG.md` + `LTC_LEGS.json`; TL-1 three-chain
 lock in `tl1/` (ledger 0286, uploaded 2026-10-21 per ledger 0294).
+
+## Route Speed Table (measured 2026-10-22, SPEED-SIM-1 transfer scenarios — v1.1)
+
+Live end-to-end timings from 12/12 micro transfer scenarios, byte-exact readback on all
+legs. Full data: `speed-sim/2026-10-22_ROUTE_SPEED_SIM.md` + receipts.
+
+| Speed class | Rails (measured) |
+|-------------|------------------|
+| Sub-3s | SOL 2.7s |
+| 3-5s | AVAX 3.5s, ALGO 4.6s |
+| 5-10s | DOT 6.0s, XLM 6.7s, ATOM 8.1s, XRP 8.8s |
+| 10-60s | ETH 12-15s (when gas priced right), ADA 29s |
+| Minutes (PoW) | DOGE ~1-3min, LTC ~2-9min, BTC ~5min avg |
+
+**Hardening rules (v1.1, standing):**
+1. ETH/AVAX legs price gas dynamically (EIP-1559 type-2 or gasPrice >= baseFee x 1.3).
+   SPEED-SIM-1 caught the legacy fixed-gas defect: an ETH leg sat ~3 min against a
+   0.157 gwei base fee.
+2. ATOM write-path adds `cosmos-rest.publicnode.com` as primary (polkachu 706ms /
+   quokkastake 825ms were the slowest pair on the roster).
+3. DOGE write-path order: dogeblock -> blockchair (rate-limit-prone) -> dogechain.
+4. AVAX verify-path: subnets.avax.network (snowtrace 403s scripted readers).
+5. Never single-thread a notarization on one PoW rail — minutes are the design cost,
+   not a failure (LTC took 515s the same night BTC took 315s and DOGE 158s).
 
 ## Tier 2 — ARMED / CANDIDATE
 

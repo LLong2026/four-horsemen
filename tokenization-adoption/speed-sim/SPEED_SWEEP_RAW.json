@@ -1,0 +1,290 @@
+{
+ "BTC  write  blockstream.info/api/blocks/tip/height": {
+  "samples_s": [
+   0.097,
+   0.095,
+   0.099
+  ],
+  "avg_ms": 97,
+  "err": null
+ },
+ "BTC  verify mempool.space/api/v1/blocks/tip/height": {
+  "samples_s": [
+   0.28,
+   0.304,
+   0.203
+  ],
+  "avg_ms": 262,
+  "err": null
+ },
+ "XRP  write  xrplcluster.com (ledger_current)": {
+  "samples_s": [
+   0.353,
+   0.342,
+   0.351
+  ],
+  "avg_ms": 349,
+  "err": null
+ },
+ "XLM  write  horizon.stellar.org/ledgers?limit=1": {
+  "samples_s": [
+   0.326,
+   0.276,
+   0.28
+  ],
+  "avg_ms": 294,
+  "err": null
+ },
+ "XLM  verify stellar.expert": {
+  "samples_s": [],
+  "avg_ms": null,
+  "err": "<urlopen error [Errno -2] Name or service not known>"
+ },
+ "ADA  write  api.koios.rest/tip": {
+  "samples_s": [
+   0.454,
+   0.527,
+   0.449
+  ],
+  "avg_ms": 477,
+  "err": null
+ },
+ "ADA  verify cardanoscan.io (probe root)": {
+  "samples_s": [
+   0.121,
+   0.134,
+   0.125
+  ],
+  "avg_ms": 127,
+  "err": null
+ },
+ "ETH  write  ethereum-rpc.publicnode.com (blockNumber)": {
+  "samples_s": [
+   0.111,
+   0.111,
+   0.111
+  ],
+  "avg_ms": 111,
+  "err": null
+ },
+ "ETH  verify etherscan.io (probe root)": {
+  "samples_s": [
+   0.059,
+   0.054,
+   0.038
+  ],
+  "avg_ms": 50,
+  "err": null
+ },
+ "ALGO write  mainnet-api.algonode.cloud/v2/status": {
+  "samples_s": [
+   0.149,
+   0.148,
+   0.132
+  ],
+  "avg_ms": 143,
+  "err": null
+ },
+ "ALGO verify allo.info (probe root)": {
+  "samples_s": [
+   0.051,
+   0.086,
+   0.051
+  ],
+  "avg_ms": 63,
+  "err": null
+ },
+ "SOL  write  api.mainnet-beta.solana.com getBlockHeight": {
+  "samples_s": [
+   0.143,
+   0.133,
+   0.146
+  ],
+  "avg_ms": 141,
+  "err": null
+ },
+ "SOL  verify solscan.io (probe root)": {
+  "samples_s": [
+   0.329,
+   0.128,
+   0.137
+  ],
+  "avg_ms": 198,
+  "err": null
+ },
+ "AVAX write  api.avax.network eth_blockNumber": {
+  "samples_s": [
+   0.106,
+   0.091,
+   0.098
+  ],
+  "avg_ms": 98,
+  "err": null
+ },
+ "AVAX verify snowtrace.io (probe root)": {
+  "samples_s": [],
+  "avg_ms": null,
+  "err": "HTTP Error 403: Forbidden"
+ },
+ "DOT  write  rpc.polkadot.io (getHeader)": {
+  "samples_s": [],
+  "avg_ms": null,
+  "err": "'float' object is not subscriptable"
+ },
+ "DOT  verify polkascan/staking (probe root)": {
+  "samples_s": [
+   0.224,
+   0.211,
+   0.212
+  ],
+  "avg_ms": 216,
+  "err": null
+ },
+ "DOGE verify dogeblocks.com (probe root)": {
+  "samples_s": [
+   0.064,
+   0.057,
+   0.049
+  ],
+  "avg_ms": 57,
+  "err": null
+ },
+ "LTC  write  litecoinspace.org/api/blocks/tip/height": {
+  "samples_s": [
+   0.227,
+   0.235,
+   0.229
+  ],
+  "avg_ms": 230,
+  "err": null
+ },
+ "LTC  verify blockchair-lite / litecoinspace api/tx": {
+  "samples_s": [
+   0.241,
+   0.194,
+   0.218
+  ],
+  "avg_ms": 218,
+  "err": null
+ },
+ "ATOM write  cosmos-api.polkachu.com /cosmos/staking": {
+  "samples_s": [
+   0.645,
+   0.678,
+   0.795
+  ],
+  "avg_ms": 706,
+  "err": null
+ },
+ "ATOM verify quokkastake /blocks/latest": {
+  "samples_s": [
+   0.829,
+   0.823,
+   0.824
+  ],
+  "avg_ms": 825,
+  "err": null
+ },
+ "_cadence_20s": {
+  "BTC": {
+   "delta_20s": 0,
+   "est_block_time_s": "20+ (slow cadence or PoW luck)"
+  },
+  "DOGE": {
+   "delta_20s": 0,
+   "est_block_time_s": "20+ (slow cadence or PoW luck)"
+  },
+  "LTC": {
+   "delta_20s": 0,
+   "est_block_time_s": "20+ (slow cadence or PoW luck)"
+  },
+  "ALGO": {
+   "delta_20s": 9,
+   "est_block_time_s": 2.22
+  },
+  "ETH": {
+   "delta_20s": 2,
+   "est_block_time_s": 10.0
+  },
+  "AVAX": {
+   "delta_20s": 27,
+   "est_block_time_s": 0.74
+  },
+  "SOL": {
+   "delta_20s": 110,
+   "est_block_time_s": 0.18
+  },
+  "ADA": {
+   "delta_20s": 3,
+   "est_block_time_s": 6.67
+  },
+  "ATOM": {
+   "delta_20s": 4,
+   "est_block_time_s": 5.0
+  },
+  "XLM_ledger": {
+   "delta_20s": 5,
+   "est_block_time_s": 4.0
+  }
+ },
+ "XRP  verify api.xrpscan.com/api/v1/ledger": {
+  "samples_s": [
+   0.243,
+   0.233,
+   0.238
+  ],
+  "avg_ms": 238,
+  "err": null
+ },
+ "XLM  verify api.stellar.expert forex": {
+  "samples_s": [],
+  "avg_ms": null,
+  "err": "HTTP Error 404: Not Found"
+ },
+ "DOT  write  rpc.polkadot.io chain_getBlockHash": {
+  "samples_s": [
+   0.815,
+   0.49,
+   0.326
+  ],
+  "avg_ms": 544,
+  "err": null
+ },
+ "AVAX verify snowtrace.io root": {
+  "samples_s": [],
+  "avg_ms": null,
+  "err": "HTTP Error 403: Forbidden"
+ },
+ "DOGE write  api.blockchair.com dogecoin blocks": {
+  "samples_s": [
+   0.679,
+   0.687,
+   0.689
+  ],
+  "avg_ms": 685,
+  "err": null
+ },
+ "XLM  verify stellar.expert root": {
+  "samples_s": [
+   0.098,
+   0.099,
+   0.077
+  ],
+  "avg_ms": 91,
+  "err": null
+ },
+ "AVAX verify subnets.avax.network cchain": {
+  "samples_s": [
+   0.128,
+   0.145,
+   0.148
+  ],
+  "avg_ms": 140,
+  "err": null
+ },
+ "AVAX verify avascan.info root": {
+  "samples_s": [],
+  "avg_ms": null,
+  "err": "HTTP Error 403: Forbidden"
+ }
+}
