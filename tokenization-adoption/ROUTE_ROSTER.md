@@ -1,6 +1,6 @@
 # TRAINING ROUTES — The Route Certification Roster v1.0
 
-**Status:** 11 rails certified and sealed (Oct 18-21, 2026), Rail #10 HBAR armed and
+**Status:** 12 rails certified and sealed (Oct 18-22, 2026), Rail #10 HBAR armed and
 awaiting its funding hop. Each rail carries: the mechanism (the path we took), the
 certification ceremony that sealed it, its receipts, and its standing costs. New rails
 are added here ONLY after certification (probe -> training leg -> certification ->
@@ -22,6 +22,7 @@ standing rule per Leon (2026-10-21).
 | 9 | Polkadot | system.remark extrinsic | WRAP-1 (0x3ec93e79..., block 33519650) | ~12-30s | fraction of DOT |
 | 9b | Dogecoin | OP_RETURN (second PoW anchor) | MCR-2/WRAP-1 (tx 948654fd...) | minutes | dust |
 | 11 | Litecoin | OP_RETURN envelope 6a25 53514452 06 <digest> (thesis v2.1 §2.5) | LTC-CERT-1 (ledger 0292, block 3199221) | minutes | 0.001 LTC |
+| 12 | Cosmos Hub | bank send memo (hex envelope, SIGN_MODE_DIRECT) | ATOM-CERT-1 (ledger 0296, block 33518894) | ~6-7s | 2500 uatom |
 
 Receipts of record: WRAP-1 phase seal 14b11a77...c72ea, ten-rail table in
 `wrap1_receipts_2026-10-20/WRAP1_RUNLOG.md`; LTC in
@@ -37,11 +38,15 @@ lock in `tl1/` (ledger 0286, uploaded 2026-10-21 per ledger 0294).
 finality, ~$0.0001. Blocker: owner funding via alias-capable wallet (HashPack/Blade).
 Recipe: `tokenization-adoption/hbar-rail/HBAR_RECIPE.md`.
 
-**12. Cosmos Hub (ATOM) — ARMED, AWAITING FUNDING HOP 1 (0.5-1 ATOM from Coinbase).**
-Armed 2026-10-21 (ledger 0295): writer cosmos1eyplx3a0rskyes6zmqu9pll03uchf8mclrh0gd
-generated and bech32-validated, runlog stamped pre-funding. Path: bank send memo field,
-envelope SQDR + version byte + digest (37 B doctrine), ~6-7s finality, ~$0.01/leg.
-Receipts: tokenization-adoption/atom-rail/ (ATOM_FIRE_RUNLOG.md, ATOM_WALLET_PUBLIC.json).
+**12. Cosmos Hub (ATOM) — CERTIFIED 2026-10-22 (ledger 0296, block 33518894).** Memo
+field on a self-addressed bank send; envelope hex SQDR + 0x07 + DeWR-1 frozen digest
+99e01327...b9ab6 (37 B doctrine). Certification leg ATOM-CERT-1: txid
+2182DE2D41684CCE67A0FA53218C93324080421B98166D45F467F77769D2FBB5, memo byte-exact on
+two independent keyless readbacks (polkachu + quokkastake). Owner-funded 5.07 ATOM
+from Coinbase (plain bech32, zero friction — the anti-HBAR). Change standing in writer
+cosmos1eyplx3a0rskyes6zmqu9pll03uchf8mclrh0gd. First hand-rolled protobuf
+SIGN_MODE_DIRECT leg in the program (cosmospy amino format dead on cosmoshub-4;
+disclosed in runlog). Receipts: tokenization-adoption/atom-rail/.
 
 ## Tier 3 — NOT SUBSTRATES (watchlist, not routes)
 

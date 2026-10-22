@@ -1,0 +1,19 @@
+{
+  "ceremony": "ATOM-CERT-1",
+  "rail": "Cosmos Hub (cosmoshub-4)",
+  "certified_at": "2026-10-22T00:30Z",
+  "writer": "cosmos1eyplx3a0rskyes6zmqu9pll03uchf8mclrh0gd",
+  "txhash": "2182DE2D41684CCE67A0FA53218C93324080421B98166D45F467F77769D2FBB5",
+  "block_height": "33518894",
+  "code": 0,
+  "memo_hex_envelope": "535144520799e01327c26b393f9e871f6ebe71a038da62940ccfb3f328ce90faaf653b9ab6",
+  "envelope": "SQDR + 0x07 (ATOM) + DeWR-1 frozen digest 99e01327...b9ab6 (37 B)",
+  "leg": "self-send 1000 uatom, gas 200000, fee 2500 uatom",
+  "readback": "byte-exact on cosmos-api.polkachu.com AND api.cosmos.quokkastake.io (independent, keyless)",
+  "explorer": "https://www.mintscan.io/cosmos/tx/2182DE2D41684CCE67A0FA53218C93324080421B98166D45F467F77769D2FBB5",
+  "defects_disclosed": [
+    "First attempt gas 100000 < 100912 used -> rejected in CheckTx (out of gas), nothing spent, refired at 200000 (disclosed forward-only)",
+    "publicnode REST endpoint returned 403 bot-blocks on POST; broadcast switched to polkachu endpoint",
+    "cosmospy 6.0 emits legacy amino format (dead on cosmoshub) -> hand-rolled protobuf SIGN_MODE_DIRECT TxRaw, 394 bytes, deterministic RFC6979 signature"
+  ]
+}

@@ -13,3 +13,21 @@
 *This software is a prototype and is provided for educational and research purposes only.
 It is not intended for production use, commercial deployment, or safety-critical
 environments. All systems are experimental and may contain defects on them.*
+
+## FUNDING CONFIRMED + PREREG FROZEN (2026-10-21, ~19:0x CT)
+- 5,072,803 uatom observed on writer via publicnode LCD (independent of Coinbase).
+- ATOM_CERT1_PREREG.md frozen: memo = 535144520799e01327c26b393f9e871f6ebe71a038da62940ccfb3f328ce90faaf653b9ab6
+  (SQDR + 0x07 + DeWR-1 digest, hex-encoded), 1000 uatom self-send, fee 7500 uatom.
+- STAMP-BEFORE-EXECUTE: this stamp precedes broadcast.
+
+## FIRING RECORD (pre-broadcast append, 2026-10-22T00:15Z)
+- Funding confirmed: 5,072,803 uatom on writer (owner-funded 5 ATOM from Coinbase).
+- Account state: account_number 3725178, sequence 0.
+- ATOM-CERT-1 prereg frozen (ATOM_CERT1_PREREG.md): memo 535144520799e0...b9ab6 (hex of SQDR+0x07+DeWR-1 digest), self-send 1000 uatom, gas 100000, fee 2500 uatom.
+- Broadcast follows this stamp. Readback gate per prereg. Ledger seal after PASS.
+
+## RESULT — ATOM-CERT-1 PASS (2026-10-22T00:30Z)
+- txhash 2182DE2D41684CCE67A0FA53218C93324080421B98166D45F467F77769D2FBB5, INCLUDED block 33518894, code 0.
+- Memo byte-exact (74 hex chars = SQDR + 0x07 + DeWR-1 digest 99e01327...b9ab6) on two independent keyless readbacks.
+- DEFECTS DISCLOSED: (1) first broadcast gas 100000 < 100912 used, rejected in CheckTx, nothing spent, refired at 200000; (2) publicnode 403 bot-blocks on POST, switched to polkachu; (3) cosmospy 6.0 emits legacy amino format, replaced with hand-rolled protobuf SIGN_MODE_DIRECT TxRaw (RFC6979 deterministic signature).
+- Rail #12 CERTIFIED. Ledger 0296. Change standing in writer: ~5.07 ATOM.
