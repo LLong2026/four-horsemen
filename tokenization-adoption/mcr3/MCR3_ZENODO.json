@@ -1,0 +1,10 @@
+{
+ "id": 23550692,
+ "doi": "10.5281/zenodo.23550692",
+ "url": "https://zenodo.org/records/23550692",
+ "file": "mcr3_evidence_bundle.tar.gz",
+ "bundle_sha256": "586931e3729c105b7a631e7f1965f4c5301c55f37bafcbeaa0ddbfd0e7ad58ca",
+ "bundle_bytes": 86822,
+ "verified": true,
+ "concept_doi": "10.5281/zenodo.23550691"
+}

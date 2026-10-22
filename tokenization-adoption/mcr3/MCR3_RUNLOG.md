@@ -52,3 +52,8 @@ plus a mandatory local verify (verify_digest with this ecdsa version's argument 
 Root 418fc5a809a087ca9ae5d8d600e7d82abff6a92903b1b459e7481d3ef8eb8d06 (2,082 leaves @ 4c13ac3,
 peaks 11/5/1; gates PASS vs MCR-1 2d1a3214 and MCR-2 1929707e). Envelope SQDR+0x06+root.
 First MMR legs EVER on LTC and ATOM — the mountain now spans 12 consensus domains.
+
+# MCR-3 ZENODO PUBLICATION 2026-10-22T01:38Z — DOI 10.5281/zenodo.23550692
+- Evidence bundle mcr3_evidence_bundle.tar.gz (86,822 B, sha256 586931e3729c105b7a631e7f1965f4c5301c55f37bafcbeaa0ddbfd0e7ad58ca) published as record 23550692 (concept 10.5281/zenodo.23550691). Dataset, CC BY-NC 4.0, author Long, Leon Calvin, II (SQUIRL OS Technologies LLC), 17 keywords.
+- Post-publish keyless verification: anonymous API read-back + public re-download of the bundle, sha256 byte-exact vs local. Receipt: MCR3_ZENODO.json.
+- Defects disclosed: (1) prior deposit token expired (403) -> fresh token via owner browser session, scopes deposit:actions + deposit:write, value never persisted; (2) records-draft metadata-only PUT REPLACED metadata (cleared resource_type/creators/description/license) -> caught by publish validation gate, restored via legacy deposit API PUT; (3) publish blocked once on unreserved pids.doi -> reserve_doi then publish 202. No on-chain effect; root and anchors untouched.
