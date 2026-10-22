@@ -1,0 +1,11 @@
+{
+ "tag": "TRIAD-SIM-1",
+ "envelope_hex": "5351445210f09b932455904af910a42328e6c1fdcb0c9a8c9b9b066e3c7dbb7431c0d69d7f",
+ "rails": {
+  "sat": true,
+  "xlm": true,
+  "xrp": true
+ },
+ "all_pass": true,
+ "verified_at": "2026-10-22T08:04:38Z"
+}

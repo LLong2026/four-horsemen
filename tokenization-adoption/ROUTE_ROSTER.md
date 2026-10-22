@@ -1,8 +1,9 @@
-# TRAINING ROUTES — The Route Certification Roster v1.1
+# TRAINING ROUTES — The Route Certification Roster v1.2
 
 **Status:** 12 rails certified and sealed (Oct 18-22, 2026), speed-sim measured and
-routes hardened (2026-10-22, see Route Speed Table), Rail #10 HBAR armed and awaiting
-its funding hop. Each rail carries: the mechanism (the path we took), the
+routes hardened (2026-10-22), THE TRIAD (SAT + XLM + XRP) promoted to DEFAULT ROUTE
+per Leon (2026-10-22, ~02:37 CT; see triad/TRIAD_ROUTE.md), Rail #10 HBAR armed and
+awaiting its funding hop. Each rail carries: the mechanism (the path we took), the
 certification ceremony that sealed it, its receipts, and its standing costs. New rails
 are added here ONLY after certification (probe -> training leg -> certification ->
 router integration), and certification receipts land in this repo the same day —
@@ -30,6 +31,32 @@ rails incl. first MMR legs on LTC + ATOM, receipts mcr3/); WRAP-1 phase seal 14b
 `wrap1_receipts_2026-10-20/WRAP1_RUNLOG.md`; LTC in
 `tokenization-adoption/ltc-rail/LTC_FIRE_RUNLOG.md` + `LTC_LEGS.json`; TL-1 three-chain
 lock in `tl1/` (ledger 0286, uploaded 2026-10-21 per ledger 0294).
+
+## DEFAULT ROUTE — THE TRIAD (v1.2, standing per Leon 2026-10-22)
+
+**Every standard notarization event = SAT + XLM + XRP (one triad fire).**
+
+| Member | Role | Engine | SLO | Fee |
+|--------|------|--------|-----|-----|
+| SAT (BTC) | Notary anchor — immovable substrate | SHA-256 PoW | ~1 block expected, hard deadline 3 blocks | dynamic sats/vB, ceiling 30 |
+| XLM | Display rail — human-readable named entry | Stellar SCP | <= 3 ledgers (~12s) | 100 stroops |
+| XRP | Attestation rail — redundant fast anchor | XRPL consensus | <= 3 ledgers (~12s) | 10 drops |
+
+Why: three disjoint consensus engines = no shared failure mode; stable fees (no
+base-fee auction — the pathology that bit ETH in SPEED-SIM-1); complementary surfaces
+(read / verify / institutional); under $0.10 per event; proven in TL-1, PAT-1, and
+TRIAD-SIM-1 (12/12-style proof: 3/3 byte-exact, 2026-10-22).
+
+Tiering doctrine (the at-scale answer): every event -> XLM; session/epoch close ->
+XRP roll-up; major seals only -> full triad with SAT. One SAT anchor per epoch
+amortizes over thousands of events. MCR-class corpus seals still fan out to the
+full 12-rail mesh. Minor rails remain certified and callable, not default.
+
+Hardened runner: `triad/triad_fire.py` (failover pairs, fee guard, idempotency,
+dual-endpoint byte-exact readback gate 3/3, fail-closed escalation). Proof run
+TRIAD-SIM-1: XLM 8.1s + XRP 6.5s + SAT 1206.4s (block 972586; PoW cadence variance
+recorded same night as SPEED-SIM-1's 315s — minutes are the design cost), 3/3
+byte-exact, 0 failed legs.
 
 ## Route Speed Table (measured 2026-10-22, SPEED-SIM-1 transfer scenarios — v1.1)
 

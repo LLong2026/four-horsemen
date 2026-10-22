@@ -1,0 +1,39 @@
+{
+ "xlm": {
+  "hash": "cf5f94f886c9c28d2ce48aa2d7601dd25279a65e0f0935e4a3c9bd41735b0340",
+  "ledger": 65073784,
+  "confirmed": true,
+  "seconds": 8.1,
+  "link": "https://stellar.expert/explorer/public/tx/cf5f94f886c9c28d2ce48aa2d7601dd25279a65e0f0935e4a3c9bd41735b0340",
+  "payload_hex": "5351445210f09b932455904af910a42328e6c1fdcb0c9a8c9b9b066e3c7dbb7431c0d69d7f",
+  "fired_ok": true,
+  "fired_at": "2026-10-22T07:38:27Z",
+  "wall_seconds": 8.9
+ },
+ "xrp": {
+  "txid": "EE984D9813C7D58A50B9E6BD64E869EAC36CD51597B8463269A5358750F978C3",
+  "status": "VALIDATED",
+  "via": "https://xrplcluster.com",
+  "seconds": 6.5,
+  "link": "https://livenet.xrpl.org/transactions/EE984D9813C7D58A50B9E6BD64E869EAC36CD51597B8463269A5358750F978C3",
+  "payload_hex": "5351445210f09b932455904af910a42328e6c1fdcb0c9a8c9b9b066e3c7dbb7431c0d69d7f",
+  "fired_ok": true,
+  "fired_at": "2026-10-22T07:38:34Z",
+  "wall_seconds": 7.3
+ },
+ "sat": {
+  "txid": "86089cfc92abd0aa497f839fbdb26d332d3af18aa3e9776069b49ef08fa69bd7",
+  "fee_sats": 790,
+  "broadcast_via": "mempool.space",
+  "seconds": 0.2,
+  "utxo": "fdfa6d721208f118a52547a18f9f7c729b4d3073547ccb405631ea4062a32841:1",
+  "link": "https://mempool.space/tx/86089cfc92abd0aa497f839fbdb26d332d3af18aa3e9776069b49ef08fa69bd7",
+  "payload_hex": "5351445210f09b932455904af910a42328e6c1fdcb0c9a8c9b9b066e3c7dbb7431c0d69d7f",
+  "fired_ok": true,
+  "fired_at": "2026-10-22T07:38:35Z",
+  "wall_seconds": 0.6,
+  "inclusion_seconds": 1206.4,
+  "block_height": 972586,
+  "confirmed": true
+ }
+}
