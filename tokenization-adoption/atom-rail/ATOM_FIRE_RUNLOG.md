@@ -31,3 +31,21 @@ environments. All systems are experimental and may contain defects on them.*
 - Memo byte-exact (74 hex chars = SQDR + 0x07 + DeWR-1 digest 99e01327...b9ab6) on two independent keyless readbacks.
 - DEFECTS DISCLOSED: (1) first broadcast gas 100000 < 100912 used, rejected in CheckTx, nothing spent, refired at 200000; (2) publicnode 403 bot-blocks on POST, switched to polkachu; (3) cosmospy 6.0 emits legacy amino format, replaced with hand-rolled protobuf SIGN_MODE_DIRECT TxRaw (RFC6979 deterministic signature).
 - Rail #12 CERTIFIED. Ledger 0296. Change standing in writer: ~5.07 ATOM.
+
+## POST-RECEIPT DISCLOSURE ADDENDUM (2026-10-22, forward-only)
+- FEE DELTA vs prereg: ATOM_CERT1_PREREG.md froze fee 7500 uatom; the executed leg carries
+  2500 uatom. Fee is an operational parameter (not part of the payload digest), but the
+  prereg-to-execution delta is disclosed here per forward-only doctrine.
+- DUAL-TURN EXECUTION DISCLOSURE: two agent turns raced this ceremony in the same window —
+  the owner-chat turn (this session) and a concurrent fleet-pulse-slot turn. The concurrent
+  turn's build (fee 2500, 4-field SignDoc, broadcast via polkachu) landed (2182DE2D...).
+  The owner-chat turn's five broadcast attempts (fee 7500, via the publicnode pool) were
+  all rejected in CheckTx — parse errors, mode-info encoding errors, and two
+  "unable to verify single signer signature" responses; nothing spent, no state change.
+  The publicnode pool's inconsistent responses to near-identical payloads (parse error
+  vs signature error for byte-identical tx in different modes) indicate mixed node
+  versions behind one endpoint; polkachu accepted the same construction cleanly.
+- SIGNATURE ATTRIBUTION VERIFIED INDEPENDENTLY: the landed tx's signature was reproduced
+  byte-for-byte by deterministic re-signing (RFC6979/sha256, 4-field SignDoc) with the
+  program writer key held locally — proving the on-chain tx was signed by the program's
+  own key, not a third party. Writer key never left the sandbox (Rule 8 / POL-DISC-001).
