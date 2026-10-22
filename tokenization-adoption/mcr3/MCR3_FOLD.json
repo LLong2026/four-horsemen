@@ -1,0 +1,20 @@
+{
+  "commit": "4c13ac3f9d21ef19e2db53a3a81a934f2519a458",
+  "leaf_count": 2082,
+  "root": "418fc5a809a087ca9ae5d8d600e7d82abff6a92903b1b459e7481d3ef8eb8d06",
+  "peaks": [
+    [
+      11,
+      "7cf5658b15a87f755798e1d9e3e7a0486a242b8ff282f7de4a7449da5abcbd84"
+    ],
+    [
+      5,
+      "2360cda6056832d28cf5ce0e8d159a96573926fd19ed8a03e79a509e631d0876"
+    ],
+    [
+      1,
+      "af3a0d92ae88c54a149b937c4d37a0736d831d005cab0b770509d5e819841b88"
+    ]
+  ],
+  "leaf_sum": "8d9f3ef8f487fab28d5d75d1afe03c7819e2b738b21d76f5f5cf190dc9775aaf"
+}

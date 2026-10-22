@@ -1,0 +1,19 @@
+{
+ "envelope_hex": "5351445206418fc5a809a087ca9ae5d8d600e7d82abff6a92903b1b459e7481d3ef8eb8d06",
+ "rails": {
+  "sol": true,
+  "algo": true,
+  "avax": true,
+  "xlm": true,
+  "xrp": true,
+  "eth": true,
+  "dot": true,
+  "atom": true,
+  "ada": true,
+  "ltc": true,
+  "doge": true,
+  "btc": true
+ },
+ "all_pass": true,
+ "verified_at": "2026-10-22T00:27:16Z"
+}
