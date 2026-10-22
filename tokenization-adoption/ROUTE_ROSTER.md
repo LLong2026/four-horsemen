@@ -24,7 +24,8 @@ standing rule per Leon (2026-10-21).
 | 11 | Litecoin | OP_RETURN envelope 6a25 53514452 06 <digest> (thesis v2.1 §2.5) | LTC-CERT-1 (ledger 0292, block 3199221) | minutes | 0.001 LTC |
 | 12 | Cosmos Hub | bank send memo (hex envelope, SIGN_MODE_DIRECT) | ATOM-CERT-1 (ledger 0296, block 33518894) | ~6-7s | 2500 uatom |
 
-Receipts of record: WRAP-1 phase seal 14b11a77...c72ea, ten-rail table in
+Receipts of record: MCR-3 mountain update root 418fc5a8...b8d06 (ledger 0297, 12/12
+rails incl. first MMR legs on LTC + ATOM, receipts mcr3/); WRAP-1 phase seal 14b11a77...c72ea, ten-rail table in
 `wrap1_receipts_2026-10-20/WRAP1_RUNLOG.md`; LTC in
 `tokenization-adoption/ltc-rail/LTC_FIRE_RUNLOG.md` + `LTC_LEGS.json`; TL-1 three-chain
 lock in `tl1/` (ledger 0286, uploaded 2026-10-21 per ledger 0294).
