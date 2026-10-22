@@ -1,0 +1,296 @@
+{
+  "snapshot_date": "2026-10-22",
+  "generated_by": "exportEntitySnapshot (DR-1)",
+  "entities": [
+    {
+      "entity": "AegisAnomaly",
+      "count": 5000,
+      "possible_truncation": true
+    },
+    {
+      "entity": "AegisHealingEvent",
+      "count": 2188,
+      "possible_truncation": false
+    },
+    {
+      "entity": "AegisPlaybook",
+      "count": 625,
+      "possible_truncation": false
+    },
+    {
+      "entity": "AssetRecord",
+      "count": 1,
+      "possible_truncation": false
+    },
+    {
+      "entity": "BackupStatus",
+      "count": 5,
+      "possible_truncation": false
+    },
+    {
+      "entity": "CCRGateAudit",
+      "count": 21,
+      "possible_truncation": false
+    },
+    {
+      "entity": "CCRSyntheticTarget",
+      "count": 3,
+      "possible_truncation": false
+    },
+    {
+      "entity": "Candidate",
+      "count": 0,
+      "possible_truncation": false
+    },
+    {
+      "entity": "ChangeRequest",
+      "count": 1,
+      "possible_truncation": false
+    },
+    {
+      "entity": "CircuitBreaker",
+      "count": 19,
+      "possible_truncation": false
+    },
+    {
+      "entity": "CompliancePolicy",
+      "count": 99,
+      "possible_truncation": false
+    },
+    {
+      "entity": "ConnectedApp",
+      "count": 90,
+      "possible_truncation": false
+    },
+    {
+      "entity": "CreditUsage",
+      "count": 492,
+      "possible_truncation": false
+    },
+    {
+      "entity": "Customer",
+      "count": 559,
+      "possible_truncation": false
+    },
+    {
+      "entity": "DeploymentJob",
+      "count": 14,
+      "possible_truncation": false
+    },
+    {
+      "entity": "DualMeshNode",
+      "count": 75,
+      "possible_truncation": false
+    },
+    {
+      "entity": "EmailQueue",
+      "count": 26,
+      "possible_truncation": false
+    },
+    {
+      "entity": "Employee",
+      "count": 0,
+      "possible_truncation": false
+    },
+    {
+      "entity": "GrantFund",
+      "count": 0,
+      "possible_truncation": false
+    },
+    {
+      "entity": "GrantOpportunity",
+      "count": 5,
+      "possible_truncation": false
+    },
+    {
+      "entity": "HRCompliance",
+      "count": 16,
+      "possible_truncation": false
+    },
+    {
+      "entity": "HealingEventLog",
+      "count": 21,
+      "possible_truncation": false
+    },
+    {
+      "entity": "HealthManifest",
+      "count": 1397,
+      "possible_truncation": false
+    },
+    {
+      "entity": "Insight",
+      "count": 17,
+      "possible_truncation": false
+    },
+    {
+      "entity": "KnowledgeBase",
+      "count": 76,
+      "possible_truncation": false
+    },
+    {
+      "entity": "LearningMetric",
+      "count": 318,
+      "possible_truncation": false
+    },
+    {
+      "entity": "MetaMonitor",
+      "count": 59,
+      "possible_truncation": false
+    },
+    {
+      "entity": "NeuralMeshSnapshot",
+      "count": 5,
+      "possible_truncation": false
+    },
+    {
+      "entity": "NeuralNode",
+      "count": 45,
+      "possible_truncation": false
+    },
+    {
+      "entity": "NeuralNodeTemplate",
+      "count": 31,
+      "possible_truncation": false
+    },
+    {
+      "entity": "OptimizationProposal",
+      "count": 1,
+      "possible_truncation": false
+    },
+    {
+      "entity": "OrchestratorAgent",
+      "count": 158,
+      "possible_truncation": false
+    },
+    {
+      "entity": "OrchestratorNode",
+      "count": 74,
+      "possible_truncation": false
+    },
+    {
+      "entity": "OrchestratorTask",
+      "count": 32,
+      "possible_truncation": false
+    },
+    {
+      "entity": "Pattern",
+      "count": 243,
+      "possible_truncation": false
+    },
+    {
+      "entity": "PayrollRecord",
+      "count": 0,
+      "possible_truncation": false
+    },
+    {
+      "entity": "PlatformAlert",
+      "count": 285,
+      "possible_truncation": false
+    },
+    {
+      "entity": "PlaybookTemplate",
+      "count": 40,
+      "possible_truncation": false
+    },
+    {
+      "entity": "PredictiveAlert",
+      "count": 196,
+      "possible_truncation": false
+    },
+    {
+      "entity": "RateLimitLog",
+      "count": 782,
+      "possible_truncation": false
+    },
+    {
+      "entity": "RelayedKit",
+      "count": 1,
+      "possible_truncation": false
+    },
+    {
+      "entity": "RemediationSweep",
+      "count": 164,
+      "possible_truncation": false
+    },
+    {
+      "entity": "SLAPolicy",
+      "count": 2,
+      "possible_truncation": false
+    },
+    {
+      "entity": "ScalingEvent",
+      "count": 4,
+      "possible_truncation": false
+    },
+    {
+      "entity": "SelfImprovementProposal",
+      "count": 89,
+      "possible_truncation": false
+    },
+    {
+      "entity": "ServiceTicket",
+      "count": 1903,
+      "possible_truncation": false
+    },
+    {
+      "entity": "SimBuilder",
+      "count": 0,
+      "possible_truncation": false
+    },
+    {
+      "entity": "SkillTemplate",
+      "count": 4,
+      "possible_truncation": false
+    },
+    {
+      "entity": "StaffingRequisition",
+      "count": 0,
+      "possible_truncation": false
+    },
+    {
+      "entity": "SystemHealth",
+      "count": 728,
+      "possible_truncation": false
+    },
+    {
+      "entity": "SystemHeartbeat",
+      "count": 623,
+      "possible_truncation": false
+    },
+    {
+      "entity": "TaxFiling",
+      "count": 9,
+      "possible_truncation": false
+    },
+    {
+      "entity": "TelemetryEvent",
+      "count": 6,
+      "possible_truncation": false
+    },
+    {
+      "entity": "TierConfiguration",
+      "count": 4,
+      "possible_truncation": false
+    },
+    {
+      "entity": "VendorContract",
+      "count": 533,
+      "possible_truncation": false
+    },
+    {
+      "entity": "WorkdaySync",
+      "count": 0,
+      "possible_truncation": false
+    }
+  ],
+  "notes": [
+    "Redactions: VendorContract lead_contact_email/phone redacted; personal emails and contact fields redacted.",
+    "Customer/tenant identifying fields (including company/customer/app names, tenant IDs, customer emails and URLs) redacted before public commit per disclosure policy.",
+    "Wallet addresses and private keys redacted; HouseholdBill excluded (owner personal finance).",
+    "created_by/created_by_id stripped server-side at export (exportEntitySnapshot).",
+    "Export errors are recorded in EXPORT_FAILURES.json; counts and possible truncation reflect the API response."
+  ],
+  "excluded": {
+    "HouseholdBill": "owner personal finance (not public)"
+  }
+}
