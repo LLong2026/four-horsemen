@@ -1,0 +1,31 @@
+{
+ "digest": "5948de6b54dbdf26bbf363e34a17819766746b106ade859176f37f68d25defba",
+ "envelope_hex": "53514452115948de6b54dbdf26bbf363e34a17819766746b106ade859176f37f68d25defba",
+ "rails": {
+  "xlm": {
+   "xlm_tx_hash": "788a088b779ebb1665487290cff0c89552741bab612bd0458ead5db053e86ea8",
+   "xlm_ledger": 65074175,
+   "seconds": 6.6
+  },
+  "xrp": {
+   "xrp_txid": "58E52C633AF106A26F1EB59328B40D0640AB6114C30C338830DB00E671056C8C",
+   "seconds": 9.0,
+   "via": "https://xrplcluster.com"
+  },
+  "sat": {
+   "btc_txid": "4d6972915f13a489987733d6f24fdb0cd08ae98e0f1794cadc3e7a8923bf6a48",
+   "fee_sats": 790,
+   "broadcast_via": "mempool.space",
+   "seconds": 0.1,
+   "inclusion_seconds": 301.3,
+   "block_height": 972588,
+   "confirmed": true
+  }
+ },
+ "readback": {
+  "sat": true,
+  "xlm": true,
+  "xrp": true
+ },
+ "all_pass": true
+}
