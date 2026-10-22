@@ -1,0 +1,13 @@
+{
+ "application_number": "64/181,667",
+ "application_type": "Utility - Provisional Application under 35 USC 111(b)",
+ "title": "SYSTEM AND METHOD FOR AUTHORITY-RING OWNERSHIP TRANSFER, CONSENSUS-ENFORCED FRACTIONAL LEASE, AND KEYLESS MULTI-RAIL BYTE-EXACT VERIFICATION OF SINGLE-UNIT CRYPTOGRAPHIC ASSETS",
+ "patent_center_number": "83525791",
+ "confirmation_number": "8233",
+ "filed_by": "Leon Long (pro se)",
+ "received": "2026-10-21T22:27:39 ET",
+ "fee_status": "PENDING (USPTO payment system outage at filing; to be paid by card)",
+ "docket": "LSL-ELEV-2026-001",
+ "coverage_basis": "Gap analysis vs June 2026 filings: authority-ring ownership transfer, fractional lease combination, keyless byte-exact readback protocol",
+ "reduction_to_practice": "FL-1 / HAND-1 ceremonies (ledger 0282/0283), DOI 10.5281/zenodo.23515307, 12-rail MCR-3 corpus seal DOI 10.5281/zenodo.23550692"
+}

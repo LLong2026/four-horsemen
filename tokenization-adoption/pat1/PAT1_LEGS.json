@@ -1,0 +1,24 @@
+{
+ "xlm": {
+  "hash": "32cdd551c115de0aa22c7ba208b7a7a6c9a5cf78cf61394079e153a4725aeabe",
+  "ledger": 65072525,
+  "confirmed": true,
+  "seconds": 5.0,
+  "link": "https://stellar.expert/explorer/public/tx/32cdd551c115de0aa22c7ba208b7a7a6c9a5cf78cf61394079e153a4725aeabe",
+  "payload_hex": "535144520fbd5e3193bde70ea0cd20db1d3214b347d2ff0891a311eae7c085eb14f324ba99"
+ },
+ "xrp": {
+  "txid": "D62064138C9BC426664C54FDF15C8A7F2CF03E033667C52CC29F8D048875ED86",
+  "status": "VALIDATED",
+  "seconds": 5.8,
+  "link": "https://livenet.xrpl.org/transactions/D62064138C9BC426664C54FDF15C8A7F2CF03E033667C52CC29F8D048875ED86",
+  "payload_hex": "535144520fbd5e3193bde70ea0cd20db1d3214b347d2ff0891a311eae7c085eb14f324ba99"
+ },
+ "btc": {
+  "txid": "602ebfdc922cb5a8b1956f264f856c073e49aebc880340c87491866dc9acbe84",
+  "fee_sats": 790,
+  "seconds": 0.2,
+  "link": "https://mempool.space/tx/602ebfdc922cb5a8b1956f264f856c073e49aebc880340c87491866dc9acbe84",
+  "payload_hex": "535144520fbd5e3193bde70ea0cd20db1d3214b347d2ff0891a311eae7c085eb14f324ba99"
+ }
+}
