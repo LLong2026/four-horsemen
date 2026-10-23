@@ -57,6 +57,6 @@ The H-Line runs **alongside, but isolated from**, the live 60-day Lindy experime
 - PQC-only (CRYSTALS-Dilithium3 / Kyber-1024 / SPHINCS+-256f)
 - No PHI, credentials, wallet addresses, or customer-identifiable data in any log
 
-**12 patents pending + 5 SBIR tracks** — Leon Calvin Long II / SQUIRL OS Technologies
+**13 patents pending + 5 SBIR tracks** — Leon Calvin Long II / SQUIRL OS Technologies
 
 > This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.
