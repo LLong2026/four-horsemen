@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "deployed": "2026-10-22",
+  "authorization": "Leon GO (chat authorization, 2026-10-22 23:40 CT)",
+  "doctrine": "Funding floors for the SIP-WH-01 wallet_funding_depletion watch. Floors are OPERATIONAL MINIMUMS in native units: enough to keep the wallet's role functional (priority hops, anchor ceremonies, standby readiness) without a top-up. A balance below floor triggers a medium PredictiveAlert naming wallet label + rail only (Rule 8) and a top-up checklist. NEVER automated funding. Floors are forward-only like every ledger-tied artifact: recalibration is a new version with a disclosed reason.",
+  "floors": {
+    "BTC Writer (MCR/Satoshi Track)": { "rail": "BTC", "floor": 0.00010, "basis": "3+ priority 0x12 hops at ~3,000 sats each incl. fees", "priority": "primary" },
+    "XLM Writer / DID account": { "rail": "XLM", "floor": 3.0, "basis": "base reserve + trustlines + ~300 fast-lane anchors", "priority": "primary" },
+    "XRP Writer A": { "rail": "XRP", "floor": 4.0, "basis": "base+owner reserve + ~100 anchor legs", "priority": "primary" },
+    "Stellar Writer B": { "rail": "XLM", "floor": 3.0, "basis": "standby reserve parity with Writer A", "priority": "standby" },
+    "XRP Writer B": { "rail": "XRP", "floor": 4.0, "basis": "standby reserve parity with Writer A", "priority": "standby" },
+    "Cardano Writer A": { "rail": "ADA", "floor": 3.0, "basis": "min-UTXO 1.5 ADA + ~2 metadata writes", "priority": "ceremony" },
+    "Cardano Writer B": { "rail": "ADA", "floor": 3.0, "basis": "standby parity", "priority": "standby" },
+    "ALGO Writer A": { "rail": "ALGO", "floor": 0.5, "basis": "min balance 0.1 + ~400 note txns", "priority": "ceremony" },
+    "ALGO Writer B": { "rail": "ALGO", "floor": 0.5, "basis": "standby parity", "priority": "standby" },
+    "AVAX Writer": { "rail": "AVAX", "floor": 0.10, "basis": "~20 zero-value calldata anchors at dynamic gas", "priority": "ceremony" },
+    "DOT Writer A": { "rail": "DOT", "floor": 1.0, "basis": "existential deposit 1 DOT + remark fees", "priority": "ceremony" },
+    "DOT Writer B": { "rail": "DOT", "floor": 1.0, "basis": "existential deposit; 10.02 DOT inbound per roster", "priority": "watching" },
+    "SOL Writer A": { "rail": "SOL", "floor": 0.05, "basis": "~10,000 memo v2 txns of rent+fee headroom", "priority": "ceremony" },
+    "SOL Writer B": { "rail": "SOL", "floor": 0.05, "basis": "standby parity", "priority": "standby" },
+    "ATOM Writer Mainnet": { "rail": "ATOM", "floor": 0.5, "basis": "~20 memo legs at up to 25k gas", "priority": "ceremony" },
+    "LTC Writer (Rail #11)": { "rail": "LTC", "floor": 0.01, "basis": "~50 OP_RETURN legs", "priority": "ceremony" },
+    "DOGE Writer": { "rail": "DOGE", "floor": 50.0, "basis": "~200 OP_RETURN legs at 0.25-1 DOGE dust tolerance", "priority": "ceremony" },
+    "ETH Writer": { "rail": "ETH", "floor": 0.005, "basis": "~10 zero-value calldata anchors at type-2 gas", "priority": "ceremony" },
+    "HBAR Writer Alias (Rail #10 re-opened)": { "rail": "HBAR", "floor": 5.0, "basis": "auto-create threshold + ~100 memo txns", "priority": "watching" },
+    "XFER-1 Receive Wallet": { "rail": "BTC", "floor": 0.0, "basis": "test_complete receive-only role; monitored watch-only, no depletion trigger", "priority": "test" }
+  }
+}
