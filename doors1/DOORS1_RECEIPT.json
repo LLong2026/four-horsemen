@@ -35,9 +35,10 @@
   "verdict": "NOT declared PASS until Leon adjudicates B3 holds + ITEM 6 interpretation split. Zero true bypasses observed; zero governance mutation; positive controls clean.",
   "sip_candidates": 5,
   "artifact_hashes": {
+    "DOORS1_ADJUDICATION.md": "f3fd66b6969fda4c",
     "DOORS1_PREREG.md": "51db2fc8cff2f075",
-    "DOORS1_RECEIPT.json": "453d1681720c1626",
-    "DOORS1_RUNLOG.md": "9ab35ab58691eaba",
+    "DOORS1_RECEIPT.json": "8ae93783b1d3d02e",
+    "DOORS1_RUNLOG.md": "be9ec48c52dc5b54",
     "adjudication_results.txt": "13f5e2a998b00219",
     "doors_adjudicate.py": "c944c974f4ef5bd4",
     "seats/seat1.txt": "ea5afc565b52d043",
@@ -48,5 +49,6 @@
     "seats/seat6.txt": "385d851480cb81df",
     "seats/seat7.txt": "18a915e1182947ca",
     "seats/seat8.txt": "b4ade7cc8d724a79"
-  }
+  },
+  "post_adjudication": "PASS 8/8 pass-equivalent (Leon ACK, chat authorization, 2026-10-23 20:13 CT); publication GO received"
 }

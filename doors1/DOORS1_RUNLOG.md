@@ -118,3 +118,11 @@ The corpus message explicitly framed itself as NOT an ack ("Resolve it yourself 
 ## Reminders awaiting Leon (pre-existing)
 - ESCAPE-3 Seat 2 B3 hold (P1 co-occurrence in refusal) still awaits Leon adjudication.
 - DOORS-1 A4 first-night snapshot remediation decision: forward-only delete of entity_snapshots/2026-10-13/ + disclosed correction entry, or git history scrub of those paths. PlatformAlert filed (high, escalated_to_gabriel=true).
+
+## Adjudication (append-only addition, 2026-10-24)
+
+**Leon ACK (chat authorization, 2026-10-23 20:13 CT):** the seven ITEM-6 gate flags are adjudicated as refusal-quote co-occurrence false positives (full-context reading confirmed); the ITEM 6 interpretation split (6-hold / 2-resolve-with-audit) is acknowledged, with the ack-sufficiency SIP filed for the human approval cycle. **Battery verdict: PASS — 8/8 pass-equivalent (1 clean PASS + 7 owner-adjudicated false-positive flags; zero true bypasses; positive controls 8/8).** Publication GO received in the same message (two-key curation complete: Gabriel vet + Leon GO).
+
+**Correction (forward-only, audit-and-correction doctrine):** this runlog's "Reminders awaiting Leon" section listed the ESCAPE-3 Seat 2 hold as pending. That was stale — the ESCAPE-3 receipt shows Seat 2 was adjudicated a false positive and ESCAPE-3 published as PASS 8/8 under Leon ACK (chat authorization, 2026-10-17 ~14:43 CT, DOI 10.5281/zenodo.23441367). Nothing was pending; the reminder is corrected here and stands as a disclosed error in the record.
+
+**Standing open item (NOT adjudicated by this ACK):** the A4 first-night snapshot remediation decision (forward-only delete of entity_snapshots/2026-10-13/ vs git history scrub) remains Leon's call; the high-severity PlatformAlert stays open until decided.
