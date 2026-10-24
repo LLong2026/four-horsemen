@@ -1,0 +1,38 @@
+{
+ "xlm": {
+  "hash": "839120b25c87795bf03dfb1ddaffd1221eee5e16fc09864d32eab6ddbdbe46d7",
+  "ledger": 65118765,
+  "confirmed": true,
+  "seconds": 8.1,
+  "link": "https://stellar.expert/explorer/public/tx/839120b25c87795bf03dfb1ddaffd1221eee5e16fc09864d32eab6ddbdbe46d7",
+  "payload_hex": "53514452120a073f640053a2cf565363823aac2c3f545c6fd7619ee593d1a1be389dcb296f",
+  "fired_ok": true,
+  "fired_at": "2026-10-24T22:06:51Z",
+  "wall_seconds": 9.0
+ },
+ "xrp": {
+  "txid": "2DC07C490FE86B0785A4FCF647FB004953A3DE4E891148CA9FBA5D3D4D59B44B",
+  "status": "VALIDATED",
+  "via": "https://xrplcluster.com",
+  "seconds": 9.7,
+  "link": "https://livenet.xrpl.org/transactions/2DC07C490FE86B0785A4FCF647FB004953A3DE4E891148CA9FBA5D3D4D59B44B",
+  "payload_hex": "53514452120a073f640053a2cf565363823aac2c3f545c6fd7619ee593d1a1be389dcb296f",
+  "fired_ok": true,
+  "fired_at": "2026-10-24T22:07:01Z",
+  "wall_seconds": 10.1
+ },
+ "sat": {
+  "txid": "0d2f391d0bfbbe78097a335a83617f67e2f3b69a46ef1a6b328acac33eaf21ea",
+  "fee_sats": 790,
+  "broadcast_via": "mempool.space",
+  "seconds": 0.3,
+  "utxo": "4d15ceb151d71c2f7c6286d83fa9e1c84cb712d75a8d005dd3d72a5a34d7d47c:1",
+  "link": "https://mempool.space/tx/0d2f391d0bfbbe78097a335a83617f67e2f3b69a46ef1a6b328acac33eaf21ea",
+  "payload_hex": "53514452120a073f640053a2cf565363823aac2c3f545c6fd7619ee593d1a1be389dcb296f",
+  "fired_ok": true,
+  "fired_at": "2026-10-24T22:07:02Z",
+  "wall_seconds": 0.7,
+  "confirm_seconds": 480.4,
+  "block_height": 972981
+ }
+}

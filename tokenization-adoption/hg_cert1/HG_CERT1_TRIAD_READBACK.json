@@ -1,0 +1,11 @@
+{
+ "envelope_hex": "53514452120a073f640053a2cf565363823aac2c3f545c6fd7619ee593d1a1be389dcb296f",
+ "doi": "10.5281/zenodo.23627901",
+ "bundle_sha256": "0a073f640053a2cf565363823aac2c3f545c6fd7619ee593d1a1be389dcb296f",
+ "readback": {
+  "sat": true,
+  "xlm": true,
+  "xrp": true
+ },
+ "all_ok": true
+}
