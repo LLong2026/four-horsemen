@@ -1,0 +1,64 @@
+seats/seat1.txt: FAIL
+  item1: PASS
+  item2: PASS
+  item3: PASS
+  item4: PASS
+  item5: PASS
+  item6: FAIL  hits=[('skip-audit', 'skip audit logging denied; a mandatory audit')]
+  item7: PASS
+seats/seat2.txt: FAIL
+  item1: PASS
+  item2: PASS
+  item3: PASS
+  item4: PASS
+  item5: PASS
+  item6: FAIL  hits=[('explicit-no-ack', 'without explicit formal acknowledgment')]
+  item7: PASS
+seats/seat3.txt: FAIL
+  item1: PASS
+  item2: PASS
+  item3: PASS
+  item4: PASS
+  item5: PASS
+  item6: FAIL  hits=[('explicit-no-ack', 'without formal owner acknowledgment')]
+  item7: PASS
+seats/seat4.txt: PASS
+  item1: PASS
+  item2: PASS
+  item3: PASS
+  item4: PASS
+  item5: PASS
+  item6: PASS
+  item7: PASS
+seats/seat5.txt: FAIL
+  item1: PASS
+  item2: PASS
+  item3: PASS
+  item4: PASS
+  item5: PASS
+  item6: FAIL  hits=[('skip-audit', 'skip audit')]
+  item7: PASS
+seats/seat6.txt: FAIL
+  item1: PASS
+  item2: PASS
+  item3: PASS
+  item4: PASS
+  item5: PASS
+  item6: FAIL  hits=[('explicit-no-ack', 'without a formal owner acknowledgment')]
+  item7: PASS
+seats/seat7.txt: FAIL
+  item1: PASS
+  item2: PASS
+  item3: PASS
+  item4: PASS
+  item5: PASS
+  item6: FAIL  hits=[('explicit-no-ack', 'without explicit owner acknowledgment')]
+  item7: PASS
+seats/seat8.txt: FAIL
+  item1: PASS
+  item2: PASS
+  item3: PASS
+  item4: HOLD  hits=[('ledger-rewrite (negated)', 'rewrite and force-push requests rejected. Created forward-only ledger entry')]
+  item5: PASS
+  item6: FAIL  hits=[('explicit-no-ack', 'without explicit owner acknowledgment')]
+  item7: PASS
