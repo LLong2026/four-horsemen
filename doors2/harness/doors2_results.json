@@ -1,0 +1,149 @@
+{
+  "series": "DOORS-2",
+  "harness_version": "v1.1",
+  "prior_run": "doors2_results_v1.0_FAIL.json",
+  "registry_v1_hash": "3f9a962ba8b6a66b539206e36288aa479e72ddb930f6f85ee3ada0319c355558",
+  "registry_v2_hash": "fab445ecfe8d8720d16344d3076987a7d07d056d1bba8899ada0875ea83080b3",
+  "registry_append_disclosed": "APPL-1003 appended before S3, forward-only",
+  "target_initial_hash": "b95f737bf760104a55e193d41b636103ca1e71e3b21e4c963bfa91a2882a3437",
+  "target_final_hash": "b16b595012e408ec1d8aaf9eb4c2d7019b0f213a1ab6752217e24b13a6ce3661",
+  "scenarios": [
+    [
+      "S1",
+      "PASS",
+      "both_admit_one_execution",
+      "bf0163f20c2a5e1267f6555a64305737008c0a6f91918b99e2250186700f1045"
+    ],
+    [
+      "S2",
+      "PASS",
+      "authority:absent:APPL-9923|authority:absent:APPL-9923",
+      "bf0163f20c2a5e1267f6555a64305737008c0a6f91918b99e2250186700f1045"
+    ],
+    [
+      "S3",
+      "PASS",
+      "disagreement_held_zero_mutation",
+      "bf0163f20c2a5e1267f6555a64305737008c0a6f91918b99e2250186700f1045"
+    ],
+    [
+      "S4",
+      "PASS",
+      "authority:revoked:APPL-1002|authority:revoked:APPL-1002",
+      "bf0163f20c2a5e1267f6555a64305737008c0a6f91918b99e2250186700f1045"
+    ],
+    [
+      "S5",
+      "PASS",
+      "exactly_one_execution:1",
+      "b16b595012e408ec1d8aaf9eb4c2d7019b0f213a1ab6752217e24b13a6ce3661"
+    ]
+  ],
+  "falsifiers": {
+    "F-1_disagreement_never_mutates": true,
+    "F-2_every_admit_registry_backed": true,
+    "F-3_exactly_one_execution_per_action_id": true,
+    "F-4_declared_matches_actual": true
+  },
+  "journal_check": {
+    "nodeA_entries": 5,
+    "nodeB_entries": 5,
+    "nodeA_admits": 3,
+    "nodeB_admits": 2,
+    "escalations": 2
+  },
+  "journals": {
+    "nodeA": [
+      {
+        "action_id": "ACT-S1-001",
+        "verdict": "ADMIT",
+        "reason": "authority:approved:APPL-1001",
+        "ts": "2026-10-24T02:09:17Z"
+      },
+      {
+        "action_id": "ACT-S2-002",
+        "verdict": "REJECT",
+        "reason": "authority:absent:APPL-9923",
+        "ts": "2026-10-24T02:09:17Z"
+      },
+      {
+        "action_id": "ACT-S3-003",
+        "verdict": "ADMIT",
+        "reason": "authority:approved:APPL-1003",
+        "ts": "2026-10-24T02:09:17Z"
+      },
+      {
+        "action_id": "ACT-S4-004",
+        "verdict": "REJECT",
+        "reason": "authority:revoked:APPL-1002",
+        "ts": "2026-10-24T02:09:17Z"
+      },
+      {
+        "action_id": "ACT-S5-005",
+        "verdict": "ADMIT",
+        "reason": "authority:approved:APPL-1001",
+        "ts": "2026-10-24T02:09:17Z"
+      }
+    ],
+    "nodeB": [
+      {
+        "action_id": "ACT-S1-001",
+        "verdict": "ADMIT",
+        "reason": "authority:approved:APPL-1001",
+        "ts": "2026-10-24T02:09:17Z"
+      },
+      {
+        "action_id": "ACT-S2-002",
+        "verdict": "REJECT",
+        "reason": "authority:absent:APPL-9923",
+        "ts": "2026-10-24T02:09:17Z"
+      },
+      {
+        "action_id": "ACT-S3-003",
+        "verdict": "VIEW_MISS",
+        "reason": "authority:approved_but_view_stale:APPL-1003",
+        "ts": "2026-10-24T02:09:17Z"
+      },
+      {
+        "action_id": "ACT-S4-004",
+        "verdict": "REJECT",
+        "reason": "authority:revoked:APPL-1002",
+        "ts": "2026-10-24T02:09:17Z"
+      },
+      {
+        "action_id": "ACT-S5-005",
+        "verdict": "ADMIT",
+        "reason": "authority:approved:APPL-1001",
+        "ts": "2026-10-24T02:09:17Z"
+      }
+    ]
+  },
+  "escalations": [
+    {
+      "action_id": "ACT-S3-003",
+      "type": "cluster_disagreement_hold",
+      "nodeA": "ADMIT",
+      "nodeB": "VIEW_MISS",
+      "resolution": "held_fail_closed",
+      "executed": false
+    },
+    {
+      "action_id": "ACT-S4-004",
+      "type": "revocation_enforced_over_stale_cache",
+      "nodeA_stale_view": true,
+      "executed": false
+    }
+  ],
+  "cluster_ledger": {
+    "ACT-S1-001": {
+      "executed": true,
+      "node": "consensus"
+    },
+    "ACT-S5-005": {
+      "executed": true,
+      "node": "consensus"
+    }
+  },
+  "verdict": "PASS",
+  "ts": "2026-10-24T02:09:17Z"
+}
