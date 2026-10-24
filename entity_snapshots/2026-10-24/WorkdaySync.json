@@ -1,0 +1,11 @@
+{
+ "entity": "WorkdaySync",
+ "exported_at": "2026-10-24T09:07:59.919Z",
+ "count": 0,
+ "possible_truncation": false,
+ "records": [],
+ "hygiene_gate": {
+  "applied": true,
+  "redacted_fields": []
+ }
+}

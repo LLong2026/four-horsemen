@@ -1,0 +1,56 @@
+{
+ "entity": "SkillTemplate",
+ "exported_at": "2026-10-24T09:07:55.669Z",
+ "count": 4,
+ "possible_truncation": false,
+ "records": [
+  {
+   "github_ref": null,
+   "name": "pattern-learning",
+   "description": "Analyzes healing event history, extracts patterns, updates NeuralNode weights, creates Pattern and LearningMetric records",
+   "steps": null,
+   "version": "1.0",
+   "id": "6a6654270e885efe3cc12de2",
+   "created_date": "2026-07-26T18:38:31.394000",
+   "updated_date": "2026-07-26T18:38:31.394000",
+   "is_sample": false
+  },
+  {
+   "github_ref": null,
+   "name": "anomaly-response",
+   "description": "Executes the Detect-Isolate-Heal protocol: matches anomaly to playbook, executes healing steps, creates AegisHealingEvent",
+   "steps": null,
+   "version": "1.0",
+   "id": "6a6654270e885efe3cc12de1",
+   "created_date": "2026-07-26T18:38:31.394000",
+   "updated_date": "2026-07-26T18:38:31.394000",
+   "is_sample": false
+  },
+  {
+   "github_ref": null,
+   "name": "full-system-sweep",
+   "description": "Full ecosystem scan: all entities, all apps, all nodes \u2014 aggregates health metrics and generates System Health Manifest",
+   "steps": null,
+   "version": "1.0",
+   "id": "6a6654270e885efe3cc12de0",
+   "created_date": "2026-07-26T18:38:31.394000",
+   "updated_date": "2026-07-26T18:38:31.394000",
+   "is_sample": false
+  },
+  {
+   "github_ref": null,
+   "name": "heartbeat-check",
+   "description": "Scans SystemHeartbeat records across connected apps, compares against baselines, detects anomalies",
+   "steps": null,
+   "version": "1.0",
+   "id": "6a6654270e885efe3cc12ddf",
+   "created_date": "2026-07-26T18:38:31.394000",
+   "updated_date": "2026-07-26T18:38:31.394000",
+   "is_sample": false
+  }
+ ],
+ "hygiene_gate": {
+  "applied": true,
+  "redacted_fields": []
+ }
+}
