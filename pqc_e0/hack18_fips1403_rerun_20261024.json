@@ -1,0 +1,57 @@
+{
+  "battery": "hack18_fips1403_cmvp",
+  "falsifiers": [
+    {
+      "id": "F1",
+      "name": "Pre-operational self-test bypass",
+      "predicted": "refused_pre_op_self_test",
+      "actual": "refused_pre_op_self_test",
+      "verdict": "PASS",
+      "detail": "no operation before self-test passes"
+    },
+    {
+      "id": "F2",
+      "name": "Module-load integrity bypass",
+      "predicted": "refused_integrity",
+      "actual": "refused_integrity",
+      "verdict": "PASS",
+      "detail": "integrity check unconditional; skip flag structurally ignored"
+    },
+    {
+      "id": "F3",
+      "name": "Zeroization skip on key retirement",
+      "predicted": "refused_zeroize_mandatory",
+      "actual": "refused_zeroize_mandatory",
+      "verdict": "PASS",
+      "detail": "retirement without zeroization is refused"
+    },
+    {
+      "id": "F4",
+      "name": "Post-cycle state without re-verification",
+      "predicted": "refused_state_unverified",
+      "actual": "refused_state_unverified",
+      "verdict": "PASS",
+      "detail": "state must re-verify from the ledger after restart"
+    },
+    {
+      "id": "F5",
+      "name": "Maintenance-role bypass claim",
+      "predicted": "rejected_role_no_bypass",
+      "actual": "rejected_role_no_bypass",
+      "verdict": "PASS",
+      "detail": "no role can bypass mandatory self-tests"
+    },
+    {
+      "id": "F6",
+      "name": "Fault injection during self-test",
+      "predicted": "refused_fault_injection",
+      "actual": "refused_fault_injection",
+      "verdict": "PASS",
+      "detail": "divergence from canonical vectors refused; re-run determinism holds"
+    }
+  ],
+  "overall": "PASS",
+  "model": "deterministic (no LLM in decision path)",
+  "prereg": "committed before run; frozen manifest"
+}
+RECEIPT SHA-256: 44c72afd625c55addc77f1385bc8cf56eb517556fb621ea265a26f3beb161d17
