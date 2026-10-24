@@ -1,0 +1,55 @@
+{
+ "id": "gen-1792810277-nmRSm8DKZyoQsMNL62es",
+ "object": "chat.completion",
+ "created": 1792810277,
+ "model": "anthropic/claude-opus-5.5",
+ "provider": "Claude Platform on AWS",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "end_turn",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"latency_spike\", \"playbook\": \"PB-003: Latency Spike Resolver\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47c5\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": "This latency_spike case matches exactly, confidence 0.9 clears the 0.8 threshold, so it resolves cleanly\u2014just a synthetic test case, nothing concerning here.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "This latency_spike case matches exactly, confidence 0.9 clears the 0.8 threshold, so it resolves cleanly\u2014just a synthetic test case, nothing concerning here.\n\n",
+      "format": "anthropic-claude-v1",
+      "index": 0,
+      "signature": "CAQS0gUKEAgTGAI4AUIIdGhpbmtpbmcSDER7xSvVGkP2pOpibRoMLU/OFW+Ma4e4VJ5cIjA7StXhvHMKKJUSAVTOSTvopZ1lPvDibMpPJ4eZADUJlmgZec+TdEdT/mRHYEMM0S0q7wSg8etKPQxc1YGUx5pnTqELYrrj4lQShOEWhajke/FZjylDPCHSt+v7U4dk2oFrP2VKtszeTZRUjUXI/4Hi5mz7inbRt+cxm00ItDvJjMpXCFtxoB/mDsTt//8KDhiKzM0UIrKONSFC98/qSbBaBvijp76wj5wjvZlEU4ELAkgZbzAmVhn8W2TEp+CYelKXqMz7TY+HOvmqgweGeNMQgo1qLVembuXs46NOmUogVG4gfeNUaFxAZr5y7GJ2FNQFcBrkz8KteTuAkkaYokNI7vZGoGUGnEF7W50Im64R8OuR6dv5ALF1rd/z603gq5EVaq2DUQ1VglxiBLkZi9/Ycj4d/9y9NWQue9FedYBw4GIHh2QbkzonF19HZmz7z3A/x+dV+0kP/FsVDfqeWdrkNH5Y9M6aq12IbOoEBx9WwXpHc/pKyhK0KIBB58KXC4G1rJEMEKSXEhPEBS3hB7Wa9/XuyR6wcq3Ll1llZyMcHfavNqYQB7R3nWF1mlr7Mcjf1i5YVS3xQ859W/61GKUMjfpskTvHrJe1i+KJvwB/tr9wQbIVxypjbbq/CR5NvXndr1obdLfBMCd3bI6pmB+ip5C9wiBFkcpU6wDKVFhf/TlZaCmks5SVSMVzwt+HknDc9ppUVcgVkE+Gnz+bq9TCwUrhIKWOzsETprdycpvbZg7Lt9154anU0UZQcFpR3bAWR/xJDEq1icabh+OWFXrAiecuuGkpj0UDzCIXKmN1bQlmanr+AYVjVBzk2X0UwCx8jglhVorvtjthXnDqdcHmnJHo9KDUkHZwKRrL2wF4lltRQaFQC0Tx7DSdg8VW+oRtzhgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 864,
+  "completion_tokens": 165,
+  "total_tokens": 1029,
+  "cost": 0.006756,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006756,
+   "upstream_inference_prompt_cost": 0.003456,
+   "upstream_inference_completions_cost": 0.0033
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 53,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

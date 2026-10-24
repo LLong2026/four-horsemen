@@ -1,0 +1,46 @@
+{
+  "series_signature": "dual_mesh_benchmark_frontier_20261023",
+  "executed_at": "2026-10-24T02:53:03.143358+00:00",
+  "operator_authorization": "Leon GO (chat authorization, 2026-10-23, 21:50 CT)",
+  "prereg": "dual_mesh_bench_frontier_20261023_PREREG.md, committed BEFORE execution",
+  "instrument": "byte-identical to the DeepSeek B1 leg (frozen prompt contract, CORPUS_B1 sha 13295d19..., first-20 selection rule, fresh stateless request per instance, wall-clock request->full response)",
+  "legs": {
+    "anthropic_opus_5_5": {
+      "family": "anthropic_opus_5_5",
+      "model_requested": "anthropic/claude-opus-5.5",
+      "n_run": 20,
+      "n_correct": 20,
+      "n_strict": 20,
+      "n_norm": 20,
+      "cost_usd": 0.1335,
+      "model_returned": "anthropic/claude-opus-5.5",
+      "aborted": false,
+      "median_ms": 3346.2,
+      "p95_ms": 8688.9
+    },
+    "openai_gpt_6_1_sol": {
+      "family": "openai_gpt_6_1_sol",
+      "model_requested": "openai/gpt-6.1-sol",
+      "n_run": 20,
+      "n_correct": 20,
+      "n_strict": 20,
+      "n_norm": 20,
+      "cost_usd": 0.0377,
+      "model_returned": "openai/gpt-6.1-sol",
+      "aborted": false,
+      "median_ms": 2225.6,
+      "p95_ms": 3356.1
+    }
+  },
+  "total_cost_usd": 0.1712,
+  "payment_abort": false,
+  "raw_preserved": "fh_pub/dmb_frontier_evidence/<family>/ raw json + content per instance",
+  "comparisons": {
+    "dmb_x_matrix_ref": "ledger 0081, DMB-X 8-column matrix (Oct 13, 2026)",
+    "deepseek_v4_pro_median_ms_ref": "see DMB DeepSeek column (DOI 10.5281/zenodo.23345241)",
+    "mesh_median_ms_ref": 0.000443,
+    "v1_loop_median_ms_ref": 4509.1,
+    "doctrine": "raw-API legs are comparable within their substrate only; cross-substrate comparisons are directional (XPLAT-2/3)"
+  },
+  "disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All data is synthetic."
+}

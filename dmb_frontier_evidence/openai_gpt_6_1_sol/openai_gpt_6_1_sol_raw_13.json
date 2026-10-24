@@ -1,0 +1,46 @@
+{
+ "id": "gen-1792810366-hYSiSuH2znRIhJLuDwwH",
+ "object": "chat.completion",
+ "created": 1792810366,
+ "model": "openai/gpt-6.1-sol",
+ "provider": "OpenAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"latency_spike\",\"playbook\":\"PB-003: Latency Spike Resolver\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47c5\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\"}]",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 557,
+  "completion_tokens": 76,
+  "total_tokens": 633,
+  "cost": 0.001874,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.001874,
+   "upstream_inference_prompt_cost": 0.001114,
+   "upstream_inference_completions_cost": 0.00076
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

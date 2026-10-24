@@ -1,0 +1,55 @@
+{
+ "id": "gen-1792810264-G3NJaderrZnpoBtIjtpo",
+ "object": "chat.completion",
+ "created": 1792810264,
+ "model": "anthropic/claude-opus-5.5",
+ "provider": "Claude Platform on AWS",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "end_turn",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"heartbeat_miss\", \"playbook\": \"PB-008: Heartbeat Re-igniter\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47ca\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": "The anomaly type \"heartbeat_miss\" matches exactly, and the confidence of 0.9 clears the 0.85 threshold, so this one resolves.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "The anomaly type \"heartbeat_miss\" matches exactly, and the confidence of 0.9 clears the 0.85 threshold, so this one resolves.\n\n",
+      "format": "anthropic-claude-v1",
+      "index": 0,
+      "signature": "CAQSrQUKEAgTGAI4AUIIdGhpbmtpbmcSDPEG0Oa3DPQ8jDiuQBoM0DvJT3MXUcn+ItKFIjDoqKHpLzabkTO93EE1DVhpLBSgKOXRvck4ClaGA9uO9Fayf9ncUgswaGrN+QMnuWcqygSVLPbtB1d0ydPvlcYMKC82KFT4XESjzvEQrncOTB8hPaVVQ2ZNPChawoNmsyUy5JbPuj7mETIHdht3v1JhhdyPdhvJm1733fvjDOM5H/ePe0SPTWZSqN3YO5xuA3y38t0Zz293vOTXFmPUggFpzuWzntvSN0LaRZGJOmIMei9HhvxEjUs6+kAcP4ih2QdYXEf0j653LTo3uXBxdfMVL+l71iQVXNC9jBRcZQMmkHbE7ep0K5lF0r3oHmd0hCEdrQ4BqMKQPCUk84YC2Xq/EyZFnueRuSSfhjl7Ya5xUsHcQX6jV72TdoWH5LYOgCnFvHyfBepKlic4JiDCHMdOE6uxsN39rcx4mXXu7O+oqDu6aQtIfizVHDTb2tKnBl9hIGOE7hFHYgYDK1B+rX7dseb7k6TpDp/8/xqV0xoQIr1QodBzMkFpR1VAu2I3EGJ4pAQsbiHMoJCL0FUtncf01zEGh587kXT6lvIaSKOO/+Lr3F2UuIGCeLPqgV3bSG8Hn0b/FI+eAYv9lLbJJMZTCnuVyqmykbD9+SHBd/BbCLe996TpisnIwQixi7GmHIfyYd5eW/G92lxRRrxzscWEwybCV3Ldzc0Ry/TqCC1mHU98bMCL9KadTg0HmGbVE2PcMXml5f24dq2A8JpUr0X+TrbPB87SkJir52+bqXe8bZGC04ItgQc4CdiaYyV70SpDGnMGrUxOFgGDzVpctZ5waKx5ewMqnShQmPoL2UmSX8C01aVTUFquuubrKM+7VdeXNUDFdP9y4LsIZ5tiGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 870,
+  "completion_tokens": 158,
+  "total_tokens": 1028,
+  "cost": 0.00664,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00664,
+   "upstream_inference_prompt_cost": 0.00348,
+   "upstream_inference_completions_cost": 0.00316
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 41,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

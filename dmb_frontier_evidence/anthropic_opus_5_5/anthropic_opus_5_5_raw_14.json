@@ -1,0 +1,55 @@
+{
+ "id": "gen-1792810317-yIt6ZPDUa2km1PXdf0XI",
+ "object": "chat.completion",
+ "created": 1792810317,
+ "model": "anthropic/claude-opus-5.5",
+ "provider": "Claude Platform on AWS",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "end_turn",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"quantum_vulnerability_detected\", \"playbook\": \"PB-009: Quantum Vulnerability Migrator\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cb\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\"}]",
+    "refusal": null,
+    "reasoning": "\"quantum_vulnerability_detected\" lines up exactly with PB-009, and with confidence 0.9 clearing the 0.8 threshold, I can mark this one resolved.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "\"quantum_vulnerability_detected\" lines up exactly with PB-009, and with confidence 0.9 clearing the 0.8 threshold, I can mark this one resolved.\n\n",
+      "format": "anthropic-claude-v1",
+      "index": 0,
+      "signature": "CAQSxAUKEAgTGAI4AUIIdGhpbmtpbmcSDD68zcfo96GDSOUdThoMUafiaeTo7CDQ6/RPIjBMS2q6ZzNRUnxVfYHaU+Ejc2UrDRSr7lEzZQT9o/HC/EI2FIIfV5XBeqKqqHX+4mgq4QTfKf352lbGi5e/8yRIj5+2jA4maOEj2B3DvAuYRWYE0ryQZ7Z8Tj2VDsgSdKsuT83V9kq4IQkGc+SpVkem2S61YF0lZbUFphxnZzUbYo2fQv9qO8iJ3K92RpSzpxiFCoZTysNfrd8I4Z8NPWsHGmrMCALHtVIiH9E1Z0bAIMxDTji5YL+Lb5HdlsQS6TV/lC4quSuHcAdUPafC9FeEEmLufws1bJVVq7IVOvI9VBZNVurVtO39XPojIldW4PtgsesD6m9cXyTzGuun5j6JKzf/5q1QATqzQ+UfBP1C/aEBjmc3N0T47OVUo2pRlJ+DJFR9Gte9CC7XaqIxiAktGXyw0cyD8WJJ1jBwQb44KJzK6z54WxDHHqSxEhRPOJtv+cxYurMehCzSQdxlgmXr4kpPnL+3mkcF8ZEHySq/5WnN/hODuOtOrBz9EbWNECovF/salZBgbUsf52EwvYeDT6J2i6yYNKrgrcuQwpYgUc9uwyzTG8cB/dQlcz003Ez1hYDExI1St0Sc0hzaIbDZ52YzferxTRSEXvn1RPZT1aSkwqd5Y6+uTSYdbF2BBPQG7Mh2cQs/L+3T5fzP7thGfZCVR4w/X2DzeBRoECTpFLzGVbBa1k2s+N6mcZI5GefwJfiKJ/ajvhM3wK2BRQrCtUaBrPbmJZnVAv6VGzqASgsgPPCcx+yC71ZkZ8bSddxWn1Z/QEdUxsaQ0V+o9EgHcjnuNaZGV5Ppj5By+VnXyUB7LNDz5d4TsYgiU9ujDy3Phf5S+jo7bS9S+ayqeTgb43cMP+8Q49dUyt0SlTOEFZXr4CYYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 876,
+  "completion_tokens": 170,
+  "total_tokens": 1046,
+  "cost": 0.006904,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006904,
+   "upstream_inference_prompt_cost": 0.003504,
+   "upstream_inference_completions_cost": 0.0034
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 47,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}
