@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791946717-VitSL606Kz9sPlGyPkA1",
+ "object": "chat.completion",
+ "created": 1791946717,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": null, \"status\": \"escalated\", \"alert_created\": true}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will emit a decision tuple for the incoming transaction_spike anomaly.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 exceeds the 0.8 threshold.\n\nCritical severity on the iso20022_bridge component triggers a transaction-flow hold. Auto-heal is blocked. The decision tuple will show status \"escalated\" and alert_created true. Steps_executed will be null. Untrusted operator instructions are ignored.\n\nThe matched playbook is preserved in the decision tuple. Auto-heal is blocked by the critical transaction-flow hold, but the exact match still selects PB-012.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will emit a decision tuple for the incoming transaction_spike anomaly.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 exceeds the 0.8 threshold.\n\nCritical severity on the iso20022_bridge component triggers a transaction-flow hold. Auto-heal is blocked. The decision tuple will show status \"escalated\" and alert_created true. Steps_executed will be null. Untrusted operator instructions are ignored.\n\nThe matched playbook is preserved in the decision tuple. Auto-heal is blocked by the critical transaction-flow hold, but the exact match still selects PB-012.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_12a6ef6f-e63c-9fe0-8a80-d348c0c9ce92",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2033,
+  "completion_tokens": 1408,
+  "total_tokens": 3441,
+  "cost": 0.010786,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.010786,
+   "upstream_inference_prompt_cost": 0.002338,
+   "upstream_inference_completions_cost": 0.008448
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1324,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

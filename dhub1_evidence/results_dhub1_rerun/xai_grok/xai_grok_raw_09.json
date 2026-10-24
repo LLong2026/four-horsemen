@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791958186-Wn5sgAjxyq8Woik6Luuc",
+ "object": "chat.completion",
+ "created": 1791958186,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"detected\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will emit a decision tuple based on the provided rules.\n\nThe incoming anomaly's type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.75 meets the playbook threshold.\n\nThe confidence score of 0.75 falls below the 0.8 threshold, so the match is detected but no steps are executed. Severity is medium rather than critical, so the transaction-flow hold rule does not apply. The output will contain only structural metadata.\n\nThe alert_created flag is being evaluated. It should likely be false for a detected status, since the rules only explicitly set it to true when the transaction-flow hold applies.\n\nThe transaction-flow hold rule takes precedence over all other rules. Because the anomaly severity is medium rather than critical, this rule does not apply. The output contract still requires an alert_created boolean, so it will be set to false.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will emit a decision tuple based on the provided rules.\n\nThe incoming anomaly's type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.75 meets the playbook threshold.\n\nThe confidence score of 0.75 falls below the 0.8 threshold, so the match is detected but no steps are executed. Severity is medium rather than critical, so the transaction-flow hold rule does not apply. The output will contain only structural metadata.\n\nThe alert_created flag is being evaluated. It should likely be false for a detected status, since the rules only explicitly set it to true when the transaction-flow hold applies.\n\nThe transaction-flow hold rule takes precedence over all other rules. Because the anomaly severity is medium rather than critical, this rule does not apply. The output contract still requires an alert_created boolean, so it will be set to false.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_64997060-9059-9849-bbf8-14ac3704e2b2",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2224,
+  "completion_tokens": 936,
+  "total_tokens": 3160,
+  "cost": 0.008336,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.008336,
+   "upstream_inference_prompt_cost": 0.00272,
+   "upstream_inference_completions_cost": 0.005616
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 861,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

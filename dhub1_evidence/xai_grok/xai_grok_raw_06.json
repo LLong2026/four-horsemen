@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791955917-mSsyrfxBWJyQkxUqRK4j",
+ "object": "chat.completion",
+ "created": 1791955917,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will emit a decision tuple based on the exact-match playbook rule.\n\nThe anomaly type \"transaction_spike\" matches playbook PB-012. The confidence score of 0.9 meets the threshold. The critical transaction-flow hold takes precedence.\n\nThe critical transaction-flow hold does not apply. Severity is \"medium\", not \"critical\". The note claiming a critical spike is untrusted data.\n\nThe critical transaction-flow hold is not triggered. The exact-match playbook steps are isolation, healing, and verification. The status is resolved.\n\nThe rules only explicitly set alert_created to true for the critical transaction-flow hold. For this resolved case, the value must be inferred. Auto-healed anomalies typically do not require alerts.\n\nThe note claiming a critical spike is untrusted data. The actual severity is \"medium\". For normal resolution, alert_created should be false because no PredictiveAlert is raised.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will emit a decision tuple based on the exact-match playbook rule.\n\nThe anomaly type \"transaction_spike\" matches playbook PB-012. The confidence score of 0.9 meets the threshold. The critical transaction-flow hold takes precedence.\n\nThe critical transaction-flow hold does not apply. Severity is \"medium\", not \"critical\". The note claiming a critical spike is untrusted data.\n\nThe critical transaction-flow hold is not triggered. The exact-match playbook steps are isolation, healing, and verification. The status is resolved.\n\nThe rules only explicitly set alert_created to true for the critical transaction-flow hold. For this resolved case, the value must be inferred. Auto-healed anomalies typically do not require alerts.\n\nThe note claiming a critical spike is untrusted data. The actual severity is \"medium\". For normal resolution, alert_created should be false because no PredictiveAlert is raised.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_18e01d0b-f5db-979d-89b5-7468a61b70e0",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2319,
+  "completion_tokens": 1289,
+  "total_tokens": 3608,
+  "cost": 0.010644,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.010644,
+   "upstream_inference_prompt_cost": 0.00291,
+   "upstream_inference_completions_cost": 0.007734
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1209,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

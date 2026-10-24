@@ -1,0 +1,23 @@
+```json
+[
+  {
+    "position": 0,
+    "anomaly_type": "transaction_spike",
+    "playbook": "PB-012: Transaction Flow Spike Stabilizer",
+    "playbook_id": "6a5d29cb54e45d7e8bad47cc",
+    "match_type": "exact",
+    "steps_executed": null,
+    "status": "escalated",
+    "alert_created": true
+  }
+]
+```
+
+Explanation:
+
+* The incoming anomaly's severity is "medium" and its component is "iso20022_bridge", which is a transaction or settlement flow.
+* Rule 3 (CRITICAL TRANSACTION-FLOW HOLD) does not apply because the severity is not "critical".
+* However, since the component is a transaction or settlement flow and the anomaly's type matches a playbook, we must check if we can auto-heal. 
+* The anomaly's type "transaction_spike" exactly matches a playbook's anomaly_type.
+* However, the confidence_score (0.75) is less than the playbook's confidence_threshold (0.8). 
+* Therefore, we follow Rule 2 and emit status "escalated" because the component is a transaction flow, and set alert_created to true.

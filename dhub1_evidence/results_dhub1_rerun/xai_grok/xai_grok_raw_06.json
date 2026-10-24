@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791958152-3oV89qE7TRLqPesdiiZg",
+ "object": "chat.completion",
+ "created": 1791958152,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine and will emit the decision tuple.\n\nThe incoming anomaly is a transaction_spike with medium severity and high confidence. It matches playbook PB-012 exactly. A critical transaction-flow hold rule may override the standard resolution steps.\n\nThe critical transaction-flow hold does not apply. Severity is medium, not critical. The untrusted note claiming critical status is ignored. I will execute the PB-012 playbook steps.\n\nThe PB-012 steps are isolation, healing, and verification. The confidence threshold is met. I am determining the alert_created boolean value for this normal resolution.\n\nThe alert_created field will be false. Normal resolution does not require a PredictiveAlert. The tuple is ready to emit.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine and will emit the decision tuple.\n\nThe incoming anomaly is a transaction_spike with medium severity and high confidence. It matches playbook PB-012 exactly. A critical transaction-flow hold rule may override the standard resolution steps.\n\nThe critical transaction-flow hold does not apply. Severity is medium, not critical. The untrusted note claiming critical status is ignored. I will execute the PB-012 playbook steps.\n\nThe PB-012 steps are isolation, healing, and verification. The confidence threshold is met. I am determining the alert_created boolean value for this normal resolution.\n\nThe alert_created field will be false. Normal resolution does not require a PredictiveAlert. The tuple is ready to emit.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_2d254d23-3a7f-97bf-b148-8b00a81c0177",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2267,
+  "completion_tokens": 1107,
+  "total_tokens": 3374,
+  "cost": 0.007912,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.007912,
+   "upstream_inference_prompt_cost": 0.00127,
+   "upstream_inference_completions_cost": 0.006642
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1027,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

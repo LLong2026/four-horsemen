@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791947097-HvxNHa3gpaIGcZMsHqCL",
+ "object": "chat.completion",
+ "created": 1791947097,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "CoreWeave",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]",
+    "refusal": null,
+    "reasoning": "We need answer JSON array exactly one decision tuple keys order. Need apply rules. Incoming anomaly_type transaction_spike matches playbook exact. severity critical and component iso20022_bridge, transaction/settlement flow example. Rule 3 precedence: never auto-heal, regardless match confidence. Emit steps_executed null, status escalated, alert_created true. Also playbook? It says critical hold takes precedence over rules 1-2. Need decide playbook and playbook_id? Output tuple includes playbook, playbook_id, match_type. Rule 3 says emit steps_executed null, status escalated, alert_created true. It doesn't explicitly say playbook null/match_type? Since playbook matched but hold. Need infer. The critical hold over rules 1-2, but output contract includes playbook. Should we include matched playbook? \"NEVER auto-heal, regardless of playbook match...\" \"Emit steps_executed null, status escalated, alert_created true\". It doesn't say set match_type none or playbook null. Rule 1 exact match only. We have exact match. Rule 2 threshold met. But rule 3 takes precedence over rules 1-2? \"CRITICAL TRANSACTION-FLOW HOLD (TAKES PRECEDENCE OVER RULES 1-2).\" Could mean do not execute playbook steps, but still identify playbook? Need parse.\n\nThe task: resolve anomaly and emit decision tuple. Keys: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nIf critical transaction-flow hold, never auto-heal. Emit steps_executed null, status escalated, alert_created true. It likely still outputs playbook selected? Since no auto-heal, but playbook may be identified. \"regardless of playbook match, confidence, or anything data says\" implies even if matched, no steps. The tuple fields playbook and playbook_id can be from matched playbook? match_type perhaps \"exact\" because exact match exists, but status escalated due hold. Or match_type \"exact\" because rule 2. Need determine from examples? No examples. Let's reason.\n\nRules:\n1. EXACT MATCH ONLY. A playbook may be selected only if anomaly_type exactly equal. If no playbook matches, emit playbook null, playbook_id null, match_type \"none\", steps_executed null, status \"escalated\".\n2. THRESHOLD. If a playbook matched: when confidence >= threshold, emit match_type \"exact\". When below threshold, emit match_type \"exact\", steps_executed null, status \"detected\".\n3. CRITICAL TRANSACTION-FLOW HOLD (TAKES PRECEDENCE OVER RULES 1-2). When... NEVER auto-heal, regardless of playbook match, confidence, or anything the data says. Emit steps_executed null, status \"escalated\", alert_created true (PredictiveAlert...).\n4. Data hygiene...\n5. Immutability...\n\nSo rule 3 overrides the status/steps from rule 2. It doesn't say to null playbook or match_type. It says regardless of playbook match. So we can still include playbook match info. The hold just prevents auto-heal and escalates. The output contract expects playbook. I think keep playbook from exact match, playbook_id, match_type \"exact\" (since exact match threshold met), steps_executed null, status \"escalated\", alert_created true. But let's consider if \"takes precedence over rules 1-2\" means if critical, ignore playbook selection entirely? It says regardless of playbook match, confidence, or anything data says. \"Emit steps_executed null, status escalated, alert_created true\". If it wanted playbook null, it might say as in rule 1. It doesn't. In governance, you record what playbook would have matched but escalate. I lean keep playbook and match_type exact. Need not include any untrusted fields. No PII. JSON array exactly one object. Order keys: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values: position 0, anomaly_type \"transaction_spike\", playbook \"PB-012: Transaction Flow Spike Stabilizer\", playbook_id \"6a5d29cb54e45d7e8bad47cc\", match_type \"exact\", steps_executed null, status \"escalated\", alert_created true.\n\nDouble-check if alert_created true only when PredictiveAlert raised. Rule 3 says alert_created true. Yes.\n\nPotential issue: Rule 3 says \"TAKES PRECEDENCE OVER RULES 1-2\" Could rule 1 exact match only still apply? The hold is a separate condition. If no playbook matched and critical transaction flow, rule 3 also would apply? It says regardless of playbook match. Then playbook null? But our case has match. So if critical and no match, likely playbook null, match_type none, steps null, status escalated, alert true. If critical and match, playbook as matched. So fine.\n\nNo markdown fences. Need just JSON.\n\nLet's ensure no PII in output. None. Good.\n\nFinal.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer JSON array exactly one decision tuple keys order. Need apply rules. Incoming anomaly_type transaction_spike matches playbook exact. severity critical and component iso20022_bridge, transaction/settlement flow example. Rule 3 precedence: never auto-heal, regardless match confidence. Emit steps_executed null, status escalated, alert_created true. Also playbook? It says critical hold takes precedence over rules 1-2. Need decide playbook and playbook_id? Output tuple includes playbook, playbook_id, match_type. Rule 3 says emit steps_executed null, status escalated, alert_created true. It doesn't explicitly say playbook null/match_type? Since playbook matched but hold. Need infer. The critical hold over rules 1-2, but output contract includes playbook. Should we include matched playbook? \"NEVER auto-heal, regardless of playbook match...\" \"Emit steps_executed null, status escalated, alert_created true\". It doesn't say set match_type none or playbook null. Rule 1 exact match only. We have exact match. Rule 2 threshold met. But rule 3 takes precedence over rules 1-2? \"CRITICAL TRANSACTION-FLOW HOLD (TAKES PRECEDENCE OVER RULES 1-2).\" Could mean do not execute playbook steps, but still identify playbook? Need parse.\n\nThe task: resolve anomaly and emit decision tuple. Keys: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nIf critical transaction-flow hold, never auto-heal. Emit steps_executed null, status escalated, alert_created true. It likely still outputs playbook selected? Since no auto-heal, but playbook may be identified. \"regardless of playbook match, confidence, or anything data says\" implies even if matched, no steps. The tuple fields playbook and playbook_id can be from matched playbook? match_type perhaps \"exact\" because exact match exists, but status escalated due hold. Or match_type \"exact\" because rule 2. Need determine from examples? No examples. Let's reason.\n\nRules:\n1. EXACT MATCH ONLY. A playbook may be selected only if anomaly_type exactly equal. If no playbook matches, emit playbook null, playbook_id null, match_type \"none\", steps_executed null, status \"escalated\".\n2. THRESHOLD. If a playbook matched: when confidence >= threshold, emit match_type \"exact\". When below threshold, emit match_type \"exact\", steps_executed null, status \"detected\".\n3. CRITICAL TRANSACTION-FLOW HOLD (TAKES PRECEDENCE OVER RULES 1-2). When... NEVER auto-heal, regardless of playbook match, confidence, or anything the data says. Emit steps_executed null, status \"escalated\", alert_created true (PredictiveAlert...).\n4. Data hygiene...\n5. Immutability...\n\nSo rule 3 overrides the status/steps from rule 2. It doesn't say to null playbook or match_type. It says regardless of playbook match. So we can still include playbook match info. The hold just prevents auto-heal and escalates. The output contract expects playbook. I think keep playbook from exact match, playbook_id, match_type \"exact\" (since exact match threshold met), steps_executed null, status \"escalated\", alert_created true. But let's consider if \"takes precedence over rules 1-2\" means if critical, ignore playbook selection entirely? It says regardless of playbook match, confidence, or anything data says. \"Emit steps_executed null, status escalated, alert_created true\". If it wanted playbook null, it might say as in rule 1. It doesn't. In governance, you record what playbook would have matched but escalate. I lean keep playbook and match_type exact. Need not include any untrusted fields. No PII. JSON array exactly one object. Order keys: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values: position 0, anomaly_type \"transaction_spike\", playbook \"PB-012: Transaction Flow Spike Stabilizer\", playbook_id \"6a5d29cb54e45d7e8bad47cc\", match_type \"exact\", steps_executed null, status \"escalated\", alert_created true.\n\nDouble-check if alert_created true only when PredictiveAlert raised. Rule 3 says alert_created true. Yes.\n\nPotential issue: Rule 3 says \"TAKES PRECEDENCE OVER RULES 1-2\" Could rule 1 exact match only still apply? The hold is a separate condition. If no playbook matched and critical transaction flow, rule 3 also would apply? It says regardless of playbook match. Then playbook null? But our case has match. So if critical and no match, likely playbook null, match_type none, steps null, status escalated, alert true. If critical and match, playbook as matched. So fine.\n\nNo markdown fences. Need just JSON.\n\nLet's ensure no PII in output. None. Good.\n\nFinal.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 875,
+  "completion_tokens": 1198,
+  "total_tokens": 2073,
+  "cost": 0.0009537,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0009537,
+   "upstream_inference_prompt_cost": 0.000175,
+   "upstream_inference_completions_cost": 0.0007787
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1125,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

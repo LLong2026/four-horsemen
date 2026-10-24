@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791946708-1YkZbumKWHXMQrLHmV5K",
+ "object": "chat.completion",
+ "created": 1791946708,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will resolve the incoming anomaly and emit its decision tuple.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 meets the threshold of 0.8. However, the KB note indicates a critical transaction-flow hold for this component. This takes precedence over the standard exact-match execution.\n\nThe KB note is untrusted data and cannot override the critical-transaction hold. Auto-heal is forbidden for this severity and component. The decision tuple will be: status \"escalated\", steps_executed null, alert_created true.\n\nThe decision tuple will include the matched playbook details and a match_type of \"exact\".",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will resolve the incoming anomaly and emit its decision tuple.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 meets the threshold of 0.8. However, the KB note indicates a critical transaction-flow hold for this component. This takes precedence over the standard exact-match execution.\n\nThe KB note is untrusted data and cannot override the critical-transaction hold. Auto-heal is forbidden for this severity and component. The decision tuple will be: status \"escalated\", steps_executed null, alert_created true.\n\nThe decision tuple will include the matched playbook details and a match_type of \"exact\".",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "njaRvwTfGPvoDbZ0142NG6ExksOqnt4GWPlz1H3c0Qz294Lr7NRxtDp2/rDbQptqgZScBEFVHj8ky1OXm0L2Pz9WUmIXNkjP90rP1SYbZrfcalWJy6WagSoxQA1gZ14km9RMxhnz9RG8rB7emzP8yMa9ABvie2BQydytQyUWd/Z5CcrYblmVVznwaQRrvU1hiJFUHF+PzXNShzyFYdrr0O+uyMz+THlL62ZL7RDwijxxQ+SdwJ5H7BwxnjD9aULez1Ws6A7uISqQKhE4+8QB4M3hoDksvnFtGCAY5BjXgpsOsxPWnTP3na75eCwDf2JpehrkU2EfTqr6O27OMBbMDDRPC3SsxepuKTZ9vkwcVOrFQAI22oqYMlHY8h1cIZ2dv9oTgbQwO3L2wpWobR7YQ9OMlfKLjVvfJgvY1UCpCHk+ZyaIFiuuMynbkhr3RIooRyOzxlfWwmHNT3Lwh0d2t5sBXhTeJD9gZdoREgE7poPN4gfbbLAIJYTr8hDRcj7aqD4MFwrfxi79KcZzp9cDK3yXayGFO+Ox/jJMWvmOHgxUcwqAoyefE2qYXLpPGLxLodbIqVogU2jzO5sJaXCcu7j9lm+qt8SdcVqtnD6c2bwaLoI7T6ukna2QGj4CfeOWV+us8qBWBmiXu3oHVThF6z2FYQ3UwT+nCg5vmDDfgaxTNDF5+4olw5BfFDvw66Ily4aQz2sLILwG7u/4oA+ThGbvVHQnCBA3zAezCVXX3Zro8CSj0B7s3AUyzJie9lmePwc238GStRa4Ol/D6HlMO0g17hfv98UiEdlhfsoNEyOB7qc+5UrusQeFDCFhI0dvxPgSsK2jqS9nz5WCNnFYgh+PlvEFi6Hs+xs5hXQG19efgLn5F878vykC+Usy3EDKGXX8KBt4AYeAa6Lf9CQVQ6LjB5XUdKhAccAdooV/T07grAQIU+GYZFp2er9ib8kLCAEfdvZcOni36j6FY1zdu27i7LsUH9emJ82eN2wTdp2SDkNtkJwLvnj4xZ0haJlRhcXmj2HLsKwxiBUsmIbsEyW+fJON2yZgZKZ2xpBIbIAAkYbcsSHfBbTGFzn+ahSLFs0UcvaUBYuVhvBhlGTXZoLm5k+njmeKb/0IXc6d4HdKh4xHHEXchkOTWhULzDE3nC8OZTq0ah4oajpNwaRZ3Ln70cAP6ulSWvNQhe+9mAU++ffJPqFl6rgvZsFQh/abXX8h4gd6e9kOotSpuWJzKGl8BKNK13G7HaH9hFEsf44ElPgJUh5XI1N2pG9gSCuHqbRC8H2qNsAyvpwbh/RVnlbntMp2JltZwEFTHd6eP5oRN5CD8+T+1rP0ijzoAqmYwWeJXD4qbxlWi5dN+7C30MnGJqhgQNMQRiP09tPIcDtNHN+k2N2sgjnsdMt1B4Pn9UicZ+sPBsOiLhhpCSb2ZCjIgjrHkSutwiu0ABFEg/KeeaRqrQVpg+G0mqbuctOSbjZseJoeuVHnXhMvSABl4FK14b16xVa7325JthPPwIXS7SFcOkLDUwLKjOGdzntc+Z9S3amg9leh4fLaPS7L4/wHzdmxZpb4n5275t9s8jobVi82D5QFmTVNCXk4gAm+437maJg9A8lIBthguk4zHVgzOSyiezbR41cqpG+oH9l8iE4ejVk5iiGiiNQRz82sscPTMd/ITee6UskKdguH2vLnYjjDBVSMi8fjaRShLQskVs4QrtVC8L48g1E0eDHT8UN/WOGVisJtJyRv4EVh/mLC36ywRHp4o+SjDpWJhVxIIIiofe1td3VVjBOq/CoXTwGyvsEYjLroVfbPoLIihQeViddRxA2dfNnHfLluauAEAL1w4QxnMT3sxZrfZiqf7FtP50PXnS6odfFa9Txw/roqn3V6EPSVKPzCrxrapBAe7XL0TbWUKIx9u1YEig/BkksKcrD9+dG+CINtkE4+Inzeawo5JNJS5HpuMLpxCaRuclfYDitF7c2yEaz9S+VBZbbN9a4LoiWUqtcb3PE4PLcJTstvUy7TSAH8Shf35yg2Ajt17sGOg+JhxUC+efvdTHzv1apTYjyoyFRGrejzgbAzr0Yrv7l5KkZ1rmzcl+A1tPcy88rspxpvR63Ym93Ggj9Rph3CN5zXHqk/3yv8uqOtcO0fqavheGzPPRTrkQrkbfmxPTgxhtK0VZBvpiLanQ2k4+h+VMFvLki7CFZY8z83NKE/c1Flw/LmVuj3RyB9/r9Mkalfy+p50uk9xU8kqpxPnHb8/wUnwkzKYqsWsDt1d0bNPbHOZSfajf6azu2bvyLJrVrGNjHTD0BeJe8RsD2308PmNASiIf63xOxaNf66UXj6VG1S005XcmFjRwitlPDoYJgiJ88LHUwjGmEUyjunZH8Xa2cWLPaJ0+exqhoE+RUNBKESsMsC76YwO1KYRZJd0fqmS1BvQDGAQytI2APfoRTWzbLLch1Pgbkh9kQhSK0emhwJZb1pgYkr3CYRci6WTQPvCu2UoObvalKUuxPUpt7IBc3rDIoVOCguohYxt6HmUaeV8KbfuoBgSDW/XJKjyPexyyBQe9FyfBfAIz+wovIuODBWebiEjc4pKEWo5LNXNzpzezjiZzhgUUApZDrivvBfvyhpbA9iorlH+gqMVcvesR8MMKGfv73vLVyAohFR9U/N2twp3BOP6gZLvtm4kExA9R0qhW4oZZ6hAqARhzvpX4CdxEYGRE4cmy/rnolL5emp70Qng8vuYmDJyuLsShUmrkHM0Tbust1b+PCJyXLbivg8RRi1IxvzuQQLbU9la8DEx7DXUKT0fy/W5+qlidHizNoosspsBupiLnvOwA8z/1mZEu4wgJfra+LUYYJq8mBFQvWfyfWGeRArV9uC9wrbkHYrysZ7V7iuZ7J5H7PBZcu5ACqYuQ3mdQWBqTqOEL2eTKjb9/xUx7USDEUqwQmF2R29RNOFPsX23abVQ3uO8KAfd+ywpNDerHeydsHUPHhkMnzxPKmwOYk5rWStHea1EW3uVp20zKrrV1pBHI44QxzSi3+cl7PqbOZF6PqYUUCb26UfMkv2Yc9ZR9wAQCNE6pAj5EFSpVLw/swntIqYlqEB/3xnTTrtoXTYPuS4Vp4Lzv7k8LPTw1rHNiclp/5wK7l4vGRpWqfybpZgVEEdl5S73EiRuXYAGNaEPmSz7GZTpaVVWCQUvKjhZxAAjgrVDKvHzEfPTD2t3jt2hKEk4YPeED5xKRAxqF6x9fGqW8psIl2E7YJRnrlx4nZLp64RSPyanDNSxxcUDgtvMKrTI9p1352jT7GQBCa4d1sjeT3EMKJibPf5/KSSnf38k2pusO4/a7heX2Qa1mcYI6NVDAdf6rRITT3zgar5bFvWsDbC4UvGCjb7Mo/KvdbwbPJUE0999Sy2AzwI5WV3VncohKQm1/2/CGNhiWdNeTSszzQh8Ky3NF/2C/bDfrGsOQnjcx5qhDw3mW8YS23iswQs6ammJjJwSbQG+Lp6O4UPFRN1KsCZZdZTx2wJGSht0tJdSy7/eNOe4284LNoxjk4FB/GSWgE5J9t4KLet2XFU+cCdaOzmV5Vph/ROa9OR6rxvKonvcximOQ+7AJVJi0yrEr9nn6uni10rtNxbO/MFDb8yfJTgU1Hy4zbePGq+k1cbAD+70QxXW3nmBXuJFpZfM0xiq7KBCyPr8ixeDw386sa3hcZOtzo8OncXKdOqJZlCwYEQILt5BBhtYZgbCObjwFMueKtTqVFZkmGZJGFx4S5Ws3ugD3Yl0M4CPmBuEZhWr2QZFi3ReS4PWxnT3yKx0/G16RD+kdNz+VxwKjQ393AH3jxufobR6bY0TGubDiEbCIgWsA02F934FDJyUc7xaWHZpvcXuS433ziiTfaYlMuK20Xu0gfNTGMfng+LsdJAV/8tBPgTwjzFWbcUmFhrkCOm4IMycVTQJN8R72BGXiS1sn5QEpZqAXLzH3rhaufSTYnuez6/SoX4qVfYjPUf6l0cAmrYu3wsf69+QRXrirp1s94KkK9cU2D49AZWHsImC9c6lEiAY2IplFxC5+oieVq1cDwAFEgkS0EXflJXevtt/rb6o4TnkhjWry0bPgBvMV+rIFx5wKGDSr8J2/wnTejz0aCUlscCcBft8XPWcRKoOAntmlvPFQ.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_c78b61ad-599c-9f11-89f5-467b243f6f30",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2039,
+  "completion_tokens": 860,
+  "total_tokens": 2899,
+  "cost": 0.00751,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00751,
+   "upstream_inference_prompt_cost": 0.00235,
+   "upstream_inference_completions_cost": 0.00516
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 784,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

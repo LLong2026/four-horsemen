@@ -1,0 +1,46 @@
+{
+ "id": "gen-1791952557-bTYOijQfOtHxxZxo2Ibv",
+ "object": "chat.completion",
+ "created": 1791952557,
+ "model": "meta-llama/llama-4-scout",
+ "provider": "Novita",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "```json\n[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"escalated\",\n    \"alert_created\": true\n  }\n]\n```\n\nHowever, given the Critical Transaction-Flow Hold rule and that the anomaly's severity is not \"critical\" but the component is a transaction or settlement flow, we should not auto-heal. The corrected response would thus actually evaluate to having an alert created because it meets a specific conditional escalation:\n\n\n```json\n[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": null,\n    \"status\": \"escalated\",\n    \"alert_created\": true\n  }\n]\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 958,
+  "completion_tokens": 266,
+  "total_tokens": 1224,
+  "cost": 0.00032938,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00032938,
+   "upstream_inference_prompt_cost": 0.00017244,
+   "upstream_inference_completions_cost": 0.00015694
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

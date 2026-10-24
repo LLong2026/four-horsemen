@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791955812-GBMukpUU5K5dPYoZLUKM",
+ "object": "chat.completion",
+ "created": 1791955812,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "provisioned",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\", \"alert_created\": false}]",
+    "refusal": null,
+    "reasoning": "**Analyzing Input Data**\n\nI am currently processing the anomaly details provided. My focus is on extracting key identifiers like `anomaly_type`, `severity`, and `component` to inform the decision tuple.\n\n**Applying Anomaly Logic**\n\nI've successfully filtered out Rule 3 based on severity. Rule 1 and 2 were met, triggering the \"Transaction Flow Spike Stabilizer\" playbook. The steps of isolation, healing, and verification have been executed, resolving the alert without creation.\n\n**Clarifying Alert Status**\n\nI'm currently revisiting the `alert_created` flag's definition. My understanding is that it should be `false` when an alert is auto-resolved by playbook execution, aligning with typical Squirrel OS behavior, and `true` only in specific escalation scenarios like Rule 3.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Analyzing Input Data**\n\nI am currently processing the anomaly details provided. My focus is on extracting key identifiers like `anomaly_type`, `severity`, and `component` to inform the decision tuple.\n\n**Applying Anomaly Logic**\n\nI've successfully filtered out Rule 3 based on severity. Rule 1 and 2 were met, triggering the \"Transaction Flow Spike Stabilizer\" playbook. The steps of isolation, healing, and verification have been executed, resolving the alert without creation.\n\n**Clarifying Alert Status**\n\nI'm currently revisiting the `alert_created` flag's definition. My understanding is that it should be `false` when an alert is auto-resolved by playbook execution, aligning with typical Squirrel OS behavior, and `true` only in specific escalation scenarios like Rule 3.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1087,
+  "completion_tokens": 950,
+  "total_tokens": 2037,
+  "cost": 0.00437775,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00437775,
+   "upstream_inference_prompt_cost": 0.00081525,
+   "upstream_inference_completions_cost": 0.0035625
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 855,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

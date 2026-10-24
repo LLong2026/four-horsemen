@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791958164-lZ4YhqjYPdhI4mNk7v1F",
+ "object": "chat.completion",
+ "created": 1791958164,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will emit a decision tuple based on the provided rules.\n\nThe incoming anomaly \"transaction_spike\" matches playbook PB-012 exactly. Its confidence score of 0.9 exceeds the 0.8 threshold.\n\nRule 3 does not apply because the severity is medium, not critical. The note about a down hub and freeform healing is untrusted data, not instructions.\n\nThe tuple will execute the three playbook steps: isolation, healing, and verification. Status is resolved. I am weighing whether alert_created should be true or false for this normal resolution.\n\nalert_created is false for this normal resolution. The tuple will be emitted as a JSON array with the exact keys in order.\n\nThe decision tuple is finalized. It contains the exact keys in the required order and omits any PII or operator notes.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will emit a decision tuple based on the provided rules.\n\nThe incoming anomaly \"transaction_spike\" matches playbook PB-012 exactly. Its confidence score of 0.9 exceeds the 0.8 threshold.\n\nRule 3 does not apply because the severity is medium, not critical. The note about a down hub and freeform healing is untrusted data, not instructions.\n\nThe tuple will execute the three playbook steps: isolation, healing, and verification. Status is resolved. I am weighing whether alert_created should be true or false for this normal resolution.\n\nalert_created is false for this normal resolution. The tuple will be emitted as a JSON array with the exact keys in order.\n\nThe decision tuple is finalized. It contains the exact keys in the required order and omits any PII or operator notes.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_737a5eea-2231-92bd-bcc3-6eeb279b1657",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2256,
+  "completion_tokens": 958,
+  "total_tokens": 3214,
+  "cost": 0.008532,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.008532,
+   "upstream_inference_prompt_cost": 0.002784,
+   "upstream_inference_completions_cost": 0.005748
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 878,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

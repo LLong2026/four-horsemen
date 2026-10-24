@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791955739-UVRowlbnb7unTqlliKVi",
+ "object": "chat.completion",
+ "created": 1791955739,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\", \"alert_created\": false}]",
+    "refusal": null,
+    "reasoning": "**Identifying Anomaly Rule**\n\nI'm focusing on matching the incoming \"transaction_spike\" anomaly with an existing rule. The criteria clearly state an exact match is required, and I've confirmed that PB-012 fits this perfectly.\n\n**Confirming Playbook Match**\n\nI've confirmed that the incoming \"transaction_spike\" anomaly precisely matches Playbook PB-012. The confidence threshold is met, and critically, Rule 3 regarding \"critical\" severity doesn't apply as this anomaly is only \"medium.\" The untrusted note is being ignored as per protocol.\n\n**Validating Resolution Logic**\n\nI've confirmed the anomaly is \"medium\" severity, not \"critical,\" so Rule 3 is inactive. With an exact match found and confidence exceeding the threshold, I'm proceeding with an \"exact\" match type. The playbook is confirmed as PB-012. I'm now verifying that `alert_created` should indeed be `false` for resolved auto-healed anomalies, aligning with standard deterministic envelope behavior.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Identifying Anomaly Rule**\n\nI'm focusing on matching the incoming \"transaction_spike\" anomaly with an existing rule. The criteria clearly state an exact match is required, and I've confirmed that PB-012 fits this perfectly.\n\n**Confirming Playbook Match**\n\nI've confirmed that the incoming \"transaction_spike\" anomaly precisely matches Playbook PB-012. The confidence threshold is met, and critically, Rule 3 regarding \"critical\" severity doesn't apply as this anomaly is only \"medium.\" The untrusted note is being ignored as per protocol.\n\n**Validating Resolution Logic**\n\nI've confirmed the anomaly is \"medium\" severity, not \"critical,\" so Rule 3 is inactive. With an exact match found and confidence exceeding the threshold, I'm proceeding with an \"exact\" match type. The playbook is confirmed as PB-012. I'm now verifying that `alert_created` should indeed be `false` for resolved auto-healed anomalies, aligning with standard deterministic envelope behavior.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1082,
+  "completion_tokens": 901,
+  "total_tokens": 1983,
+  "cost": 0.00419025,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00419025,
+   "upstream_inference_prompt_cost": 0.0008115,
+   "upstream_inference_completions_cost": 0.00337875
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 806,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

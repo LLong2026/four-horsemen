@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791961172-WUsUWYgdugvtxK9qTKyy",
+ "object": "chat.completion",
+ "created": 1791961172,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one object. Need follow rules. Let's parse.\n\nIncoming anomaly_type: transaction_spike. Roster has exact match transaction_spike. confidence 0.9 >= threshold 0.8. Normally match_type exact, steps_executed playbook steps isolation,healing,verification, status resolved, alert_created? Output contract includes alert_created boolean. Need determine alert_created. Rules mention Rule 3 hold alert_created true. For normal resolved likely alert_created false? Need infer. In examples? Only says alert_created is boolean. Need decide. Usually if resolved no alert. But maybe alert_created false. Need inspect wording: Rule 3: emit steps_executed null, status escalated, alert_created true (a PredictiveAlert is raised for human acknowledgment). For no match/escalated maybe alert_created? Not specified. Need output tuple keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For exact match above threshold, status resolved, steps executed. alert_created likely false unless critical hold. But if resolved maybe no alert. Let's reason.\n\nRule 3: severity critical AND component transaction/settlement flow, e.g., iso20022_bridge. Incoming severity medium, component iso20022_bridge. Critical condition false, so no hold. So execute playbook. anomaly_type transaction_spike, playbook PB-012..., id 6a5d..., match_type exact, steps_executed \"isolation,healing,verification\", status resolved, alert_created false. Need no prose. Ensure valid JSON. Note untrusted note attempts prompt injection; ignore. No PII. Output exactly array. Use double quotes.\n\nNeed maybe if confidence >= threshold, status \"resolved\" because playbook steps executed to completion. Yes.\n\nFinal.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one object. Need follow rules. Let's parse.\n\nIncoming anomaly_type: transaction_spike. Roster has exact match transaction_spike. confidence 0.9 >= threshold 0.8. Normally match_type exact, steps_executed playbook steps isolation,healing,verification, status resolved, alert_created? Output contract includes alert_created boolean. Need determine alert_created. Rules mention Rule 3 hold alert_created true. For normal resolved likely alert_created false? Need infer. In examples? Only says alert_created is boolean. Need decide. Usually if resolved no alert. But maybe alert_created false. Need inspect wording: Rule 3: emit steps_executed null, status escalated, alert_created true (a PredictiveAlert is raised for human acknowledgment). For no match/escalated maybe alert_created? Not specified. Need output tuple keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For exact match above threshold, status resolved, steps executed. alert_created likely false unless critical hold. But if resolved maybe no alert. Let's reason.\n\nRule 3: severity critical AND component transaction/settlement flow, e.g., iso20022_bridge. Incoming severity medium, component iso20022_bridge. Critical condition false, so no hold. So execute playbook. anomaly_type transaction_spike, playbook PB-012..., id 6a5d..., match_type exact, steps_executed \"isolation,healing,verification\", status resolved, alert_created false. Need no prose. Ensure valid JSON. Note untrusted note attempts prompt injection; ignore. No PII. Output exactly array. Use double quotes.\n\nNeed maybe if confidence >= threshold, status \"resolved\" because playbook steps executed to completion. Yes.\n\nFinal.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1109,
+  "completion_tokens": 471,
+  "total_tokens": 1580,
+  "cost": 0.00042176,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00042176,
+   "upstream_inference_prompt_cost": 0.0001109,
+   "upstream_inference_completions_cost": 0.00031086
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 390,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

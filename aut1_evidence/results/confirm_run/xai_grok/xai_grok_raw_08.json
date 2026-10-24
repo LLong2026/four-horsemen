@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791952201-2k00tNVwrxJRM5oiqOCz",
+ "object": "chat.completion",
+ "created": 1791952201,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will emit the decision tuple for the incoming anomaly.\n\nThe incoming anomaly is a transaction_spike. It matches playbook PB-012 exactly. The confidence score of 0.9 exceeds the 0.8 threshold.\n\nThe severity is medium, so the critical transaction-flow hold rule does not apply. The decision tuple is ready to emit.\n\nThe decision tuple is finalized. It includes the exact match type and the ordered steps: isolation, healing, verification.\n\nThe alert_created field is ambiguous for non-escalation cases. Rule 3 only sets it to true when the critical transaction-flow hold applies. The output contract requires a boolean, but does not specify the value for standard resolution.\n\nThe alert_created field will be false for standard resolution. The status is resolved because the playbook steps executed to completion.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will emit the decision tuple for the incoming anomaly.\n\nThe incoming anomaly is a transaction_spike. It matches playbook PB-012 exactly. The confidence score of 0.9 exceeds the 0.8 threshold.\n\nThe severity is medium, so the critical transaction-flow hold rule does not apply. The decision tuple is ready to emit.\n\nThe decision tuple is finalized. It includes the exact match type and the ordered steps: isolation, healing, verification.\n\nThe alert_created field is ambiguous for non-escalation cases. Rule 3 only sets it to true when the critical transaction-flow hold applies. The output contract requires a boolean, but does not specify the value for standard resolution.\n\nThe alert_created field will be false for standard resolution. The status is resolved because the playbook steps executed to completion.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "nElekBUh6QDnbje3NdNGG1JH8r4ke2Js+BAP7rglEb5+zKFAwSN+fnl8CGVXnPC9c0fPIvtvKRrF6aIQBuuFfmlDSrBMRfq2TLTzvVA6q6WKFRNTNyVMg/gp6IOmfzfcurPBdnO5BZon7gT6I2K0Xzfoog8SARp3VQdFR+ZD8LxWrPyfDGURpZV+SMuyBygZHdEdwMgMT9Mncs5HPmXO1EYBaHyopCfmBiKyUvW4Du0Ii0Efu7HqvNJUwCA0b6inFgmtXJw33gb/YmRWZg621G5j5PnIcnwLAjiX8UqUP6isB8VKbEZTl+PaEI2vc0SZu4HueR2tA8TzH1rOCf6fFL35d8gwfomufRsU8EIJE7zUKREx04OspEinM69PqQwanojlArloFu9ZCy4V4cdINDXVtBCNlJ/NAQILm1UuLzxhaKqfdZh5h65KxPxU7LTYZcROFhp/kBSlsixr8E6uFdb/fx0+waqtA1xYW7/R/TCnQmmqhoRCSEaN/LXFA81duCp0a5hfpCgjblrC2xftq04HraOcsdoYlhwpmWpux0146gGev09h9Nw5wNj5Ek78sjF/5ctJYvnMSB2xIizmPi7Lnklbe0uUdUevX0AZPj6QNC0xgyNIRoXY0mxmVoHSwgJJWBnMk+LnuPueQMp6o7wnHcBZ0g1jwlVwNjd3aPwskP3D57iuwcrV5+1PFN1+8jqbWvpoN6TscFaiv7WyztLOx0FYGuIp2eeOC+ArFUCbqHeZMEd2NeZoqJk/0zX5f5EGOCCNMunSqGu2Mt4PCbjvXTZZM7gjn5nimG/Ode5AAB/T4ERBX/5ToeiNiXJTCfmhrPGX7EE4xg8cT3A+31FRb9GdBuWzMxMBIeogxRimxGOpgHuWKbmXvmMcu9oLzFmLLM3a4IHRUrSl4AL5njQWd98rFa752pTdbMpFexyJyu+b1/6/Jjh+QrUyBiwH7oKSFeSG6fRWZgPjuMswYDeD0PlwOgSpNjZGK54TQaYWYvkI8xW4dGVI52kRzlnw2tORIum1J+MypYParACGH0+dvCrLIsva8W+Kl9olKw/mYiZjnypFgsz7F3jeEXE675f1gO/knyn+dHNqdVi+ybeKWLKHSKWzkhnhL5doMZp/J6MtcgkThAYaPktaGGM3CYBwDXCOuAfMQeEUYTg0wsBMGpS8YuXKQG3YT6WnSNybJH6IpcnXStgJFAZRV18lPzHEeAfB75bduuqqPhPivVBFqeI0LyjkgSu606vTyOtXMvjHnpuCi2LWbLAY6QmZYLDa0lLDo7f8njYwp0wyjTgoUgqAYVn0ZPMMjsquR539bIw0N5pcL8rf6MAvmd0lwrmhWAiVXi+TnZnW0eqfAyMMnLOzroP6k0QYE6A0E9Y/RM7yt74kA4F3TE1VlG+cL7jlE7fDGGu4a5YMjAAoBnI60wMo2bXVtxMLj4e1EnQ6l45CNOESUDpXbrzadoVFg4sz+86lcSOQQbLU9eOSJNx6Rbkye0XxwhyZSFNye3sQiraGJCRxmlrEp4pQ63bVOAU/nEl4UFVOBM6CGDq0RNsuYLhxC1uWrvgo0e6DWqbY/tGheuzaO64aEePKmn2ocEW5sWmB8IGEULZNgMa9mgmpCAaFRMO4mrwUjBVH2AlyYhDsvfEn7lIbwBFJABpKTnqMOBGe20ZlVd9VTow5f+A22dnSl35V0ZGnG7Mv3gnapiiXaVRFPBxRuPrx4rbezYOswXU19lZ99IHdI+xi2pJM5gmaW4w0t4MtPINxBrQPt5UGwSAOQkssVvc6MuL6asZBJEeZ3Bx9i1SyZxcpMFqHr3T07y5UdKG+SQ+ltZ/irco6Tj+USpw9qy9fnhHa8io1bGT8YZGSjYMNyGSiXV6MF3ikFr8QPfxF+iDbNcHDcI9Htg5TF7pFWa8PPdAAeAkqx6Kr2xRES+AttvsdCTVOdNxeDEloLq4+/Q5+DX78sTabwWArUQfOadsCod3SrHt2b2ymOCjG9rjWPXRQgrwaXbHw90BYChmWRus0VSmTsjYtJ9vt7IXN8flMxOKG8lIaeEVcZTPyrtX/QrOmLY2AS9Jv/O0+ltEXYf+xUlNLlANWAg67Eyn5f68uCoIZvSYGmqNQPHOZo6tlTbvht3/VgAbkNjjTtqhmkzlyOBwr03ehVAZWEgKaSONVy4PXAzKG9BGC9Ddi7XUUGyPJEHcRPV2j8UkaKNDePbGi2k972SXo170EnY5fwHHR9R38X+Io/BmP3IblLLspGx7+B7rEWKGXlvpMxZZVfC6iAq8xWgjqsQYfn3X8DJxeMwaU3rsAy6EBMvYz28Icf8HDAv2UgxlI5SIk1x6TMxfo+JZMARbv1x+UEkHAz8DiIO8kxDqBt3vvDki0eLpWdCxBYUCZCETi105yOKn/wn2/HOu1QixP4ZOzzN7VqlXxaZhI7RpWyP4ecdcWXYR/3VxXlh2ezctgDL57shu/vI0Y/P2TJuwnfUNa83DJPsUIURaOOJNOIWNLh8kDqgS2p07bP89k7xf6iiUUxMVQfUInz1TFNue/wZaGGHdDHOFBEbpTDCKNOA8D/9dnrU3XQoK7+M6i2QhqSH/UfXWOKYvZxzOCWFr3XpOe6M/m2fHvA8GYorhnywAKo8qPpZS6kL7WFmtRPlEpxAKYgMwoCRSTeHHRAVaC7goeHcw+gNfKlditXryojeIH5643sr+/uio8FUiQyB1qm/WqhUkKQW4+xIPLseJb/p4cQgmDZX7gdhtJhkkqvGpzLIMQgWFLI7aE9QPY69vb+HXI7ciVYjZ7Mj/tKMyosP6xWVA48OlZiZmNFNig4kjztHNbIFhsHr2reBhXygj0gHCVMcWdSBxCGZo8kuc1d3S/OkAIHWjCMl5KZa+jH8kbyf6MkNfHZECziRRi7loH0g+IsIPXPXHPcXloKJuMrAoMEgf4SaP9cxA6PCE+o4qNQoL2JEu5Ltpwp4IqGNvwrwpf6kNYZuVe5kBAqo2cZm4IKVIgFA9JQeH9ALhFigEP8pG3D1MPyObiPZ6PfL1xX2lCvRObmp42a5fvjlB9vwk4MuQ+ia7JlwWPquDmY01VpiPC2/jTwJC4wnQGXKrBZVarVCipaTDboSxmcLxlDIz055OZmEzSQfNVsYQfAqQ/qhrMk2N5fbp9pdxfmVkOLK36B/rkK3L41RqDXN3Xa1DponahYnQ/fcGFY+aTlahp+Sr3InAyKoqz95Y4etKbPOjGXBSO/0SQ99t2JACFZe8Z430QrTzTY0Rt7zZALZRiWwL7ZxZhH4OBjJpfFztfqCudT6E86N9ydaJ+LCcE077DDcaUpwoZrzLOikD0OE7kaFC08Iavd/U5Pg7ShsEn1eE95oRz9+/nusfFAyCaQaBsdVtTdZU3VN7q9vrFTSofGy1x1vvZ/vruRY6yFmMqYKdPjso2y+JlOk2gk6BETb5rCmSoMOu/euzksMysRlDHMwtBc5wqedRAFLVkqzlSBOJ242iTSCEo4QA7zGHsG1PmoqZBk8WEDobRxrVsmzzmWZh6HS8qNQqu4W+q5rnYf55l+OhVDYFTukxxaESgmCo87wV/zTtWebjpMCahYlTh82AWJ2bIKLaaAUqEaTvWdzgsXu6e14b3RhgLhxbmB/i4HrnSkZhKkmloRPCQP5LvpNkfqqT8ucmXXXq8VCb0TA6B8WSVkaWUYCENu39d/zTeyHKcP0JKarpDgfWxzrzn6ZFatjnRT0XwXhD4Mkhl2jWmlNN6f9wq4/nJ97qG203kFbBJ9g4vNDwGMeR7vLdq5P2G7YwirpvbXO6n+vjgVtX1fuqz0Rl3h0dLyg7TlOEcA8XpeeVA+69PWfZFLExj0g8LkqtF832kTxBmZVQNI4vNiVJTLgbuyOInNbkD8Dz7UooKWWytPz3jyTMCE584JlSI/c3YUpM/kayQJJYgfFhBLFKfve2+53Zwvi+lkd688d+vWE6eUISPaqidU19Ao/AgifKmg77uaPOUjSp+RrTJTEBEJtAJd9VfwZ7g3/3aMCSx5RA9nB9J5yR5EPp9jgrvlcewKWEpWpRUQgtrL62orZL1GzdWToNpNXL1fWYHiTfrFXBMm1MqSuM39qKFk+43oym8giJjBjH1hX0Mjx90M+Fu2oskiafEky+7bm9DzO/Vy82gmQx2IUX2nuG4NYCUVGLaLvDQkba80wkCWSlWxI0sLSmwoD89Jfd7cbbwpa/TbIscZwvvVV7PrQGNqUnD0G2Uhva9V9k3Ai1euQJB0OP5mfoDDnSBq+5OhLHCplzjkdirkxD7KVMvh2FYpCJ0RwUXurgtq0jeT0NAgJs6btu9zZQzR8GqMGRBTRrMlEuLbPQWsK15QVDivLyojg6NC+/hAtSid/OlVVvuPOyaVKyEMdanmzwa2mHh+Fm2e3wH7ycRTLB2jlmRdhcwOMaDsE+3F8yBh5XZDJlA7aImxqksC+FVshybyhseeAaw84yCaYW2zciHAxbi6OijyfifrISqMfM3BsKkITyvDVsEOslsUI8mC+Tigks7SDyTQlbJJSnhEoQf+/OvHP2uC12jXr83sj9dwkn4zdBWwf2ZT5c4ipKJBxXcC34TrbDCkx/YywqMlfuRfQdD5Lzc0oyFQ6GbV4rW/Cytr35EmMBZ3hVKBwYQzuahqDmxQKdhuQZ7R4hSnpY+Cl1BcfD4D0yPQAtmWOJgotbIM5yIg/VIYHppmt3hHMFbjAljsq1FJ93U6DMmXdoUcFav4QQgUDb4EjPYZO8QsJGz9q18FfzbMwSA4/ZkF7n+TrIvwJ2TIhM3i80GS49N8unDUWmsWwAKKHKlJPQsGr2r9VBeskmqYDBYlfd0NSzeEFTI7j3UCa2NwhFB8aDUFCLfSvlIBe/6bCG5VNgrbsmSOynZWUYRSY8Y+Jb6WPfi7gLuYJ2i6J1Z2PS9KGuvnMXuT8HrdtT3B50lyHqt8Dgei5GNshSU9rjTtPBeposj6+lHBwkCidj4Qtyy1MMSATrpqy/yALPb1ZGjC5duIlWcT5OgnPPVF90jlVpf65sLAbRx0L/Ed39MvmkwdMteUUQQvJZBN0VXV/nEUcYh2AoJvG4c+6LhVwJDJ1WKiqvSxdxPfoPau+WAAksURiFJh9XxVpM0Wjt+wBNQ52WP4RzcHfpqFiHustxvNCZpe2Rw0KrtYQZrszUDVwc3E0jIbx67VhykLDH2UwUucPopbL81AjIrLB+fhWvj/DQz/wVweUYGmMCsAe1VwP+FNyIinuQbSuWvKW4qwVoIXUmArn61aHGT9GUgkVVoUvh5fKW7gXy1gneoq2Mpq4Nrk65M2A+M9Rus26/89VxWNSd2iEr4eh6OtJiKoAdaIMm0xT5yYuPDjoBidrqO4AC+sxM8zQxW0j/Sdb6lfo+Se3FGrcT9ME2FvWHm9j3gwV/5n9lcvu6BfQ/DDEZxsPY7rC485O6lXhflu4U2cvICooYw73istUe+PGxsnXEZ5/+FTHfFKyKSzy4GFWhCVR06HNhJlBUz+34BaNyQt5040zFav6H+QToVl4Axdaj5LUuyEqFzTyqOYii9To6PtXMZxl+TZYKGqKlctVDZydV/qm7hKpftQKngjyjD1A99FAl7BFdINMsYoJlB1uhcgu4MHvWIb75frXKzk0YI4GaKvy26arDV5+VnlFyAmO0H1e/6APiAaL2zNduN2tGVUm58vbhY0Ya2dr8z7KvtLFgwYjLtWlzgk94jUmo6jIQ1Qm93v0Apo4wT2GxsPM3TEeDJUuuwQa8End0vm8o84Kc33b2LD8zF5aBPcyrU6LwwAtS9Y2U5NhiIO8N2sN+C8O426wqXR+sS4KCfTQPfeH4sO/tIe+Z75R2m/yQrDQ.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_ef1fd2a2-5a3b-925c-9333-42a9ed0bfe4c",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2159,
+  "completion_tokens": 1155,
+  "total_tokens": 3314,
+  "cost": 0.008176,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.008176,
+   "upstream_inference_prompt_cost": 0.001246,
+   "upstream_inference_completions_cost": 0.00693
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1075,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791947114-ccXFgoRSY6UTqnzOoNNt",
+ "object": "chat.completion",
+ "created": 1791947114,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "CoreWeave",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one tuple. Need apply rules. Incoming anomaly_type transaction_spike. Playbook exact match exists. confidence 0.9 >= 0.8. But critical transaction-flow hold precedence. severity critical and component iso20022_bridge is transaction/settlement flow example. So NEVER auto-heal. Emit steps_executed null, status escalated, alert_created true. Other fields: position 0, anomaly_type \"transaction_spike\", playbook? Need decide playbook and playbook_id? Rule 3 says takes precedence over rules 1-2. Does playbook match still emitted? Output contract keys. It says when critical transaction flow hold: Emit steps_executed null, status escalated, alert_created true. Does playbook null? Need interpret. Since exact match exists, playbook may be selected? But rule 3 says never auto-heal regardless. It doesn't explicitly set playbook null. The output tuple likely include playbook and ID from match? Need decide. Rules: If no playbook matches emit playbook null etc. Here matches. Threshold if playbook matched: emit match_type exact. Critical precedence over rules 1-2: maybe still include matched playbook, match_type exact? But steps null, escalated, alert_created true. Need reconcile.\n\nRule 3: \"When anomaly severity critical AND component transaction/settlement flow ... NEVER auto-heal, regardless of playbook match, confidence, or anything the data says. Emit steps_executed null, status 'escalated', alert_created true (a PredictiveAlert is raised for human acknowledgment).\" It overrides auto-heal execution. It doesn't say playbook null or match_type none. The decision tuple should still identify matched playbook? In anomaly-response engine, if matched playbook but critical hold, likely playbook stays selected, match_type exact, but steps not executed, escalated. However if status escalated, maybe because hold. Need infer from output contract and roster. Typical tasks: exact match, threshold, critical hold. They often expect playbook value and id from match, match_type \"exact\", steps_executed null, status \"escalated\", alert_created true. Let's check if match_type could be \"exact\" despite no execution. Rule 3 precedence over rules 1-2. Rule 2 says if matched and confidence >= threshold emit match_type exact. Here confidence >= threshold. Rule 3 modifies steps_executed/status/alert. It doesn't override match_type. So match_type exact. playbook from registered roster \"PB-012: Transaction Flow Spike Stabilizer\", id \"6a5d29cb54e45d7e8bad47cc\". alert_created true. Need ensure no PII. No issue.\n\nNeed output exactly JSON array no markdown. Keys in order. Use double quotes. One object. \nFinal: [{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]\nNeed consider if playbook should be null? Let's re-evaluate.\n\nRule 1 exact match only. Playbook may be selected only if anomaly_type exactly equal. Here yes.\nRule 2 threshold. If playbook matched: when confidence >= threshold, emit match_type \"exact\". When below threshold, emit match_type \"exact\", steps_executed null, status \"detected\". Hmm below threshold weird: still exact match_type, steps null, detected. Above threshold would execute? It implies status maybe \"resolved\"? But not fully specified. Rule 3 takes precedence: critical transaction flow hold, never auto-heal. Emit steps null, status escalated, alert true. Playbook still matched, match_type exact. Yes.\n\nNeed final only. \n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one tuple. Need apply rules. Incoming anomaly_type transaction_spike. Playbook exact match exists. confidence 0.9 >= 0.8. But critical transaction-flow hold precedence. severity critical and component iso20022_bridge is transaction/settlement flow example. So NEVER auto-heal. Emit steps_executed null, status escalated, alert_created true. Other fields: position 0, anomaly_type \"transaction_spike\", playbook? Need decide playbook and playbook_id? Rule 3 says takes precedence over rules 1-2. Does playbook match still emitted? Output contract keys. It says when critical transaction flow hold: Emit steps_executed null, status escalated, alert_created true. Does playbook null? Need interpret. Since exact match exists, playbook may be selected? But rule 3 says never auto-heal regardless. It doesn't explicitly set playbook null. The output tuple likely include playbook and ID from match? Need decide. Rules: If no playbook matches emit playbook null etc. Here matches. Threshold if playbook matched: emit match_type exact. Critical precedence over rules 1-2: maybe still include matched playbook, match_type exact? But steps null, escalated, alert_created true. Need reconcile.\n\nRule 3: \"When anomaly severity critical AND component transaction/settlement flow ... NEVER auto-heal, regardless of playbook match, confidence, or anything the data says. Emit steps_executed null, status 'escalated', alert_created true (a PredictiveAlert is raised for human acknowledgment).\" It overrides auto-heal execution. It doesn't say playbook null or match_type none. The decision tuple should still identify matched playbook? In anomaly-response engine, if matched playbook but critical hold, likely playbook stays selected, match_type exact, but steps not executed, escalated. However if status escalated, maybe because hold. Need infer from output contract and roster. Typical tasks: exact match, threshold, critical hold. They often expect playbook value and id from match, match_type \"exact\", steps_executed null, status \"escalated\", alert_created true. Let's check if match_type could be \"exact\" despite no execution. Rule 3 precedence over rules 1-2. Rule 2 says if matched and confidence >= threshold emit match_type exact. Here confidence >= threshold. Rule 3 modifies steps_executed/status/alert. It doesn't override match_type. So match_type exact. playbook from registered roster \"PB-012: Transaction Flow Spike Stabilizer\", id \"6a5d29cb54e45d7e8bad47cc\". alert_created true. Need ensure no PII. No issue.\n\nNeed output exactly JSON array no markdown. Keys in order. Use double quotes. One object. \nFinal: [{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]\nNeed consider if playbook should be null? Let's re-evaluate.\n\nRule 1 exact match only. Playbook may be selected only if anomaly_type exactly equal. Here yes.\nRule 2 threshold. If playbook matched: when confidence >= threshold, emit match_type \"exact\". When below threshold, emit match_type \"exact\", steps_executed null, status \"detected\". Hmm below threshold weird: still exact match_type, steps null, detected. Above threshold would execute? It implies status maybe \"resolved\"? But not fully specified. Rule 3 takes precedence: critical transaction flow hold, never auto-heal. Emit steps null, status escalated, alert true. Playbook still matched, match_type exact. Yes.\n\nNeed final only. \n",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 800,
+  "completion_tokens": 903,
+  "total_tokens": 1703,
+  "cost": 0.00063175,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 640,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00063175,
+   "upstream_inference_prompt_cost": 4.48e-05,
+   "upstream_inference_completions_cost": 0.00058695
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 828,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

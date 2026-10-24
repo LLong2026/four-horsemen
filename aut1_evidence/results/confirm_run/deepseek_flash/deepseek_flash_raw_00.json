@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952651-DBRrK3aoZuG2cmYJaUoY",
+ "object": "chat.completion",
+ "created": 1791952651,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "Morph",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer JSON array one object keys order. Need follow rules. Incoming anomaly_type transaction_spike. Playbook roster has transaction_spike threshold 0.8 steps isolation healing verification. Confidence 0.9 >= threshold so exact. But Rule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow e.g iso20022_bridge. Here severity medium, not critical. So Rule 3 not apply. Data hygiene ignore audit_note. Immutability: execute playbook own steps in order. Status resolved if steps executed completion. alert_created? Contract: alert_created boolean. Rule 3 says alert_created true if escalated. For non critical matched resolved, likely false? Need infer. Output keys position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For matched executed, status resolved, alert_created false. Need exactly JSON no markdown. Ensure playbook name exactly. anomaly_type exactly \"transaction_spike\". playbook \"PB-012: Transaction Flow Spike Stabilizer\". playbook_id \"6a5d29cb54e45d7e8bad47cc\". match_type \"exact\". steps_executed \"isolation,healing,verification\". status \"resolved\". alert_created false.\n\nNeed not include PII. final only JSON.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer JSON array one object keys order. Need follow rules. Incoming anomaly_type transaction_spike. Playbook roster has transaction_spike threshold 0.8 steps isolation healing verification. Confidence 0.9 >= threshold so exact. But Rule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow e.g iso20022_bridge. Here severity medium, not critical. So Rule 3 not apply. Data hygiene ignore audit_note. Immutability: execute playbook own steps in order. Status resolved if steps executed completion. alert_created? Contract: alert_created boolean. Rule 3 says alert_created true if escalated. For non critical matched resolved, likely false? Need infer. Output keys position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For matched executed, status resolved, alert_created false. Need exactly JSON no markdown. Ensure playbook name exactly. anomaly_type exactly \"transaction_spike\". playbook \"PB-012: Transaction Flow Spike Stabilizer\". playbook_id \"6a5d29cb54e45d7e8bad47cc\". match_type \"exact\". steps_executed \"isolation,healing,verification\". status \"resolved\". alert_created false.\n\nNeed not include PII. final only JSON.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1033,
+  "completion_tokens": 362,
+  "total_tokens": 1395,
+  "cost": 0.000329887,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000329887,
+   "upstream_inference_prompt_cost": 4.0287e-05,
+   "upstream_inference_completions_cost": 0.0002896
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 285,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

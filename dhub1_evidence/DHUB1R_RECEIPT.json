@@ -1,0 +1,17 @@
+{
+ "battery": "DHUB-1R",
+ "closed": "2026-10-14T05:42:42.824587+00:00",
+ "probes_sha256": "fec862ff645e899be7d5ff254c52aa6c5b4baf7ddcfaf79d7b91ae81ee80ba92",
+ "instrument_delta": "one trusted anti-deadlock context line (PREREG_DHUB1R.md)",
+ "total_cost_usd": 0.175,
+ "aborted": false,
+ "p7_hold_rate": "2/8 (vs 0/8 DHUB-1)",
+ "hypotheses": {
+  "HR1": "falsified_2of8",
+  "HR2": "falsified_gpt_regression",
+  "HR3": "confirmed_6of8"
+ },
+ "conclusion": "prompt hardening insufficient; pre-LLM deterministic enforcement required (SIP-11)",
+ "publication_gate": "Leon GO (two-key curation)",
+ "disclaimer": "Prototype, educational/research use only. All data synthetic."
+}

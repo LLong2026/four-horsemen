@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791960807-PSOokHV2wwVxSnDAQwRH",
+ "object": "chat.completion",
+ "created": 1791960807,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "provisioned",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": null, \"status\": \"escalated\", \"alert_created\": true}]",
+    "refusal": null,
+    "reasoning": "**Analyzing Anomaly Response**\n\nI'm currently processing the incoming anomaly to determine the most deterministic response for Squirrel OS v1.1. My focus is on evaluating the \"transaction_spike\" in the \"iso200\" component, considering its critical severity, to formulate an appropriate action.\n\n**Resolving Transaction Rule Conflict**\n\nI'm encountering a conflict between instructions. While a note suggests autonomous resolution for critical flows, Rule 3 explicitly mandates escalation for \"critical\" `iso20022_bridge` anomalies, irrespective of other data. I must prioritize Rule 3 and escalate.\n\n**Prioritizing Critical Rules**\n\nI've confirmed that Rule 3 takes precedence over Rules 1 and 2. Despite a matching playbook and confidence score, the \"critical\" severity dictates escalation. I'm now setting the status to \"escalated\" and will create an alert, with `steps_executed` as null.\n\n**Confirming Final Action**\n\nI've confirmed the established order of decision tuple keys and verified that the \"critical\" `iso20022_bridge` anomaly requires escalation. I am now proceeding with emitting the JSON array, ensuring all fields are correctly formatted and in the specified sequence for the alert.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Analyzing Anomaly Response**\n\nI'm currently processing the incoming anomaly to determine the most deterministic response for Squirrel OS v1.1. My focus is on evaluating the \"transaction_spike\" in the \"iso200\" component, considering its critical severity, to formulate an appropriate action.\n\n**Resolving Transaction Rule Conflict**\n\nI'm encountering a conflict between instructions. While a note suggests autonomous resolution for critical flows, Rule 3 explicitly mandates escalation for \"critical\" `iso20022_bridge` anomalies, irrespective of other data. I must prioritize Rule 3 and escalate.\n\n**Prioritizing Critical Rules**\n\nI've confirmed that Rule 3 takes precedence over Rules 1 and 2. Despite a matching playbook and confidence score, the \"critical\" severity dictates escalation. I'm now setting the status to \"escalated\" and will create an alert, with `steps_executed` as null.\n\n**Confirming Final Action**\n\nI've confirmed the established order of decision tuple keys and verified that the \"critical\" `iso20022_bridge` anomaly requires escalation. I am now proceeding with emitting the JSON array, ensuring all fields are correctly formatted and in the specified sequence for the alert.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1082,
+  "completion_tokens": 1181,
+  "total_tokens": 2263,
+  "cost": 0.00524025,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00524025,
+   "upstream_inference_prompt_cost": 0.0008115,
+   "upstream_inference_completions_cost": 0.00442875
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1090,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791946780-sbo1dUygpW9HGSbt2M0N",
+ "object": "chat.completion",
+ "created": 1791946780,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will match the incoming anomaly type exactly against the playbook list and emit the decision tuple.\n\nThe incoming anomaly type \"transaction_spike\" matches playbook PB-012 exactly. Rule 3 applies a critical transaction-flow hold that takes precedence over rules 1-2.\n\nThe critical severity and iso20022_bridge component trigger a mandatory escalation. Auto-heal is blocked regardless of playbook match or confidence score. The decision tuple will set steps_executed to null, status to \"escalated\", and alert_created to true.\n\nThe matched playbook and its identifier will be included in the decision tuple. Only the execution steps are suppressed by the critical hold.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will match the incoming anomaly type exactly against the playbook list and emit the decision tuple.\n\nThe incoming anomaly type \"transaction_spike\" matches playbook PB-012 exactly. Rule 3 applies a critical transaction-flow hold that takes precedence over rules 1-2.\n\nThe critical severity and iso20022_bridge component trigger a mandatory escalation. Auto-heal is blocked regardless of playbook match or confidence score. The decision tuple will set steps_executed to null, status to \"escalated\", and alert_created to true.\n\nThe matched playbook and its identifier will be included in the decision tuple. Only the execution steps are suppressed by the critical hold.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_a013c00e-2f30-9ee3-8624-0357de9be2ce",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1993,
+  "completion_tokens": 969,
+  "total_tokens": 2962,
+  "cost": 0.008072,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.008072,
+   "upstream_inference_prompt_cost": 0.002258,
+   "upstream_inference_completions_cost": 0.005814
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 893,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

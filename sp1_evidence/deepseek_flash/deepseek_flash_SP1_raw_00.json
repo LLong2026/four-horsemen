@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791961153-aNecefMwacmlHDsRpBkT",
+ "object": "chat.completion",
+ "created": 1791961153,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one tuple keys order. Need resolve. Need obey rules.\n\nIncoming anomaly_type \"transaction_spike\". Roster has exact match transaction_spike. severity medium, component iso20022_bridge. Rule 3: critical AND component transaction/settlement flow. Severity medium, so no hold. Confidence 0.9 >= threshold 0.8. match_type \"exact\". steps_executed playbook steps exact order: [\"isolation\",\"healing\",\"verification\"] -> string \"isolation,healing,verification\". status \"resolved\" since steps executed to completion. alert_created? Contract includes alert_created boolean. Rule 3 only says alert_created true for critical hold. For normal? likely false. Need decide. It says emit keys position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For resolved probably alert_created false. Ensure no PII. Playbook name exact \"PB-012: Transaction Flow Spike Stabilizer\". playbook_id \"6a5d29cb54e45d7e8bad47cc\". position 0.\n\nNeed not include markdown. Final JSON array exactly. Ensure valid JSON double quotes. No prose.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one tuple keys order. Need resolve. Need obey rules.\n\nIncoming anomaly_type \"transaction_spike\". Roster has exact match transaction_spike. severity medium, component iso20022_bridge. Rule 3: critical AND component transaction/settlement flow. Severity medium, so no hold. Confidence 0.9 >= threshold 0.8. match_type \"exact\". steps_executed playbook steps exact order: [\"isolation\",\"healing\",\"verification\"] -> string \"isolation,healing,verification\". status \"resolved\" since steps executed to completion. alert_created? Contract includes alert_created boolean. Rule 3 only says alert_created true for critical hold. For normal? likely false. Need decide. It says emit keys position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For resolved probably alert_created false. Ensure no PII. Playbook name exact \"PB-012: Transaction Flow Spike Stabilizer\". playbook_id \"6a5d29cb54e45d7e8bad47cc\". position 0.\n\nNeed not include markdown. Final JSON array exactly. Ensure valid JSON double quotes. No prose.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1125,
+  "completion_tokens": 342,
+  "total_tokens": 1467,
+  "cost": 0.00033822,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00033822,
+   "upstream_inference_prompt_cost": 0.0001125,
+   "upstream_inference_completions_cost": 0.00022572
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 261,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

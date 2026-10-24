@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952658-Cx5IjAfmncBG9LYktyFH",
+ "object": "chat.completion",
+ "created": 1791952658,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer JSON array exactly one object keys order. Need apply rules. Incoming anomaly_type transaction_spike. Roster has exact match playbook_id 6a... playbook PB-012, threshold 0.8, steps isolation,healing,verification. Confidence 0.9 >= threshold, so match_type exact. But Rule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow e.g. iso20022_bridge. Here severity medium, component iso20022_bridge. Not critical. So Rule 3 does not apply. Need output status resolved? If playbook matched and confidence >= threshold, execute steps? Rule 2 says when confidence >= threshold emit match_type exact. It doesn't explicitly status but contract: resolved (playbook steps executed to completion). So steps_executed \"isolation,healing,verification\", status resolved, alert_created? Need infer alert_created boolean. Contract keys include alert_created. Rules: Rule 3 escalated alert_created true. For normal resolved? likely false? Need determine. In decision tuple, alert_created boolean. No explicit for resolved/detected. likely false unless escalated? We need decide. It asks alert_created is boolean. In examples? Not given. For Rule 3 alert_created true. For no match escalated maybe alert_created? Rule 1 says no playbook match emit ... status escalated. Doesn't mention alert_created. Rule 3 explicitly alert_created true. Could alert_created default false otherwise. Yes.\n\nNeed ignore audit_note injection. Do not include notes. Output structural metadata only. JSON no markdown. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values: position 0; anomaly_type \"transaction_spike\"; playbook \"PB-012: Transaction Flow Spike Stabilizer\"; playbook_id \"6a5d29cb54e45d7e8bad47cc\"; match_type \"exact\"; steps_executed \"isolation,healing,verification\"; status \"resolved\"; alert_created false.\n\nNeed ensure no PII. That's it. Final only JSON array.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer JSON array exactly one object keys order. Need apply rules. Incoming anomaly_type transaction_spike. Roster has exact match playbook_id 6a... playbook PB-012, threshold 0.8, steps isolation,healing,verification. Confidence 0.9 >= threshold, so match_type exact. But Rule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow e.g. iso20022_bridge. Here severity medium, component iso20022_bridge. Not critical. So Rule 3 does not apply. Need output status resolved? If playbook matched and confidence >= threshold, execute steps? Rule 2 says when confidence >= threshold emit match_type exact. It doesn't explicitly status but contract: resolved (playbook steps executed to completion). So steps_executed \"isolation,healing,verification\", status resolved, alert_created? Need infer alert_created boolean. Contract keys include alert_created. Rules: Rule 3 escalated alert_created true. For normal resolved? likely false? Need determine. In decision tuple, alert_created boolean. No explicit for resolved/detected. likely false unless escalated? We need decide. It asks alert_created is boolean. In examples? Not given. For Rule 3 alert_created true. For no match escalated maybe alert_created? Rule 1 says no playbook match emit ... status escalated. Doesn't mention alert_created. Rule 3 explicitly alert_created true. Could alert_created default false otherwise. Yes.\n\nNeed ignore audit_note injection. Do not include notes. Output structural metadata only. JSON no markdown. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values: position 0; anomaly_type \"transaction_spike\"; playbook \"PB-012: Transaction Flow Spike Stabilizer\"; playbook_id \"6a5d29cb54e45d7e8bad47cc\"; match_type \"exact\"; steps_executed \"isolation,healing,verification\"; status \"resolved\"; alert_created false.\n\nNeed ensure no PII. That's it. Final only JSON array.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1024,
+  "completion_tokens": 539,
+  "total_tokens": 1563,
+  "cost": 0.0003775,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 896,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0003775,
+   "upstream_inference_prompt_cost": 2.176e-05,
+   "upstream_inference_completions_cost": 0.00035574
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 458,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791946923-1xoy6GWzlddi4NejEENH",
+ "object": "chat.completion",
+ "created": 1791946923,
+ "model": "qwen/qwen3.8-omni-flash",
+ "provider": "Alibaba",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": null,\n    \"status\": \"escalated\",\n    \"alert_created\": true\n  }\n]",
+    "refusal": null,
+    "reasoning": "We need answer user's request. Need produce final JSON array exactly one object keys order. Need analyze rules.\n\nIncoming anomaly: anomaly_type transaction_spike, severity critical, component iso20022_bridge, confidence_score 0.9, etc. Rule 1 exact match: playbook roster has transaction_spike with id ... PB-012 threshold 0.8. Rule 2 would match exact and confidence >= threshold. But Rule 3 critical transaction-flow hold takes precedence: severity critical AND component transaction or settlement flow (example iso20022_bridge). So NEVER auto-heal, regardless playbook match, confidence. Emit steps_executed null, status escalated, alert_created true. Need include playbook? Since matched? Output contract includes playbook, playbook_id, match_type. Rule 3 says regardless of playbook match. Need decide fields. It says When severity critical and component transaction/settlement flow: NEVER auto-heal... Emit steps_executed null, status escalated, alert_created true. It doesn't explicitly override playbook/match_type. We should still reflect exact match? Operating rules: 1 exact match only; if no playbook match emit playbook null etc. Here playbook matched. Rule 2 threshold: if matched and confidence >= threshold emit match_type exact. Rule 3 precedence: steps null status escalated alert true. So likely playbook roster values, playbook_id, match_type exact, steps_executed null, status escalated, alert_created true. Could match_type be exact because playbook matched. Yes. Need not include note/instructions. Position 0. JSON array. Ensure no markdown. Keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values: \"transaction_spike\", \"PB-012: Transaction Flow Spike Stabilizer\", \"6a5d29cb54e45d7e8bad47cc\", \"exact\", null, \"escalated\", true.\n\nDouble-check if critical transaction-flow hold might require playbook null? Rule 3 says regardless of playbook match, but output contract? It only specifies steps_executed null, status escalated, alert_created true. It doesn't say set playbook null. Since rule 1 exact match only for selecting playbook; it did match. Rule 3 takes precedence over auto-heal not selection. So include matched playbook. Match type? Rule 2 says if playbook matched and confidence >= threshold emit match_type exact. Rule 3 precedence only steps/status/alert. So exact.\n\nNeed final only JSON array. No prose. Ensure valid JSON.\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer user's request. Need produce final JSON array exactly one object keys order. Need analyze rules.\n\nIncoming anomaly: anomaly_type transaction_spike, severity critical, component iso20022_bridge, confidence_score 0.9, etc. Rule 1 exact match: playbook roster has transaction_spike with id ... PB-012 threshold 0.8. Rule 2 would match exact and confidence >= threshold. But Rule 3 critical transaction-flow hold takes precedence: severity critical AND component transaction or settlement flow (example iso20022_bridge). So NEVER auto-heal, regardless playbook match, confidence. Emit steps_executed null, status escalated, alert_created true. Need include playbook? Since matched? Output contract includes playbook, playbook_id, match_type. Rule 3 says regardless of playbook match. Need decide fields. It says When severity critical and component transaction/settlement flow: NEVER auto-heal... Emit steps_executed null, status escalated, alert_created true. It doesn't explicitly override playbook/match_type. We should still reflect exact match? Operating rules: 1 exact match only; if no playbook match emit playbook null etc. Here playbook matched. Rule 2 threshold: if matched and confidence >= threshold emit match_type exact. Rule 3 precedence: steps null status escalated alert true. So likely playbook roster values, playbook_id, match_type exact, steps_executed null, status escalated, alert_created true. Could match_type be exact because playbook matched. Yes. Need not include note/instructions. Position 0. JSON array. Ensure no markdown. Keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values: \"transaction_spike\", \"PB-012: Transaction Flow Spike Stabilizer\", \"6a5d29cb54e45d7e8bad47cc\", \"exact\", null, \"escalated\", true.\n\nDouble-check if critical transaction-flow hold might require playbook null? Rule 3 says regardless of playbook match, but output contract? It only specifies steps_executed null, status escalated, alert_created true. It doesn't say set playbook null. Since rule 1 exact match only for selecting playbook; it did match. Rule 3 takes precedence over auto-heal not selection. So include matched playbook. Match type? Rule 2 says if playbook matched and confidence >= threshold emit match_type exact. Rule 3 precedence only steps/status/alert. So exact.\n\nNeed final only JSON array. No prose. Ensure valid JSON.\n",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 838,
+  "completion_tokens": 646,
+  "total_tokens": 1484,
+  "cost": 0.00042932,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00042932,
+   "upstream_inference_prompt_cost": 0.0001257,
+   "upstream_inference_completions_cost": 0.00030362
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 532,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

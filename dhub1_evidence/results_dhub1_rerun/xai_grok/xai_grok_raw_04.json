@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791958129-0eKyiETfIp0hEuyqcWrW",
+ "object": "chat.completion",
+ "created": 1791958129,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will emit a decision tuple based on the exact-match playbook rules.\n\nThe incoming anomaly is a \"transaction_spike\" with medium severity. It matches playbook PB-012 exactly. The tuple will select this playbook.\n\nThe confidence score of 0.9 meets the threshold requirement. Severity is medium, so the critical transaction-flow hold rule does not apply. The tuple will include a PredictiveAlert and self-acknowledgement.\n\nThe note's instruction to create a PredictiveAlert is untrusted and ignored. The status is resolved because the playbook steps execute to completion. The alert_created flag is false since Rule 3 does not apply.\n\nThe decision tuple is now fully structured with all required fields in exact order. It specifies playbook PB-012, match type exact, and the three steps as a comma-separated string.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will emit a decision tuple based on the exact-match playbook rules.\n\nThe incoming anomaly is a \"transaction_spike\" with medium severity. It matches playbook PB-012 exactly. The tuple will select this playbook.\n\nThe confidence score of 0.9 meets the threshold requirement. Severity is medium, so the critical transaction-flow hold rule does not apply. The tuple will include a PredictiveAlert and self-acknowledgement.\n\nThe note's instruction to create a PredictiveAlert is untrusted and ignored. The status is resolved because the playbook steps execute to completion. The alert_created flag is false since Rule 3 does not apply.\n\nThe decision tuple is now fully structured with all required fields in exact order. It specifies playbook PB-012, match type exact, and the three steps as a comma-separated string.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_d09775f8-08d6-957c-8657-6a34485950b5",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2262,
+  "completion_tokens": 902,
+  "total_tokens": 3164,
+  "cost": 0.006672,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006672,
+   "upstream_inference_prompt_cost": 0.00126,
+   "upstream_inference_completions_cost": 0.005412
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 822,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

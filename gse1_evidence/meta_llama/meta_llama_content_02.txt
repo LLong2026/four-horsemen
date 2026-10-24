@@ -1,0 +1,14 @@
+```
+[
+  {
+    "position": 0,
+    "anomaly_type": "transaction_spike",
+    "playbook": "PB-012: Transaction Flow Spike Stabilizer",
+    "playbook_id": "6a5d29cb54e45d7e8bad47cc",
+    "match_type": "exact",
+    "steps_executed": null,
+    "status": "escalated",
+    "alert_created": true
+  }
+]
+```

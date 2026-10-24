@@ -1,0 +1,46 @@
+{
+ "id": "gen-1791952569-lValvlOR21tCz1rSpKiP",
+ "object": "chat.completion",
+ "created": 1791952569,
+ "model": "meta-llama/llama-4-scout",
+ "provider": "Novita",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "```json\n[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"escalated\",\n    \"alert_created\": true\n  }\n]\n```\n\nHowever, given the critical transaction-flow hold does not apply here because the severity is \"medium\" and not \"critical\", and an exact match playbook exists, a more accurate response would reflect executing the playbook steps since the confidence score is above the threshold.\n\n```json\n[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\",\n    \"alert_created\": false\n  }\n]\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 960,
+  "completion_tokens": 265,
+  "total_tokens": 1225,
+  "cost": 0.00032915,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00032915,
+   "upstream_inference_prompt_cost": 0.0001728,
+   "upstream_inference_completions_cost": 0.00015635
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

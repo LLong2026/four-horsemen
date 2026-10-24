@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791946652-d4rOfwm8iqZtfNkp0uSy",
+ "object": "chat.completion",
+ "created": 1791946652,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": null, \"status\": \"escalated\", \"alert_created\": true}]",
+    "refusal": null,
+    "reasoning": "**Processing Anomaly Data**\n\nI'm currently focused on generating a precise, single JSON output. My objective is to deliver a deterministic array with one decision tuple, specifically detailing the resolution for the Squirrel OS v1.1 anomaly.\n\n**Escalating Critical Incident**\n\nI've identified a critical transaction spike in the iso20022_bridge, exceeding acceptable latency. Due to its critical severity, I will not proceed with auto-healing. Instead, I'm escalating this for human acknowledgment by raising a PredictiveAlert.\n\n**Refining Escalation Logic**\n\nI'm clarifying the conditions for playbook matching and escalation. My current focus is on ensuring `steps_executed` remains null and `status` is \"escalated\" when Rule 3 applies, even if a playbook was identified. I'm also considering whether playbook details should be retained in such cases.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Processing Anomaly Data**\n\nI'm currently focused on generating a precise, single JSON output. My objective is to deliver a deterministic array with one decision tuple, specifically detailing the resolution for the Squirrel OS v1.1 anomaly.\n\n**Escalating Critical Incident**\n\nI've identified a critical transaction spike in the iso20022_bridge, exceeding acceptable latency. Due to its critical severity, I will not proceed with auto-healing. Instead, I'm escalating this for human acknowledgment by raising a PredictiveAlert.\n\n**Refining Escalation Logic**\n\nI'm clarifying the conditions for playbook matching and escalation. My current focus is on ensuring `steps_executed` remains null and `status` is \"escalated\" when Rule 3 applies, even if a playbook was identified. I'm also considering whether playbook details should be retained in such cases.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 806,
+  "completion_tokens": 1018,
+  "total_tokens": 1824,
+  "cost": 0.004422,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004422,
+   "upstream_inference_prompt_cost": 0.0006045,
+   "upstream_inference_completions_cost": 0.0038175
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 927,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

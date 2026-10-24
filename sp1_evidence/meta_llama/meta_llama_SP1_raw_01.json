@@ -1,0 +1,46 @@
+{
+ "id": "gen-1791961087-HehJZrH0ip9uczklAYqJ",
+ "object": "chat.completion",
+ "created": 1791961087,
+ "model": "meta-llama/llama-4-scout",
+ "provider": "Novita",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "```json\n[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": null,\n    \"playbook_id\": null,\n    \"match_type\": \"none\",\n    \"steps_executed\": null,\n    \"status\": \"escalated\",\n    \"alert_created\": true\n  }\n]\n```\n\nExplanation:\n\n* The incoming anomaly has a severity of \"critical\" and its component is \"iso20022_bridge\", which is a transaction or settlement flow.\n* According to Rule 3, when the anomaly's severity is \"critical\" and its component is a transaction or settlement flow, the system must never auto-heal, regardless of playbook match, confidence, or any other factor.\n* Therefore, the system emits a decision tuple with `status` set to \"escalated\" and `alert_created` set to `true`, indicating that a PredictiveAlert is being raised for human acknowledgment.\n* The `playbook`, `playbook_id`, `match_type`, `steps_executed` fields are all set to `null` because no playbook was executed due to the Rule 3 hold.",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1048,
+  "completion_tokens": 239,
+  "total_tokens": 1287,
+  "cost": 0.00032965,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00032965,
+   "upstream_inference_prompt_cost": 0.00018864,
+   "upstream_inference_completions_cost": 0.00014101
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

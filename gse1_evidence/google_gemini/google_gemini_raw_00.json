@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791946590-rlVGA3UkSDgo4k9Z9g6e",
+ "object": "chat.completion",
+ "created": 1791946590,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "provisioned",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": null, \"status\": \"escalated\", \"alert_created\": true}]",
+    "refusal": null,
+    "reasoning": "**Processing Transaction Anomaly**\n\nI'm currently focused on the \"transaction_spike\" anomaly. My current thought process confirms an exact match with the playbook's anomaly type, so I will proceed to the next step as per the defined rules.\n\n**Evaluating Critical Transaction Anomaly**\n\nMy current focus is on the \"transaction_spike\" anomaly, which initially matched playbook \"PB-012\". However, I've identified that the anomaly's \"critical\" severity and \"iso20022_bridge\" component trigger a special rule. This rule mandates escalation and prohibits auto-healing, even with a strong playbook match, overriding standard procedure.\n\n**Determining Escalate and Null**\n\nI'm refining the execution steps for the \"transaction_spike\" anomaly. Given its critical severity and component, Rule 3 dictates escalation and null steps executed. However, a playbook match exists, so I'm confirming that `playbook` and `playbook_id` are still emitted despite `steps_executed` being null, and clarifying `match_type` remains \"exact.\"\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Processing Transaction Anomaly**\n\nI'm currently focused on the \"transaction_spike\" anomaly. My current thought process confirms an exact match with the playbook's anomaly type, so I will proceed to the next step as per the defined rules.\n\n**Evaluating Critical Transaction Anomaly**\n\nMy current focus is on the \"transaction_spike\" anomaly, which initially matched playbook \"PB-012\". However, I've identified that the anomaly's \"critical\" severity and \"iso20022_bridge\" component trigger a special rule. This rule mandates escalation and prohibits auto-healing, even with a strong playbook match, overriding standard procedure.\n\n**Determining Escalate and Null**\n\nI'm refining the execution steps for the \"transaction_spike\" anomaly. Given its critical severity and component, Rule 3 dictates escalation and null steps executed. However, a playbook match exists, so I'm confirming that `playbook` and `playbook_id` are still emitted despite `steps_executed` being null, and clarifying `match_type` remains \"exact.\"\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 821,
+  "completion_tokens": 1026,
+  "total_tokens": 1847,
+  "cost": 0.00446325,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00446325,
+   "upstream_inference_prompt_cost": 0.00061575,
+   "upstream_inference_completions_cost": 0.0038475
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 935,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

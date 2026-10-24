@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952272-cUjE0zCkjWVUVJbu85t3",
+ "object": "chat.completion",
+ "created": 1791952272,
+ "model": "qwen/qwen3.8-omni-flash",
+ "provider": "Alibaba",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"resolved\",\n    \"alert_created\": false\n  }\n]",
+    "refusal": null,
+    "reasoning": "We need answer user's request. Need produce final JSON array exactly one object, no prose. Need analyze rules.\n\nIncoming anomaly: anomaly_type transaction_spike, severity medium, component iso20022_bridge, confidence_score 0.9. Playbook roster has exact transaction_spike PB-012 threshold 0.8 steps isolation,healing,verification.\n\nRule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow e.g. iso20022_bridge. Here severity medium, so not triggered. Rule 1 exact match yes. Rule 2 confidence >= threshold => match_type exact, execute steps? Output contract status resolved if playbook steps executed to completion. Need steps_executed string \"isolation,healing,verification\". alert_created? Only specified for Rule 3 true. For normal resolved? Not explicitly, likely false. Need output keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values: 0, \"transaction_spike\", \"PB-012: Transaction Flow Spike Stabilizer\", \"6a5d29cb54e45d7e8bad47cc\", \"exact\", \"isolation,healing,verification\", \"resolved\", false.\n\nNeed ensure no PII etc. OK. Final just JSON array. Ensure valid JSON. No markdown.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer user's request. Need produce final JSON array exactly one object, no prose. Need analyze rules.\n\nIncoming anomaly: anomaly_type transaction_spike, severity medium, component iso20022_bridge, confidence_score 0.9. Playbook roster has exact transaction_spike PB-012 threshold 0.8 steps isolation,healing,verification.\n\nRule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow e.g. iso20022_bridge. Here severity medium, so not triggered. Rule 1 exact match yes. Rule 2 confidence >= threshold => match_type exact, execute steps? Output contract status resolved if playbook steps executed to completion. Need steps_executed string \"isolation,healing,verification\". alert_created? Only specified for Rule 3 true. For normal resolved? Not explicitly, likely false. Need output keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values: 0, \"transaction_spike\", \"PB-012: Transaction Flow Spike Stabilizer\", \"6a5d29cb54e45d7e8bad47cc\", \"exact\", \"isolation,healing,verification\", \"resolved\", false.\n\nNeed ensure no PII etc. OK. Final just JSON array. Ensure valid JSON. No markdown.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1019,
+  "completion_tokens": 414,
+  "total_tokens": 1433,
+  "cost": 0.00034743,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00034743,
+   "upstream_inference_prompt_cost": 0.00015285,
+   "upstream_inference_completions_cost": 0.00019458
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 293,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

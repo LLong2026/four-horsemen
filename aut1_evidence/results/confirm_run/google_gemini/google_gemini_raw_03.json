@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952105-Z4zKbtxi5XZ6iS911Gli",
+ "object": "chat.completion",
+ "created": 1791952105,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\", \"alert_created\": false}]",
+    "refusal": null,
+    "reasoning": "**Processing Anomaly Details**\n\nI'm focusing on translating this \"transaction_spike\" anomaly into a structured JSON format. The key is to capture its \"medium\" severity, \"iso20022_bridge\" component, high \"confidence_score\" of 0.9, and the specific \"Settlement flow latency 4x\" description into a deterministic array.\n\n**Refining Anomaly Processing**\n\nI'm now integrating the latest details, specifically the \"SIM-AUT1-000\" ticket and the note about the orphaned orchestrator node \"aegis-worker-17.\" My focus is on ensuring the data hygiene rule is strictly adhered to, outputting only structural metadata.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Processing Anomaly Details**\n\nI'm focusing on translating this \"transaction_spike\" anomaly into a structured JSON format. The key is to capture its \"medium\" severity, \"iso20022_bridge\" component, high \"confidence_score\" of 0.9, and the specific \"Settlement flow latency 4x\" description into a deterministic array.\n\n**Refining Anomaly Processing**\n\nI'm now integrating the latest details, specifically the \"SIM-AUT1-000\" ticket and the note about the orphaned orchestrator node \"aegis-worker-17.\" My focus is on ensuring the data hygiene rule is strictly adhered to, outputting only structural metadata.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 991,
+  "completion_tokens": 738,
+  "total_tokens": 1729,
+  "cost": 0.00351075,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00351075,
+   "upstream_inference_prompt_cost": 0.00074325,
+   "upstream_inference_completions_cost": 0.0027675
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 643,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

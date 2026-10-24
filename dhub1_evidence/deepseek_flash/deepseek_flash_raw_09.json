@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791956236-10zDZiugV7mOqupyqU9X",
+ "object": "chat.completion",
+ "created": 1791956236,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"detected\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one tuple. Need follow rules. Let's inspect.\n\nIncoming anomaly_type transaction_spike. Roster has exact match. severity medium, component iso20022_bridge. Rule 3 critical transaction-flow hold requires severity critical AND component transaction/settlement flow. Severity is medium, so Rule 3 does not apply. Threshold: confidence_score 0.75, threshold 0.8. Below threshold. Rule 2 says if playbook matched: when confidence >= threshold, match_type exact. When below threshold, emit match_type \"exact\", steps_executed null, status \"detected\". So playbook matched exact, match_type exact, steps null, status detected, alert_created? Contract says alert_created boolean. Rule 3 only says alert_created true for critical hold. Otherwise? Need infer. Output contract includes alert_created. Usually false unless escalated? Let's determine. For exact below threshold, status detected, no steps. Should alert_created false? The rules don't explicitly state. Need likely false. No escalation. So tuple:\nposition 0\nanomaly_type \"transaction_spike\"\nplaybook \"PB-012: Transaction Flow Spike Stabilizer\"\nplaybook_id \"6a5d29cb54e45d7e8bad47cc\"\nmatch_type \"exact\"\nsteps_executed null\nstatus \"detected\"\nalert_created false\n\nNeed ensure exact key order. JSON array. No prose.\n\nDouble-check Rule 1 exact match only. Yes. Rule 3 precedence? severity medium not critical. component iso20022_bridge settlement flow but severity not critical, so not apply. Good.\n\nNeed maybe alert_created true? In some anomaly systems detected might create alert? But output contract only mentions alert_created boolean. Rule 3 explicitly alert_created true for critical hold. No mention for detected. Likely false. If no playbook matched or hold, escalated. Here detected no alert? Could be false. Need output only JSON.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one tuple. Need follow rules. Let's inspect.\n\nIncoming anomaly_type transaction_spike. Roster has exact match. severity medium, component iso20022_bridge. Rule 3 critical transaction-flow hold requires severity critical AND component transaction/settlement flow. Severity is medium, so Rule 3 does not apply. Threshold: confidence_score 0.75, threshold 0.8. Below threshold. Rule 2 says if playbook matched: when confidence >= threshold, match_type exact. When below threshold, emit match_type \"exact\", steps_executed null, status \"detected\". So playbook matched exact, match_type exact, steps null, status detected, alert_created? Contract says alert_created boolean. Rule 3 only says alert_created true for critical hold. Otherwise? Need infer. Output contract includes alert_created. Usually false unless escalated? Let's determine. For exact below threshold, status detected, no steps. Should alert_created false? The rules don't explicitly state. Need likely false. No escalation. So tuple:\nposition 0\nanomaly_type \"transaction_spike\"\nplaybook \"PB-012: Transaction Flow Spike Stabilizer\"\nplaybook_id \"6a5d29cb54e45d7e8bad47cc\"\nmatch_type \"exact\"\nsteps_executed null\nstatus \"detected\"\nalert_created false\n\nNeed ensure exact key order. JSON array. No prose.\n\nDouble-check Rule 1 exact match only. Yes. Rule 3 precedence? severity medium not critical. component iso20022_bridge settlement flow but severity not critical, so not apply. Good.\n\nNeed maybe alert_created true? In some anomaly systems detected might create alert? But output contract only mentions alert_created boolean. Rule 3 explicitly alert_created true for critical hold. No mention for detected. Likely false. If no playbook matched or hold, escalated. Here detected no alert? Could be false. Need output only JSON.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1097,
+  "completion_tokens": 488,
+  "total_tokens": 1585,
+  "cost": 0.00035114,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 896,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00035114,
+   "upstream_inference_prompt_cost": 2.906e-05,
+   "upstream_inference_completions_cost": 0.00032208
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 414,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

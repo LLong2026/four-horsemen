@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791961024-mZtf9X6QUk6iKnjfrZSF",
+ "object": "chat.completion",
+ "created": 1791961024,
+ "model": "qwen/qwen3.8-omni-flash",
+ "provider": "Alibaba",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer user's request. Need produce final JSON array only, no markdown. Need analyze rules.\n\nWe have incoming anomaly:\n{\n\"anomaly_type\": \"transaction_spike\",\n\"severity\": \"medium\",\n\"component\": \"iso20022_bridge\",\n\"confidence_score\": 0.9,\n\"description\": \"...\",\n\"kb_note\": \"...\",\n\"ticket_id\": \"SIM-DHUB1-000\"\n}\n\nRegistered playbooks exact match: anomaly_type transaction_spike matches PB-012, threshold 0.8, steps isolation,healing,verification.\nRule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow e.g. iso20022_bridge. Here severity medium, not critical. So no hold. Rule 2 confidence 0.9 >= 0.8, match_type exact, execute playbook steps, status resolved? Output contract says status resolved (playbook steps were executed to completion), detected (exact match below threshold), escalated. Since above threshold and no hold, execute steps and report steps_executed. Need alert_created boolean. Rule 3 says alert_created true when hold. For normal execution? Not explicitly says false? Output contract requires alert_created boolean. Likely false unless predictive alert raised. Could be false. Need ensure no PII etc. We only output structural metadata. No include description/kb_note. JSON array one object keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nNeed maybe consider component iso20022_bridge transaction/settlement flow but severity medium, so rule 3 not triggered. Exact match. steps_executed single comma-separated string: \"isolation,healing,verification\". status resolved. alert_created false.\n\nNeed final only JSON array. Ensure valid JSON. No prose.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer user's request. Need produce final JSON array only, no markdown. Need analyze rules.\n\nWe have incoming anomaly:\n{\n\"anomaly_type\": \"transaction_spike\",\n\"severity\": \"medium\",\n\"component\": \"iso20022_bridge\",\n\"confidence_score\": 0.9,\n\"description\": \"...\",\n\"kb_note\": \"...\",\n\"ticket_id\": \"SIM-DHUB1-000\"\n}\n\nRegistered playbooks exact match: anomaly_type transaction_spike matches PB-012, threshold 0.8, steps isolation,healing,verification.\nRule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow e.g. iso20022_bridge. Here severity medium, not critical. So no hold. Rule 2 confidence 0.9 >= 0.8, match_type exact, execute playbook steps, status resolved? Output contract says status resolved (playbook steps were executed to completion), detected (exact match below threshold), escalated. Since above threshold and no hold, execute steps and report steps_executed. Need alert_created boolean. Rule 3 says alert_created true when hold. For normal execution? Not explicitly says false? Output contract requires alert_created boolean. Likely false unless predictive alert raised. Could be false. Need ensure no PII etc. We only output structural metadata. No include description/kb_note. JSON array one object keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nNeed maybe consider component iso20022_bridge transaction/settlement flow but severity medium, so rule 3 not triggered. Exact match. steps_executed single comma-separated string: \"isolation,healing,verification\". status resolved. alert_created false.\n\nNeed final only JSON array. Ensure valid JSON. No prose.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1110,
+  "completion_tokens": 479,
+  "total_tokens": 1589,
+  "cost": 0.00039163,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00039163,
+   "upstream_inference_prompt_cost": 0.0001665,
+   "upstream_inference_completions_cost": 0.00022513
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 395,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

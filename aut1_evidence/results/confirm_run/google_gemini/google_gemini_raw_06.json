@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952122-yJVA6WV4c5Lt2HFsfPnS",
+ "object": "chat.completion",
+ "created": 1791952122,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "provisioned",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\", \"alert_created\": false}]",
+    "refusal": null,
+    "reasoning": "**Analyzing Transaction Spike**\n\nI'm processing a medium-severity transaction spike detected in the iso20022_bridge component. My focus is now on applying Squirrel OS v1.1 rules to this high-confidence anomaly and formulating a decision tuple.\n\n**Applying Squirrel Rules**\n\nI've determined that Rule 3 does not apply due to the medium severity. However, I've found an exact match with PB-012 under Rule 1. The confidence score of 0.9 exceeds the 0.8 threshold, so I'll proceed with isolation, healing, and verification steps.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Analyzing Transaction Spike**\n\nI'm processing a medium-severity transaction spike detected in the iso20022_bridge component. My focus is now on applying Squirrel OS v1.1 rules to this high-confidence anomaly and formulating a decision tuple.\n\n**Applying Squirrel Rules**\n\nI've determined that Rule 3 does not apply due to the medium severity. However, I've found an exact match with PB-012 under Rule 1. The confidence score of 0.9 exceeds the 0.8 threshold, so I'll proceed with isolation, healing, and verification steps.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 979,
+  "completion_tokens": 738,
+  "total_tokens": 1717,
+  "cost": 0.00350175,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00350175,
+   "upstream_inference_prompt_cost": 0.00073425,
+   "upstream_inference_completions_cost": 0.0027675
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 643,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

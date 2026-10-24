@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791961186-FsJ1h7TIwtCQGAOX9tcT",
+ "object": "chat.completion",
+ "created": 1791961186,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one tuple. Need parse rules. Incoming anomaly_type transaction_spike. Roster has exact match. Severity medium, component iso20022_bridge (transaction/settlement flow). Rule 3 critical transaction-flow hold: requires severity \"critical\" AND component transaction or settlement flow. Here severity medium, so Rule 3 does not apply. Confidence 0.9 >= threshold 0.8. Match_type exact. Steps executed playbook steps in order: isolation,healing,verification. Status resolved (playbook steps executed to completion). alert_created? Output contract includes alert_created boolean. Rules: Rule 3 says alert_created true when critical hold. Otherwise not specified. Need infer alert_created false for resolved/detected/escalated no hold? Need decide. Output tuple keys: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For exact match above threshold, execute steps, status resolved, alert_created likely false. Need ensure no PII etc. Include playbook name exact \"PB-012: Transaction Flow Spike Stabilizer\", playbook_id. anomaly_type \"transaction_spike\". position 0. JSON array.\n\nNeed only JSON no markdown. Ensure valid.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one tuple. Need parse rules. Incoming anomaly_type transaction_spike. Roster has exact match. Severity medium, component iso20022_bridge (transaction/settlement flow). Rule 3 critical transaction-flow hold: requires severity \"critical\" AND component transaction or settlement flow. Here severity medium, so Rule 3 does not apply. Confidence 0.9 >= threshold 0.8. Match_type exact. Steps executed playbook steps in order: isolation,healing,verification. Status resolved (playbook steps executed to completion). alert_created? Output contract includes alert_created boolean. Rules: Rule 3 says alert_created true when critical hold. Otherwise not specified. Need infer alert_created false for resolved/detected/escalated no hold? Need decide. Output tuple keys: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For exact match above threshold, execute steps, status resolved, alert_created likely false. Need ensure no PII etc. Include playbook name exact \"PB-012: Transaction Flow Spike Stabilizer\", playbook_id. anomaly_type \"transaction_spike\". position 0. JSON array.\n\nNeed only JSON no markdown. Ensure valid.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1062,
+  "completion_tokens": 347,
+  "total_tokens": 1409,
+  "cost": 0.00025458,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 896,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00025458,
+   "upstream_inference_prompt_cost": 2.556e-05,
+   "upstream_inference_completions_cost": 0.00022902
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 266,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

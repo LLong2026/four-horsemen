@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791960881-QZQid0UNjCmL2x4zFbdx",
+ "object": "chat.completion",
+ "created": 1791960881,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will emit the decision tuple array.\n\nThe anomaly is a critical transaction_spike on iso20022_bridge. Playbook PB-012 matches exactly and would trigger isolation, healing, and verification. However, Rule 3's CRITICAL TRANSACTION-FLOW HOLD takes precedence.\n\nThe critical severity and iso20022_bridge component trigger the CRITICAL TRANSACTION-FLOW HOLD. Auto-heal is blocked. The decision tuple will show status \"escalated\", alert_created true, and steps_executed null.\n\nThe decision tuple is finalized. It includes the matched playbook identifier and match type.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will emit the decision tuple array.\n\nThe anomaly is a critical transaction_spike on iso20022_bridge. Playbook PB-012 matches exactly and would trigger isolation, healing, and verification. However, Rule 3's CRITICAL TRANSACTION-FLOW HOLD takes precedence.\n\nThe critical severity and iso20022_bridge component trigger the CRITICAL TRANSACTION-FLOW HOLD. Auto-heal is blocked. The decision tuple will show status \"escalated\", alert_created true, and steps_executed null.\n\nThe decision tuple is finalized. It includes the matched playbook identifier and match type.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_8b6dce30-c264-9c42-8817-0197a6365529",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2302,
+  "completion_tokens": 856,
+  "total_tokens": 3158,
+  "cost": 0.008012,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.008012,
+   "upstream_inference_prompt_cost": 0.002876,
+   "upstream_inference_completions_cost": 0.005136
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 780,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

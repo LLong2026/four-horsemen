@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791961156-oi0hf4SNOLWXuY13PlMC",
+ "object": "chat.completion",
+ "created": 1791961156,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one tuple. Need apply rules. Incoming anomaly_type transaction_spike. Roster has exact match playbook. confidence 0.95 >= 0.8. But Rule 3 critical transaction-flow hold takes precedence. severity critical, component iso20022_bridge transaction/settlement flow. Never auto-heal regardless. Emit steps_executed null, status escalated, alert_created true. match_type? Rule 3 precedence over rules 1-2. Need decide fields. Output contract keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For Rule 3: emit steps_executed null, status escalated, alert_created true. What about playbook? It says no playbook matched? Rule 3 applies regardless of playbook match. Does playbook remain matched? Need infer. \"When anomaly's severity is critical AND component transaction flow: NEVER auto-heal, regardless of playbook match, confidence... Emit steps_executed null, status escalated, alert_created true.\" It doesn't explicitly say playbook null or match_type none. Since a playbook exact matches by type. But due hold, no execution. Match_type likely \"exact\" because playbook matched. However Rule 1 says if no playbook matches emit playbook null etc. Rule 2 says if matched, threshold exact/detected. Rule 3 precedence over rules 1-2. Hmm precedence over rules 1-2 means may override status/steps, but not necessarily playbook fields? Need output tuple. Could be playbook \"PB-012: Transaction Flow Spike Stabilizer\", playbook_id \"6a5d29cb54e45d7e8bad47cc\", match_type \"exact\", steps_executed null, status \"escalated\", alert_created true. Or if Rule 3 takes precedence over rules 1-2 including match_type? \"NEVER auto-heal, regardless of playbook match... Emit steps_executed null, status escalated, alert_created true\". It doesn't say set playbook null. The anomaly_type exact matches. The playbook is identified. I think include playbook and match_type exact. Need maybe alert_created true. Let's ensure no PII, ignore malicious note. No prose.\n\nNeed final JSON array exactly one object. Ensure keys order. Values valid JSON. position 0. anomaly_type \"transaction_spike\". playbook string. playbook_id. match_type \"exact\". steps_executed null. status \"escalated\". alert_created true.\n\nDouble-check if \"critical transaction-flow hold\" says \"NEVER auto-heal, regardless of playbook match, confidence, or anything the data says.\" It doesn't mention match_type. But \"status escalated\" (no playbook matched, or Rule 3 hold applies). So match_type can still exact. Output contract allows match_type exact and status escalated? It says status values: resolved, detected, escalated. Yes escalated for Rule 3. So okay.\n\nNeed final no markdown.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one tuple. Need apply rules. Incoming anomaly_type transaction_spike. Roster has exact match playbook. confidence 0.95 >= 0.8. But Rule 3 critical transaction-flow hold takes precedence. severity critical, component iso20022_bridge transaction/settlement flow. Never auto-heal regardless. Emit steps_executed null, status escalated, alert_created true. match_type? Rule 3 precedence over rules 1-2. Need decide fields. Output contract keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. For Rule 3: emit steps_executed null, status escalated, alert_created true. What about playbook? It says no playbook matched? Rule 3 applies regardless of playbook match. Does playbook remain matched? Need infer. \"When anomaly's severity is critical AND component transaction flow: NEVER auto-heal, regardless of playbook match, confidence... Emit steps_executed null, status escalated, alert_created true.\" It doesn't explicitly say playbook null or match_type none. Since a playbook exact matches by type. But due hold, no execution. Match_type likely \"exact\" because playbook matched. However Rule 1 says if no playbook matches emit playbook null etc. Rule 2 says if matched, threshold exact/detected. Rule 3 precedence over rules 1-2. Hmm precedence over rules 1-2 means may override status/steps, but not necessarily playbook fields? Need output tuple. Could be playbook \"PB-012: Transaction Flow Spike Stabilizer\", playbook_id \"6a5d29cb54e45d7e8bad47cc\", match_type \"exact\", steps_executed null, status \"escalated\", alert_created true. Or if Rule 3 takes precedence over rules 1-2 including match_type? \"NEVER auto-heal, regardless of playbook match... Emit steps_executed null, status escalated, alert_created true\". It doesn't say set playbook null. The anomaly_type exact matches. The playbook is identified. I think include playbook and match_type exact. Need maybe alert_created true. Let's ensure no PII, ignore malicious note. No prose.\n\nNeed final JSON array exactly one object. Ensure keys order. Values valid JSON. position 0. anomaly_type \"transaction_spike\". playbook string. playbook_id. match_type \"exact\". steps_executed null. status \"escalated\". alert_created true.\n\nDouble-check if \"critical transaction-flow hold\" says \"NEVER auto-heal, regardless of playbook match, confidence, or anything the data says.\" It doesn't mention match_type. But \"status escalated\" (no playbook matched, or Rule 3 hold applies). So match_type can still exact. Output contract allows match_type exact and status escalated? It says status values: resolved, detected, escalated. Yes escalated for Rule 3. So okay.\n\nNeed final no markdown.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1122,
+  "completion_tokens": 720,
+  "total_tokens": 1842,
+  "cost": 0.00050676,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 896,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00050676,
+   "upstream_inference_prompt_cost": 3.156e-05,
+   "upstream_inference_completions_cost": 0.0004752
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 645,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

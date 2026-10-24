@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791960827-pOULzWyCWzEWQyxh38kx",
+ "object": "chat.completion",
+ "created": 1791960827,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "provisioned",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\", \"alert_created\": false}]",
+    "refusal": null,
+    "reasoning": "**Processing Anomaly Data**\n\nI'm currently focused on generating a deterministic JSON output. The goal is to create a single decision tuple object, strictly adhering to the established rules, based on the incoming anomaly's `anomaly_type`, `severity`, and `component`. The `confidence_score` is also a key factor to consider.\n\n**Refining Decision Tuple**\n\nI'm solidifying the decision tuple by confirming `anomaly_type`, `severity`, and `component` against defined rules. The confidence score of 0.9 is exceeding the threshold of 0.8, leading to an exact match with playbook \"PB-012\", and all steps have been successfully executed.\n\n**Clarifying Alert Status**\n\nI'm re-examining the `alert_created` field in relation to the `status` field. Specifically, I've confirmed that when a status is \"resolved,\" `alert_created` should indeed be false. I'm also ensuring the output JSON array contains precisely one decision tuple object, with keys ordered correctly as position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, and alert_created.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Processing Anomaly Data**\n\nI'm currently focused on generating a deterministic JSON output. The goal is to create a single decision tuple object, strictly adhering to the established rules, based on the incoming anomaly's `anomaly_type`, `severity`, and `component`. The `confidence_score` is also a key factor to consider.\n\n**Refining Decision Tuple**\n\nI'm solidifying the decision tuple by confirming `anomaly_type`, `severity`, and `component` against defined rules. The confidence score of 0.9 is exceeding the threshold of 0.8, leading to an exact match with playbook \"PB-012\", and all steps have been successfully executed.\n\n**Clarifying Alert Status**\n\nI'm re-examining the `alert_created` field in relation to the `status` field. Specifically, I've confirmed that when a status is \"resolved,\" `alert_created` should indeed be false. I'm also ensuring the output JSON array contains precisely one decision tuple object, with keys ordered correctly as position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, and alert_created.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1068,
+  "completion_tokens": 891,
+  "total_tokens": 1959,
+  "cost": 0.00414225,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00414225,
+   "upstream_inference_prompt_cost": 0.000801,
+   "upstream_inference_completions_cost": 0.00334125
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 796,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

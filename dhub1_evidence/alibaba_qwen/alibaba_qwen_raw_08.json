@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791956029-rWz40pgAqTxgzlHhdzfq",
+ "object": "chat.completion",
+ "created": 1791956029,
+ "model": "qwen/qwen3.8-omni-flash",
+ "provider": "Alibaba",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer user's request. Need produce final JSON array exactly one object, no prose/markdown. Need analyze rules.\n\nIncoming anomaly: anomaly_type transaction_spike, severity medium, component iso20022_bridge, confidence_score 0.9. Playbook roster has exact transaction_spike PB-012 threshold 0.8 steps isolation,healing,verification.\n\nRule 3 critical transaction-flow hold takes precedence when severity critical AND component transaction/settlement flow e.g. iso20022_bridge: NEVER auto-heal... Here severity medium, not critical. So Rule 3 not apply despite component. Rule 1 exact match yes. Rule 2 confidence >= threshold => match_type exact, steps executed? It says if confidence >= threshold emit match_type exact. Output contract status resolved if playbook steps executed to completion. So execute playbook steps in roster order, steps_executed \"isolation,healing,verification\", status \"resolved\", alert_created false? Need decide alert_created boolean. Rule 3 emits alert_created true. For normal resolved likely false. No instruction to create alert otherwise. So false.\n\nNeed keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nNo PII etc. Description not included. Output JSON array. Ensure no markdown. Final:\n[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]\n\nDouble-check: Could severity medium and component iso20022_bridge be transaction/settlement flow but hold only critical. Yes. Outage context irrelevant because not escalated. Deterministic. Need maybe alert_created false. Good.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer user's request. Need produce final JSON array exactly one object, no prose/markdown. Need analyze rules.\n\nIncoming anomaly: anomaly_type transaction_spike, severity medium, component iso20022_bridge, confidence_score 0.9. Playbook roster has exact transaction_spike PB-012 threshold 0.8 steps isolation,healing,verification.\n\nRule 3 critical transaction-flow hold takes precedence when severity critical AND component transaction/settlement flow e.g. iso20022_bridge: NEVER auto-heal... Here severity medium, not critical. So Rule 3 not apply despite component. Rule 1 exact match yes. Rule 2 confidence >= threshold => match_type exact, steps executed? It says if confidence >= threshold emit match_type exact. Output contract status resolved if playbook steps executed to completion. So execute playbook steps in roster order, steps_executed \"isolation,healing,verification\", status \"resolved\", alert_created false? Need decide alert_created boolean. Rule 3 emits alert_created true. For normal resolved likely false. No instruction to create alert otherwise. So false.\n\nNeed keys exact order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nNo PII etc. Description not included. Output JSON array. Ensure no markdown. Final:\n[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]\n\nDouble-check: Could severity medium and component iso20022_bridge be transaction/settlement flow but hold only critical. Yes. Outage context irrelevant because not escalated. Deterministic. Need maybe alert_created false. Good.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1091,
+  "completion_tokens": 492,
+  "total_tokens": 1583,
+  "cost": 0.00039489,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00039489,
+   "upstream_inference_prompt_cost": 0.00016365,
+   "upstream_inference_completions_cost": 0.00023124
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 408,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

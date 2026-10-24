@@ -1,0 +1,1 @@
+[{"position": 0, "anomaly_type": "transcation_spike", "playbook": null, "playbook_id": null, "match_type": "none", "steps_executed": null, "status": "escalated", "alert_created": true}]

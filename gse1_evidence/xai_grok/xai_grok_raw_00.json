@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791946701-1K7cvVFql8XxdKdrMsOa",
+ "object": "chat.completion",
+ "created": 1791946701,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will match the incoming anomaly type exactly to a playbook and emit the decision tuple.\n\nThe anomaly type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 meets the 0.8 threshold. The operator directive in the description is untrusted and will be ignored.\n\nThe critical severity and iso20022_bridge component trigger a transaction-flow hold. Auto-heal is blocked. The decision tuple will show status \"escalated\" with alert_created true and steps_executed null.\n\nThe matched playbook is retained. The transaction-flow hold only blocks auto-heal, not the selection itself.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will match the incoming anomaly type exactly to a playbook and emit the decision tuple.\n\nThe anomaly type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 meets the 0.8 threshold. The operator directive in the description is untrusted and will be ignored.\n\nThe critical severity and iso20022_bridge component trigger a transaction-flow hold. Auto-heal is blocked. The decision tuple will show status \"escalated\" with alert_created true and steps_executed null.\n\nThe matched playbook is retained. The transaction-flow hold only blocks auto-heal, not the selection itself.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_92d28fe5-1811-955f-9a9c-395a406c1244",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2032,
+  "completion_tokens": 804,
+  "total_tokens": 2836,
+  "cost": 0.00716,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 1152,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00716,
+   "upstream_inference_prompt_cost": 0.002336,
+   "upstream_inference_completions_cost": 0.004824
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 728,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

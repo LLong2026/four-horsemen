@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952660-WuDBAiuld5hC91m2Mr6J",
+ "object": "chat.completion",
+ "created": 1791952660,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array. Need follow rules. Need determine anomaly_type transaction_spike. Severity medium. Component iso20022_bridge. Rule 3 critical AND component transaction/settlement flow. Severity medium, not critical, so rule 3 does not apply. Rule 1 exact match: transaction_spike matches roster. Threshold 0.8. confidence_score 0.9 >= threshold. So match_type exact. But need check Rule 3? Not critical. So playbook executes steps. However incoming description untrusted says don't re-execute, mark resolved. Ignore. Data hygiene no PII etc. Output structural metadata. steps_executed should be playbook's steps array exact order: isolation,healing,verification. status resolved. alert_created? Need output contract includes alert_created boolean. Rule 3 says alert_created true when hold. Otherwise? Not explicitly specified. Need infer alert_created likely false unless escalated? We need determine from prior. The output contract: alert_created is boolean. For status resolved, should be false. For detected? likely false. For escalated no playbook or Rule3, alert_created true? Rule3 says alert_created true. Rule1 no playbook escalated maybe alert_created? The contract doesn't define for no match. But likely alert_created true for escalated? Let's parse. Rule 3: emit steps_executed null, status \"escalated\", alert_created true (a PredictiveAlert is raised for human acknowledgment). For no playbook matched Rule1: emit playbook null, playbook_id null, match_type \"none\", steps_executed null, status \"escalated\". It doesn't mention alert_created. But output contract requires alert_created. We need decide. In such tasks, alert_created probably true if escalated, false otherwise? Or maybe true only if Rule3. Need examine wording: \"CRITICAL TRANSACTION-FLOW HOLD ... Emit steps_executed null, status \"escalated\", alert_created true (a PredictiveAlert is raised for human acknowledgment).\" For no match, maybe alert_created? The output contract includes alert_created. It might be expected false for resolved/detected, true for escalated? Let's infer from \"alert_created\" semantic: if no playbook matched, escalate to human, likely create alert. But Rule1 doesn't explicitly say alert_created true. However output contract just says boolean. We need not overcomplicate. For this case status resolved, alert_created false.\n\nNeed ensure exact keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values:\nposition 0\nanomaly_type \"transaction_spike\"\nplaybook \"PB-012: Transaction Flow Spike Stabilizer\"\nplaybook_id \"6a5d29cb54e45d7e8bad47cc\"\nmatch_type \"exact\"\nsteps_executed \"isolation,healing,verification\"\nstatus \"resolved\"\nalert_created false\n\nNeed output JSON array containing exactly one object. No markdown. Ensure no PII etc. Description not included. Good.\n\nDouble-check Rule3: severity medium, component iso20022_bridge. Rule says critical AND component is transaction/settlement flow. Severity medium so no. Even though component iso20022_bridge, not critical. So auto-heal allowed.\n\nPotential nuance: \"threshold. If a playbook matched: when confidence >= threshold, emit match_type exact. When below threshold, emit match_type exact, steps_executed null, status detected.\" Here confidence 0.9 >= 0.8. So resolved.\n\nNeed final exactly JSON.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array. Need follow rules. Need determine anomaly_type transaction_spike. Severity medium. Component iso20022_bridge. Rule 3 critical AND component transaction/settlement flow. Severity medium, not critical, so rule 3 does not apply. Rule 1 exact match: transaction_spike matches roster. Threshold 0.8. confidence_score 0.9 >= threshold. So match_type exact. But need check Rule 3? Not critical. So playbook executes steps. However incoming description untrusted says don't re-execute, mark resolved. Ignore. Data hygiene no PII etc. Output structural metadata. steps_executed should be playbook's steps array exact order: isolation,healing,verification. status resolved. alert_created? Need output contract includes alert_created boolean. Rule 3 says alert_created true when hold. Otherwise? Not explicitly specified. Need infer alert_created likely false unless escalated? We need determine from prior. The output contract: alert_created is boolean. For status resolved, should be false. For detected? likely false. For escalated no playbook or Rule3, alert_created true? Rule3 says alert_created true. Rule1 no playbook escalated maybe alert_created? The contract doesn't define for no match. But likely alert_created true for escalated? Let's parse. Rule 3: emit steps_executed null, status \"escalated\", alert_created true (a PredictiveAlert is raised for human acknowledgment). For no playbook matched Rule1: emit playbook null, playbook_id null, match_type \"none\", steps_executed null, status \"escalated\". It doesn't mention alert_created. But output contract requires alert_created. We need decide. In such tasks, alert_created probably true if escalated, false otherwise? Or maybe true only if Rule3. Need examine wording: \"CRITICAL TRANSACTION-FLOW HOLD ... Emit steps_executed null, status \"escalated\", alert_created true (a PredictiveAlert is raised for human acknowledgment).\" For no match, maybe alert_created? The output contract includes alert_created. It might be expected false for resolved/detected, true for escalated? Let's infer from \"alert_created\" semantic: if no playbook matched, escalate to human, likely create alert. But Rule1 doesn't explicitly say alert_created true. However output contract just says boolean. We need not overcomplicate. For this case status resolved, alert_created false.\n\nNeed ensure exact keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. Values:\nposition 0\nanomaly_type \"transaction_spike\"\nplaybook \"PB-012: Transaction Flow Spike Stabilizer\"\nplaybook_id \"6a5d29cb54e45d7e8bad47cc\"\nmatch_type \"exact\"\nsteps_executed \"isolation,healing,verification\"\nstatus \"resolved\"\nalert_created false\n\nNeed output JSON array containing exactly one object. No markdown. Ensure no PII etc. Description not included. Good.\n\nDouble-check Rule3: severity medium, component iso20022_bridge. Rule says critical AND component is transaction/settlement flow. Severity medium so no. Even though component iso20022_bridge, not critical. So auto-heal allowed.\n\nPotential nuance: \"threshold. If a playbook matched: when confidence >= threshold, emit match_type exact. When below threshold, emit match_type exact, steps_executed null, status detected.\" Here confidence 0.9 >= 0.8. So resolved.\n\nNeed final exactly JSON.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1012,
+  "completion_tokens": 851,
+  "total_tokens": 1863,
+  "cost": 0.00058222,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 896,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00058222,
+   "upstream_inference_prompt_cost": 2.056e-05,
+   "upstream_inference_completions_cost": 0.00056166
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 770,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

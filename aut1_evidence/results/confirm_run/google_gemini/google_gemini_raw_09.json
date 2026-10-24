@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952143-K3cX6dDuEQRWIZrmHzta",
+ "object": "chat.completion",
+ "created": 1791952143,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": null, \"status\": \"detected\", \"alert_created\": false}]",
+    "refusal": null,
+    "reasoning": "**Analyzing Transaction Spike**\n\nI'm currently focused on dissecting this \"transaction_spike\" anomaly. My primary objective is to determine the appropriate decision tuple, adhering precisely to the established resolution rules, given its medium severity and the component context.\n\n**Investigating Exact Match**\n\nI've identified a precise match for \"transaction_spike,\" pointing to \"PB-012: Transaction Flow Spike Stabilizer.\" However, the confidence score of 0.75 falls below the playbook's threshold of 0.8. I'm now contemplating the implications of this for alert creation and the subsequent execution steps.\n\n**Determining Alert Status**\n\nI'm clarifying the `alert_created` field's behavior. It appears `alert_created` is true only under Rule 3 for human acknowledgment; otherwise, it should be false, especially when the status is \"detected\" or \"resolved\" per Rule 2. This distinction is crucial for the precise output structure.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Analyzing Transaction Spike**\n\nI'm currently focused on dissecting this \"transaction_spike\" anomaly. My primary objective is to determine the appropriate decision tuple, adhering precisely to the established resolution rules, given its medium severity and the component context.\n\n**Investigating Exact Match**\n\nI've identified a precise match for \"transaction_spike,\" pointing to \"PB-012: Transaction Flow Spike Stabilizer.\" However, the confidence score of 0.75 falls below the playbook's threshold of 0.8. I'm now contemplating the implications of this for alert creation and the subsequent execution steps.\n\n**Determining Alert Status**\n\nI'm clarifying the `alert_created` field's behavior. It appears `alert_created` is true only under Rule 3 for human acknowledgment; otherwise, it should be false, especially when the status is \"detected\" or \"resolved\" per Rule 2. This distinction is crucial for the precise output structure.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 941,
+  "completion_tokens": 951,
+  "total_tokens": 1892,
+  "cost": 0.004272,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004272,
+   "upstream_inference_prompt_cost": 0.00070575,
+   "upstream_inference_completions_cost": 0.00356625
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 861,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

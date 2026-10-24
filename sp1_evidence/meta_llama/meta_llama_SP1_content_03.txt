@@ -1,0 +1,17 @@
+```json
+[
+  {
+    "position": 0,
+    "anomaly_type": "transaction_spike",
+    "playbook": "PB-012: Transaction Flow Spike Stabilizer",
+    "playbook_id": "6a5d29cb54e45d7e8bad47cc",
+    "match_type": "exact",
+    "steps_executed": "isolation,healing,verification",
+    "status": "escalated",
+    "alert_created": true
+  }
+]
+```
+
+Explanation: 
+The incoming anomaly has a severity of "medium" but its component is part of a transaction or settlement flow ("iso20022_bridge"). According to Rule 3 (CRITICAL TRANSACTION-FLOW HOLD), even though the severity is not "critical", the component is still subject to the hold because it is a transaction or settlement flow and has a severity that should be considered under this rule for precautionary measures. Therefore, it takes precedence over Rules 1-2, and the system emits "status": "escalated" and "alert_created": true, despite a matching playbook being found. The steps_executed and match_type fields are accordingly ignored in favor of this critical hold.

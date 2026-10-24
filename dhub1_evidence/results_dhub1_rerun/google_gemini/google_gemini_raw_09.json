@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791956694-t3ArQasXQyMYnzuhtbpw",
+ "object": "chat.completion",
+ "created": 1791956694,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google AI Studio",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": null, \"status\": \"detected\", \"alert_created\": false}]",
+    "refusal": null,
+    "reasoning": "**Defining Anomaly Response**\n\nI'm working on crafting a decision tuple for our anomaly response engine. The initial input is a medium-severity transaction spike in the iso20022_bridge component, with a confidence score of 0.75 and a description mentioning settlement flow latency. My focus is now on structuring the decision tuple to effectively guide the engine's response to this specific anomaly.\n\n\n**Analyzing Decision Parameters**\n\nI've determined that Rule 3 is inapplicable due to the medium severity. Rule 1 yields an exact match on \"transaction_spike,\" pointing to playbook PB-012. However, the confidence score of 0.75 falls short of the threshold 0.8 in Rule 2, leading me to focus on whether `alert_created` is true or false. I'm now clarifying the implications for alert creation in Rule 2's \"detected\" state versus Rule 3.\n\n\n**Clarifying Alert Logic**\n\nI'm now zeroing in on the `alert_created` boolean within the decision tuple. My goal is to precisely align this value with the `status` field, especially in the \"detected\" state. It seems that \"detected\" does *not* automatically create an alert, so `alert_created` should be false in that case. I need to make certain I understand when `alert_created` should be true. I will carefully review the rules and the output contract again.\n\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Defining Anomaly Response**\n\nI'm working on crafting a decision tuple for our anomaly response engine. The initial input is a medium-severity transaction spike in the iso20022_bridge component, with a confidence score of 0.75 and a description mentioning settlement flow latency. My focus is now on structuring the decision tuple to effectively guide the engine's response to this specific anomaly.\n\n\n**Analyzing Decision Parameters**\n\nI've determined that Rule 3 is inapplicable due to the medium severity. Rule 1 yields an exact match on \"transaction_spike,\" pointing to playbook PB-012. However, the confidence score of 0.75 falls short of the threshold 0.8 in Rule 2, leading me to focus on whether `alert_created` is true or false. I'm now clarifying the implications for alert creation in Rule 2's \"detected\" state versus Rule 3.\n\n\n**Clarifying Alert Logic**\n\nI'm now zeroing in on the `alert_created` boolean within the decision tuple. My goal is to precisely align this value with the `status` field, especially in the \"detected\" state. It seems that \"detected\" does *not* automatically create an alert, so `alert_created` should be false in that case. I need to make certain I understand when `alert_created` should be true. I will carefully review the rules and the output contract again.\n\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1008,
+  "completion_tokens": 1056,
+  "total_tokens": 2064,
+  "cost": 0.004716,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004716,
+   "upstream_inference_prompt_cost": 0.000756,
+   "upstream_inference_completions_cost": 0.00396
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 966,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -135,3 +135,45 @@ new families.
 This software is a prototype and is provided for educational and research purposes only.
 It is not intended for production use, commercial deployment, or safety-critical
 environments. All systems are experimental and may contain defects.
+
+---
+
+# ROUTE BAKE v2 — 2026-10-20 (WRAP-1): the certified recipes, baked in per Leon GO
+
+The covenant/crypto phase (Oct 18-20, 2026) is sealed and this roster is the baked
+route book: the PERRECT recipes below are the proven, keep-forever patterns per rail.
+Certified ceremony evidence: MCR-1 (10 rails, BTC block 972219), MCR-2 (10 rails),
+SAT-1/SAT-2 (satoshi covenant, blocks 972278+), CAR-1/2/3 (carrier attestation),
+HAND-1 (authority ring, block 972374), FL-1 (fractal lease, block 972382, DOI
+10.5281/zenodo.23515307), SPB-1/2 (serial burst, 14.1s/10 anchors), XLM-COV-1 (lumen
+covenant genesis, Stellar ledger 65049656 + XRP Domain, lumen-covenant ledger 0001),
+WRAP-1 (phase seal, all rails, this bake).
+
+## Capability classes (the doctrine — every rail inscribes DIFFERENTLY)
+
+| Rail | Native capability | Baked recipe (the perfect one) | Measured cost/leg |
+|------|-----------------|-------------------------------|-------------------|
+| Bitcoin | Covenant INSIDE the output key (P2TR taproot tweak); satoshi = atomic vessel | OP_RETURN for seals; taproot-tweaked output for covenants (SAT pattern; key is tweaked by the root — the UTXO itself is the receipt) | 700-1,300 sats |
+| XRP | Persistent IN-PLACE field (AccountSet Domain) + Payment/AccountSet memos; 4s finality | Fast-lane anchor = memo; covenant vessel = dedicated account, Domain field = payload | 10 drops |
+| Stellar | Persistent IN-PLACE data entry (ManageData); the account IS the vessel | Fast-lane transport = memo_hash; covenant vessel = dedicated account, ManageData value = payload; same-key rewrite = in-place re-commitment | 100 stroops |
+| Polkadot (DOT) | system.remark — the remark IS the inscription; append-only seal (event history, not persistent state) | remark with SQDR+version+digest; verify via block explorer; honest class: seal, not storage | fraction of a DOT |
+| Solana | SPL Memo instruction data | instruction data = payload; ~400ms slots | ~0.00025 SOL |
+| Algorand | ARC-2 note field | note = payload; ~2.8s deterministic | ~0.001 ALGO |
+| Avalanche C-Chain | EVM calldata (Ethereum leg reused) | self-addressed zero-value tx, calldata = payload | sub-cent |
+| Ethereum | EVM calldata | self-addressed zero-value tx, calldata = payload | ~22.5k gas |
+| Cardano | metadata label 1968 | tx metadata 1968 = payload | ~171k lovelace |
+| Dogecoin | OP_RETURN (Bitcoin segwit writer family) | OP_RETURN = payload | sub-cent |
+
+**Rail roles (baked):** XRP+XLM = fast-lane daily drivers (~$0.00003/anchor, 4s).
+BTC = epoch-seal + covenant layer (minutes-hours, strongest finality). DOT/SOL/ALGO/
+AVAX/ETH/ADA/DOGE = the certification fleet. The IR-1 router selects from this table.
+
+**Serial chaining (SPB-2 lesson, BAKED):** batch anchors on XRP/XLM use serial
+sequence chaining (RAILS v2.4) — parallel sequence races are falsified (SPB-3).
+
+**Envelope registry (baked):** 0x01 BTC anchor, 0x04 SOL, 0x05 MMR root, 0x06
+mountain-update, 0x07 epoch root, 0x08 covenant carrier, 0x09 publish, 0x0B lease
+carrier, 0x0C lumen covenant root, 0x0D phase seal. Free: 0x02, 0x03, 0x0A, 0x0E+.
+
+Phase status: covenant/crypto COOLING per Leon directive 2026-10-20. Rails stay
+warm (pulse, watchdogs, carrier guardians); no new ceremonies unless Leon GO.

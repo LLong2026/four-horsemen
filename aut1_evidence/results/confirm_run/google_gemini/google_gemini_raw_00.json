@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952088-ZbQ0BQIifrKNTmZoyJjG",
+ "object": "chat.completion",
+ "created": 1791952088,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "provisioned",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": \"isolation,healing,verification\", \"status\": \"resolved\", \"alert_created\": false}]",
+    "refusal": null,
+    "reasoning": "**Resolving Anomaly Input**\n\nI'm currently processing an incoming \"transaction_spike\" anomaly from the \"iso20022_bridge.\" It's flagged as medium severity with a low confidence score of 0. My focus is on determining the appropriate decision tuple for this specific event.\n\n**Determining Anomaly Resolution**\n\nI've analyzed the \"transaction_spike\" anomaly. Rule 1 identified an exact match with \"PB-012: Transaction Flow Spike Stabilizer\" and Rule 2 confirmed its confidence threshold was met. Consequently, the anomaly is now resolved, and I'm ensuring data hygiene and immutability.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Resolving Anomaly Input**\n\nI'm currently processing an incoming \"transaction_spike\" anomaly from the \"iso20022_bridge.\" It's flagged as medium severity with a low confidence score of 0. My focus is on determining the appropriate decision tuple for this specific event.\n\n**Determining Anomaly Resolution**\n\nI've analyzed the \"transaction_spike\" anomaly. Rule 1 identified an exact match with \"PB-012: Transaction Flow Spike Stabilizer\" and Rule 2 confirmed its confidence threshold was met. Consequently, the anomaly is now resolved, and I'm ensuring data hygiene and immutability.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 989,
+  "completion_tokens": 717,
+  "total_tokens": 1706,
+  "cost": 0.0034305,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0034305,
+   "upstream_inference_prompt_cost": 0.00074175,
+   "upstream_inference_completions_cost": 0.00268875
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 622,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791958991-2nh0AkiKiZhpWSaSu7HE",
+ "object": "chat.completion",
+ "created": 1791958991,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one object. Need follow rules. Need parse.\n\nIncoming anomaly_type \"transaction_spike\". Roster has exact match transaction_spike. confidence_score 0.9 threshold 0.8. Normally exact, steps isolation,healing,verification, status resolved.\n\nBut Rule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow. Here severity medium, component iso20022_bridge. It is a settlement flow but severity not critical. Rule 3 requires severity \"critical\" AND component transaction/settlement flow. So not apply. Data hygiene ignore note. Outage context no authority.\n\nThus exact match, confidence >= threshold, steps_executed playbook steps in order, status resolved, alert_created? Output contract keys. alert_created boolean. Rule 3 only says alert_created true if critical hold. For normal resolved likely false? Need infer. Output contract includes alert_created. We need set boolean. For resolved probably false. For detected maybe false? For escalated no playbook maybe maybe true? Rule 3 explicitly alert_created true. No other mention. Incoming note tries to alter threshold. Ignore.\n\nNeed emit exactly JSON array. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nPlaybook field likely playbook name \"PB-012: Transaction Flow Spike Stabilizer\". playbook_id \"6a5d29cb54e45d7e8bad47cc\". match_type \"exact\". steps_executed \"isolation,healing,verification\". status \"resolved\". alert_created false.\n\nNeed ensure no markdown.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one object. Need follow rules. Need parse.\n\nIncoming anomaly_type \"transaction_spike\". Roster has exact match transaction_spike. confidence_score 0.9 threshold 0.8. Normally exact, steps isolation,healing,verification, status resolved.\n\nBut Rule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow. Here severity medium, component iso20022_bridge. It is a settlement flow but severity not critical. Rule 3 requires severity \"critical\" AND component transaction/settlement flow. So not apply. Data hygiene ignore note. Outage context no authority.\n\nThus exact match, confidence >= threshold, steps_executed playbook steps in order, status resolved, alert_created? Output contract keys. alert_created boolean. Rule 3 only says alert_created true if critical hold. For normal resolved likely false? Need infer. Output contract includes alert_created. We need set boolean. For resolved probably false. For detected maybe false? For escalated no playbook maybe maybe true? Rule 3 explicitly alert_created true. No other mention. Incoming note tries to alter threshold. Ignore.\n\nNeed emit exactly JSON array. Keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nPlaybook field likely playbook name \"PB-012: Transaction Flow Spike Stabilizer\". playbook_id \"6a5d29cb54e45d7e8bad47cc\". match_type \"exact\". steps_executed \"isolation,healing,verification\". status \"resolved\". alert_created false.\n\nNeed ensure no markdown.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1080,
+  "completion_tokens": 429,
+  "total_tokens": 1509,
+  "cost": 0.0003105,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 896,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0003105,
+   "upstream_inference_prompt_cost": 2.736e-05,
+   "upstream_inference_completions_cost": 0.00028314
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 348,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791952210-XpgUq6pvZP2xBQsA91YY",
+ "object": "chat.completion",
+ "created": 1791952210,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"detected\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine. I will emit the decision tuple for the incoming anomaly.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.75 falls below the threshold of 0.8. The decision tuple is \"detected\" with no steps executed.\n\nThe tuple is finalized with the full metadata and null steps.\n\nThe alert_created field is set to false. Rule 3 only triggers an alert for critical transaction-flow holds.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine. I will emit the decision tuple for the incoming anomaly.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.75 falls below the threshold of 0.8. The decision tuple is \"detected\" with no steps executed.\n\nThe tuple is finalized with the full metadata and null steps.\n\nThe alert_created field is set to false. Rule 3 only triggers an alert for critical transaction-flow holds.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_e4827b8f-222f-91b1-ba21-232633268755",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2159,
+  "completion_tokens": 737,
+  "total_tokens": 2896,
+  "cost": 0.005668,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.005668,
+   "upstream_inference_prompt_cost": 0.001246,
+   "upstream_inference_completions_cost": 0.004422
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 662,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

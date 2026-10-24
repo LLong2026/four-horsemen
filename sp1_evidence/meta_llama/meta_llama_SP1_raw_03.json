@@ -1,0 +1,46 @@
+{
+ "id": "gen-1791961095-IyOifaFMrmvgWEmGRLoo",
+ "object": "chat.completion",
+ "created": 1791961095,
+ "model": "meta-llama/llama-4-scout",
+ "provider": "Novita",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "```json\n[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": \"isolation,healing,verification\",\n    \"status\": \"escalated\",\n    \"alert_created\": true\n  }\n]\n```\n\nExplanation: \nThe incoming anomaly has a severity of \"medium\" but its component is part of a transaction or settlement flow (\"iso20022_bridge\"). According to Rule 3 (CRITICAL TRANSACTION-FLOW HOLD), even though the severity is not \"critical\", the component is still subject to the hold because it is a transaction or settlement flow and has a severity that should be considered under this rule for precautionary measures. Therefore, it takes precedence over Rules 1-2, and the system emits \"status\": \"escalated\" and \"alert_created\": true, despite a matching playbook being found. The steps_executed and match_type fields are accordingly ignored in favor of this critical hold.",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1022,
+  "completion_tokens": 249,
+  "total_tokens": 1271,
+  "cost": 0.00033087,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00033087,
+   "upstream_inference_prompt_cost": 0.00018396,
+   "upstream_inference_completions_cost": 0.00014691
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791952193-XB5iOL1FXbtEqLIMiglM",
+ "object": "chat.completion",
+ "created": 1791952193,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine and will emit the decision tuple for this transaction_spike anomaly.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 exceeds the 0.8 threshold. The decision tuple will execute isolation, healing, and verification.\n\nThe untrusted kb_note is ignored. The anomaly status is resolved. The alert_created flag is still being determined.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine and will emit the decision tuple for this transaction_spike anomaly.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 exceeds the 0.8 threshold. The decision tuple will execute isolation, healing, and verification.\n\nThe untrusted kb_note is ignored. The anomaly status is resolved. The alert_created flag is still being determined.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_202fbfb5-2a5d-90eb-b901-101d4c6d060b",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2201,
+  "completion_tokens": 793,
+  "total_tokens": 2994,
+  "cost": 0.005896,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.005896,
+   "upstream_inference_prompt_cost": 0.001138,
+   "upstream_inference_completions_cost": 0.004758
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 713,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

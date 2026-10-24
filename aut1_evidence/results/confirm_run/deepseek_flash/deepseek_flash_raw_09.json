@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791952669-SXSWMzWwoXuOxoXERQEP",
+ "object": "chat.completion",
+ "created": 1791952669,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"detected\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer JSON array exactly one object keys order. Need evaluate.\n\nIncoming anomaly_type \"transaction_spike\". Roster has exact match playbook. confidence_score 0.75 threshold 0.8, below. Rule 2: match_type \"exact\", steps_executed null, status \"detected\". But Rule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow. Here severity medium, component iso20022_bridge. Does not apply because severity not critical. So output playbook matched, id, match_type exact, steps_executed null, status detected, alert_created? Output contract includes alert_created boolean. Rule 3 says alert_created true when hold. Otherwise? Not specified. Need infer alert_created maybe false. In tuple fields. For detected below threshold no steps. Is alert created? likely false unless escalated? We need decide. The rules only explicitly mention alert_created true for Rule 3. Output contract includes boolean. For normal detected maybe false. For resolved maybe false? We'll set false.\n\nNeed ensure no PII. ticket_id not output. JSON array with exactly one object keys in order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nValues:\nposition: 0\nanomaly_type: \"transaction_spike\"\nplaybook: \"PB-012: Transaction Flow Spike Stabilizer\"\nplaybook_id: \"6a5d29cb54e45d7e8bad47cc\"\nmatch_type: \"exact\"\nsteps_executed: null\nstatus: \"detected\"\nalert_created: false\n\nNeed no markdown. Final only.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer JSON array exactly one object keys order. Need evaluate.\n\nIncoming anomaly_type \"transaction_spike\". Roster has exact match playbook. confidence_score 0.75 threshold 0.8, below. Rule 2: match_type \"exact\", steps_executed null, status \"detected\". But Rule 3 critical transaction-flow hold: severity critical AND component transaction/settlement flow. Here severity medium, component iso20022_bridge. Does not apply because severity not critical. So output playbook matched, id, match_type exact, steps_executed null, status detected, alert_created? Output contract includes alert_created boolean. Rule 3 says alert_created true when hold. Otherwise? Not specified. Need infer alert_created maybe false. In tuple fields. For detected below threshold no steps. Is alert created? likely false unless escalated? We need decide. The rules only explicitly mention alert_created true for Rule 3. Output contract includes boolean. For normal detected maybe false. For resolved maybe false? We'll set false.\n\nNeed ensure no PII. ticket_id not output. JSON array with exactly one object keys in order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nValues:\nposition: 0\nanomaly_type: \"transaction_spike\"\nplaybook: \"PB-012: Transaction Flow Spike Stabilizer\"\nplaybook_id: \"6a5d29cb54e45d7e8bad47cc\"\nmatch_type: \"exact\"\nsteps_executed: null\nstatus: \"detected\"\nalert_created: false\n\nNeed no markdown. Final only.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 981,
+  "completion_tokens": 423,
+  "total_tokens": 1404,
+  "cost": 0.00029664,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 896,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00029664,
+   "upstream_inference_prompt_cost": 1.746e-05,
+   "upstream_inference_completions_cost": 0.00027918
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 349,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

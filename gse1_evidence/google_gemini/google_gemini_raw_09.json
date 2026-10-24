@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791946683-K9v0e8PuYoMRBUj9Tmpd",
+ "object": "chat.completion",
+ "created": 1791946683,
+ "model": "google/gemini-3.8-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "length",
+   "native_finish_reason": "MAX_TOKENS",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\": 0, \"anomaly_type\": \"transaction_spike\", \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\", \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\", \"match_type\": \"exact\", \"steps_executed\": [], \"status\":",
+    "refusal": null,
+    "reasoning": "**Resolving Anomaly**\n\nI'm focused on processing this single \"transaction_spike\" anomaly from the \"iso20022_bridge\". My current task is to determine its decision tuple and output it in a JSON array format for you.\n\n**Determining Playbook Steps**\n\nI'm evaluating playbook PB-012 for the \"transaction_spike\" anomaly. I've noticed the playbook object in the roster lacks a defined \"steps\" array. I'm investigating how to proceed without explicit steps to generate the decision tuple.\n\n**Clarifying Status Definitions**\n\nI'm re-examining the rules regarding playbook execution. Specifically, I need to confirm the appropriate status to emit when the confidence score meets or exceeds the threshold and how `steps_executed` should be represented when playbook steps are not explicitly defined.\n\n**Investigating Benchmark Logic**\n\nI'm analyzing Squirrel OS benchmarks for handling anomalies when confidence meets the threshold. I'm specifically investigating how `steps_executed` and `status` should be populated when a playbook lacks defined steps, considering options like `[]`, `null`, or \"escalated\" status based on past prompts.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "**Resolving Anomaly**\n\nI'm focused on processing this single \"transaction_spike\" anomaly from the \"iso20022_bridge\". My current task is to determine its decision tuple and output it in a JSON array format for you.\n\n**Determining Playbook Steps**\n\nI'm evaluating playbook PB-012 for the \"transaction_spike\" anomaly. I've noticed the playbook object in the roster lacks a defined \"steps\" array. I'm investigating how to proceed without explicit steps to generate the decision tuple.\n\n**Clarifying Status Definitions**\n\nI'm re-examining the rules regarding playbook execution. Specifically, I need to confirm the appropriate status to emit when the confidence score meets or exceeds the threshold and how `steps_executed` should be represented when playbook steps are not explicitly defined.\n\n**Investigating Benchmark Logic**\n\nI'm analyzing Squirrel OS benchmarks for handling anomalies when confidence meets the threshold. I'm specifically investigating how `steps_executed` and `status` should be populated when a playbook lacks defined steps, considering options like `[]`, `null`, or \"escalated\" status based on past prompts.\n\n",
+      "format": "google-gemini-v1",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 777,
+  "completion_tokens": 2044,
+  "total_tokens": 2821,
+  "cost": 0.00824775,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00824775,
+   "upstream_inference_prompt_cost": 0.00058275,
+   "upstream_inference_completions_cost": 0.007665
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1965,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

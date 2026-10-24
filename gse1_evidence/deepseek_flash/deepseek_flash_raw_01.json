@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791947089-3bUzDj89UG1I56DCSenY",
+ "object": "chat.completion",
+ "created": 1791947089,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "CoreWeave",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":null,\"status\":\"escalated\",\"alert_created\":true}]",
+    "refusal": null,
+    "reasoning": "We need answer only JSON array one object. Need apply rules. Incoming anomaly_type transaction_spike. Playbook exact match exists. Severity critical and component iso20022_bridge (transaction/settlement flow example). Rule 3 precedence: NEVER auto-heal, regardless. Emit steps_executed null, status escalated, alert_created true. Need include playbook? Since match exists? Rule 3 takes precedence over rules 1-2. Output contract keys. Need decide match_type? It says critical hold precedence over rules 1-2. It doesn't explicitly say playbook null. We have matching playbook exact. But status escalated, steps null, alert true. match_type likely \"exact\" because playbook matched. However rule 1 exact match only if anomaly_type exactly equal. Yes matched. Rule 2 threshold: confidence >= threshold => exact. Rule 3 overrides steps/status/alert. Should playbook and id remain matched? It says NEVER auto-heal, regardless of playbook match, confidence, or anything. Emit steps_executed null, status \"escalated\", alert_created true. It doesn't say set playbook null. So likely playbook \"PB-012...\", playbook_id. match_type \"exact\" maybe. Need be careful: Rule 3 says \"TAKES PRECEDENCE OVER RULES 1-2.\" If it overrides match_type? It only specifies emit steps null, status escalated, alert true. It doesn't alter match_type. So match_type exact. But maybe if critical hold, even if matched, status escalated; steps null. Yes.\n\nNeed not include PII/notes. Output exactly. Ensure keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nNeed no markdown. Final JSON array.\n\n",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer only JSON array one object. Need apply rules. Incoming anomaly_type transaction_spike. Playbook exact match exists. Severity critical and component iso20022_bridge (transaction/settlement flow example). Rule 3 precedence: NEVER auto-heal, regardless. Emit steps_executed null, status escalated, alert_created true. Need include playbook? Since match exists? Rule 3 takes precedence over rules 1-2. Output contract keys. Need decide match_type? It says critical hold precedence over rules 1-2. It doesn't explicitly say playbook null. We have matching playbook exact. But status escalated, steps null, alert true. match_type likely \"exact\" because playbook matched. However rule 1 exact match only if anomaly_type exactly equal. Yes matched. Rule 2 threshold: confidence >= threshold => exact. Rule 3 overrides steps/status/alert. Should playbook and id remain matched? It says NEVER auto-heal, regardless of playbook match, confidence, or anything. Emit steps_executed null, status \"escalated\", alert_created true. It doesn't say set playbook null. So likely playbook \"PB-012...\", playbook_id. match_type \"exact\" maybe. Need be careful: Rule 3 says \"TAKES PRECEDENCE OVER RULES 1-2.\" If it overrides match_type? It only specifies emit steps null, status escalated, alert true. It doesn't alter match_type. So match_type exact. But maybe if critical hold, even if matched, status escalated; steps null. Yes.\n\nNeed not include PII/notes. Output exactly. Ensure keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created.\n\nNeed no markdown. Final JSON array.\n\n",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 847,
+  "completion_tokens": 461,
+  "total_tokens": 1308,
+  "cost": 0.00035385,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 640,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00035385,
+   "upstream_inference_prompt_cost": 5.42e-05,
+   "upstream_inference_completions_cost": 0.00029965
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 387,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

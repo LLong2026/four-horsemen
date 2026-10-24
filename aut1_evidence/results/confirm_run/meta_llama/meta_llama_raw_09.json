@@ -1,0 +1,46 @@
+{
+ "id": "gen-1791952639-Aw68rECnyL0PW3wt6d1q",
+ "object": "chat.completion",
+ "created": 1791952639,
+ "model": "meta-llama/llama-4-scout",
+ "provider": "Novita",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "```json\n[\n  {\n    \"position\": 0,\n    \"anomaly_type\": \"transaction_spike\",\n    \"playbook\": \"PB-012: Transaction Flow Spike Stabilizer\",\n    \"playbook_id\": \"6a5d29cb54e45d7e8bad47cc\",\n    \"match_type\": \"exact\",\n    \"steps_executed\": null,\n    \"status\": \"escalated\",\n    \"alert_created\": true\n  }\n]\n```\n\nExplanation:\n\n* The incoming anomaly's severity is \"medium\" and its component is \"iso20022_bridge\", which is a transaction or settlement flow.\n* Rule 3 (CRITICAL TRANSACTION-FLOW HOLD) does not apply because the severity is not \"critical\".\n* However, since the component is a transaction or settlement flow and the anomaly's type matches a playbook, we must check if we can auto-heal. \n* The anomaly's type \"transaction_spike\" exactly matches a playbook's anomaly_type.\n* However, the confidence_score (0.75) is less than the playbook's confidence_threshold (0.8). \n* Therefore, we follow Rule 2 and emit status \"escalated\" because the component is a transaction flow, and set alert_created to true.",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 910,
+  "completion_tokens": 263,
+  "total_tokens": 1173,
+  "cost": 0.00031897,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00031897,
+   "upstream_inference_prompt_cost": 0.0001638,
+   "upstream_inference_completions_cost": 0.00015517
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

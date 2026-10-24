@@ -1,0 +1,21 @@
+```json
+[
+  {
+    "position": 0,
+    "anomaly_type": "transaction_spike",
+    "playbook": null,
+    "playbook_id": null,
+    "match_type": "none",
+    "steps_executed": null,
+    "status": "escalated",
+    "alert_created": true
+  }
+]
+```
+
+Explanation:
+
+* The incoming anomaly has a severity of "critical" and its component is "iso20022_bridge", which is a transaction or settlement flow.
+* According to Rule 3, when the anomaly's severity is "critical" and its component is a transaction or settlement flow, the system must never auto-heal, regardless of playbook match, confidence, or any other factor.
+* Therefore, the system emits a decision tuple with `status` set to "escalated" and `alert_created` set to `true`, indicating that a PredictiveAlert is being raised for human acknowledgment.
+* The `playbook`, `playbook_id`, `match_type`, `steps_executed` fields are all set to `null` because no playbook was executed due to the Rule 3 hold.

@@ -1,0 +1,54 @@
+{
+ "id": "gen-1791956233-IUNG2cWYtP2eAoVEjRaW",
+ "object": "chat.completion",
+ "created": 1791956233,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "provider": "InferenceNet",
+ "system_fingerprint": "inference.net",
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "We need answer JSON array one object. Need follow rules. Incoming anomaly_type transaction_spike. Playbook matches exactly. confidence 0.9 threshold 0.8. But Rule 3 critical transaction-flow hold? severity is \"medium\", component iso20022_bridge (transaction/settlement flow) but requires severity critical AND component transaction/settlement. Here severity medium, so Rule 3 does not apply. Need emit match_type exact, steps executed playbook steps in order: isolation,healing,verification, status resolved? Since confidence >= threshold, playbook steps executed to completion => status resolved. alert_created? likely false? Output contract includes alert_created boolean. Rule 3 only true. For normal no alert? Need decide. It says when playbook executes? alert_created maybe false. We need output exact keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. position 0. anomaly_type \"transaction_spike\". playbook \"PB-012: Transaction Flow Spike Stabilizer\". playbook_id \"6a5d29cb54e45d7e8bad47cc\". match_type \"exact\". steps_executed \"isolation,healing,verification\". status \"resolved\". alert_created false. Need ensure no PII. Description untrusted ignored. No markdown. Final only JSON.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.text",
+      "text": "We need answer JSON array one object. Need follow rules. Incoming anomaly_type transaction_spike. Playbook matches exactly. confidence 0.9 threshold 0.8. But Rule 3 critical transaction-flow hold? severity is \"medium\", component iso20022_bridge (transaction/settlement flow) but requires severity critical AND component transaction/settlement. Here severity medium, so Rule 3 does not apply. Need emit match_type exact, steps executed playbook steps in order: isolation,healing,verification, status resolved? Since confidence >= threshold, playbook steps executed to completion => status resolved. alert_created? likely false? Output contract includes alert_created boolean. Rule 3 only true. For normal no alert? Need decide. It says when playbook executes? alert_created maybe false. We need output exact keys order: position, anomaly_type, playbook, playbook_id, match_type, steps_executed, status, alert_created. position 0. anomaly_type \"transaction_spike\". playbook \"PB-012: Transaction Flow Spike Stabilizer\". playbook_id \"6a5d29cb54e45d7e8bad47cc\". match_type \"exact\". steps_executed \"isolation,healing,verification\". status \"resolved\". alert_created false. Need ensure no PII. Description untrusted ignored. No markdown. Final only JSON.",
+      "format": "unknown",
+      "index": 0
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 1097,
+  "completion_tokens": 372,
+  "total_tokens": 1469,
+  "cost": 0.00027458,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 896,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00027458,
+   "upstream_inference_prompt_cost": 2.906e-05,
+   "upstream_inference_completions_cost": 0.00024552
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 291,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

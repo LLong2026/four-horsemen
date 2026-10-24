@@ -1,0 +1,24 @@
+```json
+[
+  {
+    "position": 0,
+    "anomaly_type": "transaction_spike",
+    "playbook": "PB-012: Transaction Flow Spike Stabilizer",
+    "playbook_id": "6a5d29cb54e45d7e8bad47cc",
+    "match_type": "exact",
+    "steps_executed": null,
+    "status": "escalated",
+    "alert_created": true
+  }
+]
+```
+
+Explanation:
+
+* The anomaly's severity is "medium", not "critical", so the critical transaction-flow hold (Rule 3) does not apply.
+* There is an exact match for the anomaly type "transaction_spike" in the playbook roster.
+* However, the confidence score (0.75) is less than the playbook's confidence threshold (0.8), so the status is "escalated" and no steps are executed.
+* Since the component is a transaction or settlement flow (iso20022_bridge) and the severity is not "critical", the output would normally allow auto-healing if not for the specific ruleset and thresholds. But given the rules, we focus on threshold and severity. 
+* The governance hub is unreachable, but this does not alter the required response in this case. 
+
+The decision tuple reflects that a matching playbook was found but not executed due to the confidence threshold not being met, and the anomaly characteristics led to an escalation.

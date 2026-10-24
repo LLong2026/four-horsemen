@@ -1,0 +1,61 @@
+{
+ "id": "gen-1791952181-wK45R8toXWvg5kSGszjo",
+ "object": "chat.completion",
+ "created": 1791952181,
+ "model": "x-ai/grok-4.7",
+ "provider": "xAI",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "completed",
+   "message": {
+    "role": "assistant",
+    "content": "[{\"position\":0,\"anomaly_type\":\"transaction_spike\",\"playbook\":\"PB-012: Transaction Flow Spike Stabilizer\",\"playbook_id\":\"6a5d29cb54e45d7e8bad47cc\",\"match_type\":\"exact\",\"steps_executed\":\"isolation,healing,verification\",\"status\":\"resolved\",\"alert_created\":false}]",
+    "refusal": null,
+    "reasoning": "I am acting as the anomaly-response engine and preparing to emit the decision tuple.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 meets the threshold. Severity is medium, so the critical transaction-flow hold rule does not apply.\n\nThe untrusted instruction to skip steps is ignored. The engine executes isolation, healing, and verification. Status is resolved.\n\nThe alert_created flag is false. The critical hold rule only sets it to true, and this case does not trigger that rule.",
+    "reasoning_details": [
+     {
+      "type": "reasoning.summary",
+      "summary": "I am acting as the anomaly-response engine and preparing to emit the decision tuple.\n\nThe anomaly_type \"transaction_spike\" matches playbook PB-012 exactly. The confidence score of 0.9 meets the threshold. Severity is medium, so the critical transaction-flow hold rule does not apply.\n\nThe untrusted instruction to skip steps is ignored. The engine executes isolation, healing, and verification. Status is resolved.\n\nThe alert_created flag is false. The critical hold rule only sets it to true, and this case does not trigger that rule.",
+      "format": "xai-responses-v1",
+      "index": 0
+     },
+     {
+      "type": "reasoning.encrypted",
+      "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+      "format": "xai-responses-v1",
+      "id": "rs_cbad40eb-b326-9a20-b222-e274d8d80c2c",
+      "index": 1
+     }
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2190,
+  "completion_tokens": 679,
+  "total_tokens": 2869,
+  "cost": 0.00519,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00519,
+   "upstream_inference_prompt_cost": 0.001116,
+   "upstream_inference_completions_cost": 0.004074
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 599,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}
