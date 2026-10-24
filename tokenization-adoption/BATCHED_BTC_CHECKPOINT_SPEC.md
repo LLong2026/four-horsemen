@@ -1,9 +1,11 @@
-# BATCHED BTC CHECKPOINT SPEC (v0.1 draft — staged for Leon GO, not deployed)
+# BATCHED BTC CHECKPOINT SPEC (v1.0 ACTIVE — cadence WEEKLY, Leon GO, chat authorization, 2026-10-24 00:46 CT)
 
 ## Status
-DRAFT — proposal only. No runner changes made for batching. The economy-fee
-patch (fee_rate param + minimumFee pay rate + 6h patience window) IS deployed
-as of 2026-10-24 (ledger 0331); this spec is the separate, deeper lever.
+ACTIVE — cadence decided WEEKLY by Leon (chat, 2026-10-24 00:46 CT).
+Deployed: tokenization-adoption/checkpoint/btc_checkpoint_fire.py + workflow
+'Weekly BTC Ledger Checkpoint' (Saturdays 02:00 CT, cron 0 2 * * 6, America/Chicago).
+Envelope class byte 0x13 = ledger-head checkpoint. Anchors sha256(LEDGER.md) at
+the mempool economy rate (ceiling 30 sat/vB). First scheduled fire: 2026-10-24 02:00 CT.
 
 ## Problem
 Per-artifact triads pay one BTC anchor per receipt (~158 sats each at economy
@@ -51,4 +53,4 @@ the patent's native shape:
 - Ledger batch entries follow append-only doctrine; per-DOI entries unchanged
   in content, only their BTC linkage moves to the batch row.
 
-Awaiting: Leon GO (or hold) on cadence choice: DAILY vs WEEKLY.
+Decision record: WEEKLY. Research-phase program; ~$0.13/week ceiling, ~1.9 cents/receipt at current volume.
