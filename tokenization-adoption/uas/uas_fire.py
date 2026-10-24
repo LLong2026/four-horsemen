@@ -17,7 +17,7 @@ cf.PAYLOAD = b"SQDR" + bytes([0x11]) + cf.DIGEST   # 0x11 = UAS notarization cla
 ENV = cf.PAYLOAD.hex()
 UA = {"Content-Type": "application/json", "User-Agent": "uas/1.0"}
 FEE_CEIL = 30
-SAT_DEADLINE_S = 1800
+SAT_DEADLINE_S = 21600  # 6h patience window (economy fee doctrine)
 
 def save(data):
     json.dump(data, open(JOBFILE, "w"), indent=1)
@@ -81,8 +81,10 @@ def leg_xrp():
 def leg_sat():
     fees = json.loads(urllib.request.urlopen(urllib.request.Request(
         "https://mempool.space/api/v1/fees/recommended", headers=UA), timeout=15).read())
-    if fees["fastestFee"] > FEE_CEIL:
-        raise RuntimeError(f"fee ceiling: {fees['fastestFee']} sat/vB > {FEE_CEIL}")
+    rate = max(1, fees.get("minimumFee", fees["fastestFee"]))  # pay economy, not fastest
+    if rate > FEE_CEIL:
+        raise RuntimeError(f"fee ceiling: economy rate {rate} sat/vB > {FEE_CEIL}")
+    return rate
     sw_path = f"{cf.TA}/seed-mode/dropbox/dropbox_writer_sw.py"
     spec = importlib.util.spec_from_file_location("sw", sw_path)
     sw = importlib.util.module_from_spec(spec); spec.loader.exec_module(sw)
@@ -95,7 +97,8 @@ def leg_sat():
     if not utxos: raise RuntimeError("no BTC UTXO")
     utxo = sorted(utxos, key=lambda u: u["value"])[-1]
     t0 = time.time()
-    raw, info = sw.build_signed_tx("mainnet", wif, utxo, cf.DIGEST)
+    rate = sat_fee_guard()
+    raw, info = sw.build_signed_tx("mainnet", wif, utxo, cf.DIGEST, fee_rate=rate)
     try:
         txid = sw.api("mainnet", "/tx", raw); via = "mempool.space"
     except Exception as e1:

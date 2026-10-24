@@ -20,7 +20,7 @@ LEGS = f"{OUTDIR}/TRIAD_LEGS.json"
 RUNLOG = f"{OUTDIR}/TRIAD_RUNLOG.md"
 TAG = os.environ.get("TRIAD_TAG", "TRIAD-SIM-1")
 FEE_CEIL = 30          # sat/vB hard ceiling for SAT
-SAT_DEADLINE_S = 1800  # 30 min hard deadline
+SAT_DEADLINE_S = 21600  # 6h patience window (economy fee doctrine: XLM/XRP carry instant proof)
 
 cf.DIGEST = hashlib.sha256(f"{TAG}|2026-10-22".encode()).digest()
 cf.PAYLOAD = b"SQDR" + bytes([0x10]) + cf.DIGEST   # 0x10 = route speed-sim class
@@ -50,14 +50,14 @@ def log(line):
 # ---------------- SAT (hardened) ----------------
 def sat_fee_guard():
     fees = gj("https://mempool.space/api/v1/fees/recommended")
-    rate = fees["fastestFee"]
+    rate = max(1, fees.get("minimumFee", fees["fastestFee"]))  # pay the economy rate, not the fastest
     if rate > FEE_CEIL:
-        raise RuntimeError(f"SAT fee ceiling breached: fastestFee {rate} sat/vB > {FEE_CEIL} — holding fire, escalate to operator")
+        raise RuntimeError(f"SAT fee ceiling breached: economy rate {rate} sat/vB > {FEE_CEIL} — holding fire, escalate to operator")
     return rate
 
 def leg_sat():
     import importlib.util
-    sat_fee_guard()
+    rate = sat_fee_guard()
     sw_path = f"{cf.TA}/seed-mode/dropbox/dropbox_writer_sw.py"
     spec = importlib.util.spec_from_file_location("sw", sw_path)
     sw = importlib.util.module_from_spec(spec); spec.loader.exec_module(sw)
@@ -71,7 +71,7 @@ def leg_sat():
     if not utxos: raise RuntimeError("no BTC UTXO — rail unfunded, escalate")
     utxo = sorted(utxos, key=lambda u: u["value"])[-1]
     t0 = time.time()
-    raw, info = sw.build_signed_tx("mainnet", wif, utxo, cf.DIGEST)
+    raw, info = sw.build_signed_tx("mainnet", wif, utxo, cf.DIGEST, fee_rate=rate)
     # broadcast: mempool.space primary, blockstream failover
     txid = None; bc = None
     try:

@@ -77,7 +77,7 @@ def bip143_sighash_p2wpkh(tx, idx, amount, h160, hashtype=SIGHASH_ALL):
     )
     return dsha(preimage)
 
-def build_signed_tx(net, wif, utxo, seed):
+def build_signed_tx(net, wif, utxo, seed, fee_rate=5):
     bitcoin.SelectParams("testnet" if net != "mainnet" else "mainnet")
     secret = CBitcoinSecret(wif)
     addr = wpkh_addr(secret)
@@ -107,7 +107,7 @@ def build_signed_tx(net, wif, utxo, seed):
     tx.wit = CTxWitness()
     base_size = len(tx.serialize())
     vsize = (3 * base_size + len(provisional) + 3) // 4
-    fee = max(150, min(1500, 5 * vsize, value - 546))
+    fee = max(150, min(1500, fee_rate * vsize, value - 546))  # fee_rate sat/vB, caller-set (economy doctrine)
     raw = assemble(fee)
     return raw.hex(), {"address": str(addr), "fee": fee, "vsize": vsize,
                        "payload": payload.hex()}

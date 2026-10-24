@@ -71,7 +71,7 @@ def main():
     env_hex = "5351445212" + a.digest
 
     fees = json.loads(api("/v1/fees/recommended"))
-    fee_rate = min(fees["fastestFee"], FEE_CEIL_SAT_VB)
+    fee_rate = min(max(1, fees.get("minimumFee", fees["fastestFee"])), FEE_CEIL_SAT_VB)  # economy doctrine
     est_vb = 190
     fee = max(300, int(fee_rate * est_vb))
 
