@@ -1,0 +1,15 @@
+{
+ "envelope_hex": "53514452132b9793a3e75e48f6c2d480644d9a2239f1e92e1e288e63bcd079f25839b9f4ef",
+ "ledger_sha256": "2b9793a3e75e48f6c2d480644d9a2239f1e92e1e288e63bcd079f25839b9f4ef",
+ "txid": "4d15ceb151d71c2f7c6286d83fa9e1c84cb712d75a8d005dd3d72a5a34d7d47c",
+ "fee_sats": 158,
+ "fee_rate": 1,
+ "broadcast_via": "mempool.space",
+ "utxo_spent": "0523d15b516e73bd2aacae53284af33bd0b37ed9e1fcac3d9cbfcd8cea9001b5:1",
+ "broadcast_at": "2026-10-24T07:04:51Z",
+ "confirmed": true,
+ "block_height": 972895,
+ "confirm_seconds": 120.5,
+ "readback_ok": true,
+ "confirmed_at": "2026-10-24T07:06:52Z"
+}
