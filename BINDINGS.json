@@ -1116,6 +1116,37 @@
         "dual_mesh_benchmark": "NOT MEASURED",
         "disclaimer": "Prototype; educational and research purposes only; not for production use."
       }
+    },
+    {
+      "contract_version": "BIND-2/v1",
+      "artifact": {
+        "name": "hemi_week43_bundle.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23637149_hemi_week43_bundle.zip",
+        "size_bytes": 4003,
+        "sha256": "27c70b0fa808d11000d3b7eddda83c1b1222a4c321b21fcc40aaf92b42a9f0c2"
+      },
+      "provenance": {
+        "repo": "fh_pub",
+        "snapshot_commit": null,
+        "source": "released by BIND-3 worker; snapshot_commit stamped by the introducing commit"
+      },
+      "publication": {
+        "doi": "10.5281/zenodo.23637149",
+        "zenodo_recid": "23637149",
+        "zenodo_file": "hemi_week43_bundle.zip",
+        "zenodo_md5": "c926bd91e95f7824b66d3172f5c9c7b9",
+        "title": "HEMI-N Weekly Cognitive Training Receipts \u2014 Week 43 (2026-10-19 to 2026-10-25)"
+      },
+      "verification": {
+        "byte_identical_local_to_zenodo": true,
+        "verified_by": "bind3_release.py v1.0 (F2 round-trip)",
+        "verified_at": "2026-10-25T08:07:45Z"
+      },
+      "metadata": {
+        "prototype": true,
+        "dual_mesh_benchmark": "NOT MEASURED",
+        "disclaimer": "Prototype; educational and research purposes only; not for production use."
+      }
     }
   ],
   "gaps": [
@@ -1134,7 +1165,7 @@
     }
   ],
   "counts": {
-    "bound": 39,
+    "bound": 40,
     "gaps": 2,
     "dois_checked": 14
   },

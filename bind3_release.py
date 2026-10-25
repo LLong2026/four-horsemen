@@ -167,7 +167,7 @@ def main():
             f.write(blob)
         assert hashlib.sha256(open(arch_path, "rb").read()).hexdigest() == sha256, "archive copy corrupted"
     for r in B["bound"]:
-        if r["publication"].get("zenodo_recid") == recid:
+        if (r.get("publication") or {}).get("zenodo_recid") == recid:
             r["artifact"]["local_path"] = f"fh_pub/binding_archive/zenodo-{recid}_{name}"
     json.dump(B, open(BINDINGS, "w"), indent=2)
 
