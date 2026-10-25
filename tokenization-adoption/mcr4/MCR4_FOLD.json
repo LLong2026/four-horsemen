@@ -1,0 +1,38 @@
+{
+ "commit": "029b32b",
+ "leaf_count": 3377,
+ "root": "38089f07ca7e3b76baa83a897eefe04f53a7893df3c84b5a4e4a436ddee8daaa",
+ "peaks": [
+  [
+   11,
+   "8572b9e0dd6bdc9b29617385b34bcc4cb815c8835075d58cc7b9388cf96683e9"
+  ],
+  [
+   10,
+   "554d42cb49dcb5e5ab47c20ef0fc3e60fb193aaf73cdedea41bc01d9404596f1"
+  ],
+  [
+   8,
+   "a11f0b5cdc55faa6b611138676f2a0e69afb7422ef37245b72899735fb3b214d"
+  ],
+  [
+   5,
+   "ab8cd03a6a19fbee8111079f530abbdbd63b02be5f9cde140db044036520f56d"
+  ],
+  [
+   4,
+   "1181cecbaa7c730dd58c6ebd215e01aea03761c0c4f71527bfbd12f7ba7bd245"
+  ],
+  [
+   0,
+   "e89ed1267eceba281167f1e0e37337abd4291c9283b7e90756bd8bbdce01288a"
+  ]
+ ],
+ "leaf_spec": "SHA-256(0x00 || sha256(file)) \u2014 covenant spec (three-way reproduction PASS)",
+ "gates": {
+  "mcr1": "2d1a3214... PASS",
+  "mcr2": "1929707e... PASS",
+  "mcr3": "418fc5a8... PASS"
+ },
+ "envelope_hex": "535144520638089f07ca7e3b76baa83a897eefe04f53a7893df3c84b5a4e4a436ddee8daaa"
+}
