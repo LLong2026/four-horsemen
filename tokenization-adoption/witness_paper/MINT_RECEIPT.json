@@ -1,0 +1,21 @@
+{
+  "artifact": "paper_merged_witness.pdf",
+  "doi": "10.5281/zenodo.23649741",
+  "concept_doi": "10.5281/zenodo.23649740",
+  "record": "https://zenodo.org/record/23649741",
+  "published_utc": "2026-10-25T20:26Z",
+  "bundle": {
+    "name": "witness_bundle.zip",
+    "sha256": "d855bef6c0ca845396ece7bb3af666f76bb6f9984aa6475728cffa529872133e",
+    "md5": "2f40cd97147adc33ed4dd304623059ae",
+    "size_bytes": 1113775,
+    "contents": ["paper_merged_witness.pdf (10 pp)", "figures/fig_two_stacks.png", "figures/fig_triad.png", "figures/fig_cost.png", "figures/fig_vault_table.png", "figures/fig_viewer_modal.png", "README.md", "MANIFEST.sha256"]
+  },
+  "paper_sha256": "10a5969513a12c56eb74477d89a77ddc55bfdf6ea7ca2ca86be07a6c1a31f817",
+  "authorization": "Leon GO (chat authorization, 2026-10-25 15:23 CT)",
+  "provenance": "Merged single-paper publication (Part I thesis + Part II practitioner walkthrough) at owner direction; supersedes the two review drafts shared in chat (paper_witness_not_asset.pdf, paper_how_tokenization_works_v2.pdf), which were never published.",
+  "redaction_scan": "PASS - zero client-identifiable data, zero PHI, zero credentials, zero operator quotes, zero chat links; no regulated 'notary' terminology (relabel doctrine, 2026-10-25)",
+  "round_trip": "sha256 byte-identical at deposit and re-download",
+  "communities": ["dcai", "squirlos-technologies (acceptance pending in Zenodo UI)"],
+  "license": "CC-BY-4.0"
+}
