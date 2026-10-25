@@ -1090,7 +1090,7 @@
       "contract_version": "BIND-2/v1",
       "artifact": {
         "name": "hemi_week42_bundle.zip",
-        "local_path": "../../tmp/hemi_week42_bundle.zip",
+        "local_path": "fh_pub/binding_archive/zenodo-23448778_hemi_week42_bundle.zip",
         "size_bytes": 3998,
         "sha256": "4e3840d39eef3d2a390a18331f15e418f93e74b5e3092408a7e0adc88dd7cbb6"
       },

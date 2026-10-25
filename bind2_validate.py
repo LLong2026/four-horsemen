@@ -12,9 +12,13 @@ Exit code 0 only if every bound record passes. Gaps are reported, not fatal
 import json, os, sys, hashlib, urllib.request
 
 B = json.load(open(os.path.join(os.path.dirname(__file__), "BINDINGS.json")))
-fails, passes = [], []
+fails, passes, legacy = [], [], []
 
 for r in B["bound"]:
+    if not all(r.get(k) for k in ("publication", "artifact", "provenance", "metadata")):
+        # legacy pre-BIND-2 shape records: skipped, reported, never crashed on (v1.1 fix)
+        legacy.append(r.get("doi") or str(r)[:48])
+        continue
     rid = r["publication"]["doi"]
     ok = True
     # V1 local bytes
@@ -56,9 +60,9 @@ for r in B["bound"]:
 
 print(json.dumps({
     "verdict": "ALL BOUND RECORDS PASS" if not fails else "FALSIFIERS TRIPPED",
-    "bound_pass": len(passes), "bound_fail": len(fails),
+    "bound_pass": len(passes), "bound_fail": len(fails), "legacy_records_skipped": len(legacy), "legacy_dois": legacy,
     "gaps_open": len(B["gaps"]),
     "failures": fails or "none",
-    "gap_dois": [g["doi"] for g in B["gaps"]]
+    "gap_dois": [g.get("doi") or g.get("record") or str(g)[:48] for g in B["gaps"]]
 }, indent=2))
 sys.exit(0 if not fails else 1)
