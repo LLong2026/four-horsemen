@@ -1,0 +1,699 @@
+{
+ "entity": "NeuralNode",
+ "exported_at": "2026-10-25T09:07:16.461Z",
+ "count": 45,
+ "possible_truncation": false,
+ "records": [
+  {
+   "activation_count": 4,
+   "connections": [
+    "SIMD-PQC-01"
+   ],
+   "last_activated": "2026-10-24T04:10:00Z",
+   "layer": 5,
+   "learning_rate": 0.01,
+   "pattern_type": "pqc_migration",
+   "weight": 0.91,
+   "id": "6ad2f476fdc56407b5d94d51",
+   "created_date": "2026-10-17T04:07:18.442000",
+   "updated_date": "2026-10-24T04:07:47.056000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 7,
+   "connections": [
+    "WM-L3-11",
+    "SIMB-OPS-01"
+   ],
+   "last_activated": "2026-10-24T04:13:02Z",
+   "layer": 1,
+   "learning_rate": 0.01,
+   "pattern_type": "temporal_guard",
+   "weight": 0.9,
+   "id": "6ad2f476fdc56407b5d94d50",
+   "created_date": "2026-10-17T04:07:18.442000",
+   "updated_date": "2026-10-24T04:07:47.054000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 7,
+   "connections": [
+    "RM-L1-02",
+    "IC-L1-07",
+    "SIMB-OPS-01"
+   ],
+   "last_activated": "2026-10-24T04:05:41Z",
+   "layer": 3,
+   "learning_rate": 0.01,
+   "pattern_type": "latency_heal",
+   "weight": 0.94,
+   "id": "6ad2f476fdc56407b5d94d4f",
+   "created_date": "2026-10-17T04:07:18.442000",
+   "updated_date": "2026-10-24T04:07:47.057000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 1,
+   "pattern_type": "crypto_key_stale_no_match",
+   "weight": 0,
+   "last_activated": "2026-10-11T16:55:10Z",
+   "learning_rate": 0.01,
+   "connections": [],
+   "layer": 5,
+   "id": "6acbbd2c9382cd186456e175",
+   "created_date": "2026-10-11T16:45:32.461000",
+   "updated_date": "2026-10-11T16:45:32.461000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 4,
+   "pattern_type": "routing_hash_parity",
+   "weight": 0.94,
+   "last_activated": "2026-10-24T04:06:23Z",
+   "learning_rate": 0.01,
+   "connections": [],
+   "layer": 5,
+   "id": "6acbbd2c9382cd186456e174",
+   "created_date": "2026-10-11T16:45:32.461000",
+   "updated_date": "2026-10-24T04:07:47.106000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 1,
+   "pattern_type": "intune_enrollment_failure",
+   "weight": 0.91,
+   "last_activated": "2026-10-11T16:55:10Z",
+   "learning_rate": 0.01,
+   "connections": [],
+   "layer": 5,
+   "id": "6acbbd2c9382cd186456e173",
+   "created_date": "2026-10-11T16:45:32.461000",
+   "updated_date": "2026-10-11T16:45:32.461000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 3,
+   "pattern_type": "LT_DSA_TAV",
+   "weight": 0.75,
+   "last_activated": "2026-10-21T04:09:16Z",
+   "learning_rate": 0.01,
+   "connections": [],
+   "layer": 5,
+   "id": "6acbbd2c9382cd186456e172",
+   "created_date": "2026-10-11T16:45:32.461000",
+   "updated_date": "2026-10-21T04:08:23.857000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 10,
+   "pattern_type": "failure_prediction",
+   "weight": 0.93,
+   "last_activated": "2026-10-20T04:10:00Z",
+   "learning_rate": 0.08,
+   "connections": [
+    "TokenWatcher-Node",
+    "RateLimiter-Node",
+    "LoadBalancer-Node"
+   ],
+   "layer": 4,
+   "id": "6a95c3bdf88814a15156fe74",
+   "created_date": "2026-08-31T18:11:09.758000",
+   "updated_date": "2026-10-20T04:07:52.476000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 3,
+   "pattern_type": "load_balance_optimization",
+   "weight": 0.88,
+   "last_activated": "2026-10-08T04:06:00Z",
+   "learning_rate": 0.1,
+   "connections": [
+    "RateLimiter-Node",
+    "HealthReporter-Node"
+   ],
+   "layer": 3,
+   "id": "6a95c3bdf88814a15156fe73",
+   "created_date": "2026-08-31T18:11:09.758000",
+   "updated_date": "2026-10-08T04:07:38.352000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 0,
+   "pattern_type": "rate_limit_avoidance",
+   "weight": 0.91,
+   "last_activated": "2026-08-31T13:15:00Z",
+   "learning_rate": 0.12,
+   "connections": [
+    "TokenWatcher-Node",
+    "LoadBalancer-Node"
+   ],
+   "layer": 2,
+   "id": "6a95c3bdf88814a15156fe72",
+   "created_date": "2026-08-31T18:11:09.758000",
+   "updated_date": "2026-08-31T18:11:09.758000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 1,
+   "pattern_type": "[REDACTED]",
+   "weight": 0.95,
+   "last_activated": "2026-10-08T04:06:00Z",
+   "learning_rate": 0.15,
+   "connections": [
+    "RateLimiter-Node",
+    "HealthReporter-Node"
+   ],
+   "layer": 1,
+   "id": "6a95c3bdf88814a15156fe71",
+   "created_date": "2026-08-31T18:11:09.758000",
+   "updated_date": "2026-10-08T04:07:38.353000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 494,
+   "pattern_type": "isolation_strategy",
+   "weight": 0.09,
+   "last_activated": "2026-10-23T04:06:30Z",
+   "learning_rate": 0.04,
+   "connections": [],
+   "layer": 3,
+   "id": "6a66b6d3b4d376181ca51c58",
+   "created_date": "2026-07-27T01:39:31.786000",
+   "updated_date": "2026-10-23T04:07:42.937000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 503,
+   "pattern_type": "pattern_match",
+   "weight": 0.51,
+   "last_activated": "2026-10-23T04:13:00Z",
+   "learning_rate": 0.02,
+   "connections": [
+    "n3"
+   ],
+   "layer": 2,
+   "id": "6a66b6d3b4d376181ca51c57",
+   "created_date": "2026-07-27T01:39:31.786000",
+   "updated_date": "2026-10-23T04:07:42.936000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 497,
+   "pattern_type": "heartbeat_sensor",
+   "weight": 0.44,
+   "last_activated": "2026-10-23T04:06:10Z",
+   "learning_rate": 0.01,
+   "connections": [
+    "n2"
+   ],
+   "layer": 1,
+   "id": "6a66b6d3b4d376181ca51c56",
+   "created_date": "2026-07-27T01:39:31.786000",
+   "updated_date": "2026-10-23T04:07:42.941000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 6,
+   "pattern_type": "terminal_pattern_update",
+   "weight": 0.45,
+   "last_activated": "2026-09-28T23:04:00-05:00",
+   "learning_rate": 0.08,
+   "connections": [],
+   "layer": 5,
+   "id": "6a6456000a57406c27b4784f",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-29T04:05:26.953000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 59,
+   "pattern_type": "terminal_learning_extract",
+   "weight": 0.43,
+   "last_activated": "2026-10-25T04:13:00Z",
+   "learning_rate": 0.08,
+   "connections": [],
+   "layer": 5,
+   "id": "6a6456000a57406c27b4784e",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-25T04:07:54.751000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 3,
+   "pattern_type": "terminal_escalation_result",
+   "weight": 0.48,
+   "last_activated": "2026-10-11T04:06:00Z",
+   "learning_rate": 0.08,
+   "connections": [],
+   "layer": 5,
+   "id": "6a6456000a57406c27b4784d",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-11T04:07:12.607000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 8,
+   "pattern_type": "terminal_healing_result",
+   "weight": 0.45,
+   "last_activated": "2026-09-28T23:04:00-05:00",
+   "learning_rate": 0.08,
+   "connections": [],
+   "layer": 5,
+   "id": "6a6456000a57406c27b4784c",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-29T04:05:26.908000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 9,
+   "pattern_type": "output_proposal_action",
+   "weight": 0.56,
+   "last_activated": "2026-10-11T04:06:00Z",
+   "learning_rate": 0.05,
+   "connections": [
+    "L5-N2",
+    "L5-N3"
+   ],
+   "layer": 4,
+   "id": "6a6456000a57406c27b4784b",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-11T04:07:12.610000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 55,
+   "pattern_type": "output_alert_action",
+   "weight": 0.52,
+   "last_activated": "2026-10-25T04:13:00Z",
+   "learning_rate": 0.05,
+   "connections": [
+    "L5-N1",
+    "L5-N3"
+   ],
+   "layer": 4,
+   "id": "6a6456000a57406c27b4784a",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-25T04:07:54.746000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 0,
+   "pattern_type": "output_log_action",
+   "weight": 0.6,
+   "last_activated": "2026-07-25T01:22:00Z",
+   "learning_rate": 0.05,
+   "connections": [
+    "L5-N2"
+   ],
+   "layer": 4,
+   "id": "6a6456000a57406c27b47849",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-07-25T06:21:52.263000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 10,
+   "pattern_type": "output_escalate_action",
+   "weight": 0.58,
+   "last_activated": "2026-10-04T23:15:00-05:00",
+   "learning_rate": 0.05,
+   "connections": [
+    "L5-N1",
+    "L5-N2"
+   ],
+   "layer": 4,
+   "id": "6a6456000a57406c27b47848",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-13T04:07:21.272000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 26,
+   "pattern_type": "output_heal_action",
+   "weight": 0.56,
+   "last_activated": "2026-10-04T23:18:22-05:00",
+   "learning_rate": 0.05,
+   "connections": [
+    "L5-N1"
+   ],
+   "layer": 4,
+   "id": "6a6456000a57406c27b47847",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-13T04:07:21.272000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 0,
+   "pattern_type": "deep_cross_app_cascade",
+   "weight": 0.64,
+   "last_activated": "2026-07-25T01:22:00Z",
+   "learning_rate": 0.03,
+   "connections": [
+    "L4-N5",
+    "L4-N7"
+   ],
+   "layer": 3,
+   "id": "6a6456000a57406c27b47846",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-07-25T06:21:52.263000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 13,
+   "pattern_type": "deep_quantum_threat",
+   "weight": 0.66,
+   "last_activated": "2026-10-01T23:00:45-05:00",
+   "learning_rate": 0.03,
+   "connections": [
+    "L4-N4",
+    "L4-N6"
+   ],
+   "layer": 3,
+   "id": "6a6456000a57406c27b47845",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-02T04:06:34.884000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 5,
+   "pattern_type": "deep_escalation_eval",
+   "weight": 0.72,
+   "last_activated": "2026-10-11T04:06:00Z",
+   "learning_rate": 0.03,
+   "connections": [
+    "L4-N3",
+    "L4-N5"
+   ],
+   "layer": 3,
+   "id": "6a6456000a57406c27b47844",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-11T04:07:12.607000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 95,
+   "pattern_type": "deep_verification_logic",
+   "weight": 0.75,
+   "last_activated": "2026-10-23T04:13:00Z",
+   "learning_rate": 0.03,
+   "connections": [
+    "L4-N2",
+    "L4-N4"
+   ],
+   "layer": 3,
+   "id": "6a6456000a57406c27b47843",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-23T04:07:42.939000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 14,
+   "pattern_type": "deep_healing_selection",
+   "weight": 0.7,
+   "last_activated": "2026-09-29T23:03:30-05:00",
+   "learning_rate": 0.03,
+   "connections": [
+    "L4-N1",
+    "L4-N3"
+   ],
+   "layer": 3,
+   "id": "6a6456000a57406c27b47842",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-30T04:10:30.371000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 0,
+   "pattern_type": "deep_isolation_strategy",
+   "weight": 0.65,
+   "last_activated": "2026-07-25T01:22:00Z",
+   "learning_rate": 0.03,
+   "connections": [
+    "L4-N1",
+    "L4-N2"
+   ],
+   "layer": 3,
+   "id": "6a6456000a57406c27b47841",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-07-25T06:21:52.263000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 18,
+   "pattern_type": "hidden_confidence_score",
+   "weight": 0.77,
+   "last_activated": "2026-09-28T23:04:00-05:00",
+   "learning_rate": 0.02,
+   "connections": [
+    "L3-N6",
+    "L3-N9"
+   ],
+   "layer": 2,
+   "id": "6a6456000a57406c27b47840",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-29T04:05:26.926000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 34,
+   "pattern_type": "hidden_playbook_match",
+   "weight": 0.79,
+   "last_activated": "2026-09-28T07:02:00-05:00",
+   "learning_rate": 0.02,
+   "connections": [
+    "L3-N5",
+    "L3-N8"
+   ],
+   "layer": 2,
+   "id": "6a6456000a57406c27b4783f",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-13T04:07:21.134000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 13,
+   "pattern_type": "hidden_blast_radius",
+   "weight": 0.73,
+   "last_activated": "2026-09-28T23:04:00-05:00",
+   "learning_rate": 0.02,
+   "connections": [
+    "L3-N4",
+    "L3-N7"
+   ],
+   "layer": 2,
+   "id": "6a6456000a57406c27b4783e",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-29T04:05:26.903000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 53,
+   "pattern_type": "hidden_root_cause",
+   "weight": 0.81,
+   "last_activated": "2026-07-25T06:23:00Z",
+   "learning_rate": 0.02,
+   "connections": [
+    "L3-N3",
+    "L3-N6"
+   ],
+   "layer": 2,
+   "id": "6a6456000a57406c27b4783d",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-28T04:10:39.533000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 70,
+   "pattern_type": "hidden_severity_eval",
+   "weight": 0.83,
+   "last_activated": "2026-10-25T04:13:00Z",
+   "learning_rate": 0.02,
+   "connections": [
+    "L3-N2",
+    "L3-N5"
+   ],
+   "layer": 2,
+   "id": "6a6456000a57406c27b4783c",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-25T04:07:54.744000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 51,
+   "pattern_type": "hidden_anomaly_classify",
+   "weight": 0.75,
+   "last_activated": "2026-09-29T23:05:00-05:00",
+   "learning_rate": 0.02,
+   "connections": [
+    "L3-N2",
+    "L3-N4"
+   ],
+   "layer": 2,
+   "id": "6a6456000a57406c27b4783b",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-30T04:10:30.376000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 0,
+   "pattern_type": "hidden_trend_detect",
+   "weight": 0.82,
+   "last_activated": "2026-07-25T01:22:00Z",
+   "learning_rate": 0.02,
+   "connections": [
+    "L3-N1",
+    "L3-N3"
+   ],
+   "layer": 2,
+   "id": "6a6456000a57406c27b4783a",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-07-25T06:21:52.263000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 84,
+   "pattern_type": "hidden_pattern_match",
+   "weight": 0.84,
+   "last_activated": "2026-10-04T23:15:00-05:00",
+   "learning_rate": 0.02,
+   "connections": [
+    "L3-N1",
+    "L3-N2"
+   ],
+   "layer": 2,
+   "id": "6a6456000a57406c27b47839",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-05T04:06:22.432000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 83,
+   "pattern_type": "input_anomaly_count",
+   "weight": 0.92,
+   "last_activated": "2026-10-06T23:01:00-05:00",
+   "learning_rate": 0.01,
+   "connections": [
+    "L2-N7",
+    "L2-N10"
+   ],
+   "layer": 1,
+   "id": "6a6456000a57406c27b47838",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-07T04:05:43.281000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 10,
+   "pattern_type": "input_pqc_status",
+   "weight": 0.93,
+   "last_activated": "2026-10-06T23:01:00-05:00",
+   "learning_rate": 0.01,
+   "connections": [
+    "L2-N6",
+    "L2-N9"
+   ],
+   "layer": 1,
+   "id": "6a6456000a57406c27b47837",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-07T04:05:43.279000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 8,
+   "pattern_type": "input_cpu",
+   "weight": 0.98,
+   "last_activated": "2026-09-28T23:04:00-05:00",
+   "learning_rate": 0.01,
+   "connections": [
+    "L2-N5",
+    "L2-N8"
+   ],
+   "layer": 1,
+   "id": "6a6456000a57406c27b47836",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-29T04:05:26.904000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 36,
+   "pattern_type": "input_memory",
+   "weight": 0.9,
+   "last_activated": "2026-09-28T07:01:00-05:00",
+   "learning_rate": 0.01,
+   "connections": [
+    "L2-N4",
+    "L2-N7"
+   ],
+   "layer": 1,
+   "id": "6a6456000a57406c27b47835",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-28T12:07:01.930000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 0,
+   "pattern_type": "input_token_usage",
+   "weight": 0.94,
+   "last_activated": "2026-07-25T01:22:00Z",
+   "learning_rate": 0.01,
+   "connections": [
+    "L2-N3",
+    "L2-N6"
+   ],
+   "layer": 1,
+   "id": "6a6456000a57406c27b47834",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-07-25T06:21:52.263000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 6,
+   "pattern_type": "input_error_rate",
+   "weight": 0.88,
+   "last_activated": "2026-09-28T23:04:00-05:00",
+   "learning_rate": 0.01,
+   "connections": [
+    "L2-N1",
+    "L2-N5"
+   ],
+   "layer": 1,
+   "id": "6a6456000a57406c27b47833",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-09-29T04:05:26.838000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 6,
+   "pattern_type": "input_latency",
+   "weight": 0.92,
+   "last_activated": "2026-10-25T04:13:00Z",
+   "learning_rate": 0.01,
+   "connections": [
+    "L2-N2",
+    "L2-N4"
+   ],
+   "layer": 1,
+   "id": "6a6456000a57406c27b47832",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-25T04:07:54.743000",
+   "is_sample": false
+  },
+  {
+   "activation_count": 59,
+   "pattern_type": "input_heartbeat",
+   "weight": 0.96,
+   "last_activated": "2026-10-06T23:01:00-05:00",
+   "learning_rate": 0.01,
+   "connections": [
+    "L2-N1",
+    "L2-N2",
+    "L2-N3"
+   ],
+   "layer": 1,
+   "id": "6a6456000a57406c27b47831",
+   "created_date": "2026-07-25T06:21:52.263000",
+   "updated_date": "2026-10-07T04:05:43.281000",
+   "is_sample": false
+  }
+ ]
+}
