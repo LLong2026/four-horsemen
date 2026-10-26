@@ -287,7 +287,7 @@
   "Run 2026-10-26: 55/55 exported. Hygiene gate (blocking, per SIP DOORS-1 #4): 185 sensitive string values + 7,875 identity key-fields redacted; post-redaction re-scan clean (0 emails, 0 wallets, 0 secret/digest-shaped strings, 0 personal phone numbers outside simulated 555-range, 0 unredacted identity fields, 0 PHI, 0 playbook step-definition content, 0 created_by fields). Regulation citations retained; they are not phone numbers.",
   "Synthetic MAV redaction-trap records verified (HCLC-N16 MAV-5 et al.): planted email/SSN/wallet/PHI strings were redacted at ingestion by the Rule 8 guard and never persisted; persisted descriptions carry trap-class labels only, matching the released 2026-10-22..25 treatment.",
   "Textual AegisPlaybook entity-name references retained in 8 entities (AegisAnomaly, KnowledgeBase, Pattern, PredictiveAlert, ScalingEvent, SelfImprovementProposal, ServiceTicket, TierConfiguration) matching the released treatment: debug labels, SIP playbook-genesis descriptions, resolution notes. No AegisPlaybook entity record has ever been exported or committed; no isolation_steps/healing_steps/verification_steps definition keys appear in any file.",
-  "AssetRecord assigned_to/mac_address/ip_address redacted as in prior runs; RateLimitLog app_id redacted (52 values); TelemetryEvent ip_address redacted (1 value).",
+  "AssetRecord assigned_to/mac_address/ip_address redacted as in prior runs; RateLimitLog app_id redacted (658 values; customer_id null throughout RateLimitLog this run); TelemetryEvent ip_address redacted (1 value).",
   "Idempotency: RateLimitLog stamp entity_snapshot_2026-10-26 written before execution (stamp-before-execute, v1.2); no prior idempotency_skip found for this signature."
  ]
 }
