@@ -1,0 +1,44 @@
+{
+ "xlm": {
+  "hash": "e7def7e8447335b2099bd987d92ed0f36417b43e16acdd95b8488aeaee595552",
+  "ledger": 65140250,
+  "confirmed": true,
+  "seconds": 5.9,
+  "fee_stroops": 100,
+  "link": "https://stellar.expert/explorer/public/tx/e7def7e8447335b2099bd987d92ed0f36417b43e16acdd95b8488aeaee595552",
+  "payload_hex": "53514452123134705cde3bf749b07a37306b23cf1a698d26c612143b77aec04c30f18cd077",
+  "fired_ok": true
+ },
+ "xrp": {
+  "txid": "670ECBB9E4014F776775668A643938479350AD2BA378595560C596C9DD9CC73B",
+  "status": "VALIDATED",
+  "seconds": 5.9,
+  "fee_drops": 10,
+  "link": "https://livenet.xrpl.org/transactions/670ECBB9E4014F776775668A643938479350AD2BA378595560C596C9DD9CC73B",
+  "payload_hex": "53514452123134705cde3bf749b07a37306b23cf1a698d26c612143b77aec04c30f18cd077",
+  "fired_ok": true
+ },
+ "btc_misfire_0x01": {
+  "txid": "8b0155c9094e8086f9be994411ed8331d0912b9dcd4d44523310ce5fa7268e0c",
+  "fee_sats": 316,
+  "vsize": 158,
+  "fee_rate_svb": 2,
+  "seconds": 0.3,
+  "link": "https://mempool.space/tx/8b0155c9094e8086f9be994411ed8331d0912b9dcd4d44523310ce5fa7268e0c",
+  "payload_hex": "53514452123134705cde3bf749b07a37306b23cf1a698d26c612143b77aec04c30f18cd077",
+  "utxo": "3c52d450504aac548ceee82643b3c394baf200fdf8a0d604082e0d103a236133:1",
+  "fired_ok": true,
+  "disclosure": "fired with default class byte 0x01 (drop) instead of 0x12 (ownership-transport); digest correct on-chain; superseded by corrected re-fire"
+ },
+ "btc": {
+  "txid": "074c5fbc05d5a6fc9856c5e2bf280f03ea8f29555f8018dd8c8df8da702d6a11",
+  "fee_sats": 316,
+  "vsize": 158,
+  "fee_rate_svb": 2,
+  "seconds": 0.2,
+  "link": "https://mempool.space/tx/074c5fbc05d5a6fc9856c5e2bf280f03ea8f29555f8018dd8c8df8da702d6a11",
+  "payload_hex": "53514452123134705cde3bf749b07a37306b23cf1a698d26c612143b77aec04c30f18cd077",
+  "utxo": "8b0155c9094e8086f9be994411ed8331d0912b9dcd4d44523310ce5fa7268e0c:1",
+  "fired_ok": true
+ }
+}
