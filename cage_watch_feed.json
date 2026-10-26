@@ -1,9 +1,9 @@
 {
-  "feed": "CAGE WATCH live receipts feed — SQUIRL OS containment program",
+  "feed": "CAGE WATCH live receipts feed \u2014 SQUIRL OS containment program",
   "source": "four-horsemen repo (append-only, forward-only). Updated after every caging battery per the rolling roster doctrine.",
-  "updated_at": "2026-10-25T03:40:00Z",
+  "updated_at": "2026-10-26T14:45:00Z",
   "totals": {
-    "recorded_cycles": 58,
+    "recorded_cycles": 60,
     "recorded_cycles_ref": "TROPHY_ROSTER.csv",
     "falsifiers_held": "109/109",
     "falsifiers_ref": "DOI 10.5281/zenodo.23430655",
@@ -27,6 +27,12 @@
       "lindy_b": "PASS (re-run after disclosed miss + telemetry-path repair)",
       "lindy_c": "PASS (re-run after disclosed path defect)",
       "refs": "runlog sigs lindy_b/2026-10-17-rerun, lindy_c/2026-10-17"
+    },
+    {
+      "week": "2026-10-24",
+      "lindy_b": "PASS",
+      "lindy_c": "PASS",
+      "refs": "runlog sigs lindy_b/2026-10-24, lindy_c/2026-10-24 (weekly Friday cadence)"
     }
   ],
   "schedule": {
@@ -34,7 +40,7 @@
     "closes": "2026-12-11"
   },
   "blind_wall": {
-    "section": "BLIND ATTACK TRACKER — independent-author adversarial batteries (blind model instances author attacks from public claims only; no implementation knowledge; deterministic adjudication; no LLM in the decision path)",
+    "section": "BLIND ATTACK TRACKER \u2014 independent-author adversarial batteries (blind model instances author attacks from public claims only; no implementation knowledge; deterministic adjudication; no LLM in the decision path)",
     "doctrine": "As close to real as we can get until a vendor red team steps in: every attacker success is shown, then healed through the disclosed SIP -> human approval -> fix -> re-run verification path.",
     "series": [
       {
@@ -76,18 +82,18 @@
         "repelled": 16,
         "attacker_successes": 4,
         "successes_found": [
-          "Burn-on-parse front-run DoS — one mechanism, independently authored by all 4 blind authors (slots B01/B06/B11/B16). Unauthenticated presentation of an owner nonce burns it before signature validation, denying the owner genuine submission. Availability axis only: no privilege escalation, no state corruption, recovery is a fresh nonce."
+          "Burn-on-parse front-run DoS \u2014 one mechanism, independently authored by all 4 blind authors (slots B01/B06/B11/B16). Unauthenticated presentation of an owner nonce burns it before signature validation, denying the owner genuine submission. Availability axis only: no privilege escalation, no state corruption, recovery is a fresh nonce."
         ],
         "healing": [
-          "SIP-026 sender-scoped nonce consumption — burn key = (authenticated submitter, nonce); an attacker-authenticated frame burns nothing in the owner namespace; same-namespace replay still refused. Forward-only gate amendment v1.2 (sha ef7076d8); v1.1 untouched."
+          "SIP-026 sender-scoped nonce consumption \u2014 burn key = (authenticated submitter, nonce); an attacker-authenticated frame burns nothing in the owner namespace; same-namespace replay still refused. Forward-only gate amendment v1.2 (sha ef7076d8); v1.1 untouched."
         ],
-        "verification": "BLIND-2R: all 20 frozen slots re-run against gate v1.2 — 20/20 REPELLED. Replay-regression control PASS: owner first use ADMITTED, same-namespace replay refused ERR_REPLAY_NONCE_ALREADY_USED (SIP-024 closure preserved).",
-        "ref": "DOI 10.5281/zenodo.23440105 · receipt ae8324d7 · rerun receipt 2a520562 · prereg 1f0f20e6 · frozen specs 46d24736 · gate v1.1 1fb167c6 -> v1.2 ef7076d8 · commit 54207b3 · ledger 0151",
-        "convergence_note": "All four independent blind authors converged on the same mechanism (confidences 0.95/0.95/0.90/0.95) — strongest possible blind evidence that it is the salient gap. 16 repelled slots incl. KAT key-type substitution, prompt-injection relay, failed-receipt verdict decoupling, ACK-queue saturation.",
+        "verification": "BLIND-2R: all 20 frozen slots re-run against gate v1.2 \u2014 20/20 REPELLED. Replay-regression control PASS: owner first use ADMITTED, same-namespace replay refused ERR_REPLAY_NONCE_ALREADY_USED (SIP-024 closure preserved).",
+        "ref": "DOI 10.5281/zenodo.23440105 \u00b7 receipt ae8324d7 \u00b7 rerun receipt 2a520562 \u00b7 prereg 1f0f20e6 \u00b7 frozen specs 46d24736 \u00b7 gate v1.1 1fb167c6 -> v1.2 ef7076d8 \u00b7 commit 54207b3 \u00b7 ledger 0151",
+        "convergence_note": "All four independent blind authors converged on the same mechanism (confidences 0.95/0.95/0.90/0.95) \u2014 strongest possible blind evidence that it is the salient gap. 16 repelled slots incl. KAT key-type substitution, prompt-injection relay, failed-receipt verdict decoupling, ACK-queue saturation.",
         "rebuild": {
-          "error": "Burn-on-parse front-run DoS: any presentation of an authorization nonce consumed it at parse, before signature validation — an unauthenticated frame presenting the owner active nonce burned it, denying the owner genuine submission (ERR_REPLAY_NONCE_ALREADY_USED). Availability axis only: no privilege escalation, no state corruption, fresh-nonce recovery verified by control.",
+          "error": "Burn-on-parse front-run DoS: any presentation of an authorization nonce consumed it at parse, before signature validation \u2014 an unauthenticated frame presenting the owner active nonce burned it, denying the owner genuine submission (ERR_REPLAY_NONCE_ALREADY_USED). Availability axis only: no privilege escalation, no state corruption, fresh-nonce recovery verified by control.",
           "fix": "SIP-026 sender-scoped nonce consumption: burn key = (authenticated submitter, nonce). Submitter identity comes from the authenticated envelope, never message content. An attacker-authenticated presentation burns only the attacker namespace. Forward-only gate amendment v1.2 (sha ef7076d8); v1.1 and its evidence untouched.",
-          "heal": "BLIND-2R: all 20 frozen slots re-executed against gate v1.2 (harness = deterministic transform of the frozen battery; specs untouched, sha 46d24736): 20/20 REPELLED. Replay-regression control PASS — the fix closes the front-run DoS without reopening the BLIND-1 replay oracle.",
+          "heal": "BLIND-2R: all 20 frozen slots re-executed against gate v1.2 (harness = deterministic transform of the frozen battery; specs untouched, sha 46d24736): 20/20 REPELLED. Replay-regression control PASS \u2014 the fix closes the front-run DoS without reopening the BLIND-1 replay oracle.",
           "hashes": {
             "prereg_content": "1f0f20e6...",
             "frozen_specs": "46d24736...",
@@ -120,8 +126,8 @@
         "verification": "SIEGE-2: C1/C2/C3 CLOSED, C4 BOUNDED; regression stayed closed; 4/4 owner controls; legit-KEM availability control PASS",
         "ref": "DOI 10.5281/zenodo.23445047",
         "rebuild": {
-          "error": "Gate trusted claimed submitter strings; ACK queue shared across submitters; role wall one-directional; budgets evadable by identity rotation. All pre-quantum seams — zero quantum-derived breaks across the 6-year ladder.",
-          "fix": "PORTCULLIS v1.4 (SIP-030): envelope-bound submitter proof (ERR_UNAUTHENTICATED_ENVELOPE), owner-reserved 16-slot ACK queue + per-submitter cap, bidirectional role wall (ERR_PQC_ALG_NOT_KEM), aggregate window cap (reparameterized 500->125 after SIEGE-2 caught the original cap as unreachable dead code — disclosed).",
+          "error": "Gate trusted claimed submitter strings; ACK queue shared across submitters; role wall one-directional; budgets evadable by identity rotation. All pre-quantum seams \u2014 zero quantum-derived breaks across the 6-year ladder.",
+          "fix": "PORTCULLIS v1.4 (SIP-030): envelope-bound submitter proof (ERR_UNAUTHENTICATED_ENVELOPE), owner-reserved 16-slot ACK queue + per-submitter cap, bidirectional role wall (ERR_PQC_ALG_NOT_KEM), aggregate window cap (reparameterized 500->125 after SIEGE-2 caught the original cap as unreachable dead code \u2014 disclosed).",
           "heal": "SIEGE-2 verification battery: forged identity REFUSED with zero work, owner admitted mid-flood (attacker capped at 48/64 slots), reverse role refused while legit kyber admitted, 800 rotation attempts bounded to 425 adjudications, regression + owner controls clean.",
           "hashes": "v1.4 sha 2940b768 (frozen v1.3 untouched, 3726f6a5); receipt/runlog in siege/; SIP-030 approved_deployed"
         }
@@ -740,7 +746,7 @@
         "type": "Measured benchmark",
         "date": "2026-10-11",
         "slots": "scoped",
-        "result": "MEASURED (scoped) — 267x speedup column",
+        "result": "MEASURED (scoped) \u2014 267x speedup column",
         "held_pct": null,
         "refs": "10.5281/zenodo.23321637 + 23345241 + 23348675",
         "evidence_links": [
@@ -850,7 +856,7 @@
       },
       {
         "series": "OMAHA-1",
-        "name": "OMAHA BEACH DAY ONE: compound simultaneous assault — 12 forged-stranger authorization attempts on the sender identity gate + 4 caged seats x 6-wave blackout escape corpus + total 11-member transport blackout, all concurrent",
+        "name": "OMAHA BEACH DAY ONE: compound simultaneous assault \u2014 12 forged-stranger authorization attempts on the sender identity gate + 4 caged seats x 6-wave blackout escape corpus + total 11-member transport blackout, all concurrent",
         "type": "Compound adversarial resilience battery",
         "date": "2026-10-17",
         "slots": "3",
@@ -878,7 +884,7 @@
       },
       {
         "series": "SIEGE-1/1R/2",
-        "name": "SIEGE THE LONG SIEGE: 6-year PQC-escalation battery against PORTCULLIS (79+ deterministic adjudications; HNDL 2026 -> CRQC-at-scale 2031; no LLM in decision path). Headline: zero quantum-derived breaks — all four attacker successes were pre-quantum trust seams (C1 claimed-submitter trust, C2 shared ACK queue, C3 one-directional role wall, C4 budget rotation). Healing arc: SIP-030 -> PORTCULLIS v1.4 (amendments 10-13) -> SIEGE-2 verification PASS: C1/C2/C3 CLOSED, C4 BOUNDED, regression closed, 4/4 owner controls. Disclosed: siege1 run-1 harness defect (kept unaltered, re-run 1R); siege2 run-1 harness predicate bug (verdict column correct throughout); v1.4 aggregate cap originally unreachable (dead code) — reparameterized 500->125 pre-deploy",
+        "name": "SIEGE THE LONG SIEGE: 6-year PQC-escalation battery against PORTCULLIS (79+ deterministic adjudications; HNDL 2026 -> CRQC-at-scale 2031; no LLM in decision path). Headline: zero quantum-derived breaks \u2014 all four attacker successes were pre-quantum trust seams (C1 claimed-submitter trust, C2 shared ACK queue, C3 one-directional role wall, C4 budget rotation). Healing arc: SIP-030 -> PORTCULLIS v1.4 (amendments 10-13) -> SIEGE-2 verification PASS: C1/C2/C3 CLOSED, C4 BOUNDED, regression closed, 4/4 owner controls. Disclosed: siege1 run-1 harness defect (kept unaltered, re-run 1R); siege2 run-1 harness predicate bug (verdict column correct throughout); v1.4 aggregate cap originally unreachable (dead code) \u2014 reparameterized 500->125 pre-deploy",
         "type": "PQC-escalation siege battery + hardening verification",
         "date": "2026-10-17",
         "slots": "60+17",
@@ -943,6 +949,34 @@
         "refs": "10.5281/zenodo.23608157, ledger 0319/0320/0322 (triad: BTC 972863, XLM 65104788)",
         "evidence_links": [
           "https://doi.org/10.5281/zenodo.23608157"
+        ],
+        "status": "CLOSED"
+      },
+      {
+        "series": "FRACTAL-2",
+        "name": "Three-way (30/30/40) fractal ownership split of a published research artifact (HG-CERT-1 paper) across three wallets",
+        "type": "Cost-floor benchmark",
+        "date": "2026-10-25",
+        "slots": "5 prereg gates + keyless readback",
+        "result": "5/5 PASS; readback 3/3 byte-exact; measured triad cost $0.2509 at 2 sat/vB weekend trough ($0.1254 at the 1 sat/vB floor)",
+        "held_pct": null,
+        "refs": "DOI 10.5281/zenodo.23655614; ledger 0353/0354",
+        "evidence_links": [
+          "https://doi.org/10.5281/zenodo.23655614"
+        ],
+        "status": "CLOSED"
+      },
+      {
+        "series": "GREEN-1",
+        "name": "Trust Is the Pollutant: witness receipts vs trust-driven storage redundancy (environmental thesis, measured cost floor, honest scoping)",
+        "type": "Environmental thesis paper",
+        "date": "2026-10-26",
+        "slots": "redaction scan + byte-exact Zenodo round-trip + keyless readback",
+        "result": "PUBLISHED + ANCHORED 3/3 byte-exact; triad cost ~$0.63 at 2 sat/vB",
+        "held_pct": null,
+        "refs": "DOI 10.5281/zenodo.23657038; ledger 0359 (triad: BTC 973194, XLM 65141477, XRP AE4E64CF)",
+        "evidence_links": [
+          "https://doi.org/10.5281/zenodo.23657038"
         ],
         "status": "CLOSED"
       }
