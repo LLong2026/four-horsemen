@@ -1,0 +1,16 @@
+{
+ "xlm": {
+  "ledger": 65139654,
+  "payload_hex": "53514452073bde5c53278573962e93c87bed912612d263def15748398e5b73d4aa91db461e",
+  "match": true
+ },
+ "xrp": {
+  "validated": true,
+  "memo_data": "53514452073BDE5C53278573962E93C87BED912612D263DEF15748398E5B73D4AA91DB461E",
+  "match": true
+ },
+ "btc": {
+  "op_return_present": true,
+  "match": true
+ }
+}
