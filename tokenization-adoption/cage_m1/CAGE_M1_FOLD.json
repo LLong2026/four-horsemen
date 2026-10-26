@@ -1,0 +1,14 @@
+{
+ "series": "CAGE-M1",
+ "covenant": "leaf=SHA-256(0x00||sha256(file)); parent=SHA-256(0x01||L||R); bag=rightmost peak, then bag=SHA-256(0x01||peak||bag) leftward; root=SHA-256(0x03||bag||leaf_count u64 LE)",
+ "corpus_dir": "tokenization-adoption/cage_m1_corpus/",
+ "leaf_count": 4,
+ "root": "3bde5c53278573962e93c87bed912612d263def15748398e5b73d4aa91db461e",
+ "peaks": [
+  [
+   2,
+   "8db84b7caa02d773a5d60d5c48491309847fe438de998a7a0f2840277e04d56f"
+  ]
+ ],
+ "envelope_hex_ascii": "53514452073bde5c53278573962e93c87bed912612d263def15748398e5b73d4aa91db461e"
+}

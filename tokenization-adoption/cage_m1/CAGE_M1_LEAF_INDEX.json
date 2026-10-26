@@ -1,0 +1,22 @@
+[
+ {
+  "path": "Deterministic_Caging_of_Probabilistic_LLMs_v1.1.pdf",
+  "file_sha256": "b03bd77a5752a481a2ef523231ea874adc65262ec7521316ab0de9604009cd31",
+  "leaf": "633e69aee38524af5b6df4f9451fcefdb36037ad429bf3ecdab616d0e1d17eef"
+ },
+ {
+  "path": "TROPHY_ROSTER.csv",
+  "file_sha256": "02886ea4e7dd58ea98e1cb043ef1f0c56bc99dd52c27ab80e88bbdfcf14c9b88",
+  "leaf": "6854eee7735ab28481b39cad138e689a237523b83723974f020f44c43dda144e"
+ },
+ {
+  "path": "cage_watch_feed.json",
+  "file_sha256": "70a1310b4fe43fac41d05960ac29277c41b44cad89242abae102148e1aebcbbe",
+  "leaf": "87929167de8ae96c5f6bfc7a3e22cfcbb3cb15d64976be80804e122d4c18e2e3"
+ },
+ {
+  "path": "hemi_n_receipt_20261025.json",
+  "file_sha256": "a57a4a873a553f231978f938b0e76707f25e13d450cd0268ec4ad0dee37db14b",
+  "leaf": "90cbf63ed4321b73367d335f4919c8c1a50bcca849b053b5495c240a7ce249aa"
+ }
+]
