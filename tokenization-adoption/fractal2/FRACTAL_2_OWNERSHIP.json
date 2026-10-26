@@ -1,0 +1,37 @@
+{
+ "series": "FRACTAL-2",
+ "instrument": "fractal ownership transfer (3-way split)",
+ "mechanics": "provisional 64/181,667 fractional ownership: authority ring + keyless byte-exact readback (FRACTAL-1 doctrine, ledger 0305)",
+ "artifact": {
+  "doi": "10.5281/zenodo.23627901",
+  "title": "HG-CERT-1: Certification of a Per-Crossing Governance-Drift Hold Gate on a Fresh Zero-Lineage LLM Consensus Cluster",
+  "artifact_sha256": "0a073f640053a2cf565363823aac2c3f545c6fd7619ee593d1a1be389dcb296f"
+ },
+ "transferor": {
+  "wallet_label": "BTC Writer (MCR/Satoshi Track)",
+  "address": "bc1qf4zs0fwvmdptq86xdg6rrfc5unqgmhdwharzw6",
+  "rail": "BTC"
+ },
+ "allocations": [
+  {
+   "percent": 30,
+   "wallet_label": "XFER-1 Receive Wallet",
+   "address": "bc1qrv0tvjz4hham7cyx0cercfajrs4f6cqjjvh5rc",
+   "rail": "BTC"
+  },
+  {
+   "percent": 30,
+   "wallet_label": "XRP Writer B",
+   "address": "rDSbkAZbUHQPdjDzShvze2gTGYBHDExX8C",
+   "rail": "XRP"
+  },
+  {
+   "percent": 40,
+   "wallet_label": "Stellar Writer B",
+   "address": "GC6VZWZXARDOCAJP7WGQUHRPNKCVLTCSO7XTEG5YDGZR6ATGEIMDL6JD",
+   "rail": "XLM"
+  }
+ ],
+ "authorization": "Leon GO (chat authorization, 2026-10-25 22:55 CT)",
+ "disclaimer": "Prototype. Educational and research purposes only. Records fractional authority over the artifact's witness rights under provisional patent 64/181,667 mechanics; not a legal transfer of copyright."
+}
