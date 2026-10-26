@@ -1,0 +1,12 @@
+{
+ "envelope_hex": "5351445212c3adb09bd9d50a18e79cae253435446a49acd11ab56520fb74987ad99c8dca31",
+ "doi": "10.5281/zenodo.23657038",
+ "paper_sha256": "c3adb09bd9d50a18e79cae253435446a49acd11ab56520fb74987ad99c8dca31",
+ "readback": {
+  "sat": true,
+  "xlm": true,
+  "xrp": true
+ },
+ "all_ok": true,
+ "readback_at": "2026-10-26T05:48:36Z"
+}
