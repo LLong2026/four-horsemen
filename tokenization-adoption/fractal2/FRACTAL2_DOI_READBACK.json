@@ -1,0 +1,12 @@
+{
+ "xlm": {
+  "match": true
+ },
+ "xrp": {
+  "validated": true,
+  "match": true
+ },
+ "btc": {
+  "match": true
+ }
+}
