@@ -85,3 +85,21 @@ All H-Line isolation guarantees (pre-registered 2026-09-23, §3) remain in force
 > This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.
 >
 > All Horsemen/SIMZ workload data is synthetic and simulated. No live tenants, no real client data, no PHI.
+
+
+---
+
+## AMENDMENT (forward-only, 2026-10-26) — CORRECTION per DOI 10.5281/zenodo.23672787
+
+BSC-3 above uses the phrase "equivalence class defined by its snapshot blueprint." The word
+"blueprint" is WITHDRAWN as importing a fabricated narrative: a SHA-256 digest is a one-way
+commitment, not a reconstruction blueprint. The hypothesis is restated correctly: after induced
+total failure, H4 restores a state indistinguishable from its RETAINED SNAPSHOT, with the anchored
+digest used as the equivalence-class verifier (recompute, then compare — forward direction only).
+The measured property remains valid as restated.
+
+Original text above is preserved unaltered (append-only doctrine). See DOI 10.5281/zenodo.23672787
+for the full correction: affected-artifact table, validity under commitment-and-verification,
+corrected terminology, revised diagram, discovery date (2026-10-26), and version history linking
+originals to corrections. Two-key curation: Gabriel draft/vet; Leon GO (chat authorization,
+2026-10-26 13:04 CT).

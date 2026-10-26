@@ -131,3 +131,21 @@ Append-only: an amendment is a new ledger entry stating the change and reason. T
 - Any falsifier fires => the system is NOT substrate deterministic at scale, and the divergence is published in full in the ledger with the diverging position identified.
 
 **All inputs synthetic (SIMZ). No live tenants touched. No Lindy contact.**
+
+
+---
+
+## AMENDMENT (forward-only, 2026-10-26) — CORRECTION per DOI 10.5281/zenodo.23672787
+
+HYP-5 above uses the phrase "equivalence class defined by its snapshot blueprint." The word
+"blueprint" is WITHDRAWN as importing a fabricated narrative: a SHA-256 digest is a one-way
+commitment, not a reconstruction blueprint. The hypothesis is restated correctly: after induced
+total failure, H4 restores a state indistinguishable from its RETAINED SNAPSHOT, with the anchored
+digest used as the equivalence-class verifier (recompute, then compare — forward direction only).
+The measured property remains valid as restated.
+
+Original text above is preserved unaltered (append-only doctrine). See DOI 10.5281/zenodo.23672787
+for the full correction: affected-artifact table, validity under commitment-and-verification,
+corrected terminology, revised diagram, discovery date (2026-10-26), and version history linking
+originals to corrections. Two-key curation: Gabriel draft/vet; Leon GO (chat authorization,
+2026-10-26 13:04 CT).

@@ -83,3 +83,21 @@ Four deterministic machines in a 2x2 crossed experiment: LINEAGE (Jasper-derived
 - Phase 2: Stamp War / Famine / Death as configuration deltas off the golden template (~10-15 each).
 - Reserve: ~30 credits held back for fixes and the voice/Chat.jsx queued work.
 - Doctrine: preregister Horsemen criteria (OSF Registry + public repo commit) BEFORE first inputs. Separate append-only ledger for the Horsemen line.
+
+
+---
+
+## AMENDMENT (forward-only, 2026-10-26) — CORRECTION per DOI 10.5281/zenodo.23672787
+
+The Death-arm role description above includes the phrase "resurrection from the 32-byte anchor
+blueprint." That statement is WITHDRAWN: a SHA-256 digest is a fixed-size, one-way cryptographic
+commitment, not a blueprint. Resurrection is performed from retained snapshots and manifests; the
+anchored digest verifies the restored state. The narrative originated in source-AI (Microsoft
+Copilot) confabulation, documented and acknowledged on the record (instance six of the fabrication
+series, DOI 10.5281/zenodo.23267773).
+
+Original text above is preserved unaltered (append-only doctrine). See DOI 10.5281/zenodo.23672787
+for the full correction: affected-artifact table, validity under commitment-and-verification,
+corrected terminology, revised diagram, discovery date (2026-10-26), and version history linking
+originals to corrections. Two-key curation: Gabriel draft/vet; Leon GO (chat authorization,
+2026-10-26 13:04 CT).
