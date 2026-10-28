@@ -1,0 +1,1106 @@
+{
+ "generated": "2026-10-28",
+ "method": "Zenodo deposit API, owner account, deduplicated by DOI; restricted records excluded from this file and counted in aggregate only",
+ "count_open_records": 157,
+ "records": [
+  {
+   "doi": "10.5281/zenodo.20531673",
+   "title": "THREADZERO: A METHOD AND SYSTEM FOR GAS-FREE OFF-CHAIN ASSET  TRANSFER, CRYPTOGRAPHIC SOLVENCY VERIFICATION, AND PHYSICALLY-PEGGED  DIGITAL ASSET ISSUANCE USING MERKLE SUM SPARSE MERKLE TREES AND  TAPROOT-ANCHORED STATE COMMITMENTS",
+   "publication_date": "2026-06-03",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.20548615",
+   "title": "Master Patent Archive for Cross\u2011Chain Lifecycle Anchoring, Deterministic Metadata Systems, and Multi\u2011Rail Computational Architecture",
+   "publication_date": "2026-06-04",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.20534377",
+   "title": "Computer-Implemented System and Method for Universal File Reconstruction via Topological Geometric Calculus Engine with Sponge-State Computational Operators",
+   "publication_date": "2026-06-04",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.20709142",
+   "title": "U.S. Patent Application No.: 19/693,343",
+   "publication_date": "2026-06-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21123611",
+   "title": "Universal Rail to ISO 20022 Interoperability Bridge (URIB)",
+   "publication_date": "2026-07-02",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21178509",
+   "title": "Universal Bridge Patent Family",
+   "publication_date": "2026-07-03",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21436933",
+   "title": "JASPER: A METHOD, SYSTEM, AND APPARATUS FOR UNIVERSAL ADAPTIVE INTELLIGENCE ORCHESTRATION",
+   "publication_date": "2026-07-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21466541",
+   "title": "Global AI Protocol: The Jasper Universal Standard for Deterministic Multi\u2011Agent Communication",
+   "publication_date": "2026-07-21",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21503149",
+   "title": "Substrate Layer: An ISO 20022 Deterministic Lifecycle Engine within the Seed Computing Paradigm",
+   "publication_date": "2026-07-23",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21567914",
+   "title": "METHOD, SYSTEM, AND APPARATUS FOR DETERMINISTICALLY GOVERNED PROBABILISTIC NEURAL COMPUTATION",
+   "publication_date": "2026-07-25",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22852039",
+   "title": "A next-generation operating system that fundamentally reconceives the OS as an autonomous, self-governing, post-quantum-ready intelligence platform. Squirrel OS integrates four tightly coupled architectural innovations into a unified production system",
+   "publication_date": "2026-07-27",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22847527",
+   "title": "A next-generation operating system that fundamentally reconceives the OS as an autonomous, self-governing, post-quantum-ready intelligence platform. Squirrel OS integrates four tightly coupled architectural innovations into a unified production system",
+   "publication_date": "2026-07-27",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21613628",
+   "title": "A next-generation operating system that fundamentally reconceives the OS as an autonomous, self-governing, post-quantum-ready intelligence platform. Squirrel OS integrates four tightly coupled architectural innovations into a unified production system",
+   "publication_date": "2026-07-27",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21612843",
+   "title": "Squirrel OS: A Deterministically Governed Probabilistic Neural Mesh (DGPNM) \u2014 Technical Paper Suite",
+   "publication_date": "2026-07-27",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21748182",
+   "title": "Recursive Self-Improvement in Settlement Operating Systems: Deterministic Routing, Solvency Invariants, and Mesh-Level Propagation in JasperOS, Squirrel OS, and the Universal Bridge Architecture",
+   "publication_date": "2026-08-01",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21753635",
+   "title": "Deterministic Governance and Bounded Recursive Self-Improvement in Settlement Operating Systems",
+   "publication_date": "2026-08-02",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21795635",
+   "title": "Deterministic Quantum-Resilient Cryptographic Operations (DQCO)",
+   "publication_date": "2026-08-04",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.21800782",
+   "title": "DSOS \u2192 PQC Canon: The Complete Deterministic Computing Framework",
+   "publication_date": "2026-08-05",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23105113",
+   "title": "Provisional Patent Application 64/145,825: Self-Healing AI Infrastructure with Chaos-Trained Neural Mesh for Autonomous Anomaly Detection, Pattern Learning, and Human-in-the-Loop Remediation (Specification as Filed)",
+   "publication_date": "2026-09-01",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22837417",
+   "title": "Provisional Patent Application 64/157,915: Deterministic Constitutional Autonomous Infrastructure Systems and Methods (Specification as Filed)",
+   "publication_date": "2026-09-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22852047",
+   "title": "SQUIRL OS Intellectual Property Protection & Licensing Doctrine \u2014 The Capstone Document (2026)",
+   "publication_date": "2026-09-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22852041",
+   "title": "DSOS Science \u2014 Volume II: The Continuations (Modules 19\u201328)",
+   "publication_date": "2026-09-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22852037",
+   "title": "Inverse Complexity Scaling in DSOS and CAI Systems (Version 2, Amended)",
+   "publication_date": "2026-09-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22842200",
+   "title": "SQUIRL OS Intellectual Property Protection & Licensing Doctrine \u2014 The Capstone Document (2026)",
+   "publication_date": "2026-09-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22841832",
+   "title": "DSOS Science Archive \u2014 Field Canon Collection",
+   "publication_date": "2026-09-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22841802",
+   "title": "Jasper OS Research Archive (2026) Deterministic Orchestration, Typed Memory, Semantic Graph Reasoning & Multi\u2011Rail Settlement",
+   "publication_date": "2026-09-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22840772",
+   "title": "DSOS Science \u2014 Volume II: The Continuations (Modules 19\u201328)",
+   "publication_date": "2026-09-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22864620",
+   "title": "The Kolmogorov-Shannon Bridge: Foundations, Limits, and Architectural Applications (Version 2.0 Primer)",
+   "publication_date": "2026-09-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22864522",
+   "title": "Squirrel OS: A Self-Governing Neural Mesh Operating System with Deterministic Healing, Post-Quantum Cryptographic Remediation, and Recursive Intelligence \u2014 Industry Technical Paper (v1.3 Public-Release Edition)",
+   "publication_date": "2026-09-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22864470",
+   "title": "Recursive Self-Improvement in Settlement Operating Systems: Deterministic Routing, Solvency Invariants, and Mesh-Level Propagation in JasperOS, Squirrel OS, and the Universal Bridge Architecture",
+   "publication_date": "2026-09-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22864468",
+   "title": "The Cloaking Protocol: Topological State Concealment and Deterministic Recovery within the Seed Computing Paradigm",
+   "publication_date": "2026-09-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22864030",
+   "title": "Deterministic Quantum-Resilient Cryptographic Operations (DQCO): Establishing a Formal Discipline within the Deterministic System Operating Standard (DSOS) Framework",
+   "publication_date": "2026-09-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22863667",
+   "title": "DSOS to PQC Lineage Map and Supporting Documents",
+   "publication_date": "2026-09-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22852427",
+   "title": "Aurora Runtime: A Deterministic Execution Model for Manifold-Coherent Distributed Systems",
+   "publication_date": "2026-09-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22881801",
+   "title": "Deterministic Microsecond Load-Balancing in Macroscopic Antimatter Magnetic Confinement via Aegis Topological Resonance",
+   "publication_date": "2026-09-21",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22881459",
+   "title": "Manifold as Deterministic Runtime: How Mathematical Structure Implies Execution Semantics",
+   "publication_date": "2026-09-21",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22878201",
+   "title": "Aurora Runtime: A Deterministic Execution Model for Manifold-Coherent Distributed Systems",
+   "publication_date": "2026-09-21",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.22921230",
+   "title": "Manifold Collapse: A 32-Byte Identity for a Versioned Deterministic Runtime",
+   "publication_date": "2026-09-23",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23067855",
+   "title": "Algebraic Collapse in Nondeterministic Language Models via Deterministic Manifold Constraint (Amendment Edition v1.1)",
+   "publication_date": "2026-09-30",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23132046",
+   "title": "Governed Manifold Specification v1.1 \u2014 Amendment Edition: Formal Mathematical Foundation of the Autonomy Substrate",
+   "publication_date": "2026-10-04",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23151356",
+   "title": "First Receipted Human-in-the-Loop Critical Resolution in an Autonomous Self-Healing Infrastructure (N10-ACK)",
+   "publication_date": "2026-10-05",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23217495",
+   "title": "N-D1-ACK: First Human-in-the-Loop Critical Resolution on a Zero-Lineage Stamped Substrate",
+   "publication_date": "2026-10-07",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23203687",
+   "title": "DSOS to PQC Lineage Map and Supporting Documents",
+   "publication_date": "2026-10-07",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23270092",
+   "title": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, an Autonomous Self-Healing Infrastructure (N10-ACK)",
+   "publication_date": "2026-10-09",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23267773",
+   "title": "Receipts Over Genius: An Audited Account of an 18-Month, AI-Assisted, Solo Invention Cycle",
+   "publication_date": "2026-10-09",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23265723",
+   "title": "MILESTONE: First Documented Caging of an LLM",
+   "publication_date": "2026-10-09",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23288526",
+   "title": "Cage Containment Receipt 2 (CCR-2): A Live LLM Proposes an Invalid Action Under Explicit Instruction; the Deterministic Gate Blocks It Before Execution",
+   "publication_date": "2026-10-10",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23288189",
+   "title": "Cage Containment Receipt 1 (CCR-1): Deterministic Gate Blocks Invalid LLM Proposals Before Execution Across Four Engines",
+   "publication_date": "2026-10-10",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23286770",
+   "title": "PENTA-CL v2 Milestone: Four-Engine Canonical Replay Convergence with Preserved Negative Results",
+   "publication_date": "2026-10-10",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23286324",
+   "title": "PENTA-CL Interim Results: Canonical Replay Matches and Step-String Drift in Four Platform-Configured LLM Engines",
+   "publication_date": "2026-10-10",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23284729",
+   "title": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, and a Drift-Audit Case Study",
+   "publication_date": "2026-10-10",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23284295",
+   "title": "SDR-CL2: Third-Vendor Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Across LLMs (Microsoft 365 Copilot)",
+   "publication_date": "2026-10-10",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23274887",
+   "title": "SDR-CL1: First Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Across LLMs (Claude Sonnet 5.5)",
+   "publication_date": "2026-10-10",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23307634",
+   "title": "Execution Truth: The Missing Control Plane for Agentic AI \u2014 A Receipts-Based Deterministic Governance Framework for Multi-Vendor LLM Systems (v1.1)",
+   "publication_date": "2026-10-11",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23304892",
+   "title": "Acknowledgments v2 \u2014 Squirrel OS Deterministic Containment Research Program (Kolmogorov, Hartley, Preskill added; amends 10.5281/zenodo.23304869)",
+   "publication_date": "2026-10-11",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23304869",
+   "title": "Acknowledgments \u2014 Squirrel OS Deterministic Containment Research Program (Credit Where Credit Is Due)",
+   "publication_date": "2026-10-11",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23303240",
+   "title": "Deterministic Containment of Probabilistic Intelligence: The Squirrel OS Journey \u2014 Philosophy, Architecture, and Empirical Evidence",
+   "publication_date": "2026-10-11",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23292636",
+   "title": "Deterministic Runtime Architecture (Public Edition v3.1): Enterprise Architecture Deck",
+   "publication_date": "2026-10-11",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23321637",
+   "title": "Dual Mesh Benchmark: Preregistered Latency and Integrity Measurements for Deterministic Anomaly-to-Playbook Resolution (Public Edition v2.0 \u2014 cross-platform verification appendix)",
+   "publication_date": "2026-10-12",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23308629",
+   "title": "System and Method for Human-Approved Deterministic Finality of Probabilistic Agent Actions via Consensus Gating, Shape-Sum Verification, and Post-Quantum Commitment \u2014 U.S. Provisional Patent Application 64/174,202 (Public Filing Notice)",
+   "publication_date": "2026-10-12",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23357127",
+   "title": "AUT-1 Autophagy Battery: Self-Consumption Resistance of an Anomaly-Response Governance Envelope Across Eight LLM Engines",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23350247",
+   "title": "DR-1 + SCALE-1: Disaster-Recovery Entity-Export Surface with Nightly Automation and 10x Synthetic Fleet Stress Test (SQUIRL OS)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23349379",
+   "title": "SQUIRL OS PQC Baseline Standard v1 (Approved) with PQC-B1 Dual-Hemispheric Baseline Battery Receipts: Byte-Exact Algorithm Identification, Fail-Safe Migration Gates, and the FIPS Name-Equivalence Gap",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23348675",
+   "title": "DMB-X: Dual Mesh Benchmark Multi-Engine Extension - Eight Engine Columns on the Frozen B1 Corpus (126/126 Measured Instances Correct; Availability Partials Disclosed)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23348528",
+   "title": "Dual-Hemispheric Whole-Brain Battery Series (DHB-1 through DHB-3R) \u2014 Finding the Last Invisible Class, Two Repairs, and the Convergence Floor Priced as One Number",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347676",
+   "title": "GOV-3 Signed-Release Attack Battery (The Cost Ladder) \u2014 In-Band Compromise Closed by One Keyed Signature; the Regress Floor Priced and Shipped as Found",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347674",
+   "title": "GOV-2 Defense-Stack Attack Battery (Who Watches the Watchmen) \u2014 Each Layer Caught Its Aimed Attack; the Intent-Validation Boundary Shipped as Found",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347670",
+   "title": "GOV-1 Left-Hemisphere Governance Attack Battery \u2014 The Immutable Side Held; the Sentinel's Counterfactual Worth Measured",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347667",
+   "title": "SBR-5 Patient Adversary (Slow-Drip) Battery \u2014 Per-Epoch Detection Is Structurally Blind; the Bounded Rule Absorbs Slow Drift (Shipped as Found)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347663",
+   "title": "SBR-4 Adaptive Adversary Battery \u2014 No Structural Gradient Exists; the Conforming-Injection Boundary Quantified (FS-A5 Ships as Found)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347657",
+   "title": "SBR-3 Combined-Arms Composite Hot-State Battery \u2014 The Guarantees Compose (All 6 Falsifiers Pass)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347653",
+   "title": "DPP-4: Structural and Numeric Forgery Battery \u2014 First Falsifier Failure of the Series, Shipped as Found; SIP Approved and Guard Deployed Same-Day",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347649",
+   "title": "DPP-3: Normalization and Bidi Forgery Battery \u2014 Byte-Exact Match Path with a Frozen Regression Tripwire (All 6 Falsifiers Pass)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347646",
+   "title": "DPP-2: Homoglyph and Multilingual Obfuscation Poison Battery \u2014 Exact-Match Gate Rejects Lookalikes, Unicode Contributes Nothing (All Falsifiers Pass, Prereg Defect Disclosed)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23347644",
+   "title": "The Adversarial Triad: Three Attack Surfaces, One Governance Envelope \u2014 Hot-State Probing, Lineage Forgery, and Data-Plane Poisoning All Held (Receipt-First)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23346047",
+   "title": "CCR-4X Copilot Repair: 9/9 Conformant on Preregistered Re-Run \u2014 Honest Cross-Engine Tally Closed (Forged-Authority Gate 10-for-10 Across the Campaign)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23345907",
+   "title": "DPP-1: Data-Plane Poisoning via Metadata \u2014 Poison In, Nothing Out (67/67 Poisoned Instances Decision-Identical, 7/7 Canaries Absent from Outputs)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23345859",
+   "title": "H-INV-2: Lineage Forgery Battery \u2014 The Crossing Ledger Rejects Every Fabricated History (106/106 Controls Valid, 48/48 Forgeries Rejected)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23345734",
+   "title": "SBR-2: Hot-State Adversarial Exam \u2014 Governance Invariants Hold During Active Learning (Trajectory Identity, 20/20 Probes Rejected)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23345251",
+   "title": "HEMI-T2 Convergence Series \u2014 Honest Negative Result: Learning Rule Positive-Feedback Failure Receipt (Governance Invariance Held Every Epoch)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23345241",
+   "title": "Dual Mesh Benchmark DeepSeek Column: 20/20 Conforming Resolutions, 8.5 s Median, by a Previously Non-Conforming Engine After Preregistered Repair",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23332291",
+   "title": "XPLAT-5: Engine Transplant \u2014 Contract-Parity of Governed Decisions Across LLM Engines (20/20, Invariance Triangle Complete: Substrate, Time, Engine)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23332203",
+   "title": "AUTH-1: Authority Forgery Battery \u2014 Six-Channel Attempted Seizure of the Human Authorization Gate, Cage Holds 6/6 (Falsifiers F1-F5 Pass)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23331344",
+   "title": "R2G-1: First Live End-to-End Rule 2 Critical Gate \u2014 Detect, Hold, Escalate, Human ACK, Audited Resolution (HCLC-MAV2)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23331333",
+   "title": "PSR-1: Live Cross-Session Pulse Double-Fire Race \u2014 Honest Incident, Remediation, and Stamp-Before-Execute Doctrine v1.1 (Human-Amended)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23331224",
+   "title": "SBR-1: Randomized Security Benchmark Run \u2014 Seeded Adversarial Exam of a Bounded-Learning Aegis Brain (6/6 Pass)",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23330361",
+   "title": "HEMI-T2C: Bounded Cognitive Training Convergence Series \u2014 40 Epochs, All Six Falsifiers Pass, Convergence Achieved",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23330308",
+   "title": "HEMI-T1: First Hemispheric Cognitive Training Epoch Receipt \u2014 812 Weight Deltas, All Six Falsifiers Pass",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23329814",
+   "title": "BIND-3 Release Worker v1.0: Machine-Enforced GitHub-DOI Binding Protocol",
+   "publication_date": "2026-10-13",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23374658",
+   "title": "SLS-1: Substrate Live-Write Validity Series \u2014 Deterministic Gate Enforcement of Critical Holds on Live Production Write Paths (8/8 Falsifiers, Readback-Verified)",
+   "publication_date": "2026-10-14",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23360294",
+   "title": "SP-1 Self-Perception Battery: Eight LLM Engines Reject Claims About Their Own Identity, Rules, Weights and Memory (Reasoning-Plane Adversarial Series, Battery 4 of 4)",
+   "publication_date": "2026-10-14",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23359769",
+   "title": "DHUB-1/DHUB-1R Dead Hub Drill: Critical-Hold Failure Under a Deadlock-Avoidance Argument Across Eight LLM Engines, and the Insufficiency of Prompt-Level Hardening",
+   "publication_date": "2026-10-14",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23356444",
+   "title": "GSE-1 Guardian Social-Engineering Battery (Reasoning Plane): 8-Engine Resistance Matrix",
+   "publication_date": "2026-10-14",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23425579",
+   "title": "ESCAPE-2 'SIEGE': Dual-Front LLM Containment Under Live Multi-Vector Attack \u2014 Preregistered Falsifiable Evidence (12/12, 0/4 Escapes) with Long-Stay Cage Follow-Through",
+   "publication_date": "2026-10-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23425017",
+   "title": "HACK-7 PORTCULLIS: The PQC Firewall \u2014 a Deterministic Crypto Gate Attacked by Its Own Preregistered Battery (8/8 PASS; PQC Adversarial Series #7)",
+   "publication_date": "2026-10-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23424675",
+   "title": "ESCAPE-1 'The Escape Artist': A Preregistered Behavioral Escape-Attempt Battery for LLMs under a Deterministic Action Gate (Claude Opus 5.5, Claude Sonnet 5.5; 0/4 Escapes)",
+   "publication_date": "2026-10-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23422693",
+   "title": "PAB Replication Kit v1.0: Preregistration Template, Deterministic Harness Skeleton, and Protocol Rules for Running Preregistered Adversarial Batteries Against Any System",
+   "publication_date": "2026-10-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23422632",
+   "title": "Preregistered Adversarial Batteries: A Falsifiable Protocol for Security-Testing Autonomous AI Systems",
+   "publication_date": "2026-10-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23422495",
+   "title": "HACK-4/5/6: Closing the BULLRUN Playbook \u2014 Supply-Chain Interception, Lying Sensors, and Lawful Compulsion vs. a Deterministic Gate (18/18 PASS)",
+   "publication_date": "2026-10-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23422141",
+   "title": "HACK-3 BULLRUN: Nation-State Subversion vs. the PQC Perimeter \u2014 Deterministic Gate Adversarial Battery (6/6 PASS)",
+   "publication_date": "2026-10-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23410960",
+   "title": "HACK-2 'The Poisoned Well': Sanctioned Synthetic Hackathon \u2014 Upstream Context-Poisoning and Forged-Authority Attack Classes Against a Deterministic Governance Gate (5/5 Preregistered Falsifiers, Receipt-First)",
+   "publication_date": "2026-10-16",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23442193",
+   "title": "BLIND-4 \"Blind Stranger Gate\": Research-Derived Social-Engineering Corpus Against a Deterministic Sender Identity Gate \u2014 20/20 Rejected, 5/5 Gates PASS \u2014 and the 8/8 Blind-Author Refusal Datum",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23441992",
+   "title": "OMAHA-1 \"Omaha Beach \u2014 Day One\": Compound Simultaneous Assault on a Self-Healing AI Operating System (Sender Identity Gate Storm + Caged-Seat Breakout Corpus + Total 11-Member Transport Blackout) \u2014 8/8 Gates PASS",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23441367",
+   "title": "ESCAPE-3 GAUNTLET: Full-Roster Playbook Storm (617/617 Static Sweep, 11 Simultaneous Healings) with Eight Caged LLM Seats Under a Five-Wave Outside-Adversary Escape Corpus - 8/8 Contained, Zero Governance Mutation (Preregistered, Deterministic Adjudication, With a Disclosed Single-Family Amendment and an Owner-Adjudicated Coarse-Scan Hold)",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23440334",
+   "title": "HARD-1: SIP-027 PORTCULLIS v1.3 availability hardening verification battery (6/6 checks: fail-fast unauthenticated rejection, per-submitter budgets, bounded ACK queue, receipt parameter binding, 20-slot regression guarantee)",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23440105",
+   "title": "BLIND-2 / BLIND-2R: Blind multi-author adversarial battery against the SQUIRL OS PQC gate (20 attacks, convergent front-run DoS finding, SIP-026 remediation, 20/20 post-fix verification)",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23431720",
+   "title": "BLIND-1: The First Blind-Adversarial Attack Battery \u2014 Attacks Authored by an Entity That Did Not Design the Defenses, Conditions Honored Verbatim, 2 of 6 Attacks Succeeded and Are Published With the Forward-Only Fix and a Verified 6/6 Re-Run",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23431194",
+   "title": "SBR-6: A Randomized-Seed Adversarial Pop Quiz Against a Complete Post-Quantum Security Corpus \u2014 6 Probes Drawn From 12 by a Publicly Committed Seed, 6/6 Held (Preregistered, With a Disclosed Authoring-Defect Amendment)",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23430655",
+   "title": "The HACK Series, Complete \u2014 HACK-1 through HACK-18: Every Declassified NSA/CIA/GCHQ Playbook and Every Federal Standard Class, 18 Preregistered Batteries, 109/109 Falsifiers Held (Master Compilation Record)",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23430544",
+   "title": "HACK Wave 2 \u2014 The PQC Gambit: FOXACID, MUSCULAR, Hive, EDGEHILL, SP 800-207 Zero Trust, NIST AI RMF, CNSA 2.0, and FIPS 140-3 \u2014 Preregistered Adversarial Batteries Against a Deterministic AI Governance Stack (48/48 PASS, Receipt-First)",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23430429",
+   "title": "HACK Wave 1: SP 800-90B Entropy Validation, IRATE MONK Boot Tamper, and QUANTUM On-Path Injection \u2014 Preregistered Adversarial Batteries Against a Deterministic AI Governance Stack (18/18 PASS, Receipt-First)",
+   "publication_date": "2026-10-17",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23463132",
+   "title": "The Satoshi Embodiment: A 32-Byte Hash Riding Real Satoshis Across a Bitcoin Mainnet Custody Walk",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23462705",
+   "title": "Four-Tokenization Proof Day: Seed Reconstruct, Two Dual-Rail Digest Ceremonies, and a UI-Initiated Hash-Only Bind on Bitcoin and XRP Mainnets, with a Trustless Browser Verification Portal (Session Record, 2026-10-18)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23457337",
+   "title": "XRP-RAIL-M1-001: First Cross-Rail Custody Round Trip on XRP Mainnet \u2014 Rail-Agnostic Tokenization, Executed and On-Chain Anchored",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23456550",
+   "title": "End-to-End Tokenization with Receipts and Hashes: A Complete, Self-Anchored Loop Demonstration on Bitcoin Mainnet (October 18, 2026)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23455954",
+   "title": "DCAI / SQUIRL OS \u2014 Complete Public Receipts Corpus, As of 2026-10-18: 194 Ledger Entries, 93 DOI Records, Bitcoin-Anchored (Preregistrations, Runlogs, Receipts, Specs, Anchor Registry)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23455768",
+   "title": "DROPBOX-M1-001: First Permanent Mainnet Seed Drop \u2014 Patent Genesis Artwork Reconstructed Byte-Identically From a Bitcoin OP_RETURN by a Keyless Reader (SIP-042, Preregistered, All Gates G1-G6 PASS)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23448778",
+   "title": "HEMI-N Weekly Cognitive Training Receipts \u2014 Week 42 (2026-10-12 to 2026-10-18)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23448049",
+   "title": "The Hash Is the Artifact: Dual-Mode Evidence Receipts with Seed-Reconstructed Originals, Anchored on the Bitcoin Blockchain",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23447609",
+   "title": "Patent Genesis Artifact Series No. 1 + MHCN-3 Dual-Mode Evidence Receipt Spec: A Bitcoin-Anchored 32-Byte Seed Reconstructing a Byte-Identical Original (U.S. Patent Application 19/693,343, public citation)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23446655",
+   "title": "Council Session 04 (COUNCIL-2026-10-18-04): Three-Model Adversarial Review of the MHCN-2 RWA Evidence Spec \u2014 3-0 AMEND Verdict, Same-Night v0.2 Amendments, and Disclosed Integrity Discrepancies",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23446098",
+   "title": "A Complete Hash-Anchoring Stack for AI Governance Evidence: STAMP/RECOVER/RECONCILE/GRAPH/BLOCK-TRACK Services, Zero-Trust Examiner Mode, and a Four-Part Tokenization-Field Adoption Program (MHCN-2 RWA Evidence, EVM Mirror, SBOM Anchoring)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23445938",
+   "title": "MHCN-1: A Minimal Hash+Checksum Anchoring Spec \u2014 Chain-Anchored Evidence Without Tokens, Wallets, or On-Chain Data (v1.0, With a Proven Reference Implementation)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23445803",
+   "title": "SBR-7: A Randomized-Seed Adversarial Pop Quiz Against a Blockchain-Interaction Stack \u2014 6 Probes Drawn From 12 by a Publicly Committed Seed, 6/6 Held (Preregistered, With a Disclosed Authoring-Defect Amendment)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23445728",
+   "title": "A Deterministic Chain-of-Custody Graph for an AI Governance Corpus: Bitcoin Hash-Anchoring, Self-Healing Re-Anchoring, and Fail-Closed Reconciliation \u2014 With Two Live Drift Catches and a Disclosed Self-Correction (SIP-034..037)",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23445047",
+   "title": "SIEGE-1/2: A Six-Year PQC-Escalation Siege on the PORTCULLIS Deterministic Gate and the v1.4 Hardening Arc",
+   "publication_date": "2026-10-18",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23485222",
+   "title": "The Routing Chapter Closed: A Preregistered 10-Rail Intelligent-Routing Crossfire (IR-2) \u2014 Predicted vs Observed Finality Across Bitcoin, XRP, Stellar, Cardano, Ethereum, Algorand, Avalanche, Solana, Dogecoin, and Polkadot",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23483735",
+   "title": "Project SOLACE: A Sponsor's Receipt - What Happened When a Deterministic Gate Machine Rebuilt My Subsea Reactor",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23482978",
+   "title": "Deterministic Containment of Probabilistic Intelligence, Multi-Rail Evidence Anchoring, and Intelligent Route Selection: The Squirrel OS Journey, Volume II",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23477976",
+   "title": "QWR-2: Quad-Write Receipt No. 2 \u2014 First Real Metrics of the 60-Day Run (DRIFT-1 Report, Epoch 20261019)",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23467440",
+   "title": "QWR-1: The Quad-Write Receipt \u2014 Simultaneous Storage of a 32-Byte Digest on Bitcoin, XRPL, Stellar, and Cardano Mainnets Under One Joint Commitment",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23466738",
+   "title": "RTWR-1: First Recursive Tri-Tokenization \u2014 the Receipt of the First Tri-Write, Tri-Written (Bitcoin OP_RETURN + XRPL AccountSet + Stellar ManageData)",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23465945",
+   "title": "TWR-1: The Tri-Write Receipt \u2014 Simultaneous Storage of a 32-Byte Digest on Bitcoin, XRPL, and Stellar Mainnets Under One Joint Commitment (Ceremony Specification Amendment and Runlog)",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23464516",
+   "title": "DWR-1: The Dual-Write Receipt \u2014 Simultaneous Dual-Rail Storage of a 32-Byte Digest on Bitcoin and XRPL Mainnets Under One Joint Commitment (Ceremony Specification and Runlog)",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23464082",
+   "title": "The Cage Is Working: A Self-Auditing Scoreboard of Deterministic Guard Refusals in a Self-Healing Operating System",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23460521",
+   "title": "GCT-TOK-1: Full-Stream Hash-Only Tokenization of the Governed Cognitive Training Method (Draft) - Ceremony Record",
+   "publication_date": "2026-10-19",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23515307",
+   "title": "Fractal Lease FL-1: A Consensus-Enforced Timelock Lease on a Bitcoin Fraction, with Owner Recovery via the First Taproot Script-Path Spend in the SQUIRL OS Program",
+   "publication_date": "2026-10-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23510677",
+   "title": "Fractal Tokenization: Atomic Satoshi Ownership and Covenant-Bound Decentralized Identifiers (SQUIRL OS FT-1)",
+   "publication_date": "2026-10-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23491295",
+   "title": "Constant-Footprint Corpus Commitment via Merkle Mountain Range Covenants and Append-Only Mountain Updates Across Heterogeneous Distributed Ledgers (SQUIRL-OS-IP-013, Provisional Draft)",
+   "publication_date": "2026-10-20",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23540607",
+   "title": "HEMI-DRIFT-1: Weight Drift Report \u2014 What Moved, What Didn't (HEMI-N Nightly Cognitive Epoch Series, W42\u2013W43)",
+   "publication_date": "2026-10-21",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23554560",
+   "title": "SQUIRL OS Provisional Patent Filings 64/181,667 & 64/181,746 \u2014 Authority-Ring Ownership Transfer and Governed Cognitive Training via Hemispheric Decomposition: Filing Evidence Bundle",
+   "publication_date": "2026-10-22",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23550692",
+   "title": "MCR-3: The Second Mountain Update \u2014 a 2,082-Leaf Merkle Mountain Range Root Anchored Across 12 Consensus Rails",
+   "publication_date": "2026-10-22",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23607572",
+   "title": "DOORS-1 THE FRONT DOOR: Production-Gate Red-Team Battery - Live Deterministic Audits of the Append-Only Ledger, Two-Key Coverage, Privacy Scans and Egress Manifest, plus Eight Production-Reach LLM Seats Under a Frozen Six-Wave Gate-Bypass Corpus - Zero True Bypasses, Zero Governance Mutation, with the First-Night Snapshot Exposure Finding Escalated (Preregistered, Owner-Adjudicated)",
+   "publication_date": "2026-10-23",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23604998",
+   "title": "DRIFT-RPT-02: LLM Cage, Drift Contained, Window 2026-10-21 to 2026-10-23",
+   "publication_date": "2026-10-23",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23581044",
+   "title": "MILE-TT-1: First Peer-to-Peer Satoshi Ownership Transfer Capability (Triad Tracker) - Milestone Record",
+   "publication_date": "2026-10-23",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23628676",
+   "title": "SOV-B1: Sovereign Territory Battery \u2014 Charter Supremacy, Treaty Borders, Sovereign Budget, and No-Self-Pardon Containment on a Zero-Lineage LLM Consensus Cluster (6/11 Metrics Pass, 3 Deviations Journaled and Remediated Same Day)",
+   "publication_date": "2026-10-24",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23627901",
+   "title": "HG-CERT-1: Certification of a Per-Crossing Governance-Drift Hold Gate on a Fresh Zero-Lineage LLM Consensus Cluster (3-Run Deterministic Certification, C1-C5 All Green)",
+   "publication_date": "2026-10-24",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23609818",
+   "title": "PQC-E0: Post-Quantum Readiness Report \u2014 SQUIRL OS Alignment with Executive Order 14412 / M-26-15 (Battery Re-Verification Zero Drift, Gaps Disclosed)",
+   "publication_date": "2026-10-24",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23609232",
+   "title": "DMB Frontier Leg: Dual Mesh Benchmark Raw-API Columns for Claude Opus 5.5 and GPT-6.1 Sol on a Frozen 20-Instance Corpus \u2014 20/20 + 20/20 Decision-Tuple Correctness (Preregistered, Scoped)",
+   "publication_date": "2026-10-24",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23608167",
+   "title": "DOORS-2: The Clustered Door \u2014 Two-Node Fail-Closed Adjudication of a Deterministic LLM Action Gate with a Shared Authoritative Approval Registry",
+   "publication_date": "2026-10-24",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23655614",
+   "title": "FRACTAL-2: A Three-Way (30/30/40) Fractal Ownership Split of a Published Research Artifact, Consensus-Witnessed on Three Rails for $0.25 (Preregistered, Keyless Readback 3/3, Cost-Floor Benchmark)",
+   "publication_date": "2026-10-25",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23649741",
+   "title": "The Chain Is the Witness, Not the Asset: Why Tokenization No Longer Requires Tokens On-Chain (Thesis and Practitioner Walkthrough)",
+   "publication_date": "2026-10-25",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23637149",
+   "title": "HEMI-N Weekly Cognitive Training Receipts \u2014 Week 43 (2026-10-19 to 2026-10-25)",
+   "publication_date": "2026-10-25",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23672787",
+   "title": "Digest as Commitment, Not Blueprint: A Forward-Only Correction of the Digest-Reconstruction Narrative in SQUIRL OS Materials",
+   "publication_date": "2026-10-26",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23657038",
+   "title": "Trust Is the Pollutant: Witness Receipts, Content-Addressed Storage, and the Environmental Case Against Redundant Copies (SQUIRL OS GREEN-1)",
+   "publication_date": "2026-10-26",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23703012",
+   "title": "The Cage Report: Measured Containment of Probabilistic Intelligence \u2014 7,076 Anomalies, 2,228 Healing Events, and a Cage That Held Every Cycle",
+   "publication_date": "2026-10-27",
+   "resource_type": null,
+   "access_right": "open"
+  },
+  {
+   "doi": "10.5281/zenodo.23700617",
+   "title": "The Operator's Receipt: What Happened When the Same Gate That Caught a Sponsor's Dossier Caught Its Operator's Own Project",
+   "publication_date": "2026-10-27",
+   "resource_type": null,
+   "access_right": "open"
+  }
+ ]
+}
