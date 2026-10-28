@@ -12,6 +12,16 @@ never the point, and they add nothing to moving assets on-chain in this architec
 Historical records below keep their original wording (append-only doctrine); everything
 new says anchoring.
 
+## SERIES NAMING NOTE (2026-10-28 — ledger 0384)
+
+Test series are named after mechanisms, not after historical events. Names that reference armed
+conflicts, landings, campaigns, or the people who died in them are retired from forward use: a
+codename should describe what a test does to a system, never borrow gravity from a real event.
+The compound blackout storm family is named **BLACKOUT** from this date, with `BLACKOUT-1` reserved
+for its next execution. Published records keep their names (append-only) and are cited by identifier
+alone in cross-border material. Measurements are untouched; vocabulary changed only.
+Full convention: [NAMING_CONVENTIONS.md](NAMING_CONVENTIONS.md).
+
 **Four machines. One stable. Matched inputs. Separate ledger.**
 
 </div>
