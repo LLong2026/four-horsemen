@@ -1,0 +1,31 @@
+{
+  "entity": "ChangeRequest",
+  "exported_at": "2026-10-28T09:02:01.194Z",
+  "count": 1,
+  "possible_truncation": false,
+  "records": [
+    {
+      "rollback_plan": "Remove pgBouncer",
+      "description": "Deploy pgBouncer",
+      "implementation_plan": "Install + configure + route + monitor",
+      "impact_assessment": "Low risk",
+      "test_plan": "<100ms under 1000 conns",
+      "title": "Deploy pgBouncer",
+      "requested_implementation_date": "2026-09-01",
+      "reason": "Preventive from pattern",
+      "approved_by": "Jennifer Chen",
+      "status": "completed",
+      "created_at": "2026-08-31T08:57:44.448Z",
+      "change_type": "standard",
+      "approval_status": "approved",
+      "requested_by": "Amelia Aegis",
+      "risk_level": "low",
+      "priority": "P3",
+      "completed_at": "2026-08-31T08:57:44.448Z",
+      "id": "6a95420a2ffa2bd8de881ac5",
+      "created_date": "2026-08-31T08:57:46.226000",
+      "updated_date": "2026-08-31T08:57:46.226000",
+      "is_sample": false
+    }
+  ]
+}
