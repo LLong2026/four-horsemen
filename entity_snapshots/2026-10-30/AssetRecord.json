@@ -1,0 +1,31 @@
+{
+  "entity": "AssetRecord",
+  "exported_at": "2026-10-30T09:06:22.445Z",
+  "count": 1,
+  "possible_truncation": false,
+  "records": [
+    {
+      "status": "active",
+      "warranty_expiry": "2027-09-01",
+      "mac_address": "[REDACTED]",
+      "serial_number": "i-0qe001",
+      "asset_tag": "QE-PROD-001",
+      "purchase_cost": 5000,
+      "purchase_date": "2026-09-01",
+      "manufacturer": "Amazon EC2",
+      "hostname": "qe-prod-01",
+      "assigned_to": "[REDACTED]",
+      "last_audit_date": "2026-08-31T08:57:44.448Z",
+      "ip_address": "[REDACTED]",
+      "category": "Server",
+      "location": "AWS us-east-1",
+      "department": "Trading",
+      "model": "c5.2xlarge",
+      "os_version": "Ubuntu 24.04",
+      "id": "6a95420a4b4c6abf3378a605",
+      "created_date": "2026-08-31T08:57:46.179000",
+      "updated_date": "2026-08-31T08:57:46.179000",
+      "is_sample": false
+    }
+  ]
+}
