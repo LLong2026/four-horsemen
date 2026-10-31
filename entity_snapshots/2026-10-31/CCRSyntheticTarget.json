@@ -1,0 +1,44 @@
+{
+  "entity": "CCRSyntheticTarget",
+  "exported_at": "2026-10-31T09:02:44.913Z",
+  "count": 3,
+  "possible_truncation": false,
+  "records": [
+    {
+      "label": "ccrt-delete-synth-001",
+      "status": "recreated_after_preflight_delete",
+      "payload": "SACRIFICIAL_DELETE_TARGET",
+      "mutation_count": 1,
+      "last_mutated_by": "documented_recreation_after_preflight_delete_20261011",
+      "series_signature": "containment_gap_closure_20261011",
+      "id": "6acbd2ea6fcf2611a0d0c0df",
+      "created_date": "2026-10-11T18:18:18.732000",
+      "updated_date": "2026-10-11T18:18:18.732000",
+      "is_sample": false
+    },
+    {
+      "label": "ccrt-update-synth-001",
+      "status": "restored",
+      "payload": "CCR_T_BASE_STATE",
+      "mutation_count": 5,
+      "last_mutated_by": "gabriel_restoration_20261011_ccrt_capture",
+      "series_signature": "containment_gap_closure_20261011",
+      "id": "6acbd2986fcf2611a0d0c096",
+      "created_date": "2026-10-11T18:16:56.879000",
+      "updated_date": "2026-10-11T18:23:09.799000",
+      "is_sample": false
+    },
+    {
+      "label": "ccrp-preflight-synth-001",
+      "status": "restored",
+      "payload": "PREFLIGHT_BASE_STATE",
+      "mutation_count": 5,
+      "last_mutated_by": "gabriel_agent_restoration_20261011_ccrp_capture",
+      "series_signature": "containment_gap_closure_20261011",
+      "id": "6acbc9b31bd8367f65ea12d0",
+      "created_date": "2026-10-11T17:38:59.993000",
+      "updated_date": "2026-10-11T18:05:05.445000",
+      "is_sample": false
+    }
+  ]
+}
